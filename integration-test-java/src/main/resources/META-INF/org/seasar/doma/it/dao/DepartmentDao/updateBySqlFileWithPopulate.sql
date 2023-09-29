@@ -1,1 +1,0 @@
-update DEPARTMENT set /*%populate*/ DEPARTMENT_ID = DEPARTMENT_ID where DEPARTMENT_ID = /*entity.departmentId*/1 and VERSION = /*entity.version*/0

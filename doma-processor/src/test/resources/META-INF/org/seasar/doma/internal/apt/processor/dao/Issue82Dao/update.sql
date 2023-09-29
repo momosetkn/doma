@@ -1,1 +1,0 @@
-update Emp set /*%populate*/id = id where name = /*name*/'a'
