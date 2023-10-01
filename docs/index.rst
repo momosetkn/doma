@@ -33,7 +33,7 @@ This document consists of following sections:
   Have feedback or a question? Found a typo?
 
   Please add an issue or pull request to
-  https://github.com/domaframework/doma and we’ll get back to you.
+  https://github.com/domaframework/doma-docs and we’ll get back to you.
 
 User Documentation
 ==================
