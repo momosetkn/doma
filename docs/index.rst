@@ -76,7 +76,6 @@ Links
 * `GitHub repository <https://github.com/domaframework/doma>`_
 * `Release Notes <https://github.com/domaframework/doma/releases>`_
 * `JavaDoc <https://www.javadoc.io/doc/org.seasar.doma/doma-core/latest/index.html>`_
-* `Boilerplate <https://github.com/domaframework/simple-boilerplate>`_
 * `Examples <https://github.com/domaframework/simple-examples>`_
 * `Doma Compile Plugin <https://github.com/domaframework/doma-compile-plugin>`_
 * `Doma CodeGen Plugin <https://github.com/domaframework/doma-codegen-plugin>`_
