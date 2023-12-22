@@ -1091,6 +1091,99 @@ The order by expression with index is supported:
             .orderBy(c -> c.asc(2))
             .fetch();
 
+Derived Table expression (Entityql, NativeSql)
+----------------------------------------------
+
+We support subqueries using derived tables.
+However, an entity class corresponding to the derived table is required.
+
+Define the entity class corresponding to the derived table as follows:
+
+.. code-block:: java
+
+    @Entity(metamodel = @Metamodel)
+    public class NameAndAmount {
+      private String name;
+      private Integer amount;
+    
+      public NameAndAmount() {}
+    
+      public NameAndAmount(String accounting, BigDecimal bigDecimal) {
+        this.name = accounting;
+        this.amount = bigDecimal.intValue();
+      }
+    
+      public String getName() {
+        return name;
+      }
+    
+      public void setName(String name) {
+        this.name = name;
+      }
+    
+      public Integer getAmount() {
+        return amount;
+      }
+    
+      public void setAmount(Integer amount) {
+        this.amount = amount;
+      }
+    
+      @Override
+      public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        NameAndAmount that = (NameAndAmount) o;
+        return Objects.equals(name, that.name) && Objects.equals(amount, that.amount);
+      }
+    
+      @Override
+      public int hashCode() {
+        return Objects.hash(name, amount);
+      }
+    }
+
+
+A subquery using a derived table can be written as follows.
+
+.. code-block:: java
+
+    Department_ d = new Department_();
+    Employee_ e = new Employee_();
+    NameAndAmount_ t = new NameAndAmount_();
+
+    SetOperand<?> subquery =
+        nativeSql
+            .from(e)
+            .innerJoin(d, c -> c.eq(e.departmentId, d.departmentId))
+            .groupBy(d.departmentName)
+            .select(d.departmentName, Expressions.sum(e.salary));
+
+    List<NameAndAmount> list =
+        entityql.from(t, subquery).orderBy(c -> c.asc(t.name)).fetch();
+
+The above query issues the following SQL statement:
+
+.. code-block:: sql
+
+    select 
+        t0_.NAME, 
+        t0_.AMOUNT 
+    from 
+        (
+            select 
+                t2_.DEPARTMENT_NAME AS NAME, 
+                sum(t1_.SALARY) AS AMOUNT 
+            from 
+                EMPLOYEE t1_ 
+            inner join 
+                DEPARTMENT t2_ on (t1_.DEPARTMENT_ID = t2_.DEPARTMENT_ID) 
+            group by 
+                t2_.DEPARTMENT_NAME
+        ) t0_ 
+    order by 
+        t0_.NAME asc
+
 Delete statement
 ============================
 
