@@ -753,6 +753,43 @@ The generated SQL statement is as follows:
 
   update employee set id = ?, name = ?, age = ? where age < 30
 
+.. _parser-level-comment:
+
+Parser-level comment directive
+------------------------------
+
+Using a parser-level comment directive allows you to include comments in an SQL template 
+that will be removed after the template is parsed.
+
+Synopsis
+~~~~~~~~
+
+.. code-block:: sql
+
+  /*%! comment */
+
+Suppose you have the following SQL template:
+
+.. code-block:: sql
+  
+  select 
+    *
+  from
+    employee 
+  where /*%! This comment will be removed */
+    employee_id = /* employeeId */99
+
+The above SQL template is parsed into the following SQL:
+
+.. code-block:: sql
+  
+  select 
+    *
+  from
+    employee 
+  where 
+    employee_id = ?
+
 Comments
 ========
 
