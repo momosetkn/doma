@@ -1,5 +1,0 @@
-bundles:
-  - 2
-files:
-  - source: /docs/locale/ja/**/*.po
-    translation: /locale/%two_letters_code%/LC_MESSAGES/%original_file_name%
