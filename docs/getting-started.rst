@@ -8,29 +8,31 @@ Getting started
 Summary
 ========
 
-We will introduce how to set up the development environment and basic functions.
+This guide outlines the setup of your development environment and introduces basic functionalities.
 
 Install JDK
 ============
 
-In this `Getting started`, you need JDK 15.
+To begin, JDK 17 is required. 
 
 .. note::
 
-  Doma supports JDK 8 and later.
-  See also :ref:`Which version of JDK does Doma support?<which-version-of-jdk-does-doma-support>`.
+  It's important to note that Doma is compatible with JDK 8 onwards. 
+  For details on supported JDK versions, refer to the appropriate section.
+  :ref:`Which version of JDK does Doma support?<which-version-of-jdk-does-doma-support>`.
 
 Get sample project
 ==================
 
-Clone `getting-started <https://github.com/domaframework/getting-started>`_ repository and change the current directory:
+To obtain the sample project, clone the `getting-started <https://github.com/domaframework/getting-started>`_ 
+repository and navigate to the new directory using the following commands:
 
 .. code-block:: bash
 
   $ git clone https://github.com/domaframework/getting-started.git
   $ cd getting-started
 
-Make sure the following command is successful:
+Ensure successful project setup with:
 
 .. code-block:: bash
 
@@ -38,21 +40,15 @@ Make sure the following command is successful:
 
 .. note::
 
-  In Windows, run ``gradlew eclipse`` instead of ``./gradlew eclipse``.
+  For Windows users, execute ``gradlew build``.
 
 Sample project structure
 ========================
 
-`getting-started` is a Gradle multi-project and it has following two sub-projects:
+The getting-started sample is a Gradle multi-project consisting of java-8 and java-17 sub-projects. 
+Both are similar, with the primary difference being how SQL statements are stored: in files for java-8 and as Text Blocks in java-17.
 
-- java-8
-- java-15
-
-These projects are almost the same.
-However the java-8 project stores SQL statements in files
-and the java-15 project stores them in Text Blocks.
-
-Below, we will only talk about the java-15 project.
+This guide will focus on the java-17 project.
 
 Import project to your IDE
 ==========================
@@ -60,29 +56,19 @@ Import project to your IDE
 Eclipse
 -------
 
-We tested Eclipse 2020-09.
-Note that you need `a patch <https://marketplace.eclipse.org/content/java-15-support-eclipse-2020-09-417>`_
-to enable Java 15 features.
-See also `this movie <https://www.youtube.com/watch?v=-qsW-0Ztg_U>`_.
-
-Before importing, generate eclipse files as follows:
-
-.. code-block:: bash
-
-  $ ./gradlew eclipse
-
-Then import the java-8 and java-15 projects to your workspace.
+Tested on Eclipse 4.23.0. Generate Eclipse project files using ``./gradlew eclipse`` 
+before importing the java-8 and java-17 projects into your workspace.
 
 .. note::
 
-  If you want to store SQL statements in files, `Doma Tools <https://github.com/domaframework/doma-tools>`_ can help you.
+  If you want to store SQL statements in files, 
+  `Doma Tools <https://github.com/domaframework/doma-tools>`_ can help you.
 
 IntelliJ IDEA
 -------------
 
-We tested IntelliJ IDEA Community 2020.2.
-
-Import `getting-started` to your IDEA as a Gradle project.
+Tested with IntelliJ IDEA Community 2023.3.4.
+Import the getting-started project as a Gradle project. 
 
 .. note::
 
@@ -92,29 +78,25 @@ Import `getting-started` to your IDEA as a Gradle project.
 Programming styles
 ==================
 
-Doma supports two programming styles as follows:
+Doma supports two programming styles: DSL and DAO. 
 
-- DSL style
-- DAO style
+The DSL style utilizes the Criteria API for building type-safe SQL statements, offering several benefits, 
+such as not requiring reflection and supporting various types of associations (one-to-many, many-to-one, one-to-one). 
 
-DSL style allows you to build type-safe SQL statements with the Criteria API.
-DAO style allows you to map SQL statements to methods defined in the Java interface.
+The DAO style, on the other hand, maps SQL statements to Java interface methods. 
 
-We recommend you prefer the DSL style.
-This is because the Criteria API, which enables the DSL style, has many advantages.
-For example, the Criteria API does not use reflection.
-It also supports associations such as one-to-many, many-to-one, one-to-one.
+It's recommended to use the DSL style due to the Criteria API's advantages.
 
 DSL style
 =========
 
-You can find some examples in ``boilerplate.java15.repository.EmployeeRepository``.
-See :doc:`criteria-api` for more information.
+In the DSL style, you work with examples in the ``boilerplate.java17.repository.EmployeeRepository`` 
+and the :doc:`criteria-api` for operations. 
 
 SELECT
 ------
 
-To issue a SELECT statement and get results as Java objects, write as follows:
+To execute a SELECT query and retrieve Java object results, follow this example:
 
 .. code-block:: java
 
@@ -123,10 +105,9 @@ To issue a SELECT statement and get results as Java objects, write as follows:
     return entityql.from(e).where(c -> c.eq(e.id, id)).fetchOne();
   }
 
-``Employee_`` is metamodel class of ``Employee`` entity class.
-Metamodel classes are generated by annotation processing.
+You'll use a metamodel class, like ``Employee_`` for ``Employee```, which is auto-generated through annotation processing. 
 
-The instance ``entityql`` of ``Entityql`` class is an entry point of the Criteria API.
+The ``entityql`` instance from the ``Entityql`` class serves as the Criteria API's starting point. 
 
 The above code generates the following SQL statement:
 
@@ -173,13 +154,14 @@ To issue an UPDATE statement, write as follows:
 DAO style
 =========
 
-You can find some examples in ``boilerplate.java15.dao.EmployeeDao``.
+You can find some examples in ``boilerplate.java17.dao.EmployeeDao``.
 See :doc:`dao` and :doc:`sql` for more information.
 
 SELECT (DAO)
 ------------
 
-To issue a SELECT statement and get results as Java objects, write as follows:
+In the DAO style, for issuing a SELECT statement to retrieve Java objects, 
+use the ``@Sql`` annotation with Text Blocks for SQL templates:
 
 .. code-block:: java
 
@@ -193,8 +175,6 @@ To issue a SELECT statement and get results as Java objects, write as follows:
         """)
     @Select
     Employee selectById(Integer id);
-
-You can write the SQL template in ``@Sql`` using Text Block.
 
 This SQL template contains two special expressions, ``/*%expand*/`` and ``/* id */``.
 In process of SQL template, ``/*%expand*/`` and the following ``*`` are replaced with column list.
