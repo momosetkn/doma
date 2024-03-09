@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../getting-started.rst:3
 msgid "Getting started"
-msgstr ""
+msgstr "はじめよう"
 
 #: ../../getting-started.rst:6
 msgid "Contents"
@@ -75,7 +75,7 @@ msgstr "次のコマンドでプロジェクトのセットアップが成功し
 
 #: ../../getting-started.rst:43
 msgid "For Windows users, execute ``gradlew build``."
-msgstr "Windowsユーザーは、``gradlew build``を実行してください。"
+msgstr "Windowsユーザーは、``gradlew build`` を実行してください。"
 
 #: ../../getting-started.rst:46
 msgid "Sample project structure"
@@ -89,7 +89,7 @@ msgid ""
 "in java-17."
 msgstr ""
 "getting-"
-"startedのサンプルは、java-8とjava-17のサブプロジェクトからなるGradleのマルチプロジェクトです。両方とも似ていますが、主な違いはSQL文の保存方法です：java-8ではファイルに保存され、java-17ではテキストブロックとして保存されます。"
+"startedのサンプルは、java-8とjava-17のサブプロジェクトからなるGradleのマルチプロジェクトです。両方とも似ていますが、主な違いはSQL文の保存方法です。java-8ではファイルに保存され、java-17ではテキストブロックとして保存されます。"
 
 #: ../../getting-started.rst:51
 msgid "This guide will focus on the java-17 project."
@@ -109,8 +109,8 @@ msgid ""
 "eclipse`` before importing the java-8 and java-17 projects into your "
 "workspace."
 msgstr ""
-"Eclipse 4.23.0でテスト済みです。``./gradlew "
-"eclipse``を使用してEclipseプロジェクトファイルを生成し、java-8およびjava-17プロジェクトをワークスペースにインポートする前に実行してください。"
+"Eclipse 4.23.0でテスト済みです。 ``./gradlew eclipse`` "
+"を使用してEclipseプロジェクトファイルを生成し、java-8およびjava-17プロジェクトをワークスペースにインポートする前に実行してください。"
 
 #: ../../getting-started.rst:64
 msgid ""
@@ -179,8 +179,8 @@ msgid ""
 "``boilerplate.java17.repository.EmployeeRepository`` and the :doc:`criteria-"
 "api` for operations."
 msgstr ""
-"DSLスタイルでは、``boilerplate.java17.repository.EmployeeRepository``と:doc:`criteria-"
-"api`の例を使用して操作を行います。"
+"DSLスタイルでは、 ``boilerplate.java17.repository.EmployeeRepository`` と "
+":doc:`criteria-api` の例を使用して操作を行います。"
 
 #: ../../getting-started.rst:97
 msgid "SELECT"
