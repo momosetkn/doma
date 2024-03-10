@@ -1497,7 +1497,7 @@ msgstr ""
 # 27066ee33b8245ef9c1c6b7b1bc4a977
 #: ../../criteria-api.rst:1896
 msgid "`simple-examples <https://github.com/domaframework/simple-examples>`_"
-msgstr ""
+msgstr "`simple-examples <https://github.com/domaframework/simple-examples>`_"
 
 # b381454d27e04a26ba5a138a2b263c08
 #: ../../criteria-api.rst:1897
@@ -1505,6 +1505,8 @@ msgid ""
 "`spring-boot-jpetstore <https://github.com/domaframework/spring-boot-"
 "jpetstore>`_"
 msgstr ""
+"`spring-boot-jpetstore <https://github.com/domaframework/spring-boot-"
+"jpetstore>`_"
 
 # 005f4a8eeeba45098ce06b5e0577a674
 #: ../../criteria-api.rst:1898

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Doma\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 00:27+0900\n"
+"POT-Creation-Date: 2024-03-10 10:39+0900\n"
 "PO-Revision-Date: 2024-03-09 16:18+0000\n"
 "Last-Translator: Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024\n"
 "Language-Team: Japanese (https://app.transifex.com/domaframework/teams/189259/ja/)\n"
@@ -21,115 +21,146 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+# 9e3e98e5f2564e7eb3f1981b1f583489
 #: ../../index.rst:13
 msgid "Welcome to Doma 2"
 msgstr "Doma 2へようこそ"
 
+# 7313c3964e234a768ba7c27c3399a298
 #: ../../index.rst:15
 msgid ""
 "Doma 2 is a database access framework for Java 8+. Doma has various "
 "strengths:"
 msgstr "Doma 2はJava 8+向けのデータベースアクセスフレームワークです。Domaにはさまざまな強みがあります。"
 
+# 61c4a8d6aeae408a92dcfb5a3b28ebc2
 #: ../../index.rst:18
 msgid ""
 "Verifies and generates source code at compile time using annotation "
 "processing."
-msgstr "コンパイル時に注釈処理を使用して、ソースコードを検証および生成します。"
+msgstr "コンパイル時にアノテーションプロセッサーを使用して、ソースコードを検証および生成します。"
 
+# bf2149511853478ebaab00ef98cf9078
 #: ../../index.rst:19
 msgid "Provides type-safe Criteria API."
 msgstr "型安全なCriteria APIを提供します。"
 
+# dea72cdbe85e491886d1decbe3c15ff2
 #: ../../index.rst:20
 msgid "Supports Kotlin."
-msgstr "Kotlinに対応しています。"
+msgstr "Kotlinをサポートします"
 
+# 6a6db67aa3284365b40cc741e3b2a0fa
 #: ../../index.rst:21
 msgid "Uses SQL templates, called \"two-way SQL\"."
-msgstr "\"two-way SQL\"と呼ばれるSQLテンプレートを使用します。"
+msgstr "\"two-way SQL\"と呼ばれるSQLテンプレートをサポートします。"
 
+# ff54bfa1807d496384fe8075cdd0a5ad
 #: ../../index.rst:22
 msgid "Has no dependence on other libraries."
 msgstr "他のライブラリに依存しません。"
 
+# 694abb2f0c5f4c7e89534f8c454a70a4
 #: ../../index.rst:24
 msgid "This document consists of following sections:"
-msgstr "このドキュメントは、以下のセクションで構成されています："
+msgstr "このドキュメントは、以下のセクションで構成されています。"
 
+# 4f9ae28ce96a4d8db4e5a3fac021a6e9
 #: ../../index.rst:26
 msgid "`User Documentation`_"
-msgstr ""
+msgstr "`ユーザー向けドキュメンテーション`_"
 
+# 06c568739df34c49874dc4fe525cc7f8
 #: ../../index.rst:27
 msgid "`About Doma`_"
-msgstr ""
+msgstr "`Domaについて`_"
 
+# 64a6c37cffa048aaa515228260bff440
 #: ../../index.rst:28
 msgid "`Links`_"
-msgstr ""
+msgstr "`リンク集`_"
 
+# d5eb84c35e1d448fbb8fcb2716b9b38b
 #: ../../index.rst:30
 msgid "Help improve our documentation"
-msgstr "私たちのドキュメントの改善に協力してください"
+msgstr "ドキュメントの改善に協力をお願いします"
 
+# b2e3d9bdcccc426ab20d3a4ebd3e95b5
 #: ../../index.rst:33
 msgid "Have feedback or a question? Found a typo?"
-msgstr "フィードバックや質問はありますか？タイポを見つけましたか？"
+msgstr "フィードバックや質問はありますか？ タイポを修正いただけますか？"
 
+# 3bc75e2ec1aa45919580c45d5aca2be4
 #: ../../index.rst:35
 msgid ""
 "Please add an issue or pull request to "
 "https://github.com/domaframework/doma-docs and we’ll get back to you."
 msgstr ""
-"https://github.com/domaframework/doma-docs に問題やプルリクエストを追加してください。ご連絡いたします。"
+"https://github.com/domaframework/doma-docs の Issueや Pull Request に登録ください。"
 
+# 7d320255b9f54a1ab1375308defd191a
 #: ../../index.rst:39
 msgid "User Documentation"
-msgstr "ユーザー ドキュメント"
+msgstr "ユーザー向けドキュメンテーション"
 
+# 43d683edb1044fdba9aa29e09c42d7f6
 #: ../../index.rst:65
 msgid "About Doma"
 msgstr "Domaについて"
 
+# 961d250d017b499183b047c33e61b61d
 #: ../../index.rst:73
 msgid "Links"
-msgstr "リンク"
+msgstr "リンク集"
 
+# 82b8289b00264a9393d056fd7c8e36d6
 #: ../../index.rst:75
 msgid "`News and announcements <https://twitter.com/domaframework>`_"
-msgstr ""
+msgstr "`ニュースやアナウンス <https://twitter.com/domaframework>`_"
 
+# ce67136f9fda448bb407c09c3271099f
 #: ../../index.rst:76
 msgid "`GitHub repository <https://github.com/domaframework/doma>`_"
-msgstr ""
+msgstr "`GitHub リポジトリ <https://github.com/domaframework/doma>`_"
 
+# d27b94226b3641ebbd6f4fb7ab3a55ab
 #: ../../index.rst:77
 msgid "`Release Notes <https://github.com/domaframework/doma/releases>`_"
-msgstr ""
+msgstr "`リリースノート <https://github.com/domaframework/doma/releases>`_"
 
+# 5a2f013785cb4c9f9e13f695b4f5752d
 #: ../../index.rst:78
 msgid ""
 "`JavaDoc <https://www.javadoc.io/doc/org.seasar.doma/doma-"
 "core/latest/index.html>`_"
 msgstr ""
+"`JavaDoc <https://www.javadoc.io/doc/org.seasar.doma/doma-"
+"core/latest/index.html>`_"
 
+# a983f4adb1c94f96bf127b61099787ab
 #: ../../index.rst:79
 msgid "`Examples <https://github.com/domaframework/simple-examples>`_"
-msgstr ""
+msgstr "`サンプルプロジェクト <https://github.com/domaframework/simple-examples>`_"
 
+# e95759ce8b4d4e73909f3d4c0968d39f
 #: ../../index.rst:80
 msgid ""
 "`Doma Compile Plugin <https://github.com/domaframework/doma-compile-"
 "plugin>`_"
 msgstr ""
+"`Doma Compile Plugin <https://github.com/domaframework/doma-compile-"
+"plugin>`_"
 
+# 62a64a7f79134d10826ee5c9ce609e4b
 #: ../../index.rst:81
 msgid ""
 "`Doma CodeGen Plugin <https://github.com/domaframework/doma-codegen-"
 "plugin>`_"
 msgstr ""
+"`Doma CodeGen Plugin <https://github.com/domaframework/doma-codegen-"
+"plugin>`_"
 
+# 1dca3ce84f1a4e9a9d52756bf9eff3be
 #: ../../index.rst:82
 msgid "`Doma version 1 <http://doma.seasar.org/>`_"
-msgstr ""
+msgstr "`Doma v1.x のWebサイト <http://doma.seasar.org/>`_"
