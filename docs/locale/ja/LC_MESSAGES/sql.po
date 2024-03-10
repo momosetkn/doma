@@ -42,8 +42,8 @@ msgid ""
 "Doma supports SQL templates, called \"two-way SQL\". \"Two-way SQL\" means "
 "that the SQL templates can be used in two ways:"
 msgstr ""
-"Doma は、「双方向 SQL」と呼ばれる SQL テンプレートをサポートしています。 「双方向 SQL」は、SQL テンプレートを次の 2 "
-"つの方法で使用できることを意味します。"
+"Doma は、「two-way  SQL」と呼ばれる SQL テンプレートをサポートしています。 「two-way  SQL」は、SQL "
+"テンプレートを次の 2 つの方法で使用できることを意味します。"
 
 # 887e2a9a8b50421eb6db4fc447316d5c
 #: ../../sql.rst:14
