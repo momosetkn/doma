@@ -51,7 +51,7 @@ msgstr ""
 # 2653c56ecb1c439e90eba1944fb6f248
 #: ../../kotlin-support.rst:16
 msgid "Entity classes"
-msgstr ""
+msgstr "エンティティクラス"
 
 # de33cbed2cba408a97260c2b946477ad
 #: ../../kotlin-support.rst:18
@@ -110,7 +110,7 @@ msgstr ""
 # 2d53272c4f024b7eb16edaf36946f9e6
 #: ../../kotlin-support.rst:70
 msgid "Dao interfaces"
-msgstr ""
+msgstr "Dao インターフェース"
 
 # 920488ea3ed64852bda0a502d46c8406
 #: ../../kotlin-support.rst:72

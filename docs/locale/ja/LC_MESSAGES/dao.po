@@ -24,7 +24,7 @@ msgstr ""
 # e2a91c5bb3b3476d8fdfe8aac75e7ddf
 #: ../../dao.rst:3
 msgid "Dao interfaces"
-msgstr ""
+msgstr "Daoインターフェース"
 
 # 40d1b39894bb4ab7a7a5a5c478fcb784
 #: ../../dao.rst:6
@@ -34,32 +34,32 @@ msgstr "コンテンツ"
 # 1e3633e467684ff8a801df530816ca08
 #: ../../dao.rst:8
 msgid "Data Access Object (Dao) is interface for access to database."
-msgstr ""
+msgstr "Data Access Object (Dao) は、データベースにアクセスするためのインターフェイスです。"
 
 # 6e6443924c074f838a4d247bc4713638
 #: ../../dao.rst:11
 msgid "Dao definition"
-msgstr ""
+msgstr "Dao interface の定義"
 
 # 737bb3305b244f2c8c90d5e03929f187
 #: ../../dao.rst:13
 msgid "Dao is defined as interface annotated ``@Dao``."
-msgstr ""
+msgstr "Dao は ``@Dao`` アノテーションが付けられたインターフェースとして定義されます。"
 
 # 043fef5246d546e28f7db240e470ff95
 #: ../../dao.rst:15
 msgid "Class implemented dao interface is generated in compile time by apt."
-msgstr ""
+msgstr "クラス実装された Dao インターフェイスは、コンパイル時に アノテーションプロセッサー によって生成されます。"
 
 # fd172f3f7df2470f9c352a0700490e8a
 #: ../../dao.rst:18
 msgid "Query definition"
-msgstr ""
+msgstr "クエリ定義"
 
 # d5e18b6c9e074a9ab917484a0844d24e
 #: ../../dao.rst:20
 msgid ":doc:`query/index` can be defined using annotation."
-msgstr ""
+msgstr ":doc:`query/index` は、アノテーション を使用して定義できます。"
 
 # e82598518e58461ebd7c1300cfb2adbb
 #: ../../dao.rst:22
@@ -67,16 +67,17 @@ msgid ""
 "You use :doc:`query-builder/index` in `default method`_ if you want to build"
 " query freely in Java code."
 msgstr ""
+"Java コードでクエリを自由に構築したい場合は、`デフォルト メソッド`_ で :doc:`query-builder/index` を使用します。"
 
 # a52355f6f4f64604bbcf5d04f6762487
 #: ../../dao.rst:27
 msgid "Default method"
-msgstr ""
+msgstr "デフォルト メソッド"
 
 # 223389761c4d4be0be2e335bd24fcb31
 #: ../../dao.rst:29
 msgid "You can write java code freely in default method."
-msgstr ""
+msgstr "デフォルト メソッドではJavaコードを自由に記述できます。"
 
 # 424fede21e5b477b898a0c9700334b9b
 #: ../../dao.rst:31
@@ -84,6 +85,8 @@ msgid ""
 "You can get ``Config`` instance associated dao instance if you call "
 "``Config.get`` with argument dao instance."
 msgstr ""
+"Dao インスタンスを引数として ``Config.get`` を呼び出すと、Dao インスタンスに関連付けられた ``Config`` "
+"インスタンスを取得できます。"
 
 # 3fedd81c3eab42d487411dc5edbac605
 #: ../../dao.rst:48
@@ -98,6 +101,8 @@ msgid ""
 " managed by DI container then it should be controlled to instantiate "
 "implementation class by DI container."
 msgstr ""
+"実装クラスはコンパイル時に アノテーションプロセッサー によって生成されます。実装クラスはインスタンス化して使用できますが、``Config`` が "
+"DI コンテナで管理されている場合はDI コンテナでDaoの実装クラスをインスタンス化するように制御する必要があります。"
 
 # e6a2278997ca4fa7af615d595abf572a
 #: ../../dao.rst:59
@@ -106,6 +111,8 @@ msgid ""
 "``Impl``. Please refer :doc:`annotation-processing` to change package and "
 "suffix."
 msgstr ""
+"デフォルトでは、実装クラス名はインターフェース名に接尾辞 ``Impl`` "
+"を付けたものになります。パッケージとサフィックスを変更するには、:doc:`annotation-processing` を参照してください。"
 
 # 17ca00b0be3d47febf142c97a750b9a6
 #: ../../dao.rst:62
@@ -114,11 +121,13 @@ msgid ""
 "configuration in ``config`` element of ``@Dao``. But it can instantiate with"
 " ``DataSource`` specified explicitly."
 msgstr ""
+"デフォルトのコンストラクタを使用する場合、 ``DataSource`` は ``@Dao`` の ``config`` "
+"要素の設定によって決定されます。ただし、明示的に指定された ``DataSource`` でインスタンス化することはできます。"
 
 # 3eabee917a7c4d81ad145a16be2b7bf4
 #: ../../dao.rst:71
 msgid "And also, it can instantiate with ``Connection`` specified explicitly."
-msgstr ""
+msgstr "また、明示的に ``Connection`` を指定してインスタンス化することもできます。"
 
 # 8735172029e84e43b2ee4af62ddcc197
 #: ../../dao.rst:79
@@ -126,3 +135,5 @@ msgid ""
 "Dao interface is no need to define as one to one with entity class. One dao "
 "interface can handle more than one entity classes."
 msgstr ""
+"Daoインターフェースはエンティティクラスと1対1で定義する必要はありません。 1 つの Dao インターフェイスで複数のエンティティ "
+"クラスを処理できます。"
