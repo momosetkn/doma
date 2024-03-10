@@ -30,18 +30,18 @@ The group id and artifact id of those artifacts are as follows:
 Build with Gradle
 =================
 
-Write your build.gradle as follows:
+Write your build.gradle.kts as follows:
 
-.. code-block:: groovy
+.. code-block:: kotlin
 
   dependencies {
-      implementation "org.seasar.doma:doma-core:2.54.0"
-      annotationProcessor "org.seasar.doma:doma-processor:2.54.0"
+      implementation("org.seasar.doma:doma-core:2.56.0")
+      annotationProcessor("org.seasar.doma:doma-processor:2.56.0")
   }
 
-To simplify your build.script, we recommend that you use the `Doma Compile Plugin`_.
+To simplify your build.script.kts, we recommend that you use the `Doma Compile Plugin`_.
 
-See build.gradle in the `simple-boilerplate`_ repository as an example.
+See build.gradle.kts in the `getting-started`_ repository as an example.
 
 Build with IntelliJ IDEA
 ========================
@@ -56,11 +56,10 @@ Build with Eclipse
 Generate eclipse setting files with Gradle, and then import your project into Eclipse.
 To generate the setting files, run ``gradle eclipse``.
 
-To simplify your build.script, we recommend that you use the `Doma Compile Plugin`_ and the `AptEclipsePlugin`_.
+To simplify your build.script.kts, we recommend that you use the `com.diffplug.eclipse.apt`_.
 
-See build.gradle in the `simple-boilerplate`_ repository as an example.
-
+See build.gradle in the `getting-started`_ repository as an example.
 
 .. _Doma Compile Plugin: https://github.com/domaframework/doma-compile-plugin
-.. _AptEclipsePlugin: https://plugins.gradle.org/plugin/com.diffplug.eclipse.apt
-.. _simple-boilerplate: https://github.com/domaframework/simple-boilerplate
+.. _com.diffplug.eclipse.apt: https://plugins.gradle.org/plugin/com.diffplug.eclipse.apt
+.. _getting-started: https://github.com/domaframework/getting-started
