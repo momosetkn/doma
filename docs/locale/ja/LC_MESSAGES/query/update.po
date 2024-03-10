@@ -24,7 +24,7 @@ msgstr ""
 # 898214d5c5e84b20b0f1f6fca06aa538
 #: ../../query/update.rst:3
 msgid "Update"
-msgstr ""
+msgstr "更新"
 
 # 6ac0aa3c66ca4f269bab3a8b32baaf59
 #: ../../query/update.rst:6

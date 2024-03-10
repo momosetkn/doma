@@ -24,7 +24,7 @@ msgstr ""
 # 47f6f425e4314fefbaa94459b4b97033
 #: ../../query/insert.rst:3
 msgid "Insert"
-msgstr ""
+msgstr "追加"
 
 # 569920a9505d44dc9d5629fad3fcdf2d
 #: ../../query/insert.rst:6

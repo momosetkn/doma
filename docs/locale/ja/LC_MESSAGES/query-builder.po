@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../query-builder/index.rst:3
 msgid "Query builders"
-msgstr ""
+msgstr "クエリビルダー"
 
 #: ../../query-builder/index.rst:6
 msgid "Contents"
@@ -31,98 +31,100 @@ msgstr "コンテンツ"
 
 #: ../../query-builder/index.rst:8
 msgid "The package ``org.seasar.doma.jdbc.builder`` provides SQL builders."
-msgstr ""
+msgstr "パッケージ ``org.seasar.doma.jdbc.builder`` は SQL ビルダーを提供します。"
 
 #: ../../query-builder/index.rst:10
 msgid ""
 "When it is difficult to build a SQL statement with :doc:`../query/index`, "
 "consider to use the SQL builders in :ref:`dao-default-method`."
 msgstr ""
+":doc:`../query/index` を使用して SQL ステートメントを構築するのが難しい場合は、:ref:`dao-default-"
+"method` で SQL ビルダーを使用することを検討してください。"
 
 #: ../../query-builder/index.rst:14
 msgid "Search"
-msgstr ""
+msgstr "検索"
 
 #: ../../query-builder/index.rst:32
 msgid "You can get result of the SQL execution in various ways."
-msgstr ""
+msgstr "SQL の実行結果はさまざまな方法で取得できます。"
 
 #: ../../query-builder/index.rst:35
 msgid "Single record search"
-msgstr ""
+msgstr "単一レコードの検索"
 
 #: ../../query-builder/index.rst:37
 msgid "getScalarSingleResult"
-msgstr ""
+msgstr "getScalarSingleResult"
 
 #: ../../query-builder/index.rst:38
 msgid "getOptionalScalarSingleResult"
-msgstr ""
+msgstr "getOptionalScalarSingleResult"
 
 #: ../../query-builder/index.rst:39
 msgid "getEntitySingleResult"
-msgstr ""
+msgstr "getEntitySingleResult"
 
 #: ../../query-builder/index.rst:40
 msgid "getOptionalEntitySingleResult"
-msgstr ""
+msgstr "getOptionalEntitySingleResult"
 
 #: ../../query-builder/index.rst:41
 msgid "getMapSingleResult"
-msgstr ""
+msgstr "getMapSingleResult"
 
 #: ../../query-builder/index.rst:42
 msgid "getOptionalMapSingleResult"
-msgstr ""
+msgstr "getOptionalMapSingleResult"
 
 #: ../../query-builder/index.rst:45
 msgid "Multiple records search"
-msgstr ""
+msgstr "複数レコードの検索"
 
 #: ../../query-builder/index.rst:47
 msgid "getScalarResultList"
-msgstr ""
+msgstr "getScalarResultList"
 
 #: ../../query-builder/index.rst:48
 msgid "getOptionalScalarResultList"
-msgstr ""
+msgstr "getOptionalScalarResultList"
 
 #: ../../query-builder/index.rst:49
 msgid "getEntityResultList"
-msgstr ""
+msgstr "getEntityResultList"
 
 #: ../../query-builder/index.rst:50
 msgid "getMapResultList"
-msgstr ""
+msgstr "getMapResultList"
 
 #: ../../query-builder/index.rst:53
 msgid "Stream search"
-msgstr ""
+msgstr "ストリーム検索"
 
 #: ../../query-builder/index.rst:55
 msgid "streamAsScalar"
-msgstr ""
+msgstr "streamAsScalar"
 
 #: ../../query-builder/index.rst:56
 msgid "streamAsOptionalScalar"
-msgstr ""
+msgstr "streamAsOptionalScalar"
 
 #: ../../query-builder/index.rst:57
 msgid "streamAsEntity"
-msgstr ""
+msgstr "streamAsEntity"
 
 #: ../../query-builder/index.rst:58
 msgid "streamAsMap"
-msgstr ""
+msgstr "streamAsMap"
 
 #: ../../query-builder/index.rst:61
 msgid "Insert"
-msgstr ""
+msgstr "追加"
 
 #: ../../query-builder/index.rst:74
 msgid "Update"
-msgstr ""
+msgstr "更新"
 
 #: ../../query-builder/index.rst:88
 msgid "Delete"
-msgstr ""
+msgstr "削除"

@@ -24,7 +24,7 @@ msgstr ""
 # 9d8a697a626741449c4236af014d2bf9
 #: ../../query/select.rst:3
 msgid "Search"
-msgstr ""
+msgstr "検索"
 
 # 088a5bc04d2c4fefb77800d4d699906b
 #: ../../query/select.rst:6
@@ -200,7 +200,7 @@ msgstr ""
 # f104046b5db844538164d4d4cad11044
 #: ../../query/select.rst:100
 msgid "Single record search"
-msgstr ""
+msgstr "単一レコードの検索"
 
 # 53c37016870e4a0ca1a033473beef106
 #: ../../query/select.rst:102
@@ -281,7 +281,7 @@ msgstr ""
 # d21bbf6016ce4e74b241c1a1437f9840
 #: ../../query/select.rst:148
 msgid "Stream search"
-msgstr ""
+msgstr "ストリーム検索"
 
 # 8dbe9373f6f24095952ec9b1ff93b1ae
 #: ../../query/select.rst:150

@@ -24,7 +24,7 @@ msgstr ""
 # c2ae03084f7e43ba89fb430e404d7978
 #: ../../query/delete.rst:3
 msgid "Delete"
-msgstr ""
+msgstr "削除"
 
 # 08b31269dae44e6382e0a88dd541e50e
 #: ../../query/delete.rst:6

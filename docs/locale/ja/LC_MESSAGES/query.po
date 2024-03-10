@@ -682,7 +682,7 @@ msgstr ""
 
 #: ../../query/delete.rst:3
 msgid "Delete"
-msgstr ""
+msgstr "削除"
 
 #: ../../query/delete.rst:8
 msgid "Annotate with ``@Delete`` to Dao method for execute delete."
@@ -1166,7 +1166,7 @@ msgstr ""
 
 #: ../../query/insert.rst:3
 msgid "Insert"
-msgstr ""
+msgstr "追加"
 
 #: ../../query/insert.rst:8
 msgid "Annotate with ``@Insert`` to Dao method for execute insert."
@@ -1631,7 +1631,7 @@ msgstr ""
 
 #: ../../query/select.rst:3
 msgid "Search"
-msgstr ""
+msgstr "検索"
 
 #: ../../query/select.rst:8
 msgid "Annotate with ``@Select`` to Dao method for execute search."
@@ -1724,7 +1724,7 @@ msgstr ""
 
 #: ../../query/select.rst:100
 msgid "Single record search"
-msgstr ""
+msgstr "単一レコードの検索"
 
 #: ../../query/select.rst:102
 msgid ""
@@ -1773,7 +1773,7 @@ msgstr ""
 
 #: ../../query/select.rst:148
 msgid "Stream search"
-msgstr ""
+msgstr "ストリーム検索"
 
 #: ../../query/select.rst:150
 msgid ""
@@ -2223,7 +2223,7 @@ msgstr ""
 
 #: ../../query/update.rst:3
 msgid "Update"
-msgstr ""
+msgstr "更新"
 
 #: ../../query/update.rst:8
 msgid "Annotate with ``@Update`` to Dao method for execute update."
