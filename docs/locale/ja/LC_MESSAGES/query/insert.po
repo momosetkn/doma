@@ -138,7 +138,7 @@ msgstr ""
 # 689363392e3d48749e12fbf611ee876a
 #: ../../query/insert.rst:73
 msgid "exclude"
-msgstr ""
+msgstr "exclude"
 
 # 283871de84e14702929f324194a5cb07
 #: ../../query/insert.rst:75
@@ -152,7 +152,7 @@ msgstr ""
 # fd33d69c941e4aeda9808cb6a68e6a3f
 #: ../../query/insert.rst:84
 msgid "include"
-msgstr ""
+msgstr "include"
 
 # c179c42709384121afec96bfe51a97d1
 #: ../../query/insert.rst:86
@@ -173,7 +173,7 @@ msgstr ""
 # a4d57e65457243888f303ecb42318294
 #: ../../query/insert.rst:97
 msgid "excludeNull"
-msgstr ""
+msgstr "excludeNull"
 
 # 664560feec66440c960b0d9c915c63dd
 #: ../../query/insert.rst:99

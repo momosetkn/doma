@@ -123,7 +123,7 @@ msgstr ""
 #: ../../query/delete.rst:58 ../../query/delete.rst:124
 #: ../../query/update.rst:64 ../../query/update.rst:229
 msgid "ignoreVersion"
-msgstr ""
+msgstr "ignoreVersion"
 
 #: ../../query/batch-delete.rst:55
 msgid ""
@@ -137,7 +137,7 @@ msgstr ""
 #: ../../query/delete.rst:69 ../../query/delete.rst:135
 #: ../../query/update.rst:77 ../../query/update.rst:241
 msgid "suppressOptimisticLockException"
-msgstr ""
+msgstr "suppressOptimisticLockException"
 
 #: ../../query/batch-delete.rst:66
 msgid ""
@@ -364,7 +364,7 @@ msgstr ""
 #: ../../query/batch-insert.rst:73 ../../query/batch-update.rst:92
 #: ../../query/insert.rst:73 ../../query/update.rst:98
 msgid "exclude"
-msgstr ""
+msgstr "exclude"
 
 #: ../../query/batch-insert.rst:75
 msgid ""
@@ -378,7 +378,7 @@ msgstr ""
 #: ../../query/batch-insert.rst:84 ../../query/batch-update.rst:103
 #: ../../query/insert.rst:84 ../../query/update.rst:109
 msgid "include"
-msgstr ""
+msgstr "include"
 
 #: ../../query/batch-insert.rst:86
 msgid ""
@@ -1255,7 +1255,7 @@ msgstr ""
 
 #: ../../query/insert.rst:97 ../../query/update.rst:121
 msgid "excludeNull"
-msgstr ""
+msgstr "excludeNull"
 
 #: ../../query/insert.rst:99
 msgid ""

@@ -146,7 +146,7 @@ msgstr ""
 # 3aea63f829f34045ac04e124b78aeef3
 #: ../../query/batch-insert.rst:73
 msgid "exclude"
-msgstr ""
+msgstr "exclude"
 
 # 0f86b1caf54d485082d5dd79bfba9c29
 #: ../../query/batch-insert.rst:75
@@ -161,7 +161,7 @@ msgstr ""
 # 87b828fec56e4623ba9a2a90c5c61ce7
 #: ../../query/batch-insert.rst:84
 msgid "include"
-msgstr ""
+msgstr "include"
 
 # d83fbe6e7b364effb8b10d4973971cd8
 #: ../../query/batch-insert.rst:86

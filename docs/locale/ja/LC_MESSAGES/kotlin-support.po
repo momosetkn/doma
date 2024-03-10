@@ -235,4 +235,4 @@ msgstr ""
 # 5c213851d37a4183927f4cc2ab42d681
 #: ../../kotlin-support.rst:192
 msgid "`kotlin-sample <https://github.com/domaframework/kotlin-sample>`_"
-msgstr ""
+msgstr "`kotlin-sample <https://github.com/domaframework/kotlin-sample>`_"

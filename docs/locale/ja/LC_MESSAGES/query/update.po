@@ -125,7 +125,7 @@ msgstr ""
 # fef8cbac4fd54b07b8b4483a2fefd14c
 #: ../../query/update.rst:64 ../../query/update.rst:229
 msgid "ignoreVersion"
-msgstr ""
+msgstr "ignoreVersion"
 
 # 09ce81ddde874b9b9ad7523c1ac239c5
 #: ../../query/update.rst:66
@@ -141,7 +141,7 @@ msgstr ""
 # c4762e848e194a0495c873274720730b
 #: ../../query/update.rst:77 ../../query/update.rst:241
 msgid "suppressOptimisticLockException"
-msgstr ""
+msgstr "suppressOptimisticLockException"
 
 # b3729ae4189d4d56889f949f06e4b4fb
 #: ../../query/update.rst:79
@@ -174,7 +174,7 @@ msgstr ""
 # 6abf6807ac554a2ca30f468d4f8e22f3
 #: ../../query/update.rst:98
 msgid "exclude"
-msgstr ""
+msgstr "exclude"
 
 # 02e97a9fff8f400bafde89c8266e7b77
 #: ../../query/update.rst:100
@@ -188,7 +188,7 @@ msgstr ""
 # 707f012f3aed49de8252e594822b15bc
 #: ../../query/update.rst:109
 msgid "include"
-msgstr ""
+msgstr "include"
 
 # eebfbb6c3d314563a0914923713e5654
 #: ../../query/update.rst:111
@@ -204,7 +204,7 @@ msgstr ""
 # 249015ca48ab46978e9ecec560c70d92
 #: ../../query/update.rst:121
 msgid "excludeNull"
-msgstr ""
+msgstr "excludeNull"
 
 # bcf1ede4e54b4c4a8e62f1949760d862
 #: ../../query/update.rst:123

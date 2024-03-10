@@ -129,7 +129,7 @@ msgstr ""
 # 2a17746e73ff45feb6c20c163ecaf89e
 #: ../../query/batch-update.rst:58 ../../query/batch-update.rst:205
 msgid "ignoreVersion"
-msgstr ""
+msgstr "ignoreVersion"
 
 # 6cdbdb7a2c4d479caa059dbbeccac349
 #: ../../query/batch-update.rst:60
@@ -145,7 +145,7 @@ msgstr ""
 # 57954c9690694ba3ae92315efe922d2d
 #: ../../query/batch-update.rst:71 ../../query/batch-update.rst:217
 msgid "suppressOptimisticLockException"
-msgstr ""
+msgstr "suppressOptimisticLockException"
 
 # 205d10bf7043467f8dd1c96aeb060785
 #: ../../query/batch-update.rst:73
@@ -179,7 +179,7 @@ msgstr ""
 # ee64395fdde445e5bba842f0f53e2db7
 #: ../../query/batch-update.rst:92
 msgid "exclude"
-msgstr ""
+msgstr "exclude"
 
 # 678754a7cb3a4b13ab4f1f976e411fa1
 #: ../../query/batch-update.rst:94
@@ -194,7 +194,7 @@ msgstr ""
 # f6a1e8dc92924c9489329310be3e61f0
 #: ../../query/batch-update.rst:103
 msgid "include"
-msgstr ""
+msgstr "include"
 
 # 7d5b1dcc149f450987693e71485ce31d
 #: ../../query/batch-update.rst:105

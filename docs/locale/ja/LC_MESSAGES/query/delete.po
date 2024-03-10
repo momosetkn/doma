@@ -122,7 +122,7 @@ msgstr ""
 # 24f17955b74e4d609700534e468c4b74
 #: ../../query/delete.rst:58 ../../query/delete.rst:124
 msgid "ignoreVersion"
-msgstr ""
+msgstr "ignoreVersion"
 
 # 2ad5413e56d0490da08a538534863f02
 #: ../../query/delete.rst:60
@@ -136,7 +136,7 @@ msgstr ""
 # 3c49146d7a4d447da4eed9e4f4822127
 #: ../../query/delete.rst:69 ../../query/delete.rst:135
 msgid "suppressOptimisticLockException"
-msgstr ""
+msgstr "suppressOptimisticLockException"
 
 # 4c4ebbb16c5e4b0b928157985ff10ba8
 #: ../../query/delete.rst:71

@@ -127,7 +127,7 @@ msgstr ""
 # 9c985a69c30f4abbac80d2bc2ce03109
 #: ../../query/batch-delete.rst:53 ../../query/batch-delete.rst:117
 msgid "ignoreVersion"
-msgstr ""
+msgstr "ignoreVersion"
 
 # cdedd6ee2fc64c138946a6e946a4c320
 #: ../../query/batch-delete.rst:55
@@ -141,7 +141,7 @@ msgstr ""
 # 194610ce980440febe37d7a65da95748
 #: ../../query/batch-delete.rst:64 ../../query/batch-delete.rst:128
 msgid "suppressOptimisticLockException"
-msgstr ""
+msgstr "suppressOptimisticLockException"
 
 # 68ff85730f6a4de694bb1403678f9637
 #: ../../query/batch-delete.rst:66
