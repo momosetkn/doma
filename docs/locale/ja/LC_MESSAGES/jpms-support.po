@@ -65,7 +65,7 @@ msgstr ""
 # 6737908845ed4e8589fd6b74d82c295b
 #: ../../jpms-support.rst:21
 msgid "doma-core"
-msgstr ""
+msgstr "doma-core"
 
 # 2292accf2b70455e82e96250bb29455a
 #: ../../jpms-support.rst:21
@@ -85,7 +85,7 @@ msgstr ""
 # 89acba5071cb489fb84c441276e19a22
 #: ../../jpms-support.rst:25
 msgid "doma-processor"
-msgstr ""
+msgstr "doma-processor"
 
 # 8f89b6dffdb34999952c131e9fbc3811
 #: ../../jpms-support.rst:25
