@@ -34,7 +34,7 @@ msgstr "コンテンツ"
 # 4a663936f7674e529228194a82bbe518
 #: ../../query/select.rst:8
 msgid "Annotate with ``@Select`` to Dao method for execute search."
-msgstr ""
+msgstr "検索を実行するDaoメソッドに ``@Select`` アノテーションを付けます。"
 
 # 8ddef9fda88b44019e01db17946bfedf
 #: ../../query/select.rst:19
@@ -42,6 +42,7 @@ msgid ""
 "**SQL file is required** in search. There is no feature that auto generating"
 " search SQL."
 msgstr ""
+"検索には SQL ファイルもしく``@Sql`` アノテーションを使った SQL の指定が必要です。検索SQLを自動生成する機能はありません。"
 
 # 95676170a06849afb1a56b947be8589a
 #: ../../query/select.rst:24
@@ -53,17 +54,20 @@ msgid ""
 "EmployeeDepartment class) for result set that is get by joining EMPLOYEE "
 "table and DEPARTMENT table."
 msgstr ""
+"**検索結果に応じて**エンティティクラスを作成する必要があります。たとえば、EMPLOYEE テーブルに対応する Employee "
+"クラスが宣言されている場合、EMPLOYEE テーブルの列を含む結果セットは Employee "
+"クラスとして受け入れられます。ただし、EMPLOYEEテーブルとDEPARTMENTテーブルを結合して得られる結果セットには、Employeeエンティティクラスとは別のクラス(例えばEmployeeDepartmentクラス)が必要です。"
 
 # f2fbc7c9e2f8443eac7f91ebb7c49a29
 #: ../../query/select.rst:29
 msgid "Query condition"
-msgstr ""
+msgstr "クエリ条件"
 
 # fe805cfabf3743ab8f40c5a9deebbcf7
 #: ../../query/select.rst:31
 msgid ""
 "You use method parameters for query condition. Available types is below."
-msgstr ""
+msgstr "クエリ条件にはメソッドパラメータを使用します。使用可能なタイプは以下の通りです。"
 
 # 32637dd0177045f98def77a083976293
 # 4292364a8feb4fad9b0763764ff54155
@@ -75,7 +79,7 @@ msgstr ""
 #: ../../query/select.rst:130 ../../query/select.rst:176
 #: ../../query/select.rst:195 ../../query/select.rst:262
 msgid ":doc:`../basic`"
-msgstr ""
+msgstr ":doc:`../basic`"
 
 # fe1a98182b13479c895107d517fccea6
 # 01e30b08f1e34aa7a1896ab162059819
@@ -87,24 +91,24 @@ msgstr ""
 #: ../../query/select.rst:131 ../../query/select.rst:177
 #: ../../query/select.rst:196 ../../query/select.rst:263
 msgid ":doc:`../domain`"
-msgstr ""
+msgstr ":doc:`../domain`"
 
 # a08f3132f99b437bbce5274f48bda893
 #: ../../query/select.rst:36
 msgid "Arbitrary type"
-msgstr ""
+msgstr "任意の型"
 
 # 369c3381539d40c79c88fe1fa8525d10
 #: ../../query/select.rst:37
 msgid ""
 ":doc:`../basic` , :doc:`../domain` or arbitrary type are within "
 "java.util.Optional"
-msgstr ""
+msgstr ":doc:`../basic` 、 :doc:`../domain` または java.util.Optional"
 
 # a184ec9cade44f82b7197edc7d027f05
 #: ../../query/select.rst:38
 msgid ":doc:`../basic` or :doc:`../domain` are within java.util.Iterable"
-msgstr ""
+msgstr ":doc:`../basic` または :doc:`../domain` は java.util.Iterable"
 
 # 84245efe5d6747ef82656ba1bae8cfd1
 # 988a52aee29a46c09208592c0d6842d9
@@ -149,29 +153,31 @@ msgid ""
 " type is :doc:`../basic` or :doc:`../domain`. Parameter must not be ``null``"
 " if the type is other than that."
 msgstr ""
+"パラメータ数に制限はありません。パラメータのタイプが :doc:`../basic` または :doc:`../domain` の場合、パラメータに "
+"``null`` を設定できます。型がそれ以外の場合、パラメータは ``null`` であってはなりません。"
 
 # d564da83224f4daba32a77e4e38901eb
 #: ../../query/select.rst:48
 msgid "Query that is used basic type or domain class"
-msgstr ""
+msgstr "基本型またはドメインクラスを使用したクエリ"
 
 # f6db860edfcb4c98be98363a567d557a
 #: ../../query/select.rst:50
 msgid ""
 "You declare :doc:`../basic` or :doc:`../domain` to method or parameter."
-msgstr ""
+msgstr "メソッドまたはパラメータに :doc:`../basic` または :doc:`../domain` を宣言します。"
 
 # 536c3212ccfd4b60ad6a168254beb227
 #: ../../query/select.rst:57
 msgid ""
 "You map method parameter to SQL by using SQL comment in SQL file. In SQL "
 "comment, method parameter name is referenced."
-msgstr ""
+msgstr "SQLコメントを使用してメソッドパラメータをSQLにバインドします。 SQLコメントではメソッドのパラメータ名を参照します。"
 
 # cf4bdc40e710416b88c4abedbed15215
 #: ../../query/select.rst:65
 msgid "Query that is used arbitrary type"
-msgstr ""
+msgstr "任意の型を使用したクエリ"
 
 # fe34190642304f8db3d85e7560ec1b2e
 #: ../../query/select.rst:67
@@ -179,23 +185,24 @@ msgid ""
 "You map to SQL by access field or call method there are using by dot ``.`` "
 "if using arbitrary parameter type in method parameter."
 msgstr ""
+"メソッドパラメータに任意の型を使用する場合は、 ``.`` を使ってフィールドアクセスまたはメソッド呼び出しを行い結果をSQLにバインドします。"
 
 # 41108619574a4e1cb27d0a8b7de9037d
 #: ../../query/select.rst:78
 msgid "You can specify multiple parameter."
-msgstr ""
+msgstr "複数のパラメータを指定できます。"
 
 # 679541037e36457687e304fadd345edc
 #: ../../query/select.rst:86
 msgid "Mapping to IN clauses by using Iterable."
-msgstr ""
+msgstr "Iterable を使用した IN 句へのマッピング"
 
 # 077b1d4bcef6478fa5048bf1e204cd40
 #: ../../query/select.rst:88
 msgid ""
 "You use subtype of ``java.lang.Iterable`` if execute searching by using IN "
 "clauses."
-msgstr ""
+msgstr "IN句へバインドするには、 ``java.lang.Iterable`` のサブタイプを使用します。"
 
 # f104046b5db844538164d4d4cad11044
 #: ../../query/select.rst:100
@@ -207,7 +214,7 @@ msgstr "単一レコードの検索"
 msgid ""
 "You specify method return value type either of below for search single "
 "record."
-msgstr ""
+msgstr "単一レコード検索の場合、メソッドの戻り値の型は以下のいずれかでなければいけません。"
 
 # 31e11a4e99ae4194ac9f816c258d323c
 # f86778336758493fa7105eedd425e1ae
@@ -218,7 +225,7 @@ msgstr ""
 #: ../../query/select.rst:178 ../../query/select.rst:197
 #: ../../query/select.rst:264
 msgid ":doc:`../entity`"
-msgstr ""
+msgstr ":doc:`../entity`"
 
 # 994c9482b2b147dd9e413d121c4a2c98
 # 39141e17e7824ffba7ba04e48695e002
@@ -229,7 +236,7 @@ msgstr ""
 #: ../../query/select.rst:179 ../../query/select.rst:198
 #: ../../query/select.rst:265
 msgid "java.util.Map<String, Object>"
-msgstr ""
+msgstr "java.util.Map<String, Object>"
 
 # baa243e6e41b415aa64fe468bbfec765
 #: ../../query/select.rst:108
@@ -237,6 +244,8 @@ msgid ""
 "Either :doc:`../basic` , :doc:`../domain` , :doc:`../entity` or "
 "java.util.Map<String, Object> is within java.util.Optional"
 msgstr ""
+":doc:`../basic` 、 :doc:`../domain` 、 :doc:`../entity` または "
+"java.util.Map<String, Object> のいずれかを要素とする java.util.Optional"
 
 # f47aff80e6be431b89c5038ab7b99765
 #: ../../query/select.rst:119
@@ -245,16 +254,18 @@ msgid ""
 " If `Ensure of search result`_ is enabled, exception is thrown regardless "
 "return value type if search count is 0."
 msgstr ""
+"戻り値の型が ``Optional`` でなく、結果が 0件 の場合は ``null`` が返されます。 `検索結果の保証`_ "
+"が有効になっていて結果が0件の場合は、戻り値の型に関係なく例外がスローされます。"
 
 # b7b1553f3f8341d2bf8a7148d620cf37
 #: ../../query/select.rst:122
 msgid "``NonUniqueResultException`` is thrown if result exists 2 or more."
-msgstr ""
+msgstr "結果が2件以上存在する場合は ``NonUniqueResultException`` がスローされます。"
 
 # 88d34a5754414887a9874a8dd0682cfa
 #: ../../query/select.rst:125
 msgid "Multiple record search"
-msgstr ""
+msgstr "複数レコードの検索"
 
 # c3688fc154ec40a2bb4a6824882658ed
 #: ../../query/select.rst:127
@@ -262,13 +273,14 @@ msgid ""
 "You specify ``java.util.List`` to method return value type to for search "
 "multiple record. You can use below property in ``List``."
 msgstr ""
+"複数レコードを検索する場合はメソッドの戻り値の型に java.util.List を指定します。 ``List`` の要素には以下の型が利用できます。"
 
 # 032e0468939f497b9984c5efe88f184b
 # a5141b44bafd4aaabc1e00f47ac703dc
 #: ../../query/select.rst:134 ../../query/select.rst:180
 msgid ""
 "Either :doc:`../basic` or :doc:`../domain` is within java.util.Optional"
-msgstr ""
+msgstr ":doc:`../basic` または :doc:`../domain` のいずれかを要素とする java.util.Optional"
 
 # c332d185791b4a579ab06704262adea8
 #: ../../query/select.rst:144
@@ -277,6 +289,8 @@ msgid ""
 "`Ensure of search result`_ is enabled, exception is thrown if search count "
 "is 0."
 msgstr ""
+"結果が 0件の場合、``null`` の代わりに空のリストが返されます。ただし、 `検索結果の保証`_ が有効であるならば "
+"0件の場合は例外がスローされます。"
 
 # d21bbf6016ce4e74b241c1a1437f9840
 #: ../../query/select.rst:148
@@ -288,7 +302,7 @@ msgstr "ストリーム検索"
 msgid ""
 "You can use stream search if  handle all record at one try as "
 "``java.util.stream.Stream`` rather than receiving as ``java.util.List``."
-msgstr ""
+msgstr "すべてのレコードを少しづつ処理する場合は ``java.util.stream.Stream`` ストリーム検索を使用できます。"
 
 # d48beafb2ada43969b382e5404b58416
 #: ../../query/select.rst:152
@@ -296,11 +310,12 @@ msgid ""
 "There are two kind in stream search such as return the return value and pass"
 " ``Stream`` to ``java.util.Function``."
 msgstr ""
+"ストリーム検索には戻り値を返す方法と ``java.util.Function`` に ``Stream`` を渡す方法の 2 種類があります。"
 
 # e98c9d68535b434197c724de0a87c0a0
 #: ../../query/select.rst:155
 msgid "Pass to the Function"
-msgstr ""
+msgstr "FunctionにStreamを渡す方法"
 
 # 3d7aa53c236d43b3849e9089f0795f06
 #: ../../query/select.rst:157
@@ -310,11 +325,13 @@ msgid ""
 "RESULT>`` or ``java.util.Function<Stream<TARGET>, RESULT>`` to method "
 "parameter."
 msgstr ""
+"@Select アノテーション内の ``strategy`` プロパティに ``SelectType.STREAM`` を設定し、 "
+"``java.util.Function<Stream<TARGET, RESULT>`` のサブタイプをメソッドのパラメータに追加します。"
 
 # 3d686857068844ca8f5788fd7ac2aa2d
 #: ../../query/select.rst:165
 msgid "Caller receive stream and pass lambda expression that return result."
-msgstr ""
+msgstr "呼び出し元はストリームを受け取り、結果を返すラムダ式を渡します。"
 
 # 31861c7d319842f28d6669176de26630
 #: ../../query/select.rst:174
@@ -322,11 +339,13 @@ msgid ""
 "``Function<Stream<TARGET>, RESULT>`` corresponding type parameter ``TARGET``"
 " must be either of below."
 msgstr ""
+"``Function<Stream<TARGET>, RESULT>`` に対応する型パラメータ ``TARGET`` "
+"は以下のいずれかである必要があります。"
 
 # 01f7916c3cb54ae0a8605533fd1a7a81
 #: ../../query/select.rst:185
 msgid "Type parameter ``RESULT`` must match to Dao method return value."
-msgstr ""
+msgstr "型パラメータ ``RESULT`` は Dao メソッドの戻り値と一致する必要があります。"
 
 # ed07fb44061e4bed994d7e66d50c8f6f
 # e26ff9598f794757b018e03a03abd778
@@ -336,12 +355,12 @@ msgstr ""
 msgid ""
 "If `Ensure of search result`_ is enabled, exception is thrown if search "
 "count is 0."
-msgstr ""
+msgstr "`検索結果の保証`_ が有効な場合、検索結果が 0件の場合に例外がスローされます。"
 
 # 2449b2beffc345d3a0df1d95e0bb1797
 #: ../../query/select.rst:190
 msgid "Return the return value"
-msgstr ""
+msgstr "戻り値を返す"
 
 # d375473f10e74f3cadec88627fcd2879
 #: ../../query/select.rst:192
@@ -349,17 +368,19 @@ msgid ""
 "You define ``java.util.stream.Stream`` to method return value. You can use "
 "following type at property within ``Stream``."
 msgstr ""
+"メソッドの戻り値に ``java.util.stream.Stream`` を定義します。 ``Stream`` "
+"ので型パラメーターには以下のものを指定できます。"
 
 # cdd9d94c2b244e5a80e3d9dbfa299e5e
 # 5c02625783ce43a499437f8cc4f0aa04
 #: ../../query/select.rst:199 ../../query/select.rst:266
 msgid "Either :doc:`../basic` or :doc:`../domain` within java.util.Optional"
-msgstr ""
+msgstr ":doc:`../basic` または :doc:`../domain` を型パラメーターとする java.util.Optional"
 
 # c09cf407f9cc4b6ea1c3df2add75cae6
 #: ../../query/select.rst:209
 msgid "Below is a caller."
-msgstr ""
+msgstr "呼び出し元のコードは以下のようになります。"
 
 # 4cdd2706d0194fe9875fda241e8f058e
 #: ../../query/select.rst:222
@@ -369,6 +390,8 @@ msgid ""
 "``java.sql.PreparedStatement`` , ``java.sql.Connection`` those are not "
 "closing."
 msgstr ""
+"リソースの解放忘れを防ぐため、必ずストリームをクローズしてください。ストリームを閉じないと、 ``java.sql.ResultSet`` 、 "
+"``java.sql.PreparedStatement`` 、 ``java.sql.Connection`` などが閉じられません。"
 
 # 412616e1788e42168b728fe04a3b34ec
 #: ../../query/select.rst:228
@@ -378,17 +401,19 @@ msgid ""
 "release the resource. Doma display warning message at Dao method for "
 "attention. You specify ``@Suppress`` below for suppress warning."
 msgstr ""
+"戻り値を返すのはリソースの解放忘れの危険があるため、特別な理由がない限りFunctionへStreamを渡す方法を検討してください。 Domaは、Dao"
+" メソッドに警告メッセージを表示して注意を促します。警告を抑制するには以下に ``@Suppress`` を指定します。"
 
 # 993b29d861b8455991c418df8bf4f4b2
 #: ../../query/select.rst:240
 msgid "Collect search"
-msgstr ""
+msgstr "コレクト検索"
 
 # 6eb64a3918a74102a9c442fb76bc99df
 #: ../../query/select.rst:242
 msgid ""
 "You can use collect search if handle result as ``java.util.Collector``."
-msgstr ""
+msgstr "結果を ``java.util.Collector`` として扱う場合は、コレクト検索を使用できます。"
 
 # f6129ca537a14985be97e1c2197655d8
 #: ../../query/select.rst:244
@@ -398,11 +423,14 @@ msgid ""
 "ACCUMULATION, RESULT>`` or ``java.stream.Collector<TARGET, ?, RESULT>`` to "
 "method parameter."
 msgstr ""
+"コレクト検索を実施するには、 ``@Select`` の ``strategy`` 要素に ``SelectType.COLLECT`` を設定し、\n"
+"メソッドのパラメータに ``java.stream.Collector<TARGET, ACCUMULATION, RESULT>`` もしくは\n"
+"``java.stream.Collector<TARGET, ?, RESULT>`` のサブタイプを定義します。"
 
 # 2fac83e1c9ac4cdd9d7d39c7af5c1d9f
 #: ../../query/select.rst:252
 msgid "Caller pass ``Collector`` instance."
-msgstr ""
+msgstr "呼び出し元は ``Collector`` のインスタンスを渡します。"
 
 # 514198a071254872b3b745e93589359d
 #: ../../query/select.rst:260
@@ -410,11 +438,13 @@ msgid ""
 "``Collector<TARGET, ACCUMULATION, RESULT>`` corresponding type parameter "
 "``TARGET`` must be either of below."
 msgstr ""
+"``Collector<TARGET, ACCUMULATION, RESULT>`` の型パラメータ ``TARGET`` "
+"は次のいずれかでなければいけません。"
 
 # e4d8ca2cf8f14510be22f826e5d1ce92
 #: ../../query/select.rst:271
 msgid "Type parameter ``RESULT`` must match Dao method return value."
-msgstr ""
+msgstr "型パラメータ ``RESULT`` はDaoのメソッドの戻り値に合わせなければいけません。"
 
 # 2689edd4200a40c7b3a9a084d932bed8
 #: ../../query/select.rst:277
@@ -423,11 +453,13 @@ msgid ""
 "You can do equivalent by using `collect`` method in ``Stream`` object that "
 "is getting from stream search."
 msgstr ""
+"コレクト検索はストリーム検索のFunctionに渡す方法のショートカットです。\n"
+"ストリーム検索で得られる ``Stream`` オブジェクトの ``collect`` メソッドを使って同等のことができます。"
 
 # eb91de1c18774ff6a6330d86b10ac607
 #: ../../query/select.rst:281
 msgid "Using search option search"
-msgstr ""
+msgstr "検索オプションの使用"
 
 # aec24872a2fc4c02a5741fd9bd6e15f4
 #: ../../query/select.rst:283
@@ -436,6 +468,8 @@ msgid ""
 "control from SQL file that is wrote SELECT clauses by you use "
 "``SelectOptions`` that is represent search option."
 msgstr ""
+"検索オプションを表す ``SelectOptions`` を使用すると、SELECT ステートメントからページングやペシミスティック同時実行制御用の "
+"SQL を自動生成できます。"
 
 # 6e462fc578f64758b6d985e1ce86df78
 #: ../../query/select.rst:286
@@ -443,21 +477,23 @@ msgid ""
 "You use ``SelectOptions`` in combination with `Single record search`_ ,  "
 "`Multiple record search`_ ,  `Stream search`_"
 msgstr ""
+"``SelectOptions`` は、 `単一レコード検索`_ 、 `複数レコード検索`_ 、 `ストリーム検索`_\n"
+"と組み合わせて使用します。"
 
 # f164b68cab21494d81a430dd7ab4cd14
 #: ../../query/select.rst:288
 msgid "You define ``SelectOptions`` as Dao method parameter."
-msgstr ""
+msgstr "``SelectOptions`` は、Daoのメソッドのパラメータとして定義します。"
 
 # 5b77feaf5a584e7bab066b72dc8fc5b5
 #: ../../query/select.rst:299
 msgid "You can get ``SelectOptions`` instance by static ``get`` method."
-msgstr ""
+msgstr "``SelectOptions`` のインスタンスは、staticな ``get`` メソッドにより取得できます。"
 
 # 117522f5a9804992ba44f66da3f36689
 #: ../../query/select.rst:306
 msgid "Paging"
-msgstr ""
+msgstr "ページング"
 
 # 217d5dbadc7e4c4c8b6540045aab4d21
 #: ../../query/select.rst:308
@@ -466,6 +502,8 @@ msgid ""
 "method those are within ``SelectOptions``, and pass the ``SelectOptions`` "
 "instance to Dao method."
 msgstr ""
+"``SelectOptions`` の ``offset`` メソッドで開始位置、 ``limit`` メソッドで取得件数を指定し、\n"
+"``SelectOptions`` のインスタンスをDaoのメソッドに渡します。"
 
 # 590cc3067bc14f1abeb8005bd5db5786
 #: ../../query/select.rst:317
@@ -473,12 +511,14 @@ msgid ""
 "Paging is materialized by rewriting original SQL writing in file and "
 "executing. Original SQL must be satisfied condition below."
 msgstr ""
+"ページングは、オリジナルのSQLを書き換えることで実現されています。\n"
+"オリジナルのSQLは次の条件を満たしていなければいけません。"
 
 # 44dbae9b0c154ab0a59a7601ed7ada23
 # 8ef99f052b3447f38b72b2ec08b016d2
 #: ../../query/select.rst:320 ../../query/select.rst:362
 msgid "SQL is SELECT clauses"
-msgstr ""
+msgstr "SELECT ステートメントである"
 
 # 5525cb0df7a14ca698560c6a40942072
 # a5dd0cddf3364ab4bdf5f27839edd8fa
@@ -486,19 +526,19 @@ msgstr ""
 msgid ""
 "In top level, set operation is not executed like UNION, EXCEPT, "
 "INTERSECT.(But using at subquery is able)"
-msgstr ""
+msgstr "最上位のレベルでUNION、EXCEPT、INTERSECT等の集合演算を行っていない（サブクエリで利用している場合は可）"
 
 # 759b1e3e6d844f14bd7891a06bf6027d
 #: ../../query/select.rst:322
 msgid "Paging process is not included."
-msgstr ""
+msgstr "ページング処理を含んでいない"
 
 # 1dfce03d40294390bf5ac64a9d4b2134
 #: ../../query/select.rst:324
 msgid ""
 "In addition, particular condition must be satisfied according to the "
 "database dialect."
-msgstr ""
+msgstr "さらに、データベース ダイアレクト に従って特定の条件を満たす必要があります。"
 
 # 179244b828dc429d8b16f8c43733a341
 # 1053a424154f45ddbb0d0ad9f3f2cf5a
@@ -508,18 +548,18 @@ msgstr ""
 msgid ""
 "If specify offset, there are ORDER BY clauses and all column that is "
 "specified at ORDER BY clauses is included in SELECT clauses."
-msgstr ""
+msgstr "offset を指定する場合、ORDER BY 句があり、ORDER BY 句で指定されたすべての列が SELECT 句に含まれる"
 
 # cdd474c238084b608e042193b6ac2e75
 # 9c47d558e80242a4a1b0fc7b616d84fc
 #: ../../query/select.rst:329 ../../query/select.rst:369
 msgid "Dialect"
-msgstr "方言"
+msgstr "ダイアレクト"
 
 # 014e5103589b4259b13f52921e5eb9a6
 #: ../../query/select.rst:329
 msgid "Condition"
-msgstr ""
+msgstr "条件"
 
 # e29dfe522b6f482c80d078f4a47ae943
 # b05b9cc0b9dc4662a5bd42fbf3c47cf2
@@ -541,25 +581,25 @@ msgstr "MssqlDialect"
 # f15d1974c99542688b50442aa8c8d3a8
 #: ../../query/select.rst:337
 msgid "If specify offset, there are ORDER BY clauses."
-msgstr ""
+msgstr "offset を指定する場合は、ORDER BY 句が存在する"
 
 # 247a566d4d524c1eb09813a54393d275
 # 882ad73d0296461f9fa0b82b67a95ed3
 #: ../../query/select.rst:339 ../../query/select.rst:389
 msgid "StandardDialect"
-msgstr ""
+msgstr "StandardDialect"
 
 # 203c5750a6294a5c88be58554df52c39
 #: ../../query/select.rst:339
 msgid ""
 "There are ORDER BY clauses and all column that is specified at ORDER BY "
 "clauses is included in SELECT clauses."
-msgstr ""
+msgstr "ORDER BY 句があり、ORDER BY 句で指定されたすべての列が SELECT 句に含まれる"
 
 # d55595ed139f4867901fc6d083325d35
 #: ../../query/select.rst:344
 msgid "Pessimistic concurrency control"
-msgstr ""
+msgstr "悲観的排他制御"
 
 # e074c6f7af04480abe18f38443ed9165
 #: ../../query/select.rst:346
@@ -567,6 +607,8 @@ msgid ""
 "You indicate executing pessimistic concurrency control by ``forUpdate`` "
 "within ``SelectOptions``, and pass the SelectOptions instance to Dao method."
 msgstr ""
+"``SelectOptions`` の ``forUpdate`` メソッドで悲観的排他制御を行うことを示し、\n"
+"SelectOptionsのインスタンスをDaoのメソッドに渡します。"
 
 # 379a0ac42a124326aa7a14c67ac3ff33
 #: ../../query/select.rst:355
@@ -576,6 +618,9 @@ msgid ""
 "getting lock and ``forUpdate`` method that can specify lock target table or "
 "column alias."
 msgstr ""
+"``SelectOptions`` には、ロック対象のテーブルやカラムのエイリアスを指定できる ``forUpdate`` メソッドや、\n"
+"ロックの取得を待機しない ``forUpdateNowait`` など、名前が *forUpdate*\n"
+"で始まる悲観的排他制御用のメソッドが用意されています。"
 
 # 5b5cb5bd3951473c928978b1165775c7
 #: ../../query/select.rst:359
@@ -583,18 +628,20 @@ msgid ""
 "Pessimistic concurrency control is executed by rewriting original SQL "
 "writing in file. Original SQL must be satisfied condition below."
 msgstr ""
+"悲観的排他制御は、オリジナルのSQLを書き換えて実行しています。\n"
+"オリジナルのSQLは次の条件を満たしていなければいけません。"
 
 # 9b2587dc748744318dd2e2385818d4f0
 #: ../../query/select.rst:364
 msgid "Pessimistic concurrency control process is not included."
-msgstr ""
+msgstr "悲観的排他制御の処理を含んでいない"
 
 # 820b8c7dbef04adab1ba309d5b51ccd6
 #: ../../query/select.rst:366
 msgid ""
 "Part or all of pessimistic concurrency control method can not used according"
 " to the database dialect."
-msgstr ""
+msgstr "データベースのダイアレクトによっては、悲観的排他制御用のメソッドのすべてもしくは一部が使用できません。"
 
 # 582d6aa0a7a5422ca973293136dc9dd4
 #: ../../query/select.rst:369
@@ -607,7 +654,7 @@ msgstr "説明"
 #: ../../query/select.rst:371 ../../query/select.rst:373
 #: ../../query/select.rst:375
 msgid "You can use forUpdate()."
-msgstr ""
+msgstr "forUpdate()を使用できる"
 
 # d28fd9007c6743f6ae78302ee4f80b12
 #: ../../query/select.rst:373
@@ -625,16 +672,18 @@ msgid ""
 "You can use forUpdate() and forUpdateNowait(). However, FROM clauses in "
 "original SQL must consist single table."
 msgstr ""
+"forUpdate()とforUpdateNoWait()を使用できる。 \n"
+"ただし、オリジナルのSQLのFROM句は1つのテーブルだけから成らねばならない。"
 
 # 49c06ae8f7a4497e866e6fc7c5f57fc1
 #: ../../query/select.rst:380
 msgid "MysqlDialect"
-msgstr ""
+msgstr "MysqlDialect"
 
 # b85a6d3c8df84c129fd39a4f9a825519
 #: ../../query/select.rst:380
 msgid "You can use forUpdate()"
-msgstr ""
+msgstr "forUpdate() を使用できる"
 
 # ed48d9582dd2472ba8a5fdfb6493048d
 #: ../../query/select.rst:382
@@ -648,6 +697,10 @@ msgid ""
 "forUpdateNowait(String... aliases), forUpdateWait(int waitSeconds), "
 "forUpdateWait(int waitSeconds, String... aliases)."
 msgstr ""
+"forUpdate()、forUpdate(String... "
+"aliases)、forUpdateNowait()、forUpdateNowait(String... "
+"aliases)、forUpdateWait(int waitSeconds)、forUpdateWait(int waitSeconds, "
+"String... aliases) を使用できる"
 
 # dca22eaf247948ffbf4bce14cb0cbe39
 #: ../../query/select.rst:387
@@ -657,17 +710,17 @@ msgstr "PostgresDialect"
 # 7a5c0c1b3123496482989caf0d5f5201
 #: ../../query/select.rst:387
 msgid "You can use forUpdate() and forUpdate(String... aliases)."
-msgstr ""
+msgstr "forUpdate() および forUpdate(String... エイリアス) を使用できる"
 
 # 4f60d7324b9c484399221248bc5d79cd
 #: ../../query/select.rst:389
 msgid "You can not use all of pessimistic concurrency control method."
-msgstr ""
+msgstr "悲観的排他制御用のメソッドすべてを使用できない"
 
 # 882166979800416e91c540e5266dae7c
 #: ../../query/select.rst:393
 msgid "Aggregate"
-msgstr ""
+msgstr "集約"
 
 # d0bba16d7553417b8c87af2cb098d6a1
 #: ../../query/select.rst:395
@@ -676,6 +729,8 @@ msgid ""
 "``SelectOptions``. Usually, you use combination in paging option and use in "
 "case of getting all count if not narrowing by paging."
 msgstr ""
+"``SelectOptions`` の ``count`` メソッドを呼び出すことで集計件数を取得できるようになります。\n"
+"通常、ページングのオプションと組み合わせて使用し、ページングで絞り込まない場合の全件数を取得する場合に使います。"
 
 # 2121dda768d348b58f003d609a3deaa7
 #: ../../query/select.rst:405
@@ -684,11 +739,13 @@ msgid ""
 " after calling Dao method. The ``getCount`` method is return ``-1`` if you "
 "do not execute ``count`` method before calling method."
 msgstr ""
+"集計件数は、Daoのメソッド呼出し後に ``SelectOptions`` の ``getCount`` メソッドを使って取得します。\n"
+"メソッド呼び出しの前に ``count`` メソッドを実行していない場合、 ``getCount`` メソッドは ``-1`` を返します。"
 
 # 5262d640824047889b671735d3255f22
 #: ../../query/select.rst:409
 msgid "Ensure of search result"
-msgstr ""
+msgstr "検索結果の保証"
 
 # fa80f45cd4be4d03be4e6f22d149e90f
 #: ../../query/select.rst:411
@@ -696,16 +753,18 @@ msgid ""
 "You specify ``true`` to ``ensureResult`` property within ``@Select`` "
 "annotation if you want to ensure of search result count is over 1."
 msgstr ""
+"検索結果が1件以上存在することを保証したい場合は、 ``@Select`` の ``ensureResult`` 要素に ``true`` "
+"を指定します。"
 
 # 27a2033b08894f179bef9766061fd6ff
 #: ../../query/select.rst:418
 msgid "``NoResultException`` is thrown if search result count is 0."
-msgstr ""
+msgstr "検索結果が0件ならば ``NoResultException`` がスローされます。"
 
 # 2c0754c143a148e79f0383ae222821e0
 #: ../../query/select.rst:421
 msgid "Ensure of mapping search result"
-msgstr ""
+msgstr "検索結果のマッピングの保証"
 
 # 13b66be0ae1548dfac7745fd8260e7a3
 #: ../../query/select.rst:423
@@ -714,13 +773,15 @@ msgid ""
 "annotation, if you want ensure that mapping result set column to all entity "
 "properties without exception."
 msgstr ""
+"エンティティのプロパティすべてに対して漏れなく結果セットのカラムをマッピングすることを保証したい場合は、 ``@Select`` の "
+"``ensureResultMapping`` 要素に ``true`` を指定します。"
 
 # a1943e1c1de94de1a561f21e24410000
 #: ../../query/select.rst:431
 msgid ""
 "``ResultMappingException`` is thrown if there are property that is not "
 "mapping to result set column."
-msgstr ""
+msgstr "結果セットのカラムにマッピングされていないプロパティがある場合、 ``ResultMappingException`` がスローされます。"
 
 # 555171eaadf1407880f9327757ead474
 #: ../../query/select.rst:434
@@ -732,7 +793,7 @@ msgstr "クエリタイムアウト"
 msgid ""
 "You can specify seconds of query timeout to ``queryTimeout`` property within"
 " ``@Update`` annotation."
-msgstr ""
+msgstr "結果セットのカラムにマッピングされないプロパティが存在する場合 ``ResultMappingException`` がスローされます。"
 
 # 2adf20c2672540f88bd1d1a25706e14c
 #: ../../query/select.rst:443
@@ -740,6 +801,8 @@ msgid ""
 "Query timeout that is specified in :doc:`../config` is used if "
 "``queryTimeout`` property is not set value."
 msgstr ""
+"``queryTimeout`` プロパティの値が設定されていない場合は、 :doc:`../config` "
+"で指定されたクエリタイムアウトが使用されます。"
 
 # e65ba2af3d88401fae5c90d8bfb04785
 #: ../../query/select.rst:446
@@ -751,38 +814,38 @@ msgstr "フェッチサイズ"
 msgid ""
 "You can specify fetch size to ``fetchSize`` property within ``@Select`` "
 "annotation."
-msgstr ""
+msgstr "フェッチサイズは ``@Select`` アノテーション内の ``fetchSize`` プロパティに指定できます。"
 
 # 05052126bde64551a338d72a20dda9da
 #: ../../query/select.rst:455
 msgid ""
 "Fetch size that is specified in :doc:`../config` is used if value is not "
 "set."
-msgstr ""
+msgstr "値が設定されていない場合は、 :doc:`../config` で指定されたフェッチ サイズが使用されます。"
 
 # 92626265e873405c9d40101d3b6498dc
 #: ../../query/select.rst:458
 msgid "Max row count"
-msgstr ""
+msgstr "最大行数"
 
 # 91fb53e8fc0c476bb028c001d1489c32
 #: ../../query/select.rst:460
 msgid ""
 "You can specify max row count to ``maxRows`` property within ``@Select`` "
 "annotation."
-msgstr ""
+msgstr "最大行数は ``@Select`` アノテーション内の ``maxRows`` プロパティに指定できます。"
 
 # cda9b6b7e97140f8932d11904d361c68
 #: ../../query/select.rst:467
 msgid ""
 "Max row count that is is specified in :doc:`../config` is used if value is "
 "not set."
-msgstr ""
+msgstr "値が設定されていない場合は、:doc:`../config` で指定された最大行数が使用されます。"
 
 # 2938ae3de3a745c2b96fe954d7820511
 #: ../../query/select.rst:470
 msgid "Naming rule of map's key"
-msgstr ""
+msgstr "マップのキーの命名規則"
 
 # 1d270b7d41ec45a59e1653de9d076275
 #: ../../query/select.rst:472
@@ -791,6 +854,8 @@ msgid ""
 " ``@Select`` annotation, if you want mapping search result to "
 "``java.util.Map<String, Object>``."
 msgstr ""
+"検索結果を ``java.util.Map<String, Object>`` にマッピングする場合、\n"
+"``@Select`` の ``mapKeyNaming`` 要素にマップのキーの命名規約を指定できます。"
 
 # 18e66bb0156b4c44937eab8f7599212f
 #: ../../query/select.rst:480
@@ -799,6 +864,8 @@ msgid ""
 "case. In addition to there are rule that converting upper case or lower "
 "case."
 msgstr ""
+"``MapKeyNamingType.CAMEL_CASE`` は、カラム名をキャメルケースに変換することを示します。\n"
+"そのほかにカラム名を大文字や小文字に変換する規約があります。"
 
 # b642299b552f4a799ab1e9120223ae90
 #: ../../query/select.rst:483
@@ -806,22 +873,24 @@ msgid ""
 "The final conversion result is decide by value specified here and "
 "implementation of ``MapKeyNaming`` is specified at :doc:`../config`."
 msgstr ""
+"最終的な変換結果は、ここに指定した値と :doc:`../config` に指定された\n"
+"``MapKeyNaming`` の実装により決まります。"
 
 # 2f80052f6ee84d3aa7293aa58209dd22
 #: ../../query/select.rst:486
 msgid "SQL log output format"
-msgstr ""
+msgstr "SQLログの出力形式"
 
 # 7c3edce30e994435b63ee9db629637ae
 #: ../../query/select.rst:488
 msgid ""
 "You can specify SQL log output format to ``sqlLog`` property within "
 "``@Select`` annotation."
-msgstr ""
+msgstr "``@Select`` の ``sqlLog`` 要素に SQL のログ出力形式を指定できます。"
 
 # 5bcc9ebb20f84d5281725712b0bfa7c6
 #: ../../query/select.rst:495
 msgid ""
 "``SqlLogType.RAW`` represent outputting log that is sql with a binding "
 "parameter."
-msgstr ""
+msgstr "``SqlLogType.RAW`` はバインドパラメータ付きの SQL をログ出力することを表します。"
