@@ -184,7 +184,7 @@ msgstr ""
 
 #: ../../getting-started.rst:97
 msgid "SELECT"
-msgstr ""
+msgstr "SELECT文"
 
 #: ../../getting-started.rst:99
 msgid ""
@@ -211,7 +211,7 @@ msgstr "上記のコードは、次のSQLステートメントを生成します
 
 #: ../../getting-started.rst:119
 msgid "DELETE"
-msgstr ""
+msgstr "DELETE文"
 
 #: ../../getting-started.rst:121 ../../getting-started.rst:198
 msgid "To issue a DELETE statement, write as follows:"
@@ -219,7 +219,7 @@ msgstr "DELETE文を発行するには、次のように記述します："
 
 #: ../../getting-started.rst:131
 msgid "INSERT"
-msgstr ""
+msgstr "INSERT文"
 
 #: ../../getting-started.rst:133 ../../getting-started.rst:208
 msgid "To issue an INSERT statement, write as follows:"
@@ -227,7 +227,7 @@ msgstr "INSERT文を発行するには、次のように記述します。"
 
 #: ../../getting-started.rst:143
 msgid "UPDATE"
-msgstr ""
+msgstr "UPDATE文"
 
 #: ../../getting-started.rst:145 ../../getting-started.rst:218
 msgid "To issue an UPDATE statement, write as follows:"
