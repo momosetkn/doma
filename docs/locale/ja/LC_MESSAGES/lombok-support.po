@@ -101,7 +101,7 @@ msgstr "``@Entity`` の ``immutable`` 要素に ``true`` を指定する"
 # 8f6ed4338bed49daa6f6380172578960
 #: ../../lombok-support.rst:39 ../../lombok-support.rst:111
 msgid "Specify either ``@lombok.Value`` or ``@lombok.AllArgsConstructor``"
-msgstr "``@lombok.Value`` または ``@lombok.AllArgsConstructor`` のいずれかを指定します"
+msgstr "``@lombok.Value`` または ``@lombok.AllArgsConstructor`` のいずれかを指定する"
 
 # c351ae3f321b41ab810fb895e3f0d743
 # 849d7fbc45fc4384a238526b6ddf8b01
@@ -110,7 +110,7 @@ msgid ""
 "Specify ``@lombok.Getter`` to generate getters, in case of "
 "``@lombok.AllArgsConstructor``"
 msgstr ""
-"``@lombok.AllArgsConstructor`` の場合、ゲッターを生成するには ``@lombok.Getter`` を指定します。"
+"``@lombok.AllArgsConstructor`` の場合、ゲッターを生成するには ``@lombok.Getter`` を指定する"
 
 # b636b997ca674fe9abf166c0062098f9
 #: ../../lombok-support.rst:66
@@ -129,7 +129,7 @@ msgid ""
 "generate getters/setters"
 msgstr ""
 "ゲッター/セッターを生成するには、``@lombok.Data`` または ``@lombok.Getter``/``@lombok.Setter`` "
-"を指定します。"
+"を指定する"
 
 # 54053c7fd3844ef3959cad54f54c5ab8
 #: ../../lombok-support.rst:95
@@ -139,12 +139,12 @@ msgstr "ドメインクラスの定義"
 # da141d32e6554bb6bdb462dde1e9a675
 #: ../../lombok-support.rst:97
 msgid "Specify ``@lombok.Value``"
-msgstr "``@lombok.Value`` を指定します"
+msgstr "``@lombok.Value`` を指定する"
 
 # 58265135cdec495cac01d959a99be59d
 #: ../../lombok-support.rst:98
 msgid "Define only one instance field whose name is ``value``"
-msgstr "``value`` という名前のインスタンスフィールドを 1 つだけ定義します。"
+msgstr "``value`` という名前のインスタンスフィールドを 1 つだけ定義する"
 
 # dabb014442f240b8b53f5a06129cc50f
 #: ../../lombok-support.rst:109

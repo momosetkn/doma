@@ -24,7 +24,7 @@ msgstr ""
 # 179bd4c8fd4e46449397bd4070efed9b
 #: ../../slf4j-support.rst:3
 msgid "SLF4J support"
-msgstr "SLF4Jのサポート"
+msgstr "SLF4J サポート"
 
 # 81ddbe8013584e16acd9100f44743212
 #: ../../slf4j-support.rst:6
@@ -43,7 +43,7 @@ msgid ""
 "replace it with `SLF4J <http://www.slf4j.org/>`_ easily."
 msgstr ""
 "Doma は基礎となるロギング フレームワークとして java util ロギングを使用しますが、これを `SLF4J "
-"<http://www.slf4j.org/>'_ に簡単に置き換えることができます。"
+"<http://www.slf4j.org/>`_ に簡単に置き換えることができます。"
 
 # 5426884b56f746b88c37aa722881edb1
 #: ../../slf4j-support.rst:15
@@ -183,7 +183,7 @@ msgstr "例"
 # 9c7edd9083984b45a55233c24ea26a5d
 #: ../../slf4j-support.rst:63
 msgid "Below, we show you `logback <http://logback.qos.ch/>`_ configurations."
-msgstr "以下に、`logback <http://logback.qos.ch/>`_ 構成を示します。"
+msgstr "以下に、`logback <http://logback.qos.ch/>`_ の設定例を示します。"
 
 # 1a99e5a17f514246a75a78e2627f221a
 #: ../../slf4j-support.rst:66

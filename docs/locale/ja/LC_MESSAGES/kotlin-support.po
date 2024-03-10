@@ -24,7 +24,7 @@ msgstr ""
 # 05f1386666a849bcac243220358fd48f
 #: ../../kotlin-support.rst:3
 msgid "Kotlin support"
-msgstr ""
+msgstr "Kotlin サポート"
 
 # 5b0314dded8c451dbb9c7acba6e36a0d
 #: ../../kotlin-support.rst:6
@@ -34,7 +34,7 @@ msgstr "コンテンツ"
 # 404b3949c226408393721831caafe461
 #: ../../kotlin-support.rst:8
 msgid "Doma supports `Kotlin <https://kotlinlang.org/>`_ 1.4.0 or later."
-msgstr ""
+msgstr "Doma は、 `Kotlin <https://kotlinlang.org/>`_ 1.4.0 以降をサポートしています。"
 
 # 9ef52b39c1fe4ee49617f6a7aaaf2e68
 #: ../../kotlin-support.rst:11
@@ -46,7 +46,7 @@ msgstr "ベストプラクティス"
 msgid ""
 "Here are some recommended methods, such as defining classes and building "
 "them with Kotlin."
-msgstr ""
+msgstr "Kotlinでクラスを定義してビルドするなど、おすすめの方法を紹介します。"
 
 # 2653c56ecb1c439e90eba1944fb6f248
 #: ../../kotlin-support.rst:16
@@ -56,14 +56,14 @@ msgstr "エンティティクラス"
 # de33cbed2cba408a97260c2b946477ad
 #: ../../kotlin-support.rst:18
 msgid "Define as a plain class"
-msgstr ""
+msgstr "プレーンクラスとして定義する"
 
 # 65a736577c2e4f05973bd36cd0ecc695
 #: ../../kotlin-support.rst:19
 msgid ""
 "Specify a ``Metamodel`` annotation to the ``metamodel`` element of "
 "``@Entity``"
-msgstr ""
+msgstr "``@Entity`` の ``metamodel`` 要素に ``Metamodel`` アノテーションを指定する"
 
 # 668b0aa45bab462698c93d01a5facb42
 #: ../../kotlin-support.rst:44
@@ -74,23 +74,23 @@ msgstr "ドメインクラス"
 # 2096194161de4def958208032248bc80
 #: ../../kotlin-support.rst:46 ../../kotlin-support.rst:59
 msgid "Define as a data class"
-msgstr ""
+msgstr "データクラスとして定義する"
 
 # caeeac61d3664430bfb6015d1f1a4bf7
 # 15408761d8df4fdea2378fc98e14c148
 #: ../../kotlin-support.rst:47 ../../kotlin-support.rst:60
 msgid "Define only one constructor"
-msgstr ""
+msgstr "コンストラクターを 1 つだけ定義する"
 
 # f72ce9bc207d4ac9ad73c5fb10e4bbaf
 #: ../../kotlin-support.rst:48
 msgid "Define only one property whose name is ``value`` in the constructor"
-msgstr ""
+msgstr "コンストラクターでは、名前が ``value`` であるプロパティを 1 つだけ定義する"
 
 # cf990426a56e45c2999ebd248d2143f0
 #: ../../kotlin-support.rst:49
 msgid "Use `val` for the property definition"
-msgstr ""
+msgstr "プロパティ定義には `val` を使用する"
 
 # 8d8f450267f742c0ad66cf5e7362cb5a
 #: ../../kotlin-support.rst:57
@@ -100,12 +100,12 @@ msgstr "埋め込み可能クラス"
 # e998622a1c2b49c0ba5c82cf7a8a8292
 #: ../../kotlin-support.rst:61
 msgid "Define properties only in the constructor"
-msgstr ""
+msgstr "コンストラクター内でのみプロパティを定義する"
 
 # 554388a1456d4336b69fda4c850dbd40
 #: ../../kotlin-support.rst:62
 msgid "Use `val` for the property definitions"
-msgstr ""
+msgstr "プロパティ定義には `val` を使用する"
 
 # 2d53272c4f024b7eb16edaf36946f9e6
 #: ../../kotlin-support.rst:70
@@ -115,7 +115,7 @@ msgstr "Dao インターフェース"
 # 920488ea3ed64852bda0a502d46c8406
 #: ../../kotlin-support.rst:72
 msgid "Specify a SQL template to ``@org.seasar.doma.Sql``"
-msgstr ""
+msgstr "SQLテンプレートを ``@org.seasar.doma.Sql`` に指定する"
 
 # 4d176edcddba437cbe1781aef059accc
 #: ../../kotlin-support.rst:73
@@ -123,6 +123,8 @@ msgid ""
 "Use ``org.seasar.doma.jdbc.Result`` as the return type of ``@Delete``, "
 "``@Insert`` and ``@Update``"
 msgstr ""
+"``@Delete``、``@Insert``、および ``@Update`` の戻り値の型として "
+"``org.seasar.doma.jdbc.Result`` を使用する"
 
 # eba8c9eaae9d4cb696fa54d2425103ff
 #: ../../kotlin-support.rst:74
@@ -130,6 +132,8 @@ msgid ""
 "Use ``org.seasar.doma.jdbc.BatchResult`` as the return type of "
 "``@BatchDelete``, ``@BatchInsert`` and ``@BatchUpdate``"
 msgstr ""
+"``@BatchDelete``、 ``@BatchInsert`` 、 ``@BatchUpdate`` の戻り値の型として "
+"``org.seasar.doma.jdbc.BatchResult`` を使用する"
 
 # 6f738191945347bd8d41e77a0b906c4c
 #: ../../kotlin-support.rst:91
@@ -138,16 +142,19 @@ msgid ""
 "<https://kotlinlang.org/docs/reference/multi-declarations.html>`_ for "
 "``org.seasar.doma.jdbc.Result`` and ``org.seasar.doma.jdbc.BatchResult``"
 msgstr ""
+"``org.seasar.doma.jdbc.Result`` と ``org.seasar.doma.jdbc.BatchResult`` に対しては"
+" `Destructuring Declarations <https://kotlinlang.org/docs/reference/multi-"
+"declarations.html>`_ を使用する"
 
 # ca301e7ac2e44ead84bb92625f25d731
 #: ../../kotlin-support.rst:103
 msgid "Kotlin specific Criteria API"
-msgstr ""
+msgstr "Kotlin 固有の Criteria API"
 
 # cf4a5867908c4dba8ed01c77eed87bc5
 #: ../../kotlin-support.rst:107
 msgid "Prefer the Kotlin specific Criteria API to DAO interfaces."
-msgstr ""
+msgstr "DAO インターフェイスよりも Kotlin 固有の Criteria API を使ってください"
 
 # 6b4517bbe8a34f4fbb0fc47d9c1c416b
 #: ../../kotlin-support.rst:109
@@ -157,20 +164,23 @@ msgid ""
 "which are described in :doc:`criteria-api`. The biggest feature of the "
 "``KEntityql`` and ``KNativeQl`` DSLs is simplicity."
 msgstr ""
+"Doma は、Kotlin 固有の Criteria API、``KEntityql`` および ``KNativeQl`` DSL "
+"を提供します。これらは、:doc:`criteria-api` で説明されている ``Entityql`` および ``NativeQl`` DSL "
+"と非常に似ていますが、  ``KEntityql`` と ``KNativeQl`` DSL の最大の特徴はそのシンプルさです。"
 
 # 0a3f44fa68bc45edac25ef21ed8d4b75
 #: ../../kotlin-support.rst:113
 msgid ""
 "For example, when you use ``KEntityql``, you have to accept a lambda "
 "parameter in a WHERE expression as follows:"
-msgstr ""
+msgstr "たとえば、 ``Entityql`` を使用する場合は、次のように WHERE 式でラムダパラメータを受け入れる必要があります。"
 
 # 5bdc6c6825664de78301883269dc2490
 #: ../../kotlin-support.rst:132
 msgid ""
 "The lambda parameter ``c`` is a bit annoying. On the other hand, when you "
 "use ``KEntityql``, the parameter is gone."
-msgstr ""
+msgstr "ラムダパラメータ「c」は少し面倒です。一方、 ``KEntityql`` を使用すると、パラメータはなくなります。"
 
 # a79a42de2b054791b5e4a0e1cfa98fe1
 #: ../../kotlin-support.rst:152
@@ -179,6 +189,9 @@ msgid ""
 "<https://github.com/domaframework/doma-"
 "it/tree/master/kotlin/src/test/kotlin/org/seasar/doma/it/criteria>`_."
 msgstr ""
+"ここ <https://github.com/domaframework/doma-"
+"it/tree/master/kotlin/src/test/kotlin/org/seasar/doma/it/criteria>`_ "
+"で多くのサンプル コードを参照できます。"
 
 # efd5a2c32abc43358366011da63a8435
 #: ../../kotlin-support.rst:154
@@ -187,11 +200,14 @@ msgid ""
 "Note that you should depend on doma-kotlin instead of doma-core in your "
 "build script. You can write build.gradle.kts as follows:"
 msgstr ""
+"``KEntityql`` および ``KNativeQl`` DSL は doma-kotlin.jar に含まれています。ビルド スクリプトでは "
+"doma-core ではなく doma-kotlin に依存する必要があることに注意してください。 build.gradle.kts "
+"は次のように記述できます。"
 
 # 82f9ab75acff4117a9c5c5b40b283ed7
 #: ../../kotlin-support.rst:165
 msgid "Code Generation"
-msgstr ""
+msgstr "コード生成"
 
 # 93c089647291444986e313c3374097e0
 #: ../../kotlin-support.rst:167
@@ -199,11 +215,13 @@ msgid ""
 "Use `Doma CodeGen Plugin <https://github.com/domaframework/doma-codegen-"
 "plugin>`_. This plugin support Kotlin code generation."
 msgstr ""
+"`Doma CodeGen プラグイン <https://github.com/domaframework/doma-codegen-plugin>`_"
+" を使用してください。このプラグインは Kotlin コード生成をサポートします。"
 
 # 33e54a66c6644f8cb3b1bf44770eff62
 #: ../../kotlin-support.rst:171
 msgid "Using kapt in Gradle"
-msgstr ""
+msgstr "Gradle での kapt の使用"
 
 # 92d1c3ad7b1645e291dd0e8a30f236b1
 #: ../../kotlin-support.rst:173
@@ -211,6 +229,9 @@ msgid ""
 "Annotation processors are supported in Kotlin with the `kapt "
 "<https://kotlinlang.org/docs/reference/kapt.html>`_ compiler plugin."
 msgstr ""
+"アノテーション プロセッサは、Kotlin で `kapt "
+"<https://kotlinlang.org/docs/reference/kapt.html>`_ コンパイラ "
+"プラグインを使用してサポートされています。"
 
 # c75994a8bd514c49a15bee76422c159a
 #: ../../kotlin-support.rst:176
@@ -219,6 +240,8 @@ msgid ""
 "your dependencies block. For example, you can write build.gradle.kts as "
 "follows:"
 msgstr ""
+"依存関係ブロックの `kapt` および `implementation` を使用して依存関係を追加します。たとえば、次のように "
+"build.gradle.kts を記述できます。"
 
 # 0f68fcdd63314e9493b923dae6a89075
 #: ../../kotlin-support.rst:186
@@ -226,11 +249,13 @@ msgid ""
 "To simplify your build script, we recommend you use the `Doma Compile Plugin"
 " <https://github.com/domaframework/doma-compile-plugin>`_:"
 msgstr ""
+"ビルド スクリプトを簡略化するには、`Doma コンパイル プラグイン  <https://github.com/domaframework/doma-"
+"compile-plugin>`_ を使用することをお勧めします。"
 
 # 070a3098f77b479aa1d3596da8959d10
 #: ../../kotlin-support.rst:190
 msgid "Sample project"
-msgstr ""
+msgstr "サンプルプロジェクト"
 
 # 5c213851d37a4183927f4cc2ab42d681
 #: ../../kotlin-support.rst:192
