@@ -101,7 +101,7 @@ msgstr ""
 # 41e07ea42a3d4ac1a6bfdbadbd17e156
 #: ../../entity.rst:72
 msgid "Naming convention"
-msgstr ""
+msgstr "命名規則"
 
 # 92ac7c1eb9b94d4bbb2d3f07e49376bb
 #: ../../entity.rst:74
@@ -185,31 +185,31 @@ msgstr ""
 # 936bf5c8b5d341f895c7fd51189f54c3
 #: ../../entity.rst:141
 msgid "Field definition"
-msgstr ""
+msgstr "フィールドの定義"
 
 # 94adb8d8394d4e418334b7581fca397c
 #: ../../entity.rst:143
 msgid ""
 "By default, the fields are persistent and correspond to the database columns"
 " or result set columns."
-msgstr ""
+msgstr "デフォルトでは、フィールドは永続的で、データベース列または結果セット列に対応します。"
 
 # 68e0a3b81f3f4c1e8f617f0d98bcfe18
 # c93a5dc907124d0ba1aaaa0b9d944aeb
 # 758873c47a26405fb7362569d25598bb
 #: ../../entity.rst:145 ../../entity.rst:222 ../../entity.rst:307
 msgid "The field type must be one of the following:"
-msgstr ""
+msgstr "フィールド タイプは次のいずれかである必要があります。"
 
 # a437916c47384caea5bd42238baa81de
 #: ../../entity.rst:147
 msgid ":doc:`basic`"
-msgstr ""
+msgstr ":doc:`basic`"
 
 # 2057e61777ef476abfbd1f0f6a33a379
 #: ../../entity.rst:148
 msgid ":doc:`domain`"
-msgstr ""
+msgstr ":doc:`domain`"
 
 # f75a30f79954475cb5abd241afe85199
 #: ../../entity.rst:149
@@ -220,22 +220,22 @@ msgstr ""
 #: ../../entity.rst:150
 msgid ""
 "java.util.Optional, whose element is either :doc:`basic` or :doc:`domain`"
-msgstr ""
+msgstr "java.util.Optional、その要素は :doc:`basic` または :doc:`domain` のいずれかです"
 
 # 77124921ffe640c0a490c4ebcc3112db
 #: ../../entity.rst:151
 msgid "java.util.OptionalInt"
-msgstr ""
+msgstr "java.util.OptionalInt"
 
 # 3107179bdf8e4fbe9c6479904004c555
 #: ../../entity.rst:152
 msgid "java.util.OptionalLong"
-msgstr ""
+msgstr "java.util.OptionalLong"
 
 # f0d656c922034834ac189bead4ed78bd
 #: ../../entity.rst:153
 msgid "java.util.OptionalDouble"
-msgstr ""
+msgstr "java.util.OptionalDouble"
 
 # c225c4638f6f45f6bc5c17e0f925691b
 #: ../../entity.rst:156
@@ -245,14 +245,14 @@ msgstr ""
 # 063e4ae0b97346f8a350133b84202823
 #: ../../entity.rst:167
 msgid "Column"
-msgstr ""
+msgstr "Column"
 
 # 6af10c5076f5475da99bc1a41a6ac8fa
 #: ../../entity.rst:169
 msgid ""
 "You can specify the corresponding column name with the ``@Column`` "
 "annotation:"
-msgstr ""
+msgstr "対応する カラム 名を ``@カラム``  アノテーションで指定できます。"
 
 # 18cbdf20873b4779a91608642a0edd33
 #: ../../entity.rst:177
@@ -482,7 +482,7 @@ msgstr ""
 # ae5da0e935b14ff6aca617a0b5ef5038
 #: ../../entity.rst:342
 msgid "Transient"
-msgstr ""
+msgstr "Transient"
 
 # 7a5311df421f433a9a91fbc21f38f9ee
 #: ../../entity.rst:344
@@ -524,17 +524,17 @@ msgstr ""
 # c9314063c0bf4751ac1ca0f7052758d0
 #: ../../entity.rst:371
 msgid "Method definition"
-msgstr ""
+msgstr "メソッドの定義"
 
 # c4465755349a487e9790f1e4ca1f3cf2
 #: ../../entity.rst:373
 msgid "There are no limitations in the use of methods."
-msgstr ""
+msgstr "メソッドの使用に制限はありません。"
 
 # 804189c851b34fbc8ba8ad9c35231712
 #: ../../entity.rst:376
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 # a6a53862490c460a910d3dccfe6166b6
 #: ../../entity.rst:378

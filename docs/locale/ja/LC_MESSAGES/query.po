@@ -1014,7 +1014,7 @@ msgstr ""
 #: ../../query/select.rst:135 ../../query/select.rst:181
 #: ../../query/select.rst:200 ../../query/select.rst:267
 msgid "java.util.OptionalInt"
-msgstr ""
+msgstr "java.util.OptionalInt"
 
 #: ../../query/function.rst:33 ../../query/function.rst:45
 #: ../../query/function.rst:81 ../../query/function.rst:110
@@ -1025,7 +1025,7 @@ msgstr ""
 #: ../../query/select.rst:136 ../../query/select.rst:182
 #: ../../query/select.rst:201 ../../query/select.rst:268
 msgid "java.util.OptionalLong"
-msgstr ""
+msgstr "java.util.OptionalLong"
 
 #: ../../query/function.rst:34 ../../query/function.rst:46
 #: ../../query/function.rst:82 ../../query/function.rst:111
@@ -1036,7 +1036,7 @@ msgstr ""
 #: ../../query/select.rst:137 ../../query/select.rst:183
 #: ../../query/select.rst:202 ../../query/select.rst:269
 msgid "java.util.OptionalDouble"
-msgstr ""
+msgstr "java.util.OptionalDouble"
 
 #: ../../query/function.rst:36
 msgid ""
@@ -1610,7 +1610,7 @@ msgstr ""
 
 #: ../../query/script.rst:155 ../../query/sql-processor.rst:50
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #: ../../query/script.rst:157
 msgid "Following script is valid for Oracle Database:"

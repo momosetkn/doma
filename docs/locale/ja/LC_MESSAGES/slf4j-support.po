@@ -172,7 +172,7 @@ msgstr ""
 # 2236146179144d76887087a5ac4222ae
 #: ../../slf4j-support.rst:61
 msgid "Examples"
-msgstr ""
+msgstr "例"
 
 # 9c7edd9083984b45a55233c24ea26a5d
 #: ../../slf4j-support.rst:63

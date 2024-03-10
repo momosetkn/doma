@@ -88,7 +88,7 @@ msgstr ""
 # 3fedd81c3eab42d487411dc5edbac605
 #: ../../dao.rst:48
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 # f09826e91ffe46309b8da93667c92c8b
 #: ../../dao.rst:50

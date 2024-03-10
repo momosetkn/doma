@@ -339,7 +339,7 @@ msgstr ""
 # 3df0bac6423c4ece8cb007cbc498e58b
 #: ../../query/script.rst:155
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 # dd6186b19fca4813b479469e9aca7139
 #: ../../query/script.rst:157

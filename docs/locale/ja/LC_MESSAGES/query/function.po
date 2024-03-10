@@ -113,7 +113,7 @@ msgstr ""
 #: ../../query/function.rst:80 ../../query/function.rst:109
 #: ../../query/function.rst:141 ../../query/function.rst:175
 msgid "java.util.OptionalInt"
-msgstr ""
+msgstr "java.util.OptionalInt"
 
 # f4e6c54ef0f34ac69bc270f0baa31c1b
 # b8d36c7632514988afbdd4e96ea29861
@@ -125,7 +125,7 @@ msgstr ""
 #: ../../query/function.rst:81 ../../query/function.rst:110
 #: ../../query/function.rst:142 ../../query/function.rst:176
 msgid "java.util.OptionalLong"
-msgstr ""
+msgstr "java.util.OptionalLong"
 
 # d82d4ac56bb14196a19b74cd72d7cfbc
 # b0210a88859a4f8c9f25f4f981e46073
@@ -137,7 +137,7 @@ msgstr ""
 #: ../../query/function.rst:82 ../../query/function.rst:111
 #: ../../query/function.rst:143 ../../query/function.rst:177
 msgid "java.util.OptionalDouble"
-msgstr ""
+msgstr "java.util.OptionalDouble"
 
 # 77739ae73941470db02387de3a0a616f
 #: ../../query/function.rst:36

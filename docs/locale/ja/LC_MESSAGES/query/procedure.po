@@ -147,7 +147,7 @@ msgstr ""
 #: ../../query/procedure.rst:56 ../../query/procedure.rst:85
 #: ../../query/procedure.rst:117 ../../query/procedure.rst:151
 msgid "java.util.OptionalInt"
-msgstr ""
+msgstr "java.util.OptionalInt"
 
 # 929e4be5600a42b4b611509e4f422d4e
 # d9b9eccd3aca4588bc191f53b38d1f37
@@ -156,7 +156,7 @@ msgstr ""
 #: ../../query/procedure.rst:57 ../../query/procedure.rst:86
 #: ../../query/procedure.rst:118 ../../query/procedure.rst:152
 msgid "java.util.OptionalLong"
-msgstr ""
+msgstr "java.util.OptionalLong"
 
 # 5ad695326fe14173818c0427d9176b23
 # 42c876b4387342eaa2846e7e812aee3d
@@ -165,7 +165,7 @@ msgstr ""
 #: ../../query/procedure.rst:58 ../../query/procedure.rst:87
 #: ../../query/procedure.rst:119 ../../query/procedure.rst:153
 msgid "java.util.OptionalDouble"
-msgstr ""
+msgstr "java.util.OptionalDouble"
 
 # f167cff8aa8e4fe19d5fc19a53ee8d4f
 # 928847a19157432da99ccf415ba3775e

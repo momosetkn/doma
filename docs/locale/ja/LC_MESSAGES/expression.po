@@ -158,7 +158,7 @@ msgstr ""
 # 0ed37d2131d64a5585d62e97836c6efe
 #: ../../expression.rst:49
 msgid "java.math.BigDecimal"
-msgstr ""
+msgstr "java.math.BigDecimal"
 
 # 127f7139c83d4b12a188ca5e06b34895
 #: ../../expression.rst:51
@@ -180,7 +180,7 @@ msgstr ""
 # 9d77bf81cc27407ba498727eeab8ce49
 #: ../../expression.rst:53 ../../expression.rst:153
 msgid "java.lang.String"
-msgstr ""
+msgstr "java.lang.String"
 
 # a8e5a060495b4fa1bb47e4ac54f87aa0
 #: ../../expression.rst:56

@@ -82,7 +82,7 @@ msgstr ""
 # c89d8b941ddf48dda259cf669daa548d
 #: ../../query/sql-processor.rst:50
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 # a69a1b2056964ca5bc60baad385c782f
 #: ../../query/sql-processor.rst:52

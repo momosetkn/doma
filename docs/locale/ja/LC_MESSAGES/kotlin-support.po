@@ -68,7 +68,7 @@ msgstr ""
 # 668b0aa45bab462698c93d01a5facb42
 #: ../../kotlin-support.rst:44
 msgid "Domain classes"
-msgstr ""
+msgstr "ドメインクラス"
 
 # ddbeadd47e04493c87451716341cd09e
 # 2096194161de4def958208032248bc80
@@ -95,7 +95,7 @@ msgstr ""
 # 8d8f450267f742c0ad66cf5e7362cb5a
 #: ../../kotlin-support.rst:57
 msgid "Embeddable classes"
-msgstr ""
+msgstr "埋め込み可能クラス"
 
 # e998622a1c2b49c0ba5c82cf7a8a8292
 #: ../../kotlin-support.rst:61
