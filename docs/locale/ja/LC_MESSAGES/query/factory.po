@@ -1,0 +1,132 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Toshihiro Nakamura
+# This file is distributed under the same license as the Doma package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Doma\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-10 10:39+0900\n"
+"PO-Revision-Date: 2024-03-10 01:59+0000\n"
+"Last-Translator: Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024\n"
+"Language-Team: Japanese (https://app.transifex.com/domaframework/teams/189259/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# b1f892256a954d9195fd42f88882d0e0
+#: ../../query/factory.rst:3
+msgid "Factories"
+msgstr ""
+
+# bd9fefd3c426499bac99ecdc07438ce0
+#: ../../query/factory.rst:6
+msgid "Contents"
+msgstr "コンテンツ"
+
+# 71d80ddaf27e4f5eb72d724f006b6cca
+#: ../../query/factory.rst:8
+msgid ""
+"To get instances from the factory methods of ``java.sql.Connection``, "
+"annotate DAO methods with one of following annotations;"
+msgstr ""
+
+# dfc0e50c296e4b209eb0950670ee0d92
+#: ../../query/factory.rst:11
+msgid "@ArrayFactory"
+msgstr ""
+
+# ef1d7f4e554540bfa929767d68a7e89f
+#: ../../query/factory.rst:12
+msgid "@BlobFactory"
+msgstr ""
+
+# 437557f3ae784b4aad4f17b6f4ad5d83
+#: ../../query/factory.rst:13
+msgid "@ClobFactory"
+msgstr ""
+
+# c526599f99a54db28d921cb7db932c5a
+#: ../../query/factory.rst:14
+msgid "@NClobFactory"
+msgstr ""
+
+# 2fa32b1cb0e64c2c92bcdf68575bda69
+#: ../../query/factory.rst:15
+msgid "@SQLXMLFactory"
+msgstr ""
+
+# a8fe5c7695bc4be89f8d76d2f79bced6
+#: ../../query/factory.rst:18
+msgid "Creating Array instances"
+msgstr ""
+
+# 392819f446234b12a38ce402793c7086
+#: ../../query/factory.rst:20
+msgid ""
+"A return type must be ``java.sql.Array`` and the number of parameters must "
+"be one. The parameter type must be an array type and the parameter must not "
+"be null."
+msgstr ""
+
+# 44d7d066a9c445ad829f0486cc98f5a4
+#: ../../query/factory.rst:23
+msgid ""
+"Specify a database type name to the ``@ArrayFactory``'s ``typeName`` "
+"element:"
+msgstr ""
+
+# 97bf0a74a312407f8fbdbdf87b017d29
+#: ../../query/factory.rst:31
+msgid "Creating Blob instances"
+msgstr ""
+
+# 74ad8870fb55403b99e6de840d2799bf
+#: ../../query/factory.rst:33
+msgid ""
+"A return type must be ``java.sql.Blob`` and the number of parameters must be"
+" zero:"
+msgstr ""
+
+# 02199b8e96b049fd8998c82c599832cb
+#: ../../query/factory.rst:41
+msgid "Creating Clob instances"
+msgstr ""
+
+# 5253056b97b5419d98a865fbe553e080
+#: ../../query/factory.rst:43
+msgid ""
+"A return type must be ``java.sql.Clob`` and the number of parameters must be"
+" zero:"
+msgstr ""
+
+# c6924ac87af143339571d8d0082ca262
+#: ../../query/factory.rst:51
+msgid "Creating NClob instances"
+msgstr ""
+
+# 67592c83068c44c794f460dfa85070bd
+#: ../../query/factory.rst:53
+msgid ""
+"A return type must be ``java.sql.NClob`` and the number of parameters must "
+"be zero:"
+msgstr ""
+
+# 222eab2cfbe04edcbda422af5d98f1b1
+#: ../../query/factory.rst:61
+msgid "Creating SQLXML instances"
+msgstr ""
+
+# dbab313c6a2c43a58e2c6a98e75ff302
+#: ../../query/factory.rst:63
+msgid ""
+"A return type must be ``java.sql.SQLXML`` and the number of parameters must "
+"be zero:"
+msgstr ""

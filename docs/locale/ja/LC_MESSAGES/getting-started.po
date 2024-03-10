@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Doma\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 00:27+0900\n"
+"POT-Creation-Date: 2024-03-10 10:39+0900\n"
 "PO-Revision-Date: 2024-03-09 16:18+0000\n"
 "Last-Translator: Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024\n"
 "Language-Team: Japanese (https://app.transifex.com/domaframework/teams/189259/ja/)\n"
@@ -21,32 +21,39 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+# 9a33ac335d224ab4a6fed5938307d7b5
 #: ../../getting-started.rst:3
 msgid "Getting started"
 msgstr "はじめよう"
 
+# 775b7911743b4a23ba41b0b113d53f18
 #: ../../getting-started.rst:6
 msgid "Contents"
-msgstr ""
+msgstr "コンテンツ"
 
+# 135fe8f4a66b45b790bf4c4b5f6b19c2
 #: ../../getting-started.rst:9
 msgid "Summary"
 msgstr ""
 
+# 12cfeca42cd444f2a56dd5aa3ed53cd0
 #: ../../getting-started.rst:11
 msgid ""
 "This guide outlines the setup of your development environment and introduces"
 " basic functionalities."
 msgstr "このガイドでは、開発環境の設定の概要と基本的な機能を紹介します。"
 
+# 0db36b4934374906b5becd2db402e80a
 #: ../../getting-started.rst:14
 msgid "Install JDK"
 msgstr ""
 
+# dad7e2f5c1af4891a97a80b39057bd2f
 #: ../../getting-started.rst:16
 msgid "To begin, JDK 17 is required."
 msgstr "JDK 17が必要です。"
 
+# 8498a1884c6d403cbca1bad90c346cca
 #: ../../getting-started.rst:20
 msgid ""
 "It's important to note that Doma is compatible with JDK 8 onwards. For "
@@ -58,10 +65,12 @@ msgstr ""
 "8以降と互換性があることに注意してください。サポートされているJDKのバージョンについては、該当するセクションを参照してください。:ref:`DomaはどのバージョンのJDKをサポートしていますか？<which-"
 "version-of-jdk-does-doma-support>`。"
 
+# 54c9ff47ed5d40948226dcff8f857bbf
 #: ../../getting-started.rst:25
 msgid "Get sample project"
 msgstr ""
 
+# 9e3c9afddb474274af107a3cc7065c37
 #: ../../getting-started.rst:27
 msgid ""
 "To obtain the sample project, clone the `getting-started "
@@ -69,18 +78,22 @@ msgid ""
 " to the new directory using the following commands:"
 msgstr ""
 
+# 1c67636737fe4a2dbdb6acbecbd25064
 #: ../../getting-started.rst:35
 msgid "Ensure successful project setup with:"
 msgstr "次のコマンドでプロジェクトのセットアップが成功したことを確認してください。"
 
+# c36ea0ca635f4ebab0477f08be2ccfcc
 #: ../../getting-started.rst:43
 msgid "For Windows users, execute ``gradlew build``."
 msgstr "Windowsユーザーは、``gradlew build`` を実行してください。"
 
+# 7a40814853ec43319c7565f0ef2740fe
 #: ../../getting-started.rst:46
 msgid "Sample project structure"
 msgstr ""
 
+# 6cad877ff12d45d2ba43dc0acbb82c72
 #: ../../getting-started.rst:48
 msgid ""
 "The getting-started sample is a Gradle multi-project consisting of java-8 "
@@ -91,18 +104,22 @@ msgstr ""
 "getting-"
 "startedのサンプルは、java-8とjava-17のサブプロジェクトからなるGradleのマルチプロジェクトです。両方とも似ていますが、主な違いはSQL文の保存方法です。java-8ではファイルに保存され、java-17ではテキストブロックとして保存されます。"
 
+# 6d03be6241cc401da9fc7db555815746
 #: ../../getting-started.rst:51
 msgid "This guide will focus on the java-17 project."
 msgstr "このガイドは、java-17プロジェクトに焦点を当てます。"
 
+# 071875ac627a442a814ec91df6ceaf34
 #: ../../getting-started.rst:54
 msgid "Import project to your IDE"
 msgstr ""
 
+# f6260459c53a4218ab3afadfc23fb331
 #: ../../getting-started.rst:57
 msgid "Eclipse"
 msgstr ""
 
+# 03e42a6d879241eeaa315271f8afacfb
 #: ../../getting-started.rst:59
 msgid ""
 "Tested on Eclipse 4.23.0. Generate Eclipse project files using ``./gradlew "
@@ -112,6 +129,7 @@ msgstr ""
 "Eclipse 4.23.0でテスト済みです。 ``./gradlew eclipse`` "
 "を使用してEclipseプロジェクトファイルを生成し、java-8およびjava-17プロジェクトをワークスペースにインポートする前に実行してください。"
 
+# fd9634fca782410e9cc5fc25aa6a6e10
 #: ../../getting-started.rst:64
 msgid ""
 "If you want to store SQL statements in files, `Doma Tools "
@@ -120,10 +138,12 @@ msgstr ""
 "SQL文をファイルに格納したい場合は、`Doma Tools <https://github.com/domaframework/doma-"
 "tools>`_ が役立ちます。"
 
+# 72d5fbc61f4c4209849b71e4fb81156f
 #: ../../getting-started.rst:68
 msgid "IntelliJ IDEA"
 msgstr ""
 
+# a8fe3f4af9e944c9bdf6b4dc2db2b157
 #: ../../getting-started.rst:70
 msgid ""
 "Tested with IntelliJ IDEA Community 2023.3.4. Import the getting-started "
@@ -132,6 +152,7 @@ msgstr ""
 "IntelliJ IDEA Community 2023.3.4でテスト済み。getting-"
 "startedプロジェクトをGradleプロジェクトとしてインポートしてください。"
 
+# 549923d3f11d40f28d0ebc234cfe1856
 #: ../../getting-started.rst:75
 msgid ""
 "If you use IntelliJ IDEA Ultimate Edition, `Doma Support "
@@ -140,14 +161,17 @@ msgstr ""
 "IntelliJ IDEA Ultimate Edition を使用している場合は、`Doma Support "
 "<https://plugins.jetbrains.com/plugin/7615-doma-support>`_ が役立ちます。"
 
+# 2b748f69187d41bcb76a8de9962ef2b4
 #: ../../getting-started.rst:79
 msgid "Programming styles"
 msgstr ""
 
+# 031b7b8608544ec6945c0e18d7688c5f
 #: ../../getting-started.rst:81
 msgid "Doma supports two programming styles: DSL and DAO."
 msgstr "DomaはDSLとDAOの2つのプログラミングスタイルをサポートしています。"
 
+# 88ac3db585704518a1c27aeffdf3c768
 #: ../../getting-started.rst:83
 msgid ""
 "The DSL style utilizes the Criteria API for building type-safe SQL "
@@ -158,21 +182,25 @@ msgstr ""
 "DSLスタイルは、タイプセーフなSQLステートメントを構築するためにCriteria "
 "APIを利用し、反射を必要とせず、さまざまな種類の関連（一対多、多対一、一対一）をサポートするなど、いくつかの利点を提供します。"
 
+# b0dcdd9ee43a424aa7969b89f505116e
 #: ../../getting-started.rst:86
 msgid ""
 "The DAO style, on the other hand, maps SQL statements to Java interface "
 "methods."
 msgstr "DAOスタイルは、一方、SQL文をJavaインターフェースメソッドにマッピングします。"
 
+# 08b81e3aa4e64be59a2631eab8c056a3
 #: ../../getting-started.rst:88
 msgid ""
 "It's recommended to use the DSL style due to the Criteria API's advantages."
 msgstr "DSLスタイルを使用することをお勧めします。Criteria APIの利点があるためです。"
 
+# e900296bc9db4cb99359a9374a11eaa0
 #: ../../getting-started.rst:91
 msgid "DSL style"
 msgstr ""
 
+# e03cf7c1a72f42dc8895e26a263a9160
 #: ../../getting-started.rst:93
 msgid ""
 "In the DSL style, you work with examples in the "
@@ -182,16 +210,19 @@ msgstr ""
 "DSLスタイルでは、 ``boilerplate.java17.repository.EmployeeRepository`` と "
 ":doc:`criteria-api` の例を使用して操作を行います。"
 
+# 07043bb9dd954f35828cfdf6061eeab0
 #: ../../getting-started.rst:97
 msgid "SELECT"
 msgstr "SELECT文"
 
+# 5cbef62b44044aeea0ef7c6a16a19b1c
 #: ../../getting-started.rst:99
 msgid ""
 "To execute a SELECT query and retrieve Java object results, follow this "
 "example:"
 msgstr "SELECTクエリを実行し、Javaオブジェクトの結果を取得するには、次の例に従ってください。"
 
+# 94c46a3a77ab4e1783cbde5557a52690
 #: ../../getting-started.rst:108
 msgid ""
 "You'll use a metamodel class, like ``Employee_`` for ``Employee```, which is"
@@ -199,44 +230,58 @@ msgid ""
 msgstr ""
 "``Employee_`` のような ``Employee``` のメタモデルクラスを使用します。これはアノテーション処理によって自動生成されます。"
 
+# b83f2baea965473db6eca62523e63884
 #: ../../getting-started.rst:110
 msgid ""
 "The ``entityql`` instance from the ``Entityql`` class serves as the Criteria"
 " API's starting point."
 msgstr "``Entityql`` クラスの ``entityql`` インスタンスは、Criteria APIの出発点として機能します。"
 
+# 36c86dc74dc84492a77f765cce43de57
+# e70e6a23caa2434d90d0483c4083e8d2
 #: ../../getting-started.rst:112 ../../getting-started.rst:184
 msgid "The above code generates the following SQL statement:"
 msgstr "上記のコードは、次のSQLステートメントを生成します："
 
+# 869a45c0c509472a8c97a576fc60ffb1
 #: ../../getting-started.rst:119
 msgid "DELETE"
 msgstr "DELETE文"
 
+# 4e70fd483ee04bedb58b52ba9c14a259
+# b358328de51642839ff0f2ac5afca1d8
 #: ../../getting-started.rst:121 ../../getting-started.rst:198
 msgid "To issue a DELETE statement, write as follows:"
 msgstr "DELETE文を発行するには、次のように記述します："
 
+# 4236a20be2784b6cbd516eae53f37756
 #: ../../getting-started.rst:131
 msgid "INSERT"
 msgstr "INSERT文"
 
+# d214ac4f8def413eb0ad26e12975a241
+# 9baf805f925541a69093ea61a45e59fb
 #: ../../getting-started.rst:133 ../../getting-started.rst:208
 msgid "To issue an INSERT statement, write as follows:"
 msgstr "INSERT文を発行するには、次のように記述します。"
 
+# c5679eef04634148adca89f32132a5b0
 #: ../../getting-started.rst:143
 msgid "UPDATE"
 msgstr "UPDATE文"
 
+# 75dc06e7bec14e2fa82827dda3535359
+# 933f23828f3d4910b462a9bcf4bcef6f
 #: ../../getting-started.rst:145 ../../getting-started.rst:218
 msgid "To issue an UPDATE statement, write as follows:"
 msgstr "UPDATE文を発行するには、次のように記述します："
 
+# f21ed9d251284cbc820a4b2810e1f95f
 #: ../../getting-started.rst:155
 msgid "DAO style"
 msgstr ""
 
+# acbfe07b237348fb93caaa3d75f1dcc1
 #: ../../getting-started.rst:157
 msgid ""
 "You can find some examples in ``boilerplate.java17.dao.EmployeeDao``. See "
@@ -245,10 +290,12 @@ msgstr ""
 "``boilerplate.java17.dao.EmployeeDao`` "
 "でいくつかの例を見つけることができます。詳細については、:doc:`dao` と :doc:`sql` を参照してください。"
 
+# f26b37a687fe457cac7f57880b67fa6f
 #: ../../getting-started.rst:161
 msgid "SELECT (DAO)"
 msgstr ""
 
+# e6bd4efccbed45569229602a96cf6993
 #: ../../getting-started.rst:163
 msgid ""
 "In the DAO style, for issuing a SELECT statement to retrieve Java objects, "
@@ -256,6 +303,7 @@ msgid ""
 msgstr ""
 "DAOスタイルで、Javaオブジェクトを取得するためのSELECT文を発行するには、SQLテンプレートにテキストブロックを使用した``@Sql``アノテーションを使用します。"
 
+# 9e40c58567b348adace9b6555ff99f54
 #: ../../getting-started.rst:179
 msgid ""
 "This SQL template contains two special expressions, ``/*%expand*/`` and ``/*"
@@ -269,30 +317,37 @@ msgstr ""
 "はカラムリストに置き換えられます。そして、``/* id */`` とその後の ``0`` はバインド変数 ``?`` "
 "に置き換えられます。バインドされる値は ``selectById`` メソッドの ``id`` パラメータです。"
 
+# dea54bc6610d4062af8f02c122a3f4b3
 #: ../../getting-started.rst:196
 msgid "DELETE (DAO)"
 msgstr ""
 
+# bf994167d8134f8e91eb93919bd24f0e
 #: ../../getting-started.rst:206
 msgid "INSERT (DAO)"
 msgstr ""
 
+# c6021faa795e45e8aa0a1806a9480c1a
 #: ../../getting-started.rst:216
 msgid "UPDATE (DAO)"
 msgstr ""
 
+# 66b968f746fd42c187756708eb408295
 #: ../../getting-started.rst:226
 msgid "Next Step"
 msgstr ""
 
+# 5c8e1ff16bd545dc998f6615feb3d890
 #: ../../getting-started.rst:228
 msgid "See other example projects:"
 msgstr "他の例のプロジェクトを参照してください。"
 
+# c48dfba675ea468693dcad42fe3f86ba
 #: ../../getting-started.rst:230
 msgid "`simple-examples <https://github.com/domaframework/simple-examples>`_"
 msgstr ""
 
+# 8b1ed6dae8ee4baf9ca7a13f4ae2306a
 #: ../../getting-started.rst:231
 msgid ""
 "`spring-boot-jpetstore <https://github.com/domaframework/spring-boot-"

@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the Doma package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Doma\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 00:27+0900\n"
+"POT-Creation-Date: 2024-03-10 10:39+0900\n"
 "PO-Revision-Date: 2024-03-09 16:18+0000\n"
+"Last-Translator: Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024\n"
 "Language-Team: Japanese (https://app.transifex.com/domaframework/teams/189259/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,28 +21,34 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+# 540915798a26406e9b5c9bef5631a507
 #: ../../build.rst:3
 msgid "Building an application"
 msgstr ""
 
+# 5308349489e14490b237e994728ce02f
 #: ../../build.rst:6
 msgid "Contents"
-msgstr ""
+msgstr "コンテンツ"
 
+# 7ee2d00de4be40039916dfb930310e3b
 #: ../../build.rst:9
 msgid "Before You Start"
 msgstr ""
 
+# f5c381bc21ac45408f0b06db46ada817
 #: ../../build.rst:12
 msgid "Maven Central Repository"
 msgstr ""
 
+# 826b9465095a4351900bf816e9709b85
 #: ../../build.rst:14
 msgid ""
 "You can pull the artifacts of the Doma framework from the Maven central "
 "repository. We provide two artifacts, ``doma-core`` and ``doma-processor``."
 msgstr ""
 
+# 845ed995cac24000aa71d495c487714b
 #: ../../build.rst:17
 msgid ""
 "The ``doma-core`` artifact is required at runtime and compile-time. The "
@@ -46,69 +56,88 @@ msgid ""
 "at compile-time only."
 msgstr ""
 
+# 25675c55ed394ee6acd219b79120560a
 #: ../../build.rst:20
 msgid "The group id and artifact id of those artifacts are as follows:"
 msgstr ""
 
+# 536b2fa2f36c42fba507c05962ce3100
+# eb1595c2f9cb4747a5b4763b094740f6
 #: ../../build.rst:0 ../../build.rst:0
 msgid "GroupId"
 msgstr ""
 
+# e90b025337ae447b98dbbd0d98b14c08
+# 4a78710745c84d8c99e7179ee8163b08
 #: ../../build.rst:22 ../../build.rst:25
 msgid "org.seasar.doma"
 msgstr ""
 
+# 34939b86c47b4c8e89537ac163ddf731
+# 4a3acb3143044126814aca6c882323d4
 #: ../../build.rst:0 ../../build.rst:0
 msgid "ArtifactId"
 msgstr ""
 
+# 2846571e030c402f8e56ab86478d304d
 #: ../../build.rst:23
 msgid "doma-core"
 msgstr ""
 
+# 9c94a9bd2f1f4d9c8cad02e9dc964fc7
 #: ../../build.rst:26
 msgid "doma-processor"
 msgstr ""
 
+# 1657d7924e3f4fc5a66e388d27af59f7
 #: ../../build.rst:31
 msgid "Build with Gradle"
 msgstr ""
 
+# 95747bb5dbd5483b8fc068c6f7a420de
 #: ../../build.rst:33
 msgid "Write your build.gradle as follows:"
 msgstr ""
 
+# 1b2c45f9dcd9424abf9d5083de3c3a45
 #: ../../build.rst:42
 msgid ""
 "To simplify your build.script, we recommend that you use the `Doma Compile "
 "Plugin`_."
 msgstr ""
 
+# c247800b6279454bb57a4c7da344ec40
+# dcd5fb4b029343e09ecca829f744942b
 #: ../../build.rst:44 ../../build.rst:61
 msgid ""
 "See build.gradle in the `simple-boilerplate`_ repository as an example."
 msgstr ""
 
+# 3708ac5e5c6446d3a929df9804c91aac
 #: ../../build.rst:47
 msgid "Build with IntelliJ IDEA"
 msgstr ""
 
+# 9843f751ee90496aa5ff386e1955b1b3
 #: ../../build.rst:49
 msgid ""
 "Use a newer version of IntelliJ IDEA, and then import your project as a "
 "Gradle project."
 msgstr ""
 
+# 7e4a2b8c1f834d358746bf3bfdc4099b
 #: ../../build.rst:54
 msgid "Build with Eclipse"
 msgstr ""
 
+# ad8614ebf2b643a1a8000ce890c6d8f5
 #: ../../build.rst:56
 msgid ""
 "Generate eclipse setting files with Gradle, and then import your project "
 "into Eclipse. To generate the setting files, run ``gradle eclipse``."
 msgstr ""
 
+# ad6d29487e334c4bbe7da113b5b12ff9
 #: ../../build.rst:59
 msgid ""
 "To simplify your build.script, we recommend that you use the `Doma Compile "

@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the Doma package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Doma\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 00:27+0900\n"
+"POT-Creation-Date: 2024-03-10 10:39+0900\n"
 "PO-Revision-Date: 2024-03-09 16:18+0000\n"
+"Last-Translator: Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024\n"
 "Language-Team: Japanese (https://app.transifex.com/domaframework/teams/189259/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,115 +21,141 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+# 50b9fa8c67a84ad7a64bb21271c34beb
 #: ../../embeddable.rst:3
 msgid "Embeddable classes"
 msgstr ""
 
+# b9cc853ec1834722ad2096901b6d7ba1
 #: ../../embeddable.rst:6
 msgid "Contents"
-msgstr ""
+msgstr "コンテンツ"
 
+# 304bc32b217747db8ae0768cbf3baf17
 #: ../../embeddable.rst:8
 msgid "Embeddable classes group the properties for :doc:`../entity`."
 msgstr ""
 
+# 1372636a312240138edad6426efe6662
 #: ../../embeddable.rst:11
 msgid "Embeddable definition"
 msgstr ""
 
+# 5f6d278861f049a5a93b2417d9b699d0
 #: ../../embeddable.rst:13
 msgid "The following code snippet shows how to define an embeddable:"
 msgstr ""
 
+# e4d7ea2332e44fdf8e41dbbe6f5ccb7d
 #: ../../embeddable.rst:34
 msgid "The embeddable class is used as the entity field type:"
 msgstr ""
 
+# cd8405311a97429a8cf4dd5fad583ea0
 #: ../../embeddable.rst:46
 msgid "The above entity definition is equivalent to following one:"
 msgstr ""
 
+# feade868a0eb4ecfa4717e85a9ecc615
 #: ../../embeddable.rst:64
 msgid ""
 "In Java 14 and later version, you can annotate `records`_ with "
 "``@Embeddable``:"
 msgstr ""
 
+# f2ae7821a4214037a12a2f9252eb7894
 #: ../../embeddable.rst:78
 msgid "Naming convention"
 msgstr ""
 
+# e49c4ca9b6db48a8b90e76bcad937d09
 #: ../../embeddable.rst:80
 msgid "A naming convention is inherited from the enclosing :doc:`../entity`."
 msgstr ""
 
+# eeecadf73cab4847b61c61ccb58094f2
 #: ../../embeddable.rst:83
 msgid "Field definition"
 msgstr ""
 
+# fd9df43b8ae24835a4d9ad45300effbb
 #: ../../embeddable.rst:85
 msgid ""
 "By default, the fields are persistent and correspond to the database columns"
 " or result set columns."
 msgstr ""
 
+# b7923c9c6b0d452e9e010fdc9cd5772f
 #: ../../embeddable.rst:87
 msgid "The field type must be one of the following:"
 msgstr ""
 
+# ed79a87319554f7db8bac1ea75ecd1f8
 #: ../../embeddable.rst:89
 msgid ":doc:`basic`"
 msgstr ""
 
+# f6edb2eb5eb04f6b9c94ff648e9a2fd5
 #: ../../embeddable.rst:90
 msgid ":doc:`domain`"
 msgstr ""
 
+# 6c0f48c608e5486d8c3d8022a590c70a
 #: ../../embeddable.rst:91
 msgid ""
 "java.util.Optional, whose element is either :doc:`basic` or :doc:`domain`"
 msgstr ""
 
+# 54f828dfce344395a3700692a3d143e4
 #: ../../embeddable.rst:92
 msgid "java.util.OptionalInt"
 msgstr ""
 
+# 44a16ae130984cf1b526fb3ac659f3c5
 #: ../../embeddable.rst:93
 msgid "java.util.OptionalLong"
 msgstr ""
 
+# c3e779fe340447b39e94b191528be21a
 #: ../../embeddable.rst:94
 msgid "java.util.OptionalDouble"
 msgstr ""
 
+# 47973913817f41d4b510ef2f37ed4ae2
 #: ../../embeddable.rst:105
 msgid "Column"
 msgstr ""
 
+# a645c44714bd459b9031c4663eed1136
 #: ../../embeddable.rst:107
 msgid ""
 "You can specify the corresponding column name with the ``@Column`` "
 "annotation:"
 msgstr ""
 
+# 90f729799b1f40a490f612e6e8582a6f
 #: ../../embeddable.rst:115
 msgid "Transient"
 msgstr ""
 
+# 7929a4e39ffc4d66a85037984bd0f601
 #: ../../embeddable.rst:117
 msgid ""
 "If an embeddable has fields that you don’t want to persist, you can annotate"
 " them using ``@Transient``:"
 msgstr ""
 
+# 9e37c2e7f7904bcbb41f0f02f3731c1d
 #: ../../embeddable.rst:120
 msgid "Method definition"
 msgstr ""
 
+# 60880788858f4698b5aa466e4d5828a8
 #: ../../embeddable.rst:122
 msgid "There are no limitations in the use of methods."
 msgstr ""
 
+# 27ea1224fdc34c15ac533f1f99e397be
 #: ../../embeddable.rst:125
 msgid "Example"
 msgstr ""

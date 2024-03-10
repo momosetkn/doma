@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the Doma package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Doma\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 00:27+0900\n"
+"POT-Creation-Date: 2024-03-10 10:39+0900\n"
 "PO-Revision-Date: 2024-03-09 16:18+0000\n"
+"Last-Translator: Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024\n"
 "Language-Team: Japanese (https://app.transifex.com/domaframework/teams/189259/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,271 +21,339 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+# 47ea3513b9954835ac0ccf34da0a8013
 #: ../../entity.rst:3
 msgid "Entity classes"
 msgstr ""
 
+# a91598e292be4a0c9513aa869eb694bd
 #: ../../entity.rst:6
 msgid "Contents"
-msgstr ""
+msgstr "コンテンツ"
 
+# 08beaea97091426ea3520b28cab47452
 #: ../../entity.rst:8
 msgid "Entity classes correspond to database tables or query result sets."
 msgstr ""
 
+# 4be260c812a64ed0a2555c95a8cfba2e
 #: ../../entity.rst:11
 msgid "Entity definition"
 msgstr ""
 
+# 80d348ee97c5418aa8ee4fd357185101
 #: ../../entity.rst:13
 msgid "The following code snippet shows how to define an entity:"
 msgstr ""
 
+# ffbfb13509664eefb2d42a4c7308935e
 #: ../../entity.rst:22
 msgid "An entity class can inherit other entity class."
 msgstr ""
 
+# 33a131f7a53d4e5fbfef16e213a12b5a
 #: ../../entity.rst:24
 msgid "The following code snippet shows how to inherit other entity class:"
 msgstr ""
 
+# 0029e459fb2641d49a8a6587952f2d29
 #: ../../entity.rst:34
 msgid ""
 "In Java 14 and later version, you can annotate `records`_ with ``@Entity``:"
 msgstr ""
 
+# 4ef7df3b37b949438d27c3e6476d84b3
 #: ../../entity.rst:42
 msgid ""
 "In the case, the entity is recognize as :ref:`immutable` even though the "
 "immutable property of ``@Entity`` is ``false``."
 msgstr ""
 
+# 5a27ea6cac1b48caa5e40fb45e62e461
 #: ../../entity.rst:48
 msgid "Entity listeners"
 msgstr ""
 
+# 48d0b543257745bda3076cec99f182f5
 #: ../../entity.rst:50
 msgid ""
 "Entity listeners work before/after Doma issues the database modification "
 "statements - INSERT, DELETE and UPDATE."
 msgstr ""
 
+# 2211b2a923884d168979f1d7fc94e8e4
 #: ../../entity.rst:52
 msgid "The following code snippet shows how to define an entity listener:"
 msgstr ""
 
+# e9fe20d00a924c3d9dffdb7875909c1e
 #: ../../entity.rst:60
 msgid ""
 "To use the entity listener, specify it to the ``listener`` property within "
 "the ``@Entity`` annotation:"
 msgstr ""
 
+# 421b3d8cdd454a0e93f89fefc62f3f86
 #: ../../entity.rst:69
 msgid "An entity subclass inherits parent`s entity listener."
 msgstr ""
 
+# 41e07ea42a3d4ac1a6bfdbadbd17e156
 #: ../../entity.rst:72
 msgid "Naming convention"
 msgstr ""
 
+# 92ac7c1eb9b94d4bbb2d3f07e49376bb
 #: ../../entity.rst:74
 msgid "Naming convention maps the names between:"
 msgstr ""
 
+# 54219ff276d944adb6e2b63f6bf13fd6
 #: ../../entity.rst:76
 msgid "the database tables and the Java entity classes"
 msgstr ""
 
+# 312c4ba8b59a42f0a151efee49b795ec
 #: ../../entity.rst:77
 msgid "the database column and the Java entity fields"
 msgstr ""
 
+# 9764d55d2faf46bda6621deeebf19c9f
 #: ../../entity.rst:79
 msgid ""
 "The following code snippet shows how to apply the naming convention to an "
 "entity:"
 msgstr ""
 
+# e43d879a8d0b4b1f8f71c31f3c0e7bcc
 #: ../../entity.rst:88
 msgid ""
 "When the ``name`` property within the ``@Table`` or ``@Column`` annotation "
 "is explicitly specified, the naming convention is ignored."
 msgstr ""
 
+# 6a0e7811b94c430eb9a1ff19f2d20920
 #: ../../entity.rst:91
 msgid "An entity subclass inherits parent's naming convention."
 msgstr ""
 
+# 02f778974be644aea7167bec57b21ec0
 #: ../../entity.rst:96
 msgid "Immutable"
 msgstr ""
 
+# bfc1044af19640788207011b282e5030
 #: ../../entity.rst:98
 msgid "An entity class can be immutable."
 msgstr ""
 
+# d1a72659ffa241278436c43d2ac2cb02
 #: ../../entity.rst:100
 msgid "The following code snippet shows how to define an immutable entity:"
 msgstr ""
 
+# ce73507cf738436a95d5dabe52c2f54f
 #: ../../entity.rst:120
 msgid ""
 "The ``immutable`` property within the ``@Entity`` annotation must be "
 "``true``. The persistent field must be ``final``."
 msgstr ""
 
+# 6b3f1d6dd32148b19b6a583c48cd67b2
 #: ../../entity.rst:123
 msgid "An entity subclass inherits parent's immutable property."
 msgstr ""
 
+# a7d7e0bc091d44ae899392bb98d282d6
 #: ../../entity.rst:126
 msgid "Table"
 msgstr ""
 
+# fbdbee0e6eef47d18e6cfe2d524df21a
 #: ../../entity.rst:128
 msgid ""
 "You can specify the corresponding table name with the ``@Table`` annotation:"
 msgstr ""
 
+# 2f95c73e57174a80802217976da18734
 #: ../../entity.rst:138
 msgid ""
 "Without the ``@Table`` annotation, the table name is resolved by `Naming "
 "Convention`_."
 msgstr ""
 
+# 936bf5c8b5d341f895c7fd51189f54c3
 #: ../../entity.rst:141
 msgid "Field definition"
 msgstr ""
 
+# 94adb8d8394d4e418334b7581fca397c
 #: ../../entity.rst:143
 msgid ""
 "By default, the fields are persistent and correspond to the database columns"
 " or result set columns."
 msgstr ""
 
+# 68e0a3b81f3f4c1e8f617f0d98bcfe18
+# c93a5dc907124d0ba1aaaa0b9d944aeb
+# 758873c47a26405fb7362569d25598bb
 #: ../../entity.rst:145 ../../entity.rst:222 ../../entity.rst:307
 msgid "The field type must be one of the following:"
 msgstr ""
 
+# a437916c47384caea5bd42238baa81de
 #: ../../entity.rst:147
 msgid ":doc:`basic`"
 msgstr ""
 
+# 2057e61777ef476abfbd1f0f6a33a379
 #: ../../entity.rst:148
 msgid ":doc:`domain`"
 msgstr ""
 
+# f75a30f79954475cb5abd241afe85199
 #: ../../entity.rst:149
 msgid ":doc:`embeddable`"
 msgstr ""
 
+# 487ef72e9058412fba611e4e4f4b3d7e
 #: ../../entity.rst:150
 msgid ""
 "java.util.Optional, whose element is either :doc:`basic` or :doc:`domain`"
 msgstr ""
 
+# 77124921ffe640c0a490c4ebcc3112db
 #: ../../entity.rst:151
 msgid "java.util.OptionalInt"
 msgstr ""
 
+# 3107179bdf8e4fbe9c6479904004c555
 #: ../../entity.rst:152
 msgid "java.util.OptionalLong"
 msgstr ""
 
+# f0d656c922034834ac189bead4ed78bd
 #: ../../entity.rst:153
 msgid "java.util.OptionalDouble"
 msgstr ""
 
+# c225c4638f6f45f6bc5c17e0f925691b
 #: ../../entity.rst:156
 msgid "The following code snippet shows how to define a filed:"
 msgstr ""
 
+# 063e4ae0b97346f8a350133b84202823
 #: ../../entity.rst:167
 msgid "Column"
 msgstr ""
 
+# 6af10c5076f5475da99bc1a41a6ac8fa
 #: ../../entity.rst:169
 msgid ""
 "You can specify the corresponding column name with the ``@Column`` "
 "annotation:"
 msgstr ""
 
+# 18cbdf20873b4779a91608642a0edd33
 #: ../../entity.rst:177
 msgid ""
 "To exclude fields from INSERT or UPDATE statements, specify ``false`` to the"
 " ``insertable`` or ``updatable`` property within the ``@Column`` annotation:"
 msgstr ""
 
+# 5dea667681b748d38fb376203b31229d
 #: ../../entity.rst:185
 msgid ""
 "Without the ``@Column`` annotation, the column name is resolved by `Naming "
 "Convention`_."
 msgstr ""
 
+# 05c931e4ca1d4ce5a73c0a9a309b9c57
 #: ../../entity.rst:189
 msgid ""
 "When the filed type is :doc:`embeddable`, you cannot specify the ``@Column``"
 " annotation to the field."
 msgstr ""
 
+# b35912eb24c843dba56e73bc2745e92a
 #: ../../entity.rst:192
 msgid "Id"
 msgstr ""
 
+# 47b5f6f86bee4f229fc7164a67600975
 #: ../../entity.rst:194
 msgid "The database primary keys are represented with the ``@Id`` annotation:"
 msgstr ""
 
+# b08a5676b89d456d9eb84b9fedc11272
 #: ../../entity.rst:201
 msgid ""
 "When there is a composite primary key, use the ``@Id`` annotation many "
 "times:"
 msgstr ""
 
+# 96d8c719af954555a598a1511b8c06f6
 #: ../../entity.rst:213
 msgid ""
 "When the filed type is :doc:`embeddable`, you cannot specify the ``@Id`` "
 "annotation to the field."
 msgstr ""
 
+# 8452fcd892ee4836bee5f2ecd06e0bb4
 #: ../../entity.rst:218
 msgid "Id generation"
 msgstr ""
 
+# 3e43c9893f3f4886a5376f98cd67f568
 #: ../../entity.rst:220
 msgid ""
 "You can instruct Doma to generate id values automatically using the "
 "``@GeneratedValue`` annotation."
 msgstr ""
 
+# cbe7897bf559428aba6d4e1fb97ddd1a
+# 7e110f04ed6d479cb49fc57de6e9506c
 #: ../../entity.rst:224 ../../entity.rst:309
 msgid "the subclass of java.lang.Number"
 msgstr ""
 
+# 2d4c4e6cd5644ebfaf861ab8638df241
+# 8141c566a64c47c0a4cd5e0a2349fd58
 #: ../../entity.rst:225 ../../entity.rst:310
 msgid ":doc:`domain`, whose value type is the subclass of java.lang.Number"
 msgstr ""
 
+# bf57578a743c4e6db1207077aeb64144
+# 8d37099bee844af78584e52a33272939
 #: ../../entity.rst:226 ../../entity.rst:311
 msgid "java.util.Optional, whose element is either above types"
 msgstr ""
 
+# 1e0684d316394107b9418a86b9319ee8
+# 984ff32ce95441d4be22f369faf7dc32
 #: ../../entity.rst:227 ../../entity.rst:312
 msgid "OptionalInt"
 msgstr ""
 
+# 50fe8844c989445c8403780c4bd1d8c7
+# d607a295590f4477ae3c90d96c5b5008
 #: ../../entity.rst:228 ../../entity.rst:313
 msgid "OptionalLong"
 msgstr ""
 
+# 3ce8cf320e554f3b9abef3f11d8d51e1
+# b599f20016394bdc89e736910c714fdf
 #: ../../entity.rst:229 ../../entity.rst:314
 msgid "OptionalDouble"
 msgstr ""
 
+# 5f6f6770488e48589fa5730f5caae6b8
+# 20efa443443f472f95def7f651bd836d
 #: ../../entity.rst:230 ../../entity.rst:315
 msgid "the primitive types for number"
 msgstr ""
 
+# fb8a627c126c4504af189d62dfe98088
 #: ../../entity.rst:234
 msgid ""
 "The generated values are assign to the field only when the field is either "
@@ -290,10 +362,12 @@ msgid ""
 "``-1``."
 msgstr ""
 
+# 564760ece33844d7b1673e4be44ca9d9
 #: ../../entity.rst:239
 msgid "Id generation by IDENTITY"
 msgstr ""
 
+# 6764027f97ab4290a82d0bbd2dbc594f
 #: ../../entity.rst:241
 msgid ""
 "To generate values using the RDBMS IDENTITY function, specify the "
@@ -301,18 +375,22 @@ msgid ""
 "``@GeneratedValue``:"
 msgstr ""
 
+# 17c2eed9c48440628250661f82ce86b0
 #: ../../entity.rst:250
 msgid "In advance, define the database primary key as IDENTITY."
 msgstr ""
 
+# d1d857ccacb44f78b9b5837d0e178408
 #: ../../entity.rst:254
 msgid "All RDBMS doesn't support the IDENTITY function."
 msgstr ""
 
+# 78f26741b3a640329f394146e998fb4c
 #: ../../entity.rst:257
 msgid "Id generation by SEQUENCE"
 msgstr ""
 
+# dcf32bbbe751437aaca834fc33e5f7c7
 #: ../../entity.rst:259
 msgid ""
 "To generate values using the RDBMS SEQUENCE, specify the "
@@ -321,6 +399,7 @@ msgid ""
 "annotation:"
 msgstr ""
 
+# 9aa706b72c584dd680e8d090a8b3de26
 #: ../../entity.rst:270
 msgid ""
 "In advance, define the SEQUENCE in the database. The SEQUENCE definitions "
@@ -328,14 +407,17 @@ msgid ""
 "the properties within the ``@SequenceGenerator`` annotation."
 msgstr ""
 
+# cac7574e8c4b4db9a1d824847acbdbc2
 #: ../../entity.rst:276
 msgid "All RDBMS doesn't support the SEQUENCE."
 msgstr ""
 
+# 37329e6b21d94fefad5e506840edca23
 #: ../../entity.rst:279
 msgid "Id generation by TABLE"
 msgstr ""
 
+# f47ecd4c38b14059ad7c5dbaff0d0e1e
 #: ../../entity.rst:281
 msgid ""
 "To generate values using the RDBMS TABLE, specify the "
@@ -343,6 +425,7 @@ msgid ""
 "``@GeneratedValue`` annotation. And use the ``@TableGenerator`` annotation:"
 msgstr ""
 
+# 2f033b89fe4a4b4aa26d61233eaf6ce8
 #: ../../entity.rst:292
 msgid ""
 "In advance, define the TABLE in the database. The TABLE`s definition must "
@@ -350,32 +433,38 @@ msgid ""
 "example, the DDL should be following:"
 msgstr ""
 
+# 1cc9ded41d4f4c6387d89f271aeb28cb
 #: ../../entity.rst:300
 msgid ""
 "You can change the table name and the column names using the properties "
 "within the ``@TableGenerator`` annotation."
 msgstr ""
 
+# 328a257ab5634015b7dd9860ce373ab9
 #: ../../entity.rst:303
 msgid "Version"
 msgstr ""
 
+# 28662c0c6d0c4bf4b53aae270520dfb7
 #: ../../entity.rst:305
 msgid ""
 "The version fields for optimistic locking are represented with the "
 "``@Version`` annotation."
 msgstr ""
 
+# cc02654344bb4b3299ccc3c15eab81f4
 #: ../../entity.rst:324
 msgid ""
 "When the filed type is :doc:`embeddable`, you cannot specify the "
 "``@Version`` annotation to the field."
 msgstr ""
 
+# c7d22642d175426499289be3c68362c5
 #: ../../entity.rst:327
 msgid "Tenant Id"
 msgstr ""
 
+# 1f3121de951e40af8e8672ecbe3235c1
 #: ../../entity.rst:329
 msgid ""
 "The tenant id fields are represented with the ``@TenantId`` annotation. The "
@@ -383,26 +472,31 @@ msgid ""
 "of UPDATE and DELETE statements."
 msgstr ""
 
+# b1095a60cd92405e87615643f19a67bb
 #: ../../entity.rst:339
 msgid ""
 "When the filed type is :doc:`embeddable`, you cannot specify the "
 "``@TenantId`` annotation to the field."
 msgstr ""
 
+# ae5da0e935b14ff6aca617a0b5ef5038
 #: ../../entity.rst:342
 msgid "Transient"
 msgstr ""
 
+# 7a5311df421f433a9a91fbc21f38f9ee
 #: ../../entity.rst:344
 msgid ""
 "If an entity has fields that you don't want to persist, you can annotate "
 "them using ``@Transient``:"
 msgstr ""
 
+# 8c01ecef49aa44bf92a02898cc916db7
 #: ../../entity.rst:352
 msgid "OriginalStates"
 msgstr ""
 
+# 8e4e532d32f74076ad4c9d5b1e03ec86
 #: ../../entity.rst:354
 msgid ""
 "If you want to include only changed values in UPDATE statements, you can "
@@ -410,32 +504,39 @@ msgid ""
 "original values that were fetched from the database."
 msgstr ""
 
+# 6941e48109b546d0aa1ef4515d19ec5c
 #: ../../entity.rst:358
 msgid ""
 "Doma uses the values to know which values are changed in the application and"
 " includes the only changed values in UPDATE statements."
 msgstr ""
 
+# 64194329432647da90b2a533615f1b95
 #: ../../entity.rst:361
 msgid "The following code snippet shows how to define original states:"
 msgstr ""
 
+# 9e5fa7b569d14e8ea7b9a28d1fc1af0e
 #: ../../entity.rst:368
 msgid "The field type must be the same as the entity type."
 msgstr ""
 
+# c9314063c0bf4751ac1ca0f7052758d0
 #: ../../entity.rst:371
 msgid "Method definition"
 msgstr ""
 
+# c4465755349a487e9790f1e4ca1f3cf2
 #: ../../entity.rst:373
 msgid "There are no limitations in the use of methods."
 msgstr ""
 
+# 804189c851b34fbc8ba8ad9c35231712
 #: ../../entity.rst:376
 msgid "Example"
 msgstr ""
 
+# a6a53862490c460a910d3dccfe6166b6
 #: ../../entity.rst:378
 msgid "Instantiate the ``Employee`` entity class and use its instance:"
 msgstr ""

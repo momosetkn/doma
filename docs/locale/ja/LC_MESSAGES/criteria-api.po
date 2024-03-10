@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the Doma package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Doma\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 00:27+0900\n"
+"POT-Creation-Date: 2024-03-10 10:39+0900\n"
 "PO-Revision-Date: 2024-03-09 16:18+0000\n"
+"Last-Translator: Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024\n"
 "Language-Team: Japanese (https://app.transifex.com/domaframework/teams/189259/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,44 +21,54 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+# 00660cebd3b04310b57591113dd519dd
 #: ../../criteria-api.rst:3
 msgid "Criteria API"
 msgstr ""
 
+# f91ca2cac72f438c89e5824205775f4e
 #: ../../criteria-api.rst:6
 msgid "Contents"
-msgstr ""
+msgstr "コンテンツ"
 
+# c2b3307f9dec40daad5abe9222a86bc7
 #: ../../criteria-api.rst:9
 msgid "Introduction"
 msgstr ""
 
+# cd7792328e6c482db573ab5aa034d0cc
 #: ../../criteria-api.rst:13
 msgid ""
 "In Kotlin environment, use Kotlin specific DSLs instead of the following "
 "DSLs. See :ref:`kotlin-specific-criteria-api`."
 msgstr ""
 
+# 290df204bfcc40a7be24bdc437586592
 #: ../../criteria-api.rst:16
 msgid "There are two kinds of DSLs in the Criteria API:"
 msgstr ""
 
+# 8f5f086b875044b58e51f407be441edf
 #: ../../criteria-api.rst:18
 msgid "The Entityql DSL"
 msgstr ""
 
+# 740977971a3d4187bc9e0427fcf5041b
 #: ../../criteria-api.rst:19
 msgid "The NativeSql DSL"
 msgstr ""
 
+# 724a6d77e6464eeb86567f10424928af
 #: ../../criteria-api.rst:21
 msgid "Both requires predefined Entity classes and metamodel classes."
 msgstr ""
 
+# 2c8bd1237c4e45cabab8c9ec898d1301
 #: ../../criteria-api.rst:23
 msgid "We use the following Entity classes to show you some examples:"
 msgstr ""
 
+# d49191eed3d74d90b38e0bb17b910101
 #: ../../criteria-api.rst:99
 msgid ""
 "Note that the above classes are annotated with ``@Entity(metamodel = "
@@ -63,6 +77,7 @@ msgid ""
 "processor ."
 msgstr ""
 
+# 847028f55810432aa5cecbdaa733fcb4
 #: ../../criteria-api.rst:103
 msgid ""
 "In our examples, the metamodel classes are ``Employee_``, ``Department_``, "
@@ -70,34 +85,41 @@ msgid ""
 "typesafe."
 msgstr ""
 
+# cb6a8893eb664d70bf84b050b6fd7401
 #: ../../criteria-api.rst:106
 msgid ""
 "You can customize the name of the metamodels by the Metamodel annotation "
 "elements."
 msgstr ""
 
+# 0464abf8f3ef46d0ae72522a38f15773
 #: ../../criteria-api.rst:108
 msgid ""
 "To customize all metamodels in bulk, you can use the annotation processor "
 "options. See :doc:`annotation-processing` and check the following options:"
 msgstr ""
 
+# d9bde96bd5d74be791ea9b3153ccc17e
 #: ../../criteria-api.rst:111
 msgid "doma.metamodel.enabled"
 msgstr ""
 
+# 5b7eee3caefd41ffa69fb9258e1db3ca
 #: ../../criteria-api.rst:112
 msgid "doma.metamodel.prefix"
 msgstr ""
 
+# 85cb75628cb34afba4f27709eba35d38
 #: ../../criteria-api.rst:113
 msgid "doma.metamodel.suffix"
 msgstr ""
 
+# df811314e1584c199bee09d51aed4b66
 #: ../../criteria-api.rst:116
 msgid "Entityql DSL"
 msgstr ""
 
+# d1c5bf2ec7e143b6867ee0780163418f
 #: ../../criteria-api.rst:118
 msgid ""
 "The Entityql DSL can query and associate entities. The entry point is the "
@@ -105,32 +127,78 @@ msgid ""
 "following methods:"
 msgstr ""
 
+# bb37e5dc61ac4fdaa33d6a668b6711b1
+# e3fa15159dbb4e95b6bcb56310a2a747
 #: ../../criteria-api.rst:122 ../../criteria-api.rst:173
 msgid "from"
 msgstr ""
 
+# adf15915466e4cf9b2e9255fa4cae47e
+# 41d3270415114f8292bcd2b6645782d9
 #: ../../criteria-api.rst:123 ../../criteria-api.rst:175
 msgid "insert"
 msgstr ""
 
+# f634d782d26b463a96399f5fb19b78f8
+# 86bb61eb7bfc40f9913c8a587129ec14
 #: ../../criteria-api.rst:124 ../../criteria-api.rst:174
 msgid "delete"
 msgstr ""
 
+# 14aef6d9e61a4300b2220c5d8e4107e1
+# 5fb21b7700c14ae7a43ce5b28757cfde
 #: ../../criteria-api.rst:125 ../../criteria-api.rst:176
 msgid "update"
 msgstr ""
 
+# e88fa30db19d49e4a02c6bf65181c623
 #: ../../criteria-api.rst:127
 msgid "You can instantiate the ``Entityql`` class as follows:"
 msgstr ""
 
+# 7a17a8bd1ade4a1894397342530b54f3
 #: ../../criteria-api.rst:133
 msgid ""
 "For example, to query ``Employee`` and ``Department`` entities and associate"
 " them, write as follows:"
 msgstr ""
 
+# 5b98378ed9bb43fb95a5300524a38706
+# e1bcbb4f0fdc48dcb25ced98ebcddaa1
+# 0146d64009f346198e57e1fa3e3a92e5
+# 073ead34d0524810830ef0ab5317aed5
+# 0cfc846239a348d292da47f7f88343db
+# 3a2d158ec65448ab816aeeff2e6f7ad3
+# f7616925cc05461b9b0191ee198b6691
+# e547cadb519b4a3e9afdc7c07fc9411f
+# 6581168021ef4ac882d4939b2b97c49a
+# a5977c0da5904fb2ba51bc0e87ceab81
+# c72509a141e54a38bad2d42910b73ae0
+# 638c8b54954a416db340ed2a6620083f
+# f6ba13d0fbfa4d6ab6b1859d9828f200
+# 57b451424e4c4572b6885e9d454d6b13
+# 0da92fed14454da8b84f86e3e03b06dc
+# 3c479e9d38a9441bbf91b30805c927e0
+# bbc966c70f9341b0a7299f1d645df63f
+# b0a385535e384994861d6df0e32f53f3
+# fedfa86b345844748658874fea6a4347
+# 271ab6474fd242a8bf52d77da43da2a0
+# 853c10daa1fc462080586c4eea627867
+# 1772bc0ddc1641d38b2e0cda8cfad9ed
+# 7a81c50922a44f4297f0e08979cf7eff
+# d3f2697e890b412bb1552ed255a460f6
+# 8f156f2336634ce2b079b590ee9e659f
+# cd2d15a3ab2e490c8fc558923386c8be
+# 860abf4a7f0d4613ba4805329fda8e73
+# 5a955255798f49728ffc471b0138013c
+# 22e509d7b4ad4807a2a6b80bd3937b82
+# ba328086f83c41a59c336e5f1049a222
+# 561243bce7c8494bba0969999841fc1b
+# dcd8c20161aa4a219b7cb89e970bf186
+# 8cf2a7c7aeb64ad38cdf662765db688d
+# 18eb9fb4778d4c8988178eb2e334a1f2
+# baaf63da9b684374bbd2f11d7abb66c5
+# 661ce4a587174489a8a7d75b73449f8b
 #: ../../criteria-api.rst:154 ../../criteria-api.rst:201
 #: ../../criteria-api.rst:358 ../../criteria-api.rst:382
 #: ../../criteria-api.rst:408 ../../criteria-api.rst:433
@@ -152,10 +220,12 @@ msgstr ""
 msgid "The above query issues the following SQL statement:"
 msgstr ""
 
+# be82ce8ab61142cdb04492aee3770d7d
 #: ../../criteria-api.rst:165
 msgid "NativeSql DSL"
 msgstr ""
 
+# 73d084b6acc043c4a830e77402977f8c
 #: ../../criteria-api.rst:167
 msgid ""
 "The NativeSql DSL can issue more complex SQL statements rather than the "
@@ -163,40 +233,48 @@ msgid ""
 "entities."
 msgstr ""
 
+# c5f13037c0324673bd8a982f32a1e1ca
 #: ../../criteria-api.rst:170
 msgid ""
 "The entry point is the ``org.seasar.doma.jdbc.criteria.NativeSql`` class. "
 "This class has the following methods:"
 msgstr ""
 
+# dd827012b599488d93207004428da796
 #: ../../criteria-api.rst:178
 msgid "You can instantiate the ``NativeSql`` class as follows:"
 msgstr ""
 
+# 25a9b7e9fbe949cd806bbe60c4a52d75
 #: ../../criteria-api.rst:184
 msgid ""
 "For example, to query two columns with GROUP BY and HAVING clauses, write as"
 " follows:"
 msgstr ""
 
+# 3d752157703e4d3e9cfe475bf1715f19
 #: ../../criteria-api.rst:212
 msgid "The difference between two DSLs"
 msgstr ""
 
+# a92217e95f644d248e1a35e5d9846a64
 #: ../../criteria-api.rst:214
 msgid ""
 "The biggest difference between two DSLs is that the Entityql DSL removes "
 "duplicated data from the fetched results, but the NativeSQL DSL doesn't."
 msgstr ""
 
+# 78be3f0bef0c4f63a57153cb8aabe6be
 #: ../../criteria-api.rst:217
 msgid "See the following example:"
 msgstr ""
 
+# 16cde74d62c244e29f10295a6044e0d7
 #: ../../criteria-api.rst:235
 msgid "Both (1) and (2) issue the same SQL statement as follows:"
 msgstr ""
 
+# 417858faab5541c6b55b0295df2e2c43
 #: ../../criteria-api.rst:243
 msgid ""
 "The ResultSet contains 14 rows, but the Entityql DSL returns only 3 rows "
@@ -204,6 +282,7 @@ msgid ""
 "id properties to know the uniqueness of the entities."
 msgstr ""
 
+# 2f1e1555a5384a7f92c95514776ffba2
 #: ../../criteria-api.rst:247
 msgid ""
 "On the other hand, the NativeSql DSL returns the data as it retrieves from "
@@ -211,174 +290,225 @@ msgid ""
 "the plain DTOs."
 msgstr ""
 
+# b1e65623afcf47a8a46e042f7c9316c5
 #: ../../criteria-api.rst:251
 msgid "Select statement"
 msgstr ""
 
+# 9c3940d6676d4050a7d77a690f8572c7
 #: ../../criteria-api.rst:254
 msgid "Select settings (Entityql, NativeSql)"
 msgstr ""
 
+# 292612f3920044908a1283a8b8db7a48
+# 0d184ce5d2e648fb824dd4188092a1b2
+# 7fd51223470b41f283c177731fda3d32
+# cba3198699d64589b795f0f6086d5ee3
 #: ../../criteria-api.rst:256 ../../criteria-api.rst:1196
 #: ../../criteria-api.rst:1282 ../../criteria-api.rst:1429
 msgid "We support the following settings:"
 msgstr ""
 
+# a269dc26ea004e1bbb179d8d8af11865
+# 4b95f1d7e20c4bc5973f6a5e2c299505
+# 0ca2a13db31b43adba3517355756ddbc
 #: ../../criteria-api.rst:258 ../../criteria-api.rst:1198
 #: ../../criteria-api.rst:1431
 msgid "allowEmptyWhere"
 msgstr ""
 
+# 26a1a1794a85478ca6e9730e2081380d
+# 673170efc21e4deea316c543c02413b1
+# 9a330db7f53c43a9977a7d952f5fcc15
+# 42ee3e400f004ddbba90d874be1a056e
 #: ../../criteria-api.rst:259 ../../criteria-api.rst:1200
 #: ../../criteria-api.rst:1284 ../../criteria-api.rst:1433
 msgid "comment"
 msgstr ""
 
+# a31944103fe34d96ab3eeba7ce2e862b
 #: ../../criteria-api.rst:260
 msgid "fetchSize"
 msgstr ""
 
+# c3f5a4cfd5de40be82240c9e94edce8b
 #: ../../criteria-api.rst:261
 msgid "maxRows"
 msgstr ""
 
+# c37b9462307f446fa3f5b639ade6e583
+# c59609718c3d43fdb3121d6ecc1b6a5e
+# ca670ba691b5426ba353c46e6c591788
+# 3269fa96c44145b9913a18a62c827f1f
 #: ../../criteria-api.rst:262 ../../criteria-api.rst:1202
 #: ../../criteria-api.rst:1285 ../../criteria-api.rst:1435
 msgid "queryTimeout"
 msgstr ""
 
+# 58cbc177cf81428e9d1793bc656f2782
+# f0dce7ca439f408dba4ff5df5c334c74
+# bcb5c882d3434c42942f49df0e9948c5
+# 56858e916a004506bffc717dd7a4c06b
 #: ../../criteria-api.rst:263 ../../criteria-api.rst:1203
 #: ../../criteria-api.rst:1286 ../../criteria-api.rst:1436
 msgid "sqlLogType"
 msgstr ""
 
+# 242494e7f38742639dc82c01e132a7e3
 #: ../../criteria-api.rst:265
 msgid "They are all optional. You can apply them as follows:"
 msgstr ""
 
+# a363ff9b03e24925bc39c0e1164b6c90
 #: ../../criteria-api.rst:282
 msgid "Fetching (Entityql, NativeSql)"
 msgstr ""
 
+# 2ba573ac6a254986870b9ad9e47b24f9
 #: ../../criteria-api.rst:284
 msgid ""
 "Both Entityql DSL and NativeSql DSL support the following methods to fetch "
 "data from a database:"
 msgstr ""
 
+# d32268adef3648ec911022ba9e084ba6
 #: ../../criteria-api.rst:286
 msgid "fetch"
 msgstr ""
 
+# 883b23cb6c964207b4de951f24b2899b
 #: ../../criteria-api.rst:287
 msgid "fetchOne"
 msgstr ""
 
+# 23dfeed006e64ce987cf028160983a50
 #: ../../criteria-api.rst:288
 msgid "fetchOptional"
 msgstr ""
 
+# b1f7c1c55cb144ae84fc1aed8d80f744
 #: ../../criteria-api.rst:289
 msgid "stream"
 msgstr ""
 
+# c2b32db389ab49d8b5d5c2826c8dc081
 #: ../../criteria-api.rst:313
 msgid "Streaming (NativeSql)"
 msgstr ""
 
+# c2b43ac1193d482fbc9a446822dc950c
 #: ../../criteria-api.rst:315
 msgid "The NativeSql DSL supports the following methods:"
 msgstr ""
 
+# 3ebf508e7ec8460fac595a1d7392d5df
 #: ../../criteria-api.rst:317
 msgid "mapStream"
 msgstr ""
 
+# 24c5d7bcf2d4483688152e5dd0fccaf1
 #: ../../criteria-api.rst:318
 msgid "collect"
 msgstr ""
 
+# d8ae2b2add084c96838734691d9709c5
 #: ../../criteria-api.rst:335
 msgid ""
 "These methods handle the stream that wraps a JDBC ResultSet. So they are "
 "useful to process a large ResultSet effectively."
 msgstr ""
 
+# dd58ab6c66904edf88b7423ebefcad2f
 #: ../../criteria-api.rst:339
 msgid "Select expression"
 msgstr ""
 
+# 7c1d46d7733049e1a99e361ed624ac31
 #: ../../criteria-api.rst:342
 msgid "Entity selection (Entityql, NativeSql)"
 msgstr ""
 
+# 7811e9c1015b433aa1ebac99d3e5be01
 #: ../../criteria-api.rst:344
 msgid ""
 "By default, the result entity type is the same as the one specified at the "
 "``from`` method. See the following code:"
 msgstr ""
 
+# dc53582caa2d45e4b55c8fe2e49131cd
 #: ../../criteria-api.rst:367
 msgid ""
 "To choose a joined entity type as the result entity type, call the "
 "``select`` method as follows:"
 msgstr ""
 
+# b6a42722b9e14328be2b652d842d98fd
 #: ../../criteria-api.rst:391
 msgid "Multiple entity selection (NativeSql)"
 msgstr ""
 
+# 3ebbf781db2f4566b464608bbb62ad8b
 #: ../../criteria-api.rst:393
 msgid ""
 "You can specify multiple entity types and fetch them as a tuple as follows:"
 msgstr ""
 
+# ee5dcc7d45c547e3a8d92be1a9594d29
 #: ../../criteria-api.rst:418
 msgid ""
 "The entity included in the tuple may be null when the all properties of the "
 "entity are null."
 msgstr ""
 
+# cf5ab8d635ef465fb2835c38e6fb3f24
 #: ../../criteria-api.rst:421
 msgid "Column projection (NativeSql)"
 msgstr ""
 
+# 0eba06c62f744f13998ac580f3779180
 #: ../../criteria-api.rst:423
 msgid "To project columns, use the ``select`` method:"
 msgstr ""
 
+# 667da22d8fe64b26a379e81fd587a6ad
 #: ../../criteria-api.rst:425
 msgid ""
 "To project one column, pass one property to the select method as follows:"
 msgstr ""
 
+# 2508553db3bf458fa0020fca08639632
 #: ../../criteria-api.rst:439
 msgid ""
 "To project two or more columns, pass two or more properties to the select "
 "method as follows:"
 msgstr ""
 
+# a4f9bb79ee0649bbbf0c0b163b4ac09f
 #: ../../criteria-api.rst:454
 msgid ""
 "Up to 9 numbers, the column results are held by ``Tuple2`` to ``Tuple9``. "
 "For more than 9 numbers, the results are held by ``Row``."
 msgstr ""
 
+# 405e7e3a913e45bab9bf6ac88f1a5f4f
 #: ../../criteria-api.rst:457
 msgid ""
 "You can get a ``Row`` list explicitly by using ``selectAsRow`` as follows:"
 msgstr ""
 
+# 1dbf8fbe70dd4d588853b8dfb322a4e9
 #: ../../criteria-api.rst:467
 msgid "Column projection and mapping (Entityql, NativeSql)"
 msgstr ""
 
+# 855bbf7d3b574a638d51d839b61669b9
 #: ../../criteria-api.rst:469
 msgid ""
 "To project columns and map them to an entity, use the ``selectTo`` method as"
 " follows:"
 msgstr ""
 
+# c02bd7cc53944f7abbe888514df518a1
 #: ../../criteria-api.rst:483
 msgid ""
 "Note that the select clause of the above SQL statement contains the primary "
@@ -386,74 +516,98 @@ msgid ""
 "properties of the entity, even if you don't."
 msgstr ""
 
+# c2d75b53a4c9401aaad5eab1e28b60c0
 #: ../../criteria-api.rst:489
 msgid "Where expression (Entityql, NativeSql)"
 msgstr ""
 
+# 890c7f6349e94b99800281d3ed86c613
 #: ../../criteria-api.rst:491
 msgid "We support the following operators and predicates:"
 msgstr ""
 
+# 0aeab8e0e5fd479b9effd9a6c9947781
+# c8afa315c87345c581c0acb8c5575bdf
 #: ../../criteria-api.rst:493 ../../criteria-api.rst:893
 msgid "eq - (=)"
 msgstr ""
 
+# a65148c3673d465787a62326f057836b
+# 9509aeb6e9784d4aa0e7f636ab5a1e37
 #: ../../criteria-api.rst:494 ../../criteria-api.rst:894
 msgid "ne - (<>)"
 msgstr ""
 
+# 676bfdbb987244bd9a6027dfe548495b
+# d7ff6b65cbd74febb245c516abe3431c
 #: ../../criteria-api.rst:495 ../../criteria-api.rst:895
 msgid "ge - (>=)"
 msgstr ""
 
+# 7271a4cdac4942c59dc7690f2d54240c
+# 258e3a5eac5c413fb0cad70eb7dc6755
 #: ../../criteria-api.rst:496 ../../criteria-api.rst:896
 msgid "gt - (>)"
 msgstr ""
 
+# 897ada1aba7b4e5cb5ca427cec7830d3
+# 64408de40fc041bd8cb801f9113d4faf
 #: ../../criteria-api.rst:497 ../../criteria-api.rst:897
 msgid "le - (<=)"
 msgstr ""
 
+# e36813f6dd7247e2aacdb7eabf0ccb50
+# 4839c88dab4e47f7a122c52dfad147a2
 #: ../../criteria-api.rst:498 ../../criteria-api.rst:898
 msgid "lt - (<)"
 msgstr ""
 
+# be022485161d4da89cf9e235bc0adee0
 #: ../../criteria-api.rst:499
 msgid "isNull - (is null)"
 msgstr ""
 
+# 2c94fc85a07d44eaba43893dda179444
 #: ../../criteria-api.rst:500
 msgid "isNotNull - (is not null)"
 msgstr ""
 
+# 308701bccb5c42c18f25e05ce1fa462c
 #: ../../criteria-api.rst:501
 msgid "like"
 msgstr ""
 
+# 6485ec7addf248e1affd0e2eac6f0728
 #: ../../criteria-api.rst:502
 msgid "notLike - (not like)"
 msgstr ""
 
+# 2e04422bb7bd4d3ba6554323f5a5ab0b
 #: ../../criteria-api.rst:503
 msgid "between"
 msgstr ""
 
+# ca213a29e35144ba82f0c22d9869df32
 #: ../../criteria-api.rst:504
 msgid "in"
 msgstr ""
 
+# 4bfd068f323847ae9a1ac466f88b7ca7
 #: ../../criteria-api.rst:505
 msgid "notIn - (not in)"
 msgstr ""
 
+# f371db95e0ef4cef98389b4be1e5fd0b
 #: ../../criteria-api.rst:506
 msgid "exists"
 msgstr ""
 
+# 44aec5ace18d42faaad8a2e9e1228ff2
 #: ../../criteria-api.rst:507
 msgid "notExists - (not exists)"
 msgstr ""
 
+# 2cabf37bf0464707833877a9731d11c0
 #: ../../criteria-api.rst:511
 msgid ""
 "If the right hand operand is ``null``, the WHERE or the HAVING clause "
@@ -461,53 +615,70 @@ msgid ""
 "javadoc for more details."
 msgstr ""
 
+# c89ffc84dc4e48109982afb35653762c
 #: ../../criteria-api.rst:517
 msgid "We also support the following utility operators:"
 msgstr ""
 
+# 261e55e6bc89479ba13c93be5a4ebca9
 #: ../../criteria-api.rst:519
 msgid "eqOrIsNull - (\"=\" or \"is null\")"
 msgstr ""
 
+# d879b6a5d94f4e99925c65fdc9711c57
 #: ../../criteria-api.rst:520
 msgid "neOrIsNotNull - (\"<>\" or \"is not null\")"
 msgstr ""
 
+# 7a6bbc244e704e47b7e001980cc222ed
+# d59e98ace01c4784929a58ed56dd8f14
 #: ../../criteria-api.rst:522 ../../criteria-api.rst:900
 msgid "We also support the following logical operators:"
 msgstr ""
 
+# 8e66203c077d4e1cad6ed6d469165187
+# 9d1500e2b5b64ef3af44394ea5dbefe8
 #: ../../criteria-api.rst:524 ../../criteria-api.rst:902
 msgid "and"
 msgstr ""
 
+# 249aff1c0aa04f769b301392eef14e6a
+# 6346c1fb8d154850a62be3b5b1b39469
 #: ../../criteria-api.rst:525 ../../criteria-api.rst:903
 msgid "or"
 msgstr ""
 
+# 20c81f6df2d04241a47aad26d9d83e63
+# 105b744f364c4b89a50e0cfca4d25252
 #: ../../criteria-api.rst:526 ../../criteria-api.rst:904
 msgid "not"
 msgstr ""
 
+# 064e033a0b274e76b8f8b0389c2d7aeb
 #: ../../criteria-api.rst:556
 msgid "You can write a subquery as follows:"
 msgstr ""
 
+# 119b91a14ff246f298900af8b5688e05
 #: ../../criteria-api.rst:581
 msgid "Dynamic where expression (Entityql, NativeSql)"
 msgstr ""
 
+# 5572b96bc2da46e1bc24b99adc524e0b
 #: ../../criteria-api.rst:583
 msgid ""
 "A where expression uses only evaluated operators to build a WHERE clause."
 msgstr ""
 
+# b2bd47effc3b4843a0a3eda50b4ec4c1
 #: ../../criteria-api.rst:585
 msgid ""
 "When every operators are not evaluated in a where expression, the built "
 "statement doesn't have any WHERE clause."
 msgstr ""
 
+# d21cee1292eb42e7837c10724d2ca954
+# cfc04abbb1f44202a26833dea95ed850
 #: ../../criteria-api.rst:588 ../../criteria-api.rst:938
 msgid ""
 "As well as, when every operators are not evaluated in a logical operator "
@@ -515,12 +686,14 @@ msgid ""
 "expression."
 msgstr ""
 
+# 1fd64f20d38240af87e59d44db796a96
 #: ../../criteria-api.rst:591
 msgid ""
 "For example, suppose that a where expression contains a conditional "
 "expression as follows:"
 msgstr ""
 
+# af2f6a7ec7e840d9a4ab2103b951f990
 #: ../../criteria-api.rst:609
 msgid ""
 "In the case that the ``enableNameCondition`` variable is ``false``, the "
@@ -528,48 +701,60 @@ msgid ""
 "statement:"
 msgstr ""
 
+# 1862cf99b7874e68ab78a7f0c55e7603
 #: ../../criteria-api.rst:619
 msgid "Join expression"
 msgstr ""
 
+# 71ae66ab33dd4e5a9de43851b7dccbd4
+# 68a8d9af2c244634bcccb969b73137cf
 #: ../../criteria-api.rst:621 ../../criteria-api.rst:1052
 msgid "We support the following expressions:"
 msgstr ""
 
+# 6b36e08f09cd461ca9dfc5a79904dbc3
 #: ../../criteria-api.rst:623
 msgid "innerJoin - (inner join)"
 msgstr ""
 
+# 7aeb2402c3bf476e8567d1dfcd63ab51
 #: ../../criteria-api.rst:624
 msgid "leftJoin - (left outer join)"
 msgstr ""
 
+# a4980217f44447ac84a77cb8137e166b
 #: ../../criteria-api.rst:627
 msgid "innerJoin (Entityql, NativeSql)"
 msgstr ""
 
+# 8db906bfe1914c329f09c72efb358eb7
 #: ../../criteria-api.rst:647
 msgid "leftJoin (Entityql, NativeSql)"
 msgstr ""
 
+# 05e3f7f5f65f47d69f15554728eb7709
 #: ../../criteria-api.rst:669
 msgid "association (Entityql)"
 msgstr ""
 
+# 57032aed5c904d7189cf6529bd880b0c
 #: ../../criteria-api.rst:671
 msgid ""
 "You can associate entities with the ``associate`` operation in the Entityql "
 "DSL. You have to use the ``associate`` operation with join expression."
 msgstr ""
 
+# db2b289a012c4e99b74ddcd63f5c8efd
 #: ../../criteria-api.rst:703
 msgid "You can associate many entities:"
 msgstr ""
 
+# f0dbf69ffe0241f9be776f61bc79039b
 #: ../../criteria-api.rst:728
 msgid "association for immutable entities (Entityql)"
 msgstr ""
 
+# 5bf0d072903f492fa3ece1bee31ca8c1
 #: ../../criteria-api.rst:730
 msgid ""
 "You can associate immutable entities with the ``associateWith`` operation in"
@@ -577,37 +762,44 @@ msgid ""
 " expression."
 msgstr ""
 
+# 6131c785e1634493987e32bcd9b0c9ab
 #: ../../criteria-api.rst:764
 msgid "Dynamic join expression (Entityql, NativeSql)"
 msgstr ""
 
+# d21bc326c9d340c696c8b7bc56684a09
 #: ../../criteria-api.rst:766
 msgid ""
 "A join expression uses only evaluated operators to build a JOIN clause."
 msgstr ""
 
+# e80fb01484154146b8f470971f3e938a
 #: ../../criteria-api.rst:768
 msgid ""
 "When every operators are not evaluated in a join expression, the built "
 "statement doesn't have any JOIN clause."
 msgstr ""
 
+# faf2c4a875094c14bf88a9ef7bcdb0c2
 #: ../../criteria-api.rst:771
 msgid ""
 "For example, suppose that a join expression contains a conditional "
 "expression as follows:"
 msgstr ""
 
+# f81fe62ea41c4c559d29230fc9c98703
 #: ../../criteria-api.rst:790
 msgid ""
 "In the case that the ``join`` variable is ``false``, the ``on`` expression "
 "is ignored. The above query issues the following SQL statement:"
 msgstr ""
 
+# d6d97dab38ea444b834be797d260ec59
 #: ../../criteria-api.rst:800
 msgid "Dynamic association (Entityql)"
 msgstr ""
 
+# b3cdfb0d9a514690be57a5638f703107
 #: ../../criteria-api.rst:802
 msgid ""
 "When you use the above dynamic join expression, the association must be "
@@ -615,46 +807,57 @@ msgid ""
 "the associate method:"
 msgstr ""
 
+# 3ac11f3a29604782a36e64ff1bcdac20
 #: ../../criteria-api.rst:831
 msgid "Aggregate Functions (NativeSql)"
 msgstr ""
 
+# f693f2e6c7f34b33b84a73e50537851b
 #: ../../criteria-api.rst:833
 msgid "We support the following aggregate functions:"
 msgstr ""
 
+# 9c8b34c7195240c186f842acf2dcd165
 #: ../../criteria-api.rst:835
 msgid "avg(property)"
 msgstr ""
 
+# 462394610495487ba265881ce6c2d68b
 #: ../../criteria-api.rst:836
 msgid "avgAsDouble(property)"
 msgstr ""
 
+# b4ef7bfcaecb4eb9935fbff1c464e045
 #: ../../criteria-api.rst:837
 msgid "count()"
 msgstr ""
 
+# 8fcdaef8b5264e9588e0b508f62f6cc2
 #: ../../criteria-api.rst:838
 msgid "count(property)"
 msgstr ""
 
+# 945f0f78f36545d0a868b58ae2dda738
 #: ../../criteria-api.rst:839
 msgid "countDistinct(property)"
 msgstr ""
 
+# c79dc55e79ce49d58c8c6cb91b7e1273
 #: ../../criteria-api.rst:840
 msgid "max(property)"
 msgstr ""
 
+# 58846d0dce7d47d5a46394f7192d1e0f
 #: ../../criteria-api.rst:841
 msgid "min(property)"
 msgstr ""
 
+# 1e8117008b9447ee849cbc94d99ed1dc
 #: ../../criteria-api.rst:842
 msgid "sum(property)"
 msgstr ""
 
+# 0f8f0f52c045472285f2fe2fa51a53ff
 #: ../../criteria-api.rst:844
 msgid ""
 "These are defined in the "
@@ -662,14 +865,17 @@ msgid ""
 "with static import."
 msgstr ""
 
+# a079fd2275d34e508ac7cf5a4b9ab89f
 #: ../../criteria-api.rst:847
 msgid "For example, you can pass the ``sum`` function to the select method:"
 msgstr ""
 
+# 47827837346d4528b869fe94e6b06a84
 #: ../../criteria-api.rst:862
 msgid "Group by expression (NativeSql)"
 msgstr ""
 
+# a1534fa487544171bd76d863220ef0f9
 #: ../../criteria-api.rst:877
 msgid ""
 "When you don't specify a group by expression, the expression is inferred "
@@ -677,73 +883,89 @@ msgid ""
 "same SQL statement above:"
 msgstr ""
 
+# 56da8a5579de4125bd42debef3fe8456
 #: ../../criteria-api.rst:889
 msgid "Having expression (NativeSql)"
 msgstr ""
 
+# 276cf33fc2dc4a588dc4f3dc8e5bef95
 #: ../../criteria-api.rst:891
 msgid "We support the following operators:"
 msgstr ""
 
+# 527e5c20240d4d1d8d1f08a904ef7cbd
 #: ../../criteria-api.rst:931
 msgid "Dynamic having expression (NativeSql)"
 msgstr ""
 
+# 1b289109a52549aabca4586e0662ef8a
 #: ../../criteria-api.rst:933
 msgid ""
 "A having expression uses only evaluated operators to build a HAVING clause."
 msgstr ""
 
+# af3a1ee048054af78518b1620b776d89
 #: ../../criteria-api.rst:935
 msgid ""
 "When every operators are not evaluated in a having expression, the built "
 "statement doesn't have any HAVING clause."
 msgstr ""
 
+# 158824c617a94b46953254c2dfba5f2f
 #: ../../criteria-api.rst:942
 msgid "Order by expression (Entityql, NativeSql)"
 msgstr ""
 
+# cf354001ac984259a0ea3dc4da8caf5b
 #: ../../criteria-api.rst:944
 msgid "We support the following order operations:"
 msgstr ""
 
+# 24f61db7065d4bb7bb20dc701471cf93
 #: ../../criteria-api.rst:946
 msgid "asc"
 msgstr ""
 
+# b4c6db08b6ef466fa6757b163842bdee
 #: ../../criteria-api.rst:947
 msgid "desc"
 msgstr ""
 
+# ede17190c569442cad2fce2d485045ed
 #: ../../criteria-api.rst:973
 msgid "Dynamic order by expression (NativeSql)"
 msgstr ""
 
+# 75a7ef158d8e478b82027a3f494d8b92
 #: ../../criteria-api.rst:975
 msgid ""
 "An order by expression uses only evaluated operators to build an ORDER BY "
 "clause."
 msgstr ""
 
+# 0fd403dd0ce848e693f95dc1dc7044ca
 #: ../../criteria-api.rst:977
 msgid ""
 "When every operators are not evaluated in a order by expression, the built "
 "statement doesn't have any ORDER BY clause."
 msgstr ""
 
+# 241623454340445baca00dddb1bb511e
 #: ../../criteria-api.rst:981
 msgid "Distinct expression (Entityql, NativeSql)"
 msgstr ""
 
+# b797fe49624048bf96c8928344142c0c
 #: ../../criteria-api.rst:1002
 msgid "Limit and Offset expression (Entityql, NativeSql)"
 msgstr ""
 
+# b2ae02ff3b68469ba4a57c628e28d0e2
 #: ../../criteria-api.rst:1022
 msgid "Dynamic Limit and Offset expression (Entityql, NativeSql)"
 msgstr ""
 
+# c5d990fb510a46228c4add707e1799b2
 #: ../../criteria-api.rst:1024
 msgid ""
 "A limit expressions uses only non-null value to build a FETCH FIRST clause. "
@@ -751,6 +973,7 @@ msgid ""
 "clause."
 msgstr ""
 
+# e8c91e949a574a309813b0c994cbc7e3
 #: ../../criteria-api.rst:1027
 msgid ""
 "As well as, an offset expressions uses only non-null value to build a OFFSET"
@@ -758,359 +981,462 @@ msgid ""
 " clause."
 msgstr ""
 
+# bf1f5be023294cb9b104552fc13a32f7
 #: ../../criteria-api.rst:1031
 msgid "For Update expression (Entityql, NativeSql)"
 msgstr ""
 
+# 2264ce6190d84cd69191eb583cd0f12b
 #: ../../criteria-api.rst:1050
 msgid "Union expression (NativeSql)"
 msgstr ""
 
+# a8dd76a62e1e43edb65d0498a0640352
 #: ../../criteria-api.rst:1054
 msgid "union"
 msgstr ""
 
+# 353385c35c9d466eb838a3310593edab
 #: ../../criteria-api.rst:1055
 msgid "unionAll - (union all)"
 msgstr ""
 
+# 3ed8dd36514c4d7e8f8358d257bc714d
 #: ../../criteria-api.rst:1078
 msgid "The order by expression with index is supported:"
 msgstr ""
 
+# 9dff028aa4984996be0228af841060c4
 #: ../../criteria-api.rst:1095
 msgid "Derived Table expression (Entityql, NativeSql)"
 msgstr ""
 
+# c6f42df6521a45ad90b2c232c8faef30
 #: ../../criteria-api.rst:1097
 msgid ""
 "We support subqueries using derived tables. However, an entity class "
 "corresponding to the derived table is required."
 msgstr ""
 
+# 20a6f8ccf81041be9ae46436df33313b
 #: ../../criteria-api.rst:1100
 msgid "Define the entity class corresponding to the derived table as follows:"
 msgstr ""
 
+# bcfe0dc9aa6c4fa3adff82686876734e
 #: ../../criteria-api.rst:1147
 msgid "A subquery using a derived table can be written as follows."
 msgstr ""
 
+# c92029a6437e4fa0b967072258a53180
 #: ../../criteria-api.rst:1188
 msgid "Delete statement"
 msgstr ""
 
+# 7dead3d65aa64b968c18ba7c5ff530e3
 #: ../../criteria-api.rst:1190
 msgid ""
 "For the specification of the where expression, see :ref:`criteria_where`. "
 "The same rule is applied to delete statements."
 msgstr ""
 
+# add59f88ce0d48d38b8e2f21b39e0142
 #: ../../criteria-api.rst:1194
 msgid "Delete settings (Entityql, NativeSql)"
 msgstr ""
 
+# de4ac556c2574e73b0d04ebc06ccf421
+# c4b0628d06dd4360b18ddff9d82fb794
+# ff47ac32b5504ea1b82c77947d40ffda
 #: ../../criteria-api.rst:1199 ../../criteria-api.rst:1287
 #: ../../criteria-api.rst:1432
 msgid "batchSize"
 msgstr ""
 
+# d6470bafc8e948b9900a0e9e8958a741
+# 5236612fc8044ab4a33499cc48b6530f
 #: ../../criteria-api.rst:1201 ../../criteria-api.rst:1434
 msgid "ignoreVersion"
 msgstr ""
 
+# e65900f7089b4504b594c27745e746af
+# c54050e1ee68409ca3c270acd513430c
 #: ../../criteria-api.rst:1204 ../../criteria-api.rst:1437
 msgid "suppressOptimisticLockException"
 msgstr ""
 
+# 49d8297e0313497084410799856931ce
+# 7f719d5e9fdb4f28858ba8ca16cc11d7
+# e2048440530c4746b7f0a1dbf4edced2
 #: ../../criteria-api.rst:1206 ../../criteria-api.rst:1293
 #: ../../criteria-api.rst:1442
 msgid "They are all optional."
 msgstr ""
 
+# 47753b29529f482686387e03a8e02d60
+# b88d55ae9c5f45f4b26cd2a0dc455986
+# 9486196f543c491f8c88bbe66f85745c
 #: ../../criteria-api.rst:1208 ../../criteria-api.rst:1295
 #: ../../criteria-api.rst:1444
 msgid "You can apply them as follows:"
 msgstr ""
 
+# a36229c415da44b485b00ebd1f8cf521
 #: ../../criteria-api.rst:1226
 msgid ""
 "If you want to build a delete statement without a WHERE clause, you have to "
 "enable the `allowEmptyWhere` setting."
 msgstr ""
 
+# 1b17f3c0deeb4cd182ad5c804cb3757f
 #: ../../criteria-api.rst:1230
 msgid "Delete statement (Entityql)"
 msgstr ""
 
+# f520c7472f1c4876bfae3a859f6b179a
 #: ../../criteria-api.rst:1246
 msgid "Batch Delete is also supported:"
 msgstr ""
 
+# 27f4356d82854f0b86f58c4e46319ff9
+# 7ef056f2bc664aaf8e9bf749dc98d4dd
+# 3330b743e2584a849e03f6ffce723ded
+# 0f16749216b34372aaee7c6a4fdd19db
+# ba4a01de19ef46afa0887f3fbbef7c9e
 #: ../../criteria-api.rst:1257 ../../criteria-api.rst:1364
 #: ../../criteria-api.rst:1395 ../../criteria-api.rst:1510
 #: ../../criteria-api.rst:1540
 msgid "The execute method may throw following exceptions:"
 msgstr ""
 
+# f1aed686120941539ffd32151a4cae81
+# 0ec429724c184810ad178676adb5323c
 #: ../../criteria-api.rst:1259 ../../criteria-api.rst:1512
 msgid ""
 "OptimisticLockException: if the entity has a version property and an update "
 "count is 0"
 msgstr ""
 
+# 02f9dbd18aad40239fc2b0c86b0bbf1e
 #: ../../criteria-api.rst:1262
 msgid "Delete statement (NativeSql)"
 msgstr ""
 
+# f6be12b38c674315bcbad77a341ab99a
 #: ../../criteria-api.rst:1277
 msgid "Insert statement"
 msgstr ""
 
+# b3da652cfc9a4e3d9d571fc9eaeaaa43
 #: ../../criteria-api.rst:1280
 msgid "Insert settings (Entityql, NativeSql)"
 msgstr ""
 
+# ee1a31c7b0754c5d8d13670922537d49
+# 7461bd69c9ed4530963a9a2616459a3f
 #: ../../criteria-api.rst:1288 ../../criteria-api.rst:1438
 msgid "excludeNull"
 msgstr ""
 
+# e816be7aa34142b29c4272bf4c24da4c
+# b88d62ea1a324875b017cb6f1279aab1
 #: ../../criteria-api.rst:1289 ../../criteria-api.rst:1439
 msgid "include"
 msgstr ""
 
+# b92a0668407640409211e42a2ae12fa3
+# 589a4f7562d6431884bc56a77d5ede5b
 #: ../../criteria-api.rst:1290 ../../criteria-api.rst:1440
 msgid "exclude"
 msgstr ""
 
+# 4df6e42000ec4eefb5a9473409e6411b
 #: ../../criteria-api.rst:1291
 msgid "ignoreGeneratedKeys"
 msgstr ""
 
+# 94352b008ce34424831a60d452999769
 #: ../../criteria-api.rst:1331
 msgid "Insert statement (Entityql)"
 msgstr ""
 
+# 5f3c68823c0a472a88775b8331768537
 #: ../../criteria-api.rst:1352
 msgid "Batch Insert is also supported:"
 msgstr ""
 
+# a59f90f9919b4da0b7324e65f0e80363
+# 4bcb1bf15a32453d88a9505105a24021
+# a8e0f60dea30420f981c7016e03d6994
+# 52c2fd9753b84d439cab986eed0120fb
 #: ../../criteria-api.rst:1366 ../../criteria-api.rst:1397
 #: ../../criteria-api.rst:1513 ../../criteria-api.rst:1542
 msgid "UniqueConstraintException: if an unique constraint is violated"
 msgstr ""
 
+# e846776b374f4d33bc00bb324e3d814f
 #: ../../criteria-api.rst:1369
 msgid "Insert statement (NativeSql)"
 msgstr ""
 
+# 1e1358615877404ab53326d36da3c637
 #: ../../criteria-api.rst:1399
 msgid "We also support the INSERT SELECT syntax as follows:"
 msgstr ""
 
+# 59f3964e53304687b195d1772d784095
 #: ../../criteria-api.rst:1421
 msgid "Update statement"
 msgstr ""
 
+# d05622eaad134261bb8ec243590bb2c6
 #: ../../criteria-api.rst:1423
 msgid ""
 "For the specification of the where expression, see :ref:`criteria_where`. "
 "The same rule is applied to update statements."
 msgstr ""
 
+# efc597311ce844fea67ca45cd06e4493
 #: ../../criteria-api.rst:1427
 msgid "Update settings (Entityql, NativeSql)"
 msgstr ""
 
+# 5076a121b1cb44ed936f4c7996af3803
 #: ../../criteria-api.rst:1475
 msgid ""
 "If you want to build a update statement without a WHERE clause, you have to "
 "enable the `allowEmptyWhere` setting."
 msgstr ""
 
+# 579856f9b3014f85be1266ebdac1a775
 #: ../../criteria-api.rst:1479
 msgid "Update statement (Entityql)"
 msgstr ""
 
+# 7704bde8bdff418f9d12a38a9975a2a9
 #: ../../criteria-api.rst:1498
 msgid "Batch Update is also supported:"
 msgstr ""
 
+# 7a42ff7dd3404b36bfd4090f4243faf8
 #: ../../criteria-api.rst:1516
 msgid "Update statement (NativeSql)"
 msgstr ""
 
+# 23ed2936fcb84007962b97501cf53371
 #: ../../criteria-api.rst:1545
 msgid "Property expressions (Entityql, NativeSql)"
 msgstr ""
 
+# 5e6f461cfcb948169f3e603ac89ca756
 #: ../../criteria-api.rst:1547
 msgid ""
 "All expression methods are defined in the "
 "``org.seasar.doma.jdbc.criteria.expression.Expressions`` class."
 msgstr ""
 
+# b6803b45aaf940558fb84c5ea216394f
 #: ../../criteria-api.rst:1550
 msgid "Use them with static import."
 msgstr ""
 
+# 5e5adc78f09a429c9449a907dd4dc151
 #: ../../criteria-api.rst:1553
 msgid "Arithmetic expressions"
 msgstr ""
 
+# 94d0c3d924ab41dd91cbbe8baae21e0e
 #: ../../criteria-api.rst:1555
 msgid "We provide the following methods:"
 msgstr ""
 
+# cbdb2c1fa7d74576b2c48e80bd2751aa
 #: ../../criteria-api.rst:1557
 msgid "add - (+)"
 msgstr ""
 
+# b49a601793c14e3cb3d7b44243230c62
 #: ../../criteria-api.rst:1558
 msgid "sub - (-)"
 msgstr ""
 
+# f8689c341f684509ab9f8a95926f6e71
 #: ../../criteria-api.rst:1559
 msgid "mul - (*)"
 msgstr ""
 
+# 18430c2d95284cff83ce8885b6ef67e5
 #: ../../criteria-api.rst:1560
 msgid "div - (/)"
 msgstr ""
 
+# 413e00a9d4654310a20db328449dbc81
 #: ../../criteria-api.rst:1561
 msgid "mod - (%)"
 msgstr ""
 
+# 9da7772fb78e4d1ea04d6dd6902b1393
 #: ../../criteria-api.rst:1563
 msgid "You can use the ``add`` method as follows:"
 msgstr ""
 
+# a64924cc65f54ddebc25570e2f5af35f
 #: ../../criteria-api.rst:1585
 msgid "String functions"
 msgstr ""
 
+# ec876dcf6a564618b828427ca2bcb186
+# c06b2daa4d644090ad80ace4bd50e087
 #: ../../criteria-api.rst:1587 ../../criteria-api.rst:1620
 msgid "We provide the following method:"
 msgstr ""
 
+# c01ce8cf1e134c1698c2c5a10207ff4b
 #: ../../criteria-api.rst:1589
 msgid "concat"
 msgstr ""
 
+# a1dbbf9d42e54d3ba55bb34f97e2c8d3
 #: ../../criteria-api.rst:1590
 msgid "lower"
 msgstr ""
 
+# cb490a9f806743e8a04c862b7966a376
 #: ../../criteria-api.rst:1591
 msgid "upper"
 msgstr ""
 
+# 0903990e5a4c451fa2013fa548ba3235
 #: ../../criteria-api.rst:1592
 msgid "trim"
 msgstr ""
 
+# 49ff0596200e45d6b9f1e22cbd386aa9
 #: ../../criteria-api.rst:1593
 msgid "ltrim"
 msgstr ""
 
+# c525fb55cfd24a4388a61f4966545dcf
 #: ../../criteria-api.rst:1594
 msgid "rtrim"
 msgstr ""
 
+# 2b14294606824c1b8e38b2903c4a07b2
 #: ../../criteria-api.rst:1596
 msgid "You can use the ``concat`` method as follows:"
 msgstr ""
 
+# cf3f0386ed5b4b289cbd7393d8fe4fe4
 #: ../../criteria-api.rst:1618
 msgid "Literal expression"
 msgstr ""
 
+# 43a7e44fc5a547c1b8f7841ebd1ea7fc
 #: ../../criteria-api.rst:1622
 msgid "literal (for all basic data types)"
 msgstr ""
 
+# a523e7b0a8024a269e0d0b9449cdad7b
 #: ../../criteria-api.rst:1624
 msgid "You can use the ``literal`` method as follows:"
 msgstr ""
 
+# 9c27c8ef389b448c90f74780c039f2bd
 #: ../../criteria-api.rst:1641
 msgid ""
 "Note that the literal expressions are not recognized as bind variables."
 msgstr ""
 
+# ea8383fb061a4254b45b93b598f81622
 #: ../../criteria-api.rst:1644
 msgid "Case expression"
 msgstr ""
 
+# 879eafa615a74e18bb4308fab6477d47
+# a8d3f69874974fc5a4eb49305c674054
 #: ../../criteria-api.rst:1646 ../../criteria-api.rst:1681
 msgid "We support the following method:"
 msgstr ""
 
+# fe7c9d56584444c2847aab83e8039254
 #: ../../criteria-api.rst:1648
 msgid "when"
 msgstr ""
 
+# 9daaea5d4e2c4bc1884e32a2c9fb0d04
 #: ../../criteria-api.rst:1650
 msgid "You can use the ``when`` method as follows:"
 msgstr ""
 
+# b3742cb77c4f4490bcc9543f62ce9dcc
 #: ../../criteria-api.rst:1679
 msgid "Subquery select expression"
 msgstr ""
 
+# 84c3e861545f4ccea4ae7063f3a216aa
 #: ../../criteria-api.rst:1683
 msgid "select"
 msgstr ""
 
+# e2b5479b947949ea972f62d443b29116
 #: ../../criteria-api.rst:1685
 msgid "You can use the ``select`` method as follows:"
 msgstr ""
 
+# f6813df982384c238b28f2fb6bc11de3
 #: ../../criteria-api.rst:1725
 msgid "Scopes (Entityql, NativeSql)"
 msgstr ""
 
+# 0931eb1c50384bdbb8a3ba45c4313bdc
 #: ../../criteria-api.rst:1727
 msgid "Scoping allow you to specify commonly-used query conditions."
 msgstr ""
 
+# 99b61eb4f0e9447f84ea9548e2b58a58
 #: ../../criteria-api.rst:1729
 msgid ""
 "To define a simple scope, create the class which has a method annotated with"
 " ``@Scope``:"
 msgstr ""
 
+# c83dcf79854e487498228c435c40fdef
 #: ../../criteria-api.rst:1741
 msgid ""
 "To enable the scope, specify the above class in the scopes element of "
 "``@Metamodel``:"
 msgstr ""
 
+# fdf031de9d264bf4b3369780ab851c4e
 #: ../../criteria-api.rst:1749
 msgid ""
 "Now the metamodel ``Department_`` has a ``onlyTokyo`` method. You can use it"
 " as follows:"
 msgstr ""
 
+# e5bd20df1dfc4f25b4cdfd9742164f89
 #: ../../criteria-api.rst:1765
 msgid ""
 "When you want to combine other query conditions with scopes, compose them "
 "using the `andThen` method:"
 msgstr ""
 
+# 289ec534c77144e8b2dfa1fccfa211b2
 #: ../../criteria-api.rst:1774
 msgid "You can define several scopes in a class as follows:"
 msgstr ""
 
+# 3b1254ea3d3d4a908f3ee554b7a7b3ff
 #: ../../criteria-api.rst:1796
 msgid "Tips"
 msgstr ""
 
+# 4835aedbe7ae4ae8bbe2d33fdbb15e80
 #: ../../criteria-api.rst:1799
 msgid "Execution in Dao (Entityql, NativeSql)"
 msgstr ""
 
+# cb780822d162486c8038381090678851
 #: ../../criteria-api.rst:1801
 msgid ""
 "It is useful to execute DSLs in the default method of the Dao interface. To "
@@ -1118,56 +1444,69 @@ msgid ""
 "follows:"
 msgstr ""
 
+# 4617ed0c6d3545bf95d9c0fbc19341de
 #: ../../criteria-api.rst:1818
 msgid "Overwriting the table name (Entityql, NativeSql)"
 msgstr ""
 
+# 55ef64405c574687bb95332ab5d21ff4
 #: ../../criteria-api.rst:1820
 msgid ""
 "A metamodel constructor accepts the qualified table name and the metamodel "
 "overwrites its table name."
 msgstr ""
 
+# 34ff891016664ac6a79cf81b6496ca02
 #: ../../criteria-api.rst:1823
 msgid "It is useful to handle two tables that have the same data structure:"
 msgstr ""
 
+# 77f20c80febc47b5b744bceb2e426434
 #: ../../criteria-api.rst:1843
 msgid "Debugging (Entityql, NativeSql)"
 msgstr ""
 
+# c78aafe29fcc44c98256ca109efe3236
 #: ../../criteria-api.rst:1845
 msgid "To know the SQL statement built by the DSLs, use the ``asSql`` method:"
 msgstr ""
 
+# 2525eafeb00d495db2fe1fdec6b16fc9
+# 967fca81c56b4222996da651223b50c4
 #: ../../criteria-api.rst:1857 ../../criteria-api.rst:1884
 msgid "The above code prints as follows:"
 msgstr ""
 
+# c35d1a0129124d748501e5207537271e
 #: ../../criteria-api.rst:1864
 msgid ""
 "The ``asSql`` method doesn't issue the SQL statement to your Database. It "
 "only builds the SQL statement and return it as an ``Sql`` object."
 msgstr ""
 
+# 4308e2f7f79c4d02b8d3b8399a0a1cc3
 #: ../../criteria-api.rst:1867
 msgid "You can also get the ``Sql`` object by calling the ``peek`` method."
 msgstr ""
 
+# 95a4da4643b2443f97bc90d465cd2fd4
 #: ../../criteria-api.rst:1894
 msgid "Sample projects"
 msgstr ""
 
+# 27066ee33b8245ef9c1c6b7b1bc4a977
 #: ../../criteria-api.rst:1896
 msgid "`simple-examples <https://github.com/domaframework/simple-examples>`_"
 msgstr ""
 
+# b381454d27e04a26ba5a138a2b263c08
 #: ../../criteria-api.rst:1897
 msgid ""
 "`spring-boot-jpetstore <https://github.com/domaframework/spring-boot-"
 "jpetstore>`_"
 msgstr ""
 
+# 005f4a8eeeba45098ce06b5e0577a674
 #: ../../criteria-api.rst:1898
 msgid "`kotlin-sample <https://github.com/domaframework/kotlin-sample>`_"
 msgstr ""

@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the Doma package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Doma\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 00:27+0900\n"
+"POT-Creation-Date: 2024-03-10 10:39+0900\n"
 "PO-Revision-Date: 2024-03-09 16:18+0000\n"
+"Last-Translator: Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024\n"
 "Language-Team: Japanese (https://app.transifex.com/domaframework/teams/189259/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,14 +21,17 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+# 4de3581580c043c3912e4e9ee0350911
 #: ../../expression.rst:3
 msgid "Expression language"
 msgstr ""
 
+# bc7f2625a50c4ed1823e56f6ba5d48c7
 #: ../../expression.rst:6
 msgid "Contents"
-msgstr ""
+msgstr "コンテンツ"
 
+# 0ff8c6a118a04cadb4f7a7503bfd7d50
 #: ../../expression.rst:8
 msgid ""
 "You can write simple expressions in directives of :doc:`sql`. The grammar is"
@@ -32,6 +39,7 @@ msgid ""
 "do."
 msgstr ""
 
+# f2c6bb26f74d496aac744d0919a02fbc
 #: ../../expression.rst:14
 msgid ""
 "Especially, the big difference is how to use optional types like "
@@ -42,322 +50,406 @@ msgid ""
 "methods which have an ``Optional`` type in the parameters."
 msgstr ""
 
+# 87f8aee501ee414f922c1c17433f04db
 #: ../../expression.rst:21
 msgid ""
 "When you want to check existence of a value, use ``/*%if optional != null "
 "*/`` instead of ``/*%if optional.isPresent() */``."
 msgstr ""
 
+# 2aa2a3a5a01e44aa92f29f2b806fae90
 #: ../../expression.rst:24
 msgid ""
 "The same is true for ``java.util.OptionalInt``, "
 "``java.util.OptionalDouble``, and ``java.util.OptionalLong``."
 msgstr ""
 
+# 497efa5bbecc40b5b7d07bb790d26519
 #: ../../expression.rst:28
 msgid "Literals"
 msgstr ""
 
+# eda93e6e48e54e15959d02664f8e9af8
 #: ../../expression.rst:30
 msgid "You can use the following literals:"
 msgstr ""
 
+# 74f5e5c8624440b5b1eea36c82183007
 #: ../../expression.rst:33
 msgid "Literal"
 msgstr ""
 
+# fcc991f332e64211a446e7480b0b2aff
 #: ../../expression.rst:33
 msgid "Type"
 msgstr ""
 
+# 99731c85f9ac4c53ace72bfb775ea27a
 #: ../../expression.rst:35
 msgid "null"
 msgstr ""
 
+# ade31c68ba1b40c58822cb217493e82e
 #: ../../expression.rst:35
 msgid "void"
 msgstr ""
 
+# f62697775a784ebd887251144fa0f386
 #: ../../expression.rst:37
 msgid "true"
 msgstr ""
 
+# 67b2c8ea63ef413c9ca774f5507a7f49
+# 7928ddbebefc4f97b20741e0d0922b20
 #: ../../expression.rst:37 ../../expression.rst:39
 msgid "boolean"
 msgstr ""
 
+# 0c2ae1d9d8214bdc8a7bc25afc723e7c
 #: ../../expression.rst:39
 msgid "false"
 msgstr ""
 
+# dcc301f026394f198c137f15e66df2e7
 #: ../../expression.rst:41
 msgid "10"
 msgstr ""
 
+# 83357782dcbd4efbb44289ee4b0a6aee
 #: ../../expression.rst:41
 msgid "int"
 msgstr ""
 
+# 5fd51f9676c44bd59d4fca8c4e1b4d20
 #: ../../expression.rst:43
 msgid "10L"
 msgstr ""
 
+# d1c5064d712b46c1b0c58870e79f90e4
 #: ../../expression.rst:43
 msgid "long"
 msgstr ""
 
+# 3fcd92fad7d342ecbcf1b5c68df98614
 #: ../../expression.rst:45
 msgid "0.123F"
 msgstr ""
 
+# e151bdd1de9945dcb62ce644698c59e5
 #: ../../expression.rst:45
 msgid "float"
 msgstr ""
 
+# f76df77b42b84a689b92040ed612a79f
 #: ../../expression.rst:47
 msgid "0.123D"
 msgstr ""
 
+# e00ef544e5e541559d34a2c1657dc5da
 #: ../../expression.rst:47
 msgid "double"
 msgstr ""
 
+# 67a87b8744e54f108b2dbb9a0a1ad9ff
 #: ../../expression.rst:49
 msgid "0.123B"
 msgstr ""
 
+# 0ed37d2131d64a5585d62e97836c6efe
 #: ../../expression.rst:49
 msgid "java.math.BigDecimal"
 msgstr ""
 
+# 127f7139c83d4b12a188ca5e06b34895
 #: ../../expression.rst:51
 msgid "'a'"
 msgstr ""
 
+# 5c05363dd4a646d69ee82a03ac68eda0
+# e9144cca802145cd9c4bdea87458740f
 #: ../../expression.rst:51 ../../expression.rst:155
 msgid "char"
 msgstr ""
 
+# 887e7f85e2964c46ad05cb599b35f289
 #: ../../expression.rst:53
 msgid "\"a\""
 msgstr ""
 
+# 989238687aad4606b3d171c9cdadfd9e
+# 9d77bf81cc27407ba498727eeab8ce49
 #: ../../expression.rst:53 ../../expression.rst:153
 msgid "java.lang.String"
 msgstr ""
 
+# a8e5a060495b4fa1bb47e4ac54f87aa0
 #: ../../expression.rst:56
 msgid ""
 "The numeral types are distinguished by suffix letters such as ``L`` or ``F``"
 " at the end of the literals. The suffixes must be capital letters."
 msgstr ""
 
+# eee5a66d8ac44cf0abe4ddeacb2041f3
 #: ../../expression.rst:67
 msgid "Comparison operators"
 msgstr ""
 
+# 483c654caf8140d497752fd7660faab3
 #: ../../expression.rst:69
 msgid "You can use the following comparison operators:"
 msgstr ""
 
+# 90f6703c66d8418d8e1d19bb1aec5362
+# 4dced3546a55403dbedb06bb0631d4f6
+# 18e4b7680e69450d9df397cf5c823a94
 #: ../../expression.rst:72 ../../expression.rst:104 ../../expression.rst:126
 msgid "Operator"
 msgstr ""
 
+# 0e6122f801344f479b903294a38c2385
+# 419e406a9d6c4b6e821005592b2fcc38
+# 0f53087a704e4e8f8e927e3df529242b
 #: ../../expression.rst:72 ../../expression.rst:104 ../../expression.rst:126
 msgid "Description"
 msgstr ""
 
+# c63a37e619ff4e64bbfc79d70e05bc82
 #: ../../expression.rst:74
 msgid "=="
 msgstr ""
 
+# 6c4587240dcc403994915ac3ef6b90b8
 #: ../../expression.rst:74
 msgid "Equal to operator"
 msgstr ""
 
+# 8183f66747d14ffcaab30ab23a73a13f
 #: ../../expression.rst:76
 msgid "!="
 msgstr ""
 
+# 20561d87adef411794ca5bcf01404430
 #: ../../expression.rst:76
 msgid "Not equal to operator"
 msgstr ""
 
+# ac8efa9ff7414b8f8cbce66eeb333eda
 #: ../../expression.rst:78
 msgid "<"
 msgstr ""
 
+# 47ff8d852224457393444dc810e9afb8
 #: ../../expression.rst:78
 msgid "Less than operator"
 msgstr ""
 
+# c5eb4e5e757a4e8796c9d9a265f56686
 #: ../../expression.rst:80
 msgid "<="
 msgstr ""
 
+# 798037188aac413a8297d3ca8e1d5a35
 #: ../../expression.rst:80
 msgid "Less than or equal to operator"
 msgstr ""
 
+# 7c3c64c8709d4821b5f1f4ca0feb2e26
 #: ../../expression.rst:82
 msgid ">"
 msgstr ""
 
+# 9d58cbb42378496b99c35f9b7d967364
 #: ../../expression.rst:82
 msgid "Greater than operator"
 msgstr ""
 
+# 1e7547b7ae8249ebbe9937b9bf928924
 #: ../../expression.rst:84
 msgid ">="
 msgstr ""
 
+# 86e809ded7be4d6baf3468e3c586df2c
 #: ../../expression.rst:84
 msgid "Greater than or equal to operator"
 msgstr ""
 
+# 6236b855be0043f29d0c3f4e574ddfd7
 #: ../../expression.rst:87
 msgid ""
 "To use comparison operators, operands must implement "
 "``java.lang.Comparable``."
 msgstr ""
 
+# 60f0c38b8c394216b3c2e20fe18c63e0
 #: ../../expression.rst:89
 msgid "The operands for ``<``, ``<=``, ``>`` and ``>=`` must not be ``null``."
 msgstr ""
 
+# 5ad2a0db66744fcbb5dcad8b706f1f84
 #: ../../expression.rst:99
 msgid "Logical operators"
 msgstr ""
 
+# d9a852a35a6f4c16827e37bc207ba3a7
 #: ../../expression.rst:101
 msgid "You can use the following logical operators:"
 msgstr ""
 
+# 5422f055a6994cc2914ac2843a2efc89
 #: ../../expression.rst:106
 msgid "!"
 msgstr ""
 
+# ffefaeb12009401785959e2138bc7e8e
 #: ../../expression.rst:106
 msgid "Logical complement operator"
 msgstr ""
 
+# f7317b111b9f4758ba6cf513e9be6138
 #: ../../expression.rst:107
 msgid "&&"
 msgstr ""
 
+# 2e624f129d4f4187aca96158910c354a
 #: ../../expression.rst:107
 msgid "Conditional-AND operator"
 msgstr ""
 
+# 2385b840544b49ddbc9f61b38d76f138
 #: ../../expression.rst:108
 msgid "||"
 msgstr ""
 
+# 787a8d8d2422458c95f2f1c8f64fec03
 #: ../../expression.rst:108
 msgid "Conditional-OR operator"
 msgstr ""
 
+# b439cdcda5f14355a2a158158f416e63
 #: ../../expression.rst:111
 msgid "With parentheses, you can override the precedence of operators."
 msgstr ""
 
+# 6f9a6a1e26d64946879c02d69fefd199
 #: ../../expression.rst:121
 msgid "Arithmetic operators"
 msgstr ""
 
+# 543f4c10140e42efb5b1d1c229a4565e
 #: ../../expression.rst:123
 msgid "You can use the following arithmetic operators:"
 msgstr ""
 
+# 7caad297a66a4782b82ccf961db60124
 #: ../../expression.rst:128
 msgid "\\+"
 msgstr ""
 
+# 6dffc87d072647f7939c3da22cce3c33
 #: ../../expression.rst:128
 msgid "Additive operator"
 msgstr ""
 
+# 5930c6e1042a4fa79404747c4c3a3394
 #: ../../expression.rst:130
 msgid "\\-"
 msgstr ""
 
+# 78ba0e905cab42eb942c19616e3aa264
 #: ../../expression.rst:130
 msgid "Subtraction operator"
 msgstr ""
 
+# 4f90f5c0165949b9b1375a2cd99f18b3
 #: ../../expression.rst:132
 msgid "\\*"
 msgstr ""
 
+# e2e970f1ab864c59b153cbb2a51eb762
 #: ../../expression.rst:132
 msgid "Multiplication operator"
 msgstr ""
 
+# 7fa91b5e69cb446181e105858818bce7
 #: ../../expression.rst:134
 msgid "/"
 msgstr ""
 
+# df50d3074238479f939fbb84a025ed09
 #: ../../expression.rst:134
 msgid "Division operator"
 msgstr ""
 
+# 0010cc9a08154d6eb565d2346c7ff752
 #: ../../expression.rst:136
 msgid "%"
 msgstr ""
 
+# d2adaa515f34482a8089d328a7979335
 #: ../../expression.rst:136
 msgid "Remainder operator"
 msgstr ""
 
+# 56cef2d137b4478c8be2b731bfe48a39
 #: ../../expression.rst:139
 msgid "Operands must be numeric type."
 msgstr ""
 
+# 5c7108e5001c4362a810f4c246822001
 #: ../../expression.rst:147
 msgid "String concatenation operator"
 msgstr ""
 
+# 13a5c94223624ca78563d3a25080c4e9
 #: ../../expression.rst:149
 msgid "You can concatenate characters using a concatenation operator ``+``."
 msgstr ""
 
+# 711ccc7c27684a5398060182556a6c5e
 #: ../../expression.rst:151
 msgid "The operand must be one of the following types:"
 msgstr ""
 
+# d9a57977961b4dc9a4fbb34cd2108467
 #: ../../expression.rst:154
 msgid "java.lang.Character"
 msgstr ""
 
+# afaf6c31fc134318aa72cd23c44c3384
 #: ../../expression.rst:163
 msgid "Calling instance methods"
 msgstr ""
 
+# ecd86d5cb7a145e3929b45c6b4a36d03
 #: ../../expression.rst:165
 msgid ""
 "You can call instance methods with the method names separated by dots ``.``."
 " The method visibility must be public."
 msgstr ""
 
+# 4223a335e7f14964ba1df14ccccd228c
 #: ../../expression.rst:175
 msgid "If the method has no argument, specify ``()`` after the method name."
 msgstr ""
 
+# 13418dc8c5914f3dba36ba5716eccb15
 #: ../../expression.rst:185
 msgid "Accessing to instance fields"
 msgstr ""
 
+# 2d753b4fa3df45f0a2ff357de2a89ebd
 #: ../../expression.rst:187
 msgid ""
 "You can access instance fields with the field names separated by dots ``.``."
 " Even if the visibility is private, you can access it."
 msgstr ""
 
+# 9f6f53290048485397152930c7506b3f
 #: ../../expression.rst:196
 msgid "Calling static methods"
 msgstr ""
 
+# 2250faee5d994109aa9bfb8c30d4b577
 #: ../../expression.rst:198
 msgid ""
 "You can call static methods by continuing the method names with the fully "
@@ -365,10 +457,12 @@ msgid ""
 "public."
 msgstr ""
 
+# baea86aa1d5b49dd8a48208168997b6e
 #: ../../expression.rst:210
 msgid "Accessing to static fields"
 msgstr ""
 
+# e2de579110cf42be93b1cd1b5e7cf0e1
 #: ../../expression.rst:212
 msgid ""
 "You can access static fields by continuing the field name with the fully "
@@ -376,22 +470,26 @@ msgid ""
 "you can access it."
 msgstr ""
 
+# 06e136055d8e40979d87052561070cd0
 #: ../../expression.rst:224
 msgid "Using built-in functions"
 msgstr ""
 
+# bd0157b9ffd549158b087f841b986bad
 #: ../../expression.rst:226
 msgid ""
 "Built-in functions are utilities mainly for changing values of binding "
 "variables before binding them to SQL."
 msgstr ""
 
+# 3fdc9175a29b4687ba04199272a932f9
 #: ../../expression.rst:229
 msgid ""
 "For example, when you run a prefix search with a LIKE clause, you can write "
 "like this:"
 msgstr ""
 
+# fe4e2ea5371d4013842ee84e76aa1583
 #: ../../expression.rst:237
 msgid ""
 "``@prefix(employee.employeeName)`` means that we pass "
@@ -404,14 +502,17 @@ msgid ""
 "``$``, therefore the value is converted to ``AB$%C%``."
 msgstr ""
 
+# be8f0b58c67845ffb261c2823412db2f
 #: ../../expression.rst:247
 msgid "You can use following function signatures:"
 msgstr ""
 
+# a956a830a8f64668bf28edaa68980475
 #: ../../expression.rst:253
 msgid "String @escape(CharSequence text, char escapeChar = '$')"
 msgstr ""
 
+# 95518d9339714eabaef36cf6fadb4a4e
 #: ../../expression.rst:250
 msgid ""
 "Escapes the character sequence for LIKE operation. The return value is a "
@@ -420,10 +521,12 @@ msgid ""
 "It returns ``null`` if you pass ``null`` as a parameter."
 msgstr ""
 
+# 8be91e08b7af430bb65ad553c7165f86
 #: ../../expression.rst:260
 msgid "String @prefix(CharSequence prefix, char escapeChar = '$')"
 msgstr ""
 
+# 2d17a2741c0f4331b2d3e6c4bf804dba
 #: ../../expression.rst:256
 msgid ""
 "Converts the character sequence for prefix search. The return value is a "
@@ -433,10 +536,12 @@ msgid ""
 "as a parameter."
 msgstr ""
 
+# 255f5fd0525149a5bbf6f5008dd3471b
 #: ../../expression.rst:267
 msgid "String @infix(CharSequence infix, char escapeChar = '$')"
 msgstr ""
 
+# 57e253825c71435cb9c0a71128f46682
 #: ../../expression.rst:263
 msgid ""
 "Converts the character sequence for infix search. The return value is a "
@@ -446,10 +551,12 @@ msgid ""
 "if you pass ``null`` as a parameter."
 msgstr ""
 
+# 2595c391387c4c648afbbaacad998e60
 #: ../../expression.rst:274
 msgid "String @suffix(CharSequence suffix, char escapeChar = '$')"
 msgstr ""
 
+# f8b3d453c3f24057a34b02e1f366726f
 #: ../../expression.rst:270
 msgid ""
 "Converts the character sequence for suffix search. The return value is a "
@@ -459,24 +566,30 @@ msgid ""
 "``null`` as a parameter."
 msgstr ""
 
+# adece1d304db48a39b08c7e68734c01c
 #: ../../expression.rst:279
 msgid "java.util.Date @roundDownTimePart(java.util.Date date)"
 msgstr ""
 
+# 0d22f79de4974287b7a2dc146dce3702
+# 85464fab29f542cb9277b3f33455bde7
 #: ../../expression.rst:277 ../../expression.rst:282
 msgid ""
 "Rounds down the time part. The return value is a new Date which is rounded "
 "down the time part. It returns ``null`` if you pass ``null`` as a parameter."
 msgstr ""
 
+# 88207eb3bd3e43fdb02d865fa8d0b6a7
 #: ../../expression.rst:284
 msgid "java.sql.Date @roundDownTimePart(java.sql.Date date)"
 msgstr ""
 
+# 602a053d9ed841e88f4442bbc200bede
 #: ../../expression.rst:289
 msgid "java.sql.Timestamp @roundDownTimePart(java.sql.Timestamp timestamp)"
 msgstr ""
 
+# 9a3d5024508844db8d3dc4e15c545f52
 #: ../../expression.rst:287
 msgid ""
 "Rounds down the time part. The return value is a new Timestamp which is "
@@ -484,12 +597,14 @@ msgid ""
 "parameter."
 msgstr ""
 
+# 38b775d820854ac09719eee7a1bb57ac
 #: ../../expression.rst:294
 msgid ""
 "java.time.LocalDateTime @roundDownTimePart(java.time.LocalDateTime "
 "localDateTime)"
 msgstr ""
 
+# 5b649b5e22214c5a894d7921fafa9244
 #: ../../expression.rst:292
 msgid ""
 "Rounds down the time part. The return value is a new LocalDateTime which is "
@@ -497,24 +612,30 @@ msgid ""
 "parameter."
 msgstr ""
 
+# bb275acf299042838cacde96f34ad9b6
 #: ../../expression.rst:299
 msgid "java.util.Date @roundUpTimePart(java.util.Date date)"
 msgstr ""
 
+# df3f11ef2cf8448985e71503238869b8
+# da7c60cd9da84467881e7d4769474587
 #: ../../expression.rst:297 ../../expression.rst:302
 msgid ""
 "Rounds up the time part. The return value is a new Date which is rounded up "
 "the time part. It returns ``null`` if you pass ``null`` as a parameter."
 msgstr ""
 
+# 4089c6a6b1b74beda8ae4f261fda5619
 #: ../../expression.rst:304
 msgid "java.sql.Date @roundUpTimePart(java.sql.Date date)"
 msgstr ""
 
+# 6355d9bb88a44a7aa3f3c45ba572f574
 #: ../../expression.rst:309
 msgid "java.sql.Timestamp @roundUpTimePart(java.sql.Timestamp timestamp)"
 msgstr ""
 
+# 9b29b0e34ebf47d7804a7501f863c0c8
 #: ../../expression.rst:307
 msgid ""
 "Rounds up the time part. The return value is a new Timestamp which is "
@@ -522,12 +643,14 @@ msgid ""
 "parameter."
 msgstr ""
 
+# e58acfff73b448b6967300f3569f56c0
 #: ../../expression.rst:314
 msgid ""
 "java.time.LocalDateTime @roundUpTimePart(java.time.LocalDateTime "
 "localDateTime)"
 msgstr ""
 
+# 48f8ca54689743b88ee525d607cc4436
 #: ../../expression.rst:312
 msgid ""
 "Rounds up the time part. The return value is a new LocalDateTime which is "
@@ -535,10 +658,12 @@ msgid ""
 "parameter."
 msgstr ""
 
+# 9bd01a639b134897a3b91f66fc7bae28
 #: ../../expression.rst:319
 msgid "java.time.LocalDate @roundUpTimePart(java.time.LocalDate localDate)"
 msgstr ""
 
+# c899a2d6746840f8b511fe2a23671f3f
 #: ../../expression.rst:317
 msgid ""
 "Returns the next day. The return value is a new LocalDate which is the next "
@@ -546,82 +671,98 @@ msgid ""
 "parameter."
 msgstr ""
 
+# a2ade76dcc7440db80f0e1e257ff590f
 #: ../../expression.rst:322
 msgid "boolean @isEmpty(CharSequence charSequence)"
 msgstr ""
 
+# 57ab4731eb624157bbbd6c428ebd11c6
 #: ../../expression.rst:322
 msgid ""
 "Returns ``true`` if the character sequence is ``null`` or the length is "
 "``0``."
 msgstr ""
 
+# 521902ecd70f41af95dfccb980d0ce64
 #: ../../expression.rst:325
 msgid "boolean @isNotEmpty(CharSequence charSequence)"
 msgstr ""
 
+# ecc3f2a54d554abcba17e8fb40a10b68
 #: ../../expression.rst:325
 msgid ""
 "Returns ``true`` if the character sequence isn't ``null`` and the length "
 "isn't ``0``."
 msgstr ""
 
+# 0634b506e9ed495e99ab6dac924e1eab
 #: ../../expression.rst:329
 msgid "boolean @isBlank(CharSequence charSequence)"
 msgstr ""
 
+# 23f205bc2e2248079c923d679255de15
 #: ../../expression.rst:328
 msgid ""
 "Returns ``true`` only if the character sequence is ``null``, the length is "
 "``0``, or the sequence is formed with whitespaces only."
 msgstr ""
 
+# c225b67f20904593ad2e6c3ad29e1fb6
 #: ../../expression.rst:333
 msgid "boolean @isNotBlank(CharSequence charSequence)"
 msgstr ""
 
+# 12dddbe8faf64c378381bdaa17cdb4fa
 #: ../../expression.rst:332
 msgid ""
 "Returns ``true`` if the character sequence isn't ``null``, the length isn't "
 "``0``, and the sequence isn't formed with whitespaces only."
 msgstr ""
 
+# 13e332e7e29c4055a59ebf2fd4c43745
 #: ../../expression.rst:335
 msgid ""
 "These functions are correspond to the methods of "
 "``org.seasar.doma.expr.ExpressionFunctions``."
 msgstr ""
 
+# 2a3dfbb847d84ad9a1da8e5be61ae280
 #: ../../expression.rst:338
 msgid "Using custom functions"
 msgstr ""
 
+# 7527f774c192476b8e019b97954d4f72
 #: ../../expression.rst:340
 msgid "You can define and use your own functions."
 msgstr ""
 
+# 67028b2d65e04d479d2556d0fb468efd
 #: ../../expression.rst:342
 msgid ""
 "You need to follow these settings when you use custom functions which you "
 "define by yourself:"
 msgstr ""
 
+# ed07c1340341486f8047795307882a0e
 #: ../../expression.rst:344
 msgid ""
 "The function is defined as a method of a class which implements "
 "``org.seasar.doma.expr.ExpressionFunctions``."
 msgstr ""
 
+# 5bc3f6f45c2f4f21929c34dc7050f08d
 #: ../../expression.rst:346
 msgid "The method is a public instance method."
 msgstr ""
 
+# 9915efe2570d415b97056f4a2adcc99d
 #: ../../expression.rst:347
 msgid ""
 "The class is registered as an option in :doc:`annotation-processing`. The "
 "key of the option is ``doma.expr.functions``."
 msgstr ""
 
+# 96ad441c41a64a4e8ddc7f3f0fce2636
 #: ../../expression.rst:349
 msgid ""
 "The instance of the class you create is used in an RDBMS dialect in your "
@@ -629,6 +770,7 @@ msgid ""
 "can receive ``ExpressionFunctions`` in the constructor)."
 msgstr ""
 
+# 9d7cf6c5c8144618a406b5fd467c65a8
 #: ../../expression.rst:353
 msgid ""
 "To call a custom function, add ``@`` at the beginning of the function name "

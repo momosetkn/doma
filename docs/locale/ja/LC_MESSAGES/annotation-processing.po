@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the Doma package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Doma\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 00:27+0900\n"
+"POT-Creation-Date: 2024-03-10 10:39+0900\n"
 "PO-Revision-Date: 2024-03-09 16:18+0000\n"
+"Last-Translator: Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024\n"
 "Language-Team: Japanese (https://app.transifex.com/domaframework/teams/189259/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,34 +21,41 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+# f6fcc70cf485454f95af19f02e2436a9
 #: ../../annotation-processing.rst:3
 msgid "Annotation processing"
 msgstr ""
 
+# e1a5cf4b2d704cdca100720132e22095
 #: ../../annotation-processing.rst:6
 msgid "Contents"
-msgstr ""
+msgstr "コンテンツ"
 
+# a51f6b49046146b2939804c96ac925d7
 #: ../../annotation-processing.rst:8
 msgid ""
 "Doma uses `Pluggable Annotation Processing API "
 "<https://www.jcp.org/en/jsr/detail?id=269>`_ at compile time."
 msgstr ""
 
+# 4f857ed86f5f4475ab70a47087ee34b6
 #: ../../annotation-processing.rst:10
 msgid ""
 "In this document, we describe the options for the annotation processors in "
 "Doma and show you how to pass them to build tools."
 msgstr ""
 
+# db096c4358a24014bda4d72380ae0a11
 #: ../../annotation-processing.rst:14
 msgid "Options"
 msgstr ""
 
+# 55e513793bae469babbc340291c741d6
 #: ../../annotation-processing.rst:19
 msgid "doma.dao.package"
 msgstr ""
 
+# 50f3f609163d47c6b9431b5b936d53aa
 #: ../../annotation-processing.rst:17
 msgid ""
 "The package that the generated implementation classes of interfaces "
@@ -53,10 +64,12 @@ msgid ""
 " interfaces annotated with ``@Dao`` belong to."
 msgstr ""
 
+# 345178c19ae147e7b704fc8498a4d917
 #: ../../annotation-processing.rst:25
 msgid "doma.dao.subpackage"
 msgstr ""
 
+# 09c719c04cfd4b4bbd362c87e06307a0
 #: ../../annotation-processing.rst:22
 msgid ""
 "The subpackage that the generated implementation classes of interfaces "
@@ -66,10 +79,12 @@ msgid ""
 "implementation classes belong to the package ``example.dao.impl``."
 msgstr ""
 
+# a5ae19b0799a4914bc56c3c2e4dbe99e
 #: ../../annotation-processing.rst:31
 msgid "doma.dao.suffix"
 msgstr ""
 
+# 86b0e5c95cd24131a71742b226f2702a
 #: ../../annotation-processing.rst:28
 msgid ""
 "The name suffix that the generated implementation classes of interfaces "
@@ -79,10 +94,12 @@ msgid ""
 "value is ``Impl``."
 msgstr ""
 
+# 9f85ade90adb4fe58e14cb742f68e926
 #: ../../annotation-processing.rst:36
 msgid "doma.debug"
 msgstr ""
 
+# 5aad57b4298f4e468bfc0365318340c0
 #: ../../annotation-processing.rst:34
 msgid ""
 "Whether to output the debug log in annotation processing. If the value is "
@@ -90,10 +107,12 @@ msgid ""
 "is ``false``."
 msgstr ""
 
+# 8c511745c1d64534b16a86db7f340047
 #: ../../annotation-processing.rst:41
 msgid "doma.domain.converters"
 msgstr ""
 
+# 95ab3f22c6f649ee992d2621c407dd4f
 #: ../../annotation-processing.rst:39
 msgid ""
 "The full qualified names of the classes annotated with "
@@ -101,20 +120,24 @@ msgid ""
 " value are used to find external domain classes."
 msgstr ""
 
+# 88400d4a0ad4418a8746fb9c8998cecf
 #: ../../annotation-processing.rst:46
 msgid "doma.entity.field.prefix"
 msgstr ""
 
+# 7d736312ea3b42129ca85107d297e914
 #: ../../annotation-processing.rst:44
 msgid ""
 "The name prefix that the fields of the generated entity meta classes have. "
 "The value ``none`` means the prefix is not used. The default value is ``$``."
 msgstr ""
 
+# d392e01d7f10454baf7d715bd24c3d99
 #: ../../annotation-processing.rst:51
 msgid "doma.expr.functions"
 msgstr ""
 
+# 489b158305c34ae0bffb6b1e43b1e735
 #: ../../annotation-processing.rst:49
 msgid ""
 "The full qualified name of the class that implements "
@@ -123,10 +146,12 @@ msgid ""
 "determine which functions are available in expression comments."
 msgstr ""
 
+# 0858c509c99242b99ce15d78c3be11ff
 #: ../../annotation-processing.rst:57
 msgid "doma.metamodel.enabled"
 msgstr ""
 
+# ac790bb7214a450e9ebf434f0a7d4e00
 #: ../../annotation-processing.rst:54
 msgid ""
 "Whether to generate meta classes for the Criteria API. When the value is "
@@ -135,30 +160,36 @@ msgid ""
 "``false``."
 msgstr ""
 
+# 85e01b99fea84714bcd2ae730738c436
 #: ../../annotation-processing.rst:61
 msgid "doma.metamodel.prefix"
 msgstr ""
 
+# 1f5101af1de448b4bafee002eda6fb51
 #: ../../annotation-processing.rst:60
 msgid ""
 "The name prefix of the metamodel classes for the Criteria API. The default "
 "value is an empty string."
 msgstr ""
 
+# 10e31ed524244d26a59616545553240f
 #: ../../annotation-processing.rst:65
 msgid "doma.metamodel.suffix"
 msgstr ""
 
+# 301a602528de4cc98080257e92df92cb
 #: ../../annotation-processing.rst:64
 msgid ""
 "The name suffix of the metamodel classes for the Criteria API. The default "
 "value is ``_``."
 msgstr ""
 
+# fc38abe0ff3c41cebe93c9e89711fba8
 #: ../../annotation-processing.rst:70
 msgid "doma.resources.dir"
 msgstr ""
 
+# 997596367d414f40b2b215657841ee19
 #: ../../annotation-processing.rst:68
 msgid ""
 "The resource directory that contains the resource files such as a "
@@ -167,10 +198,12 @@ msgid ""
 "directory the classes are generated."
 msgstr ""
 
+# d5e48da0825048bd866c9a38bae539cd
 #: ../../annotation-processing.rst:76
 msgid "doma.sql.validation"
 msgstr ""
 
+# 5da18dd6f11f43b78ca966a3c9ed9188
 #: ../../annotation-processing.rst:73
 msgid ""
 "Whether to validate the existence of sql files and the grammar of sql "
@@ -178,10 +211,12 @@ msgid ""
 "validations, set ``false``. The default value is ``true``."
 msgstr ""
 
+# f20f302acdb74e1c9e96420095ae1702
 #: ../../annotation-processing.rst:82
 msgid "doma.version.validation"
 msgstr ""
 
+# 4fb50080ef5d4d12aef2fab49e06d37f
 #: ../../annotation-processing.rst:79
 msgid ""
 "Whether to validate the versions of doma.jar between runtime and compile-"
@@ -189,40 +224,48 @@ msgid ""
 "validation, set ``false``. The default value is ``true``."
 msgstr ""
 
+# b85a3dd51d164ebba9e63cc24cd32269
 #: ../../annotation-processing.rst:86
 msgid "doma.config.path"
 msgstr ""
 
+# 8426d6857b1e45afa373f74a61ce79a6
 #: ../../annotation-processing.rst:85
 msgid ""
 "The file path of the configuration file for Doma. The default value is "
 "``doma.compile.config``."
 msgstr ""
 
+# 32ae0b2c43964413972ad8107b3a917c
 #: ../../annotation-processing.rst:89
 msgid "Setting options in Gradle"
 msgstr ""
 
+# e909292a8c1f4acd9eefdaf00bdd2bb9
 #: ../../annotation-processing.rst:91
 msgid ""
 "Use `the compilerArgs property "
 "<https://docs.gradle.org/5.0/dsl/org.gradle.api.tasks.compile.CompileOptions.html#org.gradle.api.tasks.compile.CompileOptions:compilerArgs>`_:"
 msgstr ""
 
+# d954b72193c842359a69a6a8b151e5bf
 #: ../../annotation-processing.rst:103
 msgid "Setting options in IntelliJ IDEA"
 msgstr ""
 
+# f27b8eacb64f4e1d99ef830b9f7822bd
 #: ../../annotation-processing.rst:105
 msgid ""
 "Import your project as a Gradle project. In the case, the options written in"
 " build.gradle are used."
 msgstr ""
 
+# 9fec6fc4b9564753bd1ee4886f98fd82
 #: ../../annotation-processing.rst:109
 msgid "Setting options in Eclipse"
 msgstr ""
 
+# 5cbb6fc0c2de4368a94768fd01bb7975
 #: ../../annotation-processing.rst:111
 msgid ""
 "Use the Gradle plugin `com.diffplug.eclipse.apt "
@@ -230,26 +273,31 @@ msgid ""
 "processorArgs property:"
 msgstr ""
 
+# 7db69a44b73d4c159c3d936213f4136c
 #: ../../annotation-processing.rst:129
 msgid "When you run ``gradle eclipse``, eclipse setting files are generated."
 msgstr ""
 
+# 127e980ddf3048d39cbc83a08177af1f
 #: ../../annotation-processing.rst:132
 msgid "Setting options with configuration file"
 msgstr ""
 
+# 8d7ec57507164360b22c6e4c486c8be6
 #: ../../annotation-processing.rst:134
 msgid ""
 "The options specified in the ``doma.compile.config`` file are available in "
 "all build tools such as Eclipse, IDEA, Gradle and so on."
 msgstr ""
 
+# bdd55214edf84599aa051b9ad53a2503
 #: ../../annotation-processing.rst:137
 msgid ""
 "The ``doma.compile.config`` file must follow the properties file format and "
 "be placed in the root directory such as ``src/main/resources``."
 msgstr ""
 
+# 582fb6615c3143ecbb11cd3e9d41426d
 #: ../../annotation-processing.rst:141
 msgid ""
 "The options specified in the ``doma.compile.config`` file are overridden by "

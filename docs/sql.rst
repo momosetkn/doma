@@ -174,6 +174,7 @@ Supported directives are as follows:
 * `Loop directive`_
 * `Expansion directive`_
 * `Population directive`_
+* `Parser-level comment directive`_
 
 .. note::
 
@@ -214,6 +215,7 @@ Parameters in IN clause
 
 The parameter whose type is a subtype of ``java.lang.Iterable`` or an array type is
 recognised as bind variables in IN clause.
+
 The type argument of ``java.lang.Iterable`` must be one of :doc:`basic` and :doc:`domain`.
 The directives must be followed by test data enclosed between ``(`` and ``)``.
 

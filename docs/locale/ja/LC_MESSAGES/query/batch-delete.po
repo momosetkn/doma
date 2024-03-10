@@ -1,0 +1,288 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Toshihiro Nakamura
+# This file is distributed under the same license as the Doma package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Doma\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-10 10:39+0900\n"
+"PO-Revision-Date: 2024-03-10 01:59+0000\n"
+"Last-Translator: Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024\n"
+"Language-Team: Japanese (https://app.transifex.com/domaframework/teams/189259/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# 9dbcca3dc1654b36a052a591f00d6a42
+#: ../../query/batch-delete.rst:3
+msgid "Batch delete"
+msgstr ""
+
+# 68386e5478234eb980b8122d6e4f7bed
+#: ../../query/batch-delete.rst:6
+msgid "Contents"
+msgstr "コンテンツ"
+
+# 97d878219d2b43398080bd2f9a69f564
+#: ../../query/batch-delete.rst:8
+msgid "Annotate with ``@BatchDelete`` to Dao method for execute batch delete."
+msgstr ""
+
+# 32eb12826e56486ba114090c9df28e8e
+#: ../../query/batch-delete.rst:19
+msgid ""
+"By default DELETE statement is auto generated. You can mapping arbitrary SQL"
+" file by specifying ``true`` to ``sqlFile`` property within the "
+"``@BatchDelete`` annotation."
+msgstr ""
+
+# e2c9715242cd477887fbfef47de58598
+#: ../../query/batch-delete.rst:22
+msgid ""
+"The ``preDelete`` method of entity listener is called each entity when "
+"before executing delete if the entity listener is specified at "
+":doc:`../entity` parameter. Also the ``postDelete`` method of entity "
+"listener method is called each entity when after executing delete."
+msgstr ""
+
+# f9df46c14133471396dd98ce71867d81
+#: ../../query/batch-delete.rst:26
+msgid "Return value"
+msgstr ""
+
+# 29e3886686744c9ba86788d8bbf61bdd
+#: ../../query/batch-delete.rst:28
+msgid ""
+"Return value must be ``org.seasar.doma.jdbc.BatchResult`` that has entity "
+"class as an element if parameter ``Iterable`` subtype element is immutable "
+"entity class."
+msgstr ""
+
+# 3ae0c5181d1a4a89855feb749050b7d8
+#: ../../query/batch-delete.rst:30
+msgid ""
+"Return value must be ``int[]`` that is represented each deleting process's "
+"updated count if the above conditions are not satisfied."
+msgstr ""
+
+# 91756d5c3764442aa877917a500469e4
+#: ../../query/batch-delete.rst:33
+msgid "Batch delete by auto generated SQL"
+msgstr ""
+
+# cb7f8a8537aa4f449c8303a5826ca1f2
+#: ../../query/batch-delete.rst:35
+msgid ""
+"Parameter type must be ``java.lang.Iterable`` subtype that has "
+":doc:`../entity` as an element. Specifiable parameter is only one. Parameter"
+" must not be ``null``. Return value array element count become equal "
+"``Iterable`` element count. Delete count is returned to array each element."
+msgstr ""
+
+# 94afc664986a448a96b99fffc2d02438
+#: ../../query/batch-delete.rst:42
+msgid ""
+"Version number and optimistic concurrency control in auto generated SQL"
+msgstr ""
+
+# 8e18df1ef0b94985ab442410ec97c9ca
+# 2790c49893e841808527c1cf6c36bcca
+#: ../../query/batch-delete.rst:44 ../../query/batch-delete.rst:102
+msgid ""
+"Optimistic concurrency control is executed if you satisfied below "
+"conditions."
+msgstr ""
+
+# c3914eb357f6436293f14aaaa825691e
+#: ../../query/batch-delete.rst:46
+msgid ""
+":doc:`../entity` within parameter java.lang.Iterable subtype has property "
+"that is annotated with @Version"
+msgstr ""
+
+# 75195b2f58284369a4cbaeaf369a73d4
+# 45d29dc487724ef49fce97290db9a1cc
+#: ../../query/batch-delete.rst:47 ../../query/batch-delete.rst:105
+msgid "The ignoreVersion element within @BatchDelete annotation is false"
+msgstr ""
+
+# 36e9e92041754ed681839b247c82538c
+#: ../../query/batch-delete.rst:49
+msgid ""
+"If optimistic concurrency control is enable, version number is included with"
+" identifier in delete condition. ``BatchOptimisticLockException`` "
+"representing optimistic concurrency control failure is thrown, if at that "
+"time deleted count is 0."
+msgstr ""
+
+# bb34ca914a574169a142de54ffbf262b
+# 9c985a69c30f4abbac80d2bc2ce03109
+#: ../../query/batch-delete.rst:53 ../../query/batch-delete.rst:117
+msgid "ignoreVersion"
+msgstr ""
+
+# cdedd6ee2fc64c138946a6e946a4c320
+#: ../../query/batch-delete.rst:55
+msgid ""
+"If ``ignoreVersion`` property within ``@BatchDelete`` annotation is "
+"``true``, version number is not include in delete condition. "
+"``BatchOptimisticLockException`` is not thrown, even if delete count is 0."
+msgstr ""
+
+# 1f86476505f84503bdd92338686dfa55
+# 194610ce980440febe37d7a65da95748
+#: ../../query/batch-delete.rst:64 ../../query/batch-delete.rst:128
+msgid "suppressOptimisticLockException"
+msgstr ""
+
+# 68ff85730f6a4de694bb1403678f9637
+#: ../../query/batch-delete.rst:66
+msgid ""
+"In case of ``suppressOptimisticLockException`` property within "
+"``@BatchDelete`` is ``true``, version number is include in delete condition "
+"but ``BatchOptimisticLockException`` is not thrown even if delete count is "
+"0."
+msgstr ""
+
+# 6d85a723c203453fa31cf14c3ba8c310
+#: ../../query/batch-delete.rst:75
+msgid "Batch delete by SQL file"
+msgstr ""
+
+# ea2d6f77b01446ae84ad966c437c6f9a
+#: ../../query/batch-delete.rst:77
+msgid ""
+"To execute batch deleting by SQL file, you set ``true`` to ``sqlFile`` "
+"property within ``@BatchDelete`` annotation and prepare SQL file that "
+"correspond method."
+msgstr ""
+
+# 8790939ae7a748e697078d3b3aa13f8a
+#: ../../query/batch-delete.rst:85
+msgid ""
+"Parameter type must be ``java.lang.Iterable`` subtype that has arbitrary "
+"type as an element. Specifiable parameter is only one. Parameter must not be"
+" ``null``. Return value array element count become equal ``Iterable`` "
+"element count. Delete count is returned to array each element."
+msgstr ""
+
+# 01349a889ac3407eb695228b08d7a6fb
+#: ../../query/batch-delete.rst:91
+msgid "For example, you describe SQL like below to correspond above method."
+msgstr ""
+
+# 849affadb8f145a09dc30e9b87b00a4e
+#: ../../query/batch-delete.rst:97
+msgid ""
+"Parameter name indicate ``java.lang.Iterable`` subtype element in SQL file."
+msgstr ""
+
+# 6b6374f08e5443c3ac2fae55492fed4c
+#: ../../query/batch-delete.rst:100
+msgid "Version number and optimistic concurrency control in SQL file"
+msgstr ""
+
+# 5509c0386b4346dd8baefc43f54534d0
+#: ../../query/batch-delete.rst:104
+msgid ""
+"The parameter ``java.lang.Iterable`` subtype has :doc:`../entity` element, "
+"the  :doc:`../entity` element is annotated with @Version"
+msgstr ""
+
+# 127a4681575648a197330e4c27cfcd92
+#: ../../query/batch-delete.rst:107
+msgid ""
+"However, describing to SQL file for Optimistic concurrency control SQL is "
+"application developer's responsibility. For example like below SQL, you must"
+" specify version number in WHERE clauses."
+msgstr ""
+
+# beb6edb49b14425696b9d0c17dcc6f08
+#: ../../query/batch-delete.rst:114
+msgid ""
+"``BatchOptimisticLockException`` representing optimistic concurrency control"
+" failure is thrown, if deleted count is 0 or multiple in this SQL."
+msgstr ""
+
+# 11f6a501f5d64cf29c4c181d28e3ee0c
+#: ../../query/batch-delete.rst:119
+msgid ""
+"If ``ignoreVersion`` property within ``@BatchDelete`` annotation is true, "
+"``BatchOptimisticLockException`` is not thrown even if deleted count is 0 or"
+" multiple."
+msgstr ""
+
+# 068bad5ede504eb0b5df52937397c532
+#: ../../query/batch-delete.rst:130
+msgid ""
+"If ``suppressOptimisticLockException`` property within ``@BatchDelete`` is "
+"``true``, ``BatchOptimisticLockException`` is not thrown even if deleted "
+"count is 0 or multiple."
+msgstr ""
+
+# c56dc34147864d1d9bacd7866bbf2000
+#: ../../query/batch-delete.rst:139
+msgid "Query timeout"
+msgstr ""
+
+# a40b3c0a563b4b9b98853d5b7839d7ef
+#: ../../query/batch-delete.rst:141
+msgid ""
+"You can specify seconds of query timeout to ``queryTimeout`` property within"
+" ``@BatchDelete`` annotation."
+msgstr ""
+
+# 86334156b68847c68c5429954ff9e518
+#: ../../query/batch-delete.rst:148
+msgid ""
+"This specifying is applied regardless of with or without using sql file. "
+"Query timeout that is specified in config class is used if ``queryTimeout`` "
+"property is not set value."
+msgstr ""
+
+# 7846aa422e4546fdb5274c6ffcc4bcfc
+#: ../../query/batch-delete.rst:152
+msgid "Batch size"
+msgstr ""
+
+# 29560e6c593e4aaf93b2f78ef6c53325
+#: ../../query/batch-delete.rst:154
+msgid ""
+"You can specify batch size to ``batchSize`` property within ``@BatchDelete``"
+" annotation."
+msgstr ""
+
+# 1e221516e8d1401184e1eb3acf79be98
+#: ../../query/batch-delete.rst:161
+msgid ""
+"This specify is applied regardless of using or not using SQL file. It you do"
+" not specify the value to ``batchSize`` property, batch size that is "
+"specified at :doc:`../config` class is applied."
+msgstr ""
+
+# aac8029849c847039352deefe4a73f9f
+#: ../../query/batch-delete.rst:165
+msgid "SQL log output format"
+msgstr ""
+
+# 4da15352a7a549cd98d416181956dd81
+#: ../../query/batch-delete.rst:167
+msgid ""
+"You can specify SQL log output format to ``sqlLog`` property within "
+"``@BatchDelete`` annotation."
+msgstr ""
+
+# 88106f1211b54b4faec99aa32725c80f
+#: ../../query/batch-delete.rst:174
+msgid ""
+"``SqlLogType.RAW`` represent outputting log that is sql with a binding "
+"parameter."
+msgstr ""

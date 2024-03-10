@@ -1,0 +1,288 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Toshihiro Nakamura
+# This file is distributed under the same license as the Doma package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Doma\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-10 10:39+0900\n"
+"PO-Revision-Date: 2024-03-10 01:59+0000\n"
+"Last-Translator: Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024\n"
+"Language-Team: Japanese (https://app.transifex.com/domaframework/teams/189259/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# b57d070c4ed941198255dba146d3a174
+#: ../../query/function.rst:3
+msgid "Stored function"
+msgstr ""
+
+# f2d1743c865e4527b9ee5824245dda67
+#: ../../query/function.rst:6
+msgid "Contents"
+msgstr "コンテンツ"
+
+# b4b89d2810954d1c8bb9a941caa2ef26
+#: ../../query/function.rst:8
+msgid ""
+"To call stored functions, you must annotate DAO methods with the "
+"``@Function`` annotation:"
+msgstr ""
+
+# f4f9aece5f0b429384182b0bb8b22161
+#: ../../query/function.rst:20
+msgid "Return type"
+msgstr ""
+
+# 27a46058df6a43f3ae85d0803c4d917d
+#: ../../query/function.rst:22
+msgid ""
+"If the stored function returns nothing, the return type must be ``void``."
+msgstr ""
+
+# d2c2e1ba781549c69782eb4e97fecd5f
+#: ../../query/function.rst:24
+msgid ""
+"If the stored function returns a single result, the return type must be one "
+"of the following:"
+msgstr ""
+
+# ff98e5c441a24d25be0593e9e364c013
+# 6b461a3051404f83a13a5ad4585b9d09
+# 1d7d5b8131e148d6949df4a0665affca
+# f2c69d10ba2849d9911ef3bf91bcb870
+# dccbf362b4844cb891694b35d8f86cd8
+# 910e5755521d493aac369f984300f56f
+#: ../../query/function.rst:26 ../../query/function.rst:39
+#: ../../query/function.rst:77 ../../query/function.rst:106
+#: ../../query/function.rst:138 ../../query/function.rst:170
+msgid ":doc:`../basic`"
+msgstr ""
+
+# 29b8146ba32749559c6ef1cebdcaf71e
+# 0aede41e4f454411bbbb531dd2c020a3
+# 74b2215aa350444f8a16a4ff5aa9c696
+# d2efd81cc7cb4fb6a1e184d4ee00ebac
+# c99c53663d2d418cbcc74728d3f8822a
+# bbb56b71066f4a25a76d610d64b3c3b3
+#: ../../query/function.rst:27 ../../query/function.rst:40
+#: ../../query/function.rst:78 ../../query/function.rst:107
+#: ../../query/function.rst:139 ../../query/function.rst:171
+msgid ":doc:`../domain`"
+msgstr ""
+
+# 9be4ad86cfca4cdba6458d6c1d199653
+# 04ebff944a044f269447e41ca5548b7d
+# b64e509c39784bf39618520f881757bc
+#: ../../query/function.rst:28 ../../query/function.rst:41
+#: ../../query/function.rst:172
+msgid ":doc:`../entity`"
+msgstr ""
+
+# d0cccf2da46c44cab88dfc15854a19f5
+# 6620dfd9c8e44438aff1291914671e37
+# e805b6578a3d4929975041ca606f66c5
+#: ../../query/function.rst:29 ../../query/function.rst:42
+#: ../../query/function.rst:173
+msgid "java.util.Map<String, Object>"
+msgstr ""
+
+# 09fd1803554e4b7fa01366c2ea9b09c6
+#: ../../query/function.rst:30
+msgid ""
+"java.util.Optional, whose element type is one of :doc:`../basic`, "
+":doc:`../domain`, :doc:`../entity`, and java.util.Map<String, Object>"
+msgstr ""
+
+# c825e1d92818445fb814b6906e4a346e
+# 5f4971b8aeca47acaf9f83bda1552bcd
+# 37277828f22349269dc3a4a5cae2ad5d
+# 2a9d98017c6b4274b0e7edf31a020e60
+# 25dc9533de4d466b89066881706a6b15
+# 67aba0743a584a69a356a4df43b88b42
+#: ../../query/function.rst:32 ../../query/function.rst:44
+#: ../../query/function.rst:80 ../../query/function.rst:109
+#: ../../query/function.rst:141 ../../query/function.rst:175
+msgid "java.util.OptionalInt"
+msgstr ""
+
+# f4e6c54ef0f34ac69bc270f0baa31c1b
+# b8d36c7632514988afbdd4e96ea29861
+# 577441fe43dc4b94a1d67473dc3e93e0
+# 953bcb5fa3e54ef79425bbdfc45aba32
+# 3c85cae71c4647399db57450e5209555
+# d3db75bb82504c6ea6f1bc117b9ed2f1
+#: ../../query/function.rst:33 ../../query/function.rst:45
+#: ../../query/function.rst:81 ../../query/function.rst:110
+#: ../../query/function.rst:142 ../../query/function.rst:176
+msgid "java.util.OptionalLong"
+msgstr ""
+
+# d82d4ac56bb14196a19b74cd72d7cfbc
+# b0210a88859a4f8c9f25f4f981e46073
+# 32702ee5aa434180b78ce12ed497985e
+# 675fc41f82c847059fddfce5fe1a4d9c
+# 5fb848004f8b402aa52a7a1e903013c7
+# 03558172408b43a481f6091073c9827f
+#: ../../query/function.rst:34 ../../query/function.rst:46
+#: ../../query/function.rst:82 ../../query/function.rst:111
+#: ../../query/function.rst:143 ../../query/function.rst:177
+msgid "java.util.OptionalDouble"
+msgstr ""
+
+# 77739ae73941470db02387de3a0a616f
+#: ../../query/function.rst:36
+msgid ""
+"If the stored function returns a result list, the return type must be "
+"``java.util.List`` and its element type must be one of the following:"
+msgstr ""
+
+# 7d2acd314a3a4ef881f492e27e6eb84a
+# b141cf637a83452293b31526baf4c50f
+# 6deeec271ad2448ab05d1558e73d586e
+# 43720bf71bfc4200a38ba8aacfcd57a6
+# 08aef692e386428abceeaa96c916688a
+#: ../../query/function.rst:43 ../../query/function.rst:79
+#: ../../query/function.rst:108 ../../query/function.rst:140
+#: ../../query/function.rst:174
+msgid ""
+"java.util.Optional whose element type is either :doc:`../basic` or "
+":doc:`../domain`"
+msgstr ""
+
+# f6dabf62695140d0bbb997778c8b0919
+#: ../../query/function.rst:49
+msgid "Function name"
+msgstr ""
+
+# 9a8046826f24403a978cbeaf58e4c02c
+#: ../../query/function.rst:51
+msgid ""
+"The annotated method name is recognized as the function name by default. To "
+"override it, you can specify the value to the ``@Function``'s ``name`` "
+"element:"
+msgstr ""
+
+# 165e4e306ee54d1cb1d29f84e7641bfa
+#: ../../query/function.rst:60
+msgid "Parameters"
+msgstr ""
+
+# 30f90c4422dc4100976650ed4a7f1b41
+#: ../../query/function.rst:62
+msgid ""
+"The order of stored function's parameters must correspond with the order of "
+"DAO method parameters."
+msgstr ""
+
+# 2748f9ffe8b642038ef3c12c1b1466ee
+#: ../../query/function.rst:64
+msgid "All parameters must be annotated with one of following annotations:"
+msgstr ""
+
+# afa1c0c968314ef3aa7350eac1f26099
+#: ../../query/function.rst:66
+msgid "@In"
+msgstr ""
+
+# f05e1f780dd648daa1bdd3563afb5706
+#: ../../query/function.rst:67
+msgid "@InOut"
+msgstr ""
+
+# 7006278fcffb4b5ea45a6dcbbbe81e51
+#: ../../query/function.rst:68
+msgid "@Out"
+msgstr ""
+
+# 09cfda5d33154f34ba8740c292400c39
+#: ../../query/function.rst:69
+msgid "@ResultSet"
+msgstr ""
+
+# 6d56b9bafb9046408f0769ab699e0c07
+#: ../../query/function.rst:72
+msgid "IN parameter"
+msgstr ""
+
+# 1265828022364b209cc796eadddf9125
+#: ../../query/function.rst:74
+msgid ""
+"To indicate IN parameters, annotate corresponding DAO method parameters with"
+" the ``@In`` annotation. The type of the DAO method parameter must be one of"
+" the following:"
+msgstr ""
+
+# 897968b2e73a406ca98d328ed75dc9ec
+# b2c7135f61f045188597c401b6cbfd37
+# 873948ea7de8453bbcaec981168d5506
+# fe1ff3fc3a824c8792f55b75e7124bc8
+#: ../../query/function.rst:84 ../../query/function.rst:113
+#: ../../query/function.rst:145 ../../query/function.rst:179
+msgid "Suppose you have the following definition:"
+msgstr ""
+
+# 602a23191b874fb29f43f0efdb84f453
+# 512e70fe8b794e7ca51110c4d9904b7e
+# 64564acc341e41419268542c12dbe8bf
+# 5a04bff48a114ebea6c198b346751c91
+#: ../../query/function.rst:91 ../../query/function.rst:120
+#: ../../query/function.rst:152 ../../query/function.rst:186
+msgid "You can invoke the method as follows:"
+msgstr ""
+
+# eec3c4b284ca4876b75a2821cd72ecc7
+#: ../../query/function.rst:99
+msgid "INOUT parameter"
+msgstr ""
+
+# 23e486b71c6448c394af69f40e29a3ae
+#: ../../query/function.rst:101
+msgid ""
+"To indicate INOUT parameters, annotate corresponding DAO method parameters "
+"with the ``@InOut`` annotation. The type of the DAO method parameter must be"
+" ``org.seasar.doma.jdbc.Reference`` and its type parameter must be one of "
+"the following:"
+msgstr ""
+
+# dc29422d2b1f45359562bb6d5a3533c0
+#: ../../query/function.rst:131
+msgid "OUT parameter"
+msgstr ""
+
+# 0c879a2bb0a944dbbfa30b92d68b616b
+#: ../../query/function.rst:133
+msgid ""
+"To indicate OUT parameters, annotate corresponding DAO method parameters "
+"with the ``@Out`` annotation. The type of the DAO method parameter must be "
+"``org.seasar.doma.jdbc.Reference`` and its type parameter must be one of the"
+" following:"
+msgstr ""
+
+# fcc26d67810c4f8aa595c1cf67642d9c
+#: ../../query/function.rst:162
+msgid "Cursor or result set"
+msgstr ""
+
+# 11fd3199497a45b4a4af11ac5eb4ca72
+#: ../../query/function.rst:164
+msgid ""
+"To indicate cursors or result sets, annotate corresponding DAO method "
+"parameters with the ``@ResultSet`` annotation."
+msgstr ""
+
+# e582b030c27d448190419b2ca3d6027d
+#: ../../query/function.rst:167
+msgid ""
+"The DAO method parameter type must be ``java.util.List`` and its element "
+"type must be one of the following:"
+msgstr ""

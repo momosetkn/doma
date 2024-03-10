@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the Doma package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Doma\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 00:27+0900\n"
+"POT-Creation-Date: 2024-03-10 10:39+0900\n"
 "PO-Revision-Date: 2024-03-09 16:18+0000\n"
+"Last-Translator: Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024\n"
 "Language-Team: Japanese (https://app.transifex.com/domaframework/teams/189259/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,53 +21,64 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+# 55b69bbdf0a142f891d8affa8366d8db
 #: ../../transaction.rst:3
 msgid "Transaction"
 msgstr ""
 
+# b349dcffffb440a283c073bc46cbb502
 #: ../../transaction.rst:6
 msgid "Contents"
-msgstr ""
+msgstr "コンテンツ"
 
+# 63fd8218a2f94db18d104c87e2ca5223
 #: ../../transaction.rst:8
 msgid ""
 "Doma supports local transaction. This document explains how to configure and"
 " use the local transaction."
 msgstr ""
 
+# 49cbe2a6ba484f359da365a27c8d9ba9
 #: ../../transaction.rst:11
 msgid ""
 "If you want to use global transaction, use frameworks or application servers"
 " which support JTA (Java Transaction API)."
 msgstr ""
 
+# e59f382d3a1e4d6f9c553df5d3c939dd
 #: ../../transaction.rst:14
 msgid "See also :ref:`config-configuration-definition` ."
 msgstr ""
 
+# 029df1b033fd4192b83c9749261fe62c
 #: ../../transaction.rst:17
 msgid "Configuration"
 msgstr ""
 
+# c8dd5753aadc43c1877668613feb7817
 #: ../../transaction.rst:19
 msgid "To use local transaction, these conditions are required:"
 msgstr ""
 
+# 2d24a409513645588e4f926926eec550
 #: ../../transaction.rst:21
 msgid ""
 "Return ``LocalTransactionDataSource`` from ``getDataSource`` in ``Config``"
 msgstr ""
 
+# b4913ef032aa476cb8d85306d8f7c5c9
 #: ../../transaction.rst:22
 msgid ""
 "Generate ``LocalTransactionManager`` using the "
 "``LocalTransactionDataSource`` above in the constructor"
 msgstr ""
 
+# 8a43f9ff480247cdb0fa58ffccbdddbf
 #: ../../transaction.rst:23
 msgid "Use the ``LocalTransactionManager`` above to control database access"
 msgstr ""
 
+# ba136941adb549c4a8740737c327a9b0
 #: ../../transaction.rst:25
 msgid ""
 "There are several ways to generate and get the ``LocalTransactionManager``, "
@@ -71,46 +86,56 @@ msgid ""
 "implementation class and make the ``Config`` implementation class singleton."
 msgstr ""
 
+# ae91d196609a4466810ee0f6139e739b
 #: ../../transaction.rst:29
 msgid "Here is an example:"
 msgstr ""
 
+# b6d1d0116acf4d71964ef60bc9ce3b4a
 #: ../../transaction.rst:72
 msgid "Usage"
-msgstr ""
+msgstr "使用法"
 
+# 1dcc1a664221473885689180f369c836
 #: ../../transaction.rst:74
 msgid "We use the following DAO interface in example code:"
 msgstr ""
 
+# 7871a604285642c694e3ae724343487c
 #: ../../transaction.rst:93
 msgid "Start and finish transactions"
 msgstr ""
 
+# 313323ccfc884b579d597e1d643b0cf2
 #: ../../transaction.rst:95
 msgid ""
 "You can start a transaction with one of following methods of "
 "``TransactionManager``:"
 msgstr ""
 
+# 846b653ed4b044e9bbab19ba4ecf239a
 #: ../../transaction.rst:97
 msgid "required"
 msgstr ""
 
+# 32afb4f488e846b595a8e8e57e4206f1
 #: ../../transaction.rst:98
 msgid "requiresNew"
 msgstr ""
 
+# f358e8cd3d454105abe9bec21b04592f
 #: ../../transaction.rst:99
 msgid "notSupported"
 msgstr ""
 
+# 37f31bf0c5dc450685196cc0e07735e4
 #: ../../transaction.rst:101
 msgid ""
 "Use a lambda expression to write a process which you want to run in a "
 "transaction."
 msgstr ""
 
+# 2d76bdbe1a034223a61d420b276ea10c
 #: ../../transaction.rst:115
 msgid ""
 "The transaction is committed if the lambda expression finishes successfully."
@@ -118,20 +143,24 @@ msgid ""
 "exception."
 msgstr ""
 
+# 73197274dbd1468db34031f144c1fb73
 #: ../../transaction.rst:119
 msgid "Explicit rollback"
 msgstr ""
 
+# 91b0074aba2b4c9d87d9376ea2a2d66e
 #: ../../transaction.rst:121
 msgid ""
 "Besides throwing an exception, you can use ``setRollbackOnly`` method to "
 "rollback a transaction."
 msgstr ""
 
+# 668f9c8bdea64b9e982945d6355783a9
 #: ../../transaction.rst:138
 msgid "Savepoint"
 msgstr ""
 
+# 9ee9cd428c994bc1bed207c1c7607dd7
 #: ../../transaction.rst:140
 msgid "With a savepoint, you can cancel specific changes in a transaction."
 msgstr ""

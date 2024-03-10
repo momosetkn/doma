@@ -1,0 +1,270 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, Toshihiro Nakamura
+# This file is distributed under the same license as the Doma package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Doma\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-10 10:39+0900\n"
+"PO-Revision-Date: 2024-03-10 01:59+0000\n"
+"Last-Translator: Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024\n"
+"Language-Team: Japanese (https://app.transifex.com/domaframework/teams/189259/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# 47f6f425e4314fefbaa94459b4b97033
+#: ../../query/insert.rst:3
+msgid "Insert"
+msgstr ""
+
+# 569920a9505d44dc9d5629fad3fcdf2d
+#: ../../query/insert.rst:6
+msgid "Contents"
+msgstr "コンテンツ"
+
+# fde06cbd7a9948389a1038e00e98a72c
+#: ../../query/insert.rst:8
+msgid "Annotate with ``@Insert`` to Dao method for execute insert."
+msgstr ""
+
+# 81644f370baf4685adffd7e6839a26a0
+#: ../../query/insert.rst:21
+msgid ""
+"By default insert statement is auto generated. You can mapping arbitrary SQL"
+" file by setting true to ``sqlFile`` element of ``@Insert``."
+msgstr ""
+
+# 54776e3c23df483889f04476bd46f29a
+#: ../../query/insert.rst:24
+msgid ""
+"Entity listener ``preInsert`` method is called when before executing insert "
+"if the entity listener is specified :doc:`../entity` parameter. Also entity "
+"listener ``postInsert`` method is called when after executing insert."
+msgstr ""
+
+# b3637eaf4e57479e8591dc7fd884dda9
+#: ../../query/insert.rst:28
+msgid "Return value"
+msgstr ""
+
+# a5bb1bbd04fe4eac9fa37c4d869e1ce5
+#: ../../query/insert.rst:30
+msgid ""
+"Return value must be ``org.seasar.doma.jdbc.Result`` that make the entity "
+"class an element if parameter is immutable entity class."
+msgstr ""
+
+# f0a170b02a71481f8fdbdd972e8b6931
+#: ../../query/insert.rst:32
+msgid ""
+"Return value must be ``int`` that is represented updated count if the above "
+"conditions are not satisfied."
+msgstr ""
+
+# 7629b5cd8691453586d1b54d761d5865
+#: ../../query/insert.rst:35
+msgid "Insert by auto generated SQL"
+msgstr ""
+
+# 6c8bb95c34ea489a954ea33fda396ebe
+#: ../../query/insert.rst:37
+msgid ""
+"Parameter type must be entity class. Specifiable parameter is only one. "
+"Parameter must not be null."
+msgstr ""
+
+# 5bd9277cef29425099dcee7fb9713115
+#: ../../query/insert.rst:50
+msgid "Identifier"
+msgstr ""
+
+# 9fb81ad7d9d54429a1206bf3504ef6eb
+#: ../../query/insert.rst:53
+msgid ""
+"Identifier is auto generated and setting if :doc:`../entity` identifier is "
+"annotated with ``@GeneratedValue``."
+msgstr ""
+
+# 85464ad47c1244c88afda4fcdd3432c8
+#: ../../query/insert.rst:55
+msgid "Reference :ref:`identity-auto-generation` about cautionary point."
+msgstr ""
+
+# 509aa90dc3e4470ca4fd10e769d2a2eb
+#: ../../query/insert.rst:58
+msgid "Version numbers"
+msgstr ""
+
+# 22ac1529f8f340fe9990fb3856bf042f
+#: ../../query/insert.rst:60
+msgid ""
+"If value that explicitly set is over 0 then use the value if "
+":doc:`../entity` has property that is annotated  with ``@Version``."
+msgstr ""
+
+# 5ab3396570ba4b9e80a6d416d3738598
+#: ../../query/insert.rst:62
+msgid ""
+"If the value is not set or is less than 0 the value is set 1 automatically."
+msgstr ""
+
+# eea2d8cd26a941269ad13dbaa7849adb
+#: ../../query/insert.rst:65
+msgid "Control insertion target property"
+msgstr ""
+
+# b4c51059b07749e0b007dcc5bbb80303
+#: ../../query/insert.rst:68
+msgid "insertable"
+msgstr ""
+
+# c3692f7d3fb94e9e9c015c37c502deed
+#: ../../query/insert.rst:70
+msgid ""
+"Property that is set false to ``insertable`` element of ``@Column`` is "
+"excluded from insertion if entity class has property that is annotated with "
+"``@Column``."
+msgstr ""
+
+# 689363392e3d48749e12fbf611ee876a
+#: ../../query/insert.rst:73
+msgid "exclude"
+msgstr ""
+
+# 283871de84e14702929f324194a5cb07
+#: ../../query/insert.rst:75
+msgid ""
+"Property that is specified in ``exclude`` element of ``@Insert`` is excluded"
+" from insertion. Even if ``insertable`` element of ``@Column`` is true the "
+"property is excluded from insertion if the property is specified by this "
+"element."
+msgstr ""
+
+# fd33d69c941e4aeda9808cb6a68e6a3f
+#: ../../query/insert.rst:84
+msgid "include"
+msgstr ""
+
+# c179c42709384121afec96bfe51a97d1
+#: ../../query/insert.rst:86
+msgid ""
+"Property that is specified in ``include`` element of ``@Insert`` is included"
+" to insertion. If same property are specified in both of ``include`` element"
+" and ``exclude`` element of ``@Insert`` the property is excluded from "
+"insertion."
+msgstr ""
+
+# 1c1ed9dd4286423eb4597e7635440805
+#: ../../query/insert.rst:89
+msgid ""
+"Even if property is specified in this element the property is excluded from "
+"insertion if ``insertable`` element of ``@Column`` is false."
+msgstr ""
+
+# a4d57e65457243888f303ecb42318294
+#: ../../query/insert.rst:97
+msgid "excludeNull"
+msgstr ""
+
+# 664560feec66440c960b0d9c915c63dd
+#: ../../query/insert.rst:99
+msgid ""
+"Property that value is ``null`` is excluded from insertion if "
+"``excludeNull`` element of ``@Insert`` is true. If this element is true, "
+"even if ``insertable`` element of ``@Column`` is true or property is "
+"specified in ``include`` element of ``@Insert`` the property is excluded "
+"from insertion if value is ``null``."
+msgstr ""
+
+# 099b9e1af6134281b30b23823d5fad72
+#: ../../query/insert.rst:109
+msgid "Insert by SQL file"
+msgstr ""
+
+# 453305a07e594def9cc10a891b627962
+#: ../../query/insert.rst:111
+msgid ""
+"To execute insertion by SQL file, you set ``true`` to ``sqlFile`` element of"
+" ``@Insert`` and prepare SQL file that correspond method."
+msgstr ""
+
+# 65ab1cd39cfd4bf1a9becbf47a47eada
+#: ../../query/insert.rst:114
+msgid ""
+"You can use arbitrary type as parameter. Specifiable parameters count is no "
+"limit. You can set ``null`` to parameter if parameter type is basic type or "
+"domain class. For other type than that, parameter must not be ``null``."
+msgstr ""
+
+# ec175ed7959c448787108459802c785f
+#: ../../query/insert.rst:127
+msgid ""
+"For example, you describe SQL file like below to correspond above method."
+msgstr ""
+
+# 2da0578f0a9e48ef870ccf438e6f2a90
+#: ../../query/insert.rst:137
+msgid ""
+"Identifier auto setting and version value auto setting is not done in "
+"insertion by SQL file. Also, ``exclude`` element and ``include`` element and"
+" ``excludeNull`` element of ``@Insert`` are not referenced."
+msgstr ""
+
+# 915b8d70b6d64a92aec790c6b2b71864
+#: ../../query/insert.rst:141
+msgid "Unique constraint violation"
+msgstr ""
+
+# b09a32acb4734cc6b3dadfd14aa07c59
+#: ../../query/insert.rst:143
+msgid ""
+"``UniqueConstraintException`` is thrown regardless with or without using sql"
+" file if unique constraint violation is occurred."
+msgstr ""
+
+# c853d5c89b66411980de59b9192a5d25
+#: ../../query/insert.rst:146
+msgid "Query timeout"
+msgstr ""
+
+# e58746be83f447cb9e5f78f91c913262
+#: ../../query/insert.rst:148
+msgid ""
+"You can specify second of query timeout to ``queryTimeout`` element of "
+"``@Insert``."
+msgstr ""
+
+# 778a9c193abf4def98ef8c688e0bae20
+#: ../../query/insert.rst:155
+msgid ""
+"This specifying is applied regardless with or without using sql file. Query "
+"timeout that is specified in :doc:`../config` is used if ``queryTimeout`` "
+"element is not set value."
+msgstr ""
+
+# d69b7b36ca344a78b15c84ed21d6959a
+#: ../../query/insert.rst:159
+msgid "SQL log output format"
+msgstr ""
+
+# 6304915b9b1e467eaa9db20c28860fc3
+#: ../../query/insert.rst:161
+msgid ""
+"You can specify SQL log output format to ``sqlLog`` element of ``@Insert``."
+msgstr ""
+
+# 3ef988d0df2140dcbc3b855a976bc651
+#: ../../query/insert.rst:168
+msgid ""
+"``SqlLogType.RAW`` is represented that the log is outputted sql with a bind "
+"parameter."
+msgstr ""

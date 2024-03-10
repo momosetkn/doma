@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the Doma package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Doma\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 00:27+0900\n"
+"POT-Creation-Date: 2024-03-10 10:39+0900\n"
 "PO-Revision-Date: 2024-03-09 16:18+0000\n"
+"Last-Translator: Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024\n"
 "Language-Team: Japanese (https://app.transifex.com/domaframework/teams/189259/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,14 +21,17 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+# e11017adf33b46388eda2d2985e22ad7
 #: ../../domain.rst:3
 msgid "Domain classes"
 msgstr ""
 
+# dd8bf4b2270341218341ba238950bc80
 #: ../../domain.rst:6
 msgid "Contents"
-msgstr ""
+msgstr "コンテンツ"
 
+# d285b044c9fe4eb69eef5167b49f6889
 #: ../../domain.rst:8
 msgid ""
 "A domain class represents a table column and it allows you to handle the "
@@ -34,16 +41,19 @@ msgid ""
 "classes is optional."
 msgstr ""
 
+# 03cbb2610f9b4d47af284878fd3ca7d0
 #: ../../domain.rst:13
 msgid ""
 "Every domain class is either an internal domain class or an external domain "
 "class."
 msgstr ""
 
+# 730f3b297aff4ac0b8fd1bf166f01b9b
 #: ../../domain.rst:16
 msgid "Internal domain classes"
 msgstr ""
 
+# b924cc76e8f7432f9dbd2e50a964aa04
 #: ../../domain.rst:18
 msgid ""
 "The internal domain class must be annotated with ``@Domain``. The "
@@ -51,10 +61,12 @@ msgid ""
 "Specify any type of :doc:`basic` to the ``valueType`` element."
 msgstr ""
 
+# 1ecd3fb7563b4b4bab60e483d7b0caa9
 #: ../../domain.rst:23
 msgid "Instantiation with a constructor"
 msgstr ""
 
+# 07a83c6cc2fd4a74b9bfaf480178fa12
 #: ../../domain.rst:25
 msgid ""
 "The default value of the ``@Domain``'s ``factoryMethod`` element is ``new``."
@@ -62,11 +74,13 @@ msgid ""
 "a constructor."
 msgstr ""
 
+# 754c085129c142f4ac1a57d3173f9daf
 #: ../../domain.rst:49
 msgid ""
 "In Java 14 and later version, you can annotate `records`_ with ``@Domain``:"
 msgstr ""
 
+# 79f03e70d459459ba6118f3965cbcc33
 #: ../../domain.rst:64
 msgid ""
 "To annotate records with ``@Domain`` is a little redundant, because you must"
@@ -74,34 +88,41 @@ msgid ""
 "``@Domain``, you can annotate records with ``@DataType``:"
 msgstr ""
 
+# 79f8a9dcf4414edaad3a9155b358e8f7
 #: ../../domain.rst:79
 msgid "Instantiation with a static factory method"
 msgstr ""
 
+# 82735cb455a54c82866f05a02ff86992
 #: ../../domain.rst:81
 msgid ""
 "To create the object of annotated class with a static factory method, "
 "specify the method name to the ``@Domain``'s ``factoryMethod`` element."
 msgstr ""
 
+# ffe42948a1f6441d90c06cb783cd0e4a
 #: ../../domain.rst:84
 msgid "The method must be static and non-private:"
 msgstr ""
 
+# cab007d9664043eca289cec8bb9810b7
 #: ../../domain.rst:110
 msgid ""
 "With a static factory method, you can apply the ``@Domain`` annotation to "
 "enum types:"
 msgstr ""
 
+# cb88e7aab1fc45398e42266f5864eadf
 #: ../../domain.rst:143
 msgid "Using type parameters in internal domain classes"
 msgstr ""
 
+# dd5c882f2037416ca4e4656cb703b846
 #: ../../domain.rst:145
 msgid "All internal domain class declarations have type parameters:"
 msgstr ""
 
+# 47b7c51380504875b0c643800d65395e
 #: ../../domain.rst:164
 msgid ""
 "When you create the object of annotated class with a static factory method, "
@@ -109,20 +130,24 @@ msgid ""
 "the class declaration:"
 msgstr ""
 
+# d0b3dec0f33742b9bfe056a08c9278f8
 #: ../../domain.rst:188
 msgid "External domain classes"
 msgstr ""
 
+# 4875106ef6624c0e96466fd03c842079
 #: ../../domain.rst:190
 msgid ""
 "This feature allows you to define arbitrary classes as domain classes, even "
 "if the classes can be annotated with the ``@Domain`` annotation."
 msgstr ""
 
+# edb76ffa4a5c4ff3b6e6e10d0d4024bc
 #: ../../domain.rst:193
 msgid "To define external domain classes, you have to do as follows:"
 msgstr ""
 
+# f3a280e877e548a08c28692aef06da2b
 #: ../../domain.rst:195
 msgid ""
 "Create a class that implements "
@@ -130,40 +155,47 @@ msgid ""
 "``@ExternalDomain`` to the class"
 msgstr ""
 
+# a08b60f15506463b8f15226a955c225d
 #: ../../domain.rst:197
 msgid "Create a class that is annotated with ``@DomainConverters``"
 msgstr ""
 
+# adb4e04486254f1cb03399219ac595b4
 #: ../../domain.rst:198
 msgid ""
 "Specify the class annotated with ``@ExternalDomain`` to the "
 "``@DomainConverters``'s ``value`` element"
 msgstr ""
 
+# e5e5771013b845f0b6eebdf0dd6df70a
 #: ../../domain.rst:199
 msgid ""
 "Specify the full qualified name of the class annotated with "
 "``@DomainConverters`` to the option of :doc:`annotation-processing`"
 msgstr ""
 
+# 8bebc500058b44258becf668edebd63c
 #: ../../domain.rst:202
 msgid ""
 "Suppose, for instance, there is the ``PhoneNumber`` class that you can "
 "change:"
 msgstr ""
 
+# cb446a0b21ba4571a2155c7f6c092867
 #: ../../domain.rst:223
 msgid ""
 "First, to define the ``PhoneNumber`` class as an external domain class, "
 "create following class:"
 msgstr ""
 
+# 37053fa2ad6d44269d5114d1cf15ef7e
 #: ../../domain.rst:242
 msgid ""
 "Then create following class and specify the above class to the "
 "``@DomainConverters``'s ``value`` element:"
 msgstr ""
 
+# b5a049e6bb5644218d5f06afbb50df2b
 #: ../../domain.rst:250
 msgid ""
 "Finally, specify the full qualified name of the above class to the option of"
@@ -171,24 +203,29 @@ msgid ""
 "build script as follows:"
 msgstr ""
 
+# 835c2d35e5854501b1f8202acc79c6c5
 #: ../../domain.rst:262
 msgid "Using type parameters in external domain classes"
 msgstr ""
 
+# 5e0c9896ec0447c38305b000c544b34a
 #: ../../domain.rst:264
 msgid "All external domain class declarations have type parameters:"
 msgstr ""
 
+# a5093b1ce826423bb8e215c69c9cfe96
 #: ../../domain.rst:281
 msgid ""
 "In the ``DomainConverter`` implementation class, specify a wildcard ``?`` as"
 " type arguments to the external domain class:"
 msgstr ""
 
+# 68e335380e96487986f5797563a947c6
 #: ../../domain.rst:303
 msgid "Example"
 msgstr ""
 
+# 587507f32dde4153b6640be09856bd5a
 #: ../../domain.rst:305
 msgid "The Domain classes showed above are used as follows:"
 msgstr ""

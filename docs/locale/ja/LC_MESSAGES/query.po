@@ -32,7 +32,7 @@ msgstr ""
 #: ../../query/script.rst:6 ../../query/select.rst:6
 #: ../../query/sql-processor.rst:6 ../../query/update.rst:6
 msgid "Contents"
-msgstr ""
+msgstr "コンテンツ"
 
 #: ../../query/batch-delete.rst:8
 msgid "Annotate with ``@BatchDelete`` to Dao method for execute batch delete."
@@ -1381,7 +1381,7 @@ msgstr ""
 
 #: ../../query/script.rst:29
 msgid "Encoding"
-msgstr ""
+msgstr "エンコーディング"
 
 #: ../../query/script.rst:31
 msgid "The script files must be saved as UTF-8 encoded."
@@ -1389,7 +1389,7 @@ msgstr ""
 
 #: ../../query/script.rst:34
 msgid "Location"
-msgstr ""
+msgstr "位置"
 
 #: ../../query/script.rst:36
 msgid ""
@@ -1399,7 +1399,7 @@ msgstr ""
 
 #: ../../query/script.rst:40
 msgid "Format of file path"
-msgstr ""
+msgstr "ファイルパスの形式"
 
 #: ../../query/script.rst:42
 msgid "The script file path must follow the following format:"
@@ -1421,7 +1421,7 @@ msgstr ""
 
 #: ../../query/script.rst:52
 msgid "Dependency on a specific RDBMS"
-msgstr ""
+msgstr "特定の RDBMS への依存関係"
 
 #: ../../query/script.rst:54
 msgid ""
@@ -1483,16 +1483,16 @@ msgstr ""
 
 #: ../../query/script.rst:97
 msgid "RDBMS"
-msgstr ""
+msgstr "RDBMS"
 
 #: ../../query/script.rst:97 ../../query/select.rst:329
 #: ../../query/select.rst:369
 msgid "Dialect"
-msgstr ""
+msgstr "方言"
 
 #: ../../query/script.rst:99
 msgid "DB2"
-msgstr ""
+msgstr "DB2"
 
 #: ../../query/script.rst:99 ../../query/select.rst:331
 #: ../../query/select.rst:371
@@ -1521,7 +1521,7 @@ msgstr "H2Dialect"
 
 #: ../../query/script.rst:105
 msgid "HSQLDB"
-msgstr ""
+msgstr "HSQLDB"
 
 #: ../../query/script.rst:105 ../../query/select.rst:375
 msgid "HsqldbDialect"
@@ -1550,7 +1550,7 @@ msgstr "MssqlDialect"
 
 #: ../../query/script.rst:111
 msgid "MySQL"
-msgstr ""
+msgstr "MySQL"
 
 #: ../../query/script.rst:111
 msgid "MySqlDialect"
@@ -1570,7 +1570,7 @@ msgstr "OracleDialect"
 
 #: ../../query/script.rst:115
 msgid "PostgreSQL"
-msgstr ""
+msgstr "PostgreSQL"
 
 #: ../../query/script.rst:115 ../../query/select.rst:387
 msgid "PostgresDialect"
@@ -1582,7 +1582,7 @@ msgstr ""
 
 #: ../../query/script.rst:117
 msgid "SQLite"
-msgstr ""
+msgstr "SQLite"
 
 #: ../../query/script.rst:117
 msgid "SqliteDialect"

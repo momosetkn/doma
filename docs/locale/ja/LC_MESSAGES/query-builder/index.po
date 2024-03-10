@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Doma\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 00:27+0900\n"
-"PO-Revision-Date: 2024-03-09 16:18+0000\n"
+"POT-Creation-Date: 2024-03-10 10:39+0900\n"
+"PO-Revision-Date: 2024-03-10 01:59+0000\n"
 "Last-Translator: Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024\n"
 "Language-Team: Japanese (https://app.transifex.com/domaframework/teams/189259/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -21,108 +21,134 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+# 3446e085256b4abe871c367c58055e00
 #: ../../query-builder/index.rst:3
 msgid "Query builders"
 msgstr ""
 
+# a6a31bd451e44ff5a8b6dd9e88236f05
 #: ../../query-builder/index.rst:6
 msgid "Contents"
 msgstr "コンテンツ"
 
+# e0742c531bb4448bbbd0e0e5fcb88933
 #: ../../query-builder/index.rst:8
 msgid "The package ``org.seasar.doma.jdbc.builder`` provides SQL builders."
 msgstr ""
 
+# 4c57965da0b24738820d9758dc368673
 #: ../../query-builder/index.rst:10
 msgid ""
 "When it is difficult to build a SQL statement with :doc:`../query/index`, "
 "consider to use the SQL builders in :ref:`dao-default-method`."
 msgstr ""
 
+# be5f37d5ea0d4b66aed15b6b24b83df0
 #: ../../query-builder/index.rst:14
 msgid "Search"
 msgstr ""
 
+# 0e122c8232834d79a32a20e85e6107f7
 #: ../../query-builder/index.rst:32
 msgid "You can get result of the SQL execution in various ways."
 msgstr ""
 
+# 8985c4290f47489ca4a69337f6ee505b
 #: ../../query-builder/index.rst:35
 msgid "Single record search"
 msgstr ""
 
+# b6189de4caba41a1825c9621ce4783e0
 #: ../../query-builder/index.rst:37
 msgid "getScalarSingleResult"
 msgstr ""
 
+# 959ad24a008246119416f20c21ee08e1
 #: ../../query-builder/index.rst:38
 msgid "getOptionalScalarSingleResult"
 msgstr ""
 
+# 7250b47723d64b3483c1decf270b67ab
 #: ../../query-builder/index.rst:39
 msgid "getEntitySingleResult"
 msgstr ""
 
+# 1a606bc00452408db576db74f4efc1f1
 #: ../../query-builder/index.rst:40
 msgid "getOptionalEntitySingleResult"
 msgstr ""
 
+# de8bdf301505439aa9f216ff22bfffb7
 #: ../../query-builder/index.rst:41
 msgid "getMapSingleResult"
 msgstr ""
 
+# 1e6bc6791f1f4e0ea096c486cbfd3765
 #: ../../query-builder/index.rst:42
 msgid "getOptionalMapSingleResult"
 msgstr ""
 
+# c1a79b69d9364fe090ae58282ce19637
 #: ../../query-builder/index.rst:45
 msgid "Multiple records search"
 msgstr ""
 
+# 7ff44193bfab41b9ba4f461b220f4a85
 #: ../../query-builder/index.rst:47
 msgid "getScalarResultList"
 msgstr ""
 
+# 94480b8e6f0548dd8e9e40922e2efc0f
 #: ../../query-builder/index.rst:48
 msgid "getOptionalScalarResultList"
 msgstr ""
 
+# 7ae67f29fee545ababecd65325e92080
 #: ../../query-builder/index.rst:49
 msgid "getEntityResultList"
 msgstr ""
 
+# 22f2c7a71ce74ef7b35bd32f5d72ce4f
 #: ../../query-builder/index.rst:50
 msgid "getMapResultList"
 msgstr ""
 
+# cc8ee68abdde4d11b45b031cc8ce3a77
 #: ../../query-builder/index.rst:53
 msgid "Stream search"
 msgstr ""
 
+# 3b469c35566e45c3baa3d0dc5adb0668
 #: ../../query-builder/index.rst:55
 msgid "streamAsScalar"
 msgstr ""
 
+# 7939597872c6406e8cae9d5950882959
 #: ../../query-builder/index.rst:56
 msgid "streamAsOptionalScalar"
 msgstr ""
 
+# 5a39349bc667415e8583a10d6cc97758
 #: ../../query-builder/index.rst:57
 msgid "streamAsEntity"
 msgstr ""
 
+# d6eea3ff4ef842d7b806a864362513f4
 #: ../../query-builder/index.rst:58
 msgid "streamAsMap"
 msgstr ""
 
+# 798af48c70ab4a57b017cc595b4ece05
 #: ../../query-builder/index.rst:61
 msgid "Insert"
 msgstr ""
 
+# d77d9eacaf8848a4af995ee9a353d64c
 #: ../../query-builder/index.rst:74
 msgid "Update"
 msgstr ""
 
+# da0b064ef8f2473fa80a30a98155a7ff
 #: ../../query-builder/index.rst:88
 msgid "Delete"
 msgstr ""

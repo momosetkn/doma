@@ -137,9 +137,121 @@ minimum_perc           = 0
 replace_edited_strings = false
 keep_translations      = false
 
+[o:domaframework:p:doma-docs:r:query--batch-delete]
+file_filter            = locale/<lang>/LC_MESSAGES/query/batch-delete.po
+source_file            = _build/gettext/query/batch-delete.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:domaframework:p:doma-docs:r:query--batch-insert]
+file_filter            = locale/<lang>/LC_MESSAGES/query/batch-insert.po
+source_file            = _build/gettext/query/batch-insert.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:domaframework:p:doma-docs:r:query--batch-update]
+file_filter            = locale/<lang>/LC_MESSAGES/query/batch-update.po
+source_file            = _build/gettext/query/batch-update.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:domaframework:p:doma-docs:r:query--delete]
+file_filter            = locale/<lang>/LC_MESSAGES/query/delete.po
+source_file            = _build/gettext/query/delete.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:domaframework:p:doma-docs:r:query--factory]
+file_filter            = locale/<lang>/LC_MESSAGES/query/factory.po
+source_file            = _build/gettext/query/factory.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:domaframework:p:doma-docs:r:query--function]
+file_filter            = locale/<lang>/LC_MESSAGES/query/function.po
+source_file            = _build/gettext/query/function.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:domaframework:p:doma-docs:r:query--index]
+file_filter            = locale/<lang>/LC_MESSAGES/query/index.po
+source_file            = _build/gettext/query/index.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:domaframework:p:doma-docs:r:query--insert]
+file_filter            = locale/<lang>/LC_MESSAGES/query/insert.po
+source_file            = _build/gettext/query/insert.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:domaframework:p:doma-docs:r:query--procedure]
+file_filter            = locale/<lang>/LC_MESSAGES/query/procedure.po
+source_file            = _build/gettext/query/procedure.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:domaframework:p:doma-docs:r:query--script]
+file_filter            = locale/<lang>/LC_MESSAGES/query/script.po
+source_file            = _build/gettext/query/script.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:domaframework:p:doma-docs:r:query--select]
+file_filter            = locale/<lang>/LC_MESSAGES/query/select.po
+source_file            = _build/gettext/query/select.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:domaframework:p:doma-docs:r:query--sql-processor]
+file_filter            = locale/<lang>/LC_MESSAGES/query/sql-processor.po
+source_file            = _build/gettext/query/sql-processor.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:domaframework:p:doma-docs:r:query--update]
+file_filter            = locale/<lang>/LC_MESSAGES/query/update.po
+source_file            = _build/gettext/query/update.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
 [o:domaframework:p:doma-docs:r:query-builder]
 file_filter            = locale/<lang>/LC_MESSAGES/query-builder.po
 source_file            = _build/gettext/query-builder.pot
+type                   = PO
+minimum_perc           = 0
+replace_edited_strings = false
+keep_translations      = false
+
+[o:domaframework:p:doma-docs:r:query-builder--index]
+file_filter            = locale/<lang>/LC_MESSAGES/query-builder/index.po
+source_file            = _build/gettext/query-builder/index.pot
 type                   = PO
 minimum_perc           = 0
 replace_edited_strings = false
