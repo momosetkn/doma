@@ -1558,7 +1558,7 @@ msgstr "MySqlDialect"
 
 #: ../../query/script.rst:111 ../../query/script.rst:113
 msgid "/"
-msgstr ""
+msgstr "/"
 
 #: ../../query/script.rst:113
 msgid "Oracle Database"

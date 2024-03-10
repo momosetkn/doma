@@ -275,7 +275,7 @@ msgstr "MySqlDialect"
 # 7d411b0caada4deb9f7e7dacc1f7fe66
 #: ../../query/script.rst:111 ../../query/script.rst:113
 msgid "/"
-msgstr ""
+msgstr "/"
 
 # 5e151e70c8184732acd7dd1dba61046c
 #: ../../query/script.rst:113
