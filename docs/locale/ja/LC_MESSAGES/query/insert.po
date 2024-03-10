@@ -234,7 +234,7 @@ msgstr ""
 # c853d5c89b66411980de59b9192a5d25
 #: ../../query/insert.rst:146
 msgid "Query timeout"
-msgstr ""
+msgstr "クエリタイムアウト"
 
 # e58746be83f447cb9e5f78f91c913262
 #: ../../query/insert.rst:148

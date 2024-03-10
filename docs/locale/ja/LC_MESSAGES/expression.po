@@ -211,7 +211,7 @@ msgstr ""
 # 0f53087a704e4e8f8e927e3df529242b
 #: ../../expression.rst:72 ../../expression.rst:104 ../../expression.rst:126
 msgid "Description"
-msgstr ""
+msgstr "説明"
 
 # c63a37e619ff4e64bbfc79d70e05bc82
 #: ../../expression.rst:74

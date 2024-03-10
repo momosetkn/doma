@@ -242,7 +242,7 @@ msgstr ""
 # 26f57c08f17b42beba915ce4c56d9c91
 #: ../../query/delete.rst:146
 msgid "Query timeout"
-msgstr ""
+msgstr "クエリタイムアウト"
 
 # 88ea606c091a4c6eb2cfbbbea50251d5
 #: ../../query/delete.rst:149

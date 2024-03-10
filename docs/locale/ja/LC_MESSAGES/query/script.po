@@ -208,12 +208,12 @@ msgstr ""
 # 5b76dd8aaab0438c9a2792f03f1633d3
 #: ../../query/script.rst:101
 msgid "H2 Database Engine 1.2.126"
-msgstr ""
+msgstr "H2 Database Engine 1.2.126"
 
 # 58b75f1d1a2a4ce48eab6b68f2ece820
 #: ../../query/script.rst:101
 msgid "H212126Dialect"
-msgstr ""
+msgstr "H212126Dialect"
 
 # 2dc9e24a8688430fa0ec05be4a7fe2b9
 #: ../../query/script.rst:103
@@ -238,12 +238,12 @@ msgstr "HsqldbDialect"
 # 1663a54194814bdca34ea0873c6ee3c6
 #: ../../query/script.rst:107
 msgid "Microsoft SQL Server 2008"
-msgstr ""
+msgstr "Microsoft SQL Server 2008"
 
 # 2b36145e383f42cda9b12b8e6ddff747
 #: ../../query/script.rst:107
 msgid "Mssql2008Dialect"
-msgstr ""
+msgstr "Mssql2008Dialect"
 
 # c72f9d37a9ef41fa94025de834bde2cd
 # b8995d769f554007a50c72636e6a6818

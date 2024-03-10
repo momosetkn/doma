@@ -352,7 +352,7 @@ msgstr ""
 # 51e2d0e531fe450885a8a42ff38dc5a4
 #: ../../query/batch-update.rst:234
 msgid "Query timeout"
-msgstr ""
+msgstr "クエリタイムアウト"
 
 # 3717b118835c4b22a901a86bc902cd2b
 #: ../../query/batch-update.rst:236
@@ -372,7 +372,7 @@ msgstr ""
 # 63dc797863d54f6faeb8373cc87293ea
 #: ../../query/batch-update.rst:247
 msgid "Batch size"
-msgstr ""
+msgstr "バッチサイズ"
 
 # 995e82a222114bcbb979ac5b8de0495d
 #: ../../query/batch-update.rst:249

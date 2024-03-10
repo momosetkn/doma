@@ -231,7 +231,7 @@ msgstr ""
 # c56dc34147864d1d9bacd7866bbf2000
 #: ../../query/batch-delete.rst:139
 msgid "Query timeout"
-msgstr ""
+msgstr "クエリタイムアウト"
 
 # a40b3c0a563b4b9b98853d5b7839d7ef
 #: ../../query/batch-delete.rst:141
@@ -251,7 +251,7 @@ msgstr ""
 # 7846aa422e4546fdb5274c6ffcc4bcfc
 #: ../../query/batch-delete.rst:152
 msgid "Batch size"
-msgstr ""
+msgstr "バッチサイズ"
 
 # 29560e6c593e4aaf93b2f78ef6c53325
 #: ../../query/batch-delete.rst:154

@@ -531,7 +531,7 @@ msgstr "Db2Dialect"
 # 8e26e9e7b89e42feab5e311d29983568
 #: ../../query/select.rst:334 ../../query/select.rst:377
 msgid "Mssql2008Dialect"
-msgstr ""
+msgstr "Mssql2008Dialect"
 
 # 61bc87d3ad6f4085a0cacf32202e54c9
 #: ../../query/select.rst:337
@@ -599,7 +599,7 @@ msgstr ""
 # 582d6aa0a7a5422ca973293136dc9dd4
 #: ../../query/select.rst:369
 msgid "Description"
-msgstr ""
+msgstr "説明"
 
 # 72e54e37aed44e038675f9eeeb4cb4af
 # 585b76ac332b4845b10316c7b0044a2d
@@ -725,7 +725,7 @@ msgstr ""
 # 555171eaadf1407880f9327757ead474
 #: ../../query/select.rst:434
 msgid "Query timeout"
-msgstr ""
+msgstr "クエリタイムアウト"
 
 # caf8f2d859c14bfdb1fc6b6489c1b10a
 #: ../../query/select.rst:436
@@ -744,7 +744,7 @@ msgstr ""
 # e65ba2af3d88401fae5c90d8bfb04785
 #: ../../query/select.rst:446
 msgid "Fetch size"
-msgstr ""
+msgstr "フェッチサイズ"
 
 # 82a504d7fe5046babff756a6d8cf87b7
 #: ../../query/select.rst:448

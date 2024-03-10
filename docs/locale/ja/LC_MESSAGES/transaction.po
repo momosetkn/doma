@@ -53,7 +53,7 @@ msgstr ""
 # 029df1b033fd4192b83c9749261fe62c
 #: ../../transaction.rst:17
 msgid "Configuration"
-msgstr ""
+msgstr "設定"
 
 # c8dd5753aadc43c1877668613feb7817
 #: ../../transaction.rst:19

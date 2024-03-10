@@ -56,7 +56,7 @@ msgstr ""
 # 4d2b53eeb98d4bcda61178bf6be25cc2
 #: ../../slf4j-support.rst:28
 msgid "Configuration"
-msgstr ""
+msgstr "設定"
 
 # 7ccd0346f1b3443a84d8884fee107088
 #: ../../slf4j-support.rst:30

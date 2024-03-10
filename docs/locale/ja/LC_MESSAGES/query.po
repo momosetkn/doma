@@ -219,7 +219,7 @@ msgstr ""
 #: ../../query/insert.rst:146 ../../query/select.rst:434
 #: ../../query/update.rst:258
 msgid "Query timeout"
-msgstr ""
+msgstr "クエリタイムアウト"
 
 #: ../../query/batch-delete.rst:141
 msgid ""
@@ -238,7 +238,7 @@ msgstr ""
 #: ../../query/batch-delete.rst:152 ../../query/batch-insert.rst:148
 #: ../../query/batch-update.rst:247
 msgid "Batch size"
-msgstr ""
+msgstr "バッチサイズ"
 
 #: ../../query/batch-delete.rst:154
 msgid ""
@@ -1505,11 +1505,11 @@ msgstr ""
 
 #: ../../query/script.rst:101
 msgid "H2 Database Engine 1.2.126"
-msgstr ""
+msgstr "H2 Database Engine 1.2.126"
 
 #: ../../query/script.rst:101
 msgid "H212126Dialect"
-msgstr ""
+msgstr "H212126Dialect"
 
 #: ../../query/script.rst:103
 msgid "H2 Database"
@@ -1529,12 +1529,12 @@ msgstr "HsqldbDialect"
 
 #: ../../query/script.rst:107
 msgid "Microsoft SQL Server 2008"
-msgstr ""
+msgstr "Microsoft SQL Server 2008"
 
 #: ../../query/script.rst:107 ../../query/select.rst:334
 #: ../../query/select.rst:377
 msgid "Mssql2008Dialect"
-msgstr ""
+msgstr "Mssql2008Dialect"
 
 #: ../../query/script.rst:107 ../../query/script.rst:109
 msgid "GO"
@@ -2015,7 +2015,7 @@ msgstr ""
 
 #: ../../query/select.rst:369
 msgid "Description"
-msgstr ""
+msgstr "説明"
 
 #: ../../query/select.rst:371 ../../query/select.rst:373
 #: ../../query/select.rst:375
@@ -2114,7 +2114,7 @@ msgstr ""
 
 #: ../../query/select.rst:446
 msgid "Fetch size"
-msgstr ""
+msgstr "フェッチサイズ"
 
 #: ../../query/select.rst:448
 msgid ""

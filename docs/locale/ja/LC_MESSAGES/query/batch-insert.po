@@ -229,7 +229,7 @@ msgstr ""
 # 6ba8be83a42147058617bd6df23486ba
 #: ../../query/batch-insert.rst:135
 msgid "Query timeout"
-msgstr ""
+msgstr "クエリタイムアウト"
 
 # c11464ed84be4a5db07f96481d4d51b8
 #: ../../query/batch-insert.rst:137
@@ -249,7 +249,7 @@ msgstr ""
 # be175d19660c48a0b370bad46074c8f0
 #: ../../query/batch-insert.rst:148
 msgid "Batch size"
-msgstr ""
+msgstr "バッチサイズ"
 
 # 40db41e9bee843cfa989800f380c9ae4
 #: ../../query/batch-insert.rst:150

@@ -380,7 +380,7 @@ msgstr ""
 # 2c70c9604b214664b6e04e230931e147
 #: ../../query/update.rst:258
 msgid "Query timeout"
-msgstr ""
+msgstr "クエリタイムアウト"
 
 # a0e21f278ca247e4869243e0e95f3546
 #: ../../query/update.rst:260
