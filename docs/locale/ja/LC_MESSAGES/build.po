@@ -24,7 +24,7 @@ msgstr ""
 # 540915798a26406e9b5c9bef5631a507
 #: ../../build.rst:3
 msgid "Building an application"
-msgstr "アプリケーションのビルド"
+msgstr "アプリケーションの構築"
 
 # 5308349489e14490b237e994728ce02f
 #: ../../build.rst:6
@@ -96,7 +96,7 @@ msgstr "doma-processor"
 # 1657d7924e3f4fc5a66e388d27af59f7
 #: ../../build.rst:31
 msgid "Build with Gradle"
-msgstr "Gradle を使用してビルドする"
+msgstr "Gradle を利用する"
 
 # 95747bb5dbd5483b8fc068c6f7a420de
 #: ../../build.rst:33
@@ -119,7 +119,7 @@ msgstr "例として、`getting-started`_ リポジトリの build.gradle.kts �
 # 3708ac5e5c6446d3a929df9804c91aac
 #: ../../build.rst:47
 msgid "Build with IntelliJ IDEA"
-msgstr "IntelliJ IDEA で構築する"
+msgstr "IntelliJ IDEA を利用する"
 
 # 9843f751ee90496aa5ff386e1955b1b3
 #: ../../build.rst:49
@@ -131,7 +131,7 @@ msgstr "プロジェクトを Gradle プロジェクトとしてインポート�
 # 7e4a2b8c1f834d358746bf3bfdc4099b
 #: ../../build.rst:54
 msgid "Build with Eclipse"
-msgstr "Eclipseでビルドする"
+msgstr "Eclipse を利用する"
 
 # ad8614ebf2b643a1a8000ce890c6d8f5
 #: ../../build.rst:56

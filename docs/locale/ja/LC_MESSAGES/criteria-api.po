@@ -102,17 +102,17 @@ msgstr ""
 # d9bde96bd5d74be791ea9b3153ccc17e
 #: ../../criteria-api.rst:111
 msgid "doma.metamodel.enabled"
-msgstr ""
+msgstr "doma.metamodel.enabled"
 
 # 5b7eee3caefd41ffa69fb9258e1db3ca
 #: ../../criteria-api.rst:112
 msgid "doma.metamodel.prefix"
-msgstr ""
+msgstr "doma.metamodel.prefix"
 
 # 85cb75628cb34afba4f27709eba35d38
 #: ../../criteria-api.rst:113
 msgid "doma.metamodel.suffix"
-msgstr ""
+msgstr "doma.metamodel.suffix"
 
 # df811314e1584c199bee09d51aed4b66
 #: ../../criteria-api.rst:116

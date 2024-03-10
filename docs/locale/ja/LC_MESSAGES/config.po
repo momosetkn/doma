@@ -24,7 +24,7 @@ msgstr ""
 # 832e956411744978a91dd301ba22a94e
 #: ../../config.rst:3
 msgid "Configuration"
-msgstr "設定"
+msgstr "設定インターフェース"
 
 # 16765092e80146cea87e4a38d0a0d276
 #: ../../config.rst:6
@@ -630,7 +630,7 @@ msgstr ""
 # fd607b7b048a4303a3de24e9a9442028
 #: ../../config.rst:236
 msgid "Configuration definition"
-msgstr "構成定義"
+msgstr "設定クラスの定義"
 
 # 41cb964fff394c0b9b3b6e1d23f88597
 #: ../../config.rst:239

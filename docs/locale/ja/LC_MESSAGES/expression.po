@@ -293,7 +293,7 @@ msgstr "比較演算子を使用するには、被演算子で ``java.lang.Compa
 # 60f0c38b8c394216b3c2e20fe18c63e0
 #: ../../expression.rst:89
 msgid "The operands for ``<``, ``<=``, ``>`` and ``>=`` must not be ``null``."
-msgstr "``<``, ``<=``, ``>`` と ``>=`` のオペランドは ``null`` であってはなりません。"
+msgstr "``<``, ``<=``, ``>`` と ``>=`` の 被演算子 は ``null`` であってはなりません。"
 
 # 5ad2a0db66744fcbb5dcad8b706f1f84
 #: ../../expression.rst:99
