@@ -322,7 +322,7 @@ msgstr "Select ステートメント"
 # 9c3940d6676d4050a7d77a690f8572c7
 #: ../../criteria-api.rst:254
 msgid "Select settings (Entityql, NativeSql)"
-msgstr "検索設定 (Entityql, NativeSql)"
+msgstr "Select 設定 (Entityql, NativeSql)"
 
 # 292612f3920044908a1283a8b8db7a48
 # 0d184ce5d2e648fb824dd4188092a1b2
@@ -429,12 +429,12 @@ msgstr "NativeSql DSL は次のメソッドをサポートしています。"
 # 3ebf508e7ec8460fac595a1d7392d5df
 #: ../../criteria-api.rst:317
 msgid "mapStream"
-msgstr "マップストリーム"
+msgstr "mapStream"
 
 # 24c5d7bcf2d4483688152e5dd0fccaf1
 #: ../../criteria-api.rst:318
 msgid "collect"
-msgstr "集める"
+msgstr "collect"
 
 # d8ae2b2add084c96838734691d9709c5
 #: ../../criteria-api.rst:335
@@ -516,7 +516,7 @@ msgid ""
 "Up to 9 numbers, the column results are held by ``Tuple2`` to ``Tuple9``. "
 "For more than 9 numbers, the results are held by ``Row``."
 msgstr ""
-"9 個までの列の結果は ``Tuple2`` から ``Tuple9`` に保持されます。 9 個を超える数値の場合、結果は``Row`` "
+"9 個までの列の結果は ``Tuple2`` から ``Tuple9`` に保持されます。 9 個を超える数値の場合、結果は ``Row`` "
 "によって保持されます。"
 
 # 405e7e3a913e45bab9bf6ac88f1a5f4f
@@ -739,7 +739,7 @@ msgstr ""
 # 1862cf99b7874e68ab78a7f0c55e7603
 #: ../../criteria-api.rst:619
 msgid "Join expression"
-msgstr "結合式"
+msgstr "Join 式"
 
 # 71ae66ab33dd4e5a9de43851b7dccbd4
 # 68a8d9af2c244634bcccb969b73137cf
@@ -778,8 +778,8 @@ msgid ""
 "You can associate entities with the ``associate`` operation in the Entityql "
 "DSL. You have to use the ``associate`` operation with join expression."
 msgstr ""
-"Entityql DSL の ``associate`` 操作を使用してエンティティを関連付けることができます。結合式で ``associate`` "
-"操作を使用する必要があります。"
+"Entityql DSL の ``associate`` 操作を使用してエンティティを関連付けることができます。 join 式で "
+"``associate`` 操作を使用する必要があります。"
 
 # db2b289a012c4e99b74ddcd63f5c8efd
 #: ../../criteria-api.rst:703
@@ -798,33 +798,33 @@ msgid ""
 " the Entityql DSL. You have to use the ``associateWith`` operation with join"
 " expression."
 msgstr ""
-"不変エンティティを Entityql DSL の ``associateWith`` オペレーションに関連付けることができます。結合式で "
+"不変エンティティを Entityql DSL の ``associateWith`` オペレーションに関連付けることができます。 join 式で "
 "``associateWith`` 操作を使用する必要があります。"
 
 # 6131c785e1634493987e32bcd9b0c9ab
 #: ../../criteria-api.rst:764
 msgid "Dynamic join expression (Entityql, NativeSql)"
-msgstr "動的結合式 (Entityql、NativeSql)"
+msgstr "動的 join 式 (Entityql、NativeSql)"
 
 # d21bc326c9d340c696c8b7bc56684a09
 #: ../../criteria-api.rst:766
 msgid ""
 "A join expression uses only evaluated operators to build a JOIN clause."
-msgstr "結合式は、評価された演算子のみを使用して JOIN 句を構築します。"
+msgstr "join 式は、評価された演算子のみを使用して JOIN 句を構築します。"
 
 # e80fb01484154146b8f470971f3e938a
 #: ../../criteria-api.rst:768
 msgid ""
 "When every operators are not evaluated in a join expression, the built "
 "statement doesn't have any JOIN clause."
-msgstr "すべての演算子が結合式で評価されない場合、構築されたステートメントには JOIN 句がありません。"
+msgstr "すべての演算子が join 式で評価されない場合、構築されたステートメントには JOIN 句がありません。"
 
 # faf2c4a875094c14bf88a9ef7bcdb0c2
 #: ../../criteria-api.rst:771
 msgid ""
 "For example, suppose that a join expression contains a conditional "
 "expression as follows:"
-msgstr "たとえば、結合式に次のような条件式が含まれているとします。"
+msgstr "たとえば、 join 式に次のような join 式が含まれているとします。"
 
 # f81fe62ea41c4c559d29230fc9c98703
 #: ../../criteria-api.rst:790
@@ -846,18 +846,18 @@ msgid ""
 "optional. To do it, pass the result of ``AssociationOption.optional()`` to "
 "the associate method:"
 msgstr ""
-"上記の動的結合式を使用する場合、関連付けはオプションである必要があります。これを行うには、 "
+"上記の動的 join 式を使用する場合、関連付けはオプションである必要があります。これを行うには、 "
 "``AssociationOption.optional()`` の結果を関連付けメソッドに渡します。"
 
 # 3ac11f3a29604782a36e64ff1bcdac20
 #: ../../criteria-api.rst:831
 msgid "Aggregate Functions (NativeSql)"
-msgstr "集計関数 (NativeSql)"
+msgstr "集約関数 (NativeSql)"
 
 # f693f2e6c7f34b33b84a73e50537851b
 #: ../../criteria-api.rst:833
 msgid "We support the following aggregate functions:"
-msgstr "次の集計関数をサポートしています。"
+msgstr "次の集約関数をサポートしています。"
 
 # 9c8b34c7195240c186f842acf2dcd165
 #: ../../criteria-api.rst:835
@@ -1003,7 +1003,7 @@ msgstr "Distinct 式 (Entityql、NativeSql)"
 # b797fe49624048bf96c8928344142c0c
 #: ../../criteria-api.rst:1002
 msgid "Limit and Offset expression (Entityql, NativeSql)"
-msgstr "limit および offset 式 (Entityql、NativeSql)"
+msgstr "Limit および offset 式 (Entityql、NativeSql)"
 
 # b2ae02ff3b68469ba4a57c628e28d0e2
 #: ../../criteria-api.rst:1022
@@ -1093,7 +1093,7 @@ msgstr ""
 # add59f88ce0d48d38b8e2f21b39e0142
 #: ../../criteria-api.rst:1194
 msgid "Delete settings (Entityql, NativeSql)"
-msgstr "削除設定（Entityql、NativeSql）"
+msgstr "Delete 設定（Entityql、NativeSql）"
 
 # de4ac556c2574e73b0d04ebc06ccf421
 # c4b0628d06dd4360b18ddff9d82fb794
