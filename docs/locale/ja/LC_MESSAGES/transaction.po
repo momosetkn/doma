@@ -51,7 +51,7 @@ msgstr ""
 # e59f382d3a1e4d6f9c553df5d3c939dd
 #: ../../transaction.rst:14
 msgid "See also :ref:`config-configuration-definition` ."
-msgstr ":ref:`config-configuration-setting` も参照してください。"
+msgstr ":ref:`config-configuration-definition` も参照してください。"
 
 # 029df1b033fd4192b83c9749261fe62c
 #: ../../transaction.rst:17

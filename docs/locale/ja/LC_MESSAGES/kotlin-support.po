@@ -39,7 +39,7 @@ msgstr ""
 # 9ef52b39c1fe4ee49617f6a7aaaf2e68
 #: ../../kotlin-support.rst:11
 msgid "Best practices"
-msgstr ""
+msgstr "ベストプラクティス"
 
 # a1180a6b76f449e3b7f126864eef284d
 #: ../../kotlin-support.rst:13

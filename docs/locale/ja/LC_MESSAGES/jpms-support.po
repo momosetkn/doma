@@ -24,7 +24,7 @@ msgstr ""
 # 8e82b00185864f1d98200b0e902b9853
 #: ../../jpms-support.rst:3
 msgid "JPMS support"
-msgstr ""
+msgstr "JPMS サポート"
 
 # c92b5f3273954975a770896465e08cbb
 #: ../../jpms-support.rst:6
@@ -40,27 +40,27 @@ msgstr "概要"
 #: ../../jpms-support.rst:11
 msgid ""
 "Doma supports the Java Platform Module System (JPMS) introduced with Java 9."
-msgstr ""
+msgstr "Doma は、Java 9 で導入された Java Platform Module System (JPMS) をサポートしています。"
 
 # 141e9c2c35a741d2a9913ebc21c20c21
 #: ../../jpms-support.rst:14
 msgid "Modules"
-msgstr ""
+msgstr "モジュール"
 
 # e6bbb44cb2bd477d9cc95cf2ecb1fb67
 #: ../../jpms-support.rst:16
 msgid "Doma provides the following modules:"
-msgstr ""
+msgstr "Doma は次のモジュールを提供します。"
 
 # 6edc26d28f744d6ebfa66734ac8ac1fc
 #: ../../jpms-support.rst:19
 msgid "Artifact ID"
-msgstr ""
+msgstr "アーティファクトID"
 
 # e527fd7efa2b477eb4d3362c088e2d3e
 #: ../../jpms-support.rst:19
 msgid "Module Name"
-msgstr ""
+msgstr "モジュール名"
 
 # 6737908845ed4e8589fd6b74d82c295b
 #: ../../jpms-support.rst:21
@@ -70,17 +70,17 @@ msgstr "doma-core"
 # 2292accf2b70455e82e96250bb29455a
 #: ../../jpms-support.rst:21
 msgid "org.seasar.doma.core"
-msgstr ""
+msgstr "org.seasar.doma.core"
 
 # 8456611326d647a5901dbf585f145fef
 #: ../../jpms-support.rst:23
 msgid "doma-kotlin"
-msgstr ""
+msgstr "doma-kotlin"
 
 # e9e5ff8e224948708aee4de4f24f65a4
 #: ../../jpms-support.rst:23
 msgid "org.seasar.doma.kotlin"
-msgstr ""
+msgstr "org.seasar.doma.kotlin"
 
 # 89acba5071cb489fb84c441276e19a22
 #: ../../jpms-support.rst:25
@@ -90,27 +90,27 @@ msgstr "doma-processor"
 # 8f89b6dffdb34999952c131e9fbc3811
 #: ../../jpms-support.rst:25
 msgid "org.seasar.doma.processor"
-msgstr ""
+msgstr "org.seasar.doma.processor"
 
 # 8186d216503c47f8ba77466f6e2ce416
 #: ../../jpms-support.rst:27
 msgid "doma-slf4j"
-msgstr ""
+msgstr "doma-slf4j"
 
 # 3dc79be8ffd440789bc65fb354d89aca
 #: ../../jpms-support.rst:27
 msgid "org.seasar.doma.slf4j"
-msgstr ""
+msgstr "org.seasar.doma.slf4j"
 
 # 67cbec4457c34607bfe1ac67dd430f3f
 #: ../../jpms-support.rst:29
 msgid "doma-template"
-msgstr ""
+msgstr "doma-template"
 
 # a1e650ab87f249598a8c6edc0fdd034f
 #: ../../jpms-support.rst:29
 msgid "org.seasar.doma.template"
-msgstr ""
+msgstr "org.seasar.doma.template"
 
 # 93ef66dbfb724e8e8797c8216268ff35
 #: ../../jpms-support.rst:33
@@ -123,8 +123,10 @@ msgid ""
 "Doma uses reflection to access Entity properties. For this to work, you have"
 " to open packages containing Entity classes:"
 msgstr ""
+"Doma はリフレクションを使用してエンティティ プロパティにアクセスします。これを機能させるには、Entity "
+"クラスを含むパッケージを開く必要があります。"
 
 # 2d31720491964f7b852d00ff4cff1dcc
 #: ../../jpms-support.rst:47
 msgid "You can open your module instead of packages:"
-msgstr ""
+msgstr "パッケージの代わりにモジュールを開くこともできます。"

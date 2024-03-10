@@ -24,7 +24,7 @@ msgstr ""
 # 7dd3539226884a1e9992f2e143ee94ba
 #: ../../lombok-support.rst:3
 msgid "Lombok support"
-msgstr ""
+msgstr "Lombok サポート"
 
 # ea04769890844938a0c6fef0c8735307
 #: ../../lombok-support.rst:6
@@ -34,12 +34,12 @@ msgstr "コンテンツ"
 # 05817b884c0544b489059baa8f70e2b6
 #: ../../lombok-support.rst:8
 msgid "Doma supports `Lombok <https://projectlombok.org/>`_ 1.16.12 or above."
-msgstr ""
+msgstr "Doma は、`Lombok <https://projectlombok.org/>`_ 1.16.12 以降をサポートしています。"
 
 # a6c58ed167f04762a8e68b7574e20753
 #: ../../lombok-support.rst:12
 msgid "If you intend to use Eclipse, use version 4.5 or above."
-msgstr ""
+msgstr "Eclipse を使用する場合は、バージョン 4.5 以降を使用してください。"
 
 # 1ff778834f354b29871768ab8e2d0bca
 #: ../../lombok-support.rst:15
@@ -54,6 +54,9 @@ msgid ""
 "processors are not always aware of the class modifications made by Lombok "
 "annotation processors."
 msgstr ""
+"Lombok と Doma は両方ともアノテーション プロセッサを提供します。アノテーション プロセッサの実行順序は Java "
+"では決定されないため、Doma のアノテーション プロセッサは、Lombok アノテーション "
+"プロセッサによって行われたクラスの変更を常に認識するとは限りません。"
 
 # 2b5de50f1b4b4ea5bcd20497fbd9a5cd
 #: ../../lombok-support.rst:22
@@ -64,38 +67,41 @@ msgid ""
 "suppose that the class has a constructor whose arguments cover all instance "
 "fields."
 msgstr ""
+"この問題を解決するために、Doma のアノテーション プロセッサは Lombok "
+"のアノテーションのいくつかを認識し、その動作を変更します。たとえば、Doma のアノテーション プロセッサが ``@lombok.Value`` "
+"アノテーションが付けられたクラスを見つけた場合、そのクラスにはすべてのインスタンス フィールドを引数で受け取るコンストラクタがあると想定します。"
 
 # 36f9a81cb1004065b89496b87e043403
 #: ../../lombok-support.rst:28
 msgid "Best practices"
-msgstr ""
+msgstr "ベストプラクティス"
 
 # 450cb75d212c4f6e8d7d4b4faadcc8dd
 #: ../../lombok-support.rst:30
 msgid ""
 "We show you recommended ways to define classes with Lombok annotations."
-msgstr ""
+msgstr "Lombok アノテーションを使用してクラスを定義するための推奨方法を示します。"
 
 # 8d056755311740f6a8df1e8ba1a7f2f5
 #: ../../lombok-support.rst:33
 msgid "Entity class definition"
-msgstr ""
+msgstr "エンティティクラスの定義"
 
 # 54d5e53ca45747e489c486c21fda25bb
 #: ../../lombok-support.rst:36
 msgid "immutable entity classes"
-msgstr ""
+msgstr "不変エンティティクラス"
 
 # 9d2ebb7cce3f4805a0772d8ec3668557
 #: ../../lombok-support.rst:38
 msgid "Specify ``true`` to the ``immutable`` element of ``@Entity``"
-msgstr ""
+msgstr "``@Entity`` の ``immutable`` 要素に ``true`` を指定する"
 
 # 3be00842b1404f209e0b9d2a75bfeefc
 # 8f6ed4338bed49daa6f6380172578960
 #: ../../lombok-support.rst:39 ../../lombok-support.rst:111
 msgid "Specify either ``@lombok.Value`` or ``@lombok.AllArgsConstructor``"
-msgstr ""
+msgstr "``@lombok.Value`` または ``@lombok.AllArgsConstructor`` のいずれかを指定します"
 
 # c351ae3f321b41ab810fb895e3f0d743
 # 849d7fbc45fc4384a238526b6ddf8b01
@@ -104,16 +110,17 @@ msgid ""
 "Specify ``@lombok.Getter`` to generate getters, in case of "
 "``@lombok.AllArgsConstructor``"
 msgstr ""
+"``@lombok.AllArgsConstructor`` の場合、ゲッターを生成するには ``@lombok.Getter`` を指定します。"
 
 # b636b997ca674fe9abf166c0062098f9
 #: ../../lombok-support.rst:66
 msgid "mutable entity classes"
-msgstr ""
+msgstr "可変エンティティクラス"
 
 # 48f094854b8842a69a97db8341187361
 #: ../../lombok-support.rst:68
 msgid "Define a default constructor"
-msgstr ""
+msgstr "デフォルトのコンストラクターを定義する"
 
 # d793afce227c4d5ea9cec8fac622a386
 #: ../../lombok-support.rst:69
@@ -121,23 +128,25 @@ msgid ""
 "Specify ``@lombok.Data`` or ``@lombok.Getter``/``@lombok.Setter`` to "
 "generate getters/setters"
 msgstr ""
+"ゲッター/セッターを生成するには、``@lombok.Data`` または ``@lombok.Getter``/``@lombok.Setter`` "
+"を指定します。"
 
 # 54053c7fd3844ef3959cad54f54c5ab8
 #: ../../lombok-support.rst:95
 msgid "Domain class definition"
-msgstr ""
+msgstr "ドメインクラスの定義"
 
 # da141d32e6554bb6bdb462dde1e9a675
 #: ../../lombok-support.rst:97
 msgid "Specify ``@lombok.Value``"
-msgstr ""
+msgstr "``@lombok.Value`` を指定します"
 
 # 58265135cdec495cac01d959a99be59d
 #: ../../lombok-support.rst:98
 msgid "Define only one instance field whose name is ``value``"
-msgstr ""
+msgstr "``value`` という名前のインスタンスフィールドを 1 つだけ定義します。"
 
 # dabb014442f240b8b53f5a06129cc50f
 #: ../../lombok-support.rst:109
 msgid "Embeddable class definition"
-msgstr ""
+msgstr "埋め込み可能クラスの定義"
