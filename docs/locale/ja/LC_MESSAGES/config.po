@@ -435,7 +435,7 @@ msgstr "デフォルトの名前付けでは何も行われません。"
 # bad1740650be49c5aba97f9ddf3288f7
 #: ../../config.rst:147
 msgid "Naming convention for keys of java.util.Map"
-msgstr "``java.util.Map`` のキーの命名規則"
+msgstr "java.util.Map のキーの命名規則"
 
 # d11237fc5696423aa965a81ae2aad260
 #: ../../config.rst:149
@@ -614,7 +614,7 @@ msgid ""
 "All JDBC drivers are loaded automatically by the `service provider <service "
 "provider_>`_ mechanism."
 msgstr ""
-"すべての JDBC ドライバーは、 `サービス プロバイダー<service provider_>`_ メカニズムによって自動的にロードされます。"
+"すべての JDBC ドライバーは、 `サービス プロバイダー <service provider_>`_ メカニズムによって自動的にロードされます。"
 
 # da04e5ac76364c8dbed202365a93c20c
 #: ../../config.rst:229
@@ -625,7 +625,7 @@ msgid ""
 "driver_>`_"
 msgstr ""
 "ただし、特定の環境では、このメカニズムが適切に動作しません。たとえば、Apache Tomcat を使用すると、このケースが見つかります。参照: "
-"`DriverManager、サービス プロバイダーのメカニズムとメモリ リーク<tomcat driver_>`_"
+"`DriverManager、サービス プロバイダーのメカニズムとメモリ リーク <tomcat driver_>`_"
 
 # fd607b7b048a4303a3de24e9a9442028
 #: ../../config.rst:236
