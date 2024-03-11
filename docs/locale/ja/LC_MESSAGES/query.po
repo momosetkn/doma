@@ -315,11 +315,11 @@ msgstr "``SqlLogType.RAW`` はバインドパラメータ（?）付きの SQL �
 
 #: ../../query/batch-insert.rst:3
 msgid "Batch insert"
-msgstr ""
+msgstr "一括追加"
 
 #: ../../query/batch-insert.rst:8
 msgid "Annotate with ``@BatchInsert`` to Dao method for execute batch insert."
-msgstr ""
+msgstr "Daoメソッドに ``@BatchInsert`` アノテーションを付けて一括追加を実行します。"
 
 #: ../../query/batch-insert.rst:21
 msgid ""
@@ -327,6 +327,8 @@ msgid ""
 " file by specifying ``true`` to ``sqlFile`` property within the "
 "``@BatchInsert`` annotation."
 msgstr ""
+"デフォルトでは、INSERT ステートメントが自動生成されます。 ``@BatchInsert`` アノテーション内の ``sqlFile`` "
+"プロパティに ``true`` を指定することで、任意の SQL ファイルをマッピングできます。"
 
 #: ../../query/batch-insert.rst:24
 msgid ""
@@ -465,6 +467,8 @@ msgid ""
 "``UniqueConstraintException`` is thrown regardless of with or without using "
 "sql file if unique constraint violation is occurred."
 msgstr ""
+"一意制約違反が発生した場合は、SQLファイルの使用の有無に関係なく\n"
+"``UniqueConstraintException`` がスローされます。"
 
 #: ../../query/batch-insert.rst:137
 msgid ""
@@ -571,7 +575,7 @@ msgstr ""
 
 #: ../../query/batch-update.rst:87 ../../query/update.rst:93
 msgid "updatable"
-msgstr ""
+msgstr "更新可能"
 
 #: ../../query/batch-update.rst:89
 msgid ""
@@ -619,7 +623,7 @@ msgstr ""
 
 #: ../../query/batch-update.rst:125 ../../query/update.rst:159
 msgid "Case of using comment that generating update column list"
-msgstr ""
+msgstr "更新列リストを生成するコメントを使用する場合"
 
 #: ../../query/batch-update.rst:147 ../../query/batch-update.rst:175
 msgid "Parameter name indicate ``Iterable`` subtype element in SQL file."
@@ -633,7 +637,7 @@ msgstr ""
 
 #: ../../query/batch-update.rst:152 ../../query/update.rst:183
 msgid "Case of not using comment that generating update column list"
-msgstr ""
+msgstr "更新列一覧を生成するコメントを使用しない場合"
 
 #: ../../query/batch-update.rst:162
 msgid ""
@@ -667,6 +671,8 @@ msgid ""
 " specify version number in WHERE clauses and increment version number by 1 "
 "in SET clauses."
 msgstr ""
+"ただし、楽観的排他制御のSQLの記述はアプリケーション開発者の責任となります。たとえば、以下の SQL のように、WHERE "
+"句でバージョン番号を指定し、SET 句でバージョン番号を 1 ずつインクリメントする必要があります。"
 
 #: ../../query/batch-update.rst:197
 msgid ""
@@ -1005,28 +1011,28 @@ msgstr ""
 
 #: ../../query/function.rst:3
 msgid "Stored function"
-msgstr ""
+msgstr "ストアドファンクション"
 
 #: ../../query/function.rst:8
 msgid ""
 "To call stored functions, you must annotate DAO methods with the "
 "``@Function`` annotation:"
-msgstr ""
+msgstr "ストアドファンクションを呼び出すには、DAO メソッドに ``@Function`` アノテーションを付ける必要があります。"
 
 #: ../../query/function.rst:20 ../../query/sql-processor.rst:26
 msgid "Return type"
-msgstr ""
+msgstr "戻り値の型"
 
 #: ../../query/function.rst:22
 msgid ""
 "If the stored function returns nothing, the return type must be ``void``."
-msgstr ""
+msgstr "ストアドファンクションが何も返さない場合、戻り値の型は ``void`` でなければなりません。"
 
 #: ../../query/function.rst:24
 msgid ""
 "If the stored function returns a single result, the return type must be one "
 "of the following:"
-msgstr ""
+msgstr "ストアドファンクションが単一の結果を返す場合、戻り値の型は次のいずれかである必要があります。"
 
 #: ../../query/function.rst:26 ../../query/function.rst:39
 #: ../../query/function.rst:77 ../../query/function.rst:106
@@ -1071,6 +1077,8 @@ msgid ""
 "java.util.Optional, whose element type is one of :doc:`../basic`, "
 ":doc:`../domain`, :doc:`../entity`, and java.util.Map<String, Object>"
 msgstr ""
+"要素の型が :doc:`../basic`、:doc:`../domain`、:doc:`../entity`、および "
+"java.util.Map<String, Object>のいずれかであるjava.util.Optional"
 
 #: ../../query/function.rst:32 ../../query/function.rst:44
 #: ../../query/function.rst:80 ../../query/function.rst:109
@@ -1110,6 +1118,8 @@ msgid ""
 "If the stored function returns a result list, the return type must be "
 "``java.util.List`` and its element type must be one of the following:"
 msgstr ""
+"ストアドファンクションが結果リストを返す場合、戻り値の型は ``java.util.List`` "
+"であり、その要素の型は次のいずれかである必要があります。"
 
 #: ../../query/function.rst:43 ../../query/function.rst:79
 #: ../../query/function.rst:108 ../../query/function.rst:140
@@ -1120,10 +1130,11 @@ msgid ""
 "java.util.Optional whose element type is either :doc:`../basic` or "
 ":doc:`../domain`"
 msgstr ""
+"要素タイプが :doc:`../basic` または :doc:`../domain` のいずれかである java.util.Optional"
 
 #: ../../query/function.rst:49
 msgid "Function name"
-msgstr ""
+msgstr "ファクション名"
 
 #: ../../query/function.rst:51
 msgid ""
@@ -1131,40 +1142,42 @@ msgid ""
 "override it, you can specify the value to the ``@Function``'s ``name`` "
 "element:"
 msgstr ""
+"アノテーションが付けられたメソッド名は、デフォルトで関数名として認識されます。これをオーバーライドするには、 ``@Function`` の "
+"``name`` 要素に値を指定します。"
 
 #: ../../query/function.rst:60 ../../query/procedure.rst:36
 msgid "Parameters"
-msgstr ""
+msgstr "パラメーター"
 
 #: ../../query/function.rst:62
 msgid ""
 "The order of stored function's parameters must correspond with the order of "
 "DAO method parameters."
-msgstr ""
+msgstr "ストアドファンクションのパラメーターの順序は、DAO メソッドのパラメーターの順序と一致する必要があります。"
 
 #: ../../query/function.rst:64 ../../query/procedure.rst:40
 msgid "All parameters must be annotated with one of following annotations:"
-msgstr ""
+msgstr "すべてのパラメーターには、次のいずれかの注釈を付ける必要があります。"
 
 #: ../../query/function.rst:66 ../../query/procedure.rst:42
 msgid "@In"
-msgstr ""
+msgstr "@In"
 
 #: ../../query/function.rst:67 ../../query/procedure.rst:43
 msgid "@InOut"
-msgstr ""
+msgstr "@InOut"
 
 #: ../../query/function.rst:68 ../../query/procedure.rst:44
 msgid "@Out"
-msgstr ""
+msgstr "@Out"
 
 #: ../../query/function.rst:69 ../../query/procedure.rst:45
 msgid "@ResultSet"
-msgstr ""
+msgstr "@ResultSet"
 
 #: ../../query/function.rst:72 ../../query/procedure.rst:48
 msgid "IN parameter"
-msgstr ""
+msgstr "IN パラメーター"
 
 #: ../../query/function.rst:74 ../../query/procedure.rst:50
 msgid ""
@@ -1172,24 +1185,26 @@ msgid ""
 " the ``@In`` annotation. The type of the DAO method parameter must be one of"
 " the following:"
 msgstr ""
+"IN パラメーターを示すには、対応する DAO メソッド パラメータに ``@In`` アノテーションを付けます。 DAO メソッド "
+"パラメーターのタイプは、次のいずれかである必要があります。"
 
 #: ../../query/function.rst:84 ../../query/function.rst:113
 #: ../../query/function.rst:145 ../../query/function.rst:179
 #: ../../query/procedure.rst:60 ../../query/procedure.rst:89
 #: ../../query/procedure.rst:121 ../../query/procedure.rst:155
 msgid "Suppose you have the following definition:"
-msgstr ""
+msgstr "次の定義があるとします。"
 
 #: ../../query/function.rst:91 ../../query/function.rst:120
 #: ../../query/function.rst:152 ../../query/function.rst:186
 #: ../../query/procedure.rst:67 ../../query/procedure.rst:96
 #: ../../query/procedure.rst:128 ../../query/procedure.rst:162
 msgid "You can invoke the method as follows:"
-msgstr ""
+msgstr "このメソッドは次のように呼び出すことができます。"
 
 #: ../../query/function.rst:99 ../../query/procedure.rst:75
 msgid "INOUT parameter"
-msgstr ""
+msgstr "INOUT パラメーター"
 
 #: ../../query/function.rst:101 ../../query/procedure.rst:77
 msgid ""
@@ -1198,10 +1213,13 @@ msgid ""
 " ``org.seasar.doma.jdbc.Reference`` and its type parameter must be one of "
 "the following:"
 msgstr ""
+"INOUT パラメーターを示すには、対応する DAO メソッド パラメーターに ``@InOut`` アノテーションを付けます。 DAO メソッド "
+"パラメーターの型は ``org.seasar.doma.jdbc.Reference`` である必要があり、その type "
+"パラメーターは次のいずれかである必要があります。"
 
 #: ../../query/function.rst:131 ../../query/procedure.rst:107
 msgid "OUT parameter"
-msgstr ""
+msgstr "OUT パラメーター"
 
 #: ../../query/function.rst:133 ../../query/procedure.rst:109
 msgid ""
@@ -1210,22 +1228,25 @@ msgid ""
 "``org.seasar.doma.jdbc.Reference`` and its type parameter must be one of the"
 " following:"
 msgstr ""
+"OUT パラメーターを示すには、対応する DAO メソッドパラメーターに ``@Out`` アノテーションを付けます。 DAO メソッド "
+"パラメーターの型は ``org.seasar.doma.jdbc.Reference`` である必要があり、その type "
+"パラメーターは次のいずれかである必要があります。"
 
 #: ../../query/function.rst:162 ../../query/procedure.rst:138
 msgid "Cursor or result set"
-msgstr ""
+msgstr "カーソルのOUTパラメータもしくは結果セット"
 
 #: ../../query/function.rst:164 ../../query/procedure.rst:140
 msgid ""
 "To indicate cursors or result sets, annotate corresponding DAO method "
 "parameters with the ``@ResultSet`` annotation."
-msgstr ""
+msgstr "カーソルまたは結果セットを示すには、対応する DAO メソッドのパラメーターに ``@ResultSet`` アノテーションを付けます。"
 
 #: ../../query/function.rst:167 ../../query/procedure.rst:143
 msgid ""
 "The DAO method parameter type must be ``java.util.List`` and its element "
 "type must be one of the following:"
-msgstr ""
+msgstr "DAO メソッドのパラメーターの型は ``java.util.List`` であり、その要素の型は次のいずれかである必要があります。"
 
 #: ../../query/index.rst:3
 msgid "Queries"
@@ -1424,25 +1445,25 @@ msgstr "``SqlLogType.RAW`` はバインドパラメータ付きの SQL をログ
 
 #: ../../query/procedure.rst:3
 msgid "Stored procedure"
-msgstr ""
+msgstr "ストアドプロシージャー"
 
 #: ../../query/procedure.rst:8
 msgid ""
 "To call stored procedures, you must annotate DAO methods with the "
 "``@Procedure`` annotation:"
-msgstr ""
+msgstr "ストアド プロシージャーを呼び出すには、DAO メソッドに ``@Procedure`` アノテーションを付ける必要があります。"
 
 #: ../../query/procedure.rst:20
 msgid "Return Type"
-msgstr ""
+msgstr "戻り値"
 
 #: ../../query/procedure.rst:22
 msgid "The return type must be ``void``."
-msgstr ""
+msgstr "戻り値の型は ``void`` でなければなりません。"
 
 #: ../../query/procedure.rst:25
 msgid "Procedure name"
-msgstr ""
+msgstr "プロシージャー名"
 
 #: ../../query/procedure.rst:27
 msgid ""
@@ -1450,12 +1471,14 @@ msgid ""
 " override it, you can specify the value to the ``@Procedure``'s ``name`` "
 "element:"
 msgstr ""
+"アノテーションが付けられたメソッド名は、デフォルトでプロシージャー名として認識されます。これをオーバーライドするには、 ``@Procedure`` の"
+" ``name`` 要素に値を指定します。"
 
 #: ../../query/procedure.rst:38
 msgid ""
 "The order of stored procedure's parameters must correspond with the order of"
 " DAO method parameters."
-msgstr ""
+msgstr "ストアド プロシージャーのパラメーターの順序は、DAO メソッドのパラメーターの順序と一致する必要があります。"
 
 #: ../../query/script.rst:3
 msgid "Script"
@@ -2407,6 +2430,8 @@ msgid ""
 " file by specifying ``true`` to ``sqlFile`` property within the ``@Update`` "
 "annotation."
 msgstr ""
+"デフォルトでは、UPDATE ステートメントが自動生成されます。 ``@Update`` アノテーション内の ``sqlFile`` プロパティに "
+"``true`` を指定することで、任意の SQL ファイルをマッピングできます。"
 
 #: ../../query/update.rst:24
 msgid ""
@@ -2428,7 +2453,7 @@ msgstr ""
 
 #: ../../query/update.rst:37
 msgid "Update by auto generated SQL"
-msgstr ""
+msgstr "自動生成されたSQLによる更新"
 
 #: ../../query/update.rst:57 ../../query/update.rst:215
 msgid "The ignoreVersion element within @Update annotation is false"
@@ -2551,7 +2576,7 @@ msgstr ""
 
 #: ../../query/update.rst:149
 msgid "Update by SQL file"
-msgstr ""
+msgstr "SQLファイルによる更新"
 
 #: ../../query/update.rst:151
 msgid ""
@@ -2574,12 +2599,15 @@ msgid ""
 "or domain class. Parameter must not be ``null`` if the type is other than "
 "that."
 msgstr ""
+"最初のパラメータの型はエンティティ "
+"クラスである必要があります。指定できるパラメータの数に制限はありません。パラメータの型が基本型またはドメインクラスの場合、パラメータに ``null``"
+" を設定できます。型がそれ以外の場合、パラメータは ``null`` であってはなりません。"
 
 #: ../../query/update.rst:180
 msgid ""
 "The rule about controlling updating target property is same as :ref:`auto-"
 "update`."
-msgstr ""
+msgstr "対象プロパティの更新制御に関するルールは :ref:`auto-update` と同様です。"
 
 #: ../../query/update.rst:205
 msgid ""
@@ -2587,10 +2615,12 @@ msgid ""
 "``includeUnchanged`` property they are within ``@Update`` annotation are not"
 " referenced in updating by SQL file."
 msgstr ""
+"``@Update`` アノテーション内の ``exclude`` プロパティおよび ``include`` プロパティ、 "
+"``excludeNull`` プロパティ、 ``includeUnchanged`` プロパティは、SQL ファイルによる更新時に参照されません。"
 
 #: ../../query/update.rst:213
 msgid "Entity class is included in parameter."
-msgstr ""
+msgstr "パラメータにエンティティクラスが含まれる"
 
 #: ../../query/update.rst:225
 msgid ""
@@ -2599,6 +2629,9 @@ msgid ""
 "``OptimisticLockException`` is not thrown and version property within entity"
 " is increment by 1 if updated count is not 0."
 msgstr ""
+"このSQLの更新件数が0件の場合、楽観的排他制御の失敗を示す ``OptimisticLockException`` "
+"がスローされます。更新件数が0件でない場合、 ``OptimisticLockException`` "
+"はスローされず、エンティティのバージョンプロパティの値が1増分されます。"
 
 #: ../../query/update.rst:231
 msgid ""
@@ -2606,6 +2639,8 @@ msgid ""
 "``OptimisticLockException`` is not thrown even if update count is 0. Also, "
 "version property value within entity is not modified."
 msgstr ""
+"``@Update`` の ``ignoreVersion`` 要素が ``true`` の場合、更新件数が0件であっても、 "
+"``OptimisticLockException`` はスローされません。 また、エンティティのバージョンプロパティの値は変更されません。"
 
 #: ../../query/update.rst:243
 msgid ""
@@ -2614,9 +2649,12 @@ msgid ""
 " count is 0. However, version property value within entity is incremented by"
 " 1."
 msgstr ""
+"``@Update`` の ``suppressOptimisticLockException`` 要素が ``true`` "
+"の場合、更新件数が0件であっても、 ``OptimisticLockException`` はスローされません。 "
+"ただし、エンティティのバージョンプロパティの値は1増分されます。"
 
 #: ../../query/update.rst:273
 msgid ""
 "You can specify SQL log output format to ``sqlLog`` property within "
 "``@Update`` annotation."
-msgstr ""
+msgstr "``@Update`` の ``sqlLog`` 要素に SQL のログ出力形式を指定できます。"

@@ -131,7 +131,7 @@ msgid ""
 "workspace."
 msgstr ""
 "Eclipse 4.23.0でテストされています。 ``./gradlew eclipse`` "
-"を使用してEclipseプロジェクトファイルを生成し、java-8およびjava-17プロジェクトをワークスペースにインポートする前に実行してください。"
+"を使用してEclipseプロジェクトファイルを生成し、java-8およびjava-17プロジェクトをワークスペースにインポートしてください。"
 
 # fd9634fca782410e9cc5fc25aa6a6e10
 #: ../../getting-started.rst:64

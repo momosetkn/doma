@@ -170,7 +170,7 @@ msgstr ""
 # d5cf75df8e6340b984e98212d2427ffe
 #: ../../query/batch-update.rst:87
 msgid "updatable"
-msgstr ""
+msgstr "更新可能"
 
 # d94ba89e09ee456aba262771597d131f
 #: ../../query/batch-update.rst:89
@@ -235,7 +235,7 @@ msgstr ""
 # ffe52c1c4fad417ca3e14631e749914c
 #: ../../query/batch-update.rst:125
 msgid "Case of using comment that generating update column list"
-msgstr ""
+msgstr "更新列リストを生成するコメントを使用する場合"
 
 # d2d6c26de6114521a23e5fdfa984b5a5
 # 1d16ccc3448a44d7b139e8bc961bf228
@@ -259,7 +259,7 @@ msgstr ""
 # 21d4d593e1c249cc8e3d3a722b049b1b
 #: ../../query/batch-update.rst:152
 msgid "Case of not using comment that generating update column list"
-msgstr ""
+msgstr "更新列一覧を生成するコメントを使用しない場合"
 
 # 9c230ea5b7dc42ac9ec1ee59b0db0424
 #: ../../query/batch-update.rst:162
@@ -303,6 +303,8 @@ msgid ""
 " specify version number in WHERE clauses and increment version number by 1 "
 "in SET clauses."
 msgstr ""
+"ただし、楽観的排他制御のSQLの記述はアプリケーション開発者の責任となります。たとえば、以下の SQL のように、WHERE "
+"句でバージョン番号を指定し、SET 句でバージョン番号を 1 ずつインクリメントする必要があります。"
 
 # 576ec8060b9f4b56aa0fa4b5455dac27
 #: ../../query/batch-update.rst:197
@@ -352,6 +354,8 @@ msgid ""
 "``UniqueConstraintException`` is thrown regardless of with or without using "
 "sql file if unique constraint violation is occurred."
 msgstr ""
+"一意制約違反が発生した場合は、SQLファイルの使用の有無に関係なく\n"
+"``UniqueConstraintException`` がスローされます。"
 
 # 51e2d0e531fe450885a8a42ff38dc5a4
 #: ../../query/batch-update.rst:234

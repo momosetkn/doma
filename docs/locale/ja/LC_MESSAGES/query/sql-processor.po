@@ -49,7 +49,7 @@ msgstr ""
 # 5af1164b5c524207b68f62c041d7a440
 #: ../../query/sql-processor.rst:26
 msgid "Return type"
-msgstr ""
+msgstr "戻り値の型"
 
 # 03c8513d7f9a4f99aa1a37fbe92fb001
 #: ../../query/sql-processor.rst:28

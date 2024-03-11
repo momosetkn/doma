@@ -24,7 +24,7 @@ msgstr ""
 # 1cd3839a3fbd40ea98944e825240b3d3
 #: ../../query/batch-insert.rst:3
 msgid "Batch insert"
-msgstr ""
+msgstr "一括追加"
 
 # cf8f2acf9b654eea8bc918dedff317d1
 #: ../../query/batch-insert.rst:6
@@ -34,7 +34,7 @@ msgstr "コンテンツ"
 # be5180f757fa41118d2b6ee66d9b5095
 #: ../../query/batch-insert.rst:8
 msgid "Annotate with ``@BatchInsert`` to Dao method for execute batch insert."
-msgstr ""
+msgstr "Daoメソッドに ``@BatchInsert`` アノテーションを付けて一括追加を実行します。"
 
 # ac3a6d791c354643b700023c54437acb
 #: ../../query/batch-insert.rst:21
@@ -43,6 +43,8 @@ msgid ""
 " file by specifying ``true`` to ``sqlFile`` property within the "
 "``@BatchInsert`` annotation."
 msgstr ""
+"デフォルトでは、INSERT ステートメントが自動生成されます。 ``@BatchInsert`` アノテーション内の ``sqlFile`` "
+"プロパティに ``true`` を指定することで、任意の SQL ファイルをマッピングできます。"
 
 # 6b6d44aad3714e97abb8c9720b171c5b
 #: ../../query/batch-insert.rst:24
@@ -52,6 +54,8 @@ msgid ""
 ":doc:`../entity` parameter. Also the ``postInsert`` method of entity "
 "listener method is called each entity when after executing insert."
 msgstr ""
+"エンティティリスナーの ``preInsert`` メソッドは、:doc:`../entity` "
+"パラメータでエンティティリスナーが指定されている場合、挿入を実行する前に各エンティティごとに呼び出されます。また、エンティティリスナーメソッドの「postInsert」メソッドは、挿入実行後に各エンティティごとに呼び出されます。"
 
 # d586667f8a224a9da4c550088c7daa4a
 #: ../../query/batch-insert.rst:28
@@ -73,12 +77,12 @@ msgstr ""
 msgid ""
 "Return value must be ``int[]`` that is represented each inserting process's "
 "updated count if the above conditions are not satisfied."
-msgstr ""
+msgstr "上記の条件が満たされない場合、戻り値は各挿入プロセスの更新回数を表す ``int[]`` でなければなりません。"
 
 # 3726690c14d741248c5c1f2b93b64f8a
 #: ../../query/batch-insert.rst:35
 msgid "Batch insert by auto generated SQL"
-msgstr ""
+msgstr "自動生成されたSQLによるバッチ挿入"
 
 # 4c58102715b547b08af156e5c6d026ef
 # f4b63962211846189873c30ab2bc1e28
@@ -89,6 +93,9 @@ msgid ""
 " must not be ``null``. Return value array element count become equal "
 "``Iterable`` element count. Insert count is returned to array each element."
 msgstr ""
+"パラメータの型は要素として :doc:`../entity` を持つ ``java.lang.Iterable`` "
+"サブタイプでなければなりません。指定できるパラメータは 1 つだけです。パラメータは ``null`` であってはなりません。戻り値の配列要素数は、 "
+"``Iterable`` 要素数と等しくなります。挿入回数は配列の各要素に返されます。"
 
 # dfea71ccdd7246279633b994dd4490eb
 #: ../../query/batch-insert.rst:44
@@ -101,11 +108,12 @@ msgid ""
 "If annotated with ``@GeneratedValue`` at :doc:`../entity` identifier, the "
 "identifier is auto generated and set."
 msgstr ""
+":doc:`../entity` 識別子に ``@GeneratedValue`` の注釈が付けられている場合、識別子は自動生成されて設定されます。"
 
 # d78e0fc06fe94beea5fd78ab42f78678
 #: ../../query/batch-insert.rst:48
 msgid "You reference :ref:`identity-auto-generation` about cautionary point."
-msgstr ""
+msgstr "注意点については :ref:`identity-auto-generation` を参照してください。"
 
 # a7a358249f63425dba489c7447efed5d
 #: ../../query/batch-insert.rst:50
@@ -113,11 +121,12 @@ msgid ""
 "If you don't use auto-generated keys in your application, you can enable the"
 " `ingoreGeneratedKeys` flag. This flag may improve performance."
 msgstr ""
+"アプリケーションで自動生成キーを使用しない場合は、「ingoreGeneratedKeys」フラグを有効にすることができます。このフラグによりパフォーマンスが向上する可能性があります。"
 
 # 7fc573c205f3486bb076d7a8a938c59b
 #: ../../query/batch-insert.rst:59
 msgid "Version number"
-msgstr ""
+msgstr "バージョンナンバー"
 
 # 51f568add5da4567858cd0164bb30597
 #: ../../query/batch-insert.rst:61
@@ -126,11 +135,13 @@ msgid ""
 ":doc:`../entity` has property that is annotated  with ``@Version``. If the "
 "value is not set or is less than ``0`` the value is set ``1`` automatically."
 msgstr ""
+"明示的に設定された値が ``0`` を超える場合、 :doc:`../entity` に ``@Version`` "
+"の注釈が付けられたプロパティがある場合は、その値を使用します。値が設定されていない場合、または「0」未満の場合、値は自動的に「1」に設定されます。"
 
 # cfb3b4fbbc424d5ca631de23b19c77ef
 #: ../../query/batch-insert.rst:65
 msgid "Insert target property"
-msgstr ""
+msgstr "ターゲットプロパティを挿入"
 
 # ed5f3eb3171f4643918e2ba300f38195
 #: ../../query/batch-insert.rst:68
@@ -144,6 +155,8 @@ msgid ""
 "``false`` is excluded from insert target if :doc:`../entity` has property "
 "that is annotated with ``@Column``."
 msgstr ""
+":doc:`../entity` に `@Column` アノテーションが付けられたプロパティがある場合、 ``@Column`` アノテーション内の "
+"``false`` が指定された ``insertable`` プロパティは挿入対象から除外されます。 。"
 
 # 3aea63f829f34045ac04e124b78aeef3
 #: ../../query/batch-insert.rst:73
@@ -159,6 +172,9 @@ msgid ""
 "the property is excluded from inserting target if the property is specified "
 "by this element."
 msgstr ""
+"``@BatchInsert`` アノテーション内の ``exclude`` プロパティで指定されたプロパティは挿入対象から除外されます。 "
+"``@Column`` アノテーション内の ``insertable`` プロパティに true "
+"が指定されていても、この要素でプロパティが指定されている場合、そのプロパティは挿入対象から除外されます。"
 
 # 87b828fec56e4623ba9a2a90c5c61ce7
 #: ../../query/batch-insert.rst:84
@@ -176,11 +192,15 @@ msgid ""
 "excluded from inserting target if ``insertable`` property within ``@Column``"
 " annotation is ``false``."
 msgstr ""
+"挿入対象には ``@BatchInsert`` アノテーション内の ``include`` プロパティで指定されたプロパティのみが挿入対象となります。 "
+"@BatchInsert 内の include プロパティと exclude "
+"プロパティの両方で同じプロパティを指定した場合、そのプロパティは更新対象から除外されます。この要素でプロパティを指定しても、 @Column "
+"アノテーション内の inserttable プロパティが false の場合、そのプロパティは挿入対象から除外されます。"
 
 # c08625cf6c8b4f36a9e946c61a55e741
 #: ../../query/batch-insert.rst:96
 msgid "Batch insert by SQL file"
-msgstr ""
+msgstr "SQLファイルによるバッチ挿入"
 
 # 46ac1e6de3f541b8afd2d651c7b47634
 #: ../../query/batch-insert.rst:98
@@ -189,13 +209,15 @@ msgid ""
 "property within ``@BatchInsert`` annotation and prepare SQL file that "
 "correspond method."
 msgstr ""
+"SQLファイルによる一括挿入を実行するには、 @BatchInsert アノテーション内の sqlFile プロパティに true "
+"を設定し、メソッドに対応したSQLファイルを用意します。"
 
 # a2138c11fe5d4eda9b8a68bef0fa1021
 #: ../../query/batch-insert.rst:115
 msgid ""
 "If entity listener is specified at :doc:`../entity` then entity listener "
 "method is not called."
-msgstr ""
+msgstr "エンティティ リスナーが :doc:`../entity` で指定されている場合、エンティティ リスナー メソッドは呼び出されません。"
 
 # 4ddb8fd1617445cba3a80c4b059029c2
 #: ../../query/batch-insert.rst:117
@@ -215,6 +237,8 @@ msgid ""
 "batch insert by SQL file. Also, ``exclude`` property and ``include`` "
 "property within ``@BatchInsert`` are not referenced."
 msgstr ""
+"SQLファイルによる一括挿入では、識別子の自動設定、バージョン番号の自動設定は実行されません。また、 ``@BatchInsert`` 内の "
+"``exclude`` プロパティおよび ``include`` プロパティは参照されません。"
 
 # 80b2f2dc58a54ece875244abe0f74d3f
 #: ../../query/batch-insert.rst:130
@@ -226,7 +250,7 @@ msgstr "一意制約違反"
 msgid ""
 "``UniqueConstraintException`` is thrown regardless of with or without using "
 "sql file if unique constraint violation is occurred."
-msgstr ""
+msgstr "SQLファイルの使用の有無に関わらず、一意性制約違反が発生した場合はUniqueConstraintExceptionがスローされます。"
 
 # 6ba8be83a42147058617bd6df23486ba
 #: ../../query/batch-insert.rst:135
@@ -238,7 +262,7 @@ msgstr "クエリタイムアウト"
 msgid ""
 "You can specify seconds of query timeout to ``queryTimeout`` property within"
 " ``@BatchInsert`` annotation."
-msgstr ""
+msgstr "`@BatchInsert` アノテーション内の `queryTimeout` プロパティにクエリタイムアウトの秒数を指定できます。"
 
 # 8dd18c29b4ca4d3f839c2cabc266fe30
 #: ../../query/batch-insert.rst:144
@@ -260,7 +284,7 @@ msgstr "バッチサイズ"
 msgid ""
 "You can specify batch size to ``batchSize`` property within ``@BatchInsert``"
 " annotation."
-msgstr ""
+msgstr "バッチサイズは ``@BatchInsert`` アノテーション内の ``batchSize`` プロパティに指定できます。"
 
 # f9b8c49bee6641d78f5247e878b2373a
 #: ../../query/batch-insert.rst:157
@@ -269,6 +293,8 @@ msgid ""
 " not specify the value to ``batchSize`` property, batch size that is "
 "specified at :doc:`../config` class is applied."
 msgstr ""
+"この指定はSQLファイルの使用有無に関わらず適用されます。 ``batchSize`` "
+"プロパティに値を指定しない場合は、:doc:`../config` クラスで指定されたバッチサイズが適用されます。"
 
 # 47b17b0801a04e7384dd85ffc3827605
 #: ../../query/batch-insert.rst:161
@@ -280,7 +306,7 @@ msgstr "SQLログの出力形式"
 msgid ""
 "You can specify SQL log output format to ``sqlLog`` property within "
 "``@BatchInsert`` annotation."
-msgstr ""
+msgstr "``@BatchInsert`` アノテーション内の ``sqlLog`` プロパティに SQL ログの出力形式を指定できます。"
 
 # 75b9c697ffba4b2c8ba8eef26be153b6
 #: ../../query/batch-insert.rst:170
