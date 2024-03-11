@@ -56,7 +56,7 @@ msgstr ""
 # c3f9990751644933875699883f0eee44
 #: ../../query/batch-update.rst:28
 msgid "Return value"
-msgstr ""
+msgstr "戻り値"
 
 # 9478d062825f474ea5987930bdf50623
 #: ../../query/batch-update.rst:30
@@ -65,6 +65,8 @@ msgid ""
 "class as an element if parameter ``Iterable`` subtype element is immutable "
 "entity class."
 msgstr ""
+"パラメータ ``Iterable`` のサブタイプの要素が不変エンティティクラスの場合、戻り値はエンティティクラスを要素として持つ "
+"``org.seasar.doma.jdbc.BatchResult`` でなければなりません。"
 
 # fd2fc913005d44a6b3dec4b4ee1072ad
 #: ../../query/batch-update.rst:32
@@ -92,7 +94,7 @@ msgstr ""
 #: ../../query/batch-update.rst:46
 msgid ""
 "Version number and optimistic concurrency control in auto generated SQL"
-msgstr ""
+msgstr "自動生成された SQL におけるバージョン番号と楽観的排他制御"
 
 # 855d7e7f333e4537be67c25ab9ad9962
 # 8bbfe086cd414eba87b4118e352abce7
@@ -100,7 +102,7 @@ msgstr ""
 msgid ""
 "Optimistic concurrency control is executed if you satisfied below "
 "conditions."
-msgstr ""
+msgstr "以下の条件を満たした場合、楽観的排他制御が実行されます。"
 
 # e74eed545a554a4fbd4efb2f49eccb47
 #: ../../query/batch-update.rst:50
@@ -108,6 +110,8 @@ msgid ""
 ":doc:`../entity` within parameter java.lang.Iterable subtype has property "
 "that is annotated with @Version"
 msgstr ""
+"パラメータ java.lang.Iterable サブタイプ内の :doc:`../entity` に @Version "
+"アノテーションが付けられたプロパティがある"
 
 # 96ccb7afea924662b1880444b385204f
 #: ../../query/batch-update.rst:51
@@ -237,7 +241,7 @@ msgstr ""
 # 1d16ccc3448a44d7b139e8bc961bf228
 #: ../../query/batch-update.rst:141 ../../query/batch-update.rst:168
 msgid "For example, you describe SQL like below to correspond above method."
-msgstr ""
+msgstr "例えば、上記のメソッドに対応するには以下のようなSQLを記述します。"
 
 # 1cbba1c4f5b04aa881d04d1a1de93377
 # fc69de5253fb4fffb1bd3c339ee96004
@@ -277,7 +281,7 @@ msgstr ""
 # fc581871ccb4480d932155f95a36e98b
 #: ../../query/batch-update.rst:181
 msgid "Version number and optimistic concurrency control in SQL file"
-msgstr ""
+msgstr "SQLファイルにおけるバージョン番号と楽観的排他制御"
 
 # f190f4876c094daaab908e41290198cb
 #: ../../query/batch-update.rst:185
@@ -340,7 +344,7 @@ msgstr ""
 # 3cb6cf2fb7d64764aa927bc3d9201194
 #: ../../query/batch-update.rst:229
 msgid "Unique constraint violation"
-msgstr ""
+msgstr "一意制約違反"
 
 # 1a37ca71a672459494d58d431457e883
 #: ../../query/batch-update.rst:231
@@ -368,6 +372,8 @@ msgid ""
 "Query timeout that is specified in config class is used if ``queryTimeout`` "
 "property is not set value."
 msgstr ""
+"この指定はSQLファイルの使用の有無に関わらず適用されます。 ``queryTimeout`` プロパティに値が設定されていない場合は、config "
+"クラスで指定されたクエリタイムアウトが使用されます。"
 
 # 63dc797863d54f6faeb8373cc87293ea
 #: ../../query/batch-update.rst:247
@@ -392,7 +398,7 @@ msgstr ""
 # 66b8240c5add46ddafb911cdc66ff673
 #: ../../query/batch-update.rst:260
 msgid "SQL log output format"
-msgstr ""
+msgstr "SQLログの出力形式"
 
 # 30d011971fbb481ebb7dfae6d8c50f50
 #: ../../query/batch-update.rst:262
@@ -406,4 +412,4 @@ msgstr ""
 msgid ""
 "``SqlLogType.RAW`` represent outputting log that is sql with a binding "
 "parameter."
-msgstr ""
+msgstr "``SqlLogType.RAW`` はバインドパラメータ（?）付きの SQL をログ出力することを表します。"

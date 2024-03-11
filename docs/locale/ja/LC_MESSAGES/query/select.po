@@ -103,12 +103,12 @@ msgstr "任意の型"
 msgid ""
 ":doc:`../basic` , :doc:`../domain` or arbitrary type are within "
 "java.util.Optional"
-msgstr ":doc:`../basic` 、 :doc:`../domain` または java.util.Optional"
+msgstr ":doc:`../basic` や :doc:`../domain` や任意の型を要素とするjava.util.Optional"
 
 # a184ec9cade44f82b7197edc7d027f05
 #: ../../query/select.rst:38
 msgid ":doc:`../basic` or :doc:`../domain` are within java.util.Iterable"
-msgstr ":doc:`../basic` または :doc:`../domain` は java.util.Iterable"
+msgstr ":doc:`../basic` や :doc:`../domain` を要素とするjava.util.Iterable"
 
 # 84245efe5d6747ef82656ba1bae8cfd1
 # 988a52aee29a46c09208592c0d6842d9
@@ -375,7 +375,7 @@ msgstr ""
 # 5c02625783ce43a499437f8cc4f0aa04
 #: ../../query/select.rst:199 ../../query/select.rst:266
 msgid "Either :doc:`../basic` or :doc:`../domain` within java.util.Optional"
-msgstr ":doc:`../basic` または :doc:`../domain` を型パラメーターとする java.util.Optional"
+msgstr ":doc:`../basic` または :doc:`../domain` を要素とする java.util.Optional"
 
 # c09cf407f9cc4b6ea1c3df2add75cae6
 #: ../../query/select.rst:209

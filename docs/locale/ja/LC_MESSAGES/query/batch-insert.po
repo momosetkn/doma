@@ -56,7 +56,7 @@ msgstr ""
 # d586667f8a224a9da4c550088c7daa4a
 #: ../../query/batch-insert.rst:28
 msgid "Return value"
-msgstr ""
+msgstr "戻り値"
 
 # f342b4c545b142cb8e3c2a70ecebf446
 #: ../../query/batch-insert.rst:30
@@ -65,6 +65,8 @@ msgid ""
 "class as an element if parameter ``Iterable`` subtype element is immutable "
 "entity class."
 msgstr ""
+"パラメータ ``Iterable`` のサブタイプの要素が不変エンティティクラスの場合、戻り値はエンティティクラスを要素として持つ "
+"``org.seasar.doma.jdbc.BatchResult`` でなければなりません。"
 
 # f326879ef5f842fbb1e98103e81277cd
 #: ../../query/batch-insert.rst:32
@@ -91,7 +93,7 @@ msgstr ""
 # dfea71ccdd7246279633b994dd4490eb
 #: ../../query/batch-insert.rst:44
 msgid "Identifier"
-msgstr ""
+msgstr "識別子"
 
 # c077784fc92d423db817ac6b850c10a8
 #: ../../query/batch-insert.rst:46
@@ -133,7 +135,7 @@ msgstr ""
 # ed5f3eb3171f4643918e2ba300f38195
 #: ../../query/batch-insert.rst:68
 msgid "insertable"
-msgstr ""
+msgstr "insertable"
 
 # 25ebae335f6944839727cba6fed84773
 #: ../../query/batch-insert.rst:70
@@ -198,13 +200,13 @@ msgstr ""
 # 4ddb8fd1617445cba3a80c4b059029c2
 #: ../../query/batch-insert.rst:117
 msgid "For example, you describe SQL like below to correspond above method."
-msgstr ""
+msgstr "例えば、上記のメソッドに対応するには以下のようなSQLを記述します。"
 
 # 354d7b8640864d3588787dc3551f5ef1
 #: ../../query/batch-insert.rst:124
 msgid ""
 "Parameter name indicate ``java.lang.Iterable`` subtype element in SQL file."
-msgstr ""
+msgstr "SQL ファイル内では、メソッドのパラメータ名は ``java.lang.Iterable`` の要素を示します。"
 
 # b55d252f9bd14ecaa1768dfdc725ae2e
 #: ../../query/batch-insert.rst:126
@@ -217,7 +219,7 @@ msgstr ""
 # 80b2f2dc58a54ece875244abe0f74d3f
 #: ../../query/batch-insert.rst:130
 msgid "Unique constraint violation"
-msgstr ""
+msgstr "一意制約違反"
 
 # 5545e07573c64846abc99acc0bba0535
 #: ../../query/batch-insert.rst:132
@@ -245,6 +247,8 @@ msgid ""
 "Query timeout that is specified in config class is used if ``queryTimeout`` "
 "property is not set value."
 msgstr ""
+"この指定はSQLファイルの使用の有無に関わらず適用されます。 ``queryTimeout`` プロパティに値が設定されていない場合は、config "
+"クラスで指定されたクエリタイムアウトが使用されます。"
 
 # be175d19660c48a0b370bad46074c8f0
 #: ../../query/batch-insert.rst:148
@@ -269,7 +273,7 @@ msgstr ""
 # 47b17b0801a04e7384dd85ffc3827605
 #: ../../query/batch-insert.rst:161
 msgid "SQL log output format"
-msgstr ""
+msgstr "SQLログの出力形式"
 
 # 3842904ee0364312851b780d0600c2e2
 #: ../../query/batch-insert.rst:163
@@ -283,4 +287,4 @@ msgstr ""
 msgid ""
 "``SqlLogType.RAW`` represent outputting log that is sql with a binding "
 "parameter."
-msgstr ""
+msgstr "``SqlLogType.RAW`` はバインドパラメータ（?）付きの SQL をログ出力することを表します。"

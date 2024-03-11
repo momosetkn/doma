@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../query/batch-delete.rst:3
 msgid "Batch delete"
-msgstr ""
+msgstr "一括削除"
 
 #: ../../query/batch-delete.rst:6 ../../query/batch-insert.rst:6
 #: ../../query/batch-update.rst:6 ../../query/delete.rst:6
@@ -36,7 +36,7 @@ msgstr "コンテンツ"
 
 #: ../../query/batch-delete.rst:8
 msgid "Annotate with ``@BatchDelete`` to Dao method for execute batch delete."
-msgstr ""
+msgstr "Daoメソッドに ``@BatchDelete`` アノテーションを付けて一括削除を実行します。"
 
 #: ../../query/batch-delete.rst:19
 msgid ""
@@ -44,6 +44,8 @@ msgid ""
 " file by specifying ``true`` to ``sqlFile`` property within the "
 "``@BatchDelete`` annotation."
 msgstr ""
+"デフォルトでは、DELETE ステートメントが自動生成されます。 ``@BatchDelete`` アノテーション内の ``sqlFile`` "
+"プロパティに ``true`` を指定することで、任意の SQL ファイルをマッピングできます。"
 
 #: ../../query/batch-delete.rst:22
 msgid ""
@@ -52,12 +54,15 @@ msgid ""
 ":doc:`../entity` parameter. Also the ``postDelete`` method of entity "
 "listener method is called each entity when after executing delete."
 msgstr ""
+":doc:`../entity` パラメータでエンティティリスナーが指定されている場合、エンティティリスナーの ``preDelete`` "
+"メソッドは、削除を実行する前に各エンティティごとに呼び出されます。また、エンティティリスナーメソッドの ``postDelete`` "
+"メソッドは、削除実行後に各エンティティごとに呼び出されます。"
 
 #: ../../query/batch-delete.rst:26 ../../query/batch-insert.rst:28
 #: ../../query/batch-update.rst:28 ../../query/delete.rst:25
 #: ../../query/insert.rst:28 ../../query/update.rst:28
 msgid "Return value"
-msgstr ""
+msgstr "戻り値"
 
 #: ../../query/batch-delete.rst:28 ../../query/batch-insert.rst:30
 #: ../../query/batch-update.rst:30
@@ -66,16 +71,18 @@ msgid ""
 "class as an element if parameter ``Iterable`` subtype element is immutable "
 "entity class."
 msgstr ""
+"パラメータ ``Iterable`` のサブタイプの要素が不変エンティティクラスの場合、戻り値はエンティティクラスを要素として持つ "
+"``org.seasar.doma.jdbc.BatchResult`` でなければなりません。"
 
 #: ../../query/batch-delete.rst:30
 msgid ""
 "Return value must be ``int[]`` that is represented each deleting process's "
 "updated count if the above conditions are not satisfied."
-msgstr ""
+msgstr "上記の条件が満たされない場合、戻り値は各削除プロセスの更新回数を表す ``int[]`` でなければなりません。"
 
 #: ../../query/batch-delete.rst:33
 msgid "Batch delete by auto generated SQL"
-msgstr ""
+msgstr "自動生成SQLによる一括削除"
 
 #: ../../query/batch-delete.rst:35
 msgid ""
@@ -84,12 +91,15 @@ msgid ""
 " must not be ``null``. Return value array element count become equal "
 "``Iterable`` element count. Delete count is returned to array each element."
 msgstr ""
+"パラメータの型は要素として :doc:`../entity` を持つ ``java.lang.Iterable`` "
+"のサブタイプでなければなりません。指定できるパラメータは 1 つだけです。パラメータは ``null`` であってはなりません。戻り値の配列要素数は、 "
+"``Iterable`` 要素数と等しくなります。戻り値の配列のそれぞれの要素は削除された件数を表します。"
 
 #: ../../query/batch-delete.rst:42 ../../query/batch-update.rst:46
 #: ../../query/delete.rst:47 ../../query/update.rst:52
 msgid ""
 "Version number and optimistic concurrency control in auto generated SQL"
-msgstr ""
+msgstr "自動生成された SQL におけるバージョン番号と楽観的排他制御"
 
 #: ../../query/batch-delete.rst:44 ../../query/batch-delete.rst:102
 #: ../../query/batch-update.rst:48 ../../query/batch-update.rst:183
@@ -98,17 +108,19 @@ msgstr ""
 msgid ""
 "Optimistic concurrency control is executed if you satisfied below "
 "conditions."
-msgstr ""
+msgstr "以下の条件を満たした場合、楽観的排他制御が実行されます。"
 
 #: ../../query/batch-delete.rst:46 ../../query/batch-update.rst:50
 msgid ""
 ":doc:`../entity` within parameter java.lang.Iterable subtype has property "
 "that is annotated with @Version"
 msgstr ""
+"パラメータ java.lang.Iterable サブタイプ内の :doc:`../entity` に @Version "
+"アノテーションが付けられたプロパティがある"
 
 #: ../../query/batch-delete.rst:47 ../../query/batch-delete.rst:105
 msgid "The ignoreVersion element within @BatchDelete annotation is false"
-msgstr ""
+msgstr "@BatchDelete アノテーション内のignoreVersion要素がfalseである"
 
 #: ../../query/batch-delete.rst:49
 msgid ""
@@ -117,6 +129,8 @@ msgid ""
 "representing optimistic concurrency control failure is thrown, if at that "
 "time deleted count is 0."
 msgstr ""
+"楽観的排他制御が有効な場合、バージョン番号と識別子が削除条件に含まれます。削除件数が 0 の場合、楽観的排他制御の失敗を表す "
+"``BatchOptimisticLockException`` がスローされます。"
 
 #: ../../query/batch-delete.rst:53 ../../query/batch-delete.rst:117
 #: ../../query/batch-update.rst:58 ../../query/batch-update.rst:205
@@ -131,6 +145,9 @@ msgid ""
 "``true``, version number is not include in delete condition. "
 "``BatchOptimisticLockException`` is not thrown, even if delete count is 0."
 msgstr ""
+"``@BatchDelete`` アノテーション内の ``ignoreVersion`` プロパティが ``true`` "
+"の場合、バージョン番号は削除条件に含まれません。削除数が0であっても ``BatchOptimisticLockException`` "
+"はスローされません。"
 
 #: ../../query/batch-delete.rst:64 ../../query/batch-delete.rst:128
 #: ../../query/batch-update.rst:71 ../../query/batch-update.rst:217
@@ -146,10 +163,13 @@ msgid ""
 "but ``BatchOptimisticLockException`` is not thrown even if delete count is "
 "0."
 msgstr ""
+"``@BatchDelete`` 内の ``suppressOptimisticLockException`` プロパティが ``true`` "
+"の場合、削除条件にバージョン番号が含まれますが、削除数が 0 であっても ``BatchOptimisticLockException`` "
+"はスローされません。"
 
 #: ../../query/batch-delete.rst:75
 msgid "Batch delete by SQL file"
-msgstr ""
+msgstr "SQLファイルによる一括削除"
 
 #: ../../query/batch-delete.rst:77
 msgid ""
@@ -157,6 +177,8 @@ msgid ""
 "property within ``@BatchDelete`` annotation and prepare SQL file that "
 "correspond method."
 msgstr ""
+"SQLファイルによる一括削除を実行するには、 ``@BatchDelete`` アノテーション内の ``sqlFile`` プロパティに "
+"``true`` を設定し、対応するSQLファイルを用意します。"
 
 #: ../../query/batch-delete.rst:85
 msgid ""
@@ -165,27 +187,32 @@ msgid ""
 " ``null``. Return value array element count become equal ``Iterable`` "
 "element count. Delete count is returned to array each element."
 msgstr ""
+"パラメータの型は、任意の型を要素として持つ ``java.lang.Iterable`` サブタイプでなければなりません。指定できるパラメータは 1 "
+"つだけです。パラメータは ``null`` であってはなりません。戻り値の配列要素数は、 ``Iterable`` "
+"要素数と等しくなります。配列のそれぞれの要素が削除された件数を表します。"
 
 #: ../../query/batch-delete.rst:91 ../../query/batch-insert.rst:117
 #: ../../query/batch-update.rst:141 ../../query/batch-update.rst:168
 msgid "For example, you describe SQL like below to correspond above method."
-msgstr ""
+msgstr "例えば、上記のメソッドに対応するには以下のようなSQLを記述します。"
 
 #: ../../query/batch-delete.rst:97 ../../query/batch-insert.rst:124
 msgid ""
 "Parameter name indicate ``java.lang.Iterable`` subtype element in SQL file."
-msgstr ""
+msgstr "SQL ファイル内では、メソッドのパラメータ名は ``java.lang.Iterable`` の要素を示します。"
 
 #: ../../query/batch-delete.rst:100 ../../query/batch-update.rst:181
 #: ../../query/update.rst:209
 msgid "Version number and optimistic concurrency control in SQL file"
-msgstr ""
+msgstr "SQLファイルにおけるバージョン番号と楽観的排他制御"
 
 #: ../../query/batch-delete.rst:104
 msgid ""
 "The parameter ``java.lang.Iterable`` subtype has :doc:`../entity` element, "
 "the  :doc:`../entity` element is annotated with @Version"
 msgstr ""
+"パラメータの ``java.lang.Iterable`` のサブタイプには :doc:`../entity` 要素があり、 "
+":doc:`../entity` 要素には @Version の注釈が付けられている"
 
 #: ../../query/batch-delete.rst:107 ../../query/delete.rst:113
 msgid ""
@@ -193,12 +220,16 @@ msgid ""
 "application developer's responsibility. For example like below SQL, you must"
 " specify version number in WHERE clauses."
 msgstr ""
+"ただし、楽観的排他制御のためのSQLを記述するのはアプリケーション開発者の責任となります。たとえば、以下の SQL のように、WHERE "
+"句にバージョン番号を指定する必要があります。"
 
 #: ../../query/batch-delete.rst:114
 msgid ""
 "``BatchOptimisticLockException`` representing optimistic concurrency control"
 " failure is thrown, if deleted count is 0 or multiple in this SQL."
 msgstr ""
+"この SQL で削除件数が 0 以上の場合、楽観的排他制御の失敗を表す ``BatchOptimisticLockException`` "
+"がスローされます。"
 
 #: ../../query/batch-delete.rst:119
 msgid ""
@@ -206,6 +237,8 @@ msgid ""
 "``BatchOptimisticLockException`` is not thrown even if deleted count is 0 or"
 " multiple."
 msgstr ""
+"`@BatchDelete` アノテーション内の `ignoreVersion` プロパティが ``true`` "
+"の場合、``BatchOptimisticLockException`` はスローされません。"
 
 #: ../../query/batch-delete.rst:130
 msgid ""
@@ -213,6 +246,8 @@ msgid ""
 "``true``, ``BatchOptimisticLockException`` is not thrown even if deleted "
 "count is 0 or multiple."
 msgstr ""
+"``@BatchDelete`` 内の ``suppressOptimisticLockException`` プロパティが ``true`` "
+"の場合、削除件数が何であっても ``BatchOptimisticLockException`` はスローされません。"
 
 #: ../../query/batch-delete.rst:139 ../../query/batch-insert.rst:135
 #: ../../query/batch-update.rst:234 ../../query/delete.rst:146
@@ -225,7 +260,7 @@ msgstr "クエリタイムアウト"
 msgid ""
 "You can specify seconds of query timeout to ``queryTimeout`` property within"
 " ``@BatchDelete`` annotation."
-msgstr ""
+msgstr "`@BatchDelete` アノテーション内の ``queryTimeout`` プロパティにクエリタイムアウトの秒数を指定できます。"
 
 #: ../../query/batch-delete.rst:148 ../../query/batch-insert.rst:144
 #: ../../query/batch-update.rst:243
@@ -234,6 +269,8 @@ msgid ""
 "Query timeout that is specified in config class is used if ``queryTimeout`` "
 "property is not set value."
 msgstr ""
+"この指定はSQLファイルの使用の有無に関わらず適用されます。 ``queryTimeout`` プロパティに値が設定されていない場合は、config "
+"クラスで指定されたクエリタイムアウトが使用されます。"
 
 #: ../../query/batch-delete.rst:152 ../../query/batch-insert.rst:148
 #: ../../query/batch-update.rst:247
@@ -244,7 +281,7 @@ msgstr "バッチサイズ"
 msgid ""
 "You can specify batch size to ``batchSize`` property within ``@BatchDelete``"
 " annotation."
-msgstr ""
+msgstr "バッチサイズは ``@BatchDelete`` アノテーション内の ``batchSize`` プロパティに指定できます。"
 
 #: ../../query/batch-delete.rst:161
 msgid ""
@@ -252,19 +289,21 @@ msgid ""
 " not specify the value to ``batchSize`` property, batch size that is "
 "specified at :doc:`../config` class is applied."
 msgstr ""
+"この指定は、SQL ファイルの使用の有無に関係なく適用されます。 ``batchSize`` "
+"プロパティに値を指定しない場合は、:doc:`../config` クラスで指定されたバッチサイズが適用されます。"
 
 #: ../../query/batch-delete.rst:165 ../../query/batch-insert.rst:161
 #: ../../query/batch-update.rst:260 ../../query/delete.rst:160
 #: ../../query/insert.rst:159 ../../query/select.rst:486
 #: ../../query/update.rst:271
 msgid "SQL log output format"
-msgstr ""
+msgstr "SQLログの出力形式"
 
 #: ../../query/batch-delete.rst:167
 msgid ""
 "You can specify SQL log output format to ``sqlLog`` property within "
 "``@BatchDelete`` annotation."
-msgstr ""
+msgstr "SQLログの出力形式は ``@BatchDelete`` アノテーション内の ``sqlLog`` プロパティに指定できます。"
 
 #: ../../query/batch-delete.rst:174 ../../query/batch-insert.rst:170
 #: ../../query/batch-update.rst:269 ../../query/delete.rst:169
@@ -272,7 +311,7 @@ msgstr ""
 msgid ""
 "``SqlLogType.RAW`` represent outputting log that is sql with a binding "
 "parameter."
-msgstr ""
+msgstr "``SqlLogType.RAW`` はバインドパラメータ（?）付きの SQL をログ出力することを表します。"
 
 #: ../../query/batch-insert.rst:3
 msgid "Batch insert"
@@ -317,7 +356,7 @@ msgstr ""
 
 #: ../../query/batch-insert.rst:44 ../../query/insert.rst:50
 msgid "Identifier"
-msgstr ""
+msgstr "識別子"
 
 #: ../../query/batch-insert.rst:46
 msgid ""
@@ -352,7 +391,7 @@ msgstr ""
 
 #: ../../query/batch-insert.rst:68 ../../query/insert.rst:68
 msgid "insertable"
-msgstr ""
+msgstr "insertable"
 
 #: ../../query/batch-insert.rst:70
 msgid ""
@@ -418,7 +457,7 @@ msgstr ""
 #: ../../query/batch-insert.rst:130 ../../query/batch-update.rst:229
 #: ../../query/insert.rst:141 ../../query/update.rst:253
 msgid "Unique constraint violation"
-msgstr ""
+msgstr "一意制約違反"
 
 #: ../../query/batch-insert.rst:132 ../../query/batch-update.rst:231
 #: ../../query/update.rst:255
@@ -686,7 +725,7 @@ msgstr "削除"
 
 #: ../../query/delete.rst:8
 msgid "Annotate with ``@Delete`` to Dao method for execute delete."
-msgstr ""
+msgstr "削除を実行するにはDaoメソッドに ``@Delete`` アノテーションを指定します。"
 
 #: ../../query/delete.rst:18
 msgid ""
@@ -694,6 +733,8 @@ msgid ""
 " file by specifying ``true`` to ``sqlFile`` property within the ``@Delete`` "
 "annotation."
 msgstr ""
+"デフォルトでは、DELETE ステートメントが自動生成されます。 ``@Delete`` アノテーション内の ``sqlFile`` プロパティに "
+"``true`` を指定することで、任意の SQL ファイルをマッピングできます。"
 
 #: ../../query/delete.rst:21
 msgid ""
@@ -702,38 +743,44 @@ msgid ""
 "the ``postDelete`` method of entity listener is called when after executing "
 "delete."
 msgstr ""
+"エンティティクラスのパラメータにエンティティリスナーが指定されている場合、削除を実行する前にエンティティリスナーの ``preDelete`` "
+"メソッドが呼び出されます。また、削除実行後にはエンティティリスナーの ``postDelete`` メソッドが呼び出されます。"
 
 #: ../../query/delete.rst:27 ../../query/insert.rst:30
 msgid ""
 "Return value must be ``org.seasar.doma.jdbc.Result`` that make the entity "
 "class an element if parameter is immutable entity class."
 msgstr ""
+"戻り値は、パラメータが不変のエンティティクラスの場合、エンティティクラスを要素とする``org.seasar.doma.jdbc.Result`` "
+"である必要があります。"
 
 #: ../../query/delete.rst:29 ../../query/insert.rst:32
 #: ../../query/update.rst:32
 msgid ""
 "Return value must be ``int`` that is represented updated count if the above "
 "conditions are not satisfied."
-msgstr ""
+msgstr "上記の条件が満たされない場合、戻り値は更新された件数を表す ``int`` でなければなりません。"
 
 #: ../../query/delete.rst:32
 msgid "Delete by auto generated SQL"
-msgstr ""
+msgstr "自動生成されたSQLによる削除"
 
 #: ../../query/delete.rst:34
 msgid ""
 "Parameter type must be entity class. Specifiable parameter is only one. "
 "Parameter must not be ``null``."
 msgstr ""
+"パラメータのタイプはエンティティ クラスである必要があります。指定できるパラメータは 1 つだけです。パラメータは ``null`` "
+"であってはなりません。"
 
 #: ../../query/delete.rst:51 ../../query/update.rst:56
 msgid ""
 "Entity class within parameter has property that is annotated with @Version"
-msgstr ""
+msgstr "パラメータ内のエンティティクラスは @Version アノテーションが付けられたプロパティを持つ"
 
 #: ../../query/delete.rst:52
 msgid "The ignoreVersion element within @Delete annotation is false"
-msgstr ""
+msgstr "@Delete アノテーション内のignoreVersion要素がfalseである"
 
 #: ../../query/delete.rst:54
 msgid ""
@@ -742,6 +789,8 @@ msgid ""
 "optimistic concurrency control failure is thrown, if at that time delete "
 "count is 0."
 msgstr ""
+"楽観的排他制御が有効な場合、削除条件にはバージョン番号が識別子に含まれます。削除件数が 0 の場合、楽観的排他制御の失敗を表す "
+"``OptimisticLockException`` がスローされます。"
 
 #: ../../query/delete.rst:60
 msgid ""
@@ -749,6 +798,9 @@ msgid ""
 " number is not include in delete condition. ``OptimisticLockException`` is "
 "not thrown in this case, even if delete count is 0."
 msgstr ""
+"`@Delete` アノテーション内の ``ignoreVersion`` プロパティが ``true`` "
+"の場合、バージョン番号は削除条件に含まれません。この場合、削除件数が 0 であっても ``OptimisticLockException`` "
+"はスローされません。"
 
 #: ../../query/delete.rst:71
 msgid ""
@@ -756,16 +808,21 @@ msgid ""
 "``true``, version number is included in delete condition. But in this case "
 "``OptimisticLockException`` is not thrown even if delete count is 0."
 msgstr ""
+"``@Delete`` アノテーション内の ``suppressOptimisticLockException`` プロパティが ``true`` "
+"の場合、削除条件にバージョン番号が含まれます。ただしこの場合、削除件数が 0 であっても ``OptimisticLockException`` "
+"はスローされません。"
 
 #: ../../query/delete.rst:80
 msgid "Delete by SQL file"
-msgstr ""
+msgstr "SQLファイルによる削除"
 
 #: ../../query/delete.rst:82
 msgid ""
 "To execute deleting by SQL file, you set ``true`` to ``sqlFile`` property "
 "within ``@Delete`` annotation and prepare SQL file that correspond method."
 msgstr ""
+"SQLファイルによる削除を実行するには、 ``@Delete`` アノテーション内の ``sqlFile`` プロパティに ``true`` "
+"を設定し、対応するSQLファイルを用意します。"
 
 #: ../../query/delete.rst:85 ../../query/update.rst:185
 msgid ""
@@ -773,42 +830,44 @@ msgid ""
 "limit. You can set ``null`` to parameter if parameter type is basic type or "
 "domain class. Parameter must not be ``null`` if the type is other than that."
 msgstr ""
+"パラメータとして任意の型を使用できます。指定できるパラメータの数に制限はありません。パラメータの型が基本型またはドメインクラスの場合、パラメータに "
+"``null`` を設定できます。型がそれ以外の場合、パラメータは ``null`` であってはなりません。"
 
 #: ../../query/delete.rst:90
 msgid ""
 "Entity listener method is not called even if the entity listener is "
 "specified to entity."
-msgstr ""
+msgstr "エンティティにエンティティリスナを指定しても、エンティティリスナのメソッドは呼び出されません。"
 
 #: ../../query/delete.rst:97 ../../query/insert.rst:127
 #: ../../query/update.rst:174 ../../query/update.rst:198
 msgid ""
 "For example, you describe SQL file like below to correspond above method."
-msgstr ""
+msgstr "たとえば、上記のメソッドに対応するSQLは次のように記述します。"
 
 #: ../../query/delete.rst:104
 msgid "Version number and optimistic concurrency control in  SQL File"
-msgstr ""
+msgstr "SQL ファイルにおけるバージョン番号と楽観的排他制御"
 
 #: ../../query/delete.rst:108
 msgid "Entity class is included in parameter"
-msgstr ""
+msgstr "エンティティクラスがパラメータに含まれる"
 
 #: ../../query/delete.rst:109 ../../query/update.rst:214
 msgid ""
 "Entity class at first from the left within parameter has property that is "
 "annotated with @Version"
-msgstr ""
+msgstr "パラメータ内の左から最初のEntityクラスが @Version アノテーションが付与されたプロパティを持つ"
 
 #: ../../query/delete.rst:110
 msgid "The ignoreVersion property within @Delete annotation is false"
-msgstr ""
+msgstr "@Delete アノテーション内のignoreVersion プロパティが false である"
 
 #: ../../query/delete.rst:111
 msgid ""
 "The suppressOptimisticLockException property within @Delete annotation is "
 "false"
-msgstr ""
+msgstr "@Delete アノテーション内のsuppressOptimisticLockException プロパティが false である"
 
 #: ../../query/delete.rst:120
 msgid ""
@@ -816,12 +875,16 @@ msgid ""
 "failure is thrown, if this SQL delete count is 0. "
 "``OptimisticLockException`` is not thrown if delete count is not 0."
 msgstr ""
+"この SQL 削除数が 0 の場合、オプティミスティック同時実行制御の失敗を表す ``OptimisticLockException`` "
+"がスローされます。削除数が 0 でない場合は、 ``OptimisticLockException`` はスローされません。"
 
 #: ../../query/delete.rst:126
 msgid ""
 "If ``ignoreVersion`` property within ``@Delete`` annotation is ``true``, "
 "``OptimisticLockException`` is not thrown even if delete count is 0."
 msgstr ""
+"``@Delete`` アノテーション内の ``ignoreVersion`` プロパティが ``true`` の場合、削除件数が何であれ "
+"``OptimisticLockException`` はスローされません。"
 
 #: ../../query/delete.rst:137
 msgid ""
@@ -829,12 +892,14 @@ msgid ""
 "annotation is ``true``, ``OptimisticLockException`` is not thrown even if "
 "delete count is 0."
 msgstr ""
+"``@Delete`` アノテーション内の ``suppressOptimisticLockException`` プロパティが ``true`` "
+"の場合、削除件数が何であっても OptimisticLockException はスローされません。"
 
 #: ../../query/delete.rst:149
 msgid ""
 "You can specify seconds of query timeout to ``queryTimeout`` property within"
 " ``@Delete`` annotation."
-msgstr ""
+msgstr "``@Delete`` アノテーション内の `queryTimeout` プロパティにクエリタイムアウトの秒数を指定できます。"
 
 #: ../../query/delete.rst:156 ../../query/update.rst:267
 msgid ""
@@ -842,12 +907,14 @@ msgid ""
 "Query timeout that is specified in :doc:`../config` is used if "
 "``queryTimeout`` property is not set value."
 msgstr ""
+"この指定はSQLファイルの使用の有無に関わらず適用されます。 ``queryTimeout`` プロパティの値が設定されていない場合は、 "
+":doc:`../config` で指定されたクエリタイムアウトが使用されます。"
 
 #: ../../query/delete.rst:162
 msgid ""
 "You can specify SQL log output format to ``sqlLog`` property within "
 "``@Delete`` annotation."
-msgstr ""
+msgstr "SQLログの出力形式は ``@Delete`` アノテーション内の ``sqlLog`` プロパティに指定できます。"
 
 #: ../../query/factory.rst:3
 msgid "Factories"
@@ -970,7 +1037,7 @@ msgstr ""
 #: ../../query/select.rst:130 ../../query/select.rst:176
 #: ../../query/select.rst:195 ../../query/select.rst:262
 msgid ":doc:`../basic`"
-msgstr ""
+msgstr ":doc:`../basic`"
 
 #: ../../query/function.rst:27 ../../query/function.rst:40
 #: ../../query/function.rst:78 ../../query/function.rst:107
@@ -981,7 +1048,7 @@ msgstr ""
 #: ../../query/select.rst:131 ../../query/select.rst:177
 #: ../../query/select.rst:196 ../../query/select.rst:263
 msgid ":doc:`../domain`"
-msgstr ""
+msgstr ":doc:`../domain`"
 
 #: ../../query/function.rst:28 ../../query/function.rst:41
 #: ../../query/function.rst:172 ../../query/procedure.rst:148
@@ -989,7 +1056,7 @@ msgstr ""
 #: ../../query/select.rst:178 ../../query/select.rst:197
 #: ../../query/select.rst:264
 msgid ":doc:`../entity`"
-msgstr ""
+msgstr ":doc:`../entity`"
 
 #: ../../query/function.rst:29 ../../query/function.rst:42
 #: ../../query/function.rst:173 ../../query/procedure.rst:149
@@ -997,7 +1064,7 @@ msgstr ""
 #: ../../query/select.rst:179 ../../query/select.rst:198
 #: ../../query/select.rst:265
 msgid "java.util.Map<String, Object>"
-msgstr ""
+msgstr "java.util.Map<String, Object>"
 
 #: ../../query/function.rst:30
 msgid ""
@@ -1162,7 +1229,7 @@ msgstr ""
 
 #: ../../query/index.rst:3
 msgid "Queries"
-msgstr ""
+msgstr "クエリ"
 
 #: ../../query/insert.rst:3
 msgid "Insert"
@@ -1170,13 +1237,15 @@ msgstr "追加"
 
 #: ../../query/insert.rst:8
 msgid "Annotate with ``@Insert`` to Dao method for execute insert."
-msgstr ""
+msgstr "追加を実行するためのDaoメソッドに ``@Insert`` アノテーションを付けます。"
 
 #: ../../query/insert.rst:21
 msgid ""
 "By default insert statement is auto generated. You can mapping arbitrary SQL"
 " file by setting true to ``sqlFile`` element of ``@Insert``."
 msgstr ""
+"デフォルトでは、追加ステートメントは自動生成されます。 ``@Insert`` の ``sqlFile`` 要素に ``true`` "
+"を設定することで、任意の SQL ファイルをマッピングすることができます。"
 
 #: ../../query/insert.rst:24
 msgid ""
@@ -1184,45 +1253,51 @@ msgid ""
 "if the entity listener is specified :doc:`../entity` parameter. Also entity "
 "listener ``postInsert`` method is called when after executing insert."
 msgstr ""
+":doc:`../entity` パラメータでエンティティ リスナーが指定されている場合、挿入を実行する前にエンティティ リスナーの "
+"``preInsert`` メソッドが呼び出されます。また、挿入実行後にエンティティリスナーの ``postInsert`` メソッドが呼び出されます。"
 
 #: ../../query/insert.rst:35
 msgid "Insert by auto generated SQL"
-msgstr ""
+msgstr "自動生成された SQL による追加"
 
 #: ../../query/insert.rst:37 ../../query/update.rst:39
 msgid ""
 "Parameter type must be entity class. Specifiable parameter is only one. "
 "Parameter must not be null."
 msgstr ""
+"パラメータのタイプはエンティティ クラスである必要があります。指定できるパラメータは 1 つだけです。パラメータは null であってはなりません。"
 
 #: ../../query/insert.rst:53
 msgid ""
 "Identifier is auto generated and setting if :doc:`../entity` identifier is "
 "annotated with ``@GeneratedValue``."
 msgstr ""
+"識別子は自動生成され、 :doc:`../entity` 識別子に ``@GeneratedValue`` の注釈が付けられるかどうかを設定します。"
 
 #: ../../query/insert.rst:55
 msgid "Reference :ref:`identity-auto-generation` about cautionary point."
-msgstr ""
+msgstr "注意点については :ref:`identity-auto-generation` を参照してください。"
 
 #: ../../query/insert.rst:58
 msgid "Version numbers"
-msgstr ""
+msgstr "バージョン番号"
 
 #: ../../query/insert.rst:60
 msgid ""
 "If value that explicitly set is over 0 then use the value if "
 ":doc:`../entity` has property that is annotated  with ``@Version``."
 msgstr ""
+":doc:`../entity` に ``@Version`` が注釈されたプロパティがある場合、 そのプロパティに明示的に 0 "
+"以上の値が設定されていればその値を使用します。 "
 
 #: ../../query/insert.rst:62
 msgid ""
 "If the value is not set or is less than 0 the value is set 1 automatically."
-msgstr ""
+msgstr "もし設定されていないか、 0 未満の値が設定されていれば 1 を自動で設定します。"
 
 #: ../../query/insert.rst:65
 msgid "Control insertion target property"
-msgstr ""
+msgstr "追加対象プロパティの制御"
 
 #: ../../query/insert.rst:70
 msgid ""
@@ -1230,6 +1305,8 @@ msgid ""
 "excluded from insertion if entity class has property that is annotated with "
 "``@Column``."
 msgstr ""
+"エンティティクラスに ``@Column`` が注釈されたプロパティがある場合、\n"
+"``@Column`` の ``insertable`` 要素が ``false`` のものは追加対象外です。"
 
 #: ../../query/insert.rst:75
 msgid ""
@@ -1238,6 +1315,9 @@ msgid ""
 "property is excluded from insertion if the property is specified by this "
 "element."
 msgstr ""
+"``@Insert`` の ``exclude`` 要素に指定されたプロパティを挿入対象外とします。\n"
+"プロパティがこの要素に指定されていれば、 ``@Column`` の ``insertable`` 要素が\n"
+"``true`` であっても追加対象外です。"
 
 #: ../../query/insert.rst:86
 msgid ""
@@ -1246,12 +1326,17 @@ msgid ""
 " and ``exclude`` element of ``@Insert`` the property is excluded from "
 "insertion."
 msgstr ""
+"``@Insert`` の ``include`` 要素に指定されたプロパティのみを挿入対象とします。\n"
+"``@Insert`` の ``include`` 要素と ``exclude`` 要素の両方に同じプロパティが指定された場合、\n"
+"そのプロパティは挿入対象外になります。"
 
 #: ../../query/insert.rst:89
 msgid ""
 "Even if property is specified in this element the property is excluded from "
 "insertion if ``insertable`` element of ``@Column`` is false."
 msgstr ""
+"プロパティがこの要素に指定されていても、 ``@Column`` の ``insertable`` 要素が\n"
+"``false`` であれば挿入対象外です。"
 
 #: ../../query/insert.rst:97 ../../query/update.rst:121
 msgid "excludeNull"
@@ -1265,16 +1350,22 @@ msgid ""
 "specified in ``include`` element of ``@Insert`` the property is excluded "
 "from insertion if value is ``null``."
 msgstr ""
+"``@Insert`` の ``excludeNull`` 要素が ``true`` の場合、\n"
+"値が ``null`` のプロパティを挿入対象外とします。\n"
+"この要素が ``true`` の場合、 ``@Column`` の ``insertable`` 要素が ``true`` であったり、\n"
+"``@Insert`` の ``include`` 要素にプロパティが指定されていても、値が ``null`` であれば挿入対象外です。"
 
 #: ../../query/insert.rst:109
 msgid "Insert by SQL file"
-msgstr ""
+msgstr "SQLファイルによる追加"
 
 #: ../../query/insert.rst:111
 msgid ""
 "To execute insertion by SQL file, you set ``true`` to ``sqlFile`` element of"
 " ``@Insert`` and prepare SQL file that correspond method."
 msgstr ""
+"SQLファイルによる挿入を行うには、 ``@Insert`` の ``sqlFile`` 要素に ``true`` を設定し、\n"
+"メソッドに対応するSQLファイルを用意します。"
 
 #: ../../query/insert.rst:114
 msgid ""
@@ -1282,6 +1373,10 @@ msgid ""
 "limit. You can set ``null`` to parameter if parameter type is basic type or "
 "domain class. For other type than that, parameter must not be ``null``."
 msgstr ""
+"パラメータには任意の型が使用できます。\n"
+"指定できるパラメータの数に制限はありません。\n"
+"パラメータの型が基本型もしくはドメインクラスの場合、引数を ``null`` にできます。\n"
+"それ以外の型の場合、引数は ``null`` であってはいけません。"
 
 #: ../../query/insert.rst:137
 msgid ""
@@ -1289,18 +1384,22 @@ msgid ""
 "insertion by SQL file. Also, ``exclude`` element and ``include`` element and"
 " ``excludeNull`` element of ``@Insert`` are not referenced."
 msgstr ""
+"SQLファイルによる追加では、識別子の自動設定やバージョン番号の自動設定は行われません。\n"
+"また、 ``@Insert`` の ``exclude`` 要素、 ``include`` 要素、 ``excludeNull`` 要素は参照されません。"
 
 #: ../../query/insert.rst:143
 msgid ""
 "``UniqueConstraintException`` is thrown regardless with or without using sql"
 " file if unique constraint violation is occurred."
 msgstr ""
+"一意制約違反が発生した場合は、SQLファイルの使用の有無に関係なく\n"
+"``UniqueConstraintException`` がスローされます。"
 
 #: ../../query/insert.rst:148
 msgid ""
 "You can specify second of query timeout to ``queryTimeout`` element of "
 "``@Insert``."
-msgstr ""
+msgstr "``@Insert`` の ``queryTimeout`` 要素にクエリタイムアウトの秒数を指定できます。"
 
 #: ../../query/insert.rst:155
 msgid ""
@@ -1308,17 +1407,20 @@ msgid ""
 "timeout that is specified in :doc:`../config` is used if ``queryTimeout`` "
 "element is not set value."
 msgstr ""
+"この指定は、SQLファイルの使用の有無に関係なく適用されます。\n"
+"``queryTimeout`` 要素に値を指定しない場合、\n"
+":doc:`../config` に指定されたクエリタイムアウトが使用されます。"
 
 #: ../../query/insert.rst:161
 msgid ""
 "You can specify SQL log output format to ``sqlLog`` element of ``@Insert``."
-msgstr ""
+msgstr "``@Insert`` の ``sqlLog`` 要素に SQL のログ出力形式を指定できます。"
 
 #: ../../query/insert.rst:168
 msgid ""
 "``SqlLogType.RAW`` is represented that the log is outputted sql with a bind "
 "parameter."
-msgstr ""
+msgstr "``SqlLogType.RAW`` はバインドパラメータ付きの SQL をログ出力することを表します。"
 
 #: ../../query/procedure.rst:3
 msgid "Stored procedure"
@@ -1635,13 +1737,14 @@ msgstr "検索"
 
 #: ../../query/select.rst:8
 msgid "Annotate with ``@Select`` to Dao method for execute search."
-msgstr ""
+msgstr "検索を実行するDaoメソッドに ``@Select`` アノテーションを付けます。"
 
 #: ../../query/select.rst:19
 msgid ""
 "**SQL file is required** in search. There is no feature that auto generating"
 " search SQL."
 msgstr ""
+"検索には SQL ファイルもしく``@Sql`` アノテーションを使った SQL の指定が必要です。検索SQLを自動生成する機能はありません。"
 
 #: ../../query/select.rst:24
 msgid ""
@@ -1652,29 +1755,33 @@ msgid ""
 "EmployeeDepartment class) for result set that is get by joining EMPLOYEE "
 "table and DEPARTMENT table."
 msgstr ""
+"**検索結果に応じて**エンティティクラスを作成する必要があります。たとえば、EMPLOYEE テーブルに対応する Employee "
+"クラスが宣言されている場合、EMPLOYEE テーブルの列を含む結果セットは Employee "
+"クラスとして受け入れられます。ただし、EMPLOYEEテーブルとDEPARTMENTテーブルを結合して得られる結果セットには、Employeeエンティティクラスとは別のクラス(例えばEmployeeDepartmentクラス)が必要です。"
 
 #: ../../query/select.rst:29
 msgid "Query condition"
-msgstr ""
+msgstr "クエリ条件"
 
 #: ../../query/select.rst:31
 msgid ""
 "You use method parameters for query condition. Available types is below."
-msgstr ""
+msgstr "クエリ条件にはメソッドパラメータを使用します。使用可能なタイプは以下の通りです。"
 
 #: ../../query/select.rst:36
 msgid "Arbitrary type"
-msgstr ""
+msgstr "任意の型"
 
 #: ../../query/select.rst:37
 msgid ""
 ":doc:`../basic` , :doc:`../domain` or arbitrary type are within "
 "java.util.Optional"
 msgstr ""
+":doc:`../basic` 、 :doc:`../domain` または任意の型を型パラメータに持つ java.util.Optional"
 
 #: ../../query/select.rst:38
 msgid ":doc:`../basic` or :doc:`../domain` are within java.util.Iterable"
-msgstr ""
+msgstr ":doc:`../basic` または :doc:`../domain` は java.util.Iterable"
 
 #: ../../query/select.rst:43
 msgid ""
@@ -1682,45 +1789,48 @@ msgid ""
 " type is :doc:`../basic` or :doc:`../domain`. Parameter must not be ``null``"
 " if the type is other than that."
 msgstr ""
+"パラメータ数に制限はありません。パラメータのタイプが :doc:`../basic` または :doc:`../domain` の場合、パラメータに "
+"``null`` を設定できます。型がそれ以外の場合、パラメータは ``null`` であってはなりません。"
 
 #: ../../query/select.rst:48
 msgid "Query that is used basic type or domain class"
-msgstr ""
+msgstr "基本型またはドメインクラスを使用したクエリ"
 
 #: ../../query/select.rst:50
 msgid ""
 "You declare :doc:`../basic` or :doc:`../domain` to method or parameter."
-msgstr ""
+msgstr "メソッドまたはパラメータに :doc:`../basic` または :doc:`../domain` を宣言します。"
 
 #: ../../query/select.rst:57
 msgid ""
 "You map method parameter to SQL by using SQL comment in SQL file. In SQL "
 "comment, method parameter name is referenced."
-msgstr ""
+msgstr "SQLコメントを使用してメソッドパラメータをSQLにバインドします。 SQLコメントではメソッドのパラメータ名を参照します。"
 
 #: ../../query/select.rst:65
 msgid "Query that is used arbitrary type"
-msgstr ""
+msgstr "任意の型を使用したクエリ"
 
 #: ../../query/select.rst:67
 msgid ""
 "You map to SQL by access field or call method there are using by dot ``.`` "
 "if using arbitrary parameter type in method parameter."
 msgstr ""
+"メソッドパラメータに任意の型を使用する場合は、 ``.`` を使ってフィールドアクセスまたはメソッド呼び出しを行い結果をSQLにバインドします。"
 
 #: ../../query/select.rst:78
 msgid "You can specify multiple parameter."
-msgstr ""
+msgstr "複数のパラメータを指定できます。"
 
 #: ../../query/select.rst:86
 msgid "Mapping to IN clauses by using Iterable."
-msgstr ""
+msgstr "Iterable を使用した IN 句へのマッピング"
 
 #: ../../query/select.rst:88
 msgid ""
 "You use subtype of ``java.lang.Iterable`` if execute searching by using IN "
 "clauses."
-msgstr ""
+msgstr "IN句へバインドするには、 ``java.lang.Iterable`` のサブタイプを使用します。"
 
 #: ../../query/select.rst:100
 msgid "Single record search"
@@ -1730,13 +1840,15 @@ msgstr "単一レコードの検索"
 msgid ""
 "You specify method return value type either of below for search single "
 "record."
-msgstr ""
+msgstr "単一レコード検索の場合、メソッドの戻り値の型は以下のいずれかでなければいけません。"
 
 #: ../../query/select.rst:108
 msgid ""
 "Either :doc:`../basic` , :doc:`../domain` , :doc:`../entity` or "
 "java.util.Map<String, Object> is within java.util.Optional"
 msgstr ""
+":doc:`../basic` 、 :doc:`../domain` 、 :doc:`../entity` または "
+"java.util.Map<String, Object> のいずれかを要素とする java.util.Optional"
 
 #: ../../query/select.rst:119
 msgid ""
@@ -1744,25 +1856,28 @@ msgid ""
 " If `Ensure of search result`_ is enabled, exception is thrown regardless "
 "return value type if search count is 0."
 msgstr ""
+"戻り値の型が ``Optional`` でなく、結果が 0件 の場合は ``null`` が返されます。 `検索結果の保証`_ "
+"が有効になっていて結果が0件の場合は、戻り値の型に関係なく例外がスローされます。"
 
 #: ../../query/select.rst:122
 msgid "``NonUniqueResultException`` is thrown if result exists 2 or more."
-msgstr ""
+msgstr "結果が2件以上存在する場合は ``NonUniqueResultException`` がスローされます。"
 
 #: ../../query/select.rst:125
 msgid "Multiple record search"
-msgstr ""
+msgstr "複数レコードの検索"
 
 #: ../../query/select.rst:127
 msgid ""
 "You specify ``java.util.List`` to method return value type to for search "
 "multiple record. You can use below property in ``List``."
 msgstr ""
+"複数レコードを検索する場合はメソッドの戻り値の型に java.util.List を指定します。 ``List`` の要素には以下の型が利用できます。"
 
 #: ../../query/select.rst:134 ../../query/select.rst:180
 msgid ""
 "Either :doc:`../basic` or :doc:`../domain` is within java.util.Optional"
-msgstr ""
+msgstr ":doc:`../basic` または :doc:`../domain` のいずれかを要素とする java.util.Optional"
 
 #: ../../query/select.rst:144
 msgid ""
@@ -1770,6 +1885,8 @@ msgid ""
 "`Ensure of search result`_ is enabled, exception is thrown if search count "
 "is 0."
 msgstr ""
+"結果が 0件の場合、``null`` の代わりに空のリストが返されます。ただし、「検索結果の保証`_」が有効であるならば "
+"0件の場合は例外がスローされます。"
 
 #: ../../query/select.rst:148
 msgid "Stream search"
@@ -1779,17 +1896,18 @@ msgstr "ストリーム検索"
 msgid ""
 "You can use stream search if  handle all record at one try as "
 "``java.util.stream.Stream`` rather than receiving as ``java.util.List``."
-msgstr ""
+msgstr "すべてのレコードを少しづつ処理する場合は java.util.stream.Stream ストリーム検索を使用できます。"
 
 #: ../../query/select.rst:152
 msgid ""
 "There are two kind in stream search such as return the return value and pass"
 " ``Stream`` to ``java.util.Function``."
 msgstr ""
+"ストリーム検索には戻り値を返す方法と ``java.util.Function`` に ``Stream`` を渡す方法の 2 種類があります。"
 
 #: ../../query/select.rst:155
 msgid "Pass to the Function"
-msgstr ""
+msgstr "Functionに渡す方法"
 
 #: ../../query/select.rst:157
 msgid ""
@@ -1798,45 +1916,51 @@ msgid ""
 "RESULT>`` or ``java.util.Function<Stream<TARGET>, RESULT>`` to method "
 "parameter."
 msgstr ""
+"@Select アノテーション内の ``strategy`` プロパティに ``SelectType.STREAM`` を設定し、 "
+"``java.util.Function<Stream<TARGET, RESULT>`` のサブタイプをメソッドのパラメータに追加します。"
 
 #: ../../query/select.rst:165
 msgid "Caller receive stream and pass lambda expression that return result."
-msgstr ""
+msgstr "呼び出し元はストリームを受け取り、結果を返すラムダ式を渡します。"
 
 #: ../../query/select.rst:174
 msgid ""
 "``Function<Stream<TARGET>, RESULT>`` corresponding type parameter ``TARGET``"
 " must be either of below."
 msgstr ""
+"``Function<Stream<TARGET>, RESULT>`` に対応する型パラメータ ``TARGET`` "
+"は以下のいずれかである必要があります。"
 
 #: ../../query/select.rst:185
 msgid "Type parameter ``RESULT`` must match to Dao method return value."
-msgstr ""
+msgstr "型パラメータ ``RESULT`` は Dao メソッドの戻り値と一致する必要があります。"
 
 #: ../../query/select.rst:187 ../../query/select.rst:218
 #: ../../query/select.rst:273
 msgid ""
 "If `Ensure of search result`_ is enabled, exception is thrown if search "
 "count is 0."
-msgstr ""
+msgstr "「検索結果の保証`_」が有効な場合、検索結果が 0件の場合に例外がスローされます。"
 
 #: ../../query/select.rst:190
 msgid "Return the return value"
-msgstr ""
+msgstr "戻り値を返す"
 
 #: ../../query/select.rst:192
 msgid ""
 "You define ``java.util.stream.Stream`` to method return value. You can use "
 "following type at property within ``Stream``."
 msgstr ""
+"メソッドの戻り値に ``java.util.stream.Stream`` を定義します。 ``Stream`` "
+"ので型パラメーターには以下のものを指定できます。"
 
 #: ../../query/select.rst:199 ../../query/select.rst:266
 msgid "Either :doc:`../basic` or :doc:`../domain` within java.util.Optional"
-msgstr ""
+msgstr ":doc:`../basic` または :doc:`../domain` を型パラメーターとする java.util.Optional"
 
 #: ../../query/select.rst:209
 msgid "Below is a caller."
-msgstr ""
+msgstr "呼び出し元のコードは以下のようになります。"
 
 #: ../../query/select.rst:222
 msgid ""
@@ -1845,6 +1969,8 @@ msgid ""
 "``java.sql.PreparedStatement`` , ``java.sql.Connection`` those are not "
 "closing."
 msgstr ""
+"リソースの解放忘れを防ぐため、必ずストリームをクローズしてください。ストリームを閉じないと、 ``java.sql.ResultSet`` 、 "
+"``java.sql.PreparedStatement`` 、 ``java.sql.Connection`` などが閉じられません。"
 
 #: ../../query/select.rst:228
 msgid ""
@@ -1853,15 +1979,17 @@ msgid ""
 "release the resource. Doma display warning message at Dao method for "
 "attention. You specify ``@Suppress`` below for suppress warning."
 msgstr ""
+"戻り値を返すのはリソースの解放忘れの危険があるため、特別な理由がない限りFunctionへStreamを渡す方法を検討してください。 Domaは、Dao"
+" メソッドに警告メッセージを表示して注意を促します。警告を抑制するには以下に ``@Suppress`` を指定します。"
 
 #: ../../query/select.rst:240
 msgid "Collect search"
-msgstr ""
+msgstr "コレクト検索"
 
 #: ../../query/select.rst:242
 msgid ""
 "You can use collect search if handle result as ``java.util.Collector``."
-msgstr ""
+msgstr "結果を ``java.util.Collector`` として扱う場合は、コレクト検索を使用できます。"
 
 #: ../../query/select.rst:244
 msgid ""
@@ -1870,20 +1998,25 @@ msgid ""
 "ACCUMULATION, RESULT>`` or ``java.stream.Collector<TARGET, ?, RESULT>`` to "
 "method parameter."
 msgstr ""
+"コレクト検索を実施するには、 ``@Select`` の ``strategy`` 要素に ``SelectType.COLLECT`` を設定し、\n"
+"メソッドのパラメータに ``java.stream.Collector<TARGET, ACCUMULATION, RESULT>`` もしくは\n"
+"``java.stream.Collector<TARGET, ?, RESULT>`` のサブタイプを定義します。"
 
 #: ../../query/select.rst:252
 msgid "Caller pass ``Collector`` instance."
-msgstr ""
+msgstr "呼び出し元は ``Collector`` のインスタンスを渡します。"
 
 #: ../../query/select.rst:260
 msgid ""
 "``Collector<TARGET, ACCUMULATION, RESULT>`` corresponding type parameter "
 "``TARGET`` must be either of below."
 msgstr ""
+"``Collector<TARGET, ACCUMULATION, RESULT>`` の型パラメータ ``TARGET`` "
+"は次のいずれかでなければいけません。"
 
 #: ../../query/select.rst:271
 msgid "Type parameter ``RESULT`` must match Dao method return value."
-msgstr ""
+msgstr "型パラメータ ``RESULT`` はDaoのメソッドの戻り値に合わせなければいけません。"
 
 #: ../../query/select.rst:277
 msgid ""
@@ -1891,10 +2024,12 @@ msgid ""
 "You can do equivalent by using `collect`` method in ``Stream`` object that "
 "is getting from stream search."
 msgstr ""
+"コレクト検索はストリーム検索のFunctionに渡す方法のショートカットです。\n"
+"ストリーム検索で得られる ``Stream`` オブジェクトの ``collect`` メソッドを使って同等のことができます。"
 
 #: ../../query/select.rst:281
 msgid "Using search option search"
-msgstr ""
+msgstr "検索オプションの使用"
 
 #: ../../query/select.rst:283
 msgid ""
@@ -1902,24 +2037,28 @@ msgid ""
 "control from SQL file that is wrote SELECT clauses by you use "
 "``SelectOptions`` that is represent search option."
 msgstr ""
+"検索オプションを表す ``SelectOptions`` を使用すると、SELECT ステートメントからページングやペシミスティック同時実行制御用の "
+"SQL を自動生成できます。"
 
 #: ../../query/select.rst:286
 msgid ""
 "You use ``SelectOptions`` in combination with `Single record search`_ ,  "
 "`Multiple record search`_ ,  `Stream search`_"
 msgstr ""
+"``SelectOptions`` は、 `単一レコード検索`_ 、 `複数レコード検索`_ 、 `ストリーム検索`_\n"
+"と組み合わせて使用します。"
 
 #: ../../query/select.rst:288
 msgid "You define ``SelectOptions`` as Dao method parameter."
-msgstr ""
+msgstr "``SelectOptions`` は、Daoのメソッドのパラメータとして定義します。"
 
 #: ../../query/select.rst:299
 msgid "You can get ``SelectOptions`` instance by static ``get`` method."
-msgstr ""
+msgstr "``SelectOptions`` のインスタンスは、staticな ``get`` メソッドにより取得できます。"
 
 #: ../../query/select.rst:306
 msgid "Paging"
-msgstr ""
+msgstr "ページング"
 
 #: ../../query/select.rst:308
 msgid ""
@@ -1927,67 +2066,73 @@ msgid ""
 "method those are within ``SelectOptions``, and pass the ``SelectOptions`` "
 "instance to Dao method."
 msgstr ""
+"``SelectOptions`` の ``offset`` メソッドで開始位置、 ``limit`` メソッドで取得件数を指定し、\n"
+"``SelectOptions`` のインスタンスをDaoのメソッドに渡します。"
 
 #: ../../query/select.rst:317
 msgid ""
 "Paging is materialized by rewriting original SQL writing in file and "
 "executing. Original SQL must be satisfied condition below."
 msgstr ""
+"ページングは、オリジナルのSQLを書き換えることで実現されています。\n"
+"オリジナルのSQLは次の条件を満たしていなければいけません。"
 
 #: ../../query/select.rst:320 ../../query/select.rst:362
 msgid "SQL is SELECT clauses"
-msgstr ""
+msgstr "SELECT ステートメントである"
 
 #: ../../query/select.rst:321 ../../query/select.rst:363
 msgid ""
 "In top level, set operation is not executed like UNION, EXCEPT, "
 "INTERSECT.(But using at subquery is able)"
-msgstr ""
+msgstr "最上位のレベルでUNION、EXCEPT、INTERSECT等の集合演算を行っていない（サブクエリで利用している場合は可）"
 
 #: ../../query/select.rst:322
 msgid "Paging process is not included."
-msgstr ""
+msgstr "ページング処理を含んでいない"
 
 #: ../../query/select.rst:324
 msgid ""
 "In addition, particular condition must be satisfied according to the "
 "database dialect."
-msgstr ""
+msgstr "さらに、データベース ダイアレクト に従って特定の条件を満たす必要があります。"
 
 #: ../../query/select.rst:326 ../../query/select.rst:331
 #: ../../query/select.rst:334
 msgid ""
 "If specify offset, there are ORDER BY clauses and all column that is "
 "specified at ORDER BY clauses is included in SELECT clauses."
-msgstr ""
+msgstr "offset を指定する場合、ORDER BY 句があり、ORDER BY 句で指定されたすべての列が SELECT 句に含まれる"
 
 #: ../../query/select.rst:329
 msgid "Condition"
-msgstr ""
+msgstr "条件"
 
 #: ../../query/select.rst:337
 msgid "If specify offset, there are ORDER BY clauses."
-msgstr ""
+msgstr "offset を指定する場合は、ORDER BY 句が存在する"
 
 #: ../../query/select.rst:339 ../../query/select.rst:389
 msgid "StandardDialect"
-msgstr ""
+msgstr "StandardDialect"
 
 #: ../../query/select.rst:339
 msgid ""
 "There are ORDER BY clauses and all column that is specified at ORDER BY "
 "clauses is included in SELECT clauses."
-msgstr ""
+msgstr "ORDER BY 句があり、ORDER BY 句で指定されたすべての列が SELECT 句に含まれる"
 
 #: ../../query/select.rst:344
 msgid "Pessimistic concurrency control"
-msgstr ""
+msgstr "悲観的排他制御"
 
 #: ../../query/select.rst:346
 msgid ""
 "You indicate executing pessimistic concurrency control by ``forUpdate`` "
 "within ``SelectOptions``, and pass the SelectOptions instance to Dao method."
 msgstr ""
+"``SelectOptions`` の ``forUpdate`` メソッドで悲観的排他制御を行うことを示し、\n"
+"SelectOptionsのインスタンスをDaoのメソッドに渡します。"
 
 #: ../../query/select.rst:355
 msgid ""
@@ -1996,22 +2141,27 @@ msgid ""
 "getting lock and ``forUpdate`` method that can specify lock target table or "
 "column alias."
 msgstr ""
+"``SelectOptions`` には、ロック対象のテーブルやカラムのエイリアスを指定できる ``forUpdate`` メソッドや、\n"
+"ロックの取得を待機しない ``forUpdateNowait`` など、名前が *forUpdate*\n"
+"で始まる悲観的排他制御用のメソッドが用意されています。"
 
 #: ../../query/select.rst:359
 msgid ""
 "Pessimistic concurrency control is executed by rewriting original SQL "
 "writing in file. Original SQL must be satisfied condition below."
 msgstr ""
+"悲観的排他制御は、オリジナルのSQLを書き換えて実行しています。\n"
+"オリジナルのSQLは次の条件を満たしていなければいけません。"
 
 #: ../../query/select.rst:364
 msgid "Pessimistic concurrency control process is not included."
-msgstr ""
+msgstr "悲観的排他制御の処理を含んでいない"
 
 #: ../../query/select.rst:366
 msgid ""
 "Part or all of pessimistic concurrency control method can not used according"
 " to the database dialect."
-msgstr ""
+msgstr "データベースのダイアレクトによっては、悲観的排他制御用のメソッドのすべてもしくは一部が使用できません。"
 
 #: ../../query/select.rst:369
 msgid "Description"
@@ -2020,21 +2170,23 @@ msgstr "説明"
 #: ../../query/select.rst:371 ../../query/select.rst:373
 #: ../../query/select.rst:375
 msgid "You can use forUpdate()."
-msgstr ""
+msgstr "forUpdate()を使用できる"
 
 #: ../../query/select.rst:377
 msgid ""
 "You can use forUpdate() and forUpdateNowait(). However, FROM clauses in "
 "original SQL must consist single table."
 msgstr ""
+"forUpdate()とforUpdateNoWait()を使用できる。 \n"
+"ただし、オリジナルのSQLのFROM句は1つのテーブルだけから成らねばならない。"
 
 #: ../../query/select.rst:380
 msgid "MysqlDialect"
-msgstr ""
+msgstr "MysqlDialect"
 
 #: ../../query/select.rst:380
 msgid "You can use forUpdate()"
-msgstr ""
+msgstr "forUpdate() を使用できる"
 
 #: ../../query/select.rst:382
 msgid ""
@@ -2042,18 +2194,22 @@ msgid ""
 "forUpdateNowait(String... aliases), forUpdateWait(int waitSeconds), "
 "forUpdateWait(int waitSeconds, String... aliases)."
 msgstr ""
+"forUpdate()、forUpdate(String... "
+"aliases)、forUpdateNowait()、forUpdateNowait(String... "
+"aliases)、forUpdateWait(int waitSeconds)、forUpdateWait(int waitSeconds, "
+"String... aliases) を使用できる"
 
 #: ../../query/select.rst:387
 msgid "You can use forUpdate() and forUpdate(String... aliases)."
-msgstr ""
+msgstr "forUpdate() および forUpdate(String... エイリアス) を使用できる"
 
 #: ../../query/select.rst:389
 msgid "You can not use all of pessimistic concurrency control method."
-msgstr ""
+msgstr "悲観的排他制御用のメソッドすべてを使用できない"
 
 #: ../../query/select.rst:393
 msgid "Aggregate"
-msgstr ""
+msgstr "集約"
 
 #: ../../query/select.rst:395
 msgid ""
@@ -2061,6 +2217,8 @@ msgid ""
 "``SelectOptions``. Usually, you use combination in paging option and use in "
 "case of getting all count if not narrowing by paging."
 msgstr ""
+"``SelectOptions`` の ``count`` メソッドを呼び出すことで集計件数を取得できるようになります。\n"
+"通常、ページングのオプションと組み合わせて使用し、ページングで絞り込まない場合の全件数を取得する場合に使います。"
 
 #: ../../query/select.rst:405
 msgid ""
@@ -2068,24 +2226,28 @@ msgid ""
 " after calling Dao method. The ``getCount`` method is return ``-1`` if you "
 "do not execute ``count`` method before calling method."
 msgstr ""
+"集計件数は、Daoのメソッド呼出し後に ``SelectOptions`` の ``getCount`` メソッドを使って取得します。\n"
+"メソッド呼び出しの前に ``count`` メソッドを実行していない場合、 ``getCount`` メソッドは ``-1`` を返します。"
 
 #: ../../query/select.rst:409
 msgid "Ensure of search result"
-msgstr ""
+msgstr "検索結果の保証"
 
 #: ../../query/select.rst:411
 msgid ""
 "You specify ``true`` to ``ensureResult`` property within ``@Select`` "
 "annotation if you want to ensure of search result count is over 1."
 msgstr ""
+"検索結果が1件以上存在することを保証したい場合は、 ``@Select`` の ``ensureResult`` 要素に ``true`` "
+"を指定します。"
 
 #: ../../query/select.rst:418
 msgid "``NoResultException`` is thrown if search result count is 0."
-msgstr ""
+msgstr "検索結果が0件ならば ``NoResultException`` がスローされます。"
 
 #: ../../query/select.rst:421
 msgid "Ensure of mapping search result"
-msgstr ""
+msgstr "検索結果のマッピングの保証"
 
 #: ../../query/select.rst:423
 msgid ""
@@ -2093,24 +2255,28 @@ msgid ""
 "annotation, if you want ensure that mapping result set column to all entity "
 "properties without exception."
 msgstr ""
+"エンティティのプロパティすべてに対して漏れなく結果セットのカラムをマッピングすることを保証したい場合は、\n"
+"``@Select`` の ``ensureResultMapping`` 要素に ``true`` を指定します。"
 
 #: ../../query/select.rst:431
 msgid ""
 "``ResultMappingException`` is thrown if there are property that is not "
 "mapping to result set column."
-msgstr ""
+msgstr "結果セットのカラムにマッピングされていないプロパティがある場合、 ``ResultMappingException`` がスローされます。"
 
 #: ../../query/select.rst:436 ../../query/update.rst:260
 msgid ""
 "You can specify seconds of query timeout to ``queryTimeout`` property within"
 " ``@Update`` annotation."
-msgstr ""
+msgstr "結果セットのカラムにマッピングされないプロパティが存在する場合 ``ResultMappingException`` がスローされます。"
 
 #: ../../query/select.rst:443
 msgid ""
 "Query timeout that is specified in :doc:`../config` is used if "
 "``queryTimeout`` property is not set value."
 msgstr ""
+"``queryTimeout`` プロパティの値が設定されていない場合は、 :doc:`../config` "
+"で指定されたクエリタイムアウトが使用されます。"
 
 #: ../../query/select.rst:446
 msgid "Fetch size"
@@ -2120,33 +2286,33 @@ msgstr "フェッチサイズ"
 msgid ""
 "You can specify fetch size to ``fetchSize`` property within ``@Select`` "
 "annotation."
-msgstr ""
+msgstr "フェッチサイズは ``@Select`` アノテーション内の ``fetchSize`` プロパティに指定できます。"
 
 #: ../../query/select.rst:455
 msgid ""
 "Fetch size that is specified in :doc:`../config` is used if value is not "
 "set."
-msgstr ""
+msgstr "値が設定されていない場合は、 :doc:`../config` で指定されたフェッチ サイズが使用されます。"
 
 #: ../../query/select.rst:458
 msgid "Max row count"
-msgstr ""
+msgstr "最大行数"
 
 #: ../../query/select.rst:460
 msgid ""
 "You can specify max row count to ``maxRows`` property within ``@Select`` "
 "annotation."
-msgstr ""
+msgstr "最大行数は ``@Select`` アノテーション内の ``maxRows`` プロパティに指定できます。"
 
 #: ../../query/select.rst:467
 msgid ""
 "Max row count that is is specified in :doc:`../config` is used if value is "
 "not set."
-msgstr ""
+msgstr "値が設定されていない場合は、:doc:`../config` で指定された最大行数が使用されます。"
 
 #: ../../query/select.rst:470
 msgid "Naming rule of map's key"
-msgstr ""
+msgstr "マップのキーの命名規則"
 
 #: ../../query/select.rst:472
 msgid ""
@@ -2154,6 +2320,8 @@ msgid ""
 " ``@Select`` annotation, if you want mapping search result to "
 "``java.util.Map<String, Object>``."
 msgstr ""
+"検索結果を ``java.util.Map<String, Object>`` にマッピングする場合、\n"
+"``@Select`` の ``mapKeyNaming`` 要素にマップのキーの命名規約を指定できます。"
 
 #: ../../query/select.rst:480
 msgid ""
@@ -2161,18 +2329,22 @@ msgid ""
 "case. In addition to there are rule that converting upper case or lower "
 "case."
 msgstr ""
+"``MapKeyNamingType.CAMEL_CASE`` は、カラム名をキャメルケースに変換することを示します。\n"
+"そのほかにカラム名を大文字や小文字に変換する規約があります。"
 
 #: ../../query/select.rst:483
 msgid ""
 "The final conversion result is decide by value specified here and "
 "implementation of ``MapKeyNaming`` is specified at :doc:`../config`."
 msgstr ""
+"最終的な変換結果は、ここに指定した値と :doc:`../config` に指定された\n"
+"``MapKeyNaming`` の実装により決まります。"
 
 #: ../../query/select.rst:488
 msgid ""
 "You can specify SQL log output format to ``sqlLog`` property within "
 "``@Select`` annotation."
-msgstr ""
+msgstr "``@Select`` の ``sqlLog`` 要素に SQL のログ出力形式を指定できます。"
 
 #: ../../query/sql-processor.rst:3
 msgid "SQL processor"
@@ -2227,7 +2399,7 @@ msgstr "更新"
 
 #: ../../query/update.rst:8
 msgid "Annotate with ``@Update`` to Dao method for execute update."
-msgstr ""
+msgstr "Daoメソッドに ``@Update`` アノテーションを付けて更新を実行します。"
 
 #: ../../query/update.rst:21
 msgid ""
@@ -2243,12 +2415,16 @@ msgid ""
 "the ``postUpdate`` method of entity listener  method is called when after "
 "executing update."
 msgstr ""
+"エンティティクラスのパラメータにエンティティリスナーが指定されている場合、更新実行前にエンティティリスナーの ``preUpdate`` "
+"メソッドが呼び出されます。また、更新実行後はエンティティリスナーメソッドの``postUpdate`` メソッドが呼び出されます。"
 
 #: ../../query/update.rst:30
 msgid ""
 "Return value must be ``org.seasar.doma.jdbc.Result`` that has entity class "
 "as an element if parameter is immutable entity class."
 msgstr ""
+"パラメータが不変のエンティティクラスの場合、戻り値はエンティティクラスを要素とする ``org.seasar.doma.jdbc.Result`` "
+"である必要があります。"
 
 #: ../../query/update.rst:37
 msgid "Update by auto generated SQL"
@@ -2256,7 +2432,7 @@ msgstr ""
 
 #: ../../query/update.rst:57 ../../query/update.rst:215
 msgid "The ignoreVersion element within @Update annotation is false"
-msgstr ""
+msgstr "@Update アノテーション内のignoreVersion要素がfalseである"
 
 #: ../../query/update.rst:59
 msgid ""
@@ -2267,6 +2443,9 @@ msgid ""
 "``OptimisticLockException`` is not thrown and version property within entity"
 " is increment by 1 if updated count is not 0."
 msgstr ""
+"楽観的排他制御が有効な場合、バージョン番号が識別子とともに更新条件に含まれ、バージョン番号は1 増分されて更新されます。更新件数が 0 "
+"の場合、楽観的排他制御の失敗を表す ``OptimisticLockException`` "
+"がスローされます。楽観的排他制御が成功した場合、エンティティのバージョンプロパティは 1増分されます。"
 
 #: ../../query/update.rst:66
 msgid ""
@@ -2276,6 +2455,10 @@ msgid ""
 "application. ``OptimisticLockException`` is not thrown in this case, even if"
 " update count is 0."
 msgstr ""
+"``@Update`` アノテーション内の ``ignoreVersion`` プロパティが ``true`` "
+"の場合、バージョン番号は更新条件に含まれず、UPDATE ステートメント内の SET "
+"句に含まれます。バージョン番号はアプリケーションで設定した値により更新されます。この場合、更新件数が 0 であっても "
+"``OptimisticLockException`` はスローされません。"
 
 #: ../../query/update.rst:79
 msgid ""
@@ -2285,10 +2468,13 @@ msgid ""
 "``OptimisticLockException`` is not thrown even if update count is 0. "
 "However, version property value within entity is increment by 1."
 msgstr ""
+"`@Update`` アノテーションの `suppressOptimisticLockException` プロパティが ``true`` の場合、 "
+"``@Version`` アノテーションが付けられたプロパティが存在すればバージョン番号は更新条件に含まれ増分もされますが、 更新件数が0でも "
+"``OptimisticLockException`` はスローされません。ただし、エンティティのバージョンプロパティの値は1増分されます。"
 
 #: ../../query/update.rst:90
 msgid "Control updating target property"
-msgstr ""
+msgstr "更新対象プロパティの制御"
 
 #: ../../query/update.rst:95
 msgid ""
@@ -2296,6 +2482,8 @@ msgid ""
 "``false`` is excluded from updating target if entity class has property that"
 " is annotated with ``@Column``."
 msgstr ""
+"エンティティクラスに ``@Column`` が注釈されたプロパティがある場合、``@Column`` の ``updatable`` "
+"要素がfalseのものは更新対象外です。"
 
 #: ../../query/update.rst:100
 msgid ""
@@ -2304,6 +2492,8 @@ msgid ""
 "within ``@Column`` annotation is  specified ``true`` the property is "
 "excluded from updating target if the property is specified by this element."
 msgstr ""
+"``@Update`` の ``exclude`` 要素に指定されたプロパティを更新対象外とします。 プロパティがこの要素に指定されていれば、 "
+"``@Column`` の ``updatable`` 要素が ``true`` であっても更新対象外です。"
 
 #: ../../query/update.rst:111
 msgid ""
@@ -2314,6 +2504,10 @@ msgid ""
 "is specified with this element the property is excluded from updating target"
 " if ``updatable`` property within ``@Column`` annotation is ``false``."
 msgstr ""
+"``@Update`` の ``include`` 要素に指定されたプロパティのみを更新対象とします。 ``@Update`` の "
+"``include`` 要素と ``exclude`` "
+"要素の両方に同じプロパティが指定された場合、そのプロパティは更新対象外になります。プロパティがこの要素に指定されていても、 ``@Column`` の "
+"``updatable`` 要素が ``false`` であれば更新対象外です。"
 
 #: ../../query/update.rst:123
 msgid ""
@@ -2324,16 +2518,19 @@ msgid ""
 "``include`` property within ``@Update`` annotation the property is excluded "
 "from insertion target if value is ``null``."
 msgstr ""
+"``@Update`` の ``excludeNull`` 要素が ``true`` の場合、値が ``null`` のプロパティを削除対象外とします。"
+" この要素が ``true`` の場合、 ``@Column`` の ``updatable`` 要素が ``true`` であったり、 "
+"``@Update`` の ``include`` 要素にプロパティが指定されていても、値が ``null`` であれば更新対象外です。"
 
 #: ../../query/update.rst:133
 msgid "includeUnchanged"
-msgstr ""
+msgstr "includeUnchanged"
 
 #: ../../query/update.rst:135
 msgid ""
 "This element is enable only if property that annotated with "
 "``@OriginalStates`` is exists within updating target entity class."
-msgstr ""
+msgstr "この要素は、更新対象のエンティティクラスに ``@OriginalStates`` が注釈されたプロパティがある場合にのみ有効です。"
 
 #: ../../query/update.rst:137
 msgid ""
@@ -2341,6 +2538,7 @@ msgid ""
 "is, the column corresponding to all property is included in SET clauses "
 "within UPDATE statement."
 msgstr ""
+"この要素がtrueの場合、エンティティの全プロパティが更新対象となります。 つまり、全プロパティに対応するカラムがUPDATE文のSET句に含まれます。"
 
 #: ../../query/update.rst:140
 msgid ""
@@ -2348,6 +2546,8 @@ msgid ""
 "target if this element is ``false``. That is, only the column corresponding "
 "to modified property is included in SET clauses within UPDATE statement."
 msgstr ""
+"この要素が ``false`` の場合、エンティティが取得されてから実際に変更されたプロパティのみが更新対象になります。 "
+"つまり、変更されたプロパティに対応するカラムのみがUPDATE文のSET句に含まれます。"
 
 #: ../../query/update.rst:149
 msgid "Update by SQL file"
@@ -2358,12 +2558,14 @@ msgid ""
 "To execute updating by SQL file, you set ``true`` to ``sqlFile`` property "
 "within ``@Update`` annotation and prepare SQL file that correspond method."
 msgstr ""
+"SQLファイルによる更新を行うには、 ``@Update`` の ``sqlFile`` 要素に ``true`` "
+"を設定し、メソッドに対応するSQLファイルを用意します。"
 
 #: ../../query/update.rst:156
 msgid ""
 "In updating by SQL file, rule is different with or without use "
 "ref:`populate`."
-msgstr ""
+msgstr "SQLファイルによる更新では ref:`populate` を使用する場合と使用しない場合でルールが異なります。"
 
 #: ../../query/update.rst:161
 msgid ""
