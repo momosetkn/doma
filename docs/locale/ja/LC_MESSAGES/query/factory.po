@@ -24,7 +24,7 @@ msgstr ""
 # b1f892256a954d9195fd42f88882d0e0
 #: ../../query/factory.rst:3
 msgid "Factories"
-msgstr "工場"
+msgstr "ファクトリ"
 
 # bd9fefd3c426499bac99ecdc07438ce0
 #: ../../query/factory.rst:6
