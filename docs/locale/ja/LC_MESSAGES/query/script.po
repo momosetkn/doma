@@ -24,7 +24,7 @@ msgstr ""
 # cd381ad805294fc88839205de6564db1
 #: ../../query/script.rst:3
 msgid "Script"
-msgstr ""
+msgstr "スクリプト"
 
 # 1da969b1ca5f4c029edf0e3b0f9301f7
 #: ../../query/script.rst:6
@@ -36,24 +36,24 @@ msgstr "コンテンツ"
 msgid ""
 "To run a series of static SQL statements, annotate DAO methods with "
 "``@Script``:"
-msgstr ""
+msgstr "一連の静的 SQL ステートメントを実行するには、DAO メソッドに ``@Script`` アノテーションを付けます。"
 
 # 8f5069376ee44c9facc5669748967319
 #: ../../query/script.rst:20
 msgid ""
 "The return type of the method must be ``void`` and the number of parameters "
 "must be zero."
-msgstr ""
+msgstr "メソッドの戻り値の型は ``void`` でなければならず、パラメータの数は 0 でなければなりません。"
 
 # 5a977ae497b647d08b1b2d375993a8bf
 #: ../../query/script.rst:23
 msgid "Script representation"
-msgstr ""
+msgstr "スクリプト表現"
 
 # e478fc0a414543a59b370752e5d987b0
 #: ../../query/script.rst:26
 msgid "Scripts in files"
-msgstr ""
+msgstr "ファイル内のスクリプト"
 
 # 3f4947e4332a48e9880b9f67eb833a64
 #: ../../query/script.rst:29
@@ -63,7 +63,7 @@ msgstr "エンコーディング"
 # 7f1a4ac7539241eb85a31e23d71a6afe
 #: ../../query/script.rst:31
 msgid "The script files must be saved as UTF-8 encoded."
-msgstr ""
+msgstr "スクリプト ファイルは UTF-8 エンコードで保存する必要があります。"
 
 # 78c9b5f46501408c900ec1feb146a0fa
 #: ../../query/script.rst:34
@@ -75,7 +75,7 @@ msgstr "位置"
 msgid ""
 "The script files must be located in directories below a “META-INF” directory"
 " which is included in CLASSPATH."
-msgstr ""
+msgstr "スクリプト ファイルは、CLASSPATH に含まれる「META-INF」ディレクトリ以下のディレクトリに配置する必要があります。"
 
 # 54f0c393a4e24fb8bb2ac0ddee8a9783
 #: ../../query/script.rst:40
@@ -85,12 +85,12 @@ msgstr "ファイルパスの形式"
 # 1f150c53ea0c40669fb00f2c4d1819ee
 #: ../../query/script.rst:42
 msgid "The script file path must follow the following format:"
-msgstr ""
+msgstr "スクリプト ファイルのパスは次の形式に従う必要があります。"
 
 # 06382963c9ed44bebeb54326ce30bdea
 #: ../../query/script.rst:44
 msgid "META-INF/*path-format-of-dao-interface*/*dao-method*.script"
-msgstr ""
+msgstr "META-INF/*daoインターフェイスのパス形式*/*daoメソッド*.script"
 
 # 141815ad1a324d4a8c1c55f8cd45ae81
 #: ../../query/script.rst:46
@@ -98,11 +98,13 @@ msgid ""
 "For example, when the DAO interface name is ``aaa.bbb.EmployeeDao`` and the "
 "DAO method name is ``createTable``, the script file path is as follows:"
 msgstr ""
+"たとえば、DAOインターフェース名が ``aaa.bbb.EmployeeDao`` 、DAOメソッド名が ``createTable`` "
+"の場合、スクリプトファイルのパスは次のようになります。"
 
 # a5b0a17ac98d4f1581a21b39ae3bb119
 #: ../../query/script.rst:49
 msgid "META-INF/aaa/bbb/EmployeeDao/createTable.script"
-msgstr ""
+msgstr "META-INF/aaa/bbb/EmployeeDao/createTable.script"
 
 # b5b98947c7ec4c09b641383e931d0cf0
 #: ../../query/script.rst:52
@@ -116,11 +118,13 @@ msgid ""
 "put the hyphen \"-\" and RDBMS name before the extension \".sql\". For "
 "example, the file path specific to PostgreSQL is as follows:"
 msgstr ""
+"特定の RDBMS への依存関係をファイル名で指定できます。これを行うには、拡張子「.sql」の前にハイフン「-」と RDBMS "
+"名を置きます。たとえば、PostgreSQL に固有のファイル パスは次のとおりです。"
 
 # 8574bcbc2d984c4985dbd9207f9c75a1
 #: ../../query/script.rst:58
 msgid "META-INF/aaa/bbb/EmployeeDao/createTable-*postgres*.script"
-msgstr ""
+msgstr "META-INF/aaa/bbb/EmployeeDao/createTable-*postgres*.script"
 
 # ef2a45698a6046d79ac2961b0ee3b2a1
 #: ../../query/script.rst:60
@@ -130,47 +134,50 @@ msgid ""
 "INF/aaa/bbb/EmployeeDao/createTable-postgres.script\" is chosen instead of "
 "\"META-INF/aaa/bbb/EmployeeDao/createTable.script\"."
 msgstr ""
+"RDBMS固有のスクリプトファイルが優先されます。例えば、PostgreSQLを使用する環境では、 \"META-"
+"INF/aaa/bbb/EmployeeDao/createTable.script\" ではなく !META-"
+"INF/aaa/bbb/EmployeeDao/createTable-postgres.script\" が選択されます。"
 
 # 36d3d7be08154198afe21dcec69aa659
 #: ../../query/script.rst:65
 msgid "See also :ref:`dependency-on-a-specific-rdbms`."
-msgstr ""
+msgstr ":ref:`dependency-on-a-specific-rdbms` も参照してください。"
 
 # 89ce00a815c44ffba2d205b44b74e27b
 #: ../../query/script.rst:68
 msgid "Scripts in annotation"
-msgstr ""
+msgstr "アノテーション内のスクリプト"
 
 # 0b82c1e3bcc64bc2a4419ae83e2beb1f
 #: ../../query/script.rst:70
 msgid "You can specify scripts to DAO methods with the ``@Sql`` annotation:"
-msgstr ""
+msgstr "``@Sql`` アノテーションを使用して DAO メソッドにスクリプトを指定できます。"
 
 # ab667fa8db3f4ef5abd7f43204381ff3
 #: ../../query/script.rst:82
 msgid "See also :ref:`sql-templates-in-annotations`."
-msgstr ""
+msgstr ":ref:`sql-templates-in-annotations` も参照してください。"
 
 # 8a1290c16aa7484dab2fde638708dc6a
 #: ../../query/script.rst:85
 msgid "Delimiter"
-msgstr ""
+msgstr "デリミタ"
 
 # fca84515546446c19e689a8d53c525d4
 #: ../../query/script.rst:87
 msgid "There are two kinds of delimiters in scripts:"
-msgstr ""
+msgstr "スクリプトには 2 種類の区切り文字があります。"
 
 # d78d49fcb3ef49179e95c16236c2daff
 #: ../../query/script.rst:89
 msgid "statement delimiter"
-msgstr ""
+msgstr "ステートメント区切り文字"
 
 # 27bdba5ff4d44fa69b2c51c4bd0b1f56
 # b1994ca080844811835d204dd067af56
 #: ../../query/script.rst:90 ../../query/script.rst:97
 msgid "block delimiter"
-msgstr ""
+msgstr "ブロック区切り文字"
 
 # 0a283d86b89447ed9395107d2283aeb2
 #: ../../query/script.rst:92
@@ -179,6 +186,8 @@ msgid ""
 "determined by a ``Dialect`` instance. The RDBMS block delimiters are as "
 "follows:"
 msgstr ""
+"ステートメントの区切り文字は常にセミコロン ``;`` です。ブロック区切り文字は ``Dialect`` インスタンスによって決定されます。 "
+"RDBMS ブロック区切り文字は次のとおりです。"
 
 # ee76c79f0251481b886419a4e6b0a7a0
 #: ../../query/script.rst:97
@@ -203,7 +212,7 @@ msgstr "Db2Dialect"
 # ba11cd9e709b46c8ab62ee138594512e
 #: ../../query/script.rst:99
 msgid "@"
-msgstr ""
+msgstr "@"
 
 # 5b76dd8aaab0438c9a2792f03f1633d3
 #: ../../query/script.rst:101
@@ -249,7 +258,7 @@ msgstr "Mssql2008Dialect"
 # b8995d769f554007a50c72636e6a6818
 #: ../../query/script.rst:107 ../../query/script.rst:109
 msgid "GO"
-msgstr ""
+msgstr "GO"
 
 # dd15ede96b5542748a7567512ce11b18
 #: ../../query/script.rst:109
@@ -300,7 +309,7 @@ msgstr "PostgresDialect"
 # 1aeb0f333f1f4f0e9018e88e17560f63
 #: ../../query/script.rst:115
 msgid "$$"
-msgstr ""
+msgstr "$$"
 
 # 7fb4f8e98c60408f902cb8e8449c5b2d
 #: ../../query/script.rst:117
@@ -317,17 +326,17 @@ msgstr "SqliteDialect"
 msgid ""
 "You can also specify the block delimiter to ``@Script``'s ``blockDelimiter``"
 " element:"
-msgstr ""
+msgstr "``@Script`` の ``blockDelimiter`` 要素にブロック区切り文字を指定することもできます。"
 
 # 2ed52e88ad90489c93639ae0e0256986
 #: ../../query/script.rst:127
 msgid "The corresponding script file is as follows:"
-msgstr ""
+msgstr "対応するスクリプトファイルは以下のとおりです。"
 
 # 9b590db1b0464c488714b5c8ce4681bb
 #: ../../query/script.rst:144
 msgid "Stopping on error"
-msgstr ""
+msgstr "エラーによる停止"
 
 # d2b520729c96459baf260f890e17c6af
 #: ../../query/script.rst:146
@@ -335,6 +344,8 @@ msgid ""
 "Script running will stop when any statement execution fails. To continue the"
 " script running, specify ``false`` to the ``haltOnError`` element:"
 msgstr ""
+"ステートメントの実行が失敗すると、スクリプトの実行は停止します。スクリプトの実行を続行するには、 ``haltOnError`` 要素に "
+"``false`` を指定します。"
 
 # 3df0bac6423c4ece8cb007cbc498e58b
 #: ../../query/script.rst:155
@@ -344,7 +355,7 @@ msgstr "例"
 # dd6186b19fca4813b479469e9aca7139
 #: ../../query/script.rst:157
 msgid "Following script is valid for Oracle Database:"
-msgstr ""
+msgstr "次のスクリプトは Oracle データベースに対して有効です。"
 
 # 14ba7b5e8396403e829770bffbc68051
 #: ../../query/script.rst:198
@@ -353,6 +364,8 @@ msgid ""
 "... */``. Each statement must end with a semicolon ``;``. Be careful that a "
 "new line doesn't mean the end of a statement."
 msgstr ""
+"単一行コメント ``--`` と複数行コメント ``/* ... */`` の両方を使用できます。各ステートメントはセミコロン ``;`` "
+"で終わる必要があります。新しい行はステートメントの終わりを意味しないことに注意してください。"
 
 # d42fc27bf353450e82ab25bd34e23351
 #: ../../query/script.rst:202
@@ -360,3 +373,4 @@ msgid ""
 "In this example, the slash ``/`` is a block delimiter. The block delimiter "
 "must appear at the beginning of a line and be followed by a new line."
 msgstr ""
+"この例では、スラッシュ ``/`` がブロック区切り文字です。ブロック区切り文字は行の先頭に表示され、その後に新しい行が続く必要があります。"

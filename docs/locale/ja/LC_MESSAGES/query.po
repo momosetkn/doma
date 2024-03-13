@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../query/batch-delete.rst:3
 msgid "Batch delete"
-msgstr "一括削除"
+msgstr "バッチ削除"
 
 #: ../../query/batch-delete.rst:6 ../../query/batch-insert.rst:6
 #: ../../query/batch-update.rst:6 ../../query/delete.rst:6
@@ -337,16 +337,18 @@ msgid ""
 ":doc:`../entity` parameter. Also the ``postInsert`` method of entity "
 "listener method is called each entity when after executing insert."
 msgstr ""
+"エンティティリスナーの ``preInsert`` メソッドは、:doc:`../entity` "
+"パラメータでエンティティリスナーが指定されている場合、追加を実行する前に各エンティティごとに呼び出されます。また、エンティティリスナーメソッドの「postInsert」メソッドは、挿入実行後に各エンティティごとに呼び出されます。"
 
 #: ../../query/batch-insert.rst:32
 msgid ""
 "Return value must be ``int[]`` that is represented each inserting process's "
 "updated count if the above conditions are not satisfied."
-msgstr ""
+msgstr "上記の条件が満たされない場合、戻り値は各追加プロセスの更新回数を表す ``int[]`` でなければなりません。"
 
 #: ../../query/batch-insert.rst:35
 msgid "Batch insert by auto generated SQL"
-msgstr ""
+msgstr "自動生成されたSQLによるバッチ追加"
 
 #: ../../query/batch-insert.rst:37 ../../query/batch-insert.rst:109
 msgid ""
@@ -355,6 +357,9 @@ msgid ""
 " must not be ``null``. Return value array element count become equal "
 "``Iterable`` element count. Insert count is returned to array each element."
 msgstr ""
+"パラメータの型は要素として :doc:`../entity` を持つ ``java.lang.Iterable`` "
+"のサブタイプでなければなりません。指定できるパラメータは 1 つだけです。パラメータは ``null`` であってはなりません。戻り値の配列要素数は、 "
+"``Iterable`` 要素数と等しくなります。配列のそれぞれの要素が更新された件数を返します。"
 
 #: ../../query/batch-insert.rst:44 ../../query/insert.rst:50
 msgid "Identifier"
@@ -365,20 +370,23 @@ msgid ""
 "If annotated with ``@GeneratedValue`` at :doc:`../entity` identifier, the "
 "identifier is auto generated and set."
 msgstr ""
+":doc:`../entity` 識別子に ``@GeneratedValue`` の注釈が付けられている場合、識別子は自動生成されて設定されます。"
 
 #: ../../query/batch-insert.rst:48
 msgid "You reference :ref:`identity-auto-generation` about cautionary point."
-msgstr ""
+msgstr "注意点については :ref:`identity-auto-generation` を参照してください。"
 
 #: ../../query/batch-insert.rst:50
 msgid ""
 "If you don't use auto-generated keys in your application, you can enable the"
 " `ingoreGeneratedKeys` flag. This flag may improve performance."
 msgstr ""
+"アプリケーションで自動生成キーを使用しない場合は、``ingoreGeneratedKeys`` "
+"フラグを有効にすることができます。このフラグによりパフォーマンスが向上する可能性があります。"
 
 #: ../../query/batch-insert.rst:59
 msgid "Version number"
-msgstr ""
+msgstr "バージョン番号"
 
 #: ../../query/batch-insert.rst:61
 msgid ""
@@ -386,10 +394,12 @@ msgid ""
 ":doc:`../entity` has property that is annotated  with ``@Version``. If the "
 "value is not set or is less than ``0`` the value is set ``1`` automatically."
 msgstr ""
+" :doc:`../entity` に ``@Version`` が注釈されたプロパティがある場合、 そのプロパティに明示的に 0 "
+"以上の値が設定されていればその値を使用します。 もし設定されていないか、 0 未満の値が設定されていれば 1 を自動で設定します。"
 
 #: ../../query/batch-insert.rst:65
 msgid "Insert target property"
-msgstr ""
+msgstr "追加対象プロパティ"
 
 #: ../../query/batch-insert.rst:68 ../../query/insert.rst:68
 msgid "insertable"
@@ -401,6 +411,8 @@ msgid ""
 "``false`` is excluded from insert target if :doc:`../entity` has property "
 "that is annotated with ``@Column``."
 msgstr ""
+":doc:`../entity` に `@Column` アノテーションが付けられたプロパティがある場合、 ``@Column`` アノテーション内の "
+"``false`` が指定された ``insertable`` プロパティは挿入対象から除外されます。 "
 
 #: ../../query/batch-insert.rst:73 ../../query/batch-update.rst:92
 #: ../../query/insert.rst:73 ../../query/update.rst:98
@@ -415,6 +427,9 @@ msgid ""
 "the property is excluded from inserting target if the property is specified "
 "by this element."
 msgstr ""
+"``@BatchInsert`` アノテーション内の ``exclude`` プロパティで指定されたプロパティは追加対象から除外されます。 "
+"``@Column`` アノテーション内の ``insertable`` プロパティに ``true`` "
+"が指定されていても、この要素でプロパティが指定されている場合、そのプロパティは追加対象から除外されます。"
 
 #: ../../query/batch-insert.rst:84 ../../query/batch-update.rst:103
 #: ../../query/insert.rst:84 ../../query/update.rst:109
@@ -431,10 +446,14 @@ msgid ""
 "excluded from inserting target if ``insertable`` property within ``@Column``"
 " annotation is ``false``."
 msgstr ""
+"``@BatchInsert`` アノテーション内の ``include`` プロパティで指定されたプロパティのみが追加対象となります。 "
+"``@BatchInsert`` 内の ``include`` プロパティと ``exclude`` "
+"プロパティの両方で同じプロパティを指定した場合、そのプロパティは追加対象から除外されます。この要素でプロパティを指定しても、 ``@Column`` "
+"アノテーション内の ``inserttable`` プロパティが ``false`` の場合、そのプロパティは挿入対象から除外されます。"
 
 #: ../../query/batch-insert.rst:96
 msgid "Batch insert by SQL file"
-msgstr ""
+msgstr "SQLファイルによるバッチ追加"
 
 #: ../../query/batch-insert.rst:98
 msgid ""
@@ -442,12 +461,14 @@ msgid ""
 "property within ``@BatchInsert`` annotation and prepare SQL file that "
 "correspond method."
 msgstr ""
+"SQLファイルによるバッチ挿入を実行するには、 ``@BatchInsert`` アノテーション内の ``sqlFile`` プロパティに "
+"``true`` を設定し、メソッドに対応したSQLファイルを用意します。"
 
 #: ../../query/batch-insert.rst:115
 msgid ""
 "If entity listener is specified at :doc:`../entity` then entity listener "
 "method is not called."
-msgstr ""
+msgstr "エンティティ リスナーが :doc:`../entity` で指定されている場合、エンティティ リスナー メソッドは呼び出されません。"
 
 #: ../../query/batch-insert.rst:126
 msgid ""
@@ -455,6 +476,8 @@ msgid ""
 "batch insert by SQL file. Also, ``exclude`` property and ``include`` "
 "property within ``@BatchInsert`` are not referenced."
 msgstr ""
+"SQLファイルによるバッチ追加では、識別子の自動設定、バージョン番号の自動設定は実行されません。また、 ``@BatchInsert`` 内の "
+"``exclude`` プロパティおよび ``include`` プロパティは参照されません。"
 
 #: ../../query/batch-insert.rst:130 ../../query/batch-update.rst:229
 #: ../../query/insert.rst:141 ../../query/update.rst:253
@@ -475,12 +498,13 @@ msgid ""
 "You can specify seconds of query timeout to ``queryTimeout`` property within"
 " ``@BatchInsert`` annotation."
 msgstr ""
+"``@BatchInsert`` アノテーション内の ``queryTimeout`` プロパティにクエリタイムアウトの秒数を指定できます。"
 
 #: ../../query/batch-insert.rst:150
 msgid ""
 "You can specify batch size to ``batchSize`` property within ``@BatchInsert``"
 " annotation."
-msgstr ""
+msgstr "バッチサイズは ``@BatchInsert`` アノテーション内の ``batchSize`` プロパティに指定できます。"
 
 #: ../../query/batch-insert.rst:157 ../../query/batch-update.rst:256
 msgid ""
@@ -488,20 +512,22 @@ msgid ""
 " not specify the value to ``batchSize`` property, batch size that is "
 "specified at :doc:`../config` class is applied."
 msgstr ""
+"この指定はSQLファイルの使用有無に関わらず適用されます。 ``batchSize`` "
+"プロパティに値を指定しない場合は、:doc:`../config` クラスで指定されたバッチサイズが適用されます。"
 
 #: ../../query/batch-insert.rst:163
 msgid ""
 "You can specify SQL log output format to ``sqlLog`` property within "
 "``@BatchInsert`` annotation."
-msgstr ""
+msgstr "``@BatchInsert`` アノテーション内の ``sqlLog`` プロパティに SQL ログの出力形式を指定できます。"
 
 #: ../../query/batch-update.rst:3
 msgid "Batch update"
-msgstr ""
+msgstr "一括更新"
 
 #: ../../query/batch-update.rst:8
 msgid "Annotate with ``@BatchUpdate`` to Dao method for execute batch update."
-msgstr ""
+msgstr "DAOメソッドに ``@BatchUpdate`` というアノテーションを付けてバッチ更新を実行します。"
 
 #: ../../query/batch-update.rst:21
 msgid ""
@@ -509,6 +535,8 @@ msgid ""
 " file by specifying ``true`` to ``sqlFile`` property within the "
 "``@BatchUpdate`` annotation."
 msgstr ""
+"デフォルトでは、UPDATE ステートメントが自動生成されます。 ``@BatchUpdate`` アノテーション内の ``sqlFile`` "
+"プロパティに ``true`` を指定することで、任意の SQL ファイルをマッピングできます。"
 
 #: ../../query/batch-update.rst:24
 msgid ""
@@ -517,16 +545,19 @@ msgid ""
 ":doc:`../entity` parameter. Also the ``postUpdate`` method of entity "
 "listener method is called each entity when after executing update."
 msgstr ""
+"エンティティリスナーの ``preUpdate`` メソッドは、:doc:`../entity` "
+"パラメータでエンティティリスナーが指定されている場合、更新を実行する前に各エンティティごとに呼び出されます。また、エンティティリスナーメソッドの "
+"``postUpdate`` メソッドは、更新実行後に各エンティティごとに呼び出されます。"
 
 #: ../../query/batch-update.rst:32
 msgid ""
 "Return value must be ``int[]`` that is represented each updating process's "
 "updated count if the above conditions are not satisfied."
-msgstr ""
+msgstr "上記の条件を満たさない場合、戻り値は各更新処理の更新件数を表す ``int[]`` でなければなりません。"
 
 #: ../../query/batch-update.rst:37
 msgid "Batch update by auto generated SQL"
-msgstr ""
+msgstr "自動生成SQLによるバッチ更新"
 
 #: ../../query/batch-update.rst:39 ../../query/batch-update.rst:135
 msgid ""
@@ -535,10 +566,13 @@ msgid ""
 " must not be ``null``. Return value array element count become equal "
 "``Iterable`` element count. Update count is returned to array each element."
 msgstr ""
+"パラメータの型は要素として :doc:`../entity` を持つ ``java.lang.Iterable`` "
+"のサブタイプでなければなりません。指定できるパラメータは 1 つだけです。パラメータは ``null`` であってはなりません。戻り値の配列要素数は、 "
+"``Iterable`` の要素数と等しくなります。配列のそれぞれの要素が更新された件数を表します。"
 
 #: ../../query/batch-update.rst:51
 msgid "The ignoreVersion element within @BatchUpdate annotation is false"
-msgstr ""
+msgstr "``@BatchUpdate`` アノテーション内の ``ignoreVersion`` 要素が ``false`` である"
 
 #: ../../query/batch-update.rst:53
 msgid ""
@@ -549,6 +583,10 @@ msgid ""
 "``BatchOptimisticLockException`` is not thrown and version property within "
 "entity is increment by 1 if updated count is 1."
 msgstr ""
+"楽観的排他制御が有効であれば、バージョン番号は識別子とともに更新条件に含まれ、 1増分して更新されます。 "
+"このときの更新件数が0件の場合、楽観的排他制御の失敗を示す ``BatchOptimisticLockException`` がスローされます。 "
+"一方、更新件数が1件の場合は、 ``BatchOptimisticLockException`` はスローされず、 "
+"エンティティのバージョンプロパティの値が1増分されます。"
 
 #: ../../query/batch-update.rst:60
 msgid ""
@@ -558,6 +596,9 @@ msgid ""
 "at application. ``BatchOptimisticLockException`` is not thrown in this case,"
 " even if update count is 0."
 msgstr ""
+"``@BatchUpdate`` の ``ignoreVersion`` 要素が ``true`` の場合、 "
+"バージョン番号は更新条件には含まれず、UPDATE文のSET句に含まれます。 バージョン番号はアプリケーションで設定した値で更新されます。 "
+"この場合、更新件数が0件であっても、 ``BatchOptimisticLockException`` はスローされません。"
 
 #: ../../query/batch-update.rst:73
 msgid ""
@@ -568,10 +609,13 @@ msgid ""
 "update count is 0. However, version property value within entity is "
 "increment by 1."
 msgstr ""
+"``@BatchUpdate`` の ``suppressOptimisticLockException`` 要素が ``true`` の場合、 "
+"``@Version`` が注釈されたプロパティがあればバージョン番号は更新条件に含まれ増分もされますが、 更新件数が0件であっても "
+"``BatchOptimisticLockException`` はスローされません。 ただし、エンティティのバージョンプロパティの値は1増分されます。"
 
 #: ../../query/batch-update.rst:84
 msgid "Update target property"
-msgstr ""
+msgstr "更新対象プロパティ"
 
 #: ../../query/batch-update.rst:87 ../../query/update.rst:93
 msgid "updatable"
@@ -583,6 +627,8 @@ msgid ""
 "``false`` is excluded from updating target if :doc:`../entity` has property "
 "that is annotated with ``@Column``."
 msgstr ""
+":doc:`../entity` に `@Column` アノテーションが付けられたプロパティがある場合、 ``@Column`` アノテーション内の "
+"``false`` が指定された ``updatable`` プロパティは更新対象から除外されます。 。"
 
 #: ../../query/batch-update.rst:94
 msgid ""
@@ -592,6 +638,9 @@ msgid ""
 "the property is excluded from updating target if the property is specified "
 "by this element."
 msgstr ""
+"``@BatchUpdate`` アノテーション内の ``exclude`` プロパティで指定されたプロパティは更新対象から除外されます。 "
+"``@Column`` アノテーション内の ``updatable`` プロパティに true "
+"が指定されていても、この要素でプロパティが指定されている場合、そのプロパティは更新対象から除外されます。"
 
 #: ../../query/batch-update.rst:105
 msgid ""
@@ -603,10 +652,14 @@ msgid ""
 "updating target if ``updatable`` property within ``@Column`` annotation is "
 "``false``."
 msgstr ""
+"更新対象には ``@BatchUpdate`` アノテーション内の ``include`` プロパティで指定されたプロパティのみが更新対象となります。 "
+"@BatchUpdate 内の include プロパティと exclude "
+"プロパティの両方で同じプロパティを指定した場合、そのプロパティは更新対象から除外されます。この要素でプロパティを指定しても、 @Column "
+"アノテーション内の ``updatetable`` プロパティが ``false`` の場合、そのプロパティは更新対象から除外されます。"
 
 #: ../../query/batch-update.rst:115
 msgid "Batch update by SQL file"
-msgstr ""
+msgstr "SQLファイルによるバッチ更新"
 
 #: ../../query/batch-update.rst:117
 msgid ""
@@ -614,12 +667,14 @@ msgid ""
 "property within ``@BatchUpdate`` annotation and prepare SQL file that "
 "correspond method."
 msgstr ""
+"SQLファイルによるバッチ更新を行うには、 ``@BatchUpdate`` の ``sqlFile`` 要素に ``true`` を設定し、 "
+"メソッドに対応するSQLファイルを用意します。"
 
 #: ../../query/batch-update.rst:122
 msgid ""
 "In batch updating by SQL file, rule is different according to using or not "
 "using :ref:`populate`."
-msgstr ""
+msgstr "SQLファイルによる一括更新では、:ref:`populate`を使用する場合と使用しない場合でルールが異なります。"
 
 #: ../../query/batch-update.rst:125 ../../query/update.rst:159
 msgid "Case of using comment that generating update column list"
@@ -627,13 +682,13 @@ msgstr "更新列リストを生成するコメントを使用する場合"
 
 #: ../../query/batch-update.rst:147 ../../query/batch-update.rst:175
 msgid "Parameter name indicate ``Iterable`` subtype element in SQL file."
-msgstr ""
+msgstr "パラメータ名は、SQL ファイル内の ``Iterable`` の要素を示します。"
 
 #: ../../query/batch-update.rst:149
 msgid ""
 "The rule that is about update target property  equals :ref:`auto-batch-"
 "update`."
-msgstr ""
+msgstr "更新対象プロパティの制御に関するルールは :ref:`auto-batch-update` と同等です。"
 
 #: ../../query/batch-update.rst:152 ../../query/update.rst:183
 msgid "Case of not using comment that generating update column list"
@@ -646,6 +701,9 @@ msgid ""
 " ``null``. Return value array element count become equal ``Iterable`` "
 "element count. Update count is returned to array each element."
 msgstr ""
+"パラメータの型は、任意の型を要素として持つ ``java.lang.Iterable`` でなければなりません。指定できるパラメータは 1 "
+"つだけです。パラメータは ``null`` であってはなりません。戻り値の配列要素数は、 ``Iterable`` "
+"要素数と等しくなります。更新回数は配列の各要素に返されます。"
 
 #: ../../query/batch-update.rst:177
 msgid ""
@@ -653,16 +711,20 @@ msgid ""
 "Also, ``exclude`` property and ``include`` property within ``@BatchUpdate`` "
 "annotation are not referenced."
 msgstr ""
+"SQLファイルによるバッチ更新では、バージョン番号の自動更新は行われません。 また、 ``@BatchUpdate`` の ``exclude`` "
+"要素、 ``include`` 要素は参照されません。"
 
 #: ../../query/batch-update.rst:185
 msgid ""
 "java.lang.Iterable subtype element in parameter is :doc:`../entity` and has "
 "property that is annotated @Version existing at :doc:`../entity`."
 msgstr ""
+"パラメータ内の java.lang.Iterable の要素は :doc:`../entity` であり、 @Version "
+"アノテーションが付けられたプロパティが :doc:`../entity` に存在する"
 
 #: ../../query/batch-update.rst:187
 msgid "ignoreVersion property within @BatchUpdate annotation is false."
-msgstr ""
+msgstr "@BatchUpdate アノテーション内のignoreVersion プロパティが false である"
 
 #: ../../query/batch-update.rst:189 ../../query/update.rst:217
 msgid ""
@@ -681,6 +743,9 @@ msgid ""
 "``BatchOptimisticLockException`` is not thrown and version property within "
 "entity is increment by 1 if updated count is not 0."
 msgstr ""
+"このSQLの更新件数が0件または複数件の場合、楽観的排他制御の失敗を示す ``BatchOptimisticLockException`` "
+"がスローされます。 更新件数が1件の場合、 ``BatchOptimisticLockException`` はスローされず、 "
+"エンティティのバージョンプロパティの値が1増分されます。"
 
 #: ../../query/batch-update.rst:200
 msgid ""
@@ -691,6 +756,10 @@ msgid ""
 "if update count is 1, ``BatchOptimisticLockException`` is not thrown and "
 "entity version property is increment by 1."
 msgstr ""
+"楽観的排他制御が有効であれば、バージョン番号は識別子とともに更新条件に含まれ、 1増分して更新されます。 "
+"このときの更新件数が0件または複数件の場合、楽観的排他制御の失敗を示す ``BatchOptimisticLockException`` "
+"がスローされます。 一方、更新件数が1件の場合、 ``BatchOptimisticLockException`` "
+"はスローされず、エンティティのバージョンプロパティの値が1増分されます。"
 
 #: ../../query/batch-update.rst:207
 msgid ""
@@ -698,6 +767,9 @@ msgid ""
 "``BatchOptimisticLockException`` is not thrown, even if update count is 0 or"
 " multiple. Also, entity version property is not modified."
 msgstr ""
+"``@BatchUpdate`` アノテーション内の ``ignoreVersion`` プロパティが ``true`` "
+"の場合、更新件数が何件であっても ``BatchOptimisticLockException`` はスローされません。また、エンティティのバージョン "
+"プロパティは変更されません。"
 
 #: ../../query/batch-update.rst:219
 msgid ""
@@ -706,24 +778,28 @@ msgid ""
 " even if update count is 0. However, entity version property value is "
 "incremented by 1."
 msgstr ""
+"``@BatchUpdate`` の ``suppressOptimisticLockException`` 要素が ``true`` の場合、 "
+"更新件数が何件であっても ``BatchOptimisticLockException`` はスローされません。 "
+"ただし、エンティティのバージョンプロパティの値は1増分されます。"
 
 #: ../../query/batch-update.rst:236
 msgid ""
 "You can specify seconds of query timeout to ``queryTimeout`` property within"
 " ``@BatchUpdate`` annotation."
 msgstr ""
+"``@BatchUpdate`` アノテーション内の ``queryTimeout`` プロパティにクエリタイムアウトの秒数を指定できます。"
 
 #: ../../query/batch-update.rst:249
 msgid ""
 "You can specify batch size to ``batchSize`` property within ``@BatchUpdate``"
 " annotation."
-msgstr ""
+msgstr "バッチサイズは ``@BatchUpdate`` アノテーション内の ``batchSize`` プロパティに指定できます。"
 
 #: ../../query/batch-update.rst:262
 msgid ""
 "You can specify SQL log output format to ``sqlLog`` property within "
 "``@BatchUpdate`` annotation."
-msgstr ""
+msgstr "``@BatchUpdate`` アノテーション内の `sqlLog` プロパティに SQL ログの出力形式を指定できます。"
 
 #: ../../query/delete.rst:3
 msgid "Delete"
@@ -924,37 +1000,39 @@ msgstr "SQLログの出力形式は ``@Delete`` アノテーション内の ``sq
 
 #: ../../query/factory.rst:3
 msgid "Factories"
-msgstr ""
+msgstr "工場"
 
 #: ../../query/factory.rst:8
 msgid ""
 "To get instances from the factory methods of ``java.sql.Connection``, "
 "annotate DAO methods with one of following annotations;"
 msgstr ""
+"``java.sql.Connection`` のファクトリメソッドからインスタンスを取得するには、DAO "
+"メソッドに次のいずれかのアノテーションを付けます。"
 
 #: ../../query/factory.rst:11
 msgid "@ArrayFactory"
-msgstr ""
+msgstr "@ArrayFactory"
 
 #: ../../query/factory.rst:12
 msgid "@BlobFactory"
-msgstr ""
+msgstr "@BlobFactory"
 
 #: ../../query/factory.rst:13
 msgid "@ClobFactory"
-msgstr ""
+msgstr "@ClobFactory"
 
 #: ../../query/factory.rst:14
 msgid "@NClobFactory"
-msgstr ""
+msgstr "@NClobFactory"
 
 #: ../../query/factory.rst:15
 msgid "@SQLXMLFactory"
-msgstr ""
+msgstr "@SQLXMLFactory"
 
 #: ../../query/factory.rst:18
 msgid "Creating Array instances"
-msgstr ""
+msgstr "配列インスタンスの作成"
 
 #: ../../query/factory.rst:20
 msgid ""
@@ -962,52 +1040,54 @@ msgid ""
 "be one. The parameter type must be an array type and the parameter must not "
 "be null."
 msgstr ""
+"戻り値の型は ``java.sql.Array`` で、パラメータの数は 1 "
+"つでなければなりません。パラメータの型は配列型である必要があり、パラメータは null であってはなりません。"
 
 #: ../../query/factory.rst:23
 msgid ""
 "Specify a database type name to the ``@ArrayFactory``'s ``typeName`` "
 "element:"
-msgstr ""
+msgstr "データベースタイプ名を ``@ArrayFactory`` の ``typeName`` 要素に指定します。"
 
 #: ../../query/factory.rst:31
 msgid "Creating Blob instances"
-msgstr ""
+msgstr "Blob インスタンスの作成"
 
 #: ../../query/factory.rst:33
 msgid ""
 "A return type must be ``java.sql.Blob`` and the number of parameters must be"
 " zero:"
-msgstr ""
+msgstr "戻り値の型は ``java.sql.Blob`` でなければならず、パラメータの数はゼロでなければなりません。"
 
 #: ../../query/factory.rst:41
 msgid "Creating Clob instances"
-msgstr ""
+msgstr "Clob インスタンスの作成"
 
 #: ../../query/factory.rst:43
 msgid ""
 "A return type must be ``java.sql.Clob`` and the number of parameters must be"
 " zero:"
-msgstr ""
+msgstr "戻り値の型は ``java.sql.Clob`` で、パラメータの数は 0 でなければなりません。"
 
 #: ../../query/factory.rst:51
 msgid "Creating NClob instances"
-msgstr ""
+msgstr "NClob インスタンスの作成"
 
 #: ../../query/factory.rst:53
 msgid ""
 "A return type must be ``java.sql.NClob`` and the number of parameters must "
 "be zero:"
-msgstr ""
+msgstr "戻り値の型は ``java.sql.NClob`` でなければならず、パラメータの数は 0 でなければなりません。"
 
 #: ../../query/factory.rst:61
 msgid "Creating SQLXML instances"
-msgstr ""
+msgstr "SQLXMLインスタンスの作成"
 
 #: ../../query/factory.rst:63
 msgid ""
 "A return type must be ``java.sql.SQLXML`` and the number of parameters must "
 "be zero:"
-msgstr ""
+msgstr "戻り値の型は ``java.sql.SQLXML`` でなければならず、パラメータの数は 0 でなければなりません。"
 
 #: ../../query/function.rst:3
 msgid "Stored function"
@@ -1482,27 +1562,27 @@ msgstr "ストアド プロシージャーのパラメーターの順序は、DA
 
 #: ../../query/script.rst:3
 msgid "Script"
-msgstr ""
+msgstr "スクリプト"
 
 #: ../../query/script.rst:8
 msgid ""
 "To run a series of static SQL statements, annotate DAO methods with "
 "``@Script``:"
-msgstr ""
+msgstr "一連の静的 SQL ステートメントを実行するには、DAO メソッドに ``@Script`` アノテーションを付けます。"
 
 #: ../../query/script.rst:20
 msgid ""
 "The return type of the method must be ``void`` and the number of parameters "
 "must be zero."
-msgstr ""
+msgstr "メソッドの戻り値の型は ``void`` でなければならず、パラメータの数は 0 でなければなりません。"
 
 #: ../../query/script.rst:23
 msgid "Script representation"
-msgstr ""
+msgstr "スクリプト表現"
 
 #: ../../query/script.rst:26
 msgid "Scripts in files"
-msgstr ""
+msgstr "ファイル内のスクリプト"
 
 #: ../../query/script.rst:29
 msgid "Encoding"
@@ -1510,7 +1590,7 @@ msgstr "エンコーディング"
 
 #: ../../query/script.rst:31
 msgid "The script files must be saved as UTF-8 encoded."
-msgstr ""
+msgstr "スクリプト ファイルは UTF-8 エンコードで保存する必要があります。"
 
 #: ../../query/script.rst:34
 msgid "Location"
@@ -1520,7 +1600,7 @@ msgstr "位置"
 msgid ""
 "The script files must be located in directories below a “META-INF” directory"
 " which is included in CLASSPATH."
-msgstr ""
+msgstr "スクリプト ファイルは、CLASSPATH に含まれる「META-INF」ディレクトリ以下のディレクトリに配置する必要があります。"
 
 #: ../../query/script.rst:40
 msgid "Format of file path"
@@ -1528,21 +1608,23 @@ msgstr "ファイルパスの形式"
 
 #: ../../query/script.rst:42
 msgid "The script file path must follow the following format:"
-msgstr ""
+msgstr "スクリプト ファイルのパスは次の形式に従う必要があります。"
 
 #: ../../query/script.rst:44
 msgid "META-INF/*path-format-of-dao-interface*/*dao-method*.script"
-msgstr ""
+msgstr "META-INF/*daoインターフェイスのパス形式*/*daoメソッド*.script"
 
 #: ../../query/script.rst:46
 msgid ""
 "For example, when the DAO interface name is ``aaa.bbb.EmployeeDao`` and the "
 "DAO method name is ``createTable``, the script file path is as follows:"
 msgstr ""
+"たとえば、DAOインターフェース名が ``aaa.bbb.EmployeeDao`` 、DAOメソッド名が ``createTable`` "
+"の場合、スクリプトファイルのパスは次のようになります。"
 
 #: ../../query/script.rst:49
 msgid "META-INF/aaa/bbb/EmployeeDao/createTable.script"
-msgstr ""
+msgstr "META-INF/aaa/bbb/EmployeeDao/createTable.script"
 
 #: ../../query/script.rst:52
 msgid "Dependency on a specific RDBMS"
@@ -1554,10 +1636,12 @@ msgid ""
 "put the hyphen \"-\" and RDBMS name before the extension \".sql\". For "
 "example, the file path specific to PostgreSQL is as follows:"
 msgstr ""
+"特定の RDBMS への依存関係をファイル名で指定できます。これを行うには、拡張子「.sql」の前にハイフン「-」と RDBMS "
+"名を置きます。たとえば、PostgreSQL に固有のファイル パスは次のとおりです。"
 
 #: ../../query/script.rst:58
 msgid "META-INF/aaa/bbb/EmployeeDao/createTable-*postgres*.script"
-msgstr ""
+msgstr "META-INF/aaa/bbb/EmployeeDao/createTable-*postgres*.script"
 
 #: ../../query/script.rst:60
 msgid ""
@@ -1566,38 +1650,41 @@ msgid ""
 "INF/aaa/bbb/EmployeeDao/createTable-postgres.script\" is chosen instead of "
 "\"META-INF/aaa/bbb/EmployeeDao/createTable.script\"."
 msgstr ""
+"RDBMS固有のスクリプトファイルが優先されます。例えば、PostgreSQLを使用する環境では、 \"META-"
+"INF/aaa/bbb/EmployeeDao/createTable.script\" ではなく !META-"
+"INF/aaa/bbb/EmployeeDao/createTable-postgres.script\" が選択されます。"
 
 #: ../../query/script.rst:65
 msgid "See also :ref:`dependency-on-a-specific-rdbms`."
-msgstr ""
+msgstr ":ref:`dependency-on-a-specific-rdbms` も参照してください。"
 
 #: ../../query/script.rst:68
 msgid "Scripts in annotation"
-msgstr ""
+msgstr "アノテーション内のスクリプト"
 
 #: ../../query/script.rst:70
 msgid "You can specify scripts to DAO methods with the ``@Sql`` annotation:"
-msgstr ""
+msgstr "``@Script`` アノテーションを使用して DAO メソッドにスクリプトを指定できます。"
 
 #: ../../query/script.rst:82
 msgid "See also :ref:`sql-templates-in-annotations`."
-msgstr ""
+msgstr ":ref:`sql-templates-in-annotations` も参照してください。"
 
 #: ../../query/script.rst:85
 msgid "Delimiter"
-msgstr ""
+msgstr "デリミタ"
 
 #: ../../query/script.rst:87
 msgid "There are two kinds of delimiters in scripts:"
-msgstr ""
+msgstr "スクリプトには 2 種類の区切り文字があります。"
 
 #: ../../query/script.rst:89
 msgid "statement delimiter"
-msgstr ""
+msgstr "ステートメント区切り文字"
 
 #: ../../query/script.rst:90 ../../query/script.rst:97
 msgid "block delimiter"
-msgstr ""
+msgstr "ブロック区切り文字"
 
 #: ../../query/script.rst:92
 msgid ""
@@ -1605,6 +1692,8 @@ msgid ""
 "determined by a ``Dialect`` instance. The RDBMS block delimiters are as "
 "follows:"
 msgstr ""
+"ステートメントの区切り文字は常にセミコロン ``;`` です。ブロック区切り文字は ``Dialect`` インスタンスによって決定されます。 "
+"RDBMS ブロック区切り文字は次のとおりです。"
 
 #: ../../query/script.rst:97
 msgid "RDBMS"
@@ -1626,7 +1715,7 @@ msgstr "Db2Dialect"
 
 #: ../../query/script.rst:99
 msgid "@"
-msgstr ""
+msgstr "@"
 
 #: ../../query/script.rst:101
 msgid "H2 Database Engine 1.2.126"
@@ -1663,7 +1752,7 @@ msgstr "Mssql2008Dialect"
 
 #: ../../query/script.rst:107 ../../query/script.rst:109
 msgid "GO"
-msgstr ""
+msgstr "GO"
 
 #: ../../query/script.rst:109
 msgid "Microsoft SQL Server"
@@ -1703,7 +1792,7 @@ msgstr "PostgresDialect"
 
 #: ../../query/script.rst:115
 msgid "$$"
-msgstr ""
+msgstr "$$"
 
 #: ../../query/script.rst:117
 msgid "SQLite"
@@ -1717,21 +1806,23 @@ msgstr "SqliteDialect"
 msgid ""
 "You can also specify the block delimiter to ``@Script``'s ``blockDelimiter``"
 " element:"
-msgstr ""
+msgstr "``@Script`` の ``blockDelimiter`` 要素にブロック区切り文字を指定することもできます。"
 
 #: ../../query/script.rst:127
 msgid "The corresponding script file is as follows:"
-msgstr ""
+msgstr "対応するスクリプトファイルは以下のとおりです。"
 
 #: ../../query/script.rst:144
 msgid "Stopping on error"
-msgstr ""
+msgstr "エラーによる停止"
 
 #: ../../query/script.rst:146
 msgid ""
 "Script running will stop when any statement execution fails. To continue the"
 " script running, specify ``false`` to the ``haltOnError`` element:"
 msgstr ""
+"ステートメントの実行が失敗すると、スクリプトの実行は停止します。スクリプトの実行を続行するには、 ``haltOnError`` 要素に "
+"``false`` を指定します。"
 
 #: ../../query/script.rst:155 ../../query/sql-processor.rst:50
 msgid "Example"
@@ -1739,7 +1830,7 @@ msgstr "例"
 
 #: ../../query/script.rst:157
 msgid "Following script is valid for Oracle Database:"
-msgstr ""
+msgstr "次のスクリプトは Oracle データベースに対して有効です。"
 
 #: ../../query/script.rst:198
 msgid ""
@@ -1747,12 +1838,15 @@ msgid ""
 "... */``. Each statement must end with a semicolon ``;``. Be careful that a "
 "new line doesn't mean the end of a statement."
 msgstr ""
+"単一行コメント ``--`` と複数行コメント ``/* ... */`` の両方を使用できます。各ステートメントはセミコロン ``;`` "
+"で終わる必要があります。新しい行はステートメントの終わりを意味しないことに注意してください。"
 
 #: ../../query/script.rst:202
 msgid ""
 "In this example, the slash ``/`` is a block delimiter. The block delimiter "
 "must appear at the beginning of a line and be followed by a new line."
 msgstr ""
+"この例では、スラッシュ ``/`` がブロック区切り文字です。ブロック区切り文字は行の先頭に表示され、その後に新しい行が続く必要があります。"
 
 #: ../../query/select.rst:3
 msgid "Search"
@@ -2371,7 +2465,7 @@ msgstr "``@Select`` の ``sqlLog`` 要素に SQL のログ出力形式を指定�
 
 #: ../../query/sql-processor.rst:3
 msgid "SQL processor"
-msgstr ""
+msgstr "SQLプロセッサ"
 
 #: ../../query/sql-processor.rst:8
 msgid ""
@@ -2379,28 +2473,31 @@ msgid ""
 "SQL templates. To mark a DAO method as an SQL processor, annotate the method"
 " with ``@SqlProcessor``:"
 msgstr ""
+"SQL プロセッサは、対応する SQL テンプレートから生成された SQL ステートメントを処理できます。 DAO メソッドを SQL "
+"プロセッサとしてマークするには、メソッドに ``@SqlProcessor`` アノテーションを付けます。"
 
 #: ../../query/sql-processor.rst:22
 msgid ""
 "Being aware of SQL injection vulnerabilities is essential. If it's possible,"
 " consider alternative ways other than SQL processors."
-msgstr ""
+msgstr "SQL インジェクションの脆弱性を認識しておくことが重要です。可能であれば、SQL プロセッサ以外の代替方法を検討してください。"
 
 #: ../../query/sql-processor.rst:28
 msgid ""
 "The return type must be the same type as the third type parameter of "
 "``BiFunction``:"
-msgstr ""
+msgstr "戻り値の型は、 ``BiFunction`` の 3 番目の型パラメータと同じ型でなければなりません。"
 
 #: ../../query/sql-processor.rst:35
 msgid ""
 "If the return type is ``void``, the third type parameter of ``BiFunction`` "
 "must be ``Void``:"
 msgstr ""
+"戻り値の型が ``void`` の場合、 ``BiFunction`` の 3 番目の型パラメータは ``Void`` でなければなりません。"
 
 #: ../../query/sql-processor.rst:43
 msgid "Parameter"
-msgstr ""
+msgstr "パラメータ"
 
 #: ../../query/sql-processor.rst:45
 msgid ""
@@ -2409,12 +2506,14 @@ msgid ""
 "Parameters other than the ``BiFunction`` parameter are used in the SQL "
 "template."
 msgstr ""
+"タイプが ``BiFunction`` であるパラメータを含めます。 ``BiFunction`` パラメータは設定と SQL "
+"ステートメントを受け取り、それらを処理します。 SQL テンプレートでは ``BiFunction`` パラメータ以外のパラメータが使用されます。"
 
 #: ../../query/sql-processor.rst:52
 msgid ""
 "Suppose you want to change the SQL statement generated from an SQL template "
 "and execute it:"
-msgstr ""
+msgstr "SQL テンプレートから生成された SQL ステートメントを変更して実行するとします。"
 
 #: ../../query/update.rst:3
 msgid "Update"

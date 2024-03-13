@@ -24,7 +24,7 @@ msgstr ""
 # 9dbcca3dc1654b36a052a591f00d6a42
 #: ../../query/batch-delete.rst:3
 msgid "Batch delete"
-msgstr "一括削除"
+msgstr "バッチ削除"
 
 # 68386e5478234eb980b8122d6e4f7bed
 #: ../../query/batch-delete.rst:6
@@ -34,7 +34,7 @@ msgstr "コンテンツ"
 # 97d878219d2b43398080bd2f9a69f564
 #: ../../query/batch-delete.rst:8
 msgid "Annotate with ``@BatchDelete`` to Dao method for execute batch delete."
-msgstr "Daoメソッドに ``@BatchDelete`` アノテーションを付けて一括削除を実行します。"
+msgstr "Daoメソッドに ``@BatchDelete`` アノテーションを付けてバッチ削除を実行します。"
 
 # 32eb12826e56486ba114090c9df28e8e
 #: ../../query/batch-delete.rst:19
@@ -83,7 +83,7 @@ msgstr "上記の条件が満たされない場合、戻り値は各削除プロ
 # 91756d5c3764442aa877917a500469e4
 #: ../../query/batch-delete.rst:33
 msgid "Batch delete by auto generated SQL"
-msgstr "自動生成SQLによる一括削除"
+msgstr "自動生成SQLによるバッチ削除"
 
 # cb7f8a8537aa4f449c8303a5826ca1f2
 #: ../../query/batch-delete.rst:35
@@ -175,7 +175,7 @@ msgstr ""
 # 6d85a723c203453fa31cf14c3ba8c310
 #: ../../query/batch-delete.rst:75
 msgid "Batch delete by SQL file"
-msgstr "SQLファイルによる一括削除"
+msgstr "SQLファイルによるバッチ削除"
 
 # ea2d6f77b01446ae84ad966c437c6f9a
 #: ../../query/batch-delete.rst:77
@@ -184,7 +184,7 @@ msgid ""
 "property within ``@BatchDelete`` annotation and prepare SQL file that "
 "correspond method."
 msgstr ""
-"SQLファイルによる一括削除を実行するには、 ``@BatchDelete`` アノテーション内の ``sqlFile`` プロパティに "
+"SQLファイルによるバッチ削除を実行するには、 ``@BatchDelete`` アノテーション内の ``sqlFile`` プロパティに "
 "``true`` を設定し、対応するSQLファイルを用意します。"
 
 # 8790939ae7a748e697078d3b3aa13f8a
