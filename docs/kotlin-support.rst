@@ -106,9 +106,9 @@ Kotlin specific Criteria API
 
     Prefer the Kotlin specific Criteria API to DAO interfaces.
 
-Doma provides Kotlin specific Criteria API, ``KEntityql`` and ``KNativeQl`` DSLs.
-They are very similar with the ``Entityql`` and ``NativeQl`` DSLs, which are described in :doc:`criteria-api`.
-The biggest feature of the ``KEntityql`` and ``KNativeQl`` DSLs is simplicity.
+Doma provides Kotlin specific Criteria API, ``KEntityql`` and ``KNativeSql`` DSLs.
+They are very similar with the ``Entityql`` and ``NativeSql`` DSLs, which are described in :doc:`criteria-api`.
+The biggest feature of the ``KEntityql`` and ``KNativeSql`` DSLs is simplicity.
 
 For example, when you use ``KEntityql``, you have to accept a lambda parameter in a WHERE expression as follows:
 
@@ -151,7 +151,7 @@ On the other hand, when you use ``KEntityql``, the parameter is gone.
 
 You can see a lot of sample code `here <https://github.com/domaframework/doma-it/tree/master/kotlin/src/test/kotlin/org/seasar/doma/it/criteria>`_.
 
-The ``KEntityql`` and ``KNativeQl`` DSLs are included in doma-kotlin.jar.
+The ``KEntityql`` and ``KNativeSql`` DSLs are included in doma-kotlin.jar.
 Note that you should depend on doma-kotlin instead of doma-core in your build script.
 You can write build.gradle.kts as follows:
 

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Doma\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 10:39+0900\n"
+"POT-Creation-Date: 2024-03-13 21:42+0900\n"
 "PO-Revision-Date: 2024-03-09 16:18+0000\n"
 "Last-Translator: Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024\n"
 "Language-Team: Japanese (https://app.transifex.com/domaframework/teams/189259/ja/)\n"
@@ -159,14 +159,14 @@ msgstr "DAO インターフェイスよりも Kotlin 固有の Criteria API を�
 # 6b4517bbe8a34f4fbb0fc47d9c1c416b
 #: ../../kotlin-support.rst:109
 msgid ""
-"Doma provides Kotlin specific Criteria API, ``KEntityql`` and ``KNativeQl`` "
-"DSLs. They are very similar with the ``Entityql`` and ``NativeQl`` DSLs, "
+"Doma provides Kotlin specific Criteria API, ``KEntityql`` and ``KNativeSql``"
+" DSLs. They are very similar with the ``Entityql`` and ``NativeSql`` DSLs, "
 "which are described in :doc:`criteria-api`. The biggest feature of the "
-"``KEntityql`` and ``KNativeQl`` DSLs is simplicity."
+"``KEntityql`` and ``KNativeSql`` DSLs is simplicity."
 msgstr ""
-"Doma は、Kotlin 固有の Criteria API、``KEntityql`` および ``KNativeQl`` DSL "
-"を提供します。これらは、:doc:`criteria-api` で説明されている ``Entityql`` および ``NativeQl`` DSL "
-"と非常に似ていますが、  ``KEntityql`` と ``KNativeQl`` DSL の最大の特徴はそのシンプルさです。"
+"Doma は、Kotlin 固有の Criteria API、``KEntityql`` および ``KNativeSql`` DSL "
+"を提供します。これらは、:doc:`criteria-api` で説明されている ``Entityql`` および ``NativeSql`` DSL "
+"と非常に似ています。  ``KEntityql`` と ``KNativeSql`` DSL の最大の特徴はそのシンプルさです。"
 
 # 0a3f44fa68bc45edac25ef21ed8d4b75
 #: ../../kotlin-support.rst:113
@@ -196,11 +196,11 @@ msgstr ""
 # efd5a2c32abc43358366011da63a8435
 #: ../../kotlin-support.rst:154
 msgid ""
-"The ``KEntityql`` and ``KNativeQl`` DSLs are included in doma-kotlin.jar. "
+"The ``KEntityql`` and ``KNativeSql`` DSLs are included in doma-kotlin.jar. "
 "Note that you should depend on doma-kotlin instead of doma-core in your "
 "build script. You can write build.gradle.kts as follows:"
 msgstr ""
-"``KEntityql`` および ``KNativeQl`` DSL は doma-kotlin.jar に含まれています。ビルド スクリプトでは "
+"``KEntityql`` および ``KNativeSql`` DSL は doma-kotlin.jar に含まれています。ビルド スクリプトでは "
 "doma-core ではなく doma-kotlin に依存する必要があることに注意してください。 build.gradle.kts "
 "は次のように記述できます。"
 
