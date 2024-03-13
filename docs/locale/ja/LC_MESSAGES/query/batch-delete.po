@@ -34,7 +34,7 @@ msgstr "コンテンツ"
 # 97d878219d2b43398080bd2f9a69f564
 #: ../../query/batch-delete.rst:8
 msgid "Annotate with ``@BatchDelete`` to Dao method for execute batch delete."
-msgstr "Daoメソッドに ``@BatchDelete`` アノテーションを付けてバッチ削除を実行します。"
+msgstr "DAOメソッドに ``@BatchDelete`` アノテーションを付けてバッチ削除を実行します。"
 
 # 32eb12826e56486ba114090c9df28e8e
 #: ../../query/batch-delete.rst:19

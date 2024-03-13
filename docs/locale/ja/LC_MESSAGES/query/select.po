@@ -34,7 +34,7 @@ msgstr "コンテンツ"
 # 4a663936f7674e529228194a82bbe518
 #: ../../query/select.rst:8
 msgid "Annotate with ``@Select`` to Dao method for execute search."
-msgstr "検索を実行するDaoメソッドに ``@Select`` アノテーションを付けます。"
+msgstr "検索を実行するDAOメソッドに ``@Select`` アノテーションを付けます。"
 
 # 8ddef9fda88b44019e01db17946bfedf
 #: ../../query/select.rst:19
@@ -345,7 +345,7 @@ msgstr ""
 # 01f7916c3cb54ae0a8605533fd1a7a81
 #: ../../query/select.rst:185
 msgid "Type parameter ``RESULT`` must match to Dao method return value."
-msgstr "型パラメータ ``RESULT`` は Dao メソッドの戻り値と一致する必要があります。"
+msgstr "型パラメータ ``RESULT`` は DAO メソッドの戻り値と一致する必要があります。"
 
 # ed07fb44061e4bed994d7e66d50c8f6f
 # e26ff9598f794757b018e03a03abd778
@@ -369,7 +369,7 @@ msgid ""
 "following type at property within ``Stream``."
 msgstr ""
 "メソッドの戻り値に ``java.util.stream.Stream`` を定義します。 ``Stream`` "
-"ので型パラメーターには以下のものを指定できます。"
+"ので型パラメータには以下のものを指定できます。"
 
 # cdd9d94c2b244e5a80e3d9dbfa299e5e
 # 5c02625783ce43a499437f8cc4f0aa04
@@ -401,7 +401,7 @@ msgid ""
 "release the resource. Doma display warning message at Dao method for "
 "attention. You specify ``@Suppress`` below for suppress warning."
 msgstr ""
-"戻り値を返すのはリソースの解放忘れの危険があるため、特別な理由がない限りFunctionへStreamを渡す方法を検討してください。 Domaは、Dao"
+"戻り値を返すのはリソースの解放忘れの危険があるため、特別な理由がない限りFunctionへStreamを渡す方法を検討してください。 Domaは、DAO"
 " メソッドに警告メッセージを表示して注意を促します。警告を抑制するには以下に ``@Suppress`` を指定します。"
 
 # 993b29d861b8455991c418df8bf4f4b2
@@ -444,7 +444,7 @@ msgstr ""
 # e4d8ca2cf8f14510be22f826e5d1ce92
 #: ../../query/select.rst:271
 msgid "Type parameter ``RESULT`` must match Dao method return value."
-msgstr "型パラメータ ``RESULT`` はDaoのメソッドの戻り値に合わせなければいけません。"
+msgstr "型パラメータ ``RESULT`` はDAOのメソッドの戻り値に合わせなければいけません。"
 
 # 2689edd4200a40c7b3a9a084d932bed8
 #: ../../query/select.rst:277
@@ -483,7 +483,7 @@ msgstr ""
 # f164b68cab21494d81a430dd7ab4cd14
 #: ../../query/select.rst:288
 msgid "You define ``SelectOptions`` as Dao method parameter."
-msgstr "``SelectOptions`` は、Daoのメソッドのパラメータとして定義します。"
+msgstr "``SelectOptions`` は、DAOのメソッドのパラメータとして定義します。"
 
 # 5b77feaf5a584e7bab066b72dc8fc5b5
 #: ../../query/select.rst:299
@@ -739,7 +739,7 @@ msgid ""
 " after calling Dao method. The ``getCount`` method is return ``-1`` if you "
 "do not execute ``count`` method before calling method."
 msgstr ""
-"集計件数は、Daoのメソッド呼出し後に ``SelectOptions`` の ``getCount`` メソッドを使って取得します。\n"
+"集計件数は、DAOのメソッド呼出し後に ``SelectOptions`` の ``getCount`` メソッドを使って取得します。\n"
 "メソッド呼び出しの前に ``count`` メソッドを実行していない場合、 ``getCount`` メソッドは ``-1`` を返します。"
 
 # 5262d640824047889b671735d3255f22

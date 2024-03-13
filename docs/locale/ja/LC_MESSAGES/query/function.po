@@ -183,19 +183,19 @@ msgstr ""
 # 165e4e306ee54d1cb1d29f84e7641bfa
 #: ../../query/function.rst:60
 msgid "Parameters"
-msgstr "パラメーター"
+msgstr "パラメータ"
 
 # 30f90c4422dc4100976650ed4a7f1b41
 #: ../../query/function.rst:62
 msgid ""
 "The order of stored function's parameters must correspond with the order of "
 "DAO method parameters."
-msgstr "ストアドファンクションのパラメーターの順序は、DAO メソッドのパラメーターの順序と一致する必要があります。"
+msgstr "ストアドファンクションのパラメータの順序は、DAO メソッドのパラメータの順序と一致する必要があります。"
 
 # 2748f9ffe8b642038ef3c12c1b1466ee
 #: ../../query/function.rst:64
 msgid "All parameters must be annotated with one of following annotations:"
-msgstr "すべてのパラメーターには、次のいずれかの注釈を付ける必要があります。"
+msgstr "すべてのパラメータには、次のいずれかの注釈を付ける必要があります。"
 
 # afa1c0c968314ef3aa7350eac1f26099
 #: ../../query/function.rst:66
@@ -220,7 +220,7 @@ msgstr "@ResultSet"
 # 6d56b9bafb9046408f0769ab699e0c07
 #: ../../query/function.rst:72
 msgid "IN parameter"
-msgstr "IN パラメーター"
+msgstr "IN パラメータ"
 
 # 1265828022364b209cc796eadddf9125
 #: ../../query/function.rst:74
@@ -229,8 +229,8 @@ msgid ""
 " the ``@In`` annotation. The type of the DAO method parameter must be one of"
 " the following:"
 msgstr ""
-"IN パラメーターを示すには、対応する DAO メソッド パラメータに ``@In`` アノテーションを付けます。 DAO メソッド "
-"パラメーターのタイプは、次のいずれかである必要があります。"
+"IN パラメータを示すには、対応する DAO メソッド パラメータに ``@In`` アノテーションを付けます。 DAO メソッド "
+"パラメータのタイプは、次のいずれかである必要があります。"
 
 # 897968b2e73a406ca98d328ed75dc9ec
 # b2c7135f61f045188597c401b6cbfd37
@@ -253,7 +253,7 @@ msgstr "このメソッドは次のように呼び出すことができます。
 # eec3c4b284ca4876b75a2821cd72ecc7
 #: ../../query/function.rst:99
 msgid "INOUT parameter"
-msgstr "INOUT パラメーター"
+msgstr "INOUT パラメータ"
 
 # 23e486b71c6448c394af69f40e29a3ae
 #: ../../query/function.rst:101
@@ -263,14 +263,14 @@ msgid ""
 " ``org.seasar.doma.jdbc.Reference`` and its type parameter must be one of "
 "the following:"
 msgstr ""
-"INOUT パラメーターを示すには、対応する DAO メソッド パラメーターに ``@InOut`` アノテーションを付けます。 DAO メソッド "
-"パラメーターの型は ``org.seasar.doma.jdbc.Reference`` である必要があり、その type "
-"パラメーターは次のいずれかである必要があります。"
+"INOUT パラメータを示すには、対応する DAO メソッド パラメータに ``@InOut`` アノテーションを付けます。 DAO メソッド "
+"パラメータの型は ``org.seasar.doma.jdbc.Reference`` である必要があり、その type "
+"パラメータは次のいずれかである必要があります。"
 
 # dc29422d2b1f45359562bb6d5a3533c0
 #: ../../query/function.rst:131
 msgid "OUT parameter"
-msgstr "OUT パラメーター"
+msgstr "OUT パラメータ"
 
 # 0c879a2bb0a944dbbfa30b92d68b616b
 #: ../../query/function.rst:133
@@ -280,9 +280,8 @@ msgid ""
 "``org.seasar.doma.jdbc.Reference`` and its type parameter must be one of the"
 " following:"
 msgstr ""
-"OUT パラメーターを示すには、対応する DAO メソッドパラメーターに ``@Out`` アノテーションを付けます。 DAO メソッド "
-"パラメーターの型は ``org.seasar.doma.jdbc.Reference`` である必要があり、その type "
-"パラメーターは次のいずれかである必要があります。"
+"OUT パラメータを示すには、対応する DAO メソッドパラメータに ``@Out`` アノテーションを付けます。 DAO メソッド パラメータの型は "
+"``org.seasar.doma.jdbc.Reference`` である必要があり、その type パラメータは次のいずれかである必要があります。"
 
 # fcc26d67810c4f8aa595c1cf67642d9c
 #: ../../query/function.rst:162
@@ -294,11 +293,11 @@ msgstr "カーソルのOUTパラメータもしくは結果セット"
 msgid ""
 "To indicate cursors or result sets, annotate corresponding DAO method "
 "parameters with the ``@ResultSet`` annotation."
-msgstr "カーソルまたは結果セットを示すには、対応する DAO メソッドのパラメーターに ``@ResultSet`` アノテーションを付けます。"
+msgstr "カーソルまたは結果セットを示すには、対応する DAO メソッドのパラメータに ``@ResultSet`` アノテーションを付けます。"
 
 # e582b030c27d448190419b2ca3d6027d
 #: ../../query/function.rst:167
 msgid ""
 "The DAO method parameter type must be ``java.util.List`` and its element "
 "type must be one of the following:"
-msgstr "DAO メソッドのパラメーターの型は ``java.util.List`` であり、その要素の型は次のいずれかである必要があります。"
+msgstr "DAO メソッドのパラメータの型は ``java.util.List`` であり、その要素の型は次のいずれかである必要があります。"

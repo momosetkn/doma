@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../query-builder/index.rst:3
 msgid "Query builders"
-msgstr "クエリビルダー"
+msgstr "クエリビルダ"
 
 #: ../../query-builder/index.rst:6
 msgid "Contents"
@@ -31,7 +31,7 @@ msgstr "コンテンツ"
 
 #: ../../query-builder/index.rst:8
 msgid "The package ``org.seasar.doma.jdbc.builder`` provides SQL builders."
-msgstr "パッケージ ``org.seasar.doma.jdbc.builder`` は SQL ビルダーを提供します。"
+msgstr "パッケージ ``org.seasar.doma.jdbc.builder`` は SQL ビルダを提供します。"
 
 #: ../../query-builder/index.rst:10
 msgid ""
@@ -39,7 +39,7 @@ msgid ""
 "consider to use the SQL builders in :ref:`dao-default-method`."
 msgstr ""
 ":doc:`../query/index` を使用して SQL ステートメントを構築するのが難しい場合は、:ref:`dao-default-"
-"method` で SQL ビルダーを使用することを検討してください。"
+"method` で SQL ビルダを使用することを検討してください。"
 
 #: ../../query-builder/index.rst:14
 msgid "Search"

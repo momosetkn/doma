@@ -24,7 +24,7 @@ msgstr ""
 # 540915798a26406e9b5c9bef5631a507
 #: ../../build.rst:3
 msgid "Building an application"
-msgstr "アプリケーションの構築"
+msgstr "アプリケーションのビルド"
 
 # 5308349489e14490b237e994728ce02f
 #: ../../build.rst:6
@@ -153,4 +153,4 @@ msgstr ""
 # dcd5fb4b029343e09ecca829f744942b
 #: ../../build.rst:61
 msgid "See build.gradle in the `getting-started`_ repository as an example."
-msgstr "例として、`getting-started`_ リポジトリの build.gradle を参照してください。"
+msgstr "例として、`getting-started`_ リポジトリの build.gradle.kts を参照してください。"

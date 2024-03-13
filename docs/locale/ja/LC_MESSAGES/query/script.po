@@ -135,7 +135,7 @@ msgid ""
 "\"META-INF/aaa/bbb/EmployeeDao/createTable.script\"."
 msgstr ""
 "RDBMS固有のスクリプトファイルが優先されます。例えば、PostgreSQLを使用する環境では、 \"META-"
-"INF/aaa/bbb/EmployeeDao/createTable.script\" ではなく !META-"
+"INF/aaa/bbb/EmployeeDao/createTable.script\" ではなく \"META-"
 "INF/aaa/bbb/EmployeeDao/createTable-postgres.script\" が選択されます。"
 
 # 36d3d7be08154198afe21dcec69aa659
@@ -161,7 +161,7 @@ msgstr ":ref:`sql-templates-in-annotations` も参照してください。"
 # 8a1290c16aa7484dab2fde638708dc6a
 #: ../../query/script.rst:85
 msgid "Delimiter"
-msgstr "デリミタ"
+msgstr "区切り文字"
 
 # fca84515546446c19e689a8d53c525d4
 #: ../../query/script.rst:87

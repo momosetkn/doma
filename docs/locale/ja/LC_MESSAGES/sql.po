@@ -611,7 +611,7 @@ msgid ""
 "Literal variable directives do not escape parameters for SQL injection. But "
 "the directives reject parameters containing the single quotation ``'``."
 msgstr ""
-"リテラル変数ディレクティブは、SQL インジェクションのパラメーターをエスケープしません。ただし、ディレクティブは一重引用符 ``'`` "
+"リテラル変数ディレクティブは、SQL インジェクションのパラメータをエスケープしません。ただし、ディレクティブは一重引用符 ``'`` "
 "を含むパラメータを拒否します。"
 
 # 4a15cb9bbcd3442689fb20ae14fd17d0
@@ -641,7 +641,7 @@ msgstr "埋め込み変数ディレクティブは、ORDER BY 句などの SQL �
 msgid ""
 "To prevent SQL injection vulnerabilities, embedded variable directives "
 "reject parameters containing the following values:"
-msgstr "SQL インジェクションの脆弱性を防ぐために、埋め込み変数ディレクティブは次の値を含むパラメーターを拒否します。"
+msgstr "SQL インジェクションの脆弱性を防ぐために、埋め込み変数ディレクティブは次の値を含むパラメータを拒否します。"
 
 # 3b13f342c4c047a2bba4673f48afe8dd
 #: ../../sql.rst:327

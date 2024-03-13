@@ -51,7 +51,7 @@ msgstr "JDKのインストール"
 # dad7e2f5c1af4891a97a80b39057bd2f
 #: ../../getting-started.rst:16
 msgid "To begin, JDK 17 is required."
-msgstr "JDK 17が必要です。"
+msgstr "このガイドを実行するには JDK 17 が必要です。"
 
 # 8498a1884c6d403cbca1bad90c346cca
 #: ../../getting-started.rst:20
@@ -62,7 +62,7 @@ msgid ""
 "doma-support>`."
 msgstr ""
 "DomaはJDK "
-"8以降と互換性があることに注意してください。サポートされているJDKのバージョンについては、該当するセクションを参照してください。:ref:`DomaはどのバージョンのJDKをサポートしていますか？<which-"
+"8以降と互換性があります。サポートされているJDKのバージョンについては、該当するセクションを参照してください。:ref:`DomaはどのバージョンのJDKをサポートしていますか？<which-"
 "version-of-jdk-does-doma-support>`。"
 
 # 54c9ff47ed5d40948226dcff8f857bbf
@@ -77,19 +77,19 @@ msgid ""
 "<https://github.com/domaframework/getting-started>`_ repository and navigate"
 " to the new directory using the following commands:"
 msgstr ""
-"サンプル プロジェクトを入手するには、次のコマンドを使用して、`getting-started "
+"サンプルプロジェクトを入手するには、次のコマンドを使用して、`getting-started "
 "<https://github.com/domaframework/getting-started>`_ "
 "リポジトリのクローンを作成し、新しいディレクトリに移動します。"
 
 # 1c67636737fe4a2dbdb6acbecbd25064
 #: ../../getting-started.rst:35
 msgid "Ensure successful project setup with:"
-msgstr "次のコマンドでプロジェクトのセットアップが成功したことを確認してください。"
+msgstr "次のコマンドが成功すれば、プロジェクトのセットアップは完了です。"
 
 # c36ea0ca635f4ebab0477f08be2ccfcc
 #: ../../getting-started.rst:43
 msgid "For Windows users, execute ``gradlew build``."
-msgstr "Windowsユーザーは、``gradlew build`` を実行してください。"
+msgstr "Windowsユーザーは、``./gradlew build`` の代わりに ``gradlew build`` を実行してください。"
 
 # 7a40814853ec43319c7565f0ef2740fe
 #: ../../getting-started.rst:46
@@ -104,14 +104,14 @@ msgid ""
 "being how SQL statements are stored: in files for java-8 and as Text Blocks "
 "in java-17."
 msgstr ""
-"入門サンプルは、java-8 サブプロジェクトと java-17 サブプロジェクトで構成される Gradle "
-"マルチプロジェクトです。どちらも似ていますが、主な違いは SQL ステートメントがどのように格納されるかです。Java-8 "
-"ではファイルに、Java-17 ではテキスト ブロックとして格納されます。"
+"このガイドで扱うサンプルプロジェクトは、java-8 プロジェクトと java-17 プロジェクトから構成される Gradle "
+"のマルチプロジェクトです。2つのプロジェクトは似ていますが、 SQL ステートメントがどのように格納されるかに違いがあります。SQL "
+"ステートメントは、Java-8 ではファイルに、Java-17 ではテキストブロックの文字列に格納されます。"
 
 # 6d03be6241cc401da9fc7db555815746
 #: ../../getting-started.rst:51
 msgid "This guide will focus on the java-17 project."
-msgstr "このガイドでは、java-17 プロジェクトに焦点を当てます。"
+msgstr "このガイドでは、java-17 プロジェクトに焦点を当てて説明を行います。"
 
 # 071875ac627a442a814ec91df6ceaf34
 #: ../../getting-started.rst:54
@@ -130,8 +130,8 @@ msgid ""
 "eclipse`` before importing the java-8 and java-17 projects into your "
 "workspace."
 msgstr ""
-"Eclipse 4.23.0でテストされています。 ``./gradlew eclipse`` "
-"を使用してEclipseプロジェクトファイルを生成し、java-8およびjava-17プロジェクトをワークスペースにインポートしてください。"
+"Eclipse 4.23.0でテストされています。``./gradlew eclipse`` "
+"を使用してEclipseプロジェクトファイルを生成し、java-8およびjava-17プロジェクトをワークスペースにインポートしてください。なお、その際、Gradleのプロジェクトとしてインポートするのではなく通常のプロジェクトとしてインポートしてください。"
 
 # fd9634fca782410e9cc5fc25aa6a6e10
 #: ../../getting-started.rst:64
@@ -139,8 +139,8 @@ msgid ""
 "If you want to store SQL statements in files, `Doma Tools "
 "<https://github.com/domaframework/doma-tools>`_ can help you."
 msgstr ""
-"SQL文をファイルに格納したい場合は、`Doma Tools <https://github.com/domaframework/doma-"
-"tools>`_ が役立ちます。"
+"SQL文をファイルで管理する場合、`Doma Tools <https://github.com/domaframework/doma-tools>`_"
+" が役立つかもしれません。"
 
 # 72d5fbc61f4c4209849b71e4fb81156f
 #: ../../getting-started.rst:68
@@ -153,7 +153,7 @@ msgid ""
 "Tested with IntelliJ IDEA Community 2023.3.4. Import the getting-started "
 "project as a Gradle project."
 msgstr ""
-"IntelliJ IDEA Community 2023.3.4 でテストされています。開始プロジェクトを Gradle "
+"IntelliJ IDEA Community 2023.3.4 でテストされています。プロジェクトを Gradle "
 "プロジェクトとしてインポートしてください。"
 
 # 549923d3f11d40f28d0ebc234cfe1856
@@ -162,8 +162,8 @@ msgid ""
 "If you use IntelliJ IDEA Ultimate Edition, `Doma Support "
 "<https://plugins.jetbrains.com/plugin/7615-doma-support>`_ can help you."
 msgstr ""
-"IntelliJ IDEA Ultimate Edition を使用している場合は、`Doma Support "
-"<https://plugins.jetbrains.com/plugin/7615-doma-support>`_ が役立ちます。"
+"IntelliJ IDEA Ultimate Edition を使用している場合、`Doma Support "
+"<https://plugins.jetbrains.com/plugin/7615-doma-support>`_ が役立つかもしれません。"
 
 # 2b748f69187d41bcb76a8de9962ef2b4
 #: ../../getting-started.rst:79
@@ -183,22 +183,23 @@ msgid ""
 "supporting various types of associations (one-to-many, many-to-one, one-to-"
 "one)."
 msgstr ""
-"DSL スタイルは、タイプ セーフな SQL ステートメントを構築するために Criteria API "
-"を利用しており、リフレクションが不要であることや、さまざまなタイプの関連付け (1 対多、多対 1、1 対 1) "
-"がサポートされているなど、いくつかの利点があります。"
+"DSL スタイルは、タイプ セーフな SQL ステートメントを構築するために Criteria API を利用します。Criteria API "
+"は、リフレクションを使わない、さまざまなタイプの関連付け (1 対多、多対 1、1 対 1) をサポートする、などいくつかの利点があります。"
 
 # b0dcdd9ee43a424aa7969b89f505116e
 #: ../../getting-started.rst:86
 msgid ""
 "The DAO style, on the other hand, maps SQL statements to Java interface "
 "methods."
-msgstr "一方、DAO スタイルは、SQL ステートメントを Java インターフェイス メソッドにマップします。"
+msgstr ""
+"一方、DAO スタイルは、SQL ステートメントを Java "
+"インターフェイスのメソッドにマップします。こちらは、SQLの特長を最大限に活かす方法と言えます。"
 
 # 08b81e3aa4e64be59a2631eab8c056a3
 #: ../../getting-started.rst:88
 msgid ""
 "It's recommended to use the DSL style due to the Criteria API's advantages."
-msgstr "Criteria API には利点があるため、DSL スタイルを使用することをお勧めします。"
+msgstr "アプリケーションの特性に応じてスタイルを選択することをお勧めします。2つのスタイルは混在させることもできます。"
 
 # e900296bc9db4cb99359a9374a11eaa0
 #: ../../getting-started.rst:91
@@ -233,8 +234,8 @@ msgid ""
 "You'll use a metamodel class, like ``Employee_`` for ``Employee```, which is"
 " auto-generated through annotation processing."
 msgstr ""
-"``Employee``` に対して ``Employee_`` というメタモデル "
-"クラスを使用します。これは、アノテーション処理を通じて自動生成されます。"
+"クエリを組み立てるために ``Employee`` エンティティクラスのメタモデルクラスである ``Employee_`` "
+"を使用します。メタモデルクラスは、アノテーション処理を通じて自動生成されるクラスです。"
 
 # b83f2baea965473db6eca62523e63884
 #: ../../getting-started.rst:110
@@ -307,7 +308,7 @@ msgid ""
 "In the DAO style, for issuing a SELECT statement to retrieve Java objects, "
 "use the ``@Sql`` annotation with Text Blocks for SQL templates:"
 msgstr ""
-"DAO スタイルでは、SELECT ステートメントを発行して Java オブジェクトを取得するには、SQL テンプレートのテキスト ブロックで "
+"DAO スタイルで SELECT ステートメントを発行して Java オブジェクトを取得するには、SQL テンプレートのテキストブロックで "
 "``@Sql`` アノテーションを使用します。"
 
 # 9e40c58567b348adace9b6555ff99f54

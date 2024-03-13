@@ -102,8 +102,8 @@ msgid ""
 " of the generated implementation class is ``EmployeeDaoBean``. The default "
 "value is ``Impl``."
 msgstr ""
-"``@Dao``` アノテーションが付けられたインターフェースの生成された実装クラスが持つ名前の接尾辞。この値が ``Bean`` で、 "
-"``@Dao`` アノテーションが付けられたインターフェースの単純名が ``EmployeeDao`` である場合、生成される実装クラスの単純名は "
+"``@Dao`` アノテーションが付けられたインターフェースの生成された実装クラスが持つ名前の接尾辞。この値が ``Bean`` で、 ``@Dao``"
+" アノテーションが付けられたインターフェースの単純名が ``EmployeeDao`` である場合、生成される実装クラスの単純名は "
 "``EmployeeDaoBean`` になります。デフォルト値は ``Impl`` です。"
 
 # 9f85ade90adb4fe58e14cb742f68e926

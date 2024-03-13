@@ -1487,7 +1487,7 @@ msgstr "ちょっとした便利機能"
 # 4835aedbe7ae4ae8bbe2d33fdbb15e80
 #: ../../criteria-api.rst:1799
 msgid "Execution in Dao (Entityql, NativeSql)"
-msgstr "Daoでの実行（Entityql、NativeSql）"
+msgstr "DAOでの実行（Entityql、NativeSql）"
 
 # cb780822d162486c8038381090678851
 #: ../../criteria-api.rst:1801
@@ -1496,7 +1496,7 @@ msgid ""
 "get a ``config`` object, call ``Config.get(this)`` in the default method as "
 "follows:"
 msgstr ""
-"Dao インターフェースのデフォルトのメソッドで DSL を実行すると便利です。 ``config`` "
+"DAO インターフェースのデフォルトのメソッドで DSL を実行すると便利です。 ``config`` "
 "オブジェクトを取得するには、次のようにデフォルトのメソッドで ``Config.get(this)`` を呼び出します。"
 
 # 4617ed0c6d3545bf95d9c0fbc19341de

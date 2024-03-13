@@ -34,7 +34,7 @@ msgstr "コンテンツ"
 # fde06cbd7a9948389a1038e00e98a72c
 #: ../../query/insert.rst:8
 msgid "Annotate with ``@Insert`` to Dao method for execute insert."
-msgstr "追加を実行するためのDaoメソッドに ``@Insert`` アノテーションを付けます。"
+msgstr "追加を実行するためのDAOメソッドに ``@Insert`` アノテーションを付けます。"
 
 # 81644f370baf4685adffd7e6839a26a0
 #: ../../query/insert.rst:21

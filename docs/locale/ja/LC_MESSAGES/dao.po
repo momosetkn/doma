@@ -24,7 +24,7 @@ msgstr ""
 # e2a91c5bb3b3476d8fdfe8aac75e7ddf
 #: ../../dao.rst:3
 msgid "Dao interfaces"
-msgstr "Daoインターフェース"
+msgstr "DAOインターフェース"
 
 # 40d1b39894bb4ab7a7a5a5c478fcb784
 #: ../../dao.rst:6
@@ -34,12 +34,12 @@ msgstr "コンテンツ"
 # 1e3633e467684ff8a801df530816ca08
 #: ../../dao.rst:8
 msgid "Data Access Object (Dao) is interface for access to database."
-msgstr "Data Access Object (Dao) は、データベースにアクセスするためのインターフェイスです。"
+msgstr "Data Access Object (DAO) は、データベースにアクセスするためのインターフェイスです。"
 
 # 6e6443924c074f838a4d247bc4713638
 #: ../../dao.rst:11
 msgid "Dao definition"
-msgstr "Dao interface の定義"
+msgstr "DAO interface の定義"
 
 # 737bb3305b244f2c8c90d5e03929f187
 #: ../../dao.rst:13
@@ -49,7 +49,7 @@ msgstr "Dao は ``@Dao`` アノテーションが付けられたインターフ�
 # 043fef5246d546e28f7db240e470ff95
 #: ../../dao.rst:15
 msgid "Class implemented dao interface is generated in compile time by apt."
-msgstr "クラス実装された Dao インターフェイスは、コンパイル時に アノテーションプロセッサー によって生成されます。"
+msgstr "クラス実装された DAO インターフェイスは、コンパイル時に アノテーションプロセッサー によって生成されます。"
 
 # fd172f3f7df2470f9c352a0700490e8a
 #: ../../dao.rst:18
@@ -85,7 +85,7 @@ msgid ""
 "You can get ``Config`` instance associated dao instance if you call "
 "``Config.get`` with argument dao instance."
 msgstr ""
-"Dao インスタンスを引数として ``Config.get`` を呼び出すと、Dao インスタンスに関連付けられた ``Config`` "
+"DAO インスタンスを引数として ``Config.get`` を呼び出すと、DAO インスタンスに関連付けられた ``Config`` "
 "インスタンスを取得できます。"
 
 # 3fedd81c3eab42d487411dc5edbac605
@@ -102,7 +102,7 @@ msgid ""
 "implementation class by DI container."
 msgstr ""
 "実装クラスはコンパイル時に アノテーションプロセッサー によって生成されます。実装クラスはインスタンス化して使用できますが、``Config`` が "
-"DI コンテナで管理されている場合はDI コンテナでDaoの実装クラスをインスタンス化するように制御する必要があります。"
+"DI コンテナで管理されている場合はDI コンテナでDAOの実装クラスをインスタンス化するように制御する必要があります。"
 
 # e6a2278997ca4fa7af615d595abf572a
 #: ../../dao.rst:59
@@ -135,5 +135,5 @@ msgid ""
 "Dao interface is no need to define as one to one with entity class. One dao "
 "interface can handle more than one entity classes."
 msgstr ""
-"Daoインターフェースはエンティティクラスと1対1で定義する必要はありません。 1 つの Dao インターフェイスで複数のエンティティ "
+"DAOインターフェースはエンティティクラスと1対1で定義する必要はありません。 1 つの DAO インターフェイスで複数のエンティティ "
 "クラスを処理できます。"

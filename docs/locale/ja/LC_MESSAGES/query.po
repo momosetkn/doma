@@ -36,7 +36,7 @@ msgstr "コンテンツ"
 
 #: ../../query/batch-delete.rst:8
 msgid "Annotate with ``@BatchDelete`` to Dao method for execute batch delete."
-msgstr "Daoメソッドに ``@BatchDelete`` アノテーションを付けて一括削除を実行します。"
+msgstr "DAOメソッドに ``@BatchDelete`` アノテーションを付けて一括削除を実行します。"
 
 #: ../../query/batch-delete.rst:19
 msgid ""
@@ -319,7 +319,7 @@ msgstr "一括追加"
 
 #: ../../query/batch-insert.rst:8
 msgid "Annotate with ``@BatchInsert`` to Dao method for execute batch insert."
-msgstr "Daoメソッドに ``@BatchInsert`` アノテーションを付けて一括追加を実行します。"
+msgstr "DAOメソッドに ``@BatchInsert`` アノテーションを付けて一括追加を実行します。"
 
 #: ../../query/batch-insert.rst:21
 msgid ""
@@ -807,7 +807,7 @@ msgstr "削除"
 
 #: ../../query/delete.rst:8
 msgid "Annotate with ``@Delete`` to Dao method for execute delete."
-msgstr "削除を実行するにはDaoメソッドに ``@Delete`` アノテーションを指定します。"
+msgstr "削除を実行するにはDAOメソッドに ``@Delete`` アノテーションを指定します。"
 
 #: ../../query/delete.rst:18
 msgid ""
@@ -1227,17 +1227,17 @@ msgstr ""
 
 #: ../../query/function.rst:60 ../../query/procedure.rst:36
 msgid "Parameters"
-msgstr "パラメーター"
+msgstr "パラメータ"
 
 #: ../../query/function.rst:62
 msgid ""
 "The order of stored function's parameters must correspond with the order of "
 "DAO method parameters."
-msgstr "ストアドファンクションのパラメーターの順序は、DAO メソッドのパラメーターの順序と一致する必要があります。"
+msgstr "ストアドファンクションのパラメータの順序は、DAO メソッドのパラメータの順序と一致する必要があります。"
 
 #: ../../query/function.rst:64 ../../query/procedure.rst:40
 msgid "All parameters must be annotated with one of following annotations:"
-msgstr "すべてのパラメーターには、次のいずれかの注釈を付ける必要があります。"
+msgstr "すべてのパラメータには、次のいずれかの注釈を付ける必要があります。"
 
 #: ../../query/function.rst:66 ../../query/procedure.rst:42
 msgid "@In"
@@ -1257,7 +1257,7 @@ msgstr "@ResultSet"
 
 #: ../../query/function.rst:72 ../../query/procedure.rst:48
 msgid "IN parameter"
-msgstr "IN パラメーター"
+msgstr "IN パラメータ"
 
 #: ../../query/function.rst:74 ../../query/procedure.rst:50
 msgid ""
@@ -1265,8 +1265,8 @@ msgid ""
 " the ``@In`` annotation. The type of the DAO method parameter must be one of"
 " the following:"
 msgstr ""
-"IN パラメーターを示すには、対応する DAO メソッド パラメータに ``@In`` アノテーションを付けます。 DAO メソッド "
-"パラメーターのタイプは、次のいずれかである必要があります。"
+"IN パラメータを示すには、対応する DAO メソッド パラメータに ``@In`` アノテーションを付けます。 DAO メソッド "
+"パラメータのタイプは、次のいずれかである必要があります。"
 
 #: ../../query/function.rst:84 ../../query/function.rst:113
 #: ../../query/function.rst:145 ../../query/function.rst:179
@@ -1284,7 +1284,7 @@ msgstr "このメソッドは次のように呼び出すことができます。
 
 #: ../../query/function.rst:99 ../../query/procedure.rst:75
 msgid "INOUT parameter"
-msgstr "INOUT パラメーター"
+msgstr "INOUT パラメータ"
 
 #: ../../query/function.rst:101 ../../query/procedure.rst:77
 msgid ""
@@ -1293,13 +1293,13 @@ msgid ""
 " ``org.seasar.doma.jdbc.Reference`` and its type parameter must be one of "
 "the following:"
 msgstr ""
-"INOUT パラメーターを示すには、対応する DAO メソッド パラメーターに ``@InOut`` アノテーションを付けます。 DAO メソッド "
-"パラメーターの型は ``org.seasar.doma.jdbc.Reference`` である必要があり、その type "
-"パラメーターは次のいずれかである必要があります。"
+"INOUT パラメータを示すには、対応する DAO メソッド パラメータに ``@InOut`` アノテーションを付けます。 DAO メソッド "
+"パラメータの型は ``org.seasar.doma.jdbc.Reference`` である必要があり、その type "
+"パラメータは次のいずれかである必要があります。"
 
 #: ../../query/function.rst:131 ../../query/procedure.rst:107
 msgid "OUT parameter"
-msgstr "OUT パラメーター"
+msgstr "OUT パラメータ"
 
 #: ../../query/function.rst:133 ../../query/procedure.rst:109
 msgid ""
@@ -1308,9 +1308,8 @@ msgid ""
 "``org.seasar.doma.jdbc.Reference`` and its type parameter must be one of the"
 " following:"
 msgstr ""
-"OUT パラメーターを示すには、対応する DAO メソッドパラメーターに ``@Out`` アノテーションを付けます。 DAO メソッド "
-"パラメーターの型は ``org.seasar.doma.jdbc.Reference`` である必要があり、その type "
-"パラメーターは次のいずれかである必要があります。"
+"OUT パラメータを示すには、対応する DAO メソッドパラメータに ``@Out`` アノテーションを付けます。 DAO メソッド パラメータの型は "
+"``org.seasar.doma.jdbc.Reference`` である必要があり、その type パラメータは次のいずれかである必要があります。"
 
 #: ../../query/function.rst:162 ../../query/procedure.rst:138
 msgid "Cursor or result set"
@@ -1320,13 +1319,13 @@ msgstr "カーソルのOUTパラメータもしくは結果セット"
 msgid ""
 "To indicate cursors or result sets, annotate corresponding DAO method "
 "parameters with the ``@ResultSet`` annotation."
-msgstr "カーソルまたは結果セットを示すには、対応する DAO メソッドのパラメーターに ``@ResultSet`` アノテーションを付けます。"
+msgstr "カーソルまたは結果セットを示すには、対応する DAO メソッドのパラメータに ``@ResultSet`` アノテーションを付けます。"
 
 #: ../../query/function.rst:167 ../../query/procedure.rst:143
 msgid ""
 "The DAO method parameter type must be ``java.util.List`` and its element "
 "type must be one of the following:"
-msgstr "DAO メソッドのパラメーターの型は ``java.util.List`` であり、その要素の型は次のいずれかである必要があります。"
+msgstr "DAO メソッドのパラメータの型は ``java.util.List`` であり、その要素の型は次のいずれかである必要があります。"
 
 #: ../../query/index.rst:3
 msgid "Queries"
@@ -1338,7 +1337,7 @@ msgstr "追加"
 
 #: ../../query/insert.rst:8
 msgid "Annotate with ``@Insert`` to Dao method for execute insert."
-msgstr "追加を実行するためのDaoメソッドに ``@Insert`` アノテーションを付けます。"
+msgstr "追加を実行するためのDAOメソッドに ``@Insert`` アノテーションを付けます。"
 
 #: ../../query/insert.rst:21
 msgid ""
@@ -1525,13 +1524,13 @@ msgstr "``SqlLogType.RAW`` はバインドパラメータ付きの SQL をログ
 
 #: ../../query/procedure.rst:3
 msgid "Stored procedure"
-msgstr "ストアドプロシージャー"
+msgstr "ストアドプロシージャ"
 
 #: ../../query/procedure.rst:8
 msgid ""
 "To call stored procedures, you must annotate DAO methods with the "
 "``@Procedure`` annotation:"
-msgstr "ストアド プロシージャーを呼び出すには、DAO メソッドに ``@Procedure`` アノテーションを付ける必要があります。"
+msgstr "ストアド プロシージャを呼び出すには、DAO メソッドに ``@Procedure`` アノテーションを付ける必要があります。"
 
 #: ../../query/procedure.rst:20
 msgid "Return Type"
@@ -1543,7 +1542,7 @@ msgstr "戻り値の型は ``void`` でなければなりません。"
 
 #: ../../query/procedure.rst:25
 msgid "Procedure name"
-msgstr "プロシージャー名"
+msgstr "プロシージャ名"
 
 #: ../../query/procedure.rst:27
 msgid ""
@@ -1551,14 +1550,14 @@ msgid ""
 " override it, you can specify the value to the ``@Procedure``'s ``name`` "
 "element:"
 msgstr ""
-"アノテーションが付けられたメソッド名は、デフォルトでプロシージャー名として認識されます。これをオーバーライドするには、 ``@Procedure`` の"
-" ``name`` 要素に値を指定します。"
+"アノテーションが付けられたメソッド名は、デフォルトでプロシージャ名として認識されます。これをオーバーライドするには、 ``@Procedure`` の "
+"``name`` 要素に値を指定します。"
 
 #: ../../query/procedure.rst:38
 msgid ""
 "The order of stored procedure's parameters must correspond with the order of"
 " DAO method parameters."
-msgstr "ストアド プロシージャーのパラメーターの順序は、DAO メソッドのパラメーターの順序と一致する必要があります。"
+msgstr "ストアド プロシージャのパラメータの順序は、DAO メソッドのパラメータの順序と一致する必要があります。"
 
 #: ../../query/script.rst:3
 msgid "Script"
@@ -1672,7 +1671,7 @@ msgstr ":ref:`sql-templates-in-annotations` も参照してください。"
 
 #: ../../query/script.rst:85
 msgid "Delimiter"
-msgstr "デリミタ"
+msgstr "区切り文字"
 
 #: ../../query/script.rst:87
 msgid "There are two kinds of delimiters in scripts:"
@@ -1854,7 +1853,7 @@ msgstr "検索"
 
 #: ../../query/select.rst:8
 msgid "Annotate with ``@Select`` to Dao method for execute search."
-msgstr "検索を実行するDaoメソッドに ``@Select`` アノテーションを付けます。"
+msgstr "検索を実行するDAOメソッドに ``@Select`` アノテーションを付けます。"
 
 #: ../../query/select.rst:19
 msgid ""
@@ -2050,7 +2049,7 @@ msgstr ""
 
 #: ../../query/select.rst:185
 msgid "Type parameter ``RESULT`` must match to Dao method return value."
-msgstr "型パラメータ ``RESULT`` は Dao メソッドの戻り値と一致する必要があります。"
+msgstr "型パラメータ ``RESULT`` は DAO メソッドの戻り値と一致する必要があります。"
 
 #: ../../query/select.rst:187 ../../query/select.rst:218
 #: ../../query/select.rst:273
@@ -2069,11 +2068,11 @@ msgid ""
 "following type at property within ``Stream``."
 msgstr ""
 "メソッドの戻り値に ``java.util.stream.Stream`` を定義します。 ``Stream`` "
-"ので型パラメーターには以下のものを指定できます。"
+"ので型パラメータには以下のものを指定できます。"
 
 #: ../../query/select.rst:199 ../../query/select.rst:266
 msgid "Either :doc:`../basic` or :doc:`../domain` within java.util.Optional"
-msgstr ":doc:`../basic` または :doc:`../domain` を型パラメーターとする java.util.Optional"
+msgstr ":doc:`../basic` または :doc:`../domain` を型パラメータとする java.util.Optional"
 
 #: ../../query/select.rst:209
 msgid "Below is a caller."
@@ -2096,7 +2095,7 @@ msgid ""
 "release the resource. Doma display warning message at Dao method for "
 "attention. You specify ``@Suppress`` below for suppress warning."
 msgstr ""
-"戻り値を返すのはリソースの解放忘れの危険があるため、特別な理由がない限りFunctionへStreamを渡す方法を検討してください。 Domaは、Dao"
+"戻り値を返すのはリソースの解放忘れの危険があるため、特別な理由がない限りFunctionへStreamを渡す方法を検討してください。 Domaは、DAO"
 " メソッドに警告メッセージを表示して注意を促します。警告を抑制するには以下に ``@Suppress`` を指定します。"
 
 #: ../../query/select.rst:240
@@ -2133,7 +2132,7 @@ msgstr ""
 
 #: ../../query/select.rst:271
 msgid "Type parameter ``RESULT`` must match Dao method return value."
-msgstr "型パラメータ ``RESULT`` はDaoのメソッドの戻り値に合わせなければいけません。"
+msgstr "型パラメータ ``RESULT`` はDAOのメソッドの戻り値に合わせなければいけません。"
 
 #: ../../query/select.rst:277
 msgid ""
@@ -2167,7 +2166,7 @@ msgstr ""
 
 #: ../../query/select.rst:288
 msgid "You define ``SelectOptions`` as Dao method parameter."
-msgstr "``SelectOptions`` は、Daoのメソッドのパラメータとして定義します。"
+msgstr "``SelectOptions`` は、DAOのメソッドのパラメータとして定義します。"
 
 #: ../../query/select.rst:299
 msgid "You can get ``SelectOptions`` instance by static ``get`` method."
@@ -2184,7 +2183,7 @@ msgid ""
 "instance to Dao method."
 msgstr ""
 "``SelectOptions`` の ``offset`` メソッドで開始位置、 ``limit`` メソッドで取得件数を指定し、\n"
-"``SelectOptions`` のインスタンスをDaoのメソッドに渡します。"
+"``SelectOptions`` のインスタンスをDAOのメソッドに渡します。"
 
 #: ../../query/select.rst:317
 msgid ""
@@ -2249,7 +2248,7 @@ msgid ""
 "within ``SelectOptions``, and pass the SelectOptions instance to Dao method."
 msgstr ""
 "``SelectOptions`` の ``forUpdate`` メソッドで悲観的排他制御を行うことを示し、\n"
-"SelectOptionsのインスタンスをDaoのメソッドに渡します。"
+"SelectOptionsのインスタンスをDAOのメソッドに渡します。"
 
 #: ../../query/select.rst:355
 msgid ""
@@ -2343,7 +2342,7 @@ msgid ""
 " after calling Dao method. The ``getCount`` method is return ``-1`` if you "
 "do not execute ``count`` method before calling method."
 msgstr ""
-"集計件数は、Daoのメソッド呼出し後に ``SelectOptions`` の ``getCount`` メソッドを使って取得します。\n"
+"集計件数は、DAOのメソッド呼出し後に ``SelectOptions`` の ``getCount`` メソッドを使って取得します。\n"
 "メソッド呼び出しの前に ``count`` メソッドを実行していない場合、 ``getCount`` メソッドは ``-1`` を返します。"
 
 #: ../../query/select.rst:409
@@ -2521,7 +2520,7 @@ msgstr "更新"
 
 #: ../../query/update.rst:8
 msgid "Annotate with ``@Update`` to Dao method for execute update."
-msgstr "Daoメソッドに ``@Update`` アノテーションを付けて更新を実行します。"
+msgstr "DAOメソッドに ``@Update`` アノテーションを付けて更新を実行します。"
 
 #: ../../query/update.rst:21
 msgid ""

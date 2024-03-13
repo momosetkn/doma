@@ -34,7 +34,7 @@ msgstr "コンテンツ"
 # 8b110a88af054b7481c78163b3c55f94
 #: ../../query/update.rst:8
 msgid "Annotate with ``@Update`` to Dao method for execute update."
-msgstr "Daoメソッドに ``@Update`` アノテーションを付けて更新を実行します。"
+msgstr "DAOメソッドに ``@Update`` アノテーションを付けて更新を実行します。"
 
 # c08d5a6b69f54b7c8f310ada3fc400ea
 #: ../../query/update.rst:21

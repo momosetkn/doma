@@ -34,7 +34,7 @@ msgstr "コンテンツ"
 # d9afa595a58b413bae7b777ab4c92f69
 #: ../../query/delete.rst:8
 msgid "Annotate with ``@Delete`` to Dao method for execute delete."
-msgstr "削除を実行するにはDaoメソッドに ``@Delete`` アノテーションを指定します。"
+msgstr "削除を実行するにはDAOメソッドに ``@Delete`` アノテーションを指定します。"
 
 # 6bb42a96965745ac97eca46e7d0ff06c
 #: ../../query/delete.rst:18

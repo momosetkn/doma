@@ -56,12 +56,13 @@ msgstr "アノテーション処理とは何ですか?"
 msgid ""
 "Annotation processing, that was introduced in Java 6, allows us to validate "
 "and generate source code at compile time."
-msgstr "Java 6 で導入されたアノテーション処理を使用すると、コンパイル時にソース コードを検証して生成できます。"
+msgstr ""
+"Javaのアノテーション処理は、コンパイル時にアノテーションを解析し、それらを使用してコードを生成したり、コンパイル時のチェックを行ったりするためのメカニズムです。"
 
 # cd373ddbc8a244acad847ea26170ee9d
 #: ../../faq.rst:22
 msgid "We use annotation processing for the following purposes:"
-msgstr "アノテーション処理は次の目的で使用されます。"
+msgstr "Domaにおいては、アノテーション処理は次の目的で使用されます。"
 
 # e4f2b52a597c4b42a3546ebf5e195d88
 #: ../../faq.rst:24
@@ -134,21 +135,25 @@ msgstr "どのIDEをお勧めしますか?"
 # 78d54a02847849d691addae6ce41f0c9
 #: ../../faq.rst:56
 msgid "We recommend Eclipse and IntelliJ IDEA."
-msgstr "Eclipse と IntelliJ IDEA で動作しますが、IntelliJ IDEA をお勧めします。"
+msgstr ""
+"Doma は、Eclipse と IntelliJ IDEA で動作しますが、どちらかと言えば IntelliJ IDEA "
+"をお勧めします。Eclipseのアノテーション処理はEclipseの独自実装であり、実行環境で利用するJREと挙動が異なる可能性があるためです。"
 
 # 6b491bd73faa432b870de4ddd94cb82c
 #: ../../faq.rst:59
 msgid ""
 "In Eclipse, the jar file of Doma is added to the Java Build Path but "
 "annotation processing doesn't run."
-msgstr "Eclipseでは、DomaのjarファイルがJavaのビルドパスに追加されますが、アノテーション処理が動作しません。"
+msgstr "Eclipseでアノテーション処理が動作しません。"
 
 # b5cbc7df5d8348f8933cac846270d67b
 #: ../../faq.rst:61
 msgid ""
 "Enable annotation processing and add the jar file to the Factory Path too. "
 "See also :ref:`eclipse-build`."
-msgstr "注釈処理を有効にし、jar ファイルをファクトリ パスにも追加します。 :ref:`eclipse-build` も参照してください。"
+msgstr ""
+"jar ファイルをクラスパスだけでなくファクトリパスにも追加し、アノテーション処理を有効化します。 :ref:`eclipse-build` "
+"も参照してください。"
 
 # 6097bb41cada4e21bcd7131c47d66140
 #: ../../faq.rst:65
@@ -256,7 +261,7 @@ msgstr "UPDATE"
 # 542701c3ec404ac698d414bfff0bbe1f
 #: ../../faq.rst:112
 msgid "Stored procedure call"
-msgstr "ストアド プロシージャ呼び出し"
+msgstr "ストアドプロシージャ呼び出し"
 
 # 3100e8752b8b4db4af1377c5a3afb7ad
 #: ../../faq.rst:113
@@ -266,12 +271,12 @@ msgstr "ストアドファンクションコール"
 # 1dd45ab84d324adb9ae05d7c646cb362
 #: ../../faq.rst:116
 msgid "How are dynamic SQL statements executed?"
-msgstr "動的 SQL ステートメントはどのように実行されますか?"
+msgstr "動的 SQL ステートメントの生成はサポートされますか？"
 
 # 689a5d8ec9434a5c82fea124b322d2b8
 #: ../../faq.rst:118
 msgid "There are two ways:"
-msgstr "次の 2 つの方法があります。"
+msgstr "はい、次の 2 つの方法でサポートします。"
 
 # f59b7eae04544935a511c4f287694581
 #: ../../faq.rst:120
