@@ -39,12 +39,12 @@ msgstr "Data Access Object (DAO) は、データベースにアクセスする�
 # 6e6443924c074f838a4d247bc4713638
 #: ../../dao.rst:11
 msgid "Dao definition"
-msgstr "DAO interface の定義"
+msgstr "DAO インターフェース の定義"
 
 # 737bb3305b244f2c8c90d5e03929f187
 #: ../../dao.rst:13
 msgid "Dao is defined as interface annotated ``@Dao``."
-msgstr "Dao は ``@Dao`` アノテーションが付けられたインターフェースとして定義されます。"
+msgstr "DAO は ``@Dao`` アノテーションが付けられたインターフェースとして定義されます。"
 
 # 043fef5246d546e28f7db240e470ff95
 #: ../../dao.rst:15

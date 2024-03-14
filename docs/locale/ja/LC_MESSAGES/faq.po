@@ -130,7 +130,7 @@ msgstr "JDK 8以降です。"
 # b14f7560752244b5a21ab2fd423b5d29
 #: ../../faq.rst:54
 msgid "Which IDE do you recommend?"
-msgstr "どのIDEをお勧めしますか?"
+msgstr "どのIDEがおすすめですか?"
 
 # efbfa7faad084932884c962a7d2867b5
 #: ../../faq.rst:56
