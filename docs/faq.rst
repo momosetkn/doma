@@ -13,16 +13,16 @@ What does "Doma" mean?
 
 The name "Doma" comes from the "Dao Oriented database MApping framework".
 
-What is annotation processing?
+What is annotation processing? 
 ------------------------------
 
-Annotation processing, that was introduced in Java 6,
-allows us to validate and generate source code at compile time.
+Annotation processing is a mechanism for parsing annotations 
+at compile time and using them to generate code or perform compile-time checks.
 
 We use annotation processing for the following purposes:
 
-- Generating meta classes from the classes annotated with ``@Entity`` and ``@Domain``.
-- Generating implementation classes of the interfaces annotated with ``@Dao``.
+- Generating meta-classes from classes annotated with ``@Entity`` and ``@Domain``.
+- Generating implementation classes for interfaces annotated with ``@Dao``.
 - Validating SQL templates.
 
 Runtime environment
@@ -53,26 +53,39 @@ JDK 8 and above.
 Which IDE do you recommend?
 ---------------------------
 
-We recommend Eclipse and IntelliJ IDEA.
+Doma works with both Eclipse and IntelliJ IDEA, but IntelliJ IDEA is recommended. 
+This is because Eclipse's annotation processing may behave differently from the JRE used in the production environment.
 
-In Eclipse, the jar file of Doma is added to the Java Build Path but annotation processing doesn't run.
--------------------------------------------------------------------------------------------------------
+Which build tool do you recommend?
+----------------------------------
 
-Enable annotation processing and add the jar file to the Factory Path too.
-See also :ref:`eclipse-build`.
+Gradle and Maven are both supported.
 
-Where are generated source files in annotation processing?
-----------------------------------------------------------
+Where are the files output by annotation processing?
+----------------------------------------------------
 
-In Eclipse, they are found in the .apt_generated directory.
+Gradle
+~~~~~~~
 
-In Eclipse, where is the .apt_generated directory?
---------------------------------------------------
+Check `build/generated/sources/annotationProcessor`.
 
-You can find it in the Navigator view.
+Maven
+~~~~~~~
 
-I get the message that the sql file is not found, but it exists.
-----------------------------------------------------------------
+Check `target/generated-sources/annotations`.
+
+Eclipse
+~~~~~~~
+
+Check the output destination directory in the annotation processing settings.
+
+IntelliJ IDEA
+~~~~~~~~~~~~~
+
+See the above Gradle and Maven sections.
+
+I get the message that the sql file is not found, but it exists. Why?
+-----------------------------------------------------------------------------
 
 You may get the following message, though the file exists:
 
@@ -80,20 +93,15 @@ You may get the following message, though the file exists:
 
   [DOMA4019] The file[META-INF/../select.sql] is not found from the classpath
 
-When you use Eclipse, check that the location of the output folder of resources is
-same as the one for the class files in the Java Build Path dialog.
-You can avoid this trouble by generating eclipse setting files automatically.
-See also :ref:`eclipse-build`.
+You can avoid this error by configuring recommended settings for each build tool and IDE.
 
-When you use Gradle, check that the resource files are copied to ``compileJava.destinationDir``
-in advance of the compileJava task.
-You can avoid this trouble by using the Doma Compile Plugin.
-See also :ref:`build-with-gradle`.
+See :doc:`build`.
 
-Do you provide any code generation tools?
------------------------------------------
+Do you provide a tool to generate Java code from a database schema?
+-------------------------------------------------------------------
 
 Yes.
+
 We have the `Doma CodeGen plugin <https://github.com/domaframework/doma-codegen-plugin>`_
 that generates Java and SQL files from Database.
 
@@ -112,8 +120,9 @@ Yes, Doma generates the following statements:
 - Stored procedure call
 - Stored function call
 
-How are dynamic SQL statements executed?
-----------------------------------------
+
+Is the generation of dynamic SQL statements supported?
+------------------------------------------------------
 
 There are two ways:
 
@@ -122,7 +131,7 @@ There are two ways:
 
 See :doc:`sql` and :doc:`criteria-api` for detail information.
 
-Does Doma map database relationships such as one-to-one and one-to-many to Java objects?
+Does Doma support fetching relationships like one-to-one or one-to-many?
 ----------------------------------------------------------------------------------------
 
 Yes.
