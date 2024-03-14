@@ -772,7 +772,7 @@ msgstr "文字列が ``null`` でなく、長さが ``0`` でなく、文字列�
 msgid ""
 "These functions are correspond to the methods of "
 "``org.seasar.doma.expr.ExpressionFunctions``."
-msgstr "これらの関数は ``org.seasar.Doma.expr.ExpressionFunctions`` のメソッドに対応します。"
+msgstr "これらの関数は ``org.seasar.doma.expr.ExpressionFunctions`` のメソッドに対応します。"
 
 # 2a3dfbb847d84ad9a1da8e5be61ae280
 #: ../../expression.rst:338
@@ -797,7 +797,7 @@ msgid ""
 "The function is defined as a method of a class which implements "
 "``org.seasar.doma.expr.ExpressionFunctions``."
 msgstr ""
-"この関数は ``org.seasar.Doma.expr.ExpressionFunctions`` を実装したクラスのメソッドとして定義されています。"
+"この関数は ``org.seasar.doma.expr.ExpressionFunctions`` を実装したクラスのメソッドとして定義されています。"
 
 # 5bc3f6f45c2f4f21929c34dc7050f08d
 #: ../../expression.rst:346
@@ -811,7 +811,7 @@ msgid ""
 "key of the option is ``doma.expr.functions``."
 msgstr ""
 "このクラスは :doc:`annotation-processing` のオプションとして登録されます。オプションのキーは "
-"``Doma.expr.functions`` です。"
+"``doma.expr.functions`` です。"
 
 # 96ad441c41a64a4e8ddc7f3f0fce2636
 #: ../../expression.rst:349

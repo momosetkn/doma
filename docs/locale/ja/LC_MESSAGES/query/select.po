@@ -54,7 +54,7 @@ msgid ""
 "EmployeeDepartment class) for result set that is get by joining EMPLOYEE "
 "table and DEPARTMENT table."
 msgstr ""
-"**検索結果に応じて**エンティティクラスを作成する必要があります。たとえば、EMPLOYEE テーブルに対応する Employee "
+"**検索結果に応じて** エンティティクラスを作成する必要があります。たとえば、EMPLOYEE テーブルに対応する Employee "
 "クラスが宣言されている場合、EMPLOYEE テーブルの列を含む結果セットは Employee "
 "クラスとして受け入れられます。ただし、EMPLOYEEテーブルとDEPARTMENTテーブルを結合して得られる結果セットには、Employeeエンティティクラスとは別のクラス(例えばEmployeeDepartmentクラス)が必要です。"
 
