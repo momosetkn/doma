@@ -24,7 +24,7 @@ msgstr ""
 # 832e956411744978a91dd301ba22a94e
 #: ../../config.rst:3
 msgid "Configuration"
-msgstr "設定インターフェース"
+msgstr "設定"
 
 # 16765092e80146cea87e4a38d0a0d276
 #: ../../config.rst:6
@@ -63,13 +63,13 @@ msgstr ""
 # 74ffd28cd9ed4e26a59ba6c09ed03def
 #: ../../config.rst:20 ../../config.rst:160
 msgid "See also: :doc:`transaction`"
-msgstr ":doc:`トランザクション` も参照してください。"
+msgstr ":doc:`transaction` も参照してください。"
 
 # 103f23397df44012b895f36c446d3d88
 # ee635c5d16884b83b724ffea88f087a8
 #: ../../config.rst:24 ../../config.rst:73
 msgid "Required item"
-msgstr "必須項目"
+msgstr "必須項目です。"
 
 # 9ca54de4a2834484979909114ef7d10f
 #: ../../config.rst:27
@@ -345,7 +345,7 @@ msgstr ""
 msgid ""
 "This feature is used only when you use ``@TableGenerator`` which generates "
 "identities with the table."
-msgstr "この機能は、テーブルとの ID を生成する ``@TableGenerator`` を使用する場合にのみ使用されます。"
+msgstr "この機能は、テーブルの ID を生成する ``@TableGenerator`` を使用する場合にのみ使用されます。"
 
 # 0fc5201eed8c49fcad0a9f36bbe3cf27
 #: ../../config.rst:109
@@ -368,7 +368,7 @@ msgid ""
 "When the application server and framework you use loads classes with their "
 "specific way, consider to create your own ClassHelper."
 msgstr ""
-"使用するアプリケーション サーバーとフレームワークが独自の方法でクラスをロードする場合は、独自の ``ClassHelper`` "
+"使用するアプリケーションサーバーとフレームワークが独自の方法でクラスをロードする場合は、独自の ``ClassHelper`` "
 "を作成することを検討してください。"
 
 # 9b364b1beea64db3a99dbc079c2683e7
@@ -388,12 +388,12 @@ msgid ""
 "SqlLogType contains the formatted SQL in exception messages."
 msgstr ""
 "``getExceptionSqlLogType`` から ``SqlLogType`` を返します。デフォルトの ``SqlLogType`` "
-"を使うと、例外メッセージにフォーマットされた SQL を含みます。"
+"を使うと、フォーマットされた SQLが例外メッセージに含まれます。"
 
 # b02367116a5546008273d89bc4e10b8f
 #: ../../config.rst:128
 msgid "Handling unknown columns"
-msgstr "不明な列のハンドリング"
+msgstr "不明なカラムのハンドリング"
 
 # 615f123d066543bb980eca4463a36f18
 #: ../../config.rst:130
@@ -403,8 +403,8 @@ msgid ""
 "found, the UnknownColumnHandler handles the situation."
 msgstr ""
 "``getUnknownColumnHandler`` メソッドから ``UnknownColumnHandler`` "
-"を返します。結果セットのマッピングプロセスで、エンティティクラスのプロパティに対応しない列が見つかった場合、``UnknownColumnHandler``"
-" がその状況を処理します。"
+"を返します。結果セットのマッピング処理で、エンティティクラスのプロパティに対応しないカラムが見つかった場合、``UnknownColumnHandler``"
+" によってハンドリングが行われます。"
 
 # 2491f2a5797a47d9b6f178df1d09ef74
 #: ../../config.rst:134
@@ -424,13 +424,14 @@ msgid ""
 " to the name elements of ``@Table`` and ``@Column``, the naming convention "
 "is not applied to them."
 msgstr ""
-"``getNaming`` メソッドから ``Naming`` を返します。 ``@Entity`` の命名要素は、この値よりも優先されます。 "
-"``@Table`` と ``@Column`` の name 要素に明示的な値を指定すると、命名規則は適用されません。"
+"``getNaming`` メソッドから ``Naming`` を返します。 ``@Entity`` の `naming` "
+"要素は、この値よりも優先されます。 ``@Table`` と ``@Column`` の ``name`` "
+"要素に明示的な値を指定すると、命名規則は適用されません。"
 
 # c9a952d0ef924ce3b003219a549a9b18
 #: ../../config.rst:144
 msgid "The default Naming does nothing."
-msgstr "デフォルトの名前付けでは何も行われません。"
+msgstr "デフォルトの ``Naming`` は何も行いません。"
 
 # bad1740650be49c5aba97f9ddf3288f7
 #: ../../config.rst:147
@@ -455,7 +456,7 @@ msgstr "デフォルトの ``MapKeyNaming`` は何も行いません。"
 # 93df969234d84522b235087f5cc2c074
 #: ../../config.rst:155
 msgid "Local transaction manager"
-msgstr "ローカルトランザクションマネージャー"
+msgstr "ローカルトランザクションマネージャ"
 
 # a3524038f0a24f92a1f2bfe1707bc736
 #: ../../config.rst:157
@@ -471,7 +472,7 @@ msgstr ""
 # 582a41ab5a8842429b99f6618e0c201b
 #: ../../config.rst:163
 msgid "Adding SQL identifiers to the SQLs as a comment"
-msgstr "SQL 識別子をコメントとして SQL に追加する"
+msgstr "SQL にコメントを追加する"
 
 # 17e8ff551b1842f2984d1847b0fcbace
 #: ../../config.rst:165
@@ -481,7 +482,7 @@ msgstr "``getCommenter`` メソッドから ``Commenter`` を返します。"
 # 44c04574672f41d2a657ff0e788cb6f7
 #: ../../config.rst:167
 msgid "Doma provides following commenter:"
-msgstr "Doma は次のような ```Commenter` を提供しています。"
+msgstr "Doma は次のような ```Commenter`` を提供します。"
 
 # 90b1d0f4068d4f2bbd8d74c21b007521
 #: ../../config.rst:169
@@ -496,7 +497,7 @@ msgstr "デフォルトの ``Commenter`` は何も行いません。"
 # 776f0bd310294e44886920ebd386d65c
 #: ../../config.rst:174
 msgid "Command implementors"
-msgstr "コマンドインプリメンター"
+msgstr "Command implementors"
 
 # 2e8dc2e40a0647bf8f99c6d7c41fe4aa
 #: ../../config.rst:176
@@ -511,7 +512,7 @@ msgstr ""
 # a25a6899d3a049d6a2da9de51ae1840f
 #: ../../config.rst:180
 msgid "Query implementors"
-msgstr "クエリインプリメンター"
+msgstr "Query implementors"
 
 # 6913d6c99b9f495dbe026e4919a8e632
 #: ../../config.rst:182
@@ -535,7 +536,7 @@ msgid ""
 "value is used as default in :doc:`query/index`."
 msgstr ""
 "``getQueryTimeout`` メソッドからクエリタイムアウト (秒) を返します。この値は、:doc:`query/index` "
-"でデフォルトとして使用されます。"
+"でデフォルトの値として使用されます。"
 
 # ae670df2bb4e4f10b764d76b772c29d4
 #: ../../config.rst:192
@@ -548,7 +549,7 @@ msgid ""
 "Return the max rows from the ``getMaxRows`` method. This value is used as "
 "default in :doc:`query/select`."
 msgstr ""
-"``getMaxRows`` メソッドから最大行数を返します。この値は :doc:`query/select` でデフォルトとして使用されます。"
+"``getMaxRows`` メソッドから最大行数を返します。この値は :doc:`query/select` でデフォルトの値として使用されます。"
 
 # 411fd2d0fb7b4b178a914e280d62c43e
 #: ../../config.rst:198
@@ -562,7 +563,7 @@ msgid ""
 "as default in :doc:`query/select`."
 msgstr ""
 "``getFetchSize`` メソッドからフェッチ サイズを返します。この値は :doc:`query/select` "
-"でデフォルトとして使用されます。"
+"でデフォルトの値として使用されます。"
 
 # dcb827b1b2d3483fa6d4083707cf6810
 #: ../../config.rst:204
@@ -578,7 +579,7 @@ msgid ""
 msgstr ""
 "``getBatchSize`` メソッドからバッチサイズを返します。この値は、:doc:`query/batch-"
 "insert`、:doc:`query/batch-update`、および :doc:`query/batch-delete` "
-"でデフォルトとして使用されます。"
+"でデフォルトの値として使用されます。"
 
 # 12eeefb2e17842899971610a8faa0bce
 #: ../../config.rst:211
@@ -593,20 +594,21 @@ msgid ""
 "container, create your own EntityListenerProvider."
 msgstr ""
 "``getEntityListenerProvider`` メソッドから ``EntityListenerProvider`` "
-"を返します。依存関係注入コンテナーからエンティティ リスナーを取得する場合は、独自の ``EntityListenerProvider`` "
-"を作成します。"
+"を返します。依存性注入コンテナからエンティティリスナーを取得する場合は、独自の ``EntityListenerProvider`` "
+"を作成してください。"
 
 # 134aacad18fc4183b0f0eee4dc718f3b
 #: ../../config.rst:217
 msgid ""
 "The default EntityListenerProvider get the entity listener from the accepted"
 " supplier."
-msgstr "デフォルトの ``EntityListenerProvider`` は、受け入れられたサプライヤーからエンティティ リスナーを取得します。"
+msgstr ""
+"デフォルトの ``EntityListenerProvider`` は、受け入れられた ``Supplier`` からエンティティリスナーを取得します。"
 
 # 811b6ddf57794952a758ba32b99257f9
 #: ../../config.rst:220
 msgid "Loading JDBC drivers"
-msgstr "JDBCドライバーのロード"
+msgstr "JDBCドライバのロード"
 
 # 453a20e19a8c4be9aa62da5ef0ee8606
 #: ../../config.rst:225
@@ -614,7 +616,7 @@ msgid ""
 "All JDBC drivers are loaded automatically by the `service provider <service "
 "provider_>`_ mechanism."
 msgstr ""
-"すべての JDBC ドライバーは、 `サービス プロバイダー <service provider_>`_ メカニズムによって自動的にロードされます。"
+"すべての JDBC ドライバーは、 `サービスプロバイダ <service provider_>`_ メカニズムによって自動的にロードされます。"
 
 # da04e5ac76364c8dbed202365a93c20c
 #: ../../config.rst:229
@@ -625,7 +627,7 @@ msgid ""
 "driver_>`_"
 msgstr ""
 "ただし、特定の環境では、このメカニズムが適切に動作しません。たとえば、Apache Tomcat を使用すると、このケースが見つかります。参照: "
-"`DriverManager、サービス プロバイダーのメカニズムとメモリ リーク <tomcat driver_>`_"
+"`DriverManager、サービス プロバイダのメカニズムとメモリリーク <tomcat driver_>`_"
 
 # fd607b7b048a4303a3de24e9a9442028
 #: ../../config.rst:236
@@ -647,12 +649,12 @@ msgstr "単純な定義は、次の場合に適しています。"
 msgid ""
 "The configuration instance isn't managed in the dependency injection "
 "container"
-msgstr "設定インスタンスは依存関係注入コンテナーでは管理されません"
+msgstr "設定インスタンスが依存関係注入コンテナで管理されない"
 
 # 53070ed3eff143579b2e7ae6effe49d7
 #: ../../config.rst:244
 msgid "Local transactions is used"
-msgstr "ローカルトランザクションが使用されます"
+msgstr "ローカルトランザクションが使用される"
 
 # 24a647037d8b47cfa092b6567fc27858
 #: ../../config.rst:286
@@ -664,7 +666,7 @@ msgstr "上記の ``DbConfig`` クラスは次のように使用できます。"
 msgid ""
 "The above ``EmployeeDao`` interface must be annotated with the ``@Dao`` "
 "annotation as follows:"
-msgstr "上記の ``EmployeeDao`` インターフェイスには、次のように ``@Dao`` アノテーションを付ける必要があります。"
+msgstr "上記の ``EmployeeDao`` インタフェースには、次のように ``@Dao`` アノテーションを付ける必要があります。"
 
 # 0de03ecf39aa4efaa4a9f0ec039d2b78
 #: ../../config.rst:304
@@ -674,28 +676,28 @@ msgstr "高度な定義"
 # ce19689bc76d42f29fb4239d7193766e
 #: ../../config.rst:306
 msgid "The advanced definition is appropriate in following cases:"
-msgstr "詳細定義は、次の場合に適しています。"
+msgstr "高度な定義は、次の場合に適しています。"
 
 # 95947f8f4223448c9fd504e8c6713130
 #: ../../config.rst:308
 msgid ""
 "The configuration instance is managed as a singleton object in the "
 "dependency injection container"
-msgstr "構成インスタンスは、依存関係注入コンテナー内のシングルトン オブジェクトとして管理されます。"
+msgstr "設定インスタンスが依存性注入コンテナ内のシングルトンオブジェクトとして管理される"
 
 # 5a2be60aef804d829d5610e49c90e0ca
 #: ../../config.rst:309
 msgid ""
 "The transaction manager is provided from the application server or framework"
 " you use"
-msgstr "トランザクション マネージャーは、使用するアプリケーション サーバーまたはフレームワークから提供されます。"
+msgstr "トランザクションマネージャが使用するアプリケーションサーバーまたはフレームワークから提供される"
 
 # ecf7e60db14b438db4708a00714b942e
 #: ../../config.rst:311
 msgid ""
 "Suppose the ``dialect`` and the ``dataSource`` are injected by the "
 "dependency injection container:"
-msgstr "``dialect`` と ``dataSource`` が依存関係注入コンテナによって注入されると仮定します。"
+msgstr "``dialect`` と ``dataSource`` が依存性注入コンテナによって注入されると仮定します。"
 
 # 58a7c418341248f98be6d637724e85f9
 #: ../../config.rst:340
@@ -703,8 +705,8 @@ msgid ""
 "To inject the instance of the above class to your DAO implementation "
 "instance, you have to annotate your DAO interfaces with ``@AnnotateWith``:"
 msgstr ""
-"上記のクラスのインスタンスを DAO 実装インスタンスに注入するには、DAO インターフェイスに ``@AnnotateWith`` "
-"でアノテーションを付ける必要があります。"
+"上記のクラスのインスタンスを DAO のインスタンスに注入するには、DAO インタフェースに ``@AnnotateWith`` "
+"アノテーションを付ける必要があります。"
 
 # 6a1e739915a64ab0ae11bc06460c7440
 #: ../../config.rst:367
@@ -712,7 +714,7 @@ msgid ""
 "To avoid annotating your DAO interfaces with ``@AnnotateWith`` repeatedly, "
 "annotate the arbitrary annotation with it only once:"
 msgstr ""
-"DAO インターフェースに ``@AnnotateWith`` で繰り返しアノテーションを付けることを避けるには、任意のアノテーションに 1 "
+"DAO インタフェースに ``@AnnotateWith`` で繰り返しアノテーションを付けることを避けるには、任意のアノテーションに 1 "
 "回だけアノテーションを付けます。"
 
 # bb5702d32b24422a8492c1ad0b3e4639
@@ -720,4 +722,4 @@ msgstr ""
 msgid ""
 "Then, you can annotate your DAO interfaces with the above ``@InjectConfig`` "
 "annotation:"
-msgstr "次に、DAO インターフェイスに上記の ``@InjectConfig`` アノテーションを付けることができます。"
+msgstr "次に、DAO インタフェースに上記の ``@InjectConfig`` アノテーションを付けることができます。"

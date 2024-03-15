@@ -41,7 +41,7 @@ msgstr "概要"
 msgid ""
 "The Java types can be mapped to database column types are called \"Basic "
 "classes\" in Doma."
-msgstr "Doma では、データベースのカラム型にマッピング可能なJava型を「基本クラス」と呼びます。"
+msgstr "Doma では、データベースのカラム型にマッピング可能なJava型を **基本クラス** と呼びます。"
 
 # c8e78744aee24c32ab06b163407f52aa
 #: ../../basic.rst:14
@@ -196,4 +196,4 @@ msgstr "ドメインクラスでの使用"
 # d6bafd10e6e446bdb7cc4b88fa95d036
 #: ../../basic.rst:103
 msgid "Using in DAO interface"
-msgstr "DAOインターフェースでの使用"
+msgstr "DAO インタフェースでの使用"

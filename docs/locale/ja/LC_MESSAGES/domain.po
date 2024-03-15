@@ -40,16 +40,16 @@ msgid ""
 "user defined class that can be map to a column. The use of the domain "
 "classes is optional."
 msgstr ""
-"ドメイン クラスはテーブル カラム を表し、カラム 値を Java オブジェクトとして処理できるようにします。 Doma "
-"フレームワークでは、**ドメイン** はデータ型に含まれる可能性のあるすべての値を意味します。つまり、ドメイン クラスは、カラム "
-"にマップできるユーザー定義のクラスです。ドメイン クラスの使用はオプションです。"
+"ドメインクラスはテーブルのカラムを表し、カラムの値を Java オブジェクトとして処理できるようにします。 Doma "
+"フレームワークでは、**ドメイン** "
+"はデータ型に含まれる可能性のあるすべての値を意味します。つまり、ドメインクラスは、カラムにマップできるユーザー定義のクラスです。ドメインクラスの使用はオプションです。"
 
 # 03cbb2610f9b4d47af284878fd3ca7d0
 #: ../../domain.rst:13
 msgid ""
 "Every domain class is either an internal domain class or an external domain "
 "class."
-msgstr "すべてのドメイン クラスは、内部ドメイン クラスまたは外部ドメイン クラスのいずれかです。"
+msgstr "すべてのドメインクラスは、内部ドメインクラスまたは外部ドメインクラスのいずれかです。"
 
 # 730f3b297aff4ac0b8fd1bf166f01b9b
 #: ../../domain.rst:16
@@ -63,13 +63,13 @@ msgid ""
 "``@Domain``'s ``valueType`` element corresponds to a data type of a column. "
 "Specify any type of :doc:`basic` to the ``valueType`` element."
 msgstr ""
-"内部ドメインクラスには ``@Domain`` の注釈を付ける必要があります。 ``@Domain`` の ``valueType`` 要素は、カラム "
-"のデータ型に対応します。 ``valueType`` 要素には任意のタイプの :doc:`basic` を指定します。"
+"内部ドメインクラスには ``@Domain`` アノテーションを付ける必要があります。 ``@Domain`` の ``valueType`` "
+"要素は、カラムのデータ型に対応します。 ``valueType`` 要素には任意のタイプの :doc:`basic` を指定します。"
 
 # 1ecd3fb7563b4b4bab60e483d7b0caa9
 #: ../../domain.rst:23
 msgid "Instantiation with a constructor"
-msgstr "コンストラクターを使用したインスタンス化"
+msgstr "コンストラクタを使用したインスタンス化"
 
 # 07a83c6cc2fd4a74b9bfaf480178fa12
 #: ../../domain.rst:25
@@ -85,7 +85,7 @@ msgstr ""
 #: ../../domain.rst:49
 msgid ""
 "In Java 14 and later version, you can annotate `records`_ with ``@Domain``:"
-msgstr "Java 14 以降のバージョンでは、`records`_ に ``@Domain`` の注釈を付けることができます。"
+msgstr "Java 14 以降のバージョンでは、`records`_ に ``@Domain`` アノテーションを付けることができます。"
 
 # 79f03e70d459459ba6118f3965cbcc33
 #: ../../domain.rst:64
@@ -94,13 +94,14 @@ msgid ""
 " specify some properties to ``@Domain`` such as ``valueType``. Instead of "
 "``@Domain``, you can annotate records with ``@DataType``:"
 msgstr ""
-"レコードに ``@Domain`` で注釈を付けるのは少し冗長です。 ``valueType`` などのいくつかのプロパティを ``@Domain`` "
-"に指定する必要があるためです。 ``@Domain`` の代わりに、レコードに ``@DataType`` で注釈を付けることができます。"
+"レコードに ``@Domain`` アノテーションを付けるのは少し冗長です。 ``valueType`` などのいくつかのプロパティを明示的に "
+"``@Domain`` に指定する必要があるためです。 ``@Domain`` の代わりに、レコードに ``@DataType`` "
+"アノテーションを付けることができます。"
 
 # 79f8a9dcf4414edaad3a9155b358e8f7
 #: ../../domain.rst:79
 msgid "Instantiation with a static factory method"
-msgstr "静的ファクトリーメソッドによるインスタンス化"
+msgstr "静的ファクトリメソッドによるインスタンス化"
 
 # 82735cb455a54c82866f05a02ff86992
 #: ../../domain.rst:81
@@ -108,7 +109,7 @@ msgid ""
 "To create the object of annotated class with a static factory method, "
 "specify the method name to the ``@Domain``'s ``factoryMethod`` element."
 msgstr ""
-"アノテーション付きクラスのオブジェクトを静的ファクトリメソッドで作成するには、 ``@Domain`` の ``factoryMethod`` "
+"アノテーションが付与されたクラスのオブジェクトを静的ファクトリメソッドで作成するには、 ``@Domain`` の ``factoryMethod`` "
 "要素にメソッド名を指定します。"
 
 # ffe42948a1f6441d90c06cb783cd0e4a
@@ -121,17 +122,17 @@ msgstr "メソッドは静的で非プライベートである必要がありま
 msgid ""
 "With a static factory method, you can apply the ``@Domain`` annotation to "
 "enum types:"
-msgstr "静的ファクトリー メソッドを使用すると、``@Domain`` アノテーション を列挙型に適用できます。"
+msgstr "静的ファクトリメソッドを使用すると、``@Domain`` アノテーションを列挙型に適用できます。"
 
 # cb88e7aab1fc45398e42266f5864eadf
 #: ../../domain.rst:143
 msgid "Using type parameters in internal domain classes"
-msgstr "内部ドメインクラスでの型パラメータの使用"
+msgstr "内部ドメインクラスにおける型パラメータの使用"
 
 # dd5c882f2037416ca4e4656cb703b846
 #: ../../domain.rst:145
 msgid "All internal domain class declarations have type parameters:"
-msgstr "すべての内部ドメイン クラス宣言には型パラメータがあります。"
+msgstr "内部ドメインクラスには任意の数の型パラメータを宣言できます。"
 
 # 47b7c51380504875b0c643800d65395e
 #: ../../domain.rst:164
@@ -140,8 +141,7 @@ msgid ""
 "the method declaration must have same type parameters that are declared in "
 "the class declaration:"
 msgstr ""
-"静的ファクトリ "
-"メソッドを使用してアノテーション付きクラスのオブジェクトを作成する場合、メソッド宣言にはクラス宣言で宣言されているのと同じ型パラメータが必要です。"
+"静的ファクトリメソッドを使用してアノテーション付きクラスのオブジェクトを作成する場合、メソッド宣言にはクラス宣言と同じ型パラメータが必要です。"
 
 # d0b3dec0f33742b9bfe056a08c9278f8
 #: ../../domain.rst:188
@@ -154,13 +154,12 @@ msgid ""
 "This feature allows you to define arbitrary classes as domain classes, even "
 "if the classes can be annotated with the ``@Domain`` annotation."
 msgstr ""
-"この機能を使用すると、クラスに ``@Domain`` アノテーション の注釈を付けることができる場合でも、任意のクラスをドメイン "
-"クラスとして定義できます。"
+"この機能を使用すると、クラスに ``@Domain`` アノテーションを付けられない場合でも、任意のクラスをドメインクラスとして定義できます。"
 
 # edb76ffa4a5c4ff3b6e6e10d0d4024bc
 #: ../../domain.rst:193
 msgid "To define external domain classes, you have to do as follows:"
-msgstr "外部ドメイン クラスを定義するには、次のようにする必要があります。"
+msgstr "外部ドメイン クラスを定義するには、次のようにします。"
 
 # f3a280e877e548a08c28692aef06da2b
 #: ../../domain.rst:195
@@ -169,13 +168,13 @@ msgid ""
 "``org.seasar.doma.jdbc.domain.DomainConverter`` and annotate "
 "``@ExternalDomain`` to the class"
 msgstr ""
-"``org.seasar.Doma.jdbc.domain.DomainConverter`` "
-"を実装するクラスを作成し、クラスに``@ExternalDomain`` のアノテーションを付けます。"
+"``org.seasar.Doma.jdbc.domain.DomainConverter`` を実装するクラスを作成し、クラスに "
+"``@ExternalDomain`` アノテーションを付ける"
 
 # a08b60f15506463b8f15226a955c225d
 #: ../../domain.rst:197
 msgid "Create a class that is annotated with ``@DomainConverters``"
-msgstr "``@DomainConverters`` アノテーションを付けたクラスを作成します。"
+msgstr "``@DomainConverters`` アノテーションを付けたクラスを作成する"
 
 # adb4e04486254f1cb03399219ac595b4
 #: ../../domain.rst:198
@@ -184,7 +183,7 @@ msgid ""
 "``@DomainConverters``'s ``value`` element"
 msgstr ""
 "``@DomainConverters`` の ``value`` 要素に ``@ExternalDomain`` "
-"アノテーションを付けたクラスを指定します"
+"アノテーションを付けたクラスを指定する"
 
 # e5e5771013b845f0b6eebdf0dd6df70a
 #: ../../domain.rst:199
@@ -192,15 +191,15 @@ msgid ""
 "Specify the full qualified name of the class annotated with "
 "``@DomainConverters`` to the option of :doc:`annotation-processing`"
 msgstr ""
-":doc:`アノテーション-processing` のオプションに ``@DomainConverters`` "
-"アノテーションを付けたクラスの完全修飾名を指定します"
+":doc:`annotation-processing` のオプションに ``@DomainConverters`` "
+"アノテーションを付けたクラスの完全修飾名を指定する"
 
 # 8bebc500058b44258becf668edebd63c
 #: ../../domain.rst:202
 msgid ""
 "Suppose, for instance, there is the ``PhoneNumber`` class that you can "
 "change:"
-msgstr "たとえば、変更できる ``PhoneNumber`` クラスがあるとします。"
+msgstr "たとえば、ソースコードを変更でない ``PhoneNumber`` クラスがあるとします。"
 
 # cb446a0b21ba4571a2155c7f6c092867
 #: ../../domain.rst:223
@@ -223,25 +222,25 @@ msgid ""
 " :doc:`annotation-processing`. If you use Gradle, specify the option in the "
 "build script as follows:"
 msgstr ""
-"最後に、:doc:`アノテーション-processing` のオプションに上記クラスの完全修飾名を指定します。 Gradle を使用する場合は、ビルド "
-"スクリプトで次のようにオプションを指定します。"
+"最後に、:doc:`annotation-processing` のオプションに上記クラスの完全修飾名を指定します。 Gradle "
+"を使用する場合は、ビルド スクリプトで次のようにオプションを指定します。"
 
 # 835c2d35e5854501b1f8202acc79c6c5
 #: ../../domain.rst:262
 msgid "Using type parameters in external domain classes"
-msgstr "外部ドメインクラスでの型パラメータの使用"
+msgstr "外部ドメインクラスにおける型パラメータの使用"
 
 # 5e0c9896ec0447c38305b000c544b34a
 #: ../../domain.rst:264
 msgid "All external domain class declarations have type parameters:"
-msgstr "すべての外部ドメイン クラス宣言には型パラメータがあります。"
+msgstr "外部ドメインクラスには任意の数の型パラメータを宣言できます。"
 
 # a5093b1ce826423bb8e215c69c9cfe96
 #: ../../domain.rst:281
 msgid ""
 "In the ``DomainConverter`` implementation class, specify a wildcard ``?`` as"
 " type arguments to the external domain class:"
-msgstr "``DomainConverter`` 実装クラスで、外部ドメイン クラスへの型引数としてワイルドカード ``?`` を指定します。"
+msgstr "``DomainConverter`` 実装クラスで、外部ドメインクラスへの型引数としてワイルドカード ``?`` を指定します。"
 
 # 68e335380e96487986f5797563a947c6
 #: ../../domain.rst:303
@@ -251,4 +250,4 @@ msgstr "例"
 # 587507f32dde4153b6640be09856bd5a
 #: ../../domain.rst:305
 msgid "The Domain classes showed above are used as follows:"
-msgstr "上記のドメイン クラスは次のように使用されます。"
+msgstr "上記のドメインクラスは次のように使用されます。"
