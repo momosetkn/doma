@@ -77,7 +77,7 @@ msgstr "デフォルトメソッド"
 # 223389761c4d4be0be2e335bd24fcb31
 #: ../../dao.rst:29
 msgid "You can write java code freely in default method."
-msgstr "デフォルト メソッドではJavaコードを自由に記述できます。"
+msgstr "デフォルトメソッドではJavaコードを自由に記述できます。"
 
 # 424fede21e5b477b898a0c9700334b9b
 #: ../../dao.rst:31
@@ -135,5 +135,4 @@ msgid ""
 "Dao interface is no need to define as one to one with entity class. One dao "
 "interface can handle more than one entity classes."
 msgstr ""
-"DAO インタフェースはエンティティクラスと1対1で定義する必要はありません。 1 つの DAO インタフェースで複数のエンティティ "
-"クラスを処理できます。"
+"DAO インタフェースはエンティティクラスと1対1で定義する必要はありません。 1 つの DAO インタフェースで複数のエンティティクラスを扱えます。"

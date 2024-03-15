@@ -54,9 +54,9 @@ msgid ""
 "processors are not always aware of the class modifications made by Lombok "
 "annotation processors."
 msgstr ""
-"Lombok と Doma は両方ともアノテーション プロセッサを提供します。アノテーション プロセッサの実行順序は Java "
-"では決定されないため、Doma のアノテーション プロセッサは、Lombok アノテーション "
-"プロセッサによって行われたクラスの変更を常に認識するとは限りません。"
+"Lombok と Doma は両方ともアノテーションプロセッサを提供します。アノテーションプロセッサの実行順序は Java "
+"では決定されないため、Doma のアノテーションプロセッサは、Lombok "
+"アノテーションプロセッサによって行われたクラスの変更を常に認識するとは限りません。"
 
 # 2b5de50f1b4b4ea5bcd20497fbd9a5cd
 #: ../../lombok-support.rst:22
@@ -67,9 +67,10 @@ msgid ""
 "suppose that the class has a constructor whose arguments cover all instance "
 "fields."
 msgstr ""
-"この問題を解決するために、Doma のアノテーション プロセッサは Lombok "
+"この問題を解決するために、Doma のアノテーションプロセッサは Lombok "
 "のアノテーションのいくつかを認識し、その動作を変更します。たとえば、Doma のアノテーション プロセッサが ``@lombok.Value`` "
-"アノテーションが付けられたクラスを見つけた場合、そのクラスにはすべてのインスタンス フィールドを引数で受け取るコンストラクタがあると想定します。"
+"アノテーションが付けられたクラスを見つけた場合、そのクラスにはすべてのインスタンス "
+"フィールドに対応するパラメータを引数で受け取るコンストラクタがあると想定します。"
 
 # 36f9a81cb1004065b89496b87e043403
 #: ../../lombok-support.rst:28

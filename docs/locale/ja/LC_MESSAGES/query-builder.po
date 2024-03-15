@@ -39,7 +39,7 @@ msgid ""
 "consider to use the SQL builders in :ref:`dao-default-method`."
 msgstr ""
 ":doc:`../query/index` を使用して SQL ステートメントを構築するのが難しい場合は、:ref:`dao-default-"
-"method` で SQL ビルダを使用することを検討してください。"
+"method` の中で クエリビルダを使用することを検討してください。"
 
 #: ../../query-builder/index.rst:14
 msgid "Search"

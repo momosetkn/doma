@@ -37,7 +37,7 @@ msgid ""
 "Doma supports local transaction. This document explains how to configure and"
 " use the local transaction."
 msgstr ""
-"Doma はローカル トランザクションをサポートしています。このドキュメントでは、ローカル トランザクションの設定方法と使用方法について説明します。"
+"Doma はローカルトランザクションをサポートしています。このドキュメントでは、ローカルトランザクションの設定方法と使用方法について説明します。"
 
 # 49cbe2a6ba484f359da365a27c8d9ba9
 #: ../../transaction.rst:11
@@ -141,7 +141,7 @@ msgstr "notSupported"
 msgid ""
 "Use a lambda expression to write a process which you want to run in a "
 "transaction."
-msgstr "ラムダ式を使用して、トランザクションで実行するプロセスを記述します。"
+msgstr "ラムダ式を使用して、トランザクションで実行する処理を記述します。"
 
 # 2d76bdbe1a034223a61d420b276ea10c
 #: ../../transaction.rst:115

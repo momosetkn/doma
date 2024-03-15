@@ -197,7 +197,7 @@ msgstr "java.lang.String"
 msgid ""
 "The numeral types are distinguished by suffix letters such as ``L`` or ``F``"
 " at the end of the literals. The suffixes must be capital letters."
-msgstr "数値の種類は、リテラルの末尾にある ``L`` や ``F`` などの接尾文字によって区別されます。接尾辞は大文字である必要があります。"
+msgstr "数値の種類は、リテラルの末尾にある ``L`` や ``F`` などの接尾辞によって区別されます。接尾辞は大文字である必要があります。"
 
 # eee5a66d8ac44cf0abe4ddeacb2041f3
 #: ../../expression.rst:67
@@ -313,7 +313,7 @@ msgstr "!"
 # ffefaeb12009401785959e2138bc7e8e
 #: ../../expression.rst:106
 msgid "Logical complement operator"
-msgstr "論理補数演算子"
+msgstr "論理否定演算子"
 
 # f7317b111b9f4758ba6cf513e9be6138
 #: ../../expression.rst:107
@@ -323,7 +323,7 @@ msgstr "&&"
 # 2e624f129d4f4187aca96158910c354a
 #: ../../expression.rst:107
 msgid "Conditional-AND operator"
-msgstr "条件付き AND 演算子"
+msgstr "論理積演算子"
 
 # 2385b840544b49ddbc9f61b38d76f138
 #: ../../expression.rst:108
@@ -333,7 +333,7 @@ msgstr "||"
 # 787a8d8d2422458c95f2f1c8f64fec03
 #: ../../expression.rst:108
 msgid "Conditional-OR operator"
-msgstr "条件付きOR演算子"
+msgstr "論理和演算子"
 
 # b439cdcda5f14355a2a158158f416e63
 #: ../../expression.rst:111
@@ -435,8 +435,7 @@ msgstr "インスタンスメソッドの呼び出し"
 msgid ""
 "You can call instance methods with the method names separated by dots ``.``."
 " The method visibility must be public."
-msgstr ""
-"メソッド名をドット ``.`` で区切ってインスタンス メソッドを呼び出すことができます。メソッドの可視性はパブリックである必要があります。"
+msgstr "メソッド名をドット ``.`` で区切ってインスタンスメソッドを呼び出すことができます。メソッドの可視性はパブリックである必要があります。"
 
 # 4223a335e7f14964ba1df14ccccd228c
 #: ../../expression.rst:175
@@ -519,7 +518,7 @@ msgstr ""
 "関数はパラメータで受け取った文字列を前方一致検索用の文字列に変換します。特殊文字もエスケープされます。たとえば、 "
 "``employee.employeeName`` の値が ``ABC`` の場合、 ``ABC%`` に変換されます。 "
 "``employee.employeeName`` の値に ``AB%C`` などの ``%`` が含まれている場合、その ``%`` "
-"はデフォルトのエスケープシーケンス ``$`` でエスケープされるため、値は次のようになります。  ``AB$%C%`` に変換されます。"
+"はデフォルトのエスケープシーケンス ``$`` でエスケープされるため、値は ``AB$%C%`` に変換されます。"
 
 # be8f0b58c67845ffb261c2823412db2f
 #: ../../expression.rst:247
@@ -557,7 +556,7 @@ msgid ""
 "used as a default escape sequence. It returns ``null`` if you pass ``null`` "
 "as a parameter."
 msgstr ""
-"前方一致検索用の文字列を変換します。戻り値は、文字シーケンスをエスケープし、末尾にワイルドカード文字を追加した結果の文字列です。 "
+"前方一致検索用の文字列へ変換します。戻り値は、文字シーケンスをエスケープし、末尾にワイルドカード文字を追加した結果の文字列です。 "
 "``escapeChar`` が指定されていない場合、デフォルトのエスケープシーケンスとして ``$`` が使用されます。パラメータとして "
 "``null`` を渡すと ``null`` を返します。"
 
@@ -575,7 +574,7 @@ msgid ""
 "specified, ``$`` is used as a default escape sequence. It returns ``null`` "
 "if you pass ``null`` as a parameter."
 msgstr ""
-"中置検索用の文字列を変換します。戻り値は、文字シーケンスをエスケープし、先頭と末尾にワイルドカード文字を追加した結果の文字列です。 "
+"中置検索用の文字列へ変換します。戻り値は、文字シーケンスをエスケープし、先頭と末尾にワイルドカード文字を追加した結果の文字列です。 "
 "``escapeChar`` が指定されていない場合、デフォルトのエスケープシーケンスとして ``$`` が使用されます。パラメータとして "
 "``null`` を渡すと ``null`` を返します。"
 
@@ -593,7 +592,7 @@ msgid ""
 "``$`` is used as a default escape sequence. It returns ``null`` if you pass "
 "``null`` as a parameter."
 msgstr ""
-"接尾辞検索用の文字列を変換します。戻り値は、文字シーケンスをエスケープし、先頭にワイルドカード文字を追加した結果の文字列です。 "
+"接尾辞検索用の文字列へ変換します。戻り値は、文字シーケンスをエスケープし、先頭にワイルドカード文字を追加した結果の文字列です。 "
 "``escapeChar`` が指定されていない場合、デフォルトのエスケープシーケンスとして ``$`` が使用されます。パラメータとして "
 "``null`` を渡すと ``null`` を返します。"
 
@@ -797,12 +796,12 @@ msgid ""
 "The function is defined as a method of a class which implements "
 "``org.seasar.doma.expr.ExpressionFunctions``."
 msgstr ""
-"この関数は ``org.seasar.doma.expr.ExpressionFunctions`` を実装したクラスのメソッドとして定義されています。"
+"この関数は ``org.seasar.doma.expr.ExpressionFunctions`` を実装したクラスのメソッドとして定義される"
 
 # 5bc3f6f45c2f4f21929c34dc7050f08d
 #: ../../expression.rst:346
 msgid "The method is a public instance method."
-msgstr "このメソッドはパブリック インスタンス メソッドです。"
+msgstr "このメソッドはパブリック インスタンス メソッドである"
 
 # 9915efe2570d415b97056f4a2adcc99d
 #: ../../expression.rst:347
@@ -810,8 +809,8 @@ msgid ""
 "The class is registered as an option in :doc:`annotation-processing`. The "
 "key of the option is ``doma.expr.functions``."
 msgstr ""
-"このクラスは :doc:`annotation-processing` のオプションとして登録されます。オプションのキーは "
-"``doma.expr.functions`` です。"
+"このクラスは ``doma.expr.functions`` をキーとして :doc:`annotation-processing` "
+"のオプションに指定される"
 
 # 96ad441c41a64a4e8ddc7f3f0fce2636
 #: ../../expression.rst:349
@@ -820,8 +819,8 @@ msgid ""
 "configuration class (The implementations of RDBMS dialect provided by Doma "
 "can receive ``ExpressionFunctions`` in the constructor)."
 msgstr ""
-"作成したクラスのインスタンスは、構成クラスの RDBMS ダイアレクト で使用されます (Doma によって提供される RDBMS ダイアレクト "
-"の実装は コンストラクターで ``ExpressionFunctions`` を受け取ることができます)。"
+"作成したクラスのインスタンスは SQLダイアレクト で使用される (Doma によって提供される ダイアレクト の実装は コンストラクタで "
+"``ExpressionFunctions`` を受け取ることができる)"
 
 # 9d7cf6c5c8144618a406b5fd467c65a8
 #: ../../expression.rst:353

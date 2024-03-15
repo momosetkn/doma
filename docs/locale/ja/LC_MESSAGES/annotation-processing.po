@@ -45,7 +45,7 @@ msgstr ""
 msgid ""
 "In this document, we describe the options for the annotation processors in "
 "Doma and show you how to pass them to build tools."
-msgstr "このドキュメントでは、Doma のアノテーション プロセッサのオプションについて説明し、それらをビルド ツールに渡す方法を示します。"
+msgstr "このドキュメントでは、Doma のアノテーションプロセッサのオプションについて説明し、それらをビルドツールに渡す方法を示します。"
 
 # db096c4358a24014bda4d72380ae0a11
 #: ../../annotation-processing.rst:14
@@ -65,9 +65,8 @@ msgid ""
 "of doma.dao.subpackage. The default value is the same package as the one the"
 " interfaces annotated with ``@Dao`` belong to."
 msgstr ""
-"生成された ``@Dao`` "
-"アノテーションが付いたインターフェースの実装クラスが属するパッケージ。指定された値は、doma.dao.subpackage "
-"の値をオーバーライドします。デフォルト値は、 ``@Dao`` アノテーションが付けられたインターフェースが属するパッケージと同じパッケージです。"
+"生成された ``@Dao`` アノテーションが付いたインタフェースの実装クラスが属するパッケージ。指定された値は、doma.dao.subpackage"
+" の値をオーバーライドします。デフォルト値は、 ``@Dao`` アノテーションが付けられたインタフェースが属するパッケージと同じパッケージです。"
 
 # 345178c19ae147e7b704fc8498a4d917
 #: ../../annotation-processing.rst:25
@@ -83,9 +82,8 @@ msgid ""
 "interfaces annotated with ``@Dao`` is ``example.dao``, the generated "
 "implementation classes belong to the package ``example.dao.impl``."
 msgstr ""
-"``@Dao`` "
-"アノテーションが付けられたインターフェースの生成された実装クラスが属するサブパッケージ。指定された値は、doma.dao.package "
-"の値によってオーバーライドされます。この値が ``impl`` で、 ``@Dao`` アノテーションが付けられたインターフェースのパッケージが "
+"``@Dao`` アノテーションが付けられたインタフェースの生成された実装クラスが属するサブパッケージ。指定された値は、doma.dao.package"
+" の値によってオーバーライドされます。この値が ``impl`` で、 ``@Dao`` アノテーションが付けられたインタフェースのパッケージが "
 "``example.dao`` である場合、生成された実装クラスはパッケージ ``example.dao.impl`` に属します。"
 
 # a5ae19b0799a4914bc56c3c2e4dbe99e
@@ -102,8 +100,8 @@ msgid ""
 " of the generated implementation class is ``EmployeeDaoBean``. The default "
 "value is ``Impl``."
 msgstr ""
-"``@Dao`` アノテーションが付けられたインターフェースの生成された実装クラスが持つ名前の接尾辞。この値が ``Bean`` で、 ``@Dao``"
-" アノテーションが付けられたインターフェースの単純名が ``EmployeeDao`` である場合、生成される実装クラスの単純名は "
+"``@Dao`` アノテーションが付けられたインタフェースの生成された実装クラスが持つ名前の接尾辞。この値が ``Bean`` で、 ``@Dao`` "
+"アノテーションが付けられたインタフェースの単純名が ``EmployeeDao`` である場合、生成される実装クラスの単純名は "
 "``EmployeeDaoBean`` になります。デフォルト値は ``Impl`` です。"
 
 # 9f85ade90adb4fe58e14cb742f68e926
@@ -118,8 +116,8 @@ msgid ""
 "``true``, the annotation processors output the debug log. The default value "
 "is ``false``."
 msgstr ""
-"アノテーション処理時にデバッグログを出力するかどうか。値が ``true`` の場合、アノテーション プロセッサはデバッグ "
-"ログを出力します。デフォルト値は ``false`` です。"
+"アノテーション処理時にデバッグログを出力するかどうか。値が ``true`` の場合、アノテーション "
+"プロセッサはデバッグログを出力します。デフォルト値は ``false`` です。"
 
 # 8c511745c1d64534b16a86db7f340047
 #: ../../annotation-processing.rst:41
@@ -147,7 +145,7 @@ msgid ""
 "The name prefix that the fields of the generated entity meta classes have. "
 "The value ``none`` means the prefix is not used. The default value is ``$``."
 msgstr ""
-"生成されたエンティティ メタ クラスのフィールドに付けられる名前プレフィックス。値 ``none`` "
+"生成されたエンティティメタクラスのフィールドに付けられる名前プレフィックス。値 ``none`` "
 "は、プレフィックスが使用されないことを意味します。デフォルト値は ``$`` です。"
 
 # d392e01d7f10454baf7d715bd24c3d99
@@ -163,9 +161,9 @@ msgid ""
 "``org.seasar.doma.expr.ExpressionFunctions``. This value are used to "
 "determine which functions are available in expression comments."
 msgstr ""
+"``org.seasar.doma.expr.ExpressionFunctions`` を実装するクラスの完全修飾名。デフォルト値は "
 "``org.seasar.doma.expr.ExpressionFunctions`` "
-"を実装するクラスの完全修飾名。デフォルト値は``org.seasar.doma.expr.ExpressionFunctions`` "
-"です。この値は、式のコメントで使用できる関数を決定するために使用されます。"
+"です。この値は、式言語から呼び出し可能な関数を決定するために使用されます。"
 
 # 0858c509c99242b99ce15d78c3be11ff
 #: ../../annotation-processing.rst:57
@@ -220,8 +218,9 @@ msgid ""
 "path. If the value is not specified, the resource directory is same as the "
 "directory the classes are generated."
 msgstr ""
-"doma.compile.config ファイルや SQL ファイルなどのリソース ファイルが含まれるリソース "
-"ディレクトリ。値は絶対パスで指定します。値が指定されていない場合、リソース ディレクトリはクラスが生成されるディレクトリと同じになります。"
+"doma.compile.config ファイルや SQL ファイルなどのリソース "
+"ファイルが含まれるリソースディレクトリ。値は絶対パスで指定します。値が指定されていない場合、リソース "
+"ディレクトリはクラスが生成されるディレクトリと同じになります。"
 
 # d5e48da0825048bd866c9a38bae539cd
 #: ../../annotation-processing.rst:76
@@ -250,8 +249,8 @@ msgid ""
 "time. If the value is ``true``, the validation runs. To disable the "
 "validation, set ``false``. The default value is ``true``."
 msgstr ""
-"実行時とコンパイル時の間で doma.jar のバージョンを検証するかどうか。値が ``true`` の場合、検証が実行されます。検証を無効にするには、"
-" ``false`` を設定します。デフォルト値は ``true`` です。"
+"実行時とコンパイル時の間で Doma のアーティファクトのバージョンを検証するかどうか。値が ``true`` "
+"の場合、検証が実行されます。検証を無効にするには、 ``false`` を設定します。デフォルト値は ``true`` です。"
 
 # b85a3dd51d164ebba9e63cc24cd32269
 #: ../../annotation-processing.rst:86
@@ -333,7 +332,7 @@ msgid ""
 "The ``doma.compile.config`` file must follow the properties file format and "
 "be placed in the root directory such as ``src/main/resources``."
 msgstr ""
-"``doma.compile.config`` ファイルはプロパティ ファイル形式に従い、``src/main/resources`` などのルート "
+"``doma.compile.config`` ファイルはプロパティファイル形式に従い、``src/main/resources`` などのルート "
 "ディレクトリに配置する必要があります。"
 
 # 582fb6615c3143ecbb11cd3e9d41426d

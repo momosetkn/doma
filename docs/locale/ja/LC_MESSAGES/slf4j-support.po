@@ -42,7 +42,7 @@ msgid ""
 "Doma uses java util logging as underling logging framework, but you can "
 "replace it with `SLF4J <http://www.slf4j.org/>`_ easily."
 msgstr ""
-"Doma は基礎となるロギング フレームワークとして java util ロギングを使用しますが、これを `SLF4J "
+"Doma は基礎となるロギングフレームワークとして java util ロギングを使用しますが、これを `SLF4J "
 "<http://www.slf4j.org/>`_ に簡単に置き換えることができます。"
 
 # 5426884b56f746b88c37aa722881edb1
@@ -172,8 +172,8 @@ msgid ""
 "slf4j/src/main/java/org/seasar/doma/slf4j/Slf4jJdbcLogger.java>`_ for more "
 "information. It's simple."
 msgstr ""
-"詳細については、「ソース コード <https://github.com/domaframework/doma/blob/master/doma-"
-"slf4j/src/main/java/org/seasar/doma/slf4j/Slf4jJdbcLogger.java>`_」を参照してください。"
+"詳細については、`ソース コード  <https://github.com/domaframework/doma/blob/master/doma-"
+"slf4j/src/main/java/org/seasar/doma/slf4j/Slf4jJdbcLogger.java>`_ を参照してください。"
 
 # 2236146179144d76887087a5ac4222ae
 #: ../../slf4j-support.rst:61
