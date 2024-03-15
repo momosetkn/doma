@@ -24,7 +24,7 @@ msgstr ""
 # e2a91c5bb3b3476d8fdfe8aac75e7ddf
 #: ../../dao.rst:3
 msgid "Dao interfaces"
-msgstr "DAOインターフェース"
+msgstr "DAOインタフェース"
 
 # 40d1b39894bb4ab7a7a5a5c478fcb784
 #: ../../dao.rst:6
@@ -34,22 +34,22 @@ msgstr "コンテンツ"
 # 1e3633e467684ff8a801df530816ca08
 #: ../../dao.rst:8
 msgid "Data Access Object (Dao) is interface for access to database."
-msgstr "Data Access Object (DAO) は、データベースにアクセスするためのインターフェイスです。"
+msgstr "Data Access Object (DAO) は、データベースにアクセスするためのインタフェースです。"
 
 # 6e6443924c074f838a4d247bc4713638
 #: ../../dao.rst:11
 msgid "Dao definition"
-msgstr "DAO インターフェース の定義"
+msgstr "DAO インタフェースの定義"
 
 # 737bb3305b244f2c8c90d5e03929f187
 #: ../../dao.rst:13
 msgid "Dao is defined as interface annotated ``@Dao``."
-msgstr "DAO は ``@Dao`` アノテーションが付けられたインターフェースとして定義されます。"
+msgstr "DAO は ``@Dao`` アノテーションが付けられたインタフェースとして定義されます。"
 
 # 043fef5246d546e28f7db240e470ff95
 #: ../../dao.rst:15
 msgid "Class implemented dao interface is generated in compile time by apt."
-msgstr "クラス実装された DAO インターフェイスは、コンパイル時に アノテーションプロセッサー によって生成されます。"
+msgstr "DAO インタフェースの実装クラスは、コンパイル時にアノテーションプロセッサによって生成されます。"
 
 # fd172f3f7df2470f9c352a0700490e8a
 #: ../../dao.rst:18
@@ -59,7 +59,7 @@ msgstr "クエリ定義"
 # d5e18b6c9e074a9ab917484a0844d24e
 #: ../../dao.rst:20
 msgid ":doc:`query/index` can be defined using annotation."
-msgstr ":doc:`query/index` は、アノテーション を使用して定義できます。"
+msgstr ":doc:`query/index` は、アノテーションを使用して定義できます。"
 
 # e82598518e58461ebd7c1300cfb2adbb
 #: ../../dao.rst:22
@@ -67,12 +67,12 @@ msgid ""
 "You use :doc:`query-builder/index` in `default method`_ if you want to build"
 " query freely in Java code."
 msgstr ""
-"Java コードでクエリを自由に構築したい場合は、`デフォルト メソッド`_ で :doc:`query-builder/index` を使用します。"
+"Java コードでクエリを自由に構築したい場合は、`デフォルトメソッド`_ で :doc:`query-builder/index` を使用します。"
 
 # a52355f6f4f64604bbcf5d04f6762487
 #: ../../dao.rst:27
 msgid "Default method"
-msgstr "デフォルト メソッド"
+msgstr "デフォルトメソッド"
 
 # 223389761c4d4be0be2e335bd24fcb31
 #: ../../dao.rst:29
@@ -101,8 +101,8 @@ msgid ""
 " managed by DI container then it should be controlled to instantiate "
 "implementation class by DI container."
 msgstr ""
-"実装クラスはコンパイル時に アノテーションプロセッサー によって生成されます。実装クラスはインスタンス化して使用できますが、``Config`` が "
-"DI コンテナで管理されている場合はDI コンテナでDAOの実装クラスをインスタンス化するように制御する必要があります。"
+"DAOの実装クラスはインスタンス化して使用できます。ただし、``Config`` "
+"が依存性注入コンテナで管理されている場合はDAOのインスタンス化も依存性注入コンテナに任せるのが良いでしょう。"
 
 # e6a2278997ca4fa7af615d595abf572a
 #: ../../dao.rst:59
@@ -111,7 +111,7 @@ msgid ""
 "``Impl``. Please refer :doc:`annotation-processing` to change package and "
 "suffix."
 msgstr ""
-"デフォルトでは、実装クラス名はインターフェース名に接尾辞 ``Impl`` "
+"デフォルトでは、DAOの実装クラス名はインタフェース名に接尾辞 ``Impl`` "
 "を付けたものになります。パッケージとサフィックスを変更するには、:doc:`annotation-processing` を参照してください。"
 
 # 17ca00b0be3d47febf142c97a750b9a6
@@ -135,5 +135,5 @@ msgid ""
 "Dao interface is no need to define as one to one with entity class. One dao "
 "interface can handle more than one entity classes."
 msgstr ""
-"DAOインターフェースはエンティティクラスと1対1で定義する必要はありません。 1 つの DAO インターフェイスで複数のエンティティ "
+"DAO インタフェースはエンティティクラスと1対1で定義する必要はありません。 1 つの DAO インタフェースで複数のエンティティ "
 "クラスを処理できます。"
