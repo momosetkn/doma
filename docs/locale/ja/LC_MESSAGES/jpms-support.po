@@ -123,7 +123,7 @@ msgid ""
 "Doma uses reflection to access Entity properties. For this to work, you have"
 " to open packages containing Entity classes:"
 msgstr ""
-"Doma はリフレクションを使用してエンティティ プロパティにアクセスします。これを機能させるには、Entity "
+"Doma はリフレクションを使用してエンティティのフィールドにアクセスします。これを機能させるには、Entity "
 "クラスを含むパッケージを開く必要があります。"
 
 # 2d31720491964f7b852d00ff4cff1dcc
