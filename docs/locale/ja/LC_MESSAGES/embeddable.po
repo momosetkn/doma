@@ -44,12 +44,12 @@ msgstr "埋め込み可能クラスの定義"
 # 5f6d278861f049a5a93b2417d9b699d0
 #: ../../embeddable.rst:13
 msgid "The following code snippet shows how to define an embeddable:"
-msgstr "次のコード スニペットは、埋め込み可能クラスを定義する方法を示しています。"
+msgstr "次のコードスニペットは、埋め込み可能クラスを定義する方法を示しています。"
 
 # e4d7ea2332e44fdf8e41dbbe6f5ccb7d
 #: ../../embeddable.rst:34
 msgid "The embeddable class is used as the entity field type:"
-msgstr "埋め込み可能クラスはエンティティ フィールド タイプとして使用されます。"
+msgstr "埋め込み可能クラスはエンティティフィールドの型として使用されます。"
 
 # cd8405311a97429a8cf4dd5fad583ea0
 #: ../../embeddable.rst:46
@@ -61,7 +61,7 @@ msgstr "上記のエンティティ定義は、次のエンティティ定義と
 msgid ""
 "In Java 14 and later version, you can annotate `records`_ with "
 "``@Embeddable``:"
-msgstr "Java 14 以降のバージョンでは、`records`_ に ``@Embeddable`` で注釈を付けることができます。"
+msgstr "Java 14 以降のバージョンでは、`records`_ に ``@Embeddable`` アノテーションを付けることができます。"
 
 # f2ae7821a4214037a12a2f9252eb7894
 #: ../../embeddable.rst:78
@@ -71,7 +71,7 @@ msgstr "命名規則"
 # e49c4ca9b6db48a8b90e76bcad937d09
 #: ../../embeddable.rst:80
 msgid "A naming convention is inherited from the enclosing :doc:`../entity`."
-msgstr "命名規則は、それを囲んでいる :doc:`../entity` から継承されます。"
+msgstr "命名規則は、埋め込み可能クラスを利用している :doc:`../entity` から継承されます。"
 
 # eeecadf73cab4847b61c61ccb58094f2
 #: ../../embeddable.rst:83
@@ -83,12 +83,12 @@ msgstr "フィールドの定義"
 msgid ""
 "By default, the fields are persistent and correspond to the database columns"
 " or result set columns."
-msgstr "デフォルトでは、フィールドは永続的で、データベース列または結果セット列に対応します。"
+msgstr "デフォルトでは、フィールドは永続的で、データベースまたは結果セットのカラムに対応します。"
 
 # b7923c9c6b0d452e9e010fdc9cd5772f
 #: ../../embeddable.rst:87
 msgid "The field type must be one of the following:"
-msgstr "フィールド タイプは次のいずれかである必要があります。"
+msgstr "フィールドの型は次のいずれかである必要があります。"
 
 # ed79a87319554f7db8bac1ea75ecd1f8
 #: ../../embeddable.rst:89
@@ -104,7 +104,7 @@ msgstr ":doc:`domain`"
 #: ../../embeddable.rst:91
 msgid ""
 "java.util.Optional, whose element is either :doc:`basic` or :doc:`domain`"
-msgstr "java.util.Optional、その要素は :doc:`basic` または :doc:`domain` のいずれかです"
+msgstr "要素を :doc:`basic` または :doc:`domain` のいずれかとする java.util.Optional"
 
 # 54f828dfce344395a3700692a3d143e4
 #: ../../embeddable.rst:92
@@ -131,7 +131,7 @@ msgstr "Column"
 msgid ""
 "You can specify the corresponding column name with the ``@Column`` "
 "annotation:"
-msgstr "対応する カラム 名を ``@カラム``  アノテーションで指定できます。"
+msgstr "カラム名を ``@Column``  アノテーションで指定できます。"
 
 # 90f729799b1f40a490f612e6e8582a6f
 #: ../../embeddable.rst:115

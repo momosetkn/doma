@@ -616,7 +616,7 @@ msgid ""
 "All JDBC drivers are loaded automatically by the `service provider <service "
 "provider_>`_ mechanism."
 msgstr ""
-"すべての JDBC ドライバーは、 `サービスプロバイダ <service provider_>`_ メカニズムによって自動的にロードされます。"
+"すべての JDBC ドライバは、 `サービスプロバイダ <service provider_>`_ メカニズムによって自動的にロードされます。"
 
 # da04e5ac76364c8dbed202365a93c20c
 #: ../../config.rst:229
