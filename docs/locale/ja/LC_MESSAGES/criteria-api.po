@@ -42,8 +42,8 @@ msgid ""
 "In Kotlin environment, use Kotlin specific DSLs instead of the following "
 "DSLs. See :ref:`kotlin-specific-criteria-api`."
 msgstr ""
-"Kotlin 環境では、次の DSL の代わりに Kotlin 固有の DSL を使用します。 :ref:`kotlin 固有の基準 API` "
-"を参照してください。"
+"Kotlin 環境では、次の DSL の代わりに Kotlin 固有の DSL を使用できます。 :ref:`kotlin-specific-"
+"criteria-api` を参照してください。"
 
 # 290df204bfcc40a7be24bdc437586592
 #: ../../criteria-api.rst:16
@@ -58,17 +58,17 @@ msgstr "Entityql DSL"
 # 740977971a3d4187bc9e0427fcf5041b
 #: ../../criteria-api.rst:19
 msgid "The NativeSql DSL"
-msgstr "NativeSQL DSL"
+msgstr "NativeSql DSL"
 
 # 724a6d77e6464eeb86567f10424928af
 #: ../../criteria-api.rst:21
 msgid "Both requires predefined Entity classes and metamodel classes."
-msgstr "どちらも、事前定義されたエンティティ クラスとメタモデル クラスを必要とします。"
+msgstr "どちらも、事前定義されたエンティティクラスとメタモデルクラスを必要とします。"
 
 # 2c8bd1237c4e45cabab8c9ec898d1301
 #: ../../criteria-api.rst:23
 msgid "We use the following Entity classes to show you some examples:"
-msgstr "次のエンティティ クラスを使用して、いくつかの例を示します。"
+msgstr "次のエンティティクラスを使用して、いくつかの例を示します。"
 
 # d49191eed3d74d90b38e0bb17b910101
 #: ../../criteria-api.rst:99
@@ -79,8 +79,8 @@ msgid ""
 "processor ."
 msgstr ""
 "上記のクラスには ``@Entity(metamodel = @Metamodel)`` というアノテーションが付けられていることに注意してください。 "
-"``metamodel = @Metamodel`` は、アノテーション付きエンティティに、 Doma の アノテーションプロセッサー "
-"によって生成された対応するメタモデル クラスがあることを示します。"
+"``metamodel = @Metamodel`` は、エンティティクラスに対応するメタモデルクラスをDoma の アノテーションプロセッサー "
+"により生成することを示します。"
 
 # 847028f55810432aa5cecbdaa733fcb4
 #: ../../criteria-api.rst:103
@@ -89,8 +89,8 @@ msgid ""
 "``Emp_`` and ``Dept_``. These metamodels allow you to make your query "
 "typesafe."
 msgstr ""
-"この例では、メタモデル クラスは ``Employee_``、``Department_``、``Emp_``、および ``Dept_`` "
-"です。これらのメタモデルを使用すると、クエリをタイプセーフにすることができます。"
+"この例では、メタモデルクラスは ``Employee_``、``Department_``、``Emp_``、および ``Dept_`` "
+"です。これらのメタモデルクラスを使用すると、クエリをタイプセーフに構築できます。"
 
 # cb6a8893eb664d70bf84b050b6fd7401
 #: ../../criteria-api.rst:106
@@ -105,7 +105,7 @@ msgid ""
 "To customize all metamodels in bulk, you can use the annotation processor "
 "options. See :doc:`annotation-processing` and check the following options:"
 msgstr ""
-"すべてのメタモデルを一括でカスタマイズするには、アノテーションプロセッサー オプションを使用できます。 :doc:`annotation-"
+"すべてのメタモデルを一括でカスタマイズするには、アノテーションプロセッサのオプションを使用できます。 :doc:`annotation-"
 "processing` を参照して、次のオプションを確認してください。"
 
 # d9bde96bd5d74be791ea9b3153ccc17e
@@ -135,9 +135,8 @@ msgid ""
 "``org.seasar.doma.jdbc.criteria.Entityql`` class. This class has the "
 "following methods:"
 msgstr ""
-"Entityql DSL "
-"は、エンティティをクエリして関連付けることができます。エントリポイントは``org.seasar.doma.jdbc.criteria.Entityql``"
-" クラスです。このクラスには次のメソッドがあります。"
+"Entityql DSL は、エンティティをクエリして関連付けることができます。エントリポイントは "
+"``org.seasar.doma.jdbc.criteria.Entityql`` クラスです。このクラスには次のメソッドがあります。"
 
 # bb37e5dc61ac4fdaa33d6a668b6711b1
 # e3fa15159dbb4e95b6bcb56310a2a747
@@ -311,7 +310,7 @@ msgid ""
 "the database. It puts results into entity objects, but it handles them as "
 "the plain DTOs."
 msgstr ""
-"一方、NativeSql DSL は、データベースから取得したデータを返します。結果はエンティティ オブジェクトに格納されますが、それらはプレーンな "
+"一方、NativeSql DSL は、データベースから取得したデータを返します。結果はエンティティオブジェクトに格納されますが、それらはプレーンな "
 "DTO として処理されます。"
 
 # b1e65623afcf47a8a46e042f7c9316c5
@@ -467,7 +466,7 @@ msgstr "デフォルトでは、結果のエンティティタイプは ``from``
 msgid ""
 "To choose a joined entity type as the result entity type, call the "
 "``select`` method as follows:"
-msgstr "結合されたエンティティ タイプを結果エンティティ タイプとして選択するには、次のように ``select`` メソッドを呼び出します。"
+msgstr "結合されたエンティティの型を結果のエンティティの型として選択するには、次のように ``select`` メソッドを呼び出します。"
 
 # b6a42722b9e14328be2b652d842d98fd
 #: ../../criteria-api.rst:391
@@ -478,7 +477,7 @@ msgstr "複数のエンティティの検索 (NativeSql)"
 #: ../../criteria-api.rst:393
 msgid ""
 "You can specify multiple entity types and fetch them as a tuple as follows:"
-msgstr "次のように、複数のエンティティ タイプを指定してタプルとしてフェッチできます。"
+msgstr "次のように、複数のエンティティの型を指定してタプルとしてフェッチできます。"
 
 # ee5dcc7d45c547e3a8d92be1a9594d29
 #: ../../criteria-api.rst:418
@@ -501,14 +500,14 @@ msgstr "カラムを射影するには、 ``select`` メソッドを使用しま
 #: ../../criteria-api.rst:425
 msgid ""
 "To project one column, pass one property to the select method as follows:"
-msgstr "1 つの列を射影するには、次のように 1 つのプロパティを select メソッドに渡します。"
+msgstr "1 つのカラムを射影するには、次のように 1 つのプロパティを select メソッドに渡します。"
 
 # 2508553db3bf458fa0020fca08639632
 #: ../../criteria-api.rst:439
 msgid ""
 "To project two or more columns, pass two or more properties to the select "
 "method as follows:"
-msgstr "2 つ以上の列を射影するには、次のように 2 つ以上のプロパティを select メソッドに渡します。"
+msgstr "2 つ以上のカラムを射影するには、次のように 2 つ以上のプロパティを select メソッドに渡します。"
 
 # a4f9bb79ee0649bbbf0c0b163b4ac09f
 #: ../../criteria-api.rst:454
@@ -516,7 +515,7 @@ msgid ""
 "Up to 9 numbers, the column results are held by ``Tuple2`` to ``Tuple9``. "
 "For more than 9 numbers, the results are held by ``Row``."
 msgstr ""
-"9 個までの列の結果は ``Tuple2`` から ``Tuple9`` に保持されます。 9 個を超える数値の場合、結果は ``Row`` "
+"9 個までのカラムの結果は ``Tuple2`` から ``Tuple9`` に保持されます。 9 個を超える数値の場合、結果は ``Row`` "
 "によって保持されます。"
 
 # 405e7e3a913e45bab9bf6ac88f1a5f4f
@@ -544,8 +543,8 @@ msgid ""
 "key \"EMPLOYEE_ID\". The ``selectTo`` method always includes the id "
 "properties of the entity, even if you don't."
 msgstr ""
-"上記の SQL ステートメントの select 句には主キー ``EMPLOYEE_ID`` が含まれていることに注意してください。 "
-"``selectTo`` メソッドには、エンティティの id プロパティが含まれていない場合でも、常に含まれます。"
+"上記の SQL ステートメントの SELECT 句には主キー ``EMPLOYEE_ID`` が含まれていることに注意してください。 "
+"``selectTo`` メソッドにエンティティの id プロパティが含まれていない場合でも、SELECT 句には常に主キーが含まれます。"
 
 # c2d75b53a4c9401aaad5eab1e28b60c0
 #: ../../criteria-api.rst:489
@@ -679,7 +678,7 @@ msgstr "and"
 # 6346c1fb8d154850a62be3b5b1b39469
 #: ../../criteria-api.rst:525 ../../criteria-api.rst:903
 msgid "or"
-msgstr "または"
+msgstr "or"
 
 # 20c81f6df2d04241a47aad26d9d83e63
 # 105b744f364c4b89a50e0cfca4d25252
@@ -717,7 +716,7 @@ msgid ""
 "As well as, when every operators are not evaluated in a logical operator "
 "expression, the built statement doesn't have the logical operator "
 "expression."
-msgstr "また、すべての演算子が論理演算子式で評価されない場合、構築されたステートメントには論理演算子式がありません。"
+msgstr "また、すべての演算子が論理演算子の式で評価されない場合、構築されたステートメントには論理演算子の式が含まれません。"
 
 # 1fd64f20d38240af87e59d44db796a96
 #: ../../criteria-api.rst:591
@@ -778,8 +777,8 @@ msgid ""
 "You can associate entities with the ``associate`` operation in the Entityql "
 "DSL. You have to use the ``associate`` operation with join expression."
 msgstr ""
-"Entityql DSL の ``associate`` 操作を使用してエンティティを関連付けることができます。 join 式で "
-"``associate`` 操作を使用する必要があります。"
+"Entityql DSL の ``associate`` メソッドを使用してエンティティを関連付けることができます。 join 式と一緒に "
+"``associate`` メソッドを使用する必要があります。"
 
 # db2b289a012c4e99b74ddcd63f5c8efd
 #: ../../criteria-api.rst:703
@@ -798,8 +797,8 @@ msgid ""
 " the Entityql DSL. You have to use the ``associateWith`` operation with join"
 " expression."
 msgstr ""
-"不変エンティティを Entityql DSL の ``associateWith`` オペレーションに関連付けることができます。 join 式で "
-"``associateWith`` 操作を使用する必要があります。"
+"不変エンティティを Entityql DSL の ``associateWith`` メソッドに関連付けることができます。 join 式と一緒に "
+"``associateWith`` メソッドを使用する必要があります。"
 
 # 6131c785e1634493987e32bcd9b0c9ab
 #: ../../criteria-api.rst:764
@@ -817,14 +816,14 @@ msgstr "join 式は、評価された演算子のみを使用して JOIN 句を�
 msgid ""
 "When every operators are not evaluated in a join expression, the built "
 "statement doesn't have any JOIN clause."
-msgstr "すべての演算子が join 式で評価されない場合、構築されたステートメントには JOIN 句がありません。"
+msgstr "すべての演算子が join 式で評価されない場合、構築されたステートメントには JOIN 句は含まれません。"
 
 # faf2c4a875094c14bf88a9ef7bcdb0c2
 #: ../../criteria-api.rst:771
 msgid ""
 "For example, suppose that a join expression contains a conditional "
 "expression as follows:"
-msgstr "たとえば、 join 式に次のような join 式が含まれているとします。"
+msgstr "たとえば、 join 式に条件分岐が含まれているとします。"
 
 # f81fe62ea41c4c559d29230fc9c98703
 #: ../../criteria-api.rst:790
@@ -926,7 +925,8 @@ msgid ""
 "from the select expression automatically. So the following code issue the "
 "same SQL statement above:"
 msgstr ""
-"group by 式を指定しない場合、式は選択式から自動的に推測されます。したがって、次のコードは上記と同じ SQL ステートメントを発行します。"
+"group by 式を指定しない場合、group by 式は select 式から自動的に推測されます。したがって、次のコードは上記と同じ SQL "
+"ステートメントを発行します。"
 
 # 56da8a5579de4125bd42debef3fe8456
 #: ../../criteria-api.rst:889
@@ -954,7 +954,7 @@ msgstr "having 式では、評価された演算子のみを使用して HAVING 
 msgid ""
 "When every operators are not evaluated in a having expression, the built "
 "statement doesn't have any HAVING clause."
-msgstr "having 式ですべての演算子が評価されない場合、構築されたステートメントには HAVING 句がありません。"
+msgstr "having 式ですべての演算子が評価されない場合、構築されたステートメントには HAVING 句は含まれません。"
 
 # 158824c617a94b46953254c2dfba5f2f
 #: ../../criteria-api.rst:942
@@ -993,7 +993,7 @@ msgstr "order by 式では、評価された演算子のみを使用して ORDER
 msgid ""
 "When every operators are not evaluated in a order by expression, the built "
 "statement doesn't have any ORDER BY clause."
-msgstr "すべての演算子が order by 式で評価されない場合、構築されたステートメントには ORDER BY 句がありません。"
+msgstr "すべての演算子が order by 式で評価されない場合、構築されたステートメントには ORDER BY 句は含まれません。"
 
 # 241623454340445baca00dddb1bb511e
 #: ../../criteria-api.rst:981
@@ -1165,7 +1165,7 @@ msgstr "実行メソッドは次の例外をスローする場合があります
 msgid ""
 "OptimisticLockException: if the entity has a version property and an update "
 "count is 0"
-msgstr "OptimisticLockException: エンティティにバージョン プロパティがあり、更新カウントが 0 の場合"
+msgstr "OptimisticLockException: エンティティにバージョン プロパティがあり、更新件数が 0 の場合"
 
 # 02f9dbd18aad40239fc2b0c86b0bbf1e
 #: ../../criteria-api.rst:1262
@@ -1213,7 +1213,7 @@ msgstr "Insert ステートメント (Entityql)"
 # 5f3c68823c0a472a88775b8331768537
 #: ../../criteria-api.rst:1352
 msgid "Batch Insert is also supported:"
-msgstr "バッチ挿入もサポートされています。"
+msgstr "バッチ追加もサポートされています。"
 
 # a59f90f9919b4da0b7324e65f0e80363
 # 4bcb1bf15a32453d88a9505105a24021
@@ -1465,7 +1465,8 @@ msgstr "スコープを有効にするには、 ``@Metamodel`` のscopes 要素�
 msgid ""
 "Now the metamodel ``Department_`` has a ``onlyTokyo`` method. You can use it"
 " as follows:"
-msgstr "現在、メタモデル ``Department_`` には ``onlyTokyo`` メソッドがあります。次のように使用できます。"
+msgstr ""
+"上述の設定によりメタモデル ``Department_`` には ``onlyTokyo`` メソッドが生成されます。次のように使用できます。"
 
 # e5bd20df1dfc4f25b4cdfd9742164f89
 #: ../../criteria-api.rst:1765
