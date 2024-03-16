@@ -1894,5 +1894,4 @@ Sample projects
 ===============
 
 * `simple-examples <https://github.com/domaframework/simple-examples>`_
-* `spring-boot-jpetstore <https://github.com/domaframework/spring-boot-jpetstore>`_
 * `kotlin-sample <https://github.com/domaframework/kotlin-sample>`_

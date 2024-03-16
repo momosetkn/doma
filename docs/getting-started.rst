@@ -228,4 +228,3 @@ Next Step
 See other example projects:
 
 - `simple-examples <https://github.com/domaframework/simple-examples>`_
-- `spring-boot-jpetstore <https://github.com/domaframework/spring-boot-jpetstore>`_
