@@ -34,7 +34,7 @@ msgstr "コンテンツ"
 # 4a663936f7674e529228194a82bbe518
 #: ../../query/select.rst:8
 msgid "Annotate with ``@Select`` to Dao method for execute search."
-msgstr "検索を実行するDAOメソッドに ``@Select`` アノテーションを付けます。"
+msgstr "検索を実行するには、DAOメソッドに ``@Select`` アノテーションを付けます。"
 
 # 8ddef9fda88b44019e01db17946bfedf
 #: ../../query/select.rst:19
@@ -68,7 +68,7 @@ msgstr "検索条件"
 #: ../../query/select.rst:31
 msgid ""
 "You use method parameters for query condition. Available types is below."
-msgstr "検索条件にはメソッドパラメータを使用します。使用可能なタイプは以下の通りです。"
+msgstr "検索条件にはメソッドのパラメータを使用します。使用可能な型は以下の通りです。"
 
 # 32637dd0177045f98def77a083976293
 # 4292364a8feb4fad9b0763764ff54155
@@ -154,7 +154,7 @@ msgid ""
 " type is :doc:`../basic` or :doc:`../domain`. Parameter must not be ``null``"
 " if the type is other than that."
 msgstr ""
-"パラメータ数に制限はありません。パラメータのタイプが :doc:`../basic` または :doc:`../domain` の場合、パラメータに "
+"パラメータ数に制限はありません。パラメータの型が :doc:`../basic` または :doc:`../domain` の場合、パラメータに "
 "``null`` を設定できます。型がそれ以外の場合、パラメータは ``null`` であってはなりません。"
 
 # d564da83224f4daba32a77e4e38901eb
@@ -166,14 +166,14 @@ msgstr "基本クラスまたはドメインクラスを使用したクエリ"
 #: ../../query/select.rst:50
 msgid ""
 "You declare :doc:`../basic` or :doc:`../domain` to method or parameter."
-msgstr "メソッドまたはパラメータに :doc:`../basic` または :doc:`../domain` を宣言します。"
+msgstr "メソッドのパラメータとして :doc:`../basic` または :doc:`../domain` を宣言します。"
 
 # 536c3212ccfd4b60ad6a168254beb227
 #: ../../query/select.rst:57
 msgid ""
 "You map method parameter to SQL by using SQL comment in SQL file. In SQL "
 "comment, method parameter name is referenced."
-msgstr "SQLコメントを使用してメソッドパラメータをSQLにバインドします。 SQLコメントではメソッドのパラメータ名を参照します。"
+msgstr "バインド変数ディレクティブを使用してメソッドのパラメータをSQLにバインドします。 "
 
 # cf4bdc40e710416b88c4abedbed15215
 #: ../../query/select.rst:65
@@ -186,7 +186,8 @@ msgid ""
 "You map to SQL by access field or call method there are using by dot ``.`` "
 "if using arbitrary parameter type in method parameter."
 msgstr ""
-"メソッドパラメータに任意の型を使用する場合は、 ``.`` を使ってフィールドアクセスまたはメソッド呼び出しを行い結果をSQLにバインドします。"
+"メソッドのパラメータに任意の型を使用する場合は、バインド変数ディレクティブの中で  ``.`` "
+"を使ってフィールドアクセスまたはメソッド呼び出しを行い結果をSQLにバインドします。"
 
 # 41108619574a4e1cb27d0a8b7de9037d
 #: ../../query/select.rst:78
