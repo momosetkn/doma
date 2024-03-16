@@ -31,14 +31,16 @@ Write your build.gradle.kts as follows:
 
 .. code-block:: kotlin
 
-  id("org.seasar.doma.compile") version "2.0.0"
+  plugins {
+      id("org.seasar.doma.compile") version "2.0.0"
+  }
 
   dependencies {
       implementation("org.seasar.doma:doma-core:2.56.0")
       annotationProcessor("org.seasar.doma:doma-processor:2.56.0")
   }
 
-To simplify your build.script.kts, we recommend that you use the `Doma Compile Plugin`_.
+To simplify your build.script.kts, we recommend that you use the `org.seasar.doma.compile`_ plugin.
 
 See build.gradle.kts in the `getting-started`_ repository as an example.
 
@@ -96,7 +98,7 @@ Gradle
 Generate eclipse setting files with Gradle, and then import your project into Eclipse.
 To generate the setting files, run ``gradle cleanEclipse eclipse``.
 
-To simplify your build.script.kts, we recommend that you use the `com.diffplug.eclipse.apt`_.
+To simplify your build.script.kts, we recommend that you use the `com.diffplug.eclipse.apt`_ plugin.
 
 See build.gradle.kts in the `getting-started`_ repository as an example.
 
@@ -126,6 +128,6 @@ Import your project as a Maven project.
 Build and run using Maven.
 
 
-.. _Doma Compile Plugin: https://github.com/domaframework/doma-compile-plugin
+.. _org.seasar.doma.compile: https://github.com/domaframework/doma-compile-plugin
 .. _com.diffplug.eclipse.apt: https://plugins.gradle.org/plugin/com.diffplug.eclipse.apt
 .. _getting-started: https://github.com/domaframework/getting-started
