@@ -305,8 +305,9 @@ You can get ``SelectOptions`` instance by static ``get`` method.
 Paging
 ----------
 
-You specify start position by ``offset`` method and get count by ``limit`` method those are within ``SelectOptions``,
-and pass the ``SelectOptions`` instance to Dao method.
+To implement paging, specify the starting position with the ``offset`` method and 
+the number of records to retrieve with the ``limit`` method in ``SelectOptions``. 
+Then, pass an instance of ``SelectOptions`` to the DAO method.
 
 .. code-block:: java
 
@@ -314,30 +315,27 @@ and pass the ``SelectOptions`` instance to Dao method.
   EmployeeDao dao = new EmployeeDaoImpl();
   List<Employee> list = dao.selectByDepartmentName("ACCOUNT", options);
 
-Paging is materialized by rewriting original SQL writing in file and executing.
-Original SQL must be satisfied condition below.
+Paging is achieved by modifying the original SQL, which must meet the following conditions: 
 
-* SQL is SELECT clauses
-* In top level, set operation is not executed like UNION, EXCEPT, INTERSECT.(But using at subquery is able)
-* Paging process is not included.
+* it is a SELECT statement.
+* it does not perform set operations like UNION, EXCEPT, or INTERSECT at the top level (though subqueries are allowed).
+* it does not include paging operations.
 
-In addition, particular condition must be satisfied according to the database dialect.
-
-If specify offset, there are ORDER BY clauses and all column that is specified at ORDER BY clauses is included in SELECT clauses.
+Additionally, specific conditions must be met according to the dialect.
 
 +------------------+-------------------------------------------------------------------------------------+
 | Dialect          |    Condition                                                                        |
 +==================+=====================================================================================+
-| Db2Dialect       |    If specify offset, there are ORDER BY clauses and                                |
-|                  |    all column that is specified at ORDER BY clauses is included in SELECT clauses.  |
+| Db2Dialect       |    When specifying an offset, all columns listed in the ORDER BY clause             |
+|                  |    must be included in the SELECT clause.                                           |
 +------------------+-------------------------------------------------------------------------------------+
-| Mssql2008Dialect |    If specify offset, there are ORDER BY clauses and                                |
-|                  |    all column that is specified at ORDER BY clauses is included in SELECT clauses.  |
+| Mssql2008Dialect |    When specifying an offset, all columns listed in the ORDER BY clause             |
+|                  |    must be included in the SELECT clause.                                           |
 +------------------+-------------------------------------------------------------------------------------+
-| MssqlDialect     |    If specify offset, there are ORDER BY clauses.                                   |
+| MssqlDialect     |    When specifying an offset, the ORDER BY clause is required.                      |
 +------------------+-------------------------------------------------------------------------------------+
-| StandardDialect  |    There are ORDER BY clauses and                                                   |
-|                  |    all column that is specified at ORDER BY clauses is included in SELECT clauses.  |
+| StandardDialect  |    The ORDER BY clause is required.                                                 |
+|                  |    All columns listed in the ORDER BY clause must be included in the SELECT clause. |
 +------------------+-------------------------------------------------------------------------------------+
 
 Pessimistic concurrency control

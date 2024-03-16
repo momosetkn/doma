@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Doma\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 10:39+0900\n"
+"POT-Creation-Date: 2024-03-16 21:26+0900\n"
 "PO-Revision-Date: 2024-03-09 16:18+0000\n"
 "Last-Translator: Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024\n"
 "Language-Team: Japanese (https://app.transifex.com/domaframework/teams/189259/ja/)\n"
@@ -1557,16 +1557,7 @@ msgstr "サンプルプロジェクト"
 msgid "`simple-examples <https://github.com/domaframework/simple-examples>`_"
 msgstr "`simple-examples <https://github.com/domaframework/simple-examples>`_"
 
-# b381454d27e04a26ba5a138a2b263c08
-#: ../../criteria-api.rst:1897
-msgid ""
-"`spring-boot-jpetstore <https://github.com/domaframework/spring-boot-"
-"jpetstore>`_"
-msgstr ""
-"`spring-boot-jpetstore <https://github.com/domaframework/spring-boot-"
-"jpetstore>`_"
-
 # 005f4a8eeeba45098ce06b5e0577a674
-#: ../../criteria-api.rst:1898
+#: ../../criteria-api.rst:1897
 msgid "`kotlin-sample <https://github.com/domaframework/kotlin-sample>`_"
 msgstr "`kotlin-sample <https://github.com/domaframework/kotlin-sample>`_"
