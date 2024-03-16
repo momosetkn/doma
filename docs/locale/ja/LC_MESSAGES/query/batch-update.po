@@ -54,9 +54,9 @@ msgid ""
 ":doc:`../entity` parameter. Also the ``postUpdate`` method of entity "
 "listener method is called each entity when after executing update."
 msgstr ""
-"エンティティリスナーの ``preUpdate`` メソッドは、:doc:`../entity` "
-"パラメータでエンティティリスナーが指定されている場合、更新を実行する前に各エンティティごとに呼び出されます。また、エンティティリスナーメソッドの "
-"``postUpdate`` メソッドは、更新実行後に各エンティティごとに呼び出されます。"
+"更新対象の :doc:`../entity` にエンティティリスナーが設定されている場合、エンティティリスナーの ``preUpdate`` "
+"メソッドが更新実行前に各エンティティごとに呼び出されます。また、エンティティリスナーメソッドの ``postUpdate`` "
+"メソッドは更新実行後に各エンティティごとに呼び出されます。"
 
 # c3f9990751644933875699883f0eee44
 #: ../../query/batch-update.rst:28
@@ -136,7 +136,7 @@ msgid ""
 "``BatchOptimisticLockException`` is not thrown and version property within "
 "entity is increment by 1 if updated count is 1."
 msgstr ""
-"楽観的排他制御が有効であれば、バージョン番号は識別子とともに更新条件に含まれ、 1増分して更新されます。 "
+"楽観的排他制御が有効であれば、バージョン番号はIDとともに更新条件に含まれ、 1増分して更新されます。 "
 "このときの更新件数が0件の場合、楽観的排他制御の失敗を示す ``BatchOptimisticLockException`` がスローされます。 "
 "一方、更新件数が1件の場合は、 ``BatchOptimisticLockException`` はスローされず、 "
 "エンティティのバージョンプロパティの値が1増分されます。"
@@ -197,8 +197,8 @@ msgid ""
 "``false`` is excluded from updating target if :doc:`../entity` has property "
 "that is annotated with ``@Column``."
 msgstr ""
-":doc:`../entity` に `@Column` アノテーションが付けられたプロパティがある場合、 ``@Column`` アノテーション内の "
-"``false`` が指定された ``updatable`` プロパティは更新対象から除外されます。 。"
+":doc:`../entity` に ``@Column`` アノテーションが付けられたプロパティがある場合、 ``@Column`` "
+"アノテーション内の ``false`` が指定された ``updatable`` プロパティは更新対象から除外されます。 。"
 
 # ee64395fdde445e5bba842f0f53e2db7
 #: ../../query/batch-update.rst:92
@@ -259,12 +259,12 @@ msgstr ""
 msgid ""
 "In batch updating by SQL file, rule is different according to using or not "
 "using :ref:`populate`."
-msgstr "SQLファイルによるバッチ更新では、:ref:`populate`を使用する場合と使用しない場合でルールが異なります。"
+msgstr "SQLファイルによるバッチ更新では、:ref:`populate` を使用する場合と使用しない場合でルールが異なります。"
 
 # ffe52c1c4fad417ca3e14631e749914c
 #: ../../query/batch-update.rst:125
 msgid "Case of using comment that generating update column list"
-msgstr "更新列リストを生成するコメントを使用する場合"
+msgstr "更新カラムリスト生成ディレクティブを使用する場合"
 
 # d2d6c26de6114521a23e5fdfa984b5a5
 # 1d16ccc3448a44d7b139e8bc961bf228
@@ -288,7 +288,7 @@ msgstr "更新対象プロパティの制御に関するルールは :ref:`auto-
 # 21d4d593e1c249cc8e3d3a722b049b1b
 #: ../../query/batch-update.rst:152
 msgid "Case of not using comment that generating update column list"
-msgstr "更新列一覧を生成するコメントを使用しない場合"
+msgstr "更新カラムリスト生成ディレクティブを使用しない場合"
 
 # 9c230ea5b7dc42ac9ec1ee59b0db0424
 #: ../../query/batch-update.rst:162

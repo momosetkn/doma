@@ -273,7 +273,8 @@ msgstr "クエリタイムアウト"
 msgid ""
 "You can specify seconds of query timeout to ``queryTimeout`` property within"
 " ``@BatchDelete`` annotation."
-msgstr "`@BatchDelete` アノテーション内の ``queryTimeout`` プロパティにクエリタイムアウトの秒数を指定できます。"
+msgstr ""
+"``@BatchDelete`` アノテーション内の ``queryTimeout`` プロパティにクエリタイムアウトの秒数を指定できます。"
 
 # 86334156b68847c68c5429954ff9e518
 #: ../../query/batch-delete.rst:148
