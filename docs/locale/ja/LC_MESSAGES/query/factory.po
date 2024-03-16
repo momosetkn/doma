@@ -97,7 +97,7 @@ msgstr "Blob インスタンスの作成"
 msgid ""
 "A return type must be ``java.sql.Blob`` and the number of parameters must be"
 " zero:"
-msgstr "戻り値の型は ``java.sql.Blob`` でなければならず、パラメータの数はゼロでなければなりません。"
+msgstr "戻り値の型は ``java.sql.Blob`` でなければならず、パラメータの数は 0 でなければなりません。"
 
 # 02199b8e96b049fd8998c82c599832cb
 #: ../../query/factory.rst:41

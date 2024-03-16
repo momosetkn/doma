@@ -42,7 +42,7 @@ msgid ""
 "By default insert statement is auto generated. You can mapping arbitrary SQL"
 " file by setting true to ``sqlFile`` element of ``@Insert``."
 msgstr ""
-"デフォルトでは、追加ステートメントは自動生成されます。 ``@Insert`` の ``sqlFile`` 要素に ``true`` "
+"デフォルトでは、INSERT ステートメントが自動生成されます。 ``@Insert`` の ``sqlFile`` 要素に ``true`` "
 "を設定することで、任意の SQL ファイルをマッピングすることができます。"
 
 # 54776e3c23df483889f04476bd46f29a
@@ -52,8 +52,9 @@ msgid ""
 "if the entity listener is specified :doc:`../entity` parameter. Also entity "
 "listener ``postInsert`` method is called when after executing insert."
 msgstr ""
-":doc:`../entity` パラメータでエンティティ リスナーが指定されている場合、挿入を実行する前にエンティティ リスナーの "
-"``preInsert`` メソッドが呼び出されます。また、挿入実行後にエンティティリスナーの ``postInsert`` メソッドが呼び出されます。"
+"パラメータが :doc:`../entity` "
+"であり、そのエンティティクラスにエンティティリスナーが指定されている場合、追加を実行する前にエンティティリスナーの ``preInsert`` "
+"メソッドが呼び出されます。また、追加実行後にエンティティリスナーの ``postInsert`` メソッドが呼び出されます。"
 
 # b3637eaf4e57479e8591dc7fd884dda9
 #: ../../query/insert.rst:28
@@ -66,7 +67,7 @@ msgid ""
 "Return value must be ``org.seasar.doma.jdbc.Result`` that make the entity "
 "class an element if parameter is immutable entity class."
 msgstr ""
-"戻り値は、パラメータが不変のエンティティクラスの場合、エンティティクラスを要素とする``org.seasar.doma.jdbc.Result`` "
+"戻り値は、パラメータが不変のエンティティクラスの場合、エンティティクラスを要素とする ``org.seasar.doma.jdbc.Result`` "
 "である必要があります。"
 
 # f0a170b02a71481f8fdbdd972e8b6931
@@ -87,20 +88,19 @@ msgid ""
 "Parameter type must be entity class. Specifiable parameter is only one. "
 "Parameter must not be null."
 msgstr ""
-"パラメータのタイプはエンティティ クラスである必要があります。指定できるパラメータは 1 つだけです。パラメータは null であってはなりません。"
+"パラメータの型はエンティティ クラスである必要があります。指定できるパラメータは 1 つだけです。パラメータは null であってはなりません。"
 
 # 5bd9277cef29425099dcee7fb9713115
 #: ../../query/insert.rst:50
 msgid "Identifier"
-msgstr "識別子"
+msgstr "ID"
 
 # 9fb81ad7d9d54429a1206bf3504ef6eb
 #: ../../query/insert.rst:53
 msgid ""
 "Identifier is auto generated and setting if :doc:`../entity` identifier is "
 "annotated with ``@GeneratedValue``."
-msgstr ""
-"識別子は自動生成され、 :doc:`../entity` 識別子に ``@GeneratedValue`` の注釈が付けられるかどうかを設定します。"
+msgstr "IDは自動生成できます。"
 
 # 85464ad47c1244c88afda4fcdd3432c8
 #: ../../query/insert.rst:55
@@ -179,7 +179,7 @@ msgid ""
 msgstr ""
 "``@Insert`` の ``include`` 要素に指定されたプロパティのみを挿入対象とします。\n"
 "``@Insert`` の ``include`` 要素と ``exclude`` 要素の両方に同じプロパティが指定された場合、\n"
-"そのプロパティは挿入対象外になります。"
+"そのプロパティは追加対象外になります。"
 
 # 1c1ed9dd4286423eb4597e7635440805
 #: ../../query/insert.rst:89
@@ -188,7 +188,7 @@ msgid ""
 "insertion if ``insertable`` element of ``@Column`` is false."
 msgstr ""
 "プロパティがこの要素に指定されていても、 ``@Column`` の ``insertable`` 要素が\n"
-"``false`` であれば挿入対象外です。"
+"``false`` であれば追加対象外です。"
 
 # a4d57e65457243888f303ecb42318294
 #: ../../query/insert.rst:97
@@ -207,7 +207,7 @@ msgstr ""
 "``@Insert`` の ``excludeNull`` 要素が ``true`` の場合、\n"
 "値が ``null`` のプロパティを挿入対象外とします。\n"
 "この要素が ``true`` の場合、 ``@Column`` の ``insertable`` 要素が ``true`` であったり、\n"
-"``@Insert`` の ``include`` 要素にプロパティが指定されていても、値が ``null`` であれば挿入対象外です。"
+"``@Insert`` の ``include`` 要素にプロパティが指定されていても、値が ``null`` であれば追加対象外です。"
 
 # 099b9e1af6134281b30b23823d5fad72
 #: ../../query/insert.rst:109
@@ -220,8 +220,8 @@ msgid ""
 "To execute insertion by SQL file, you set ``true`` to ``sqlFile`` element of"
 " ``@Insert`` and prepare SQL file that correspond method."
 msgstr ""
-"SQLファイルによる挿入を行うには、 ``@Insert`` の ``sqlFile`` 要素に ``true`` を設定し、\n"
-"メソッドに対応するSQLファイルを用意します。"
+"SQLファイルによる追加を行うには、 ``@Insert`` の ``sqlFile`` 要素に ``true`` "
+"を設定し、メソッドに対応するSQLファイルを用意します。"
 
 # 65ab1cd39cfd4bf1a9becbf47a47eada
 #: ../../query/insert.rst:114
@@ -232,7 +232,7 @@ msgid ""
 msgstr ""
 "パラメータには任意の型が使用できます。\n"
 "指定できるパラメータの数に制限はありません。\n"
-"パラメータの型が基本型もしくはドメインクラスの場合、引数を ``null`` にできます。\n"
+"パラメータの型が基本クラスもしくはドメインクラスの場合、引数を ``null`` にできます。\n"
 "それ以外の型の場合、引数は ``null`` であってはいけません。"
 
 # ec175ed7959c448787108459802c785f
@@ -248,7 +248,7 @@ msgid ""
 "insertion by SQL file. Also, ``exclude`` element and ``include`` element and"
 " ``excludeNull`` element of ``@Insert`` are not referenced."
 msgstr ""
-"SQLファイルによる追加では、識別子の自動設定やバージョン番号の自動設定は行われません。\n"
+"SQLファイルによる追加では、IDの自動設定やバージョン番号の自動設定は行われません。\n"
 "また、 ``@Insert`` の ``exclude`` 要素、 ``include`` 要素、 ``excludeNull`` 要素は参照されません。"
 
 # 915b8d70b6d64a92aec790c6b2b71864

@@ -54,8 +54,9 @@ msgid ""
 "the ``postDelete`` method of entity listener is called when after executing "
 "delete."
 msgstr ""
-"エンティティクラスのパラメータにエンティティリスナーが指定されている場合、削除を実行する前にエンティティリスナーの ``preDelete`` "
-"メソッドが呼び出されます。また、削除実行後にはエンティティリスナーの ``postDelete`` メソッドが呼び出されます。"
+"パラメータがエンティティクラスであり、エンティティクラスのにエンティティリスナーが指定されている場合、削除を実行する前にエンティティリスナーの "
+"``preDelete`` メソッドが呼び出されます。また、削除実行後にはエンティティリスナーの ``postDelete`` "
+"メソッドが呼び出されます。"
 
 # fb1bef7a1d38416b8b8be0a2ec9a6845
 #: ../../query/delete.rst:25
@@ -141,7 +142,7 @@ msgid ""
 " number is not include in delete condition. ``OptimisticLockException`` is "
 "not thrown in this case, even if delete count is 0."
 msgstr ""
-"`@Delete` アノテーション内の ``ignoreVersion`` プロパティが ``true`` "
+"``@Delete`` アノテーション内の ``ignoreVersion`` プロパティが ``true`` "
 "の場合、バージョン番号は削除条件に含まれません。この場合、削除件数が 0 であっても ``OptimisticLockException`` "
 "はスローされません。"
 
@@ -245,8 +246,8 @@ msgid ""
 "failure is thrown, if this SQL delete count is 0. "
 "``OptimisticLockException`` is not thrown if delete count is not 0."
 msgstr ""
-"この SQL 削除数が 0 の場合、オプティミスティック同時実行制御の失敗を表す ``OptimisticLockException`` "
-"がスローされます。削除数が 0 でない場合は、 ``OptimisticLockException`` はスローされません。"
+"この SQL 削除数が 0 の場合、楽観的排他制御の失敗を表す ``OptimisticLockException`` がスローされます。削除件数が 0"
+" でない場合は、 ``OptimisticLockException`` はスローされません。"
 
 # 2a89b37487184799a766262e75b93caa
 #: ../../query/delete.rst:126
@@ -306,4 +307,4 @@ msgstr "SQLログの出力形式は ``@Delete`` アノテーション内の ``sq
 msgid ""
 "``SqlLogType.RAW`` represent outputting log that is sql with a binding "
 "parameter."
-msgstr "``SqlLogType.RAW`` はバインドパラメータ（?）付きの SQL をログ出力することを表します。"
+msgstr "``SqlLogType.RAW`` はバインドパラメータ付きの SQL をログ出力することを表します。"

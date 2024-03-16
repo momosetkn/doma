@@ -42,7 +42,8 @@ msgid ""
 "**SQL file is required** in search. There is no feature that auto generating"
 " search SQL."
 msgstr ""
-"検索には SQL ファイルもしく``@Sql`` アノテーションを使った SQL の指定が必要です。検索SQLを自動生成する機能はありません。"
+"検索には SQL ファイルもしくは ``@Sql`` アノテーションを使った SQLテンプレート "
+"の指定が必要です。検索SQLを自動生成する機能はありません。"
 
 # 95676170a06849afb1a56b947be8589a
 #: ../../query/select.rst:24
@@ -61,13 +62,13 @@ msgstr ""
 # f2fbc7c9e2f8443eac7f91ebb7c49a29
 #: ../../query/select.rst:29
 msgid "Query condition"
-msgstr "クエリ条件"
+msgstr "検索条件"
 
 # fe805cfabf3743ab8f40c5a9deebbcf7
 #: ../../query/select.rst:31
 msgid ""
 "You use method parameters for query condition. Available types is below."
-msgstr "クエリ条件にはメソッドパラメータを使用します。使用可能なタイプは以下の通りです。"
+msgstr "検索条件にはメソッドパラメータを使用します。使用可能なタイプは以下の通りです。"
 
 # 32637dd0177045f98def77a083976293
 # 4292364a8feb4fad9b0763764ff54155
@@ -159,7 +160,7 @@ msgstr ""
 # d564da83224f4daba32a77e4e38901eb
 #: ../../query/select.rst:48
 msgid "Query that is used basic type or domain class"
-msgstr "基本型またはドメインクラスを使用したクエリ"
+msgstr "基本クラスまたはドメインクラスを使用したクエリ"
 
 # f6db860edfcb4c98be98363a567d557a
 #: ../../query/select.rst:50
@@ -302,7 +303,7 @@ msgstr "ストリーム検索"
 msgid ""
 "You can use stream search if  handle all record at one try as "
 "``java.util.stream.Stream`` rather than receiving as ``java.util.List``."
-msgstr "すべてのレコードを少しづつ処理する場合は ``java.util.stream.Stream`` ストリーム検索を使用できます。"
+msgstr "すべてのレコードを少しづつ処理する場合は ``java.util.stream.Stream`` を使ったストリーム検索を使用できます。"
 
 # d48beafb2ada43969b382e5404b58416
 #: ../../query/select.rst:152
@@ -325,7 +326,7 @@ msgid ""
 "RESULT>`` or ``java.util.Function<Stream<TARGET>, RESULT>`` to method "
 "parameter."
 msgstr ""
-"@Select アノテーション内の ``strategy`` プロパティに ``SelectType.STREAM`` を設定し、 "
+"``@Select`` アノテーション内の ``strategy`` プロパティに ``SelectType.STREAM`` を設定し、 "
 "``java.util.Function<Stream<TARGET, RESULT>`` のサブタイプをメソッドのパラメータに追加します。"
 
 # 3d686857068844ca8f5788fd7ac2aa2d
@@ -402,7 +403,7 @@ msgid ""
 "attention. You specify ``@Suppress`` below for suppress warning."
 msgstr ""
 "戻り値を返すのはリソースの解放忘れの危険があるため、特別な理由がない限りFunctionへStreamを渡す方法を検討してください。 Domaは、DAO"
-" メソッドに警告メッセージを表示して注意を促します。警告を抑制するには以下に ``@Suppress`` を指定します。"
+" メソッドに警告メッセージを表示して注意を促します。警告を抑制するには以下のように ``@Suppress`` を指定します。"
 
 # 993b29d861b8455991c418df8bf4f4b2
 #: ../../query/select.rst:240
@@ -423,8 +424,8 @@ msgid ""
 "ACCUMULATION, RESULT>`` or ``java.stream.Collector<TARGET, ?, RESULT>`` to "
 "method parameter."
 msgstr ""
-"コレクト検索を実施するには、 ``@Select`` の ``strategy`` 要素に ``SelectType.COLLECT`` を設定し、\n"
-"メソッドのパラメータに ``java.stream.Collector<TARGET, ACCUMULATION, RESULT>`` もしくは\n"
+"コレクト検索を実施するには、 ``@Select`` の ``strategy`` 要素に ``SelectType.COLLECT`` を設定し、 "
+"メソッドのパラメータに ``java.stream.Collector<TARGET, ACCUMULATION, RESULT>`` もしくは "
 "``java.stream.Collector<TARGET, ?, RESULT>`` のサブタイプを定義します。"
 
 # 2fac83e1c9ac4cdd9d7d39c7af5c1d9f
@@ -453,8 +454,8 @@ msgid ""
 "You can do equivalent by using `collect`` method in ``Stream`` object that "
 "is getting from stream search."
 msgstr ""
-"コレクト検索はストリーム検索のFunctionに渡す方法のショートカットです。\n"
-"ストリーム検索で得られる ``Stream`` オブジェクトの ``collect`` メソッドを使って同等のことができます。"
+"コレクト検索はストリーム検索のFunctionに渡す方法のショートカットです。ストリーム検索で得られる ``Stream`` オブジェクトの "
+"``collect`` メソッドを使って同等のことができます。"
 
 # eb91de1c18774ff6a6330d86b10ac607
 #: ../../query/select.rst:281
@@ -468,8 +469,8 @@ msgid ""
 "control from SQL file that is wrote SELECT clauses by you use "
 "``SelectOptions`` that is represent search option."
 msgstr ""
-"検索オプションを表す ``SelectOptions`` を使用すると、SELECT ステートメントからページングやペシミスティック同時実行制御用の "
-"SQL を自動生成できます。"
+"検索オプションを表す ``SelectOptions`` を使用すると、SELECT ステートメントからページングや悲観的排他制御用の SQL "
+"を自動生成できます。"
 
 # 6e462fc578f64758b6d985e1ce86df78
 #: ../../query/select.rst:286
@@ -477,8 +478,7 @@ msgid ""
 "You use ``SelectOptions`` in combination with `Single record search`_ ,  "
 "`Multiple record search`_ ,  `Stream search`_"
 msgstr ""
-"``SelectOptions`` は、 `単一レコード検索`_ 、 `複数レコード検索`_ 、 `ストリーム検索`_\n"
-"と組み合わせて使用します。"
+"``SelectOptions`` は、 `単一レコード検索`_ 、 `複数レコード検索`_ 、 `ストリーム検索`_　と組み合わせて使用します。"
 
 # f164b68cab21494d81a430dd7ab4cd14
 #: ../../query/select.rst:288
@@ -538,7 +538,7 @@ msgstr "ページング処理を含んでいない"
 msgid ""
 "In addition, particular condition must be satisfied according to the "
 "database dialect."
-msgstr "さらに、データベース ダイアレクト に従って特定の条件を満たす必要があります。"
+msgstr "さらに、ダイアレクト に従って特定の条件を満たす必要があります。"
 
 # 179244b828dc429d8b16f8c43733a341
 # 1053a424154f45ddbb0d0ad9f3f2cf5a
@@ -548,7 +548,7 @@ msgstr "さらに、データベース ダイアレクト に従って特定の�
 msgid ""
 "If specify offset, there are ORDER BY clauses and all column that is "
 "specified at ORDER BY clauses is included in SELECT clauses."
-msgstr "offset を指定する場合、ORDER BY 句があり、ORDER BY 句で指定されたすべての列が SELECT 句に含まれる"
+msgstr " "
 
 # cdd474c238084b608e042193b6ac2e75
 # 9c47d558e80242a4a1b0fc7b616d84fc
@@ -607,8 +607,8 @@ msgid ""
 "You indicate executing pessimistic concurrency control by ``forUpdate`` "
 "within ``SelectOptions``, and pass the SelectOptions instance to Dao method."
 msgstr ""
-"``SelectOptions`` の ``forUpdate`` メソッドで悲観的排他制御を行うことを示し、\n"
-"SelectOptionsのインスタンスをDaoのメソッドに渡します。"
+"``SelectOptions`` の ``forUpdate`` "
+"メソッドで悲観的排他制御を行うことを示し、SelectOptionsのインスタンスをDAOのメソッドに渡します。"
 
 # 379a0ac42a124326aa7a14c67ac3ff33
 #: ../../query/select.rst:355
@@ -641,7 +641,7 @@ msgstr "悲観的排他制御の処理を含んでいない"
 msgid ""
 "Part or all of pessimistic concurrency control method can not used according"
 " to the database dialect."
-msgstr "データベースのダイアレクトによっては、悲観的排他制御用のメソッドのすべてもしくは一部が使用できません。"
+msgstr "ダイアレクトによっては、悲観的排他制御用のメソッドのすべてもしくは一部が使用できません。"
 
 # 582d6aa0a7a5422ca973293136dc9dd4
 #: ../../query/select.rst:369
@@ -720,7 +720,7 @@ msgstr "悲観的排他制御用のメソッドすべてを使用できない"
 # 882166979800416e91c540e5266dae7c
 #: ../../query/select.rst:393
 msgid "Aggregate"
-msgstr "集約"
+msgstr "集計"
 
 # d0bba16d7553417b8c87af2cb098d6a1
 #: ../../query/select.rst:395
@@ -793,7 +793,7 @@ msgstr "クエリタイムアウト"
 msgid ""
 "You can specify seconds of query timeout to ``queryTimeout`` property within"
 " ``@Update`` annotation."
-msgstr "結果セットのカラムにマッピングされないプロパティが存在する場合 ``ResultMappingException`` がスローされます。"
+msgstr "``@Select`` アノテーション内の `queryTimeout` プロパティにクエリタイムアウトの秒数を指定できます。"
 
 # 2adf20c2672540f88bd1d1a25706e14c
 #: ../../query/select.rst:443

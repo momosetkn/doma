@@ -36,7 +36,7 @@ msgstr "コンテンツ"
 msgid ""
 "To call stored procedures, you must annotate DAO methods with the "
 "``@Procedure`` annotation:"
-msgstr "ストアド プロシージャを呼び出すには、DAO メソッドに ``@Procedure`` アノテーションを付ける必要があります。"
+msgstr "ストアドプロシージャを呼び出すには、DAO メソッドに ``@Procedure`` アノテーションを付ける必要があります。"
 
 # 3bfb805859a94db48f574cc9b1fffa6c
 #: ../../query/procedure.rst:20
@@ -78,7 +78,7 @@ msgstr "ストアド プロシージャのパラメータの順序は、DAO メ�
 # 02ec006dce884fb586cf38e531ef30c4
 #: ../../query/procedure.rst:40
 msgid "All parameters must be annotated with one of following annotations:"
-msgstr "すべてのパラメータには、次のいずれかの注釈を付ける必要があります。"
+msgstr "すべてのパラメータには、次のいずれかのアノテーションを付ける必要があります。"
 
 # 1670db6a38cf43ac9506d9bf6f046123
 #: ../../query/procedure.rst:42
@@ -112,8 +112,8 @@ msgid ""
 " the ``@In`` annotation. The type of the DAO method parameter must be one of"
 " the following:"
 msgstr ""
-"IN パラメータを示すには、対応する DAO メソッド パラメータに ``@In`` アノテーションを付けます。 DAO メソッド "
-"パラメータのタイプは、次のいずれかである必要があります。"
+"IN パラメータを示すには、対応する DAO メソッドのパラメータに ``@In`` アノテーションを付けます。 DAO "
+"メソッドのパラメータの型は、次のいずれかである必要があります。"
 
 # b8cc21eb8f9c4ccd871c64be52142856
 # bae22e1d9826449f8432a99227497fd9
@@ -143,7 +143,7 @@ msgid ""
 "java.util.Optional whose element type is either :doc:`../basic` or "
 ":doc:`../domain`"
 msgstr ""
-"要素タイプが :doc:`../basic` または :doc:`../domain` のいずれかである java.util.Optional"
+"要素の型が :doc:`../basic` または :doc:`../domain` のいずれかである java.util.Optional"
 
 # 4d2a487de04f4b6cad686bf317d58495
 # 849b7bf0d1e340bfb51b6dad9915132a
@@ -203,9 +203,9 @@ msgid ""
 " ``org.seasar.doma.jdbc.Reference`` and its type parameter must be one of "
 "the following:"
 msgstr ""
-"INOUT パラメータを示すには、対応する DAO メソッド パラメータに ``@InOut`` アノテーションを付けます。 DAO メソッド "
-"パラメータの型は ``org.seasar.doma.jdbc.Reference`` である必要があり、その type "
-"パラメータは次のいずれかである必要があります。"
+"INOUT パラメータを示すには、対応する DAO メソッドのパラメータに ``@InOut`` アノテーションを付けます。 DAO "
+"メソッドのパラメータの型は ``org.seasar.doma.jdbc.Reference`` "
+"である必要があり、その型パラメータは次のいずれかである必要があります。"
 
 # c0769866ae75448e888224a1b84bbdb6
 #: ../../query/procedure.rst:107
@@ -220,8 +220,8 @@ msgid ""
 "``org.seasar.doma.jdbc.Reference`` and its type parameter must be one of the"
 " following:"
 msgstr ""
-"OUT パラメータを示すには、対応する DAO メソッドパラメータに ``@Out`` アノテーションを付けます。 DAO メソッド パラメータの型は "
-"``org.seasar.doma.jdbc.Reference`` である必要があり、その type パラメータは次のいずれかである必要があります。"
+"OUT パラメータを示すには、対応する DAO メソッドのパラメータに ``@Out`` アノテーションを付けます。 DAO メソッドのパラメータの型は"
+" ``org.seasar.doma.jdbc.Reference`` である必要があり、その型パラメータは次のいずれかである必要があります。"
 
 # 064ae9cacc2849c1acab7e4da09b76d7
 #: ../../query/procedure.rst:138

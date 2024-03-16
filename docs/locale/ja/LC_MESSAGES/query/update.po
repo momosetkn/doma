@@ -54,8 +54,9 @@ msgid ""
 "the ``postUpdate`` method of entity listener  method is called when after "
 "executing update."
 msgstr ""
-"エンティティクラスのパラメータにエンティティリスナーが指定されている場合、更新実行前にエンティティリスナーの ``preUpdate`` "
-"メソッドが呼び出されます。また、更新実行後はエンティティリスナーメソッドの``postUpdate`` メソッドが呼び出されます。"
+"パラメータが :doc:`../entity` "
+"であり、そのエンティティクラスにエンティティリスナーが指定されている場合、更新実行前にエンティティリスナーの ``preUpdate`` "
+"メソッドが呼び出されます。また、更新実行後はエンティティリスナーメソッドの ``postUpdate`` メソッドが呼び出されます。"
 
 # efe1399270764e18a45060c9ae9641b3
 #: ../../query/update.rst:28
@@ -68,7 +69,7 @@ msgid ""
 "Return value must be ``org.seasar.doma.jdbc.Result`` that has entity class "
 "as an element if parameter is immutable entity class."
 msgstr ""
-"パラメータが不変のエンティティクラスの場合、戻り値はエンティティクラスを要素とする ``org.seasar.doma.jdbc.Result`` "
+"パラメータが不変のエンティティクラスの場合、戻り値はエンティティクラスを要素とする  ``org.seasar.doma.jdbc.Result`` "
 "である必要があります。"
 
 # 34aa8adfa6444e6b8f030fe6bfe8065e
@@ -89,7 +90,7 @@ msgid ""
 "Parameter type must be entity class. Specifiable parameter is only one. "
 "Parameter must not be null."
 msgstr ""
-"パラメータのタイプはエンティティ クラスである必要があります。指定できるパラメータは 1 つだけです。パラメータは null であってはなりません。"
+"パラメータの型はエンティティクラスである必要があります。指定できるパラメータは 1 つだけです。パラメータは null であってはなりません。"
 
 # 91776b8a7d5f484aa65a1df1d6398a5b
 #: ../../query/update.rst:52
@@ -109,7 +110,7 @@ msgstr "以下の条件を満たした場合、楽観的排他制御が実行さ
 #: ../../query/update.rst:56
 msgid ""
 "Entity class within parameter has property that is annotated with @Version"
-msgstr "パラメータ内のエンティティクラスは @Version アノテーションが付けられたプロパティを持つ"
+msgstr "パラメータのエンティティクラスが @Version アノテーションが付けられたプロパティを持つ"
 
 # 34991237f9e148399af1c698bcc1f985
 # ba7aed79c6c9469e802f9bd18028af23
@@ -127,7 +128,7 @@ msgid ""
 "``OptimisticLockException`` is not thrown and version property within entity"
 " is increment by 1 if updated count is not 0."
 msgstr ""
-"楽観的排他制御が有効な場合、バージョン番号が識別子とともに更新条件に含まれ、バージョン番号は1 増分されて更新されます。更新件数が 0 "
+"楽観的排他制御が有効な場合、バージョン番号がIDとともに更新条件に含まれ、バージョン番号は1 増分されて更新されます。更新件数が 0 "
 "の場合、楽観的排他制御の失敗を表す ``OptimisticLockException`` "
 "がスローされます。楽観的排他制御が成功した場合、エンティティのバージョンプロパティは 1増分されます。"
 
@@ -166,8 +167,8 @@ msgid ""
 "``OptimisticLockException`` is not thrown even if update count is 0. "
 "However, version property value within entity is increment by 1."
 msgstr ""
-"`@Update`` アノテーションの `suppressOptimisticLockException` プロパティが ``true`` の場合、 "
-"``@Version`` アノテーションが付けられたプロパティが存在すればバージョン番号は更新条件に含まれ増分もされますが、 更新件数が0でも "
+"`@Update`` アノテーションの ``suppressOptimisticLockException`` プロパティが ``true`` の場合、"
+" ``@Version`` アノテーションが付けられたプロパティが存在すればバージョン番号は更新条件に含まれ増分もされますが、 更新件数が0でも "
 "``OptimisticLockException`` はスローされません。ただし、エンティティのバージョンプロパティの値は1増分されます。"
 
 # d5daea7349e1460c8af4531bca52ac84
@@ -178,7 +179,7 @@ msgstr "更新対象プロパティの制御"
 # 5acc4c6abc994bb4a1fec575a67cb371
 #: ../../query/update.rst:93
 msgid "updatable"
-msgstr "更新可能"
+msgstr "updatable"
 
 # e08f4e43820347189963e82a38191108
 #: ../../query/update.rst:95
@@ -187,8 +188,8 @@ msgid ""
 "``false`` is excluded from updating target if entity class has property that"
 " is annotated with ``@Column``."
 msgstr ""
-"エンティティクラスに ``@Column`` が注釈されたプロパティがある場合、``@Column`` の ``updatable`` "
-"要素がfalseのものは更新対象外です。"
+"エンティティクラスに ``@Column`` が注釈されたプロパティがある場合、``@Column`` の ``updatable`` 要素が "
+"``false`` のものは更新対象外です。"
 
 # 6abf6807ac554a2ca30f468d4f8e22f3
 #: ../../query/update.rst:98
@@ -295,12 +296,12 @@ msgstr ""
 msgid ""
 "In updating by SQL file, rule is different with or without use "
 "ref:`populate`."
-msgstr "SQLファイルによる更新では ref:`populate` を使用する場合と使用しない場合でルールが異なります。"
+msgstr "SQLファイルによる更新では :ref:`populate` を使用する場合と使用しない場合でルールが異なります。"
 
 # d9981d08d71b42f8a00cfc42c533eed4
 #: ../../query/update.rst:159
 msgid "Case of using comment that generating update column list"
-msgstr "更新列リストを生成するコメントを使用する場合"
+msgstr "更新カラムリスト生成ディレクティブを使用する場合"
 
 # f41530726ac948fab4caf93abe92ae8b
 #: ../../query/update.rst:161
@@ -310,9 +311,8 @@ msgid ""
 "or domain class. Parameter must not be ``null`` if the type is other than "
 "that."
 msgstr ""
-"最初のパラメータの型はエンティティ "
-"クラスである必要があります。指定できるパラメータの数に制限はありません。パラメータの型が基本型またはドメインクラスの場合、パラメータに ``null``"
-" を設定できます。型がそれ以外の場合、パラメータは ``null`` であってはなりません。"
+"最初のパラメータの型はエンティティクラスである必要があります。指定できるパラメータの数に制限はありません。パラメータの型が基本型またはドメインクラスの場合、パラメータに"
+" ``null`` を設定できます。型がそれ以外の場合、パラメータは ``null`` であってはなりません。"
 
 # d7a838fe76f94020b5c49c4163d52fe3
 # 52f3bb39e34946d780c621dd89f70719
@@ -331,7 +331,7 @@ msgstr "対象プロパティの更新制御に関するルールは :ref:`auto-
 # c0af53c85b8d4419901118f42acfd2fc
 #: ../../query/update.rst:183
 msgid "Case of not using comment that generating update column list"
-msgstr "更新列一覧を生成するコメントを使用しない場合"
+msgstr "更新カラムリスト生成ディレクティブを使用しない場合"
 
 # 1222ac09bce84fc28372bbe3f5ac5d3d
 #: ../../query/update.rst:185
@@ -468,4 +468,4 @@ msgstr "``@Update`` の ``sqlLog`` 要素に SQL のログ出力形式を指定�
 msgid ""
 "``SqlLogType.RAW`` represent outputting log that is sql with a binding "
 "parameter."
-msgstr "``SqlLogType.RAW`` はバインドパラメータ（?）付きの SQL をログ出力することを表します。"
+msgstr "``SqlLogType.RAW`` はバインドパラメータ付きの SQL をログ出力することを表します。"
