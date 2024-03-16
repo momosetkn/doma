@@ -1,25 +1,21 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2018, Toshihiro Nakamura
-# This file is distributed under the same license as the Doma package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
-# Translators:
-# Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024
-# 
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Doma\n"
+"Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-10 10:39+0900\n"
-"PO-Revision-Date: 2024-03-10 01:59+0000\n"
-"Last-Translator: Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024\n"
-"Language-Team: Japanese (https://app.transifex.com/domaframework/teams/189259/ja/)\n"
+"PO-Revision-Date: 2024-03-16 23:31\n"
+"Last-Translator: \n"
+"Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: doma-docs\n"
+"X-Crowdin-Project-ID: 657384\n"
+"X-Crowdin-Language: ja\n"
+"X-Crowdin-File: /_build/gettext/query/script.pot\n"
+"X-Crowdin-File-ID: 208\n"
+"Language: ja_JP\n"
 
 # cd381ad805294fc88839205de6564db1
 #: ../../query/script.rst:3
@@ -33,16 +29,12 @@ msgstr "コンテンツ"
 
 # d1a68e14f6994ffa87fa4239e12cb86f
 #: ../../query/script.rst:8
-msgid ""
-"To run a series of static SQL statements, annotate DAO methods with "
-"``@Script``:"
+msgid "To run a series of static SQL statements, annotate DAO methods with ``@Script``:"
 msgstr "一連の静的 SQL ステートメントを実行するには、DAO メソッドに ``@Script`` アノテーションを付けます。"
 
 # 8f5069376ee44c9facc5669748967319
 #: ../../query/script.rst:20
-msgid ""
-"The return type of the method must be ``void`` and the number of parameters "
-"must be zero."
+msgid "The return type of the method must be ``void`` and the number of parameters must be zero."
 msgstr "メソッドの戻り値の型は ``void`` でなければならず、パラメータの数は 0 でなければなりません。"
 
 # 5a977ae497b647d08b1b2d375993a8bf
@@ -72,9 +64,7 @@ msgstr "位置"
 
 # 98f4caf510624204b7522ac4dfb5cb34
 #: ../../query/script.rst:36
-msgid ""
-"The script files must be located in directories below a “META-INF” directory"
-" which is included in CLASSPATH."
+msgid "The script files must be located in directories below a “META-INF” directory which is included in CLASSPATH."
 msgstr "スクリプト ファイルは、CLASSPATH に含まれる「META-INF」ディレクトリ以下のディレクトリに配置する必要があります。"
 
 # 54f0c393a4e24fb8bb2ac0ddee8a9783
@@ -94,17 +84,13 @@ msgstr "META-INF/*daoインターフェイスのパス形式*/*daoメソッド*.
 
 # 141815ad1a324d4a8c1c55f8cd45ae81
 #: ../../query/script.rst:46
-msgid ""
-"For example, when the DAO interface name is ``aaa.bbb.EmployeeDao`` and the "
-"DAO method name is ``createTable``, the script file path is as follows:"
-msgstr ""
-"たとえば、DAOインターフェース名が ``aaa.bbb.EmployeeDao`` 、DAOメソッド名が ``createTable`` "
-"の場合、スクリプトファイルのパスは次のようになります。"
+msgid "For example, when the DAO interface name is ``aaa.bbb.EmployeeDao`` and the DAO method name is ``createTable``, the script file path is as follows:"
+msgstr "たとえば、DAOインターフェース名が ``aaa.bbb.EmployeeDao`` 、DAOメソッド名が ``createTable`` の場合、スクリプトファイルのパスは次のようになります。"
 
 # a5b0a17ac98d4f1581a21b39ae3bb119
 #: ../../query/script.rst:49
 msgid "META-INF/aaa/bbb/EmployeeDao/createTable.script"
-msgstr "META-INF/aaa/bbb/EmployeeDao/createTable.script"
+msgstr ""
 
 # b5b98947c7ec4c09b641383e931d0cf0
 #: ../../query/script.rst:52
@@ -113,30 +99,18 @@ msgstr "特定の RDBMS への依存関係"
 
 # dd100a36faba4f008ec23942e0c10e14
 #: ../../query/script.rst:54
-msgid ""
-"You can specify a dependency on a specific RDBMS by file name. To do this, "
-"put the hyphen \"-\" and RDBMS name before the extension \".sql\". For "
-"example, the file path specific to PostgreSQL is as follows:"
-msgstr ""
-"特定の RDBMS への依存関係をファイル名で指定できます。これを行うには、拡張子「.sql」の前にハイフン「-」と RDBMS "
-"名を置きます。たとえば、PostgreSQL に固有のファイル パスは次のとおりです。"
+msgid "You can specify a dependency on a specific RDBMS by file name. To do this, put the hyphen \"-\" and RDBMS name before the extension \".sql\". For example, the file path specific to PostgreSQL is as follows:"
+msgstr "特定の RDBMS への依存関係をファイル名で指定できます。これを行うには、拡張子「.sql」の前にハイフン「-」と RDBMS 名を置きます。たとえば、PostgreSQL に固有のファイル パスは次のとおりです。"
 
 # 8574bcbc2d984c4985dbd9207f9c75a1
 #: ../../query/script.rst:58
 msgid "META-INF/aaa/bbb/EmployeeDao/createTable-*postgres*.script"
-msgstr "META-INF/aaa/bbb/EmployeeDao/createTable-*postgres*.script"
+msgstr ""
 
 # ef2a45698a6046d79ac2961b0ee3b2a1
 #: ../../query/script.rst:60
-msgid ""
-"The script files specific to RDBMSs are given priority. For example, in the "
-"environment where PostgreSQL is used, \"META-"
-"INF/aaa/bbb/EmployeeDao/createTable-postgres.script\" is chosen instead of "
-"\"META-INF/aaa/bbb/EmployeeDao/createTable.script\"."
-msgstr ""
-"RDBMS固有のスクリプトファイルが優先されます。例えば、PostgreSQLを使用する環境では、 \"META-"
-"INF/aaa/bbb/EmployeeDao/createTable.script\" ではなく \"META-"
-"INF/aaa/bbb/EmployeeDao/createTable-postgres.script\" が選択されます。"
+msgid "The script files specific to RDBMSs are given priority. For example, in the environment where PostgreSQL is used, \"META-INF/aaa/bbb/EmployeeDao/createTable-postgres.script\" is chosen instead of \"META-INF/aaa/bbb/EmployeeDao/createTable.script\"."
+msgstr "RDBMS固有のスクリプトファイルが優先されます。例えば、PostgreSQLを使用する環境では、 \"META-INF/aaa/bbb/EmployeeDao/createTable.script\" ではなく \"META-INF/aaa/bbb/EmployeeDao/createTable-postgres.script\" が選択されます。"
 
 # 36d3d7be08154198afe21dcec69aa659
 #: ../../query/script.rst:65
@@ -175,24 +149,20 @@ msgstr "ステートメント区切り文字"
 
 # 27bdba5ff4d44fa69b2c51c4bd0b1f56
 # b1994ca080844811835d204dd067af56
-#: ../../query/script.rst:90 ../../query/script.rst:97
+#: ../../query/script.rst:90
+#: ../../query/script.rst:97
 msgid "block delimiter"
 msgstr "ブロック区切り文字"
 
 # 0a283d86b89447ed9395107d2283aeb2
 #: ../../query/script.rst:92
-msgid ""
-"The statement delimiter is always a semicolon ``;``. The block delimiter is "
-"determined by a ``Dialect`` instance. The RDBMS block delimiters are as "
-"follows:"
-msgstr ""
-"ステートメントの区切り文字は常にセミコロン ``;`` です。ブロック区切り文字は ``Dialect`` インスタンスによって決定されます。 "
-"RDBMS ブロック区切り文字は次のとおりです。"
+msgid "The statement delimiter is always a semicolon ``;``. The block delimiter is determined by a ``Dialect`` instance. The RDBMS block delimiters are as follows:"
+msgstr "ステートメントの区切り文字は常にセミコロン ``;`` です。ブロック区切り文字は ``Dialect`` インスタンスによって決定されます。 RDBMS ブロック区切り文字は次のとおりです。"
 
 # ee76c79f0251481b886419a4e6b0a7a0
 #: ../../query/script.rst:97
 msgid "RDBMS"
-msgstr "RDBMS"
+msgstr ""
 
 # 3ff26ea5743d4980b061379423e7c390
 #: ../../query/script.rst:97
@@ -202,130 +172,130 @@ msgstr "方言"
 # a697c738d98949edb95b5f8b77a067f2
 #: ../../query/script.rst:99
 msgid "DB2"
-msgstr "DB2"
+msgstr ""
 
 # 2c09b136b71e40d9a6cd8a7d7c34788e
 #: ../../query/script.rst:99
 msgid "Db2Dialect"
-msgstr "Db2Dialect"
+msgstr ""
 
 # ba11cd9e709b46c8ab62ee138594512e
 #: ../../query/script.rst:99
 msgid "@"
-msgstr "@"
+msgstr ""
 
 # 5b76dd8aaab0438c9a2792f03f1633d3
 #: ../../query/script.rst:101
 msgid "H2 Database Engine 1.2.126"
-msgstr "H2 Database Engine 1.2.126"
+msgstr ""
 
 # 58b75f1d1a2a4ce48eab6b68f2ece820
 #: ../../query/script.rst:101
 msgid "H212126Dialect"
-msgstr "H212126Dialect"
+msgstr ""
 
 # 2dc9e24a8688430fa0ec05be4a7fe2b9
 #: ../../query/script.rst:103
 msgid "H2 Database"
-msgstr "H2 Database"
+msgstr ""
 
 # 4f30de03262c4ac288f5424cc25e079d
 #: ../../query/script.rst:103
 msgid "H2Dialect"
-msgstr "H2Dialect"
+msgstr ""
 
 # 281d1fbade494544baecaac9bff15d2d
 #: ../../query/script.rst:105
 msgid "HSQLDB"
-msgstr "HSQLDB"
+msgstr ""
 
 # b55c228a6ead449ea7753d8b4a50b552
 #: ../../query/script.rst:105
 msgid "HsqldbDialect"
-msgstr "HsqldbDialect"
+msgstr ""
 
 # 1663a54194814bdca34ea0873c6ee3c6
 #: ../../query/script.rst:107
 msgid "Microsoft SQL Server 2008"
-msgstr "Microsoft SQL Server 2008"
+msgstr ""
 
 # 2b36145e383f42cda9b12b8e6ddff747
 #: ../../query/script.rst:107
 msgid "Mssql2008Dialect"
-msgstr "Mssql2008Dialect"
+msgstr ""
 
 # c72f9d37a9ef41fa94025de834bde2cd
 # b8995d769f554007a50c72636e6a6818
-#: ../../query/script.rst:107 ../../query/script.rst:109
+#: ../../query/script.rst:107
+#: ../../query/script.rst:109
 msgid "GO"
-msgstr "GO"
+msgstr ""
 
 # dd15ede96b5542748a7567512ce11b18
 #: ../../query/script.rst:109
 msgid "Microsoft SQL Server"
-msgstr "Microsoft SQL Server"
+msgstr ""
 
 # c6940250db96497bb9275f29604b40c5
 #: ../../query/script.rst:109
 msgid "MssqlDialect"
-msgstr "MssqlDialect"
+msgstr ""
 
 # 06b9f04da4794645aa52aaf54c969434
 #: ../../query/script.rst:111
 msgid "MySQL"
-msgstr "MySQL"
+msgstr ""
 
 # 63a5185c5bec41989f15dd9bc3f6ee75
 #: ../../query/script.rst:111
 msgid "MySqlDialect"
-msgstr "MySqlDialect"
+msgstr ""
 
 # b28ab88fded04ae895e972916855ce23
 # 7d411b0caada4deb9f7e7dacc1f7fe66
-#: ../../query/script.rst:111 ../../query/script.rst:113
+#: ../../query/script.rst:111
+#: ../../query/script.rst:113
 msgid "/"
-msgstr "/"
+msgstr ""
 
 # 5e151e70c8184732acd7dd1dba61046c
 #: ../../query/script.rst:113
 msgid "Oracle Database"
-msgstr "Oracle Database"
+msgstr ""
 
 # 1f5e724e4c6c46558df9ee253b363187
 #: ../../query/script.rst:113
 msgid "OracleDialect"
-msgstr "OracleDialect"
+msgstr ""
 
 # d8012e37f36f440da947baa407c333bb
 #: ../../query/script.rst:115
 msgid "PostgreSQL"
-msgstr "PostgreSQL"
+msgstr ""
 
 # 05ba0ed9e25043a5b079b5db46493a2d
 #: ../../query/script.rst:115
 msgid "PostgresDialect"
-msgstr "PostgresDialect"
+msgstr ""
 
 # 1aeb0f333f1f4f0e9018e88e17560f63
 #: ../../query/script.rst:115
 msgid "$$"
-msgstr "$$"
+msgstr ""
 
 # 7fb4f8e98c60408f902cb8e8449c5b2d
 #: ../../query/script.rst:117
 msgid "SQLite"
-msgstr "SQLite"
+msgstr ""
 
 # 067e9bb12d664845ba3482edbf3c2723
 #: ../../query/script.rst:117
 msgid "SqliteDialect"
-msgstr "SqliteDialect"
+msgstr ""
 
 # 2b82ae2b402544c49b36bbd21036e49d
 #: ../../query/script.rst:120
-msgid ""
-"You can also specify the block delimiter to ``@Script``'s ``blockDelimiter``"
-" element:"
+msgid "You can also specify the block delimiter to ``@Script``'s ``blockDelimiter`` element:"
 msgstr "``@Script`` の ``blockDelimiter`` 要素にブロック区切り文字を指定することもできます。"
 
 # 2ed52e88ad90489c93639ae0e0256986
@@ -340,12 +310,8 @@ msgstr "エラーによる停止"
 
 # d2b520729c96459baf260f890e17c6af
 #: ../../query/script.rst:146
-msgid ""
-"Script running will stop when any statement execution fails. To continue the"
-" script running, specify ``false`` to the ``haltOnError`` element:"
-msgstr ""
-"ステートメントの実行が失敗すると、スクリプトの実行は停止します。スクリプトの実行を続行するには、 ``haltOnError`` 要素に "
-"``false`` を指定します。"
+msgid "Script running will stop when any statement execution fails. To continue the script running, specify ``false`` to the ``haltOnError`` element:"
+msgstr "ステートメントの実行が失敗すると、スクリプトの実行は停止します。スクリプトの実行を続行するには、 ``haltOnError`` 要素に ``false`` を指定します。"
 
 # 3df0bac6423c4ece8cb007cbc498e58b
 #: ../../query/script.rst:155
@@ -359,18 +325,11 @@ msgstr "次のスクリプトは Oracle データベースに対して有効で�
 
 # 14ba7b5e8396403e829770bffbc68051
 #: ../../query/script.rst:198
-msgid ""
-"You can use both a single line comment ``--`` and a multi-line comment ``/* "
-"... */``. Each statement must end with a semicolon ``;``. Be careful that a "
-"new line doesn't mean the end of a statement."
-msgstr ""
-"単一行コメント ``--`` と複数行コメント ``/* ... */`` の両方を使用できます。各ステートメントはセミコロン ``;`` "
-"で終わる必要があります。新しい行はステートメントの終わりを意味しないことに注意してください。"
+msgid "You can use both a single line comment ``--`` and a multi-line comment ``/* ... */``. Each statement must end with a semicolon ``;``. Be careful that a new line doesn't mean the end of a statement."
+msgstr "単一行コメント ``--`` と複数行コメント ``/* ... */`` の両方を使用できます。各ステートメントはセミコロン ``;`` で終わる必要があります。新しい行はステートメントの終わりを意味しないことに注意してください。"
 
 # d42fc27bf353450e82ab25bd34e23351
 #: ../../query/script.rst:202
-msgid ""
-"In this example, the slash ``/`` is a block delimiter. The block delimiter "
-"must appear at the beginning of a line and be followed by a new line."
-msgstr ""
-"この例では、スラッシュ ``/`` がブロック区切り文字です。ブロック区切り文字は行の先頭に表示され、その後に新しい行が続く必要があります。"
+msgid "In this example, the slash ``/`` is a block delimiter. The block delimiter must appear at the beginning of a line and be followed by a new line."
+msgstr "この例では、スラッシュ ``/`` がブロック区切り文字です。ブロック区切り文字は行の先頭に表示され、その後に新しい行が続く必要があります。"
+

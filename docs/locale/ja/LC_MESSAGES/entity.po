@@ -1,25 +1,21 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2018, Toshihiro Nakamura
-# This file is distributed under the same license as the Doma package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
-# Translators:
-# Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024
-# 
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Doma\n"
+"Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-10 10:39+0900\n"
-"PO-Revision-Date: 2024-03-09 16:18+0000\n"
-"Last-Translator: Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024\n"
-"Language-Team: Japanese (https://app.transifex.com/domaframework/teams/189259/ja/)\n"
+"PO-Revision-Date: 2024-03-16 23:31\n"
+"Last-Translator: \n"
+"Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: doma-docs\n"
+"X-Crowdin-Project-ID: 657384\n"
+"X-Crowdin-Language: ja\n"
+"X-Crowdin-File: /_build/gettext/entity.pot\n"
+"X-Crowdin-File-ID: 164\n"
+"Language: ja_JP\n"
 
 # 47ea3513b9954835ac0ccf34da0a8013
 #: ../../entity.rst:3
@@ -58,18 +54,13 @@ msgstr "次のコード スニペットは、他のエンティティ クラス�
 
 # 0029e459fb2641d49a8a6587952f2d29
 #: ../../entity.rst:34
-msgid ""
-"In Java 14 and later version, you can annotate `records`_ with ``@Entity``:"
+msgid "In Java 14 and later version, you can annotate `records`_ with ``@Entity``:"
 msgstr "Java 14 以降のバージョンでは、`records`_ に ``@Entity`` アノテーションを付けられます。"
 
 # 4ef7df3b37b949438d27c3e6476d84b3
 #: ../../entity.rst:42
-msgid ""
-"In the case, the entity is recognize as :ref:`immutable` even though the "
-"immutable property of ``@Entity`` is ``false``."
-msgstr ""
-"この場合、 ``@Entity`` の不変プロパティが ``false`` であっても、エンティティは :ref:`immutable` "
-"として認識されます。"
+msgid "In the case, the entity is recognize as :ref:`immutable` even though the immutable property of ``@Entity`` is ``false``."
+msgstr "この場合、 ``@Entity`` の不変プロパティが ``false`` であっても、エンティティは :ref:`immutable` として認識されます。"
 
 # 5a27ea6cac1b48caa5e40fb45e62e461
 #: ../../entity.rst:48
@@ -78,11 +69,8 @@ msgstr "エンティティリスナー"
 
 # 48d0b543257745bda3076cec99f182f5
 #: ../../entity.rst:50
-msgid ""
-"Entity listeners work before/after Doma issues the database modification "
-"statements - INSERT, DELETE and UPDATE."
-msgstr ""
-"エンティティ リスナーは、Doma がINSERT、DELETE、UPDATEなどのデータベース変更ステートメントを発行する前または後に動作します。"
+msgid "Entity listeners work before/after Doma issues the database modification statements - INSERT, DELETE and UPDATE."
+msgstr "エンティティ リスナーは、Doma がINSERT、DELETE、UPDATEなどのデータベース変更ステートメントを発行する前または後に動作します。"
 
 # 2211b2a923884d168979f1d7fc94e8e4
 #: ../../entity.rst:52
@@ -91,11 +79,8 @@ msgstr "次のコードスニペットは、エンティティリスナーを定
 
 # e9fe20d00a924c3d9dffdb7875909c1e
 #: ../../entity.rst:60
-msgid ""
-"To use the entity listener, specify it to the ``listener`` property within "
-"the ``@Entity`` annotation:"
-msgstr ""
-"エンティティ リスナーを使用するには、それを ``@Entity`` アノテーション 内の ``listener`` プロパティに指定します。"
+msgid "To use the entity listener, specify it to the ``listener`` property within the ``@Entity`` annotation:"
+msgstr "エンティティ リスナーを使用するには、それを ``@Entity`` アノテーション 内の ``listener`` プロパティに指定します。"
 
 # 421b3d8cdd454a0e93f89fefc62f3f86
 #: ../../entity.rst:69
@@ -124,19 +109,13 @@ msgstr "データベースのカラムとJavaのエンティティのフィー�
 
 # 9764d55d2faf46bda6621deeebf19c9f
 #: ../../entity.rst:79
-msgid ""
-"The following code snippet shows how to apply the naming convention to an "
-"entity:"
+msgid "The following code snippet shows how to apply the naming convention to an entity:"
 msgstr "次のコードスニペットは、命名規則をエンティティに適用する方法を示しています。"
 
 # e43d879a8d0b4b1f8f71c31f3c0e7bcc
 #: ../../entity.rst:88
-msgid ""
-"When the ``name`` property within the ``@Table`` or ``@Column`` annotation "
-"is explicitly specified, the naming convention is ignored."
-msgstr ""
-"``@Table`` または ``@Column`` アノテーション内の ``name`` "
-"プロパティに値が明示的に指定された場合、命名規則は無視されます。"
+msgid "When the ``name`` property within the ``@Table`` or ``@Column`` annotation is explicitly specified, the naming convention is ignored."
+msgstr "``@Table`` または ``@Column`` アノテーション内の ``name`` プロパティに値が明示的に指定された場合、命名規則は無視されます。"
 
 # 6a0e7811b94c430eb9a1ff19f2d20920
 #: ../../entity.rst:91
@@ -160,12 +139,8 @@ msgstr "次のコード スニペットは、不変エンティティを定義�
 
 # ce73507cf738436a95d5dabe52c2f54f
 #: ../../entity.rst:120
-msgid ""
-"The ``immutable`` property within the ``@Entity`` annotation must be "
-"``true``. The persistent field must be ``final``."
-msgstr ""
-"``@Entity`` アノテーション 内の ``immutable`` プロパティは ``true`` でなければなりません。永続フィールドは "
-"``final`` でなければなりません。"
+msgid "The ``immutable`` property within the ``@Entity`` annotation must be ``true``. The persistent field must be ``final``."
+msgstr "``@Entity`` アノテーション 内の ``immutable`` プロパティは ``true`` でなければなりません。永続フィールドは ``final`` でなければなりません。"
 
 # 6b3f1d6dd32148b19b6a583c48cd67b2
 #: ../../entity.rst:123
@@ -179,15 +154,12 @@ msgstr "テーブル"
 
 # fbdbee0e6eef47d18e6cfe2d524df21a
 #: ../../entity.rst:128
-msgid ""
-"You can specify the corresponding table name with the ``@Table`` annotation:"
+msgid "You can specify the corresponding table name with the ``@Table`` annotation:"
 msgstr "``@Table`` アノテーション を使用して、対応するテーブル名を指定できます。"
 
 # 2f95c73e57174a80802217976da18734
 #: ../../entity.rst:138
-msgid ""
-"Without the ``@Table`` annotation, the table name is resolved by `Naming "
-"Convention`_."
+msgid "Without the ``@Table`` annotation, the table name is resolved by `Naming Convention`_."
 msgstr "``@Table`` アノテーション がない場合、テーブル名は `Naming Convention`_ によって解決されます。"
 
 # 936bf5c8b5d341f895c7fd51189f54c3
@@ -197,53 +169,52 @@ msgstr "フィールドの定義"
 
 # 94adb8d8394d4e418334b7581fca397c
 #: ../../entity.rst:143
-msgid ""
-"By default, the fields are persistent and correspond to the database columns"
-" or result set columns."
+msgid "By default, the fields are persistent and correspond to the database columns or result set columns."
 msgstr "デフォルトでは、フィールドは永続的で、データベースまたは結果セットのカラムに対応します。"
 
 # 68e0a3b81f3f4c1e8f617f0d98bcfe18
 # c93a5dc907124d0ba1aaaa0b9d944aeb
 # 758873c47a26405fb7362569d25598bb
-#: ../../entity.rst:145 ../../entity.rst:222 ../../entity.rst:307
+#: ../../entity.rst:145
+#: ../../entity.rst:222
+#: ../../entity.rst:307
 msgid "The field type must be one of the following:"
 msgstr "フィールドの型は次のいずれかである必要があります。"
 
 # a437916c47384caea5bd42238baa81de
 #: ../../entity.rst:147
 msgid ":doc:`basic`"
-msgstr ":doc:`basic`"
+msgstr ""
 
 # 2057e61777ef476abfbd1f0f6a33a379
 #: ../../entity.rst:148
 msgid ":doc:`domain`"
-msgstr ":doc:`domain`"
+msgstr ""
 
 # f75a30f79954475cb5abd241afe85199
 #: ../../entity.rst:149
 msgid ":doc:`embeddable`"
-msgstr ":doc:`embeddable`"
+msgstr ""
 
 # 487ef72e9058412fba611e4e4f4b3d7e
 #: ../../entity.rst:150
-msgid ""
-"java.util.Optional, whose element is either :doc:`basic` or :doc:`domain`"
+msgid "java.util.Optional, whose element is either :doc:`basic` or :doc:`domain`"
 msgstr ":doc:`basic` または :doc:`domain` のいずれかを要素とする java.util.Optional"
 
 # 77124921ffe640c0a490c4ebcc3112db
 #: ../../entity.rst:151
 msgid "java.util.OptionalInt"
-msgstr "java.util.OptionalInt"
+msgstr ""
 
 # 3107179bdf8e4fbe9c6479904004c555
 #: ../../entity.rst:152
 msgid "java.util.OptionalLong"
-msgstr "java.util.OptionalLong"
+msgstr ""
 
 # f0d656c922034834ac189bead4ed78bd
 #: ../../entity.rst:153
 msgid "java.util.OptionalDouble"
-msgstr "java.util.OptionalDouble"
+msgstr ""
 
 # c225c4638f6f45f6bc5c17e0f925691b
 #: ../../entity.rst:156
@@ -257,35 +228,23 @@ msgstr "カラム"
 
 # 6af10c5076f5475da99bc1a41a6ac8fa
 #: ../../entity.rst:169
-msgid ""
-"You can specify the corresponding column name with the ``@Column`` "
-"annotation:"
-msgstr "カラム名を ``@Column``  アノテーションで指定できます。"
+msgid "You can specify the corresponding column name with the ``@Column`` annotation:"
+msgstr "カラム名を ``@Column`` アノテーションで指定できます。"
 
 # 18cbdf20873b4779a91608642a0edd33
 #: ../../entity.rst:177
-msgid ""
-"To exclude fields from INSERT or UPDATE statements, specify ``false`` to the"
-" ``insertable`` or ``updatable`` property within the ``@Column`` annotation:"
-msgstr ""
-"INSERT または UPDATE ステートメントからフィールドを除外するには、``@Column`` アノテーション 内の "
-"``insertable`` または ``updatable`` プロパティに ``false`` を指定します。 "
+msgid "To exclude fields from INSERT or UPDATE statements, specify ``false`` to the ``insertable`` or ``updatable`` property within the ``@Column`` annotation:"
+msgstr "INSERT または UPDATE ステートメントからフィールドを除外するには、``@Column`` アノテーション 内の ``insertable`` または ``updatable`` プロパティに ``false`` を指定します。"
 
 # 5dea667681b748d38fb376203b31229d
 #: ../../entity.rst:185
-msgid ""
-"Without the ``@Column`` annotation, the column name is resolved by `Naming "
-"Convention`_."
-msgstr ""
-"``@Column`` アノテーション が指定されない場合、カラム 名は  `Naming Convention`_ によって解決されます。"
+msgid "Without the ``@Column`` annotation, the column name is resolved by `Naming Convention`_."
+msgstr "``@Column`` アノテーション が指定されない場合、カラム 名は `Naming Convention`_ によって解決されます。"
 
 # 05c931e4ca1d4ce5a73c0a9a309b9c57
 #: ../../entity.rst:189
-msgid ""
-"When the filed type is :doc:`embeddable`, you cannot specify the ``@Column``"
-" annotation to the field."
-msgstr ""
-"フィールドタイプが :doc:`embeddable` の場合、フィールドに ``@Column`` アノテーション を指定することはできません。"
+msgid "When the filed type is :doc:`embeddable`, you cannot specify the ``@Column`` annotation to the field."
+msgstr "フィールドタイプが :doc:`embeddable` の場合、フィールドに ``@Column`` アノテーション を指定することはできません。"
 
 # b35912eb24c843dba56e73bc2745e92a
 #: ../../entity.rst:192
@@ -299,16 +258,12 @@ msgstr "データベースの主キーは ``@Id`` アノテーション で表�
 
 # b08a5676b89d456d9eb84b9fedc11272
 #: ../../entity.rst:201
-msgid ""
-"When there is a composite primary key, use the ``@Id`` annotation many "
-"times:"
+msgid "When there is a composite primary key, use the ``@Id`` annotation many times:"
 msgstr "複合主キーがある場合は、``@Id`` アノテーション を何度も使用できます。"
 
 # 96d8c719af954555a598a1511b8c06f6
 #: ../../entity.rst:213
-msgid ""
-"When the filed type is :doc:`embeddable`, you cannot specify the ``@Id`` "
-"annotation to the field."
+msgid "When the filed type is :doc:`embeddable`, you cannot specify the ``@Id`` annotation to the field."
 msgstr "フィールドタイプが :doc:`embeddable` の場合、フィールドに ``@Id`` アノテーション を指定することはできません。"
 
 # 8452fcd892ee4836bee5f2ecd06e0bb4
@@ -318,63 +273,62 @@ msgstr "IDの生成"
 
 # 3e43c9893f3f4886a5376f98cd67f568
 #: ../../entity.rst:220
-msgid ""
-"You can instruct Doma to generate id values automatically using the "
-"``@GeneratedValue`` annotation."
+msgid "You can instruct Doma to generate id values automatically using the ``@GeneratedValue`` annotation."
 msgstr "``@GeneratedValue`` アノテーション を使用して、ID 値を自動的に生成するように Doma に指示できます。"
 
 # cbe7897bf559428aba6d4e1fb97ddd1a
 # 7e110f04ed6d479cb49fc57de6e9506c
-#: ../../entity.rst:224 ../../entity.rst:309
+#: ../../entity.rst:224
+#: ../../entity.rst:309
 msgid "the subclass of java.lang.Number"
 msgstr "java.lang.Number のサブクラス"
 
 # 2d4c4e6cd5644ebfaf861ab8638df241
 # 8141c566a64c47c0a4cd5e0a2349fd58
-#: ../../entity.rst:225 ../../entity.rst:310
+#: ../../entity.rst:225
+#: ../../entity.rst:310
 msgid ":doc:`domain`, whose value type is the subclass of java.lang.Number"
 msgstr "その値の型が java.lang.Number のサブクラスである :doc:`domain`"
 
 # bf57578a743c4e6db1207077aeb64144
 # 8d37099bee844af78584e52a33272939
-#: ../../entity.rst:226 ../../entity.rst:311
+#: ../../entity.rst:226
+#: ../../entity.rst:311
 msgid "java.util.Optional, whose element is either above types"
 msgstr "要素の型が上記のいずれかであるjava.util.Optional"
 
 # 1e0684d316394107b9418a86b9319ee8
 # 984ff32ce95441d4be22f369faf7dc32
-#: ../../entity.rst:227 ../../entity.rst:312
+#: ../../entity.rst:227
+#: ../../entity.rst:312
 msgid "OptionalInt"
-msgstr "OptionalInt"
+msgstr ""
 
 # 50fe8844c989445c8403780c4bd1d8c7
 # d607a295590f4477ae3c90d96c5b5008
-#: ../../entity.rst:228 ../../entity.rst:313
+#: ../../entity.rst:228
+#: ../../entity.rst:313
 msgid "OptionalLong"
-msgstr "OptionalLong"
+msgstr ""
 
 # 3ce8cf320e554f3b9abef3f11d8d51e1
 # b599f20016394bdc89e736910c714fdf
-#: ../../entity.rst:229 ../../entity.rst:314
+#: ../../entity.rst:229
+#: ../../entity.rst:314
 msgid "OptionalDouble"
-msgstr "OptionalDouble"
+msgstr ""
 
 # 5f6f6770488e48589fa5730f5caae6b8
 # 20efa443443f472f95def7f651bd836d
-#: ../../entity.rst:230 ../../entity.rst:315
+#: ../../entity.rst:230
+#: ../../entity.rst:315
 msgid "the primitive types for number"
 msgstr "数値のプリミティブ型"
 
 # fb8a627c126c4504af189d62dfe98088
 #: ../../entity.rst:234
-msgid ""
-"The generated values are assign to the field only when the field is either "
-"``null`` or less than ``0``. If you use one of the primitive types as filed "
-"type, initialize the field with tha value that is less than ``0``, such as "
-"``-1``."
-msgstr ""
-"生成された値は、フィールドが ``null`` または ``0`` 未満の場合にのみフィールドに割り当てられます。プリミティブ型の 1 "
-"つをフィールド型として使用する場合は、フィールドを ``-1`` などの ``0`` より小さい値で初期化してください。"
+msgid "The generated values are assign to the field only when the field is either ``null`` or less than ``0``. If you use one of the primitive types as filed type, initialize the field with tha value that is less than ``0``, such as ``-1``."
+msgstr "生成された値は、フィールドが ``null`` または ``0`` 未満の場合にのみフィールドに割り当てられます。プリミティブ型の 1 つをフィールド型として使用する場合は、フィールドを ``-1`` などの ``0`` より小さい値で初期化してください。"
 
 # 564760ece33844d7b1673e4be44ca9d9
 #: ../../entity.rst:239
@@ -383,13 +337,8 @@ msgstr "IDENTITYによるID生成"
 
 # 6764027f97ab4290a82d0bbd2dbc594f
 #: ../../entity.rst:241
-msgid ""
-"To generate values using the RDBMS IDENTITY function, specify the "
-"``GenerationType.IDENTITY`` enum value to ``strategy`` property within the "
-"``@GeneratedValue``:"
-msgstr ""
-"RDBMS IDENTITY 関数を使用して値を生成するには、 ``@GeneratedValue`` 内の ``strategy`` プロパティに "
-"``GenerationType.IDENTITY`` 列挙値を指定します。"
+msgid "To generate values using the RDBMS IDENTITY function, specify the ``GenerationType.IDENTITY`` enum value to ``strategy`` property within the ``@GeneratedValue``:"
+msgstr "RDBMS IDENTITY 関数を使用して値を生成するには、 ``@GeneratedValue`` 内の ``strategy`` プロパティに ``GenerationType.IDENTITY`` 列挙値を指定します。"
 
 # 17c2eed9c48440628250661f82ce86b0
 #: ../../entity.rst:250
@@ -408,25 +357,13 @@ msgstr "SEQUENCEによるID生成"
 
 # dcf32bbbe751437aaca834fc33e5f7c7
 #: ../../entity.rst:259
-msgid ""
-"To generate values using the RDBMS SEQUENCE, specify the "
-"``GenerationType.SEQUENCE`` enum value to ``strategy`` property within the "
-"``@GeneratedValue`` annotation. And use the ``@SequenceGenerator`` "
-"annotation:"
-msgstr ""
-"RDBMS SEQUENCE を使用して値を生成するには、``@GeneratedValue`` アノテーション 内の ``strategy`` "
-"プロパティに ``GenerationType.SEQUENCE`` 列挙値を指定します。そして、``@SequenceGenerator`` "
-"アノテーション を使用します。"
+msgid "To generate values using the RDBMS SEQUENCE, specify the ``GenerationType.SEQUENCE`` enum value to ``strategy`` property within the ``@GeneratedValue`` annotation. And use the ``@SequenceGenerator`` annotation:"
+msgstr "RDBMS SEQUENCE を使用して値を生成するには、``@GeneratedValue`` アノテーション 内の ``strategy`` プロパティに ``GenerationType.SEQUENCE`` 列挙値を指定します。そして、``@SequenceGenerator`` アノテーション を使用します。"
 
 # 9aa706b72c584dd680e8d090a8b3de26
 #: ../../entity.rst:270
-msgid ""
-"In advance, define the SEQUENCE in the database. The SEQUENCE definitions "
-"such as the name, the allocation size and the initial size must correspond "
-"the properties within the ``@SequenceGenerator`` annotation."
-msgstr ""
-"あらかじめデータベースにSEQUENCEを定義しておきます。名前、割り当てサイズ、初期サイズなどの SEQUENCE "
-"定義は、``@SequenceGenerator`` アノテーション 内のプロパティに対応する必要があります。"
+msgid "In advance, define the SEQUENCE in the database. The SEQUENCE definitions such as the name, the allocation size and the initial size must correspond the properties within the ``@SequenceGenerator`` annotation."
+msgstr "あらかじめデータベースにSEQUENCEを定義しておきます。名前、割り当てサイズ、初期サイズなどの SEQUENCE 定義は、``@SequenceGenerator`` アノテーション 内のプロパティに対応する必要があります。"
 
 # cac7574e8c4b4db9a1d824847acbdbc2
 #: ../../entity.rst:276
@@ -440,29 +377,17 @@ msgstr "TABLEによるID生成"
 
 # f47ecd4c38b14059ad7c5dbaff0d0e1e
 #: ../../entity.rst:281
-msgid ""
-"To generate values using the RDBMS TABLE, specify the "
-"``GenerationType.TABLE`` enum value to ``strategy`` property within the "
-"``@GeneratedValue`` annotation. And use the ``@TableGenerator`` annotation:"
-msgstr ""
-"RDBMS TABLE を使用して値を生成するには、``@GeneratedValue`` アノテーション 内の ``strategy`` プロパティに"
-" ``GenerationType.TABLE`` 列挙値を指定します。そして、``@TableGenerator`` アノテーション を使用します。"
+msgid "To generate values using the RDBMS TABLE, specify the ``GenerationType.TABLE`` enum value to ``strategy`` property within the ``@GeneratedValue`` annotation. And use the ``@TableGenerator`` annotation:"
+msgstr "RDBMS TABLE を使用して値を生成するには、``@GeneratedValue`` アノテーション 内の ``strategy`` プロパティに ``GenerationType.TABLE`` 列挙値を指定します。そして、``@TableGenerator`` アノテーション を使用します。"
 
 # 2f033b89fe4a4b4aa26d61233eaf6ce8
 #: ../../entity.rst:292
-msgid ""
-"In advance, define the TABLE in the database. The TABLE`s definition must "
-"correspond to the properties within the ``@TableGenerator`` annotation. For "
-"example, the DDL should be following:"
-msgstr ""
-"あらかじめデータベースにTABLEを定義しておきます。 TABLE` の定義は、``@TableGenerator`` アノテーション "
-"内のプロパティに対応する必要があります。たとえば、DDL は次のようになります。"
+msgid "In advance, define the TABLE in the database. The TABLE`s definition must correspond to the properties within the ``@TableGenerator`` annotation. For example, the DDL should be following:"
+msgstr "あらかじめデータベースにTABLEを定義しておきます。 TABLE` の定義は、``@TableGenerator`` アノテーション 内のプロパティに対応する必要があります。たとえば、DDL は次のようになります。"
 
 # 1cc9ded41d4f4c6387d89f271aeb28cb
 #: ../../entity.rst:300
-msgid ""
-"You can change the table name and the column names using the properties "
-"within the ``@TableGenerator`` annotation."
+msgid "You can change the table name and the column names using the properties within the ``@TableGenerator`` annotation."
 msgstr "テーブル と カラム の名前は、``@TableGenerator`` アノテーション 内のプロパティを使用して変更できます。"
 
 # 328a257ab5634015b7dd9860ce373ab9
@@ -472,18 +397,13 @@ msgstr "バージョン"
 
 # 28662c0c6d0c4bf4b53aae270520dfb7
 #: ../../entity.rst:305
-msgid ""
-"The version fields for optimistic locking are represented with the "
-"``@Version`` annotation."
+msgid "The version fields for optimistic locking are represented with the ``@Version`` annotation."
 msgstr "楽観的排他制御のバージョンフィールドは、``@Version`` アノテーションで表されます。"
 
 # cc02654344bb4b3299ccc3c15eab81f4
 #: ../../entity.rst:324
-msgid ""
-"When the filed type is :doc:`embeddable`, you cannot specify the "
-"``@Version`` annotation to the field."
-msgstr ""
-"フィールドの型が :doc:`embeddable` の場合、フィールドに ``@Version`` アノテーションを指定することはできません。"
+msgid "When the filed type is :doc:`embeddable`, you cannot specify the ``@Version`` annotation to the field."
+msgstr "フィールドの型が :doc:`embeddable` の場合、フィールドに ``@Version`` アノテーションを指定することはできません。"
 
 # c7d22642d175426499289be3c68362c5
 #: ../../entity.rst:327
@@ -492,57 +412,38 @@ msgstr "テナント ID"
 
 # 1f3121de951e40af8e8672ecbe3235c1
 #: ../../entity.rst:329
-msgid ""
-"The tenant id fields are represented with the ``@TenantId`` annotation. The "
-"column corresponding to the annotated field is included in the WHERE clause "
-"of UPDATE and DELETE statements."
-msgstr ""
-"テナント IDのフィールドは、``@TenantId`` アノテーション で表されます。このフィールドに対応するカラム は、UPDATEステートメント "
-"および DELETEステートメント の WHERE 句に含まれます。"
+msgid "The tenant id fields are represented with the ``@TenantId`` annotation. The column corresponding to the annotated field is included in the WHERE clause of UPDATE and DELETE statements."
+msgstr "テナント IDのフィールドは、``@TenantId`` アノテーション で表されます。このフィールドに対応するカラム は、UPDATEステートメント および DELETEステートメント の WHERE 句に含まれます。"
 
 # b1095a60cd92405e87615643f19a67bb
 #: ../../entity.rst:339
-msgid ""
-"When the filed type is :doc:`embeddable`, you cannot specify the "
-"``@TenantId`` annotation to the field."
-msgstr ""
-"フィールドの型が :doc:`embeddable` の場合、フィールドに ``@TenantId`` アノテーションを指定することはできません。"
+msgid "When the filed type is :doc:`embeddable`, you cannot specify the ``@TenantId`` annotation to the field."
+msgstr "フィールドの型が :doc:`embeddable` の場合、フィールドに ``@TenantId`` アノテーションを指定することはできません。"
 
 # ae5da0e935b14ff6aca617a0b5ef5038
 #: ../../entity.rst:342
 msgid "Transient"
-msgstr "Transient"
+msgstr ""
 
 # 7a5311df421f433a9a91fbc21f38f9ee
 #: ../../entity.rst:344
-msgid ""
-"If an entity has fields that you don't want to persist, you can annotate "
-"them using ``@Transient``:"
+msgid "If an entity has fields that you don't want to persist, you can annotate them using ``@Transient``:"
 msgstr "エンティティに永続化したくないフィールドがある場合は、 ``@Transient`` アノテーションを付けることができます。"
 
 # 8c01ecef49aa44bf92a02898cc916db7
 #: ../../entity.rst:352
 msgid "OriginalStates"
-msgstr "OriginalStates"
+msgstr ""
 
 # 8e4e532d32f74076ad4c9d5b1e03ec86
 #: ../../entity.rst:354
-msgid ""
-"If you want to include only changed values in UPDATE statements, you can "
-"define fields annotated with ``@OriginalStates``. The fields can hold the "
-"original values that were fetched from the database."
-msgstr ""
-"変更された値のみを UPDATE ステートメントに含めたい場合は、``@OriginalStates`` "
-"の注釈を付けたフィールドを定義できます。フィールドには、データベースから取得した元の値を保持できます。"
+msgid "If you want to include only changed values in UPDATE statements, you can define fields annotated with ``@OriginalStates``. The fields can hold the original values that were fetched from the database."
+msgstr "変更された値のみを UPDATE ステートメントに含めたい場合は、``@OriginalStates`` の注釈を付けたフィールドを定義できます。フィールドには、データベースから取得した元の値を保持できます。"
 
 # 6941e48109b546d0aa1ef4515d19ec5c
 #: ../../entity.rst:358
-msgid ""
-"Doma uses the values to know which values are changed in the application and"
-" includes the only changed values in UPDATE statements."
-msgstr ""
-"Doma は、アプリケーション内でどの値が変更されたかを知るために ``@OriginalStates`` "
-"が注釈されたフィールドを使用し、変更された値のみを UPDATE ステートメントに含めます。"
+msgid "Doma uses the values to know which values are changed in the application and includes the only changed values in UPDATE statements."
+msgstr "Doma は、アプリケーション内でどの値が変更されたかを知るために ``@OriginalStates`` が注釈されたフィールドを使用し、変更された値のみを UPDATE ステートメントに含めます。"
 
 # 64194329432647da90b2a533615f1b95
 #: ../../entity.rst:361
@@ -573,3 +474,4 @@ msgstr "例"
 #: ../../entity.rst:378
 msgid "Instantiate the ``Employee`` entity class and use its instance:"
 msgstr "``Employee`` エンティティクラスをインスタンス化し、そのインスタンスを使用します。"
+

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-10 10:39+0900\n"
-"PO-Revision-Date: 2024-03-16 22:26\n"
+"PO-Revision-Date: 2024-03-16 22:49\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -135,7 +135,7 @@ msgstr "Criteria API のメタモデル クラスの名前接頭辞。デフォ�
 # 10e31ed524244d26a59616545553240f
 #: ../../annotation-processing.rst:65
 msgid "doma.metamodel.suffix"
-msgstr ""
+msgstr "doma.metamodel.suffix"
 
 # 301a602528de4cc98080257e92df92cb
 #: ../../annotation-processing.rst:64
@@ -220,7 +220,7 @@ msgstr "``gradle eclipse`` を実行するとeclipseの設定ファイルが生�
 # 127e980ddf3048d39cbc83a08177af1f
 #: ../../annotation-processing.rst:132
 msgid "Setting options with configuration file"
-msgstr "設定ファイルでオプションを設定する"
+msgstr "設定ファイルによるオプションの設定"
 
 # 8d7ec57507164360b22c6e4c486c8be6
 #: ../../annotation-processing.rst:134

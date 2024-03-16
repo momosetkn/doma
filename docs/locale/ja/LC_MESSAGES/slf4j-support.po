@@ -1,25 +1,21 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2018, Toshihiro Nakamura
-# This file is distributed under the same license as the Doma package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
-# Translators:
-# Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024
-# 
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Doma\n"
+"Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-10 10:39+0900\n"
-"PO-Revision-Date: 2024-03-09 16:18+0000\n"
-"Last-Translator: Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024\n"
-"Language-Team: Japanese (https://app.transifex.com/domaframework/teams/189259/ja/)\n"
+"PO-Revision-Date: 2024-03-16 23:31\n"
+"Last-Translator: \n"
+"Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: doma-docs\n"
+"X-Crowdin-Project-ID: 657384\n"
+"X-Crowdin-Language: ja\n"
+"X-Crowdin-File: /_build/gettext/slf4j-support.pot\n"
+"X-Crowdin-File-ID: 168\n"
+"Language: ja_JP\n"
 
 # 179bd4c8fd4e46449397bd4070efed9b
 #: ../../slf4j-support.rst:3
@@ -38,17 +34,13 @@ msgstr "概要"
 
 # e761a3498bb64ddc97acf15ab6e4f626
 #: ../../slf4j-support.rst:11
-msgid ""
-"Doma uses java util logging as underling logging framework, but you can "
-"replace it with `SLF4J <http://www.slf4j.org/>`_ easily."
-msgstr ""
-"Doma は基礎となるロギングフレームワークとして java util ロギングを使用しますが、これを `SLF4J "
-"<http://www.slf4j.org/>`_ に簡単に置き換えることができます。"
+msgid "Doma uses java util logging as underling logging framework, but you can replace it with `SLF4J <http://www.slf4j.org/>`_ easily."
+msgstr "Doma は基礎となるロギングフレームワークとして java util ロギングを使用しますが、これを `SLF4J <http://www.slf4j.org/>`_ に簡単に置き換えることができます。"
 
 # 5426884b56f746b88c37aa722881edb1
 #: ../../slf4j-support.rst:15
 msgid "Gradle"
-msgstr "Gradle"
+msgstr ""
 
 # add97a594281434caa288a6f9447f474
 #: ../../slf4j-support.rst:17
@@ -62,13 +54,8 @@ msgstr "設定"
 
 # 7ccd0346f1b3443a84d8884fee107088
 #: ../../slf4j-support.rst:30
-msgid ""
-"Return a ``org.seasar.doma.slf4j.Slf4jJdbcLogger`` instance from the "
-"``getJdbcLogger`` method of the ``org.seasar.doma.jdbc.Config`` "
-"implementation class."
-msgstr ""
-"``org.seasar.doma.slf4j.Slf4jJdbcLogger`` インスタンスを "
-"``org.seasar.doma.jdbc.Config`` の実装クラスの ``getJdbcLogger`` メソッドから返してください。"
+msgid "Return a ``org.seasar.doma.slf4j.Slf4jJdbcLogger`` instance from the ``getJdbcLogger`` method of the ``org.seasar.doma.jdbc.Config`` implementation class."
+msgstr "``org.seasar.doma.slf4j.Slf4jJdbcLogger`` インスタンスを ``org.seasar.doma.jdbc.Config`` の実装クラスの ``getJdbcLogger`` メソッドから返してください。"
 
 # 6fb98429c84b46678127c801edf262bc
 #: ../../slf4j-support.rst:33
@@ -88,92 +75,87 @@ msgstr "doma-slf4j は、次のようないくつかのロガーを提供しま�
 # 586ff03de2cd45e5af56b21bd06bd46b
 #: ../../slf4j-support.rst:40
 msgid "org.seasar.doma.jdbc.LogKind.DAO"
-msgstr "org.seasar.doma.jdbc.LogKind.DAO"
+msgstr ""
 
 # 5f5c06655b22469dab406f9ffc6298d6
 #: ../../slf4j-support.rst:41
 msgid "org.seasar.doma.jdbc.LogKind.FAILURE"
-msgstr "org.seasar.doma.jdbc.LogKind.FAILURE"
+msgstr ""
 
 # 77d661e2f46d4ee983b0db1e742cb1f7
 #: ../../slf4j-support.rst:42
 msgid "org.seasar.doma.jdbc.LogKind.LOCAL_TRANSACTION"
-msgstr "org.seasar.doma.jdbc.LogKind.LOCAL_TRANSACTION"
+msgstr ""
 
 # d73a172dad934f79aea9be005e6adfa1
 #: ../../slf4j-support.rst:43
 msgid "org.seasar.doma.jdbc.LogKind.SKIP.STATE_UNCHANGED"
-msgstr "org.seasar.doma.jdbc.LogKind.SKIP.STATE_UNCHANGED"
+msgstr ""
 
 # 417ff263fba74382bd0f4e7fb7a7a6d4
 #: ../../slf4j-support.rst:44
 msgid "org.seasar.doma.jdbc.LogKind.SKIP.BATCH_TARGET_NONEXISTENT"
-msgstr "org.seasar.doma.jdbc.LogKind.SKIP.BATCH_TARGET_NONEXISTENT"
+msgstr ""
 
 # 21417a8a9e914ef5b33939aaa6cfd9c6
 #: ../../slf4j-support.rst:45
 msgid "org.seasar.doma.jdbc.LogKind.SQL.BATCH_DELETE"
-msgstr "org.seasar.doma.jdbc.LogKind.SQL.BATCH_DELETE"
+msgstr ""
 
 # 30df7b7cf54046b8b53f14bf3de329cc
 #: ../../slf4j-support.rst:46
 msgid "org.seasar.doma.jdbc.LogKind.SQL.BATCH_INSERT"
-msgstr "org.seasar.doma.jdbc.LogKind.SQL.BATCH_INSERT"
+msgstr ""
 
 # e2a509b739b04fdd8cba808ea81d76ac
 #: ../../slf4j-support.rst:47
 msgid "org.seasar.doma.jdbc.LogKind.SQL.BATCH_UPDATE"
-msgstr "org.seasar.doma.jdbc.LogKind.SQL.BATCH_UPDATE"
+msgstr ""
 
 # ec3b3557a2de4def9b9af91c48b8bd81
 #: ../../slf4j-support.rst:48
 msgid "org.seasar.doma.jdbc.LogKind.SQL.DELETE"
-msgstr "org.seasar.doma.jdbc.LogKind.SQL.DELETE"
+msgstr ""
 
 # 4149aa3753a14248b9ce5572d6d8346f
 #: ../../slf4j-support.rst:49
 msgid "org.seasar.doma.jdbc.LogKind.SQL.FUNCTION"
-msgstr "org.seasar.doma.jdbc.LogKind.SQL.FUNCTION"
+msgstr ""
 
 # e566df609d2b4824a5343285afcbcf7f
 #: ../../slf4j-support.rst:50
 msgid "org.seasar.doma.jdbc.LogKind.SQL.INSERT"
-msgstr "org.seasar.doma.jdbc.LogKind.SQL.INSERT"
+msgstr ""
 
 # afbf817d1ed643cd9fd107e3565f7806
 #: ../../slf4j-support.rst:51
 msgid "org.seasar.doma.jdbc.LogKind.SQL.PROCEDURE"
-msgstr "org.seasar.doma.jdbc.LogKind.SQL.PROCEDURE"
+msgstr ""
 
 # 91f94e0994184e7fba0e3a48c9fafa7e
 #: ../../slf4j-support.rst:52
 msgid "org.seasar.doma.jdbc.LogKind.SQL.SCRIPT"
-msgstr "org.seasar.doma.jdbc.LogKind.SQL.SCRIPT"
+msgstr ""
 
 # 0c37b410810245908a5dbcea90645d84
 #: ../../slf4j-support.rst:53
 msgid "org.seasar.doma.jdbc.LogKind.SQL.SELECT"
-msgstr "org.seasar.doma.jdbc.LogKind.SQL.SELECT"
+msgstr ""
 
 # 7bf70dedc979480f8b4e01db5917ee88
 #: ../../slf4j-support.rst:54
 msgid "org.seasar.doma.jdbc.LogKind.SQL.SQL_PROCESSOR"
-msgstr "org.seasar.doma.jdbc.LogKind.SQL.SQL_PROCESSOR"
+msgstr ""
 
 # afbbbfd49b554bf5abe370aae94a6176
 #: ../../slf4j-support.rst:55
 msgid "org.seasar.doma.jdbc.LogKind.SQL.UPDATE"
-msgstr "org.seasar.doma.jdbc.LogKind.SQL.UPDATE"
+msgstr ""
 
 # f07e531945594db2baa06d3bad5f4bb0
 #: ../../slf4j-support.rst:57
-msgid ""
-"See `source code <https://github.com/domaframework/doma/blob/master/doma-"
-"slf4j/src/main/java/org/seasar/doma/slf4j/Slf4jJdbcLogger.java>`_ for more "
-"information. It's simple."
-msgstr ""
-"詳細については、`ソース コード  <https://github.com/domaframework/doma/blob/master/doma-"
-"slf4j/src/main/java/org/seasar/doma/slf4j/Slf4jJdbcLogger.java>`_ を参照してください。"
+msgid "See `source code <https://github.com/domaframework/doma/blob/master/doma-slf4j/src/main/java/org/seasar/doma/slf4j/Slf4jJdbcLogger.java>`_ for more information. It's simple."
+msgstr "詳細については、 `ソース コード  <https://github.com/domaframework/doma/blob/master/doma-slf4j/src/main/java/org/seasar/doma/slf4j/Slf4jJdbcLogger.java>`_ を参照してください。"
 
 # 2236146179144d76887087a5ac4222ae
 #: ../../slf4j-support.rst:61
@@ -199,3 +181,4 @@ msgstr "すべての SQL ステートメントをログに記録する"
 #: ../../slf4j-support.rst:104
 msgid "Log only SELECT statements"
 msgstr "SELECT ステートメントのみをログに記録する"
+

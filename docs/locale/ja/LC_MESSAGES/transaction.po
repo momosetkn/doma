@@ -1,25 +1,21 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2018, Toshihiro Nakamura
-# This file is distributed under the same license as the Doma package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
-# Translators:
-# Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024
-# 
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Doma\n"
+"Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-10 10:39+0900\n"
-"PO-Revision-Date: 2024-03-09 16:18+0000\n"
-"Last-Translator: Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024\n"
-"Language-Team: Japanese (https://app.transifex.com/domaframework/teams/189259/ja/)\n"
+"PO-Revision-Date: 2024-03-16 23:31\n"
+"Last-Translator: \n"
+"Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: doma-docs\n"
+"X-Crowdin-Project-ID: 657384\n"
+"X-Crowdin-Language: ja\n"
+"X-Crowdin-File: /_build/gettext/transaction.pot\n"
+"X-Crowdin-File-ID: 172\n"
+"Language: ja_JP\n"
 
 # 55b69bbdf0a142f891d8affa8366d8db
 #: ../../transaction.rst:3
@@ -33,20 +29,13 @@ msgstr "コンテンツ"
 
 # 63fd8218a2f94db18d104c87e2ca5223
 #: ../../transaction.rst:8
-msgid ""
-"Doma supports local transaction. This document explains how to configure and"
-" use the local transaction."
-msgstr ""
-"Doma はローカルトランザクションをサポートしています。このドキュメントでは、ローカルトランザクションの設定方法と使用方法について説明します。"
+msgid "Doma supports local transaction. This document explains how to configure and use the local transaction."
+msgstr "Doma はローカルトランザクションをサポートしています。このドキュメントでは、ローカルトランザクションの設定方法と使用方法について説明します。"
 
 # 49cbe2a6ba484f359da365a27c8d9ba9
 #: ../../transaction.rst:11
-msgid ""
-"If you want to use global transaction, use frameworks or application servers"
-" which support JTA (Java Transaction API)."
-msgstr ""
-"グローバルトランザクションを使用する場合は、JTA(Java Transaction "
-"API)をサポートするフレームワークまたはアプリケーションサーバーを使用してください。"
+msgid "If you want to use global transaction, use frameworks or application servers which support JTA (Java Transaction API)."
+msgstr "グローバルトランザクションを使用する場合は、JTA (Java Transaction API) をサポートするフレームワークまたはアプリケーションサーバーを使用してください。"
 
 # e59f382d3a1e4d6f9c553df5d3c939dd
 #: ../../transaction.rst:14
@@ -65,19 +54,13 @@ msgstr "ローカル トランザクションを使用するには、次の条�
 
 # 2d24a409513645588e4f926926eec550
 #: ../../transaction.rst:21
-msgid ""
-"Return ``LocalTransactionDataSource`` from ``getDataSource`` in ``Config``"
-msgstr ""
-"``Config`` の ``getDataSource`` から ``LocalTransactionDataSource`` を返します。"
+msgid "Return ``LocalTransactionDataSource`` from ``getDataSource`` in ``Config``"
+msgstr "``Config`` の ``getDataSource`` から ``LocalTransactionDataSource`` を返します。"
 
 # b4913ef032aa476cb8d85306d8f7c5c9
 #: ../../transaction.rst:22
-msgid ""
-"Generate ``LocalTransactionManager`` using the "
-"``LocalTransactionDataSource`` above in the constructor"
-msgstr ""
-"コンストラクターで上記の ``LocalTransactionDataSource`` を使用して "
-"``LocalTransactionManager`` を生成します"
+msgid "Generate ``LocalTransactionManager`` using the ``LocalTransactionDataSource`` above in the constructor"
+msgstr "コンストラクターで上記の ``LocalTransactionDataSource`` を使用して ``LocalTransactionManager`` を生成します"
 
 # 8a43f9ff480247cdb0fa58ffccbdddbf
 #: ../../transaction.rst:23
@@ -86,13 +69,8 @@ msgstr "上記の ``LocalTransactionManager`` を使用してデータベース�
 
 # ba136941adb549c4a8740737c327a9b0
 #: ../../transaction.rst:25
-msgid ""
-"There are several ways to generate and get the ``LocalTransactionManager``, "
-"but the simplest way is to generate it in the constructor of ``Config`` "
-"implementation class and make the ``Config`` implementation class singleton."
-msgstr ""
-"``LocalTransactionManager`` を生成・取得する方法はいくつかありますが、最も簡単な方法は ``Config`` "
-"実装クラスのコンストラクタ内で生成し、 ``Config`` 実装クラスをシングルトンにする方法です。"
+msgid "There are several ways to generate and get the ``LocalTransactionManager``, but the simplest way is to generate it in the constructor of ``Config`` implementation class and make the ``Config`` implementation class singleton."
+msgstr "``LocalTransactionManager`` を生成・取得する方法はいくつかありますが、最も簡単な方法は ``Config`` 実装クラスのコンストラクタ内で生成し、 ``Config`` 実装クラスをシングルトンにする方法です。"
 
 # ae91d196609a4466810ee0f6139e739b
 #: ../../transaction.rst:29
@@ -116,39 +94,32 @@ msgstr "トランザクションの開始と終了"
 
 # 313323ccfc884b579d597e1d643b0cf2
 #: ../../transaction.rst:95
-msgid ""
-"You can start a transaction with one of following methods of "
-"``TransactionManager``:"
+msgid "You can start a transaction with one of following methods of ``TransactionManager``:"
 msgstr "次の ``TransactionManager`` のメソッドのいずれかを使用してトランザクションを開始できます。"
 
 # 846b653ed4b044e9bbab19ba4ecf239a
 #: ../../transaction.rst:97
 msgid "required"
-msgstr "required"
+msgstr ""
 
 # 32afb4f488e846b595a8e8e57e4206f1
 #: ../../transaction.rst:98
 msgid "requiresNew"
-msgstr "requiresNew"
+msgstr ""
 
 # f358e8cd3d454105abe9bec21b04592f
 #: ../../transaction.rst:99
 msgid "notSupported"
-msgstr "notSupported"
+msgstr ""
 
 # 37f31bf0c5dc450685196cc0e07735e4
 #: ../../transaction.rst:101
-msgid ""
-"Use a lambda expression to write a process which you want to run in a "
-"transaction."
+msgid "Use a lambda expression to write a process which you want to run in a transaction."
 msgstr "ラムダ式を使用して、トランザクションで実行する処理を記述します。"
 
 # 2d76bdbe1a034223a61d420b276ea10c
 #: ../../transaction.rst:115
-msgid ""
-"The transaction is committed if the lambda expression finishes successfully."
-" The transaction is rolled back if the lambda expression throws an "
-"exception."
+msgid "The transaction is committed if the lambda expression finishes successfully. The transaction is rolled back if the lambda expression throws an exception."
 msgstr "ラムダ式が正常に終了すると、トランザクションはコミットされます。ラムダ式が例外をスローした場合、トランザクションはロールバックされます。"
 
 # 73197274dbd1468db34031f144c1fb73
@@ -158,9 +129,7 @@ msgstr "明示的なロールバック"
 
 # 91b0074aba2b4c9d87d9376ea2a2d66e
 #: ../../transaction.rst:121
-msgid ""
-"Besides throwing an exception, you can use ``setRollbackOnly`` method to "
-"rollback a transaction."
+msgid "Besides throwing an exception, you can use ``setRollbackOnly`` method to rollback a transaction."
 msgstr "例外をスローする以外に、 ``setRollbackOnly`` メソッドを使用してトランザクションをロールバックすることもできます。"
 
 # 668f9c8bdea64b9e982945d6355783a9
@@ -172,3 +141,4 @@ msgstr "セーブポイント"
 #: ../../transaction.rst:140
 msgid "With a savepoint, you can cancel specific changes in a transaction."
 msgstr "セーブポイントを使用すると、トランザクション内の特定の変更をキャンセルできます。"
+

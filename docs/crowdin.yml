@@ -1,0 +1,23 @@
+#
+# Choose file structure in Crowdin
+# e.g. true or false
+#
+"preserve_hierarchy": true
+
+#
+# Files configuration
+#
+files: [
+    {
+        "source": "_build/gettext/*.pot",
+        "translation": "locale/%two_letters_code%/LC_MESSAGES/%file_name%.po",
+    },
+    {
+        "source": "_build/gettext/query/*.pot",
+        "translation": "locale/%two_letters_code%/LC_MESSAGES/query/%file_name%.po",
+    },
+    {
+        "source": "_build/gettext/query-builder/*.pot",
+        "translation": "locale/%two_letters_code%/LC_MESSAGES/query-builder/%file_name%.po",
+    },
+]

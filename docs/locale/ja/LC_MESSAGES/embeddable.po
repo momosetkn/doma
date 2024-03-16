@@ -1,25 +1,21 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2018, Toshihiro Nakamura
-# This file is distributed under the same license as the Doma package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
-# Translators:
-# Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024
-# 
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Doma\n"
+"Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-10 10:39+0900\n"
-"PO-Revision-Date: 2024-03-09 16:18+0000\n"
-"Last-Translator: Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024\n"
-"Language-Team: Japanese (https://app.transifex.com/domaframework/teams/189259/ja/)\n"
+"PO-Revision-Date: 2024-03-16 23:31\n"
+"Last-Translator: \n"
+"Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: doma-docs\n"
+"X-Crowdin-Project-ID: 657384\n"
+"X-Crowdin-Language: ja\n"
+"X-Crowdin-File: /_build/gettext/embeddable.pot\n"
+"X-Crowdin-File-ID: 192\n"
+"Language: ja_JP\n"
 
 # 50b9fa8c67a84ad7a64bb21271c34beb
 #: ../../embeddable.rst:3
@@ -58,9 +54,7 @@ msgstr "上記のエンティティ定義は、次のエンティティ定義と
 
 # feade868a0eb4ecfa4717e85a9ecc615
 #: ../../embeddable.rst:64
-msgid ""
-"In Java 14 and later version, you can annotate `records`_ with "
-"``@Embeddable``:"
+msgid "In Java 14 and later version, you can annotate `records`_ with ``@Embeddable``:"
 msgstr "Java 14 以降のバージョンでは、`records`_ に ``@Embeddable`` アノテーションを付けることができます。"
 
 # f2ae7821a4214037a12a2f9252eb7894
@@ -80,9 +74,7 @@ msgstr "フィールドの定義"
 
 # fd9df43b8ae24835a4d9ad45300effbb
 #: ../../embeddable.rst:85
-msgid ""
-"By default, the fields are persistent and correspond to the database columns"
-" or result set columns."
+msgid "By default, the fields are persistent and correspond to the database columns or result set columns."
 msgstr "デフォルトでは、フィールドは永続的で、データベースまたは結果セットのカラムに対応します。"
 
 # b7923c9c6b0d452e9e010fdc9cd5772f
@@ -93,56 +85,51 @@ msgstr "フィールドの型は次のいずれかである必要があります
 # ed79a87319554f7db8bac1ea75ecd1f8
 #: ../../embeddable.rst:89
 msgid ":doc:`basic`"
-msgstr ":doc:`basic`"
+msgstr ""
 
 # f6edb2eb5eb04f6b9c94ff648e9a2fd5
 #: ../../embeddable.rst:90
 msgid ":doc:`domain`"
-msgstr ":doc:`domain`"
+msgstr ""
 
 # 6c0f48c608e5486d8c3d8022a590c70a
 #: ../../embeddable.rst:91
-msgid ""
-"java.util.Optional, whose element is either :doc:`basic` or :doc:`domain`"
+msgid "java.util.Optional, whose element is either :doc:`basic` or :doc:`domain`"
 msgstr "要素を :doc:`basic` または :doc:`domain` のいずれかとする java.util.Optional"
 
 # 54f828dfce344395a3700692a3d143e4
 #: ../../embeddable.rst:92
 msgid "java.util.OptionalInt"
-msgstr "java.util.OptionalInt"
+msgstr ""
 
 # 44a16ae130984cf1b526fb3ac659f3c5
 #: ../../embeddable.rst:93
 msgid "java.util.OptionalLong"
-msgstr "java.util.OptionalLong"
+msgstr ""
 
 # c3e779fe340447b39e94b191528be21a
 #: ../../embeddable.rst:94
 msgid "java.util.OptionalDouble"
-msgstr "java.util.OptionalDouble"
+msgstr ""
 
 # 47973913817f41d4b510ef2f37ed4ae2
 #: ../../embeddable.rst:105
 msgid "Column"
-msgstr "Column"
+msgstr ""
 
 # a645c44714bd459b9031c4663eed1136
 #: ../../embeddable.rst:107
-msgid ""
-"You can specify the corresponding column name with the ``@Column`` "
-"annotation:"
+msgid "You can specify the corresponding column name with the ``@Column`` annotation:"
 msgstr "カラム名を ``@Column``  アノテーションで指定できます。"
 
 # 90f729799b1f40a490f612e6e8582a6f
 #: ../../embeddable.rst:115
 msgid "Transient"
-msgstr "Transient"
+msgstr ""
 
 # 7929a4e39ffc4d66a85037984bd0f601
 #: ../../embeddable.rst:117
-msgid ""
-"If an embeddable has fields that you don’t want to persist, you can annotate"
-" them using ``@Transient``:"
+msgid "If an embeddable has fields that you don’t want to persist, you can annotate them using ``@Transient``:"
 msgstr "埋め込み可能オブジェクトに永続化したくないフィールドがある場合は、 ``@Transient`` アノテーションを指定できます。"
 
 # 9e37c2e7f7904bcbb41f0f02f3731c1d
@@ -159,3 +146,4 @@ msgstr "メソッドの使用に制限はありません。"
 #: ../../embeddable.rst:125
 msgid "Example"
 msgstr "例"
+

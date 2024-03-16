@@ -1,25 +1,21 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2018, Toshihiro Nakamura
-# This file is distributed under the same license as the Doma package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
-# Translators:
-# Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024
-# 
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Doma\n"
+"Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-13 21:42+0900\n"
-"PO-Revision-Date: 2024-03-09 16:18+0000\n"
-"Last-Translator: Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024\n"
-"Language-Team: Japanese (https://app.transifex.com/domaframework/teams/189259/ja/)\n"
+"PO-Revision-Date: 2024-03-16 23:31\n"
+"Last-Translator: \n"
+"Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: doma-docs\n"
+"X-Crowdin-Project-ID: 657384\n"
+"X-Crowdin-Language: ja\n"
+"X-Crowdin-File: /_build/gettext/kotlin-support.pot\n"
+"X-Crowdin-File-ID: 182\n"
+"Language: ja_JP\n"
 
 # 05f1386666a849bcac243220358fd48f
 #: ../../kotlin-support.rst:3
@@ -43,9 +39,7 @@ msgstr "ベストプラクティス"
 
 # a1180a6b76f449e3b7f126864eef284d
 #: ../../kotlin-support.rst:13
-msgid ""
-"Here are some recommended methods, such as defining classes and building "
-"them with Kotlin."
+msgid "Here are some recommended methods, such as defining classes and building them with Kotlin."
 msgstr "Kotlinでクラスを定義してビルドするなど、おすすめの方法を紹介します。"
 
 # 2653c56ecb1c439e90eba1944fb6f248
@@ -60,9 +54,7 @@ msgstr "プレーンクラスとして定義する"
 
 # 65a736577c2e4f05973bd36cd0ecc695
 #: ../../kotlin-support.rst:19
-msgid ""
-"Specify a ``Metamodel`` annotation to the ``metamodel`` element of "
-"``@Entity``"
+msgid "Specify a ``Metamodel`` annotation to the ``metamodel`` element of ``@Entity``"
 msgstr "``@Entity`` の ``metamodel`` 要素に ``Metamodel`` アノテーションを指定する"
 
 # 668b0aa45bab462698c93d01a5facb42
@@ -72,13 +64,15 @@ msgstr "ドメインクラス"
 
 # ddbeadd47e04493c87451716341cd09e
 # 2096194161de4def958208032248bc80
-#: ../../kotlin-support.rst:46 ../../kotlin-support.rst:59
+#: ../../kotlin-support.rst:46
+#: ../../kotlin-support.rst:59
 msgid "Define as a data class"
 msgstr "データクラスとして定義する"
 
 # caeeac61d3664430bfb6015d1f1a4bf7
 # 15408761d8df4fdea2378fc98e14c148
-#: ../../kotlin-support.rst:47 ../../kotlin-support.rst:60
+#: ../../kotlin-support.rst:47
+#: ../../kotlin-support.rst:60
 msgid "Define only one constructor"
 msgstr "コンストラクターを 1 つだけ定義する"
 
@@ -119,32 +113,18 @@ msgstr "SQLテンプレートを ``@org.seasar.doma.Sql`` に指定する"
 
 # 4d176edcddba437cbe1781aef059accc
 #: ../../kotlin-support.rst:73
-msgid ""
-"Use ``org.seasar.doma.jdbc.Result`` as the return type of ``@Delete``, "
-"``@Insert`` and ``@Update``"
-msgstr ""
-"``@Delete``、``@Insert``、および ``@Update`` の戻り値の型として "
-"``org.seasar.doma.jdbc.Result`` を使用する"
+msgid "Use ``org.seasar.doma.jdbc.Result`` as the return type of ``@Delete``, ``@Insert`` and ``@Update``"
+msgstr "``@Delete``、``@Insert``、および ``@Update`` の戻り値の型として ``org.seasar.doma.jdbc.Result`` を使用する"
 
 # eba8c9eaae9d4cb696fa54d2425103ff
 #: ../../kotlin-support.rst:74
-msgid ""
-"Use ``org.seasar.doma.jdbc.BatchResult`` as the return type of "
-"``@BatchDelete``, ``@BatchInsert`` and ``@BatchUpdate``"
-msgstr ""
-"``@BatchDelete``、 ``@BatchInsert`` 、 ``@BatchUpdate`` の戻り値の型として "
-"``org.seasar.doma.jdbc.BatchResult`` を使用する"
+msgid "Use ``org.seasar.doma.jdbc.BatchResult`` as the return type of ``@BatchDelete``, ``@BatchInsert`` and ``@BatchUpdate``"
+msgstr "``@BatchDelete``、 ``@BatchInsert`` 、 ``@BatchUpdate`` の戻り値の型として ``org.seasar.doma.jdbc.BatchResult`` を使用する"
 
 # 6f738191945347bd8d41e77a0b906c4c
 #: ../../kotlin-support.rst:91
-msgid ""
-"Use `Destructuring Declarations "
-"<https://kotlinlang.org/docs/reference/multi-declarations.html>`_ for "
-"``org.seasar.doma.jdbc.Result`` and ``org.seasar.doma.jdbc.BatchResult``"
-msgstr ""
-"``org.seasar.doma.jdbc.Result`` と ``org.seasar.doma.jdbc.BatchResult`` に対しては"
-" `Destructuring Declarations <https://kotlinlang.org/docs/reference/multi-"
-"declarations.html>`_ を使用する"
+msgid "Use `Destructuring Declarations <https://kotlinlang.org/docs/reference/multi-declarations.html>`_ for ``org.seasar.doma.jdbc.Result`` and ``org.seasar.doma.jdbc.BatchResult``"
+msgstr "``org.seasar.doma.jdbc.Result`` と ``org.seasar.doma.jdbc.BatchResult`` に対しては `Destructuring Declarations <https://kotlinlang.org/docs/reference/multi-declarations.html>`_ を使用する"
 
 # ca301e7ac2e44ead84bb92625f25d731
 #: ../../kotlin-support.rst:103
@@ -158,51 +138,28 @@ msgstr "DAO インターフェイスよりも Kotlin 固有の Criteria API を�
 
 # 6b4517bbe8a34f4fbb0fc47d9c1c416b
 #: ../../kotlin-support.rst:109
-msgid ""
-"Doma provides Kotlin specific Criteria API, ``KEntityql`` and ``KNativeSql``"
-" DSLs. They are very similar with the ``Entityql`` and ``NativeSql`` DSLs, "
-"which are described in :doc:`criteria-api`. The biggest feature of the "
-"``KEntityql`` and ``KNativeSql`` DSLs is simplicity."
-msgstr ""
-"Doma は、Kotlin 固有の Criteria API、``KEntityql`` および ``KNativeSql`` DSL "
-"を提供します。これらは、:doc:`criteria-api` で説明されている ``Entityql`` および ``NativeSql`` DSL "
-"と非常に似ています。  ``KEntityql`` と ``KNativeSql`` DSL の最大の特徴はそのシンプルさです。"
+msgid "Doma provides Kotlin specific Criteria API, ``KEntityql`` and ``KNativeSql`` DSLs. They are very similar with the ``Entityql`` and ``NativeSql`` DSLs, which are described in :doc:`criteria-api`. The biggest feature of the ``KEntityql`` and ``KNativeSql`` DSLs is simplicity."
+msgstr "Doma は、Kotlin 固有の Criteria API、``KEntityql`` および ``KNativeSql`` DSL を提供します。これらは、:doc:`criteria-api` で説明されている ``Entityql`` および ``NativeSql`` DSL と非常に似ています。  ``KEntityql`` と ``KNativeSql`` DSL の最大の特徴はそのシンプルさです。"
 
 # 0a3f44fa68bc45edac25ef21ed8d4b75
 #: ../../kotlin-support.rst:113
-msgid ""
-"For example, when you use ``KEntityql``, you have to accept a lambda "
-"parameter in a WHERE expression as follows:"
+msgid "For example, when you use ``KEntityql``, you have to accept a lambda parameter in a WHERE expression as follows:"
 msgstr "たとえば、 ``Entityql`` を使用する場合は、次のように WHERE 式でラムダパラメータを受け入れる必要があります。"
 
 # 5bdc6c6825664de78301883269dc2490
 #: ../../kotlin-support.rst:132
-msgid ""
-"The lambda parameter ``c`` is a bit annoying. On the other hand, when you "
-"use ``KEntityql``, the parameter is gone."
+msgid "The lambda parameter ``c`` is a bit annoying. On the other hand, when you use ``KEntityql``, the parameter is gone."
 msgstr "ラムダパラメータ「c」は少し面倒です。一方、 ``KEntityql`` を使用すると、パラメータはなくなります。"
 
 # a79a42de2b054791b5e4a0e1cfa98fe1
 #: ../../kotlin-support.rst:152
-msgid ""
-"You can see a lot of sample code `here "
-"<https://github.com/domaframework/doma-"
-"it/tree/master/kotlin/src/test/kotlin/org/seasar/doma/it/criteria>`_."
-msgstr ""
-"ここ <https://github.com/domaframework/doma-"
-"it/tree/master/kotlin/src/test/kotlin/org/seasar/doma/it/criteria>`_ "
-"で多くのサンプル コードを参照できます。"
+msgid "You can see a lot of sample code `here <https://github.com/domaframework/doma-it/tree/master/kotlin/src/test/kotlin/org/seasar/doma/it/criteria>`_."
+msgstr "ここ <https://github.com/domaframework/doma-it/tree/master/kotlin/src/test/kotlin/org/seasar/doma/it/criteria>`_ で多くのサンプル コードを参照できます。"
 
 # efd5a2c32abc43358366011da63a8435
 #: ../../kotlin-support.rst:154
-msgid ""
-"The ``KEntityql`` and ``KNativeSql`` DSLs are included in doma-kotlin.jar. "
-"Note that you should depend on doma-kotlin instead of doma-core in your "
-"build script. You can write build.gradle.kts as follows:"
-msgstr ""
-"``KEntityql`` および ``KNativeSql`` DSL は doma-kotlin.jar に含まれています。ビルド スクリプトでは "
-"doma-core ではなく doma-kotlin に依存する必要があることに注意してください。 build.gradle.kts "
-"は次のように記述できます。"
+msgid "The ``KEntityql`` and ``KNativeSql`` DSLs are included in doma-kotlin.jar. Note that you should depend on doma-kotlin instead of doma-core in your build script. You can write build.gradle.kts as follows:"
+msgstr "``KEntityql`` および ``KNativeSql`` DSL は doma-kotlin.jar に含まれています。ビルド スクリプトでは doma-core ではなく doma-kotlin に依存する必要があることに注意してください。 build.gradle.kts は次のように記述できます。"
 
 # 82f9ab75acff4117a9c5c5b40b283ed7
 #: ../../kotlin-support.rst:165
@@ -211,12 +168,8 @@ msgstr "コード生成"
 
 # 93c089647291444986e313c3374097e0
 #: ../../kotlin-support.rst:167
-msgid ""
-"Use `Doma CodeGen Plugin <https://github.com/domaframework/doma-codegen-"
-"plugin>`_. This plugin support Kotlin code generation."
-msgstr ""
-"`Doma CodeGen プラグイン <https://github.com/domaframework/doma-codegen-plugin>`_"
-" を使用してください。このプラグインは Kotlin コード生成をサポートします。"
+msgid "Use `Doma CodeGen Plugin <https://github.com/domaframework/doma-codegen-plugin>`_. This plugin support Kotlin code generation."
+msgstr "`Doma CodeGen プラグイン <https://github.com/domaframework/doma-codegen-plugin>`_ を使用してください。このプラグインは Kotlin コード生成をサポートします。"
 
 # 33e54a66c6644f8cb3b1bf44770eff62
 #: ../../kotlin-support.rst:171
@@ -225,32 +178,18 @@ msgstr "Gradle での kapt の使用"
 
 # 92d1c3ad7b1645e291dd0e8a30f236b1
 #: ../../kotlin-support.rst:173
-msgid ""
-"Annotation processors are supported in Kotlin with the `kapt "
-"<https://kotlinlang.org/docs/reference/kapt.html>`_ compiler plugin."
-msgstr ""
-"アノテーション プロセッサは、Kotlin で `kapt "
-"<https://kotlinlang.org/docs/reference/kapt.html>`_ コンパイラ "
-"プラグインを使用してサポートされています。"
+msgid "Annotation processors are supported in Kotlin with the `kapt <https://kotlinlang.org/docs/reference/kapt.html>`_ compiler plugin."
+msgstr "アノテーション プロセッサは、Kotlin で `kapt <https://kotlinlang.org/docs/reference/kapt.html>`_ コンパイラ プラグインを使用してサポートされています。"
 
 # c75994a8bd514c49a15bee76422c159a
 #: ../../kotlin-support.rst:176
-msgid ""
-"Add the dependencies using the `kapt` and `implementation` configuration in "
-"your dependencies block. For example, you can write build.gradle.kts as "
-"follows:"
-msgstr ""
-"依存関係ブロックの `kapt` および `implementation` を使用して依存関係を追加します。たとえば、次のように "
-"build.gradle.kts を記述できます。"
+msgid "Add the dependencies using the `kapt` and `implementation` configuration in your dependencies block. For example, you can write build.gradle.kts as follows:"
+msgstr "依存関係ブロックの `kapt` および `implementation` を使用して依存関係を追加します。たとえば、次のように build.gradle.kts を記述できます。"
 
 # 0f68fcdd63314e9493b923dae6a89075
 #: ../../kotlin-support.rst:186
-msgid ""
-"To simplify your build script, we recommend you use the `Doma Compile Plugin"
-" <https://github.com/domaframework/doma-compile-plugin>`_:"
-msgstr ""
-"ビルド スクリプトを簡略化するには、`Doma コンパイル プラグイン  <https://github.com/domaframework/doma-"
-"compile-plugin>`_ を使用することをお勧めします。"
+msgid "To simplify your build script, we recommend you use the `Doma Compile Plugin <https://github.com/domaframework/doma-compile-plugin>`_:"
+msgstr "ビルド スクリプトを簡略化するには、`Doma コンパイル プラグイン  <https://github.com/domaframework/doma-compile-plugin>`_ を使用することをお勧めします。"
 
 # 070a3098f77b479aa1d3596da8959d10
 #: ../../kotlin-support.rst:190
@@ -260,4 +199,5 @@ msgstr "サンプルプロジェクト"
 # 5c213851d37a4183927f4cc2ab42d681
 #: ../../kotlin-support.rst:192
 msgid "`kotlin-sample <https://github.com/domaframework/kotlin-sample>`_"
-msgstr "`kotlin-sample <https://github.com/domaframework/kotlin-sample>`_"
+msgstr ""
+

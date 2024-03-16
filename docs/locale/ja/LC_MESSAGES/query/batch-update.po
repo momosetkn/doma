@@ -1,25 +1,21 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2018, Toshihiro Nakamura
-# This file is distributed under the same license as the Doma package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
-# Translators:
-# Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024
-# 
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Doma\n"
+"Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-10 10:39+0900\n"
-"PO-Revision-Date: 2024-03-10 01:59+0000\n"
-"Last-Translator: Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024\n"
-"Language-Team: Japanese (https://app.transifex.com/domaframework/teams/189259/ja/)\n"
+"PO-Revision-Date: 2024-03-16 23:31\n"
+"Last-Translator: \n"
+"Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: doma-docs\n"
+"X-Crowdin-Project-ID: 657384\n"
+"X-Crowdin-Language: ja\n"
+"X-Crowdin-File: /_build/gettext/query/batch-update.pot\n"
+"X-Crowdin-File-ID: 228\n"
+"Language: ja_JP\n"
 
 # 828e546b75d042ec883075a085f410d7
 #: ../../query/batch-update.rst:3
@@ -38,25 +34,13 @@ msgstr "DAOメソッドに ``@BatchUpdate`` というアノテーションを付
 
 # a5eae1a7980c4b2fb8317d9ce7e0e50b
 #: ../../query/batch-update.rst:21
-msgid ""
-"By default UPDATE statement is auto generated. You can mapping arbitrary SQL"
-" file by specifying ``true`` to ``sqlFile`` property within the "
-"``@BatchUpdate`` annotation."
-msgstr ""
-"デフォルトでは、UPDATE ステートメントが自動生成されます。 ``@BatchUpdate`` アノテーション内の ``sqlFile`` "
-"プロパティに ``true`` を指定することで、任意の SQL ファイルをマッピングできます。"
+msgid "By default UPDATE statement is auto generated. You can mapping arbitrary SQL file by specifying ``true`` to ``sqlFile`` property within the ``@BatchUpdate`` annotation."
+msgstr "デフォルトでは、UPDATE ステートメントが自動生成されます。 ``@BatchUpdate`` アノテーション内の ``sqlFile`` プロパティに ``true`` を指定することで、任意の SQL ファイルをマッピングできます。"
 
 # cfcd39f823d4454484b6e225417fdac0
 #: ../../query/batch-update.rst:24
-msgid ""
-"The ``preUpdate`` method of entity listener is called each entity when "
-"before executing update if the entity listener is specified at "
-":doc:`../entity` parameter. Also the ``postUpdate`` method of entity "
-"listener method is called each entity when after executing update."
-msgstr ""
-"更新対象の :doc:`../entity` にエンティティリスナーが設定されている場合、エンティティリスナーの ``preUpdate`` "
-"メソッドが更新実行前に各エンティティごとに呼び出されます。また、エンティティリスナーメソッドの ``postUpdate`` "
-"メソッドは更新実行後に各エンティティごとに呼び出されます。"
+msgid "The ``preUpdate`` method of entity listener is called each entity when before executing update if the entity listener is specified at :doc:`../entity` parameter. Also the ``postUpdate`` method of entity listener method is called each entity when after executing update."
+msgstr "更新対象の :doc:`../entity` にエンティティリスナーが設定されている場合、エンティティリスナーの ``preUpdate`` メソッドが更新実行前に各エンティティごとに呼び出されます。また、エンティティリスナーメソッドの ``postUpdate`` メソッドは更新実行後に各エンティティごとに呼び出されます。"
 
 # c3f9990751644933875699883f0eee44
 #: ../../query/batch-update.rst:28
@@ -65,19 +49,12 @@ msgstr "戻り値"
 
 # 9478d062825f474ea5987930bdf50623
 #: ../../query/batch-update.rst:30
-msgid ""
-"Return value must be ``org.seasar.doma.jdbc.BatchResult`` that has entity "
-"class as an element if parameter ``Iterable`` subtype element is immutable "
-"entity class."
-msgstr ""
-"パラメータ ``Iterable`` のサブタイプの要素が不変エンティティクラスの場合、戻り値はエンティティクラスを要素として持つ "
-"``org.seasar.doma.jdbc.BatchResult`` でなければなりません。"
+msgid "Return value must be ``org.seasar.doma.jdbc.BatchResult`` that has entity class as an element if parameter ``Iterable`` subtype element is immutable entity class."
+msgstr "パラメータ ``Iterable`` のサブタイプの要素が不変エンティティクラスの場合、戻り値はエンティティクラスを要素として持つ ``org.seasar.doma.jdbc.BatchResult`` でなければなりません。"
 
 # fd2fc913005d44a6b3dec4b4ee1072ad
 #: ../../query/batch-update.rst:32
-msgid ""
-"Return value must be ``int[]`` that is represented each updating process's "
-"updated count if the above conditions are not satisfied."
+msgid "Return value must be ``int[]`` that is represented each updating process's updated count if the above conditions are not satisfied."
 msgstr "上記の条件を満たさない場合、戻り値は各更新処理の更新件数を表す ``int[]`` でなければなりません。"
 
 # e9d55411e3eb40969552d0c82e040902
@@ -87,39 +64,27 @@ msgstr "自動生成SQLによるバッチ更新"
 
 # 4070669151b846cca3e4050fb01a58ac
 # fff14bac6c56494baab1f75a78217def
-#: ../../query/batch-update.rst:39 ../../query/batch-update.rst:135
-msgid ""
-"Parameter type must be ``java.lang.Iterable`` subtype that has "
-":doc:`../entity` as an element. Specifiable parameter is only one. Parameter"
-" must not be ``null``. Return value array element count become equal "
-"``Iterable`` element count. Update count is returned to array each element."
-msgstr ""
-"パラメータの型は要素として :doc:`../entity` を持つ ``java.lang.Iterable`` "
-"のサブタイプでなければなりません。指定できるパラメータは 1 つだけです。パラメータは ``null`` であってはなりません。戻り値の配列要素数は、 "
-"``Iterable`` の要素数と等しくなります。配列のそれぞれの要素が更新された件数を表します。"
+#: ../../query/batch-update.rst:39
+#: ../../query/batch-update.rst:135
+msgid "Parameter type must be ``java.lang.Iterable`` subtype that has :doc:`../entity` as an element. Specifiable parameter is only one. Parameter must not be ``null``. Return value array element count become equal ``Iterable`` element count. Update count is returned to array each element."
+msgstr "パラメータの型は要素として :doc:`../entity` を持つ ``java.lang.Iterable`` のサブタイプでなければなりません。指定できるパラメータは 1 つだけです。パラメータは ``null`` であってはなりません。戻り値の配列要素数は、 ``Iterable`` の要素数と等しくなります。配列のそれぞれの要素が更新された件数を表します。"
 
 # 5c4b4eaebd274deb94926c015167a191
 #: ../../query/batch-update.rst:46
-msgid ""
-"Version number and optimistic concurrency control in auto generated SQL"
+msgid "Version number and optimistic concurrency control in auto generated SQL"
 msgstr "自動生成された SQL におけるバージョン番号と楽観的排他制御"
 
 # 855d7e7f333e4537be67c25ab9ad9962
 # 8bbfe086cd414eba87b4118e352abce7
-#: ../../query/batch-update.rst:48 ../../query/batch-update.rst:183
-msgid ""
-"Optimistic concurrency control is executed if you satisfied below "
-"conditions."
+#: ../../query/batch-update.rst:48
+#: ../../query/batch-update.rst:183
+msgid "Optimistic concurrency control is executed if you satisfied below conditions."
 msgstr "以下の条件を満たした場合、楽観的排他制御が実行されます。"
 
 # e74eed545a554a4fbd4efb2f49eccb47
 #: ../../query/batch-update.rst:50
-msgid ""
-":doc:`../entity` within parameter java.lang.Iterable subtype has property "
-"that is annotated with @Version"
-msgstr ""
-"パラメータ java.lang.Iterable サブタイプ内の :doc:`../entity` に @Version "
-"アノテーションが付けられたプロパティがある"
+msgid ":doc:`../entity` within parameter java.lang.Iterable subtype has property that is annotated with @Version"
+msgstr "パラメータ java.lang.Iterable サブタイプ内の :doc:`../entity` に @Version アノテーションが付けられたプロパティがある"
 
 # 96ccb7afea924662b1880444b385204f
 #: ../../query/batch-update.rst:51
@@ -128,57 +93,32 @@ msgstr "``@BatchUpdate`` アノテーション内の ``ignoreVersion`` 要素が
 
 # bb0303f4d2f54e2ab76694977e0fcc0c
 #: ../../query/batch-update.rst:53
-msgid ""
-"If optimistic concurrency control is enable, version number is included with"
-" identifier in update condition and is updated increment by 1. "
-"``BatchOptimisticLockException`` representing optimistic concurrency control"
-" failure is thrown, if at that time updated count is 0. Also, "
-"``BatchOptimisticLockException`` is not thrown and version property within "
-"entity is increment by 1 if updated count is 1."
-msgstr ""
-"楽観的排他制御が有効であれば、バージョン番号はIDとともに更新条件に含まれ、 1増分して更新されます。 "
-"このときの更新件数が0件の場合、楽観的排他制御の失敗を示す ``BatchOptimisticLockException`` がスローされます。 "
-"一方、更新件数が1件の場合は、 ``BatchOptimisticLockException`` はスローされず、 "
-"エンティティのバージョンプロパティの値が1増分されます。"
+msgid "If optimistic concurrency control is enable, version number is included with identifier in update condition and is updated increment by 1. ``BatchOptimisticLockException`` representing optimistic concurrency control failure is thrown, if at that time updated count is 0. Also, ``BatchOptimisticLockException`` is not thrown and version property within entity is increment by 1 if updated count is 1."
+msgstr "楽観的排他制御が有効であれば、バージョン番号はIDとともに更新条件に含まれ、 1増分して更新されます。 このときの更新件数が0件の場合、楽観的排他制御の失敗を示す ``BatchOptimisticLockException`` がスローされます。 一方、更新件数が1件の場合は、 ``BatchOptimisticLockException`` はスローされず、 エンティティのバージョンプロパティの値が1増分されます。"
 
 # 18485872363b421b816284ce26e21530
 # 2a17746e73ff45feb6c20c163ecaf89e
-#: ../../query/batch-update.rst:58 ../../query/batch-update.rst:205
+#: ../../query/batch-update.rst:58
+#: ../../query/batch-update.rst:205
 msgid "ignoreVersion"
-msgstr "ignoreVersion"
+msgstr ""
 
 # 6cdbdb7a2c4d479caa059dbbeccac349
 #: ../../query/batch-update.rst:60
-msgid ""
-"If ``ignoreVersion`` property within ``@BatchUpdate`` annotation is true, "
-"version number is not include in update condition and be included in SET "
-"clauses within UPDATE statement. Version number is updated by setting value "
-"at application. ``BatchOptimisticLockException`` is not thrown in this case,"
-" even if update count is 0."
-msgstr ""
-"``@BatchUpdate`` の ``ignoreVersion`` 要素が ``true`` の場合、 "
-"バージョン番号は更新条件には含まれず、UPDATE文のSET句に含まれます。 バージョン番号はアプリケーションで設定した値で更新されます。 "
-"この場合、更新件数が0件であっても、 ``BatchOptimisticLockException`` はスローされません。"
+msgid "If ``ignoreVersion`` property within ``@BatchUpdate`` annotation is true, version number is not include in update condition and be included in SET clauses within UPDATE statement. Version number is updated by setting value at application. ``BatchOptimisticLockException`` is not thrown in this case, even if update count is 0."
+msgstr "``@BatchUpdate`` の ``ignoreVersion`` 要素が ``true`` の場合、 バージョン番号は更新条件には含まれず、UPDATE文のSET句に含まれます。 バージョン番号はアプリケーションで設定した値で更新されます。 この場合、更新件数が0件であっても、 ``BatchOptimisticLockException`` はスローされません。"
 
 # 79490ee40a694216b484509b0a86434d
 # 57954c9690694ba3ae92315efe922d2d
-#: ../../query/batch-update.rst:71 ../../query/batch-update.rst:217
+#: ../../query/batch-update.rst:71
+#: ../../query/batch-update.rst:217
 msgid "suppressOptimisticLockException"
-msgstr "suppressOptimisticLockException"
+msgstr ""
 
 # 205d10bf7043467f8dd1c96aeb060785
 #: ../../query/batch-update.rst:73
-msgid ""
-"In case of ``suppressOptimisticLockException`` property within "
-"``@BatchUpdate`` is ``true``, if property that annotated with ``@Version`` "
-"is exists then version number is include in update condition and be "
-"increment by 1 but ``BatchOptimisticLockException`` is not thrown even if "
-"update count is 0. However, version property value within entity is "
-"increment by 1."
-msgstr ""
-"``@BatchUpdate`` の ``suppressOptimisticLockException`` 要素が ``true`` の場合、 "
-"``@Version`` が注釈されたプロパティがあればバージョン番号は更新条件に含まれ増分もされますが、 更新件数が0件であっても "
-"``BatchOptimisticLockException`` はスローされません。 ただし、エンティティのバージョンプロパティの値は1増分されます。"
+msgid "In case of ``suppressOptimisticLockException`` property within ``@BatchUpdate`` is ``true``, if property that annotated with ``@Version`` is exists then version number is include in update condition and be increment by 1 but ``BatchOptimisticLockException`` is not thrown even if update count is 0. However, version property value within entity is increment by 1."
+msgstr "``@BatchUpdate`` の ``suppressOptimisticLockException`` 要素が ``true`` の場合、 ``@Version`` が注釈されたプロパティがあればバージョン番号は更新条件に含まれ増分もされますが、 更新件数が0件であっても ``BatchOptimisticLockException`` はスローされません。 ただし、エンティティのバージョンプロパティの値は1増分されます。"
 
 # a6b5d18dee324fe78dd924185c6b7c77
 #: ../../query/batch-update.rst:84
@@ -192,52 +132,28 @@ msgstr "更新可能"
 
 # d94ba89e09ee456aba262771597d131f
 #: ../../query/batch-update.rst:89
-msgid ""
-"The ``updatable`` property within ``@Column`` annotation that is specified "
-"``false`` is excluded from updating target if :doc:`../entity` has property "
-"that is annotated with ``@Column``."
-msgstr ""
-":doc:`../entity` に ``@Column`` アノテーションが付けられたプロパティがある場合、 ``@Column`` "
-"アノテーション内の ``false`` が指定された ``updatable`` プロパティは更新対象から除外されます。 。"
+msgid "The ``updatable`` property within ``@Column`` annotation that is specified ``false`` is excluded from updating target if :doc:`../entity` has property that is annotated with ``@Column``."
+msgstr ":doc:`../entity` に ``@Column`` アノテーションが付けられたプロパティがある場合、 ``@Column`` アノテーション内の ``false`` が指定された ``updatable`` プロパティは更新対象から除外されます。 。"
 
 # ee64395fdde445e5bba842f0f53e2db7
 #: ../../query/batch-update.rst:92
 msgid "exclude"
-msgstr "exclude"
+msgstr ""
 
 # 678754a7cb3a4b13ab4f1f976e411fa1
 #: ../../query/batch-update.rst:94
-msgid ""
-"Property that is specified with ``exclude`` property within the "
-"``@BatchUpdate`` annotation is excluded from updating target. Even if "
-"``updatable`` property within ``@Column`` annotation is  specified ``true`` "
-"the property is excluded from updating target if the property is specified "
-"by this element."
-msgstr ""
-"``@BatchUpdate`` アノテーション内の ``exclude`` プロパティで指定されたプロパティは更新対象から除外されます。 "
-"``@Column`` アノテーション内の ``updatable`` プロパティに true "
-"が指定されていても、この要素でプロパティが指定されている場合、そのプロパティは更新対象から除外されます。"
+msgid "Property that is specified with ``exclude`` property within the ``@BatchUpdate`` annotation is excluded from updating target. Even if ``updatable`` property within ``@Column`` annotation is  specified ``true`` the property is excluded from updating target if the property is specified by this element."
+msgstr "``@BatchUpdate`` アノテーション内の ``exclude`` プロパティで指定されたプロパティは更新対象から除外されます。 ``@Column`` アノテーション内の ``updatable`` プロパティに true が指定されていても、この要素でプロパティが指定されている場合、そのプロパティは更新対象から除外されます。"
 
 # f6a1e8dc92924c9489329310be3e61f0
 #: ../../query/batch-update.rst:103
 msgid "include"
-msgstr "include"
+msgstr ""
 
 # 7d5b1dcc149f450987693e71485ce31d
 #: ../../query/batch-update.rst:105
-msgid ""
-"Only property that is specified with ``include`` property within "
-"``@BatchUpdate`` annotation is included to updating target. If same property"
-" are specified with both of ``include`` property and ``exclude`` property "
-"within ``@BatchUpdate`` the property is excluded from updating target. Even "
-"if property is specified with this element the property is excluded from "
-"updating target if ``updatable`` property within ``@Column`` annotation is "
-"``false``."
-msgstr ""
-"更新対象には ``@BatchUpdate`` アノテーション内の ``include`` プロパティで指定されたプロパティのみが更新対象となります。 "
-"@BatchUpdate 内の include プロパティと exclude "
-"プロパティの両方で同じプロパティを指定した場合、そのプロパティは更新対象から除外されます。この要素でプロパティを指定しても、 @Column "
-"アノテーション内の ``updatetable`` プロパティが ``false`` の場合、そのプロパティは更新対象から除外されます。"
+msgid "Only property that is specified with ``include`` property within ``@BatchUpdate`` annotation is included to updating target. If same property are specified with both of ``include`` property and ``exclude`` property within ``@BatchUpdate`` the property is excluded from updating target. Even if property is specified with this element the property is excluded from updating target if ``updatable`` property within ``@Column`` annotation is ``false``."
+msgstr "更新対象には ``@BatchUpdate`` アノテーション内の ``include`` プロパティで指定されたプロパティのみが更新対象となります。 @BatchUpdate 内の include プロパティと exclude プロパティの両方で同じプロパティを指定した場合、そのプロパティは更新対象から除外されます。この要素でプロパティを指定しても、 @Column アノテーション内の ``updatetable`` プロパティが ``false`` の場合、そのプロパティは更新対象から除外されます。"
 
 # 37a941dc357c4d5685eabe6dfbd11811
 #: ../../query/batch-update.rst:115
@@ -246,19 +162,12 @@ msgstr "SQLファイルによるバッチ更新"
 
 # c2d55d7f9e0f4e5392088184363a2b38
 #: ../../query/batch-update.rst:117
-msgid ""
-"To execute batch updating by SQL file, you set ``true`` to ``sqlFile`` "
-"property within ``@BatchUpdate`` annotation and prepare SQL file that "
-"correspond method."
-msgstr ""
-"SQLファイルによるバッチ更新を行うには、 ``@BatchUpdate`` の ``sqlFile`` 要素に ``true`` を設定し、 "
-"メソッドに対応するSQLファイルを用意します。"
+msgid "To execute batch updating by SQL file, you set ``true`` to ``sqlFile`` property within ``@BatchUpdate`` annotation and prepare SQL file that correspond method."
+msgstr "SQLファイルによるバッチ更新を行うには、 ``@BatchUpdate`` の ``sqlFile`` 要素に ``true`` を設定し、 メソッドに対応するSQLファイルを用意します。"
 
 # 8138caf75eff4405b39be4aa5ec773d5
 #: ../../query/batch-update.rst:122
-msgid ""
-"In batch updating by SQL file, rule is different according to using or not "
-"using :ref:`populate`."
+msgid "In batch updating by SQL file, rule is different according to using or not using :ref:`populate`."
 msgstr "SQLファイルによるバッチ更新では、:ref:`populate` を使用する場合と使用しない場合でルールが異なります。"
 
 # ffe52c1c4fad417ca3e14631e749914c
@@ -268,21 +177,21 @@ msgstr "更新カラムリスト生成ディレクティブを使用する場合
 
 # d2d6c26de6114521a23e5fdfa984b5a5
 # 1d16ccc3448a44d7b139e8bc961bf228
-#: ../../query/batch-update.rst:141 ../../query/batch-update.rst:168
+#: ../../query/batch-update.rst:141
+#: ../../query/batch-update.rst:168
 msgid "For example, you describe SQL like below to correspond above method."
 msgstr "例えば、上記のメソッドに対応するには以下のようなSQLを記述します。"
 
 # 1cbba1c4f5b04aa881d04d1a1de93377
 # fc69de5253fb4fffb1bd3c339ee96004
-#: ../../query/batch-update.rst:147 ../../query/batch-update.rst:175
+#: ../../query/batch-update.rst:147
+#: ../../query/batch-update.rst:175
 msgid "Parameter name indicate ``Iterable`` subtype element in SQL file."
 msgstr "パラメータ名は、SQL ファイル内の ``Iterable`` の要素を示します。"
 
 # 8d17441363fe44559781ec6f710da1bc
 #: ../../query/batch-update.rst:149
-msgid ""
-"The rule that is about update target property  equals :ref:`auto-batch-"
-"update`."
+msgid "The rule that is about update target property  equals :ref:`auto-batch-update`."
 msgstr "更新対象プロパティの制御に関するルールは :ref:`auto-batch-update` と同等です。"
 
 # 21d4d593e1c249cc8e3d3a722b049b1b
@@ -292,25 +201,13 @@ msgstr "更新カラムリスト生成ディレクティブを使用しない場
 
 # 9c230ea5b7dc42ac9ec1ee59b0db0424
 #: ../../query/batch-update.rst:162
-msgid ""
-"Parameter type must be ``java.lang.Iterable`` subtype that has arbitrary "
-"type as an element. Specifiable parameter is only one. Parameter must not be"
-" ``null``. Return value array element count become equal ``Iterable`` "
-"element count. Update count is returned to array each element."
-msgstr ""
-"パラメータの型は、任意の型を要素として持つ ``java.lang.Iterable`` でなければなりません。指定できるパラメータは 1 "
-"つだけです。パラメータは ``null`` であってはなりません。戻り値の配列要素数は、 ``Iterable`` "
-"の要素数と等しくなります。配列のそれぞれの要素が更新された件数を表します。"
+msgid "Parameter type must be ``java.lang.Iterable`` subtype that has arbitrary type as an element. Specifiable parameter is only one. Parameter must not be ``null``. Return value array element count become equal ``Iterable`` element count. Update count is returned to array each element."
+msgstr "パラメータの型は、任意の型を要素として持つ ``java.lang.Iterable`` でなければなりません。指定できるパラメータは 1 つだけです。パラメータは ``null`` であってはなりません。戻り値の配列要素数は、 ``Iterable`` の要素数と等しくなります。配列のそれぞれの要素が更新された件数を表します。"
 
 # dc7a0a5da9ba48f0bbc494e4a1008c84
 #: ../../query/batch-update.rst:177
-msgid ""
-"Version number auto updating is not executed in batch update by SQL file. "
-"Also, ``exclude`` property and ``include`` property within ``@BatchUpdate`` "
-"annotation are not referenced."
-msgstr ""
-"SQLファイルによるバッチ更新では、バージョン番号の自動更新は行われません。 また、 ``@BatchUpdate`` の ``exclude`` "
-"要素、 ``include`` 要素は参照されません。"
+msgid "Version number auto updating is not executed in batch update by SQL file. Also, ``exclude`` property and ``include`` property within ``@BatchUpdate`` annotation are not referenced."
+msgstr "SQLファイルによるバッチ更新では、バージョン番号の自動更新は行われません。 また、 ``@BatchUpdate`` の ``exclude`` 要素、 ``include`` 要素は参照されません。"
 
 # fc581871ccb4480d932155f95a36e98b
 #: ../../query/batch-update.rst:181
@@ -319,12 +216,8 @@ msgstr "SQLファイルにおけるバージョン番号と楽観的排他制御
 
 # f190f4876c094daaab908e41290198cb
 #: ../../query/batch-update.rst:185
-msgid ""
-"java.lang.Iterable subtype element in parameter is :doc:`../entity` and has "
-"property that is annotated @Version existing at :doc:`../entity`."
-msgstr ""
-"パラメータ内の java.lang.Iterable の要素は :doc:`../entity` であり、 @Version "
-"アノテーションが付けられたプロパティが :doc:`../entity` に存在する"
+msgid "java.lang.Iterable subtype element in parameter is :doc:`../entity` and has property that is annotated @Version existing at :doc:`../entity`."
+msgstr "パラメータ内の java.lang.Iterable の要素は :doc:`../entity` であり、 @Version アノテーションが付けられたプロパティが :doc:`../entity` に存在する"
 
 # 1b0be7879575407b9c01841c442cb723
 #: ../../query/batch-update.rst:187
@@ -333,64 +226,28 @@ msgstr "@BatchUpdate アノテーション内のignoreVersion プロパティが
 
 # 3a42aeff713b4f8998aff74ad5bce098
 #: ../../query/batch-update.rst:189
-msgid ""
-"However, describing to SQL file for Optimistic concurrency control SQL is "
-"application developer's responsibility. For example like below SQL, you must"
-" specify version number in WHERE clauses and increment version number by 1 "
-"in SET clauses."
-msgstr ""
-"ただし、楽観的排他制御のSQLの記述はアプリケーション開発者の責任となります。たとえば、以下の SQL のように、WHERE "
-"句でバージョン番号を指定し、SET 句でバージョン番号を 1 ずつインクリメントする必要があります。"
+msgid "However, describing to SQL file for Optimistic concurrency control SQL is application developer's responsibility. For example like below SQL, you must specify version number in WHERE clauses and increment version number by 1 in SET clauses."
+msgstr "ただし、楽観的排他制御のSQLの記述はアプリケーション開発者の責任となります。たとえば、以下の SQL のように、WHERE 句でバージョン番号を指定し、SET 句でバージョン番号を 1 ずつインクリメントする必要があります。"
 
 # 576ec8060b9f4b56aa0fa4b5455dac27
 #: ../../query/batch-update.rst:197
-msgid ""
-"``BatchOptimisticLockException`` representing optimistic concurrency control"
-" failure is thrown, if this SQL updated count is 0. "
-"``BatchOptimisticLockException`` is not thrown and version property within "
-"entity is increment by 1 if updated count is not 0."
-msgstr ""
-"このSQLの更新件数が0件または複数件の場合、楽観的排他制御の失敗を示す ``BatchOptimisticLockException`` "
-"がスローされます。 更新件数が1件の場合、 ``BatchOptimisticLockException`` はスローされず、 "
-"エンティティのバージョンプロパティの値が1増分されます。"
+msgid "``BatchOptimisticLockException`` representing optimistic concurrency control failure is thrown, if this SQL updated count is 0. ``BatchOptimisticLockException`` is not thrown and version property within entity is increment by 1 if updated count is not 0."
+msgstr "このSQLの更新件数が0件または複数件の場合、楽観的排他制御の失敗を示す ``BatchOptimisticLockException`` がスローされます。 更新件数が1件の場合、 ``BatchOptimisticLockException`` はスローされず、 エンティティのバージョンプロパティの値が1増分されます。"
 
 # fec23d074fce45ebbecd44a3a1d86f11
 #: ../../query/batch-update.rst:200
-msgid ""
-"If optimistic concurrency control is enable, version number is included with"
-" identifier in update condition and is updated increment by 1. "
-"``BatchOptimisticLockException`` representing optimistic concurrency control"
-" failure is thrown, if at that time updated count is 0. On the other hand, "
-"if update count is 1, ``BatchOptimisticLockException`` is not thrown and "
-"entity version property is increment by 1."
-msgstr ""
-"楽観的排他制御が有効であれば、バージョン番号は識別子とともに更新条件に含まれ、 1増分して更新されます。 "
-"このときの更新件数が0件または複数件の場合、楽観的排他制御の失敗を示す ``BatchOptimisticLockException`` "
-"がスローされます。 一方、更新件数が1件の場合、 ``BatchOptimisticLockException`` "
-"はスローされず、エンティティのバージョンプロパティの値が1増分されます。"
+msgid "If optimistic concurrency control is enable, version number is included with identifier in update condition and is updated increment by 1. ``BatchOptimisticLockException`` representing optimistic concurrency control failure is thrown, if at that time updated count is 0. On the other hand, if update count is 1, ``BatchOptimisticLockException`` is not thrown and entity version property is increment by 1."
+msgstr "楽観的排他制御が有効であれば、バージョン番号は識別子とともに更新条件に含まれ、 1増分して更新されます。 このときの更新件数が0件または複数件の場合、楽観的排他制御の失敗を示す ``BatchOptimisticLockException`` がスローされます。 一方、更新件数が1件の場合、 ``BatchOptimisticLockException`` はスローされず、エンティティのバージョンプロパティの値が1増分されます。"
 
 # ddeebf9db9ce48bda78f628fd30d4812
 #: ../../query/batch-update.rst:207
-msgid ""
-"If ``ignoreVersion`` property within ``@BatchUpdate`` annotation is true, "
-"``BatchOptimisticLockException`` is not thrown, even if update count is 0 or"
-" multiple. Also, entity version property is not modified."
-msgstr ""
-"``@BatchUpdate`` アノテーション内の ``ignoreVersion`` プロパティが ``true`` "
-"の場合、更新件数が何件であっても ``BatchOptimisticLockException`` はスローされません。また、エンティティのバージョン "
-"プロパティは変更されません。"
+msgid "If ``ignoreVersion`` property within ``@BatchUpdate`` annotation is true, ``BatchOptimisticLockException`` is not thrown, even if update count is 0 or multiple. Also, entity version property is not modified."
+msgstr "``@BatchUpdate`` アノテーション内の ``ignoreVersion`` プロパティが ``true`` の場合、更新件数が何件であっても ``BatchOptimisticLockException`` はスローされません。また、エンティティのバージョン プロパティは変更されません。"
 
 # 43064f5572e74f049be3e93bc73ca2fd
 #: ../../query/batch-update.rst:219
-msgid ""
-"In case of ``suppressOptimisticLockException`` property within "
-"``@BatchUpdate`` is ``true``, ``BatchOptimisticLockException`` is not thrown"
-" even if update count is 0. However, entity version property value is "
-"incremented by 1."
-msgstr ""
-"``@BatchUpdate`` の ``suppressOptimisticLockException`` 要素が ``true`` の場合、 "
-"更新件数が何件であっても ``BatchOptimisticLockException`` はスローされません。 "
-"ただし、エンティティのバージョンプロパティの値は1増分されます。"
+msgid "In case of ``suppressOptimisticLockException`` property within ``@BatchUpdate`` is ``true``, ``BatchOptimisticLockException`` is not thrown even if update count is 0. However, entity version property value is incremented by 1."
+msgstr "``@BatchUpdate`` の ``suppressOptimisticLockException`` 要素が ``true`` の場合、 更新件数が何件であっても ``BatchOptimisticLockException`` はスローされません。 ただし、エンティティのバージョンプロパティの値は1増分されます。"
 
 # 3cb6cf2fb7d64764aa927bc3d9201194
 #: ../../query/batch-update.rst:229
@@ -399,11 +256,8 @@ msgstr "一意制約違反"
 
 # 1a37ca71a672459494d58d431457e883
 #: ../../query/batch-update.rst:231
-msgid ""
-"``UniqueConstraintException`` is thrown regardless of with or without using "
-"sql file if unique constraint violation is occurred."
-msgstr ""
-"一意制約違反が発生した場合は、SQLファイルの使用の有無に関係なく\n"
+msgid "``UniqueConstraintException`` is thrown regardless of with or without using sql file if unique constraint violation is occurred."
+msgstr "一意制約違反が発生した場合は、SQLファイルの使用の有無に関係なく\n"
 "``UniqueConstraintException`` がスローされます。"
 
 # 51e2d0e531fe450885a8a42ff38dc5a4
@@ -413,21 +267,13 @@ msgstr "クエリタイムアウト"
 
 # 3717b118835c4b22a901a86bc902cd2b
 #: ../../query/batch-update.rst:236
-msgid ""
-"You can specify seconds of query timeout to ``queryTimeout`` property within"
-" ``@BatchUpdate`` annotation."
-msgstr ""
-"``@BatchUpdate`` アノテーション内の ``queryTimeout`` プロパティにクエリタイムアウトの秒数を指定できます。"
+msgid "You can specify seconds of query timeout to ``queryTimeout`` property within ``@BatchUpdate`` annotation."
+msgstr "``@BatchUpdate`` アノテーション内の ``queryTimeout`` プロパティにクエリタイムアウトの秒数を指定できます。"
 
 # de09db74a7794704933d018eb9ad6a84
 #: ../../query/batch-update.rst:243
-msgid ""
-"This specifying is applied regardless of with or without using sql file. "
-"Query timeout that is specified in config class is used if ``queryTimeout`` "
-"property is not set value."
-msgstr ""
-"この指定はSQLファイルの使用の有無に関わらず適用されます。 ``queryTimeout`` プロパティに値が設定されていない場合は、config "
-"クラスで指定されたクエリタイムアウトが使用されます。"
+msgid "This specifying is applied regardless of with or without using sql file. Query timeout that is specified in config class is used if ``queryTimeout`` property is not set value."
+msgstr "この指定はSQLファイルの使用の有無に関わらず適用されます。 ``queryTimeout`` プロパティに値が設定されていない場合は、config クラスで指定されたクエリタイムアウトが使用されます。"
 
 # 63dc797863d54f6faeb8373cc87293ea
 #: ../../query/batch-update.rst:247
@@ -436,20 +282,13 @@ msgstr "バッチサイズ"
 
 # 995e82a222114bcbb979ac5b8de0495d
 #: ../../query/batch-update.rst:249
-msgid ""
-"You can specify batch size to ``batchSize`` property within ``@BatchUpdate``"
-" annotation."
+msgid "You can specify batch size to ``batchSize`` property within ``@BatchUpdate`` annotation."
 msgstr "バッチサイズは ``@BatchUpdate`` アノテーション内の ``batchSize`` プロパティに指定できます。"
 
 # 01ac7844f385479ea513329393bc7fc6
 #: ../../query/batch-update.rst:256
-msgid ""
-"This specify is applied Regardless of using or not using SQL file. It you do"
-" not specify the value to ``batchSize`` property, batch size that is "
-"specified at :doc:`../config` class is applied."
-msgstr ""
-"この指定はSQLファイルの使用有無に関わらず適用されます。 ``batchSize`` "
-"プロパティに値を指定しない場合は、:doc:`../config` クラスで指定されたバッチサイズが適用されます。"
+msgid "This specify is applied Regardless of using or not using SQL file. It you do not specify the value to ``batchSize`` property, batch size that is specified at :doc:`../config` class is applied."
+msgstr "この指定はSQLファイルの使用有無に関わらず適用されます。 ``batchSize`` プロパティに値を指定しない場合は、:doc:`../config` クラスで指定されたバッチサイズが適用されます。"
 
 # 66b8240c5add46ddafb911cdc66ff673
 #: ../../query/batch-update.rst:260
@@ -458,14 +297,11 @@ msgstr "SQLログの出力形式"
 
 # 30d011971fbb481ebb7dfae6d8c50f50
 #: ../../query/batch-update.rst:262
-msgid ""
-"You can specify SQL log output format to ``sqlLog`` property within "
-"``@BatchUpdate`` annotation."
+msgid "You can specify SQL log output format to ``sqlLog`` property within ``@BatchUpdate`` annotation."
 msgstr "``@BatchUpdate`` アノテーション内の `sqlLog` プロパティに SQL ログの出力形式を指定できます。"
 
 # 4631ffe078a54d49bd5af5a9cc906559
 #: ../../query/batch-update.rst:269
-msgid ""
-"``SqlLogType.RAW`` represent outputting log that is sql with a binding "
-"parameter."
+msgid "``SqlLogType.RAW`` represent outputting log that is sql with a binding parameter."
 msgstr "``SqlLogType.RAW`` はバインドパラメータ（?）付きの SQL をログ出力することを表します。"
+

@@ -1,25 +1,21 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2018, Toshihiro Nakamura
-# This file is distributed under the same license as the Doma package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
-# Translators:
-# Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024
-# 
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Doma\n"
+"Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-10 10:39+0900\n"
-"PO-Revision-Date: 2024-03-09 16:18+0000\n"
-"Last-Translator: Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024\n"
-"Language-Team: Japanese (https://app.transifex.com/domaframework/teams/189259/ja/)\n"
+"PO-Revision-Date: 2024-03-16 23:31\n"
+"Last-Translator: \n"
+"Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: doma-docs\n"
+"X-Crowdin-Project-ID: 657384\n"
+"X-Crowdin-Language: ja\n"
+"X-Crowdin-File: /_build/gettext/lombok-support.pot\n"
+"X-Crowdin-File-ID: 166\n"
+"Language: ja_JP\n"
 
 # 7dd3539226884a1e9992f2e143ee94ba
 #: ../../lombok-support.rst:3
@@ -48,29 +44,13 @@ msgstr "概要"
 
 # fd351dc59cd145b5b5590eeac97b8438
 #: ../../lombok-support.rst:17
-msgid ""
-"Both Lombok and Doma provide annotation processors. Because the execution "
-"order of annotation processors is not determined in Java, Doma's annotation "
-"processors are not always aware of the class modifications made by Lombok "
-"annotation processors."
-msgstr ""
-"Lombok と Doma は両方ともアノテーションプロセッサを提供します。アノテーションプロセッサの実行順序は Java "
-"では決定されないため、Doma のアノテーションプロセッサは、Lombok "
-"アノテーションプロセッサによって行われたクラスの変更を常に認識するとは限りません。"
+msgid "Both Lombok and Doma provide annotation processors. Because the execution order of annotation processors is not determined in Java, Doma's annotation processors are not always aware of the class modifications made by Lombok annotation processors."
+msgstr "Lombok と Doma は両方ともアノテーションプロセッサを提供します。アノテーションプロセッサの実行順序は Java では決定されないため、Doma のアノテーションプロセッサは、Lombok アノテーションプロセッサによって行われたクラスの変更を常に認識するとは限りません。"
 
 # 2b5de50f1b4b4ea5bcd20497fbd9a5cd
 #: ../../lombok-support.rst:22
-msgid ""
-"To resolve the issue, Doma's annotation processors recognize several of "
-"Lombok's annotations and change their behavior. For example, if Doma's "
-"annotation processors find a class annotated with ``@lombok.Value``, they "
-"suppose that the class has a constructor whose arguments cover all instance "
-"fields."
-msgstr ""
-"この問題を解決するために、Doma のアノテーションプロセッサは Lombok "
-"のアノテーションのいくつかを認識し、その動作を変更します。たとえば、Doma のアノテーション プロセッサが ``@lombok.Value`` "
-"アノテーションが付けられたクラスを見つけた場合、そのクラスにはすべてのインスタンス "
-"フィールドに対応するパラメータを引数で受け取るコンストラクタがあると想定します。"
+msgid "To resolve the issue, Doma's annotation processors recognize several of Lombok's annotations and change their behavior. For example, if Doma's annotation processors find a class annotated with ``@lombok.Value``, they suppose that the class has a constructor whose arguments cover all instance fields."
+msgstr "この問題を解決するために、Doma のアノテーションプロセッサは Lombok のアノテーションのいくつかを認識し、その動作を変更します。たとえば、Doma のアノテーション プロセッサが ``@lombok.Value`` アノテーションが付けられたクラスを見つけた場合、そのクラスにはすべてのインスタンス フィールドに対応するパラメータを引数で受け取るコンストラクタがあると想定します。"
 
 # 36f9a81cb1004065b89496b87e043403
 #: ../../lombok-support.rst:28
@@ -79,8 +59,7 @@ msgstr "ベストプラクティス"
 
 # 450cb75d212c4f6e8d7d4b4faadcc8dd
 #: ../../lombok-support.rst:30
-msgid ""
-"We show you recommended ways to define classes with Lombok annotations."
+msgid "We show you recommended ways to define classes with Lombok annotations."
 msgstr "Lombok アノテーションを使用してクラスを定義するための推奨方法を示します。"
 
 # 8d056755311740f6a8df1e8ba1a7f2f5
@@ -100,18 +79,17 @@ msgstr "``@Entity`` の ``immutable`` 要素に ``true`` を指定する"
 
 # 3be00842b1404f209e0b9d2a75bfeefc
 # 8f6ed4338bed49daa6f6380172578960
-#: ../../lombok-support.rst:39 ../../lombok-support.rst:111
+#: ../../lombok-support.rst:39
+#: ../../lombok-support.rst:111
 msgid "Specify either ``@lombok.Value`` or ``@lombok.AllArgsConstructor``"
 msgstr "``@lombok.Value`` または ``@lombok.AllArgsConstructor`` のいずれかを指定する"
 
 # c351ae3f321b41ab810fb895e3f0d743
 # 849d7fbc45fc4384a238526b6ddf8b01
-#: ../../lombok-support.rst:40 ../../lombok-support.rst:112
-msgid ""
-"Specify ``@lombok.Getter`` to generate getters, in case of "
-"``@lombok.AllArgsConstructor``"
-msgstr ""
-"``@lombok.AllArgsConstructor`` の場合、ゲッターを生成するには ``@lombok.Getter`` を指定する"
+#: ../../lombok-support.rst:40
+#: ../../lombok-support.rst:112
+msgid "Specify ``@lombok.Getter`` to generate getters, in case of ``@lombok.AllArgsConstructor``"
+msgstr "``@lombok.AllArgsConstructor`` の場合、ゲッターを生成するには ``@lombok.Getter`` を指定する"
 
 # b636b997ca674fe9abf166c0062098f9
 #: ../../lombok-support.rst:66
@@ -125,12 +103,8 @@ msgstr "デフォルトのコンストラクターを定義する"
 
 # d793afce227c4d5ea9cec8fac622a386
 #: ../../lombok-support.rst:69
-msgid ""
-"Specify ``@lombok.Data`` or ``@lombok.Getter``/``@lombok.Setter`` to "
-"generate getters/setters"
-msgstr ""
-"ゲッター/セッターを生成するには、``@lombok.Data`` または ``@lombok.Getter``/``@lombok.Setter`` "
-"を指定する"
+msgid "Specify ``@lombok.Data`` or ``@lombok.Getter``/``@lombok.Setter`` to generate getters/setters"
+msgstr "ゲッター/セッターを生成するには、``@lombok.Data`` または ``@lombok.Getter``/``@lombok.Setter`` を指定する"
 
 # 54053c7fd3844ef3959cad54f54c5ab8
 #: ../../lombok-support.rst:95
@@ -151,3 +125,4 @@ msgstr "``value`` という名前のインスタンスフィールドを 1 つ�
 #: ../../lombok-support.rst:109
 msgid "Embeddable class definition"
 msgstr "埋め込み可能クラスの定義"
+

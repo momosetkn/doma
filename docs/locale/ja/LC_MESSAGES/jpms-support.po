@@ -1,25 +1,21 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2018, Toshihiro Nakamura
-# This file is distributed under the same license as the Doma package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
-# Translators:
-# Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024
-# 
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Doma\n"
+"Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-10 10:39+0900\n"
-"PO-Revision-Date: 2024-03-09 16:18+0000\n"
-"Last-Translator: Toshihiro Nakamura <toshihiro.nakamura@gmail.com>, 2024\n"
-"Language-Team: Japanese (https://app.transifex.com/domaframework/teams/189259/ja/)\n"
+"PO-Revision-Date: 2024-03-16 23:31\n"
+"Last-Translator: \n"
+"Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: doma-docs\n"
+"X-Crowdin-Project-ID: 657384\n"
+"X-Crowdin-Language: ja\n"
+"X-Crowdin-File: /_build/gettext/jpms-support.pot\n"
+"X-Crowdin-File-ID: 198\n"
+"Language: ja_JP\n"
 
 # 8e82b00185864f1d98200b0e902b9853
 #: ../../jpms-support.rst:3
@@ -38,8 +34,7 @@ msgstr "概要"
 
 # 2eb3c3f8ebf246c6b90052115c5f21e0
 #: ../../jpms-support.rst:11
-msgid ""
-"Doma supports the Java Platform Module System (JPMS) introduced with Java 9."
+msgid "Doma supports the Java Platform Module System (JPMS) introduced with Java 9."
 msgstr "Doma は、Java 9 で導入された Java Platform Module System (JPMS) をサポートしています。"
 
 # 141e9c2c35a741d2a9913ebc21c20c21
@@ -65,52 +60,52 @@ msgstr "モジュール名"
 # 6737908845ed4e8589fd6b74d82c295b
 #: ../../jpms-support.rst:21
 msgid "doma-core"
-msgstr "doma-core"
+msgstr ""
 
 # 2292accf2b70455e82e96250bb29455a
 #: ../../jpms-support.rst:21
 msgid "org.seasar.doma.core"
-msgstr "org.seasar.doma.core"
+msgstr ""
 
 # 8456611326d647a5901dbf585f145fef
 #: ../../jpms-support.rst:23
 msgid "doma-kotlin"
-msgstr "doma-kotlin"
+msgstr ""
 
 # e9e5ff8e224948708aee4de4f24f65a4
 #: ../../jpms-support.rst:23
 msgid "org.seasar.doma.kotlin"
-msgstr "org.seasar.doma.kotlin"
+msgstr ""
 
 # 89acba5071cb489fb84c441276e19a22
 #: ../../jpms-support.rst:25
 msgid "doma-processor"
-msgstr "doma-processor"
+msgstr ""
 
 # 8f89b6dffdb34999952c131e9fbc3811
 #: ../../jpms-support.rst:25
 msgid "org.seasar.doma.processor"
-msgstr "org.seasar.doma.processor"
+msgstr ""
 
 # 8186d216503c47f8ba77466f6e2ce416
 #: ../../jpms-support.rst:27
 msgid "doma-slf4j"
-msgstr "doma-slf4j"
+msgstr ""
 
 # 3dc79be8ffd440789bc65fb354d89aca
 #: ../../jpms-support.rst:27
 msgid "org.seasar.doma.slf4j"
-msgstr "org.seasar.doma.slf4j"
+msgstr ""
 
 # 67cbec4457c34607bfe1ac67dd430f3f
 #: ../../jpms-support.rst:29
 msgid "doma-template"
-msgstr "doma-template"
+msgstr ""
 
 # a1e650ab87f249598a8c6edc0fdd034f
 #: ../../jpms-support.rst:29
 msgid "org.seasar.doma.template"
-msgstr "org.seasar.doma.template"
+msgstr ""
 
 # 93ef66dbfb724e8e8797c8216268ff35
 #: ../../jpms-support.rst:33
@@ -119,14 +114,11 @@ msgstr "使用法"
 
 # e2ab991d944e4e57ac5aade0eae11ae3
 #: ../../jpms-support.rst:35
-msgid ""
-"Doma uses reflection to access Entity properties. For this to work, you have"
-" to open packages containing Entity classes:"
-msgstr ""
-"Doma はリフレクションを使用してエンティティのフィールドにアクセスします。これを機能させるには、Entity "
-"クラスを含むパッケージを開く必要があります。"
+msgid "Doma uses reflection to access Entity properties. For this to work, you have to open packages containing Entity classes:"
+msgstr "Doma はリフレクションを使用してエンティティのフィールドにアクセスします。これを機能させるには、Entity クラスを含むパッケージを開く必要があります。"
 
 # 2d31720491964f7b852d00ff4cff1dcc
 #: ../../jpms-support.rst:47
 msgid "You can open your module instead of packages:"
 msgstr "パッケージの代わりにモジュールを開くこともできます。"
+
