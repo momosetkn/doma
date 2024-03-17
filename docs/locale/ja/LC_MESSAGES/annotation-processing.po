@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-17 06:37+0000\n"
-"PO-Revision-Date: 2024-03-17 13:47\n"
+"POT-Creation-Date: 2024-03-17 13:53+0000\n"
+"PO-Revision-Date: 2024-03-17 14:26\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -18,222 +18,178 @@ msgstr ""
 "Language: ja_JP\n"
 
 #: ../../annotation-processing.rst:3
-#: 12840058eb994caeb9c1687d65b4605b
 msgid "Annotation processing"
 msgstr "アノテーションプロセッシング"
 
 #: ../../annotation-processing.rst:6
-#: 84526429ad8d4ff38f909ee394c41c87
 msgid "Contents"
 msgstr "コンテンツ"
 
 #: ../../annotation-processing.rst:8
-#: 3a50091620be4f0183634978b0ec2a6a
 msgid "Doma uses `Pluggable Annotation Processing API <https://www.jcp.org/en/jsr/detail?id=269>`_ at compile time."
 msgstr "Doma はコンパイル時に `Pluggable Annotation Processing API <https://www.jcp.org/en/jsr/detail?id=269>`_ を使用します。"
 
 #: ../../annotation-processing.rst:10
-#: cb87db0b93ed4b49bd4a91c6485d9358
 msgid "In this document, we describe the options for the annotation processors in Doma and show you how to pass them to build tools."
 msgstr "このドキュメントでは、Doma のアノテーションプロセッサのオプションについて説明し、それらをビルドツールに渡す方法を示します。"
 
 #: ../../annotation-processing.rst:14
-#: 614061b3d7fa44f787d90d2285d45f96
 msgid "Options"
 msgstr "オプション"
 
 #: ../../annotation-processing.rst:19
-#: 821dcb5e9d6a4cdbbd6534b894d936ec
 msgid "doma.dao.package"
 msgstr "doma.dao.package"
 
 #: ../../annotation-processing.rst:17
-#: cec718586ecb4a25b06ffbf07e1c7e6d
 msgid "The package that the generated implementation classes of interfaces annotated with ``@Dao`` belong to. The specified value overrides the value of doma.dao.subpackage. The default value is the same package as the one the interfaces annotated with ``@Dao`` belong to."
 msgstr "生成された ``@Dao`` アノテーションが付いたインタフェースの実装クラスが属するパッケージ。指定された値は、doma.dao.subpackage の値をオーバーライドします。デフォルト値は、 ``@Dao`` アノテーションが付けられたインタフェースが属するパッケージと同じパッケージです。"
 
 #: ../../annotation-processing.rst:25
-#: 1dd2caf3d1f1467d925cd7f9d8ecdd93
 msgid "doma.dao.subpackage"
 msgstr "doma.dao.subpackage"
 
 #: ../../annotation-processing.rst:22
-#: 229bb1cb76ff482d9c568e6bce5b20ac
 msgid "The subpackage that the generated implementation classes of interfaces annotated with ``@Dao`` belong to. The specified value is overridden by the value of doma.dao.package. If this value is ``impl`` and the package of interfaces annotated with ``@Dao`` is ``example.dao``, the generated implementation classes belong to the package ``example.dao.impl``."
 msgstr "``@Dao`` アノテーションが付けられたインタフェースの生成された実装クラスが属するサブパッケージ。指定された値は、doma.dao.package の値によってオーバーライドされます。この値が ``impl`` で、 ``@Dao`` アノテーションが付けられたインタフェースのパッケージが ``example.dao`` である場合、生成された実装クラスはパッケージ ``example.dao.impl`` に属します。"
 
 #: ../../annotation-processing.rst:31
-#: f70e7fcff56b4ce0ad77919617667330
 msgid "doma.dao.suffix"
 msgstr "doma.dao.suffix"
 
 #: ../../annotation-processing.rst:28
-#: c724e093e16743188b6e756dc14d2dea
 msgid "The name suffix that the generated implementation classes of interfaces annotated with ``@Dao`` have. If this value is ``Bean`` and the simple name of the interface annotated with ``@Dao`` is ``EmployeeDao``, the simple name of the generated implementation class is ``EmployeeDaoBean``. The default value is ``Impl``."
 msgstr "``@Dao`` アノテーションが付けられたインタフェースの生成された実装クラスが持つ名前の接尾辞。この値が ``Bean`` で、 ``@Dao`` アノテーションが付けられたインタフェースの単純名が ``EmployeeDao`` である場合、生成される実装クラスの単純名は ``EmployeeDaoBean`` になります。デフォルト値は ``Impl`` です。"
 
 #: ../../annotation-processing.rst:36
-#: 080872c380de44e68eac66772766fe9e
 msgid "doma.debug"
 msgstr "doma.debug"
 
 #: ../../annotation-processing.rst:34
-#: 0a5388e8fe2248868e65f3d73af28dcf
 msgid "Whether to output the debug log in annotation processing. If the value is ``true``, the annotation processors output the debug log. The default value is ``false``."
 msgstr "アノテーション処理時にデバッグログを出力するかどうか。値が ``true`` の場合、アノテーション プロセッサはデバッグログを出力します。デフォルト値は ``false`` です。"
 
 #: ../../annotation-processing.rst:41
-#: 05e0559879d6474c90d9db5e3c5b2c9c
 msgid "doma.domain.converters"
 msgstr ""
 
 #: ../../annotation-processing.rst:39
-#: 39208382727b4e49a64f2d45cbacdb3c
 msgid "The full qualified names of the classes annotated with ``@DomainConverters``. The names are described as comma separated list. This value are used to find external domain classes."
 msgstr "``@DomainConverters`` の注釈が付けられたクラスの完全修飾名。名前はカンマ区切りのリストとして記述されます。この値は、外部ドメイン クラスを検索するために使用されます。"
 
 #: ../../annotation-processing.rst:46
-#: 44024435e01247bb99d3b227d69a5ad1
 msgid "doma.entity.field.prefix"
 msgstr "doma.entity.field.prefix"
 
 #: ../../annotation-processing.rst:44
-#: 26cffd3158ba4f72a0a97de8e7c3c23b
 msgid "The name prefix that the fields of the generated entity meta classes have. The value ``none`` means the prefix is not used. The default value is ``$``."
 msgstr "生成されたエンティティメタクラスのフィールドに付けられる名前プレフィックス。値 ``none`` は、プレフィックスが使用されないことを意味します。デフォルト値は ``$`` です。"
 
 #: ../../annotation-processing.rst:51
-#: a21d7809ae804421a9e906cc0a6c45f0
 msgid "doma.expr.functions"
 msgstr ""
 
 #: ../../annotation-processing.rst:49
-#: 5eb285beac77422d8e65dfe89fb729b4
 msgid "The full qualified name of the class that implements ``org.seasar.doma.expr.ExpressionFunctions``. The default value is ``org.seasar.doma.expr.ExpressionFunctions``. This value are used to determine which functions are available in expression comments."
 msgstr "``org.seasar.doma.expr.ExpressionFunctions`` を実装するクラスの完全修飾名。デフォルト値は ``org.seasar.doma.expr.ExpressionFunctions`` です。この値は、式言語から呼び出し可能な関数を決定するために使用されます。"
 
 #: ../../annotation-processing.rst:57
-#: 625250d5b08240a2baae74c460860acb
 msgid "doma.metamodel.enabled"
 msgstr ""
 
 #: ../../annotation-processing.rst:54
-#: 892ba9e889ea4518b2a7d7b3bf5d6d4e
 msgid "Whether to generate meta classes for the Criteria API. When the value is ``true``, metamodels are generated for all entity classes even if they are not specified with ``metamodel = @Metamodel``. The default value is ``false``."
 msgstr "Criteria API のメタクラスを生成するかどうか。値が ``true`` の場合、たとえ ``metamodel = @Metamodel`` で指定されていなくても、すべてのエンティティクラスに対してメタモデルが生成されます。デフォルト値は ``false`` です。"
 
 #: ../../annotation-processing.rst:61
-#: 286d486d78474c5dabd50b3d30d8e0a0
 msgid "doma.metamodel.prefix"
 msgstr "doma.metamodel.prefix"
 
 #: ../../annotation-processing.rst:60
-#: 3c2bfb2d6f774f1dbe378bb429845a36
 msgid "The name prefix of the metamodel classes for the Criteria API. The default value is an empty string."
 msgstr "Criteria API のメタモデル クラスの名前接頭辞。デフォルト値は空の文字列です。"
 
 #: ../../annotation-processing.rst:65
-#: b54e6722e35a4e98aaba6480efdda867
 msgid "doma.metamodel.suffix"
 msgstr "doma.metamodel.suffix"
 
 #: ../../annotation-processing.rst:64
-#: b59e57f7b00141f3b2ccdc9439d1d407
 msgid "The name suffix of the metamodel classes for the Criteria API. The default value is ``_``."
 msgstr "Criteria API のメタモデル クラスの名前接尾辞。デフォルト値は ``_`` です。"
 
 #: ../../annotation-processing.rst:70
-#: 4043727f50d042adb17b16af7b3fdf69
 msgid "doma.resources.dir"
 msgstr "doma.resources.dir"
 
 #: ../../annotation-processing.rst:68
-#: 0f464fcc87684d48b32d60ed0afc5ad3
 msgid "The resource directory that contains the resource files such as a doma.compile.config file and sql files. Specify the value as an absolute path. If the value is not specified, the resource directory is same as the directory the classes are generated."
 msgstr "doma.compile.config ファイルや SQL ファイルなどのリソース ファイルが含まれるリソースディレクトリ。値は絶対パスで指定します。値が指定されていない場合、リソース ディレクトリはクラスが生成されるディレクトリと同じになります。"
 
 #: ../../annotation-processing.rst:76
-#: 189f1dc5be5644caa3c44c379d1c74d5
 msgid "doma.sql.validation"
 msgstr "doma.sql.validation"
 
 #: ../../annotation-processing.rst:73
-#: 93871a7788794028a82efa32f5336e2b
 msgid "Whether to validate the existence of sql files and the grammar of sql comments. If the value is ``true``, the validations run. To disable the validations, set ``false``. The default value is ``true``."
 msgstr "SQL ファイルの存在と SQL コメントの文法を検証するかどうか。値が ``true`` の場合、検証が実行されます。検証を無効にするには、``false`` を設定します。デフォルト値は ``true`` です。"
 
 #: ../../annotation-processing.rst:82
-#: f648e54494a6423a9cf51b2c69fe4e6c
 msgid "doma.version.validation"
 msgstr "doma.version.validation"
 
 #: ../../annotation-processing.rst:79
-#: 7a89ecb33e994ce5809da7d674c0b3b9
 msgid "Whether to validate the versions of doma.jar between runtime and compile-time. If the value is ``true``, the validation runs. To disable the validation, set ``false``. The default value is ``true``."
 msgstr "実行時とコンパイル時の間で Doma のアーティファクトのバージョンを検証するかどうか。値が ``true`` の場合、検証が実行されます。検証を無効にするには、 ``false`` を設定します。デフォルト値は ``true`` です。"
 
 #: ../../annotation-processing.rst:86
-#: cf899afd3b144bbeb2d5ebc6bd3d498f
 msgid "doma.config.path"
 msgstr "doma.config.path"
 
 #: ../../annotation-processing.rst:85
-#: c585bf847e9c4cf18a679f68ba08e652
 msgid "The file path of the configuration file for Doma. The default value is ``doma.compile.config``."
 msgstr "Doma の構成ファイルのファイル パス。デフォルト値は ``doma.compile.config`` です。"
 
 #: ../../annotation-processing.rst:89
-#: c59c462e6815464cb351d5d01240426d
 msgid "Setting options in Gradle"
 msgstr "Gradle でのオプションの設定"
 
 #: ../../annotation-processing.rst:91
-#: 33f157342f28486fb169c61fcf3b19be
 msgid "Use `the compilerArgs property <https://docs.gradle.org/5.0/dsl/org.gradle.api.tasks.compile.CompileOptions.html#org.gradle.api.tasks.compile.CompileOptions:compilerArgs>`_:"
 msgstr "`compilerArgs プロパティ <https://docs.gradle.org/5.0/dsl/org.gradle.api.tasks.compile.CompileOptions.html#org.gradle.api.tasks.compile.CompileOptions:compilerArgs>`_ を使用します。"
 
 #: ../../annotation-processing.rst:103
-#: 25a9a48d867949b28b47c035a86768b8
 msgid "Setting options in IntelliJ IDEA"
 msgstr "IntelliJ IDEA でのオプションの設定"
 
 #: ../../annotation-processing.rst:105
-#: 698da78191cd4d9196a59eca64bfbef5
 msgid "Import your project as a Gradle project. In the case, the options written in build.gradle are used."
 msgstr "プロジェクトを Gradle プロジェクトとしてインポートします。この場合、build.gradleに記述されたオプションが使用されます。"
 
 #: ../../annotation-processing.rst:109
-#: 23ce428d0c994017b2270ee87f2198d6
 msgid "Setting options in Eclipse"
 msgstr "Eclipse でのオプションの設定"
 
 #: ../../annotation-processing.rst:111
-#: be0813b068d74c67a4ec91d6395e7a64
 msgid "Use the Gradle plugin `com.diffplug.eclipse.apt <https://plugins.gradle.org/plugin/com.diffplug.eclipse.apt>`_ and the processorArgs property:"
 msgstr "Gradle プラグイン `com.diffplug.eclipse.apt <https://plugins.gradle.org/plugin/com.diffplug.eclipse.apt>`_ とprocessorArgs プロパティを使用します。"
 
 #: ../../annotation-processing.rst:129
-#: 977edfec7b1b4577802ff2931112cf39
 msgid "When you run ``gradle eclipse``, eclipse setting files are generated."
 msgstr "``gradle eclipse`` を実行するとeclipseの設定ファイルが生成されます。"
 
 #: ../../annotation-processing.rst:132
-#: b315df9c38e3407db0ccc1961925032a
 msgid "Setting options with configuration file"
 msgstr "設定ファイルによるオプションの設定"
 
 #: ../../annotation-processing.rst:134
-#: 6ba0bc45d5f54ea0b1dfc45dd7bb92f3
 msgid "The options specified in the ``doma.compile.config`` file are available in all build tools such as Eclipse, IDEA, Gradle and so on."
 msgstr "``doma.compile.config`` ファイルで指定されたオプションは、Eclipse、IDEA、Gradle などのすべてのビルド ツールで使用できます。"
 
 #: ../../annotation-processing.rst:137
-#: 47bdd7ec2d2e4216844e8ec4268b8562
 msgid "The ``doma.compile.config`` file must follow the properties file format and be placed in the root directory such as ``src/main/resources``."
 msgstr "``doma.compile.config`` ファイルはプロパティファイル形式に従い、``src/main/resources`` などのルート ディレクトリに配置する必要があります。"
 
 #: ../../annotation-processing.rst:141
-#: dcb4844f2c1146bc8dc650c1e07717f4
 msgid "The options specified in the ``doma.compile.config`` file are overridden by the ones specific to the build tools."
 msgstr "``doma.compile.config`` ファイルで指定されたオプションは、ビルドツールに固有のオプションによって上書きされます。"
 

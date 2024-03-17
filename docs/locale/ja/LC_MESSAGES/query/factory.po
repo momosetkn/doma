@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-17 06:37+0000\n"
-"PO-Revision-Date: 2024-03-17 13:47\n"
+"POT-Creation-Date: 2024-03-17 13:53+0000\n"
+"PO-Revision-Date: 2024-03-17 14:26\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -18,97 +18,78 @@ msgstr ""
 "Language: ja_JP\n"
 
 #: ../../query/factory.rst:3
-#: eb5484fe650748989f2b0db0b1906d09
 msgid "Factories"
 msgstr "ファクトリ"
 
 #: ../../query/factory.rst:6
-#: 27efbe256d4f4d32a676edaf8668379b
 msgid "Contents"
 msgstr "コンテンツ"
 
 #: ../../query/factory.rst:8
-#: f427b24477db418db30029ca2492996f
 msgid "To get instances from the factory methods of ``java.sql.Connection``, annotate DAO methods with one of following annotations;"
 msgstr "``java.sql.Connection`` のファクトリメソッドからインスタンスを取得するには、DAO メソッドに次のいずれかのアノテーションを付けます。"
 
 #: ../../query/factory.rst:11
-#: 2ce9f991b98644d0af714c46606a45c1
 msgid "@ArrayFactory"
 msgstr ""
 
 #: ../../query/factory.rst:12
-#: 0745d724e82642a787dace04cf6e19c1
 msgid "@BlobFactory"
 msgstr ""
 
 #: ../../query/factory.rst:13
-#: 32158d225c9b4cd299ae8dee42f4f8ab
 msgid "@ClobFactory"
 msgstr ""
 
 #: ../../query/factory.rst:14
-#: 689b0b70864a4412967db3f2e9fef195
 msgid "@NClobFactory"
 msgstr ""
 
 #: ../../query/factory.rst:15
-#: c117a1378add4f5fb7a1a05b77781d14
 msgid "@SQLXMLFactory"
 msgstr ""
 
 #: ../../query/factory.rst:18
-#: 2583c9a98ed24a01b5c4ede96ce3549e
 msgid "Creating Array instances"
 msgstr "配列インスタンスの作成"
 
 #: ../../query/factory.rst:20
-#: 6feac0a1739743bb8fb1b2cf43e4a25a
 msgid "A return type must be ``java.sql.Array`` and the number of parameters must be one. The parameter type must be an array type and the parameter must not be null."
 msgstr "戻り値の型は ``java.sql.Array`` で、パラメータの数は 1 つでなければなりません。パラメータの型は配列型である必要があり、パラメータは null であってはなりません。"
 
 #: ../../query/factory.rst:23
-#: 658d3530c2534241a485aade44996a82
 msgid "Specify a database type name to the ``@ArrayFactory``'s ``typeName`` element:"
 msgstr "データベースタイプ名を ``@ArrayFactory`` の ``typeName`` 要素に指定します。"
 
 #: ../../query/factory.rst:31
-#: d4df7b2fd6db43679e79ffcb018ddd73
 msgid "Creating Blob instances"
 msgstr "Blob インスタンスの作成"
 
 #: ../../query/factory.rst:33
-#: 16b1495311c34855ad674f0defe21800
 msgid "A return type must be ``java.sql.Blob`` and the number of parameters must be zero:"
 msgstr "戻り値の型は ``java.sql.Blob`` でなければならず、パラメータの数は 0 でなければなりません。"
 
 #: ../../query/factory.rst:41
-#: aa45763d470047ae93bff40cca197059
 msgid "Creating Clob instances"
 msgstr "Clob インスタンスの作成"
 
 #: ../../query/factory.rst:43
-#: b772e94e1a89421baf299c29810618b6
 msgid "A return type must be ``java.sql.Clob`` and the number of parameters must be zero:"
 msgstr "戻り値の型は ``java.sql.Clob`` で、パラメータの数は 0 でなければなりません。"
 
 #: ../../query/factory.rst:51
-#: 9e330d8ad7f74cf190a3c26e0b1d0614
 msgid "Creating NClob instances"
 msgstr "NClob インスタンスの作成"
 
 #: ../../query/factory.rst:53
-#: 5e8a0863fd624724a79f8ce16bf1a9df
 msgid "A return type must be ``java.sql.NClob`` and the number of parameters must be zero:"
 msgstr "戻り値の型は ``java.sql.NClob`` でなければならず、パラメータの数は 0 でなければなりません。"
 
 #: ../../query/factory.rst:61
-#: 1ebd74ab6924476eb6dd63b41d05232d
 msgid "Creating SQLXML instances"
 msgstr "SQLXMLインスタンスの作成"
 
 #: ../../query/factory.rst:63
-#: 97b7b29db7a54552bc0586005169a2a6
 msgid "A return type must be ``java.sql.SQLXML`` and the number of parameters must be zero:"
 msgstr "戻り値の型は ``java.sql.SQLXML`` でなければならず、パラメータの数は 0 でなければなりません。"
 

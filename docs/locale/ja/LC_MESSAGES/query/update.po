@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-17 06:37+0000\n"
-"PO-Revision-Date: 2024-03-17 13:47\n"
+"POT-Creation-Date: 2024-03-17 13:53+0000\n"
+"PO-Revision-Date: 2024-03-17 14:26\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -18,298 +18,236 @@ msgstr ""
 "Language: ja_JP\n"
 
 #: ../../query/update.rst:3
-#: d716dbe1fdd54f9c94f67dd48045bc14
 msgid "Update"
 msgstr "更新"
 
 #: ../../query/update.rst:6
-#: b73260b14baf4eb8bd510bc0efd6364a
 msgid "Contents"
 msgstr "コンテンツ"
 
 #: ../../query/update.rst:8
-#: 05c65c8d3a424590a3c248a97d2622f4
 msgid "Annotate with ``@Update`` to Dao method for execute update."
 msgstr "DAOメソッドに ``@Update`` アノテーションを付けて更新を実行します。"
 
 #: ../../query/update.rst:21
-#: 8de1fcfd0d1b4333a7475f293881d463
 msgid "By default UPDATE statement is auto generated. You can mapping arbitrary SQL file by specifying ``true`` to ``sqlFile`` property within the ``@Update`` annotation."
 msgstr "デフォルトでは、UPDATE ステートメントが自動生成されます。 ``@Update`` アノテーション内の ``sqlFile`` プロパティに ``true`` を指定することで、任意の SQL ファイルをマッピングできます。"
 
 #: ../../query/update.rst:24
-#: b2c12455bd0349879d7a5e7b8ffbb9a3
 msgid "The ``preUpdate`` method of entity listener is called when before executing update if the entity listener is specified at entity class parameter. Also the ``postUpdate`` method of entity listener  method is called when after executing update."
 msgstr "パラメータが :doc:`../entity` であり、そのエンティティクラスにエンティティリスナーが指定されている場合、更新実行前にエンティティリスナーの ``preUpdate`` メソッドが呼び出されます。また、更新実行後はエンティティリスナーメソッドの ``postUpdate`` メソッドが呼び出されます。"
 
 #: ../../query/update.rst:28
-#: bd21944514084b53af0f23dc1d95eeb7
 msgid "Return value"
 msgstr "戻り値"
 
 #: ../../query/update.rst:30
-#: 606e7d4a21ad4e92a93ae7665fd486aa
 msgid "Return value must be ``org.seasar.doma.jdbc.Result`` that has entity class as an element if parameter is immutable entity class."
 msgstr "パラメータが不変のエンティティクラスの場合、戻り値はエンティティクラスを要素とする  ``org.seasar.doma.jdbc.Result`` である必要があります。"
 
 #: ../../query/update.rst:32
-#: 652c9fd7d768473bbc7fc2c391a28a56
 msgid "Return value must be ``int`` that is represented updated count if the above conditions are not satisfied."
 msgstr "上記の条件が満たされない場合、戻り値は更新された件数を表す ``int`` でなければなりません。"
 
 #: ../../query/update.rst:37
-#: ec0221928c7f4435a760fa6861107af2
 msgid "Update by auto generated SQL"
 msgstr "自動生成されたSQLによる更新"
 
 #: ../../query/update.rst:39
-#: 454adc32674e4c91a2acb02250fd1381
 msgid "Parameter type must be entity class. Specifiable parameter is only one. Parameter must not be null."
 msgstr "パラメータの型はエンティティクラスである必要があります。指定できるパラメータは 1 つだけです。パラメータは null であってはなりません。"
 
 #: ../../query/update.rst:52
-#: d74ba81bda1b48b3ad732fdcdfc38b65
 msgid "Version number and optimistic concurrency control in auto generated SQL"
 msgstr "自動生成された SQL におけるバージョン番号と楽観的排他制御"
 
 #: ../../query/update.rst:54
 #: ../../query/update.rst:211
-#: a7c77753a681432c97ccaa597652261a
-#: c60941fdb1024f12a7068ca106ed0026
 msgid "Optimistic concurrency control is executed if you satisfied below conditions."
 msgstr "以下の条件を満たした場合、楽観的排他制御が実行されます。"
 
 #: ../../query/update.rst:56
-#: 58433e0463b64591b23c4d9ec8292c13
 msgid "Entity class within parameter has property that is annotated with @Version"
 msgstr "パラメータのエンティティクラスが @Version アノテーションが付けられたプロパティを持つ"
 
 #: ../../query/update.rst:57
 #: ../../query/update.rst:215
-#: c8deb7f690c64933ad2f3e84843af7ba
-#: 9e3e53076b1c4751a35a744b760cbed7
 msgid "The ignoreVersion element within @Update annotation is false"
 msgstr "@Update アノテーション内のignoreVersion要素がfalseである"
 
 #: ../../query/update.rst:59
-#: c0e926102c0d45baa8c485c3351b26f8
 msgid "If optimistic concurrency control is enable, version number is included with identifier in update condition and is updated increment by 1. ``OptimisticLockException`` representing optimistic concurrency control failure is thrown, if at that time updated count is 0. Also, ``OptimisticLockException`` is not thrown and version property within entity is increment by 1 if updated count is not 0."
 msgstr "楽観的排他制御が有効な場合、バージョン番号がIDとともに更新条件に含まれ、バージョン番号は1 増分されて更新されます。更新件数が 0 の場合、楽観的排他制御の失敗を表す ``OptimisticLockException`` がスローされます。楽観的排他制御が成功した場合、エンティティのバージョンプロパティは 1増分されます。"
 
 #: ../../query/update.rst:64
 #: ../../query/update.rst:229
-#: afd82909f2204ddc8652c3410ad7147f
-#: 71853d8c1fa64dd1a246868d841e8336
 msgid "ignoreVersion"
 msgstr ""
 
 #: ../../query/update.rst:66
-#: f3ef3b134ff8410489508f8d1643bf08
 msgid "If ``ignoreVersion`` property within ``@Update`` annotation is true, version number is not include in update condition and be included in SET clauses within UPDATE statement. Version number is updated by setting value at application. ``OptimisticLockException`` is not thrown in this case, even if update count is 0."
 msgstr "``@Update`` アノテーション内の ``ignoreVersion`` プロパティが ``true`` の場合、バージョン番号は更新条件に含まれず、UPDATE ステートメント内の SET 句に含まれます。バージョン番号はアプリケーションで設定した値により更新されます。この場合、更新件数が 0 であっても ``OptimisticLockException`` はスローされません。"
 
 #: ../../query/update.rst:77
 #: ../../query/update.rst:241
-#: c886c767119d4778b8ab6bb5685a2ae7
-#: 45e5ce1b295f499eb80ec151eafc1d8e
 msgid "suppressOptimisticLockException"
 msgstr ""
 
 #: ../../query/update.rst:79
-#: 240cbc13dcb341729f61e80fd27f2d38
 msgid "In case of ``suppressOptimisticLockException`` property within ``@Update`` is true, if property that annotated with ``@Version`` is exists then version number is include in update condition and be increment by 1 but ``OptimisticLockException`` is not thrown even if update count is 0. However, version property value within entity is increment by 1."
 msgstr "`@Update`` アノテーションの ``suppressOptimisticLockException`` プロパティが ``true`` の場合、 ``@Version`` アノテーションが付けられたプロパティが存在すればバージョン番号は更新条件に含まれ増分もされますが、 更新件数が0でも ``OptimisticLockException`` はスローされません。ただし、エンティティのバージョンプロパティの値は1増分されます。"
 
 #: ../../query/update.rst:90
-#: c81ecc48c623457592059dc6ca9a92d8
 msgid "Control updating target property"
 msgstr "更新対象プロパティの制御"
 
 #: ../../query/update.rst:93
-#: b115ec0887124b76a1191886d36967a1
 msgid "updatable"
 msgstr ""
 
 #: ../../query/update.rst:95
-#: 36fcaa4449db4021a7accca6461549a2
 msgid "The ``updatable`` property within ``@Column`` annotation that is specified ``false`` is excluded from updating target if entity class has property that is annotated with ``@Column``."
 msgstr "エンティティクラスに ``@Column`` が注釈されたプロパティがある場合、``@Column`` の ``updatable`` 要素が ``false`` のものは更新対象外です。"
 
 #: ../../query/update.rst:98
-#: f509385e06874a918ce6fff514fdad4c
 msgid "exclude"
 msgstr ""
 
 #: ../../query/update.rst:100
-#: e7ae224abae24fa4aaf480bfb0358f9c
 msgid "Property that is specified with ``exclude`` property within the ``@Update`` annotation is excluded from updating target. Even if ``updatable`` property within ``@Column`` annotation is  specified ``true`` the property is excluded from updating target if the property is specified by this element."
 msgstr "``@Update`` の ``exclude`` 要素に指定されたプロパティを更新対象外とします。 プロパティがこの要素に指定されていれば、 ``@Column`` の ``updatable`` 要素が ``true`` であっても更新対象外です。"
 
 #: ../../query/update.rst:109
-#: 31f3f751a3674bf7a2953b2569493a53
 msgid "include"
 msgstr ""
 
 #: ../../query/update.rst:111
-#: 833ea5f1225c40b5bb08a1762ae52a9f
 msgid "Only property that is specified with ``include`` property within ``@Update`` annotation is included to updating target. If same property are specified with both of ``include`` property and ``exclude`` property within ``@Update`` the property is excluded from updating target. Even if property is specified with this element the property is excluded from updating target if ``updatable`` property within ``@Column`` annotation is ``false``."
 msgstr "``@Update`` の ``include`` 要素に指定されたプロパティのみを更新対象とします。 ``@Update`` の ``include`` 要素と ``exclude`` 要素の両方に同じプロパティが指定された場合、そのプロパティは更新対象外になります。プロパティがこの要素に指定されていても、 ``@Column`` の ``updatable`` 要素が ``false`` であれば更新対象外です。"
 
 #: ../../query/update.rst:121
-#: 4643ea1bf7fd43b189b51abc080abaa4
 msgid "excludeNull"
 msgstr ""
 
 #: ../../query/update.rst:123
-#: 54fb37399cf4481eb49d0459b5c71c2b
 msgid "Property that value is ``null`` is excluded from updating target if ``excludeNull`` property within ``@Update`` annotation is specified ``true``. If this element is ``true``, even if ``updatable`` property within ``@Column`` annotation is specified ``true`` or property is specified with ``include`` property within ``@Update`` annotation the property is excluded from insertion target if value is ``null``."
 msgstr "``@Update`` の ``excludeNull`` 要素が ``true`` の場合、値が ``null`` のプロパティを削除対象外とします。 この要素が ``true`` の場合、 ``@Column`` の ``updatable`` 要素が ``true`` であったり、 ``@Update`` の ``include`` 要素にプロパティが指定されていても、値が ``null`` であれば更新対象外です。"
 
 #: ../../query/update.rst:133
-#: 3cfd96903a294fb2b5b8db1dfe48d46a
 msgid "includeUnchanged"
 msgstr ""
 
 #: ../../query/update.rst:135
-#: b61259bac44649c6abb1423d9552e8f5
 msgid "This element is enable only if property that annotated with ``@OriginalStates`` is exists within updating target entity class."
 msgstr "この要素は、更新対象のエンティティクラスに ``@OriginalStates`` が注釈されたプロパティがある場合にのみ有効です。"
 
 #: ../../query/update.rst:137
-#: 34e1ad93e8e6414e80b6472f07782a16
 msgid "All property within entity is updating target if this element is true. That is, the column corresponding to all property is included in SET clauses within UPDATE statement."
 msgstr "この要素がtrueの場合、エンティティの全プロパティが更新対象となります。 つまり、全プロパティに対応するカラムがUPDATE文のSET句に含まれます。"
 
 #: ../../query/update.rst:140
-#: 91d9ebca57b1417b8258c380ce76b729
 msgid "Only properties that have actually changed since the entity is updating target if this element is ``false``. That is, only the column corresponding to modified property is included in SET clauses within UPDATE statement."
 msgstr "この要素が ``false`` の場合、エンティティが取得されてから実際に変更されたプロパティのみが更新対象になります。 つまり、変更されたプロパティに対応するカラムのみがUPDATE文のSET句に含まれます。"
 
 #: ../../query/update.rst:149
-#: 088178b453154503a29919d2fc0576ea
 msgid "Update by SQL file"
 msgstr "SQLファイルによる更新"
 
 #: ../../query/update.rst:151
-#: 1654c1472ac44a23ba8d73f8e5e897fe
 msgid "To execute updating by SQL file, you set ``true`` to ``sqlFile`` property within ``@Update`` annotation and prepare SQL file that correspond method."
 msgstr "SQLファイルによる更新を行うには、 ``@Update`` の ``sqlFile`` 要素に ``true`` を設定し、メソッドに対応するSQLファイルを用意します。"
 
 #: ../../query/update.rst:156
-#: 0eaff0a711af4ac29a5826a5387bbe6e
 msgid "In updating by SQL file, rule is different with or without use ref:`populate`."
 msgstr "SQLファイルによる更新では :ref:`populate` を使用する場合と使用しない場合でルールが異なります。"
 
 #: ../../query/update.rst:159
-#: fa2cba1c6fc84cd9b514a56a7915dc27
 msgid "Case of using comment that generating update column list"
 msgstr "更新カラムリスト生成ディレクティブを使用する場合"
 
 #: ../../query/update.rst:161
-#: 830a1878c5dc4ac5b814664bbecd2692
 msgid "First parameter type must be entity class. Specifiable parameters count is no limit. You can set ``null`` to parameter if parameter type is basic type or domain class. Parameter must not be ``null`` if the type is other than that."
 msgstr "最初のパラメータの型はエンティティクラスである必要があります。指定できるパラメータの数に制限はありません。パラメータの型が基本型またはドメインクラスの場合、パラメータに ``null`` を設定できます。型がそれ以外の場合、パラメータは ``null`` であってはなりません。"
 
 #: ../../query/update.rst:174
 #: ../../query/update.rst:198
-#: 53b1a36149064636976b0a000363df6b
-#: f0709630c0784f9cb695ac6887d0e2be
 msgid "For example, you describe SQL file like below to correspond above method."
 msgstr "たとえば、上記のメソッドに対応するSQLは次のように記述します。"
 
 #: ../../query/update.rst:180
-#: 5f8909ed44024f96883c02075bfa620f
 msgid "The rule about controlling updating target property is same as :ref:`auto-update`."
 msgstr "対象プロパティの更新制御に関するルールは :ref:`auto-update` と同様です。"
 
 #: ../../query/update.rst:183
-#: 3855b3b8487046148d7e1279eb6c0b7c
 msgid "Case of not using comment that generating update column list"
 msgstr "更新カラムリスト生成ディレクティブを使用しない場合"
 
 #: ../../query/update.rst:185
-#: 515ff21254be41478a6769f484edfe6f
 msgid "You can use arbitrary type as parameter. Specifiable parameters count is no limit. You can set ``null`` to parameter if parameter type is basic type or domain class. Parameter must not be ``null`` if the type is other than that."
 msgstr "パラメータとして任意の型を使用できます。指定できるパラメータの数に制限はありません。パラメータの型が基本型またはドメインクラスの場合、パラメータに ``null`` を設定できます。型がそれ以外の場合、パラメータは ``null`` であってはなりません。"
 
 #: ../../query/update.rst:205
-#: 79a9470f5f424096872f7fcc1b598d4e
 msgid "``exclude`` property and ``include`` property, ``excludeNull`` property, ``includeUnchanged`` property they are within ``@Update`` annotation are not referenced in updating by SQL file."
 msgstr "``@Update`` アノテーション内の ``exclude`` プロパティおよび ``include`` プロパティ、 ``excludeNull`` プロパティ、 ``includeUnchanged`` プロパティは、SQL ファイルによる更新時に参照されません。"
 
 #: ../../query/update.rst:209
-#: cea526e2095344fab718c2aa711adf1d
 msgid "Version number and optimistic concurrency control in SQL file"
 msgstr "SQLファイルにおけるバージョン番号と楽観的排他制御"
 
 #: ../../query/update.rst:213
-#: 805eddfb57954b7fb72aac18f451f501
 msgid "Entity class is included in parameter."
 msgstr "パラメータにエンティティクラスが含まれる"
 
 #: ../../query/update.rst:214
-#: 12cd06541d884cd88ebabb7d55228b20
 msgid "Entity class at first from the left within parameter has property that is annotated with @Version"
 msgstr "パラメータ内の左から最初のEntityクラスが @Version アノテーションが付与されたプロパティを持つ"
 
 #: ../../query/update.rst:217
-#: 758ca01788b8420b9181713d60247f69
 msgid "However, describing to SQL file for Optimistic concurrency control SQL is application developer's responsibility. For example like below SQL, you must specify version number in WHERE clauses and increment version number by 1 in SET clauses."
 msgstr "ただし、楽観的排他制御のSQLの記述はアプリケーション開発者の責任となります。たとえば、以下の SQL のように、WHERE 句でバージョン番号を指定し、SET 句でバージョン番号を 1 ずつインクリメントする必要があります。"
 
 #: ../../query/update.rst:225
-#: d3fb80bd2a7c4015b32bffb4c253276b
 msgid "``OptimisticLockException`` representing optimistic concurrency control failure is thrown, if this SQL updated count is 0. ``OptimisticLockException`` is not thrown and version property within entity is increment by 1 if updated count is not 0."
 msgstr "このSQLの更新件数が0件の場合、楽観的排他制御の失敗を示す ``OptimisticLockException`` がスローされます。更新件数が0件でない場合、 ``OptimisticLockException`` はスローされず、エンティティのバージョンプロパティの値が1増分されます。"
 
 #: ../../query/update.rst:231
-#: 4b2b4b81e05e4800af35ab9c14174b08
 msgid "If ``ignoreVersion`` property within ``@Update`` annotation is true, ``OptimisticLockException`` is not thrown even if update count is 0. Also, version property value within entity is not modified."
 msgstr "``@Update`` の ``ignoreVersion`` 要素が ``true`` の場合、更新件数が0件であっても、 ``OptimisticLockException`` はスローされません。 また、エンティティのバージョンプロパティの値は変更されません。"
 
 #: ../../query/update.rst:243
-#: 80048d37e58c44ea9c375b8ebfcb9fd3
 msgid "If ``suppressOptimisticLockException`` property within ``@Update`` annotation is true, ``OptimisticLockException`` is not thrown even if update count is 0. However, version property value within entity is incremented by 1."
 msgstr "``@Update`` の ``suppressOptimisticLockException`` 要素が ``true`` の場合、更新件数が0件であっても、 ``OptimisticLockException`` はスローされません。 ただし、エンティティのバージョンプロパティの値は1増分されます。"
 
 #: ../../query/update.rst:253
-#: b1bbe04dc18b48148c0438f8a6913a26
 msgid "Unique constraint violation"
 msgstr "一意制約違反"
 
 #: ../../query/update.rst:255
-#: c8242ceb4bed4e23a512355d986d3392
 msgid "``UniqueConstraintException`` is thrown regardless of with or without using sql file if unique constraint violation is occurred."
 msgstr "一意制約違反が発生した場合は、SQLファイルの使用の有無に関係なく\n"
 "``UniqueConstraintException`` がスローされます。"
 
 #: ../../query/update.rst:258
-#: 73cfa7b03fb7478689e9a2ddf100f7c8
 msgid "Query timeout"
 msgstr "クエリタイムアウト"
 
 #: ../../query/update.rst:260
-#: 465add135bf3441f9ca886bd694e5c09
 msgid "You can specify seconds of query timeout to ``queryTimeout`` property within ``@Update`` annotation."
 msgstr "結果セットのカラムにマッピングされないプロパティが存在する場合 ``ResultMappingException`` がスローされます。"
 
 #: ../../query/update.rst:267
-#: 4cd1a0fbd01d4a7dafca88a8dcea7cb3
 msgid "This specifying is applied regardless of with or without using sql file. Query timeout that is specified in :doc:`../config` is used if ``queryTimeout`` property is not set value."
 msgstr "この指定はSQLファイルの使用の有無に関わらず適用されます。 ``queryTimeout`` プロパティの値が設定されていない場合は、 :doc:`../config` で指定されたクエリタイムアウトが使用されます。"
 
 #: ../../query/update.rst:271
-#: ec201e4a35554cd3ba030fd1b883ee25
 msgid "SQL log output format"
 msgstr "SQLログの出力形式"
 
 #: ../../query/update.rst:273
-#: fa73deb426f94801992edb07a53ad461
 msgid "You can specify SQL log output format to ``sqlLog`` property within ``@Update`` annotation."
 msgstr "``@Update`` の ``sqlLog`` 要素に SQL のログ出力形式を指定できます。"
 
 #: ../../query/update.rst:280
-#: 2b38d5361b054274b74e4aabf6d41aed
 msgid "``SqlLogType.RAW`` represent outputting log that is sql with a binding parameter."
 msgstr "``SqlLogType.RAW`` はバインドパラメータ付きの SQL をログ出力することを表します。"
 
