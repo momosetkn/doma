@@ -174,7 +174,7 @@ epub_exclude_files = ['search.html']
 
 locale_dirs = ["locale"]
 
-gettext_uuid = True
+gettext_uuid = False
 
 gettext_compact = False
 
