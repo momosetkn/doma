@@ -27,13 +27,14 @@ This document consists of following sections:
 * `About Doma`_
 * `Links`_
 
-.. admonition:: Help improve our documentation
+.. admonition:: Please help with the improvement and localization of our documentation.
   :class: important
 
-  Have feedback or a question? Found a typo?
+  For matters related to the English version of the documentation and general issues concerning the documentation, 
+  please add issues or pull requests to `the GitHub repository <https://github.com/domaframework/doma-docs>`_.
 
-  Please add an issue or pull request to
-  https://github.com/domaframework/doma-docs and we’ll get back to you.
+  For localization into Japanese, please perform translations and voting 
+  through `the project on Crowdin <https://crowdin.com/project/doma-docs>`_.
 
 User Documentation
 ==================

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 10:39+0900\n"
-"PO-Revision-Date: 2024-03-17 01:12\n"
+"POT-Creation-Date: 2024-03-17 10:57+0900\n"
+"PO-Revision-Date: 2024-03-17 02:03\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -72,73 +72,73 @@ msgstr "`Domaについて`_"
 msgid "`Links`_"
 msgstr "`リンク集`_"
 
-# d5eb84c35e1d448fbb8fcb2716b9b38b
+# 289d2de3e2ac476091ce322bb567c277
 #: ../../index.rst:30
-msgid "Help improve our documentation"
-msgstr "ドキュメントの改善に協力をお願いします"
+msgid "Please help with the improvement and localization of our documentation."
+msgstr "私たちのドキュメントの改善とローカライズをお手伝いください。"
 
-# b2e3d9bdcccc426ab20d3a4ebd3e95b5
+# 63caeeaa08f047478de8cd884978afdc
 #: ../../index.rst:33
-msgid "Have feedback or a question? Found a typo?"
-msgstr "フィードバックや質問はありますか？ タイポを修正いただけますか？"
+msgid "For matters related to the English version of the documentation and general issues concerning the documentation, please add issues or pull requests to `the GitHub repository <https://github.com/domaframework/doma-docs>`_."
+msgstr "ドキュメントに関する英語版および一般的な問題については、 `GitHub リポジトリ <https://github.com/domaframework/doma-docs>`_ に issue や pull request を追加してください。"
 
-# 3bc75e2ec1aa45919580c45d5aca2be4
-#: ../../index.rst:35
-msgid "Please add an issue or pull request to https://github.com/domaframework/doma-docs and we’ll get back to you."
-msgstr "https://github.com/domaframework/doma-docs の Issueや Pull Request に登録ください。"
+# f25f09ed2b8b473894566604fb8556fa
+#: ../../index.rst:36
+msgid "For localization into Japanese, please perform translations and voting through `the project on Crowdin <https://crowdin.com/project/doma-docs>`_."
+msgstr "日本語にローカライズするには、`the project on Crowdin <https://crowdin.com/project/doma-docs>`_ を介して翻訳や投票を行ってください。"
 
 # 7d320255b9f54a1ab1375308defd191a
-#: ../../index.rst:39
+#: ../../index.rst:40
 msgid "User Documentation"
 msgstr "ユーザー向けドキュメンテーション"
 
 # 43d683edb1044fdba9aa29e09c42d7f6
-#: ../../index.rst:65
+#: ../../index.rst:66
 msgid "About Doma"
 msgstr "Domaについて"
 
 # 961d250d017b499183b047c33e61b61d
-#: ../../index.rst:73
+#: ../../index.rst:74
 msgid "Links"
 msgstr "リンク集"
 
 # 82b8289b00264a9393d056fd7c8e36d6
-#: ../../index.rst:75
+#: ../../index.rst:76
 msgid "`News and announcements <https://twitter.com/domaframework>`_"
 msgstr "`ニュースやアナウンス <https://twitter.com/domaframework>`_"
 
 # ce67136f9fda448bb407c09c3271099f
-#: ../../index.rst:76
+#: ../../index.rst:77
 msgid "`GitHub repository <https://github.com/domaframework/doma>`_"
 msgstr "`GitHub リポジトリ <https://github.com/domaframework/doma>`_"
 
 # d27b94226b3641ebbd6f4fb7ab3a55ab
-#: ../../index.rst:77
+#: ../../index.rst:78
 msgid "`Release Notes <https://github.com/domaframework/doma/releases>`_"
 msgstr "`リリースノート <https://github.com/domaframework/doma/releases>`_"
 
 # 5a2f013785cb4c9f9e13f695b4f5752d
-#: ../../index.rst:78
+#: ../../index.rst:79
 msgid "`JavaDoc <https://www.javadoc.io/doc/org.seasar.doma/doma-core/latest/index.html>`_"
 msgstr ""
 
 # a983f4adb1c94f96bf127b61099787ab
-#: ../../index.rst:79
+#: ../../index.rst:80
 msgid "`Examples <https://github.com/domaframework/simple-examples>`_"
 msgstr "`サンプルプロジェクト <https://github.com/domaframework/simple-examples>`_"
 
 # e95759ce8b4d4e73909f3d4c0968d39f
-#: ../../index.rst:80
+#: ../../index.rst:81
 msgid "`Doma Compile Plugin <https://github.com/domaframework/doma-compile-plugin>`_"
 msgstr ""
 
 # 62a64a7f79134d10826ee5c9ce609e4b
-#: ../../index.rst:81
+#: ../../index.rst:82
 msgid "`Doma CodeGen Plugin <https://github.com/domaframework/doma-codegen-plugin>`_"
 msgstr ""
 
 # 1dca3ce84f1a4e9a9d52756bf9eff3be
-#: ../../index.rst:82
+#: ../../index.rst:83
 msgid "`Doma version 1 <http://doma.seasar.org/>`_"
 msgstr "`Doma v1.x のWebサイト <http://doma.seasar.org/>`_"
 
