@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-17 10:57+0900\n"
-"PO-Revision-Date: 2024-03-17 02:03\n"
+"PO-Revision-Date: 2024-03-17 02:06\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -85,7 +85,7 @@ msgstr "ドキュメントに関する英語版および一般的な問題につ
 # f25f09ed2b8b473894566604fb8556fa
 #: ../../index.rst:36
 msgid "For localization into Japanese, please perform translations and voting through `the project on Crowdin <https://crowdin.com/project/doma-docs>`_."
-msgstr "日本語にローカライズするには、`the project on Crowdin <https://crowdin.com/project/doma-docs>`_ を介して翻訳や投票を行ってください。"
+msgstr "日本語にローカライズするには、`Crowdin プロジェクト <https://crowdin.com/project/doma-docs>`_ を介して翻訳や投票を行ってください。"
 
 # 7d320255b9f54a1ab1375308defd191a
 #: ../../index.rst:40
