@@ -24,13 +24,12 @@ jobs:
       - name: Install sphinx
         run: pip install -U sphinx
 
-      - name: Change directory
-        run: cd docs
-
       - name: Generate pot files
+        working-directory: docs
         run: sphinx-build -b gettext . _build/gettext
 
       - name: Update pot files
+        working-directory: docs
         run: crowdin update sources --no-progress
         env:
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
