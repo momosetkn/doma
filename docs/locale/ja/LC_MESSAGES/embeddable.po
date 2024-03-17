@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-17 05:50+0000\n"
-"PO-Revision-Date: 2024-03-17 05:55\n"
+"POT-Creation-Date: 2024-03-17 06:37+0000\n"
+"PO-Revision-Date: 2024-03-17 13:47\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -18,132 +18,132 @@ msgstr ""
 "Language: ja_JP\n"
 
 #: ../../embeddable.rst:3
-#: 57638f35c2884acb963b9ae96953b602
+#: 3064e6157f3b4cd3a80f5d13440afd50
 msgid "Embeddable classes"
 msgstr "埋め込み可能クラス"
 
 #: ../../embeddable.rst:6
-#: 9e6d52112ca14d61963375267f3300cf
+#: 6ea68493fccd4333ad584911018e3ff1
 msgid "Contents"
 msgstr "コンテンツ"
 
 #: ../../embeddable.rst:8
-#: 97165db0a1174da483579fbbe1a04163
+#: 4fe347f4d2bb4b058a4c587bdf7fef9c
 msgid "Embeddable classes group the properties for :doc:`../entity`."
 msgstr "埋め込み可能クラスは、:doc:`../entity` のプロパティをグループ化します。"
 
 #: ../../embeddable.rst:11
-#: 6a0164adf6a641d89e242edfdf607962
+#: 148016e25dc24e97bc91c9c984907a1d
 msgid "Embeddable definition"
 msgstr "埋め込み可能クラスの定義"
 
 #: ../../embeddable.rst:13
-#: ce0f2d37fe184fd28fb5421840630ccd
+#: edde4a0da97a4a3fbea3c2c67e12c153
 msgid "The following code snippet shows how to define an embeddable:"
 msgstr "次のコードスニペットは、埋め込み可能クラスを定義する方法を示しています。"
 
 #: ../../embeddable.rst:34
-#: 5f59bc97a3cc4390925a0a957df04406
+#: 821ff540113d446789965a3e3a380694
 msgid "The embeddable class is used as the entity field type:"
 msgstr "埋め込み可能クラスはエンティティフィールドの型として使用されます。"
 
 #: ../../embeddable.rst:46
-#: 3b431a5c05dc480bbda8566c285490e2
+#: e057ebc06f07488e8b9b578153b16f46
 msgid "The above entity definition is equivalent to following one:"
 msgstr "上記のエンティティ定義は、次のエンティティ定義と同等です。"
 
 #: ../../embeddable.rst:64
-#: 93756a8b62e94feb8ebfee7067083fc9
+#: db9fd493cb9a44a395c691e67e74ccf2
 msgid "In Java 14 and later version, you can annotate `records`_ with ``@Embeddable``:"
 msgstr "Java 14 以降のバージョンでは、`records`_ に ``@Embeddable`` アノテーションを付けることができます。"
 
 #: ../../embeddable.rst:78
-#: 4e73c845dde34222972aa9fc089ace6c
+#: ceac6a5a33f14753a2c0ffaa99899e72
 msgid "Naming convention"
 msgstr "命名規則"
 
 #: ../../embeddable.rst:80
-#: d2d4f6c21a26465ba39399acfc0b66a1
+#: ce9d310d942f4aa69b488dacafc59178
 msgid "A naming convention is inherited from the enclosing :doc:`../entity`."
 msgstr "命名規則は、埋め込み可能クラスを利用している :doc:`../entity` から継承されます。"
 
 #: ../../embeddable.rst:83
-#: 7032b40cd7ea417da78940f865b8ebe3
+#: 2d6fdec878114f25b8e43120a99272a7
 msgid "Field definition"
 msgstr "フィールドの定義"
 
 #: ../../embeddable.rst:85
-#: e3817f306c2244908ab563ed79ed84bd
+#: df0c967e7eb847e8adcff913f639b51c
 msgid "By default, the fields are persistent and correspond to the database columns or result set columns."
 msgstr "デフォルトでは、フィールドは永続的で、データベースまたは結果セットのカラムに対応します。"
 
 #: ../../embeddable.rst:87
-#: fda610e6e329461c9d0b3acb98bbc6c8
+#: 81b3eb9219134d9e9851a84d6fe30580
 msgid "The field type must be one of the following:"
 msgstr "フィールドの型は次のいずれかである必要があります。"
 
 #: ../../embeddable.rst:89
-#: c1ea33abcbda48c4ac066fb2ba02aa35
+#: 332c5ea3dfc543e5926ffd408af030b9
 msgid ":doc:`basic`"
 msgstr ""
 
 #: ../../embeddable.rst:90
-#: 958405db3cdc4517a7043d1d912a7521
+#: e7c0dcb791f14a609d07e8b118291931
 msgid ":doc:`domain`"
 msgstr ""
 
 #: ../../embeddable.rst:91
-#: 50ad4d2733c744d48bfbbc1a2375f96a
+#: 92104941b4024044a14d6d5087baacc9
 msgid "java.util.Optional, whose element is either :doc:`basic` or :doc:`domain`"
 msgstr "要素を :doc:`basic` または :doc:`domain` のいずれかとする java.util.Optional"
 
 #: ../../embeddable.rst:92
-#: d4dba7b3b8404adabaf6dd670e992476
+#: 4ffe7978f3b7429a8d7daca5ae1ca73f
 msgid "java.util.OptionalInt"
 msgstr ""
 
 #: ../../embeddable.rst:93
-#: 6a4e83e90d4a4375b5bb23c01552e618
+#: 0d3da2ea195b4546958468bfce2fda8c
 msgid "java.util.OptionalLong"
 msgstr ""
 
 #: ../../embeddable.rst:94
-#: 4832236e9a4b424d908e7ebbf3c32ce8
+#: 9c28ef39560b48ddb4d1f7cecb161186
 msgid "java.util.OptionalDouble"
 msgstr ""
 
 #: ../../embeddable.rst:105
-#: 81c16a06c67d4698826e7a0b6667fb44
+#: 92c90d04cd4c41ae98d35b68e4c24e78
 msgid "Column"
 msgstr "カラム"
 
 #: ../../embeddable.rst:107
-#: 1731cb0133cd4b4c8217d7d8f3c4e193
+#: 3c4682ebcf754692a4d96b5d48e3c8fd
 msgid "You can specify the corresponding column name with the ``@Column`` annotation:"
 msgstr "カラム名を ``@Column``  アノテーションで指定できます。"
 
 #: ../../embeddable.rst:115
-#: 277e7443b6bc4a43a21354f961704a06
+#: 06004f68702242669888a0b1af371432
 msgid "Transient"
 msgstr "Transient"
 
 #: ../../embeddable.rst:117
-#: 1b1e4ae9f3c441338ec19bb4a456e2d0
+#: 04654e0c82484422b060a2905fbb594c
 msgid "If an embeddable has fields that you don’t want to persist, you can annotate them using ``@Transient``:"
 msgstr "埋め込み可能オブジェクトに永続化したくないフィールドがある場合は、 ``@Transient`` アノテーションを指定できます。"
 
 #: ../../embeddable.rst:120
-#: bcb87c8924b3421b83296317ef223361
+#: 23410c23765d405e80720b4f20ab8b3b
 msgid "Method definition"
 msgstr "メソッドの定義"
 
 #: ../../embeddable.rst:122
-#: 83973e3db5eb43f6969480bc6bc02a98
+#: d5aefae1528c40e59e2dbd54b170a255
 msgid "There are no limitations in the use of methods."
 msgstr "メソッドの使用に制限はありません。"
 
 #: ../../embeddable.rst:125
-#: 92b896af1e5042658bea1d649a0f015f
+#: 99562db3f75d45ba89625ed54d4399ae
 msgid "Example"
 msgstr "例"
 

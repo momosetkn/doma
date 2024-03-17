@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-17 05:50+0000\n"
-"PO-Revision-Date: 2024-03-17 05:55\n"
+"POT-Creation-Date: 2024-03-17 06:37+0000\n"
+"PO-Revision-Date: 2024-03-17 13:47\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -18,132 +18,132 @@ msgstr ""
 "Language: ja_JP\n"
 
 #: ../../query-builder/index.rst:3
-#: 47127ee0a1644e69827d22b3a01d86a7
+#: 079dc5421d954ea0b4015b47eab431d1
 msgid "Query builders"
 msgstr "クエリビルダ"
 
 #: ../../query-builder/index.rst:6
-#: 29eccca2de984a479a68d98ef9695d86
+#: d7d6fb593b104cba945eeee0cf6c7f5f
 msgid "Contents"
 msgstr "コンテンツ"
 
 #: ../../query-builder/index.rst:8
-#: 42716126b0e542f19561f2845a7247ed
+#: 4c129c212778462b9b27fc40088ae101
 msgid "The package ``org.seasar.doma.jdbc.builder`` provides SQL builders."
 msgstr "パッケージ ``org.seasar.doma.jdbc.builder`` は SQL ビルダを提供します。"
 
 #: ../../query-builder/index.rst:10
-#: 969d5bfe5d664cb49a4429703d03ba3a
+#: f18e194527024df6b15d296f093f1ba6
 msgid "When it is difficult to build a SQL statement with :doc:`../query/index`, consider to use the SQL builders in :ref:`dao-default-method`."
 msgstr ":doc:`../query/index` を使用して SQL ステートメントを構築するのが難しい場合は、:ref:`dao-default-method` で SQL ビルダを使用することを検討してください。"
 
 #: ../../query-builder/index.rst:14
-#: 92618b34b51548beb37c746257997e75
+#: c65fe21b115f451683968c24f376f9cd
 msgid "Search"
 msgstr "検索"
 
 #: ../../query-builder/index.rst:32
-#: a1d1163b368843e397ab60aedfa21b14
+#: 53634e21be9d4dcd87c5207a9e7c31ec
 msgid "You can get result of the SQL execution in various ways."
 msgstr "SQL の実行結果はさまざまな方法で取得できます。"
 
 #: ../../query-builder/index.rst:35
-#: eb1425964cea4503bcdbe6af8844eea5
+#: eb5afd07de9b4f12b0dde3d222ab96ca
 msgid "Single record search"
 msgstr "単一レコードの検索"
 
 #: ../../query-builder/index.rst:37
-#: 88be68477b85437aac712fd5d413f3b1
+#: 16c55ca774c9466ca9a615c486e18c79
 msgid "getScalarSingleResult"
 msgstr ""
 
 #: ../../query-builder/index.rst:38
-#: 0bb57d5237ae4c85baf7c9c6c54eed0f
+#: 942d50ac942c4b338c3ada2816e026be
 msgid "getOptionalScalarSingleResult"
 msgstr ""
 
 #: ../../query-builder/index.rst:39
-#: ba80461de3b441f4893e855634a2b859
+#: 9ad3d5aa2db442edb02048289fa72265
 msgid "getEntitySingleResult"
 msgstr ""
 
 #: ../../query-builder/index.rst:40
-#: 32913c4d82fd4aaaa0af2bb552343179
+#: d19355816dc14190b436fd6c859a7e83
 msgid "getOptionalEntitySingleResult"
 msgstr ""
 
 #: ../../query-builder/index.rst:41
-#: 9692b0f032ae463b8d6dcf201a7de3ed
+#: 07a2f7b3e7f140aeb34193e07840f72a
 msgid "getMapSingleResult"
 msgstr ""
 
 #: ../../query-builder/index.rst:42
-#: 386c8a11c46543d7999115647289aa1b
+#: 42bb61b64a7443d7927faa17200181bb
 msgid "getOptionalMapSingleResult"
 msgstr ""
 
 #: ../../query-builder/index.rst:45
-#: dd003fa0825e44ee87f5d0d305d3ae55
+#: 5117f6dedd204befbe4915a90e0e5b82
 msgid "Multiple records search"
 msgstr "複数レコードの検索"
 
 #: ../../query-builder/index.rst:47
-#: 31090cd0362742579c2c837c375dbc38
+#: e0eb41e5958c4ca6aa5ce96ca1c24bba
 msgid "getScalarResultList"
 msgstr ""
 
 #: ../../query-builder/index.rst:48
-#: 9dde9e663cda47818c7f684f89ccc2dd
+#: 1395b42f4da9406cb77997d01935c538
 msgid "getOptionalScalarResultList"
 msgstr ""
 
 #: ../../query-builder/index.rst:49
-#: fa4a35a1cb794852b94eb06a9942799e
+#: 2a037e6502c349b1b69bedba38a939f2
 msgid "getEntityResultList"
 msgstr ""
 
 #: ../../query-builder/index.rst:50
-#: 3e8570351df14f8f9bddeeeef9b6619b
+#: ad6a68de1d8a473cb79884a0491acc86
 msgid "getMapResultList"
 msgstr ""
 
 #: ../../query-builder/index.rst:53
-#: 91f304052a3c4b6598a3309c1dfe2b61
+#: bf60680bc9a9416683efb5a5ddd97a74
 msgid "Stream search"
 msgstr "ストリーム検索"
 
 #: ../../query-builder/index.rst:55
-#: 248de5ddbcbd4098a67841df1d7f485b
+#: 7dd4fa3fd38d4381b0e62dbb45bbc97a
 msgid "streamAsScalar"
 msgstr ""
 
 #: ../../query-builder/index.rst:56
-#: 55372bca70fe4d689f9e8040680eb2aa
+#: 3fe86f5e222c42f98b5864296454bb9b
 msgid "streamAsOptionalScalar"
 msgstr ""
 
 #: ../../query-builder/index.rst:57
-#: d73d9608956f4043ae759f80017ba350
+#: 80786d8ed4af45059bb5d4fe4bac0572
 msgid "streamAsEntity"
 msgstr ""
 
 #: ../../query-builder/index.rst:58
-#: e0941d8a22ec43bf9fe2dcc7595909ad
+#: 5f0536c8690d431ca8b6d061d8558b56
 msgid "streamAsMap"
 msgstr ""
 
 #: ../../query-builder/index.rst:61
-#: b3789c25fcce4a7b8643e183dead89d4
+#: 67165d6571fa4ec99c19ebb0ac34fe3f
 msgid "Insert"
 msgstr "追加"
 
 #: ../../query-builder/index.rst:74
-#: 8a24a86803bd4e2b9a5db0705075e503
+#: bc818ef752684ccc968690faa7fbb5b5
 msgid "Update"
 msgstr "更新"
 
 #: ../../query-builder/index.rst:88
-#: 16c3cc8797ad4fcdadb285131709c04a
+#: ef4f7e562c44401083f5539f1177b3f5
 msgid "Delete"
 msgstr "削除"
 

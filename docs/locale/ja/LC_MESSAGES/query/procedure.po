@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-17 05:50+0000\n"
-"PO-Revision-Date: 2024-03-17 05:55\n"
+"POT-Creation-Date: 2024-03-17 06:37+0000\n"
+"PO-Revision-Date: 2024-03-17 13:47\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -18,82 +18,82 @@ msgstr ""
 "Language: ja_JP\n"
 
 #: ../../query/procedure.rst:3
-#: 910bbf7a01ec43338e978727e10baab0
+#: 22dfd6facdea4eac91a6f28a1a121718
 msgid "Stored procedure"
 msgstr "ストアドプロシージャ"
 
 #: ../../query/procedure.rst:6
-#: 1f2488705ac14368a4f7102b2c8d4460
+#: a148a8bd28e34a1c86e7ba3ef8e591fd
 msgid "Contents"
 msgstr "コンテンツ"
 
 #: ../../query/procedure.rst:8
-#: f21113c445114537b079714aa6e19352
+#: 69f82c50fac94dac92680df8b5ffe84f
 msgid "To call stored procedures, you must annotate DAO methods with the ``@Procedure`` annotation:"
 msgstr "ストアドプロシージャを呼び出すには、DAO メソッドに ``@Procedure`` アノテーションを付ける必要があります。"
 
 #: ../../query/procedure.rst:20
-#: d23a8cc2f38143cd8a130c23079bf053
+#: 80f08a73cbc2417cb170fac5f203aeb4
 msgid "Return Type"
 msgstr "戻り値"
 
 #: ../../query/procedure.rst:22
-#: f00ce61688a4499a97294d5ebad2d0d2
+#: 2f8123a53fdb4ef9b5f858acf09fc297
 msgid "The return type must be ``void``."
 msgstr "戻り値の型は ``void`` でなければなりません。"
 
 #: ../../query/procedure.rst:25
-#: c483c9953eab49b6a1b7a243d219817c
+#: d300c282c17c409dbf730c5cb2a5a085
 msgid "Procedure name"
 msgstr "プロシージャ名"
 
 #: ../../query/procedure.rst:27
-#: 8a4b2f4158fe467eb178dd301671d4e7
+#: 3d949553976a442d9c5748736dd4ef43
 msgid "The annotated method name is recognized as the procedure name by default. To override it, you can specify the value to the ``@Procedure``'s ``name`` element:"
 msgstr "アノテーションが付けられたメソッド名は、デフォルトでプロシージャ名として認識されます。これをオーバーライドするには、 ``@Procedure`` の ``name`` 要素に値を指定します。"
 
 #: ../../query/procedure.rst:36
-#: a94fadbdae7b42cb98850be75338652e
+#: 887cef490e8b41079d8aa438aa5fc339
 msgid "Parameters"
 msgstr "パラメータ"
 
 #: ../../query/procedure.rst:38
-#: 60d23a179adb46db99c813a9d31b5b88
+#: d226399c32a9447ba4b8a067eafb0b96
 msgid "The order of stored procedure's parameters must correspond with the order of DAO method parameters."
 msgstr "ストアド プロシージャのパラメータの順序は、DAO メソッドのパラメータの順序と一致する必要があります。"
 
 #: ../../query/procedure.rst:40
-#: 9e4a8751d53c41b0b1c6746cb5cfb49c
+#: e6ca01c7c0524b50a900f063967ec5f2
 msgid "All parameters must be annotated with one of following annotations:"
 msgstr "すべてのパラメータには、次のいずれかのアノテーションを付ける必要があります。"
 
 #: ../../query/procedure.rst:42
-#: 4e7e6d1f414a41babd16c2fc4b5c799b
+#: 3e8963b2bdf24c98801106d2daebcbf9
 msgid "@In"
 msgstr ""
 
 #: ../../query/procedure.rst:43
-#: eafddf5ae6ea4f32b74f193ceaee7070
+#: cf83c66dfd4945008d5ea3dbc2d759b9
 msgid "@InOut"
 msgstr ""
 
 #: ../../query/procedure.rst:44
-#: 8eaae5b99f1a4fd7a4d151a76304cb3e
+#: 1c209b3e8b52413da9609328ea648ad2
 msgid "@Out"
 msgstr ""
 
 #: ../../query/procedure.rst:45
-#: 14df13cbc5bd486fb711b6c286da72ad
+#: 0b7258f7e8e34c8a90c70fae359688d2
 msgid "@ResultSet"
 msgstr ""
 
 #: ../../query/procedure.rst:48
-#: 65411f11d72244b98f4c7498819fac91
+#: 57d55c1f02ec4ce7854ad66ead9da641
 msgid "IN parameter"
 msgstr "IN パラメータ"
 
 #: ../../query/procedure.rst:50
-#: bb361b478772433d85c4669a2bb2bdb8
+#: 54471e41ce2349f7a1accd2ca7634f8c
 msgid "To indicate IN parameters, annotate corresponding DAO method parameters with the ``@In`` annotation. The type of the DAO method parameter must be one of the following:"
 msgstr "IN パラメータを示すには、対応する DAO メソッドのパラメータに ``@In`` アノテーションを付けます。 DAO メソッドのパラメータの型は、次のいずれかである必要があります。"
 
@@ -101,10 +101,10 @@ msgstr "IN パラメータを示すには、対応する DAO メソッドのパ�
 #: ../../query/procedure.rst:82
 #: ../../query/procedure.rst:114
 #: ../../query/procedure.rst:146
-#: 21220255fa684cb68e4b451f5f12c6d3
-#: 58fddc531f4e4689a33290f241a85498
-#: ab0687bb08a64513b27ec23bb8df69e6
-#: 180b865513a841d7805ade9fb238999e
+#: c9135749361b497696bbb74462f0484e
+#: 4038fb852f5f4c0385aad6801bcae5c7
+#: 5fef5650a1a643f9b16dad9a5eca52d0
+#: d9910dc22f704cd199c75f14dcaa8815
 msgid ":doc:`../basic`"
 msgstr ""
 
@@ -112,10 +112,10 @@ msgstr ""
 #: ../../query/procedure.rst:83
 #: ../../query/procedure.rst:115
 #: ../../query/procedure.rst:147
-#: 8df5e04f3e2745a392ebcb3c7786b350
-#: d58f0b452d964332893dff8273b0af2b
-#: dbbc1e2d89c04af2b58a7dd6ce4bc001
-#: 6de3ad9d876a4efcb3d6e1bd4cc82122
+#: 1dee795e73de4faa8e52d730e90c741d
+#: c211179a0147449bb624d0acaf9b3dd6
+#: 286c421216e144009820cf7f95b5bc75
+#: 17c32e5273584ff980c1816e55f5b46e
 msgid ":doc:`../domain`"
 msgstr ""
 
@@ -123,10 +123,10 @@ msgstr ""
 #: ../../query/procedure.rst:84
 #: ../../query/procedure.rst:116
 #: ../../query/procedure.rst:150
-#: 41a9095292f1469a86a87d08ffaf44bd
-#: 49701a65f4e9466abb04927696d7b6ea
-#: 6a2a4d34583541629f78045c31b4008f
-#: c43d484c7d944cef9afc5a35291c8cc8
+#: dd6e54ca8ff644ec9e17dbda48a2feb3
+#: f7fa3bef86fa40dd9c84bb96894ecd1a
+#: 14833043e770489bb47afe6be85d3140
+#: 250211e212074377b720ac122093cb9b
 msgid "java.util.Optional whose element type is either :doc:`../basic` or :doc:`../domain`"
 msgstr "要素の型が :doc:`../basic` または :doc:`../domain` のいずれかである java.util.Optional"
 
@@ -134,10 +134,10 @@ msgstr "要素の型が :doc:`../basic` または :doc:`../domain` のいずれ�
 #: ../../query/procedure.rst:85
 #: ../../query/procedure.rst:117
 #: ../../query/procedure.rst:151
-#: aa1cced7ba64497fae1149b5eabd1640
-#: 291ddbe9a98b4766a52fc27c095a7382
-#: 66e807c1ce8444729ba15b05198ec063
-#: b9f727efcdc74befafbe88119fb9f59e
+#: 71ef0e560bf74a8483401049dd7c2807
+#: b073a22a95834c94851ca6c4a12d8e3d
+#: 0a1f4938cd09442ab4994dca5b839fdb
+#: de1f1dfd49ec4de6bc12d4cb8ce7cf84
 msgid "java.util.OptionalInt"
 msgstr ""
 
@@ -145,10 +145,10 @@ msgstr ""
 #: ../../query/procedure.rst:86
 #: ../../query/procedure.rst:118
 #: ../../query/procedure.rst:152
-#: 87467f9b15284d60a4a997a754d06915
-#: 1e1687380078478381b2904b90442501
-#: 0e9964d18f1146fb94bdecd1b6c50d2d
-#: 9d7b9c6eff0545b098e7009630b7c403
+#: b5d7e17e1a2748d4a89cce576d923cb5
+#: add7483f3d624da19c784b9ac944e7b7
+#: 6dabb0f006c3400cb87573e82c6607e7
+#: b69ed6ce75044236811518bcade332d4
 msgid "java.util.OptionalLong"
 msgstr ""
 
@@ -156,10 +156,10 @@ msgstr ""
 #: ../../query/procedure.rst:87
 #: ../../query/procedure.rst:119
 #: ../../query/procedure.rst:153
-#: 7d10176329d94b38a9370e57ed3f8586
-#: f98c07bf1ba54a73b75f869eeee7e5f3
-#: ef48475d1141406c81ed132d1116b841
-#: 5a9753ef795f4bae9d63117b017e3c3a
+#: fb7115af6f82445aa6de7ca880ca5c79
+#: aba88ddff38847918e31cdeb5fe3630b
+#: b8622b21f0614e098e1d47339235342e
+#: c2d52428e6e642b1b0a4c8e40ecad579
 msgid "java.util.OptionalDouble"
 msgstr ""
 
@@ -167,10 +167,10 @@ msgstr ""
 #: ../../query/procedure.rst:89
 #: ../../query/procedure.rst:121
 #: ../../query/procedure.rst:155
-#: c3c14e3959fe41fdb4686dc0ba5862ec
-#: efe007fda9fd49f5864d0367de7fb4d5
-#: 911fe7cc728b4b2fb4dc62833d54c760
-#: 8e5b3e005ca64458b8ecd391c6f4a8be
+#: 3b732a67ac16461c9d983d6945d8b728
+#: c730f38691bd4a27b07b88d8e93fb21b
+#: 20ed429cf1fa46438fb9b89c1253de30
+#: 37cd090526664942b89d448818b74bba
 msgid "Suppose you have the following definition:"
 msgstr "次の定義があるとします。"
 
@@ -178,55 +178,55 @@ msgstr "次の定義があるとします。"
 #: ../../query/procedure.rst:96
 #: ../../query/procedure.rst:128
 #: ../../query/procedure.rst:162
-#: 9fd4cac77e814f1390f9f8685f8fc0d8
-#: c2649adc4f9b418db2281faff8f85c97
-#: 17a58dec0cf04146a8315e82c594bb0b
-#: baeca2496943436a8346ae1aeb8125ec
+#: ad0edb06872047239d5a13f04273f974
+#: fb06f3775da9401e82d157333774c734
+#: 06de292d86244b3f85602649bd43dba6
+#: 6e896c31b5674a0dbc9e078d6c89e54e
 msgid "You can invoke the method as follows:"
 msgstr "このメソッドは次のように呼び出すことができます。"
 
 #: ../../query/procedure.rst:75
-#: 24cd8be158294f448189e8305f64ef56
+#: 4f807c2d0f6e482c976f088f06d5be47
 msgid "INOUT parameter"
 msgstr "INOUT パラメータ"
 
 #: ../../query/procedure.rst:77
-#: af823186f0ad48e1ba5933aad9694e3f
+#: 886f8c3da45f41eeb741cc73b1eba083
 msgid "To indicate INOUT parameters, annotate corresponding DAO method parameters with the ``@InOut`` annotation. The type of the DAO method parameter must be ``org.seasar.doma.jdbc.Reference`` and its type parameter must be one of the following:"
 msgstr "INOUT パラメータを示すには、対応する DAO メソッドのパラメータに ``@InOut`` アノテーションを付けます。 DAO メソッドのパラメータの型は ``org.seasar.doma.jdbc.Reference`` である必要があり、その型パラメータは次のいずれかである必要があります。"
 
 #: ../../query/procedure.rst:107
-#: 2c3d6612efea47d2999fbc38a89c58ba
+#: 83ddfe7454144b7d88ac66ba48194450
 msgid "OUT parameter"
 msgstr "OUT パラメータ"
 
 #: ../../query/procedure.rst:109
-#: 02170a47e2f44f23aed1e4117d7e1b11
+#: ae924312a0fd4b0f8c942ec2dc3140ad
 msgid "To indicate OUT parameters, annotate corresponding DAO method parameters with the ``@Out`` annotation. The type of the DAO method parameter must be ``org.seasar.doma.jdbc.Reference`` and its type parameter must be one of the following:"
 msgstr "OUT パラメータを示すには、対応する DAO メソッドのパラメータに ``@Out`` アノテーションを付けます。 DAO メソッドのパラメータの型は ``org.seasar.doma.jdbc.Reference`` である必要があり、その型パラメータは次のいずれかである必要があります。"
 
 #: ../../query/procedure.rst:138
-#: 6085c7d304e44c98943913883a227931
+#: d3f7752ec8a64bdda4ead71eeaf7f887
 msgid "Cursor or result set"
 msgstr "カーソルのOUTパラメータもしくは結果セット"
 
 #: ../../query/procedure.rst:140
-#: 9023e0c573f24e2996c5844e459f7fbb
+#: 53402dd6820149de9356bf8de5b5a559
 msgid "To indicate cursors or result sets, annotate corresponding DAO method parameters with the ``@ResultSet`` annotation."
 msgstr "カーソルまたは結果セットを示すには、対応する DAO メソッドのパラメータに ``@ResultSet`` アノテーションを付けます。"
 
 #: ../../query/procedure.rst:143
-#: 244261a7961f42eb8cef42e304e237d7
+#: 2418aeb2550247d6ae8feeaa509c36a2
 msgid "The DAO method parameter type must be ``java.util.List`` and its element type must be one of the following:"
 msgstr "DAO メソッドのパラメータの型は ``java.util.List`` であり、その要素の型は次のいずれかである必要があります。"
 
 #: ../../query/procedure.rst:148
-#: 87fa60ed18f1463c9a6abacc856df8bf
+#: cae70de49c3342dea2177884c33133a2
 msgid ":doc:`../entity`"
 msgstr ""
 
 #: ../../query/procedure.rst:149
-#: db951d028386494db8dd3bbf41372c0b
+#: c00a90d2ab2945fba028e309eb266a32
 msgid "java.util.Map<String, Object>"
 msgstr ""
 

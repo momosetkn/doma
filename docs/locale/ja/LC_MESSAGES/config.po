@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-17 05:50+0000\n"
-"PO-Revision-Date: 2024-03-17 05:55\n"
+"POT-Creation-Date: 2024-03-17 06:37+0000\n"
+"PO-Revision-Date: 2024-03-17 13:47\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -18,574 +18,574 @@ msgstr ""
 "Language: ja_JP\n"
 
 #: ../../config.rst:3
-#: c730e337dbd44363ae101aaace4f2743
+#: 06da67aeae424fb7b967e1274cea49d1
 msgid "Configuration"
 msgstr "設定"
 
 #: ../../config.rst:6
-#: b1c82f16e03b4722ab9a2cd6308e7009
+#: f3c1afaa102f48b8a1010b304350ad22
 msgid "Contents"
 msgstr "コンテンツ"
 
 #: ../../config.rst:8
-#: 009fe4f434d445c2a2eab353e5cadfd9
+#: ee51a218661f4aa3919b2148a8ca5381
 msgid "The configurable items must be returned from the methods of the implementation class of the ``org.seasar.doma.jdbc.Config`` interface."
 msgstr "設定可能な項目は、 ``org.seasar.doma.jdbc.Config`` インターフェースの実装クラスのメソッドから返される必要があります。"
 
 #: ../../config.rst:12
-#: d4be6f22b8bb4e6f8f5a53e8ebdd8522
+#: 88a991a2a7e0402ea2454a956fb227da
 msgid "Configurable items"
 msgstr "設定可能な項目"
 
 #: ../../config.rst:15
-#: a0f08130166b484e8399525c61056a3e
+#: c273d87b4c214acab9663591dd1760ac
 msgid "DataSource"
 msgstr "データソース"
 
 #: ../../config.rst:17
-#: b4bbe7fab39c4f5da681e65f75481d8e
+#: aa4d5203c579401381156f6d8fe3d4b1
 msgid "Return a JDBC ``DataSource`` from the ``getDataSource`` method. If you need local transactions provided by Doma, return a ``LocalTransactionDataSource``."
 msgstr "``getDataSource`` メソッドから JDBC ``DataSource`` を返します。 Doma が提供するローカル トランザクションが必要な場合は、 ``LocalTransactionDataSource`` を返します。"
 
 #: ../../config.rst:20
 #: ../../config.rst:160
-#: de8b5b1baa024c2eb5fa8b1e21283539
-#: a6c865064aa640f7be1769efe055fed9
+#: f77a12921f1f4d8ba443be610afc78ff
+#: 7d4ed87831d04df8a37740af7ad1fe52
 msgid "See also: :doc:`transaction`"
 msgstr ":doc:`transaction` も参照してください。"
 
 #: ../../config.rst:24
 #: ../../config.rst:73
-#: 8d01b24b67984a388ddfb16f68079e87
-#: 06a3c1c5b9fa4e4bb3b3817720918ee6
+#: d5a49a87921644448f77ff1bf67d69b9
+#: 8a78d97e490a43c3b2f4561b8f60f4eb
 msgid "Required item"
 msgstr "必須項目です。"
 
 #: ../../config.rst:27
-#: cd73a9ae92b840749ddcbc3014e16d65
+#: f53d8373a1a84eda863fbecdcb440be9
 msgid "DataSource's name"
 msgstr "データソースの名前"
 
 #: ../../config.rst:29
-#: 9f210e17bc734ad9a9199ab1a6144337
+#: d73fd307662940e3a285b50102369a11
 msgid "Return a DataSource's name from the ``getDataSourceName`` method. In the environment where multiple DataSources are used, the name is important. You have to give an unique name to each DataSource."
 msgstr "``getDataSourceName`` メソッドから DataSource の名前を返します。複数のデータソースが使用される環境では、名前が重要です。各データソースに一意の名前を付ける必要があります。"
 
 #: ../../config.rst:33
-#: bb5b4d5225f24bf7912160db229e34e9
+#: e7acfe462fe14948ae990a437c10c231
 msgid "The default value is the full qualified name of the implementation class of ``Config``."
 msgstr "デフォルト値は ``Config`` の実装クラスの完全修飾名です。"
 
 #: ../../config.rst:36
-#: a338dc5bb39a4ad6b22d3c03ecc92045
+#: 14506972c1d243beab3ab221dcb0e25a
 msgid "SQL dialect"
 msgstr "SQL ダイアレクト"
 
 #: ../../config.rst:38
-#: 9da5390e724341a4a6df1057eed3fee1
+#: d6366b7828c5457dac3dff09a30f4f3f
 msgid "Return a ``Dialect`` from the  ``getDialect`` method. You have to choose an appropriate dialect for the database you use."
 msgstr "``getDialect`` メソッドから ``Dialect`` を返します。使用するデータベースに合わせて適切なダイアレクトを選択する必要があります。"
 
 #: ../../config.rst:41
-#: 4182e5cec057498cb9d251826e740982
+#: 48e45c04cd554cd0abfa9d434255ea98
 msgid "Doma provides following dialects:"
 msgstr "Doma は次のダイアレクトを提供します。"
 
 #: ../../config.rst:44
-#: 97962e1f0e1e48bda3c2fa3d79c879e5
+#: 46db4d99c0f34950b0ebf138dab8f117
 msgid "Database"
 msgstr "データベース"
 
 #: ../../config.rst:44
-#: 97cd4291aae9480593e45129acb48d3b
+#: 24617c02d58c4a07b3de60490bf4ff43
 msgid "Dialect Name"
 msgstr "ダイアクレクト名"
 
 #: ../../config.rst:44
-#: a50ec5356e1447b788b0f2ff1fd3f3b5
+#: 20ad6e357ce5467d836e3f1c6f4a7f77
 msgid "Description"
 msgstr "説明"
 
 #: ../../config.rst:46
-#: 480efa02291f42798143e83e95d58c7b
+#: efe537389f1b4d12aef24cf7ad6c51ae
 msgid "DB2"
 msgstr ""
 
 #: ../../config.rst:46
-#: 59c6fec2702c41ac8fd6ade7a344a5e0
+#: 80c488bce6ba4cc0a8f0737a24d6eaa5
 msgid "Db2Dialect"
 msgstr ""
 
 #: ../../config.rst:48
-#: 2d9cb0290e4c4ca19a68cd0ffdaebce9
-#: c7f3a614829b4d6791f24d5bb8cc6ce9
+#: 0ce9e3dad78448b08e6c2e5902a0cac3
+#: b551e3a4949b43e6a3e11f650ddeb012
 msgid "H2 Database Engine 1.2.126"
 msgstr ""
 
 #: ../../config.rst:48
-#: f12e58761f2748688c5b7c92f47928fc
+#: b5966b3cef254fb3bea1ce5d39b21be7
 msgid "H212126Dialect"
 msgstr ""
 
 #: ../../config.rst:50
-#: 004e69144a064443924143dade2ad67f
+#: ac2e51c162b44300bde4cdf76d2c7a81
 msgid "H2 Database"
 msgstr ""
 
 #: ../../config.rst:50
-#: 83ba354d0a564fabbe5d864112cfbf3f
+#: 207df86ad4c34ddb9080397fa98e3b80
 msgid "H2Dialect"
 msgstr ""
 
 #: ../../config.rst:50
-#: bc28dcc78c554bf49644a7eb6974cb23
+#: 85e2e3f97ee24c62afe81c4169efc0c1
 msgid "H2 Database Engine 1.3.171 and above"
 msgstr ""
 
 #: ../../config.rst:52
-#: 73f1a80c015a4f4397deb6e2286c3aad
+#: 8466000e65bc40338010f1bb2759d882
 msgid "HSQLDB"
 msgstr ""
 
 #: ../../config.rst:52
-#: c192c4d063d2495f9d22ee66730f84f5
+#: 63fd6c99cf8f4b03b8f17b2cdb4cf7ca
 msgid "HsqldbDialect"
 msgstr ""
 
 #: ../../config.rst:54
-#: 7c8c663a0445490899c7f8d0b9ff0b3e
-#: 50d476107c4740c6b3e9da7856345785
+#: 54c111bda70140f2825e3720b97f9f0c
+#: 4ddee282c4f94785b0df9fe0a44dcb11
 msgid "Microsoft SQL Server 2008"
 msgstr ""
 
 #: ../../config.rst:54
-#: 5b93a0970367450689adce0feffe17e1
+#: c30fb49b560341b78fab41403aed8692
 msgid "Mssql2008Dialect"
 msgstr ""
 
 #: ../../config.rst:56
-#: b313cf24d9354fa482259281596a20c4
+#: 443be8b6ca18496ab030c7096a15f9ba
 msgid "Microsoft SQL Server"
 msgstr ""
 
 #: ../../config.rst:56
-#: ddeed31b3faf4065bad3f30e1a3dc6ed
+#: 9186a8eab4e946fbb008b6b5338673cc
 msgid "MssqlDialect"
 msgstr ""
 
 #: ../../config.rst:56
-#: 47c54ba3d049490e96bf5bedda795916
+#: 59ba4e10ffad4801b78b995b7b770ee1
 msgid "Microsoft SQL Server 2012 and above"
 msgstr ""
 
 #: ../../config.rst:58
-#: bce8acc9d6e84650b7450fed2e3e346a
+#: 7cbf223f7b1d4b13bc14677cc713ddbe
 msgid "MySQL"
 msgstr ""
 
 #: ../../config.rst:58
-#: 9347efaa4cfb4f32bb1aa1d102cc03e6
+#: 421e544cb03c4daeb573e5e5d570d041
 msgid "MySqlDialect"
 msgstr ""
 
 #: ../../config.rst:60
-#: 48c1168b016b409397657afd2170a629
-#: 592c057b60084b6284e125e2c4b0640f
+#: 27dc6643aa264e56bb568a73c675ead3
+#: 5ebbd551e7d0409382984ee1424e5cf9
 msgid "Oracle Database 11g"
 msgstr ""
 
 #: ../../config.rst:60
-#: b76b0aac72ec485cb05cd8336c1574b3
+#: 6d0f0105cabe4f49b8280d9677133417
 msgid "Oracle11Dialect"
 msgstr ""
 
 #: ../../config.rst:62
-#: 9cf6e7e44326410bab582e7a25398134
+#: 857b790075554c5cb13a86f2fc7ce80e
 msgid "Oracle Database"
 msgstr ""
 
 #: ../../config.rst:62
-#: a08b4371b83147789eb3c5de465d9f9f
+#: 13434719e59a4ac3899b39b0e62b213f
 msgid "OracleDialect"
 msgstr ""
 
 #: ../../config.rst:62
-#: 7dcd97266f1c4d15af2fa489f7579629
+#: 142e8e07ecfa42d69974ad90bdbd308a
 msgid "Oracle Database 12g and above"
 msgstr ""
 
 #: ../../config.rst:64
-#: 90718974c8f34492887f471bf91aee05
+#: 842c6d2c0f834a20aa3855af64a02e06
 msgid "PostgreSQL"
 msgstr ""
 
 #: ../../config.rst:64
-#: 100e1787047f4ed59df207cf18f223b8
+#: 1609bec50e2840b8aacc3c07c0b22d42
 msgid "PostgresDialect"
 msgstr ""
 
 #: ../../config.rst:66
-#: 10fc10d6b8cc4f1188459fddfe47001a
+#: 97e19eeb2f4244f3977fcd3888197b01
 msgid "SQLite"
 msgstr ""
 
 #: ../../config.rst:66
-#: 7d64667e9c6a4c2894fdcbef9a09588d
+#: 2196ca9bf5bb4019b021bb48c428fa75
 msgid "SqliteDialect"
 msgstr ""
 
 #: ../../config.rst:69
-#: 533eff9f5d284a8c9646c4a2fd5f0517
+#: c0042a35ea0d4835ba7673ea83440b82
 msgid "These dialect are located in the ``org.seasar.doma.jdbc.dialect`` package."
 msgstr "これらのダイアレクトは ``org.seasar.doma.jdbc.dialect`` パッケージにあります。"
 
 #: ../../config.rst:78
-#: ca8b5c2d45ca46a49fecb626c3229625
+#: 4272669e34d745b48244c70570ba6cc7
 msgid "Logger"
 msgstr "ロガー"
 
 #: ../../config.rst:80
-#: 0dd11cc61a464c1a8b784a8d2ea0fe99
+#: 3f1edc036db24986a9139e9985125fa9
 msgid "Return a ``JdbcLogger`` from the ``getJdbcLogger`` method."
 msgstr "``getJdbcLogger`` メソッドから ``JdbcLogger`` を返します。"
 
 #: ../../config.rst:82
-#: 9b4b72674b9d4691bc8e0f9164da5bbd
+#: bfbf356525d248a2ba9eaa240a96f333
 msgid "Doma provides following JdbcLogger:"
 msgstr "Doma は次の ロガー を提供します。"
 
 #: ../../config.rst:84
-#: 1b20086616b444d889f6865ee62717cf
+#: ae98463b5c6e44ec89b3ad8be5144f73
 msgid "org.seasar.doma.jdbc.UtilLoggingJdbcLogger"
 msgstr ""
 
 #: ../../config.rst:86
-#: 7542b6a691c74ba2847fe23be938eb06
+#: 6689e4c69b9541e4982bfdb1d9a83ce7
 msgid "The default JdbcLogger is UtilLoggingJdbcLogger which uses ``java.util.logging``."
 msgstr "デフォルトの ``JdbcLogger`` は、``java.util.logging`` を使用する ``UtilLoggingJdbcLogger`` です。"
 
 #: ../../config.rst:89
-#: b1a9f426bb30496389120582cc2d3624
+#: 785d84599aca41e1a4bd87c130e26b4a
 msgid "SQL File Repository"
 msgstr "SQLファイルリポジトリ"
 
 #: ../../config.rst:91
-#: 4274684cf0914ee193d62aa52e6e4d20
+#: cafc1c4dbb5a4a4f9a70d3092ce021b4
 msgid "Return a ``SqlFileRepository`` from the ``getSqlFileRepository`` method."
 msgstr "``getSqlFileRepository`` メソッドから ``SqlFileRepository`` を返します。"
 
 #: ../../config.rst:93
-#: bc54e68494a449f38adf65942f1d4ed4
+#: 13213c0346ca4b0c8a3610192bc5be5d
 msgid "Doma provides following SqlFileRepositories:"
 msgstr "Doma は次の SQLファイルリポジトリ を提供します。"
 
 #: ../../config.rst:95
-#: da54c7f4f6bd473cbd4d87e3c096fd8e
+#: 813d3c57496b425cb6aba71099d9c9df
 msgid "org.seasar.doma.jdbc.GreedyCacheSqlFileRepository"
 msgstr ""
 
 #: ../../config.rst:96
-#: 8abe7ecc0daf4f8985e1fde5cd9da76d
+#: 481054237d4d4b7f82ade252df4bff9e
 msgid "org.seasar.doma.jdbc.NoCacheSqlFileRepository"
 msgstr ""
 
 #: ../../config.rst:98
-#: f3e6a3d3443e4f2db508216883cfea82
+#: 614213272a394791bc19dc7d7cca51c1
 msgid "The default SqlFileRepository is GreedyCacheSqlFileRepository which caches the result of SQL parsing without limitation."
 msgstr "デフォルトの ``SqlFileRepository`` は ``GreedyCacheSqlFileRepository`` で、SQL 解析の結果を無制限にキャッシュします。"
 
 #: ../../config.rst:102
-#: ff783d5ddba34290befec866d670a7f5
+#: aedee522a8b54844a6b2c8e842f7fce8
 msgid "Controlling REQUIRES_NEW transaction"
 msgstr "REQUIRES_NEW トランザクションの制御"
 
 #: ../../config.rst:104
-#: 8341616eaf0c427f860406e569fa610e
+#: 2ea826805fb24be783d88f4f97988762
 msgid "Return a ``RequiresNewController`` from the ``getRequiresNewController`` method. RequiresNewController may begin new transactions to makes transaction locked time shorter."
 msgstr "``getRequiresNewController`` メソッドから ``RequiresNewController`` を返します。 ``RequiresNewController`` は、トランザクションのロック時間を短縮するために新しいトランザクションを開始する場合があります。"
 
 #: ../../config.rst:107
-#: 80402a868a5542b595dc87132221c29b
+#: ec1f6f6c9d1d45d1b55fbd4e454a14bc
 msgid "This feature is used only when you use ``@TableGenerator`` which generates identities with the table."
 msgstr "この機能は、テーブルの ID を生成する ``@TableGenerator`` を使用する場合にのみ使用されます。"
 
 #: ../../config.rst:109
-#: 4808b5a9cc0f40baa4894ab1513f9049
+#: 7a92370c47254b878c6e74e2064d2e44
 msgid "The default RequiresNewController does nothing."
 msgstr "デフォルトの ``RequiresNewController`` は何も行いません。"
 
 #: ../../config.rst:112
-#: 05c95bb8bd6b423585ce1848a3a7e1ba
+#: 030c3d546406476da5587e88f09c1c37
 msgid "Loading classes"
 msgstr "クラスのロード"
 
 #: ../../config.rst:114
-#: 70f14e9863dd4e588f0388fdde9ba955
+#: c45e396e9b394a92b094a8b9962ce8e4
 msgid "Return a ``ClassHelper`` from the ``getClassHelper`` method."
 msgstr "``getClassHelper`` メソッドから ``ClassHelper`` を返します。"
 
 #: ../../config.rst:116
-#: 22aac92da29349a1ba7cdb2cd8d3c676
+#: 01f1da2c9d294176a56623868e253f07
 msgid "When the application server and framework you use loads classes with their specific way, consider to create your own ClassHelper."
 msgstr "使用するアプリケーションサーバーとフレームワークが独自の方法でクラスをロードする場合は、独自の ``ClassHelper`` を作成することを検討してください。"
 
 #: ../../config.rst:119
-#: ec9d7dd9bddd4081a2e1b9c7ed72fa5f
+#: 5f23ad58dc93483d9759a141a0952e29
 msgid "The default ClassHelper loads classes with ``Class#forName`` mainly."
 msgstr "デフォルトの ``ClassHelper`` は主に ``Class#forName`` を使ってクラスをロードします。"
 
 #: ../../config.rst:122
-#: f4e88c62480746b590ec554b74c5a5d4
+#: bbe943e0d21d4b53b3ff5ba3cd759558
 msgid "Choosing SQL format contained in exception messages"
 msgstr "例外メッセージに含まれる SQL 形式の選択"
 
 #: ../../config.rst:124
-#: b0355f02df0d4f67a8f11ba06d4118c4
+#: c7818fc23b6a47148ed982f3031ba9d5
 msgid "Return a ``SqlLogType`` from the ``getExceptionSqlLogType``. The default SqlLogType contains the formatted SQL in exception messages."
 msgstr "``getExceptionSqlLogType`` から ``SqlLogType`` を返します。デフォルトの ``SqlLogType`` を使うと、フォーマットされた SQLが例外メッセージに含まれます。"
 
 #: ../../config.rst:128
-#: 352b5f3409134a1c852b82e273e3f702
+#: 47756552a771465cbc6dd9751d0e3fb8
 msgid "Handling unknown columns"
 msgstr "不明なカラムのハンドリング"
 
 #: ../../config.rst:130
-#: f667777ede814af2aa9162e261ef9b5f
+#: f29d7bb5a3e04e4a9d114a1cbafe70a9
 msgid "Return a ``UnknownColumnHandler`` from the ``getUnknownColumnHandler`` method. In result set mappings, if an unknown column to an entity class is found, the UnknownColumnHandler handles the situation."
 msgstr "``getUnknownColumnHandler`` メソッドから ``UnknownColumnHandler`` を返します。結果セットのマッピング処理で、エンティティクラスのプロパティに対応しないカラムが見つかった場合、``UnknownColumnHandler`` によってハンドリングが行われます。"
 
 #: ../../config.rst:134
-#: e7460d386eb84706bb24ad5cbbea94bb
+#: 75d855fc366941b88cc08baf5a0155d5
 msgid "The default UnknownColumnHandler throws an ``UnknownColumnException``."
 msgstr "デフォルトの ``UnknownColumnHandle``r は ``UnknownColumnException`` をスローします。"
 
 #: ../../config.rst:137
-#: d687fe62bbdd46098a53a7a2db40513a
+#: 667ebc1e3eb24e2a8b8b96914deebc26
 msgid "Naming convention for tables and columns"
 msgstr "テーブルとカラムの命名規則"
 
 #: ../../config.rst:139
-#: 3ef5a9982b4d4e0b8b4db1b64cffeb71
+#: 3a0b5cbe4f874d16a05047ef814cec13
 msgid "Return a ``Naming`` from the ``getNaming`` method. The naming element of ``@Entity`` have preference over this value. When you specify explicit value to the name elements of ``@Table`` and ``@Column``, the naming convention is not applied to them."
 msgstr "``getNaming`` メソッドから ``Naming`` を返します。 ``@Entity`` の `naming` 要素は、この値よりも優先されます。 ``@Table`` と ``@Column`` の ``name`` 要素に明示的な値を指定すると、命名規則は適用されません。"
 
 #: ../../config.rst:144
-#: 0fdbfeb8c3cd49a483b64889ab2a15e2
+#: 45bae1524d3a41b482424169098873b5
 msgid "The default Naming does nothing."
 msgstr "デフォルトの ``Naming`` は何も行いません。"
 
 #: ../../config.rst:147
-#: 88e0e5941e114342a2d8bac497b4cc8b
+#: f9c3a88c28d14c458a550f70ce51d894
 msgid "Naming convention for keys of java.util.Map"
 msgstr "java.util.Map のキーの命名規則"
 
 #: ../../config.rst:149
-#: 01ab443f3a8946bc8868fffc2d0e2a05
+#: 936d06de6cf248ec9a18f6bfcb3dec3b
 msgid "Return a ``MapKeyNaming`` from the ``getMapKeyNaming`` method. The MapKeyNaming is used when the result set is mapped to ``java.util.Map<String, Object>``."
 msgstr "``getMapKeyNaming`` メソッドから ``MapKeyNaming`` を返します。 ``MapKeyNaming`` は、結果セットが ``java.util.Map<String, Object>`` にマップされるときに使用されます。"
 
 #: ../../config.rst:152
-#: b49f4fe0bd954711bc9344f69ec108fb
+#: cc3c14660cc344f3a4b837145a5fabc4
 msgid "The default MapKeyNaming does nothing."
 msgstr "デフォルトの ``MapKeyNaming`` は何も行いません。"
 
 #: ../../config.rst:155
-#: 91c29647dc4a4f7582b5826be9e8b34f
+#: f923100961c94d038c1d1c3eecc7a1c2
 msgid "Local transaction manager"
 msgstr "ローカルトランザクションマネージャ"
 
 #: ../../config.rst:157
-#: 9543c46ba98d49d3970c5f254db8e419
+#: 9680efc7d8b04faf9852a780e89eb553
 msgid "Return a ``LocalTransactionManager`` from the ``getTransactionManager`` method. The ``getTransactionManager`` method throws ``UnsupportedOperationException`` as default."
 msgstr "``getTransactionManager`` メソッドから ``LocalTransactionManager`` を返します。 ``getTransactionManager`` メソッドはデフォルトとして ``UnsupportedOperationException`` をスローします。"
 
 #: ../../config.rst:163
-#: 1859605e540b46c6b8d7fa715dc3b94f
+#: a65deb74d6a14aa9adb73eafb0eb9ce7
 msgid "Adding SQL identifiers to the SQLs as a comment"
 msgstr "SQL にコメントを追加する"
 
 #: ../../config.rst:165
-#: 28213fcd614145dda85a935e41aacebc
+#: 7bfd759d238f4a9f966ca2536c6c6b72
 msgid "Return a ``Commenter`` from the ``getCommenter`` method."
 msgstr "``getCommenter`` メソッドから ``Commenter`` を返します。"
 
 #: ../../config.rst:167
-#: 82a18db0dd574d1fb14bd90bd90dbd72
+#: f3476fad83344e97a292a31b1f233308
 msgid "Doma provides following commenter:"
 msgstr "Doma は次のような ```Commenter`` を提供します。"
 
 #: ../../config.rst:169
-#: a86c53fffef145a6a99541f4906b250e
+#: d80d97163f774adda296f968c03dfd1e
 msgid "org.seasar.doma.jdbc.CallerCommenter"
 msgstr ""
 
 #: ../../config.rst:171
-#: 15b8556d6cf246f5871d8ed1cdbece71
+#: 354b7b521c224a018c1079bb4ebc263c
 msgid "The default Commenter does nothing."
 msgstr "デフォルトの ``Commenter`` は何も行いません。"
 
 #: ../../config.rst:174
-#: 533fb85b2c1e4332aac2c22025c9c8e6
+#: 91302209a4d049b09433d2b21262623e
 msgid "Command implementors"
 msgstr ""
 
 #: ../../config.rst:176
-#: a03c502ba19a4970a516cd6d6577db07
+#: 472f991a13f44a3fb6487657f003c030
 msgid "Return a ``CommandImplementors`` from the ``getCommandImplementors`` method. For example, the CommandImplementors provides you a hook to execute JDBC API."
 msgstr "``getCommandImplementors`` メソッドから ``CommandImplementors`` を返します。たとえば、``CommandImplementors`` は、JDBC API を実行するためのフックを提供します。"
 
 #: ../../config.rst:180
-#: f46d8bdb2dbd48c7b4bde12dda95457d
+#: 94e23a8cf7f34ae29e41d8369fb7907e
 msgid "Query implementors"
 msgstr ""
 
 #: ../../config.rst:182
-#: ee05a064f2e8476d915431de1ba33b65
+#: 443a99bf24854a49bbf028a21e93e536
 msgid "Return a ``QueryImplementors`` from the ``getQueryImplementors`` method. For example, the QueryImplementors provides you a hook to rewrite SQL statements."
 msgstr "``getQueryImplementors`` メソッドから ``QueryImplementors`` を返します。たとえば、``QueryImplementors`` は、SQL ステートメントを書き直すためのフックを提供します。"
 
 #: ../../config.rst:186
-#: 5cf5a37389964a1aba562c7d8e0154e6
+#: 9a641e958c5a445194b93f5a32b27714
 msgid "Query timeout"
 msgstr "クエリタイムアウト"
 
 #: ../../config.rst:188
-#: deb25cf574f54fa4bb48550ced2db9ba
+#: 0b21b666da354c08bc136a866451af37
 msgid "Return the query timeout (second) from the ``getQueryTimeout`` method. This value is used as default in :doc:`query/index`."
 msgstr "``getQueryTimeout`` メソッドからクエリタイムアウト (秒) を返します。この値は、:doc:`query/index` でデフォルトの値として使用されます。"
 
 #: ../../config.rst:192
-#: debc3b22064546ccb83b175d96ad6094
+#: 3b59258896454c298ba3bd04134c1e68
 msgid "Max rows"
 msgstr "最大行数"
 
 #: ../../config.rst:194
-#: b38c83adad414fd78f1eb437ede8f7b6
+#: 577cbc24cf0642639b0684f27b361f73
 msgid "Return the max rows from the ``getMaxRows`` method. This value is used as default in :doc:`query/select`."
 msgstr "``getMaxRows`` メソッドから最大行数を返します。この値は :doc:`query/select` でデフォルトの値として使用されます。"
 
 #: ../../config.rst:198
-#: 03cf0f8fde1f4b2fac4b7809f062b0e9
+#: abd6f378b17f4a4d9b52b5669a84adea
 msgid "Fetch size"
 msgstr "フェッチサイズ"
 
 #: ../../config.rst:200
-#: 90d44b9b4564406ab59f33eb9b87d649
+#: 249ca2a52a63401ca7450a4d83dc60fc
 msgid "Return the fetch size from the ``getFetchSize`` method. This value is used as default in :doc:`query/select`."
 msgstr "``getFetchSize`` メソッドからフェッチ サイズを返します。この値は :doc:`query/select` でデフォルトの値として使用されます。"
 
 #: ../../config.rst:204
-#: 1b46e9510aed44e4b200c98b56fa9f38
+#: a178be67f20e4f16b858dc3a916f2ff9
 msgid "Batch size"
 msgstr "バッチサイズ"
 
 #: ../../config.rst:206
-#: 552ff6302b174ef4bf2a199cc6d39809
+#: 94f6fa40f68746b8a22d8456cad1970c
 msgid "Return the batch size from the ``getBatchSize`` method. This value is used as default in :doc:`query/batch-insert`, :doc:`query/batch-update` and :doc:`query/batch-delete`."
 msgstr "``getBatchSize`` メソッドからバッチサイズを返します。この値は、:doc:`query/batch-insert`、:doc:`query/batch-update`、および :doc:`query/batch-delete` でデフォルトの値として使用されます。"
 
 #: ../../config.rst:211
-#: 6e94a9547707440893711bef99862c05
+#: 5265724645004cfb8bcbd4f988aec3ab
 msgid "Providing entity listeners"
 msgstr "エンティティリスナーの提供"
 
 #: ../../config.rst:213
-#: b759ebeddb69497cb998bd276a5830fa
+#: f63319c9f8d44c3cabf64c110cef05e8
 msgid "Return a ``EntityListenerProvider`` from the ``getEntityListenerProvider`` method. When you want to get entity listeners from a dependency injection container, create your own EntityListenerProvider."
 msgstr "``getEntityListenerProvider`` メソッドから ``EntityListenerProvider`` を返します。依存性注入コンテナからエンティティリスナーを取得する場合は、独自の ``EntityListenerProvider`` を作成してください。"
 
 #: ../../config.rst:217
-#: b8459fa58f394dc0874c306a656985e1
+#: b74d08bb3f9a44ae9f5793d1fa00653a
 msgid "The default EntityListenerProvider get the entity listener from the accepted supplier."
 msgstr "デフォルトの ``EntityListenerProvider`` は、受け入れられた ``Supplier`` からエンティティリスナーを取得します。"
 
 #: ../../config.rst:220
-#: fe52aeea743348a9a96d4fa5f55f87c3
+#: e6b40cf644124c6fbb97d4381347a12f
 msgid "Loading JDBC drivers"
 msgstr "JDBCドライバのロード"
 
 #: ../../config.rst:225
-#: 121363a630714d36bd2a59c783f97fc3
+#: 24e5736f58e64c2da45e188d4dd83ba8
 msgid "All JDBC drivers are loaded automatically by the `service provider <service provider_>`_ mechanism."
 msgstr "すべての JDBC ドライバは、 `サービスプロバイダ <service provider_>`_ メカニズムによって自動的にロードされます。"
 
 #: ../../config.rst:229
-#: f8808354bce04d6bb0ed977e24513dcc
+#: 46777e6525b6415db9ae47b09d46e1b3
 msgid "But in the specific environment, the mechanism doesn't work appropriately. For example, when you use Apache Tomcat, you will find the case. See also: `DriverManager, the service provider mechanism and memory leaks <tomcat driver_>`_"
 msgstr "ただし、特定の環境では、このメカニズムが適切に動作しません。たとえば、Apache Tomcat を使用すると、このケースが見つかります。参照: `DriverManager、サービス プロバイダのメカニズムとメモリリーク <tomcat driver_>`_"
 
 #: ../../config.rst:236
-#: 3288ed5e6bb04faea461666a20f056a0
+#: 1465acdd5410478bbc5da336e9d6d7f2
 msgid "Configuration definition"
 msgstr "設定クラスの定義"
 
 #: ../../config.rst:239
-#: 079575473c4f4b299bc9e9d0343b415a
+#: 2811a60250e34f899a5dcfc19aebce4c
 msgid "Simple definition"
 msgstr "単純な定義"
 
 #: ../../config.rst:241
-#: b44fef4d3d2a433e9b5e814b8c786869
+#: 2008af7ceb8e4023ade133b8eb686538
 msgid "The simple definition is appropriate in following cases:"
 msgstr "単純な定義は、次の場合に適しています。"
 
 #: ../../config.rst:243
-#: 550c9e0310314cf187557fcbc8294165
+#: 1ce2167c709344b28947b79b795af8ea
 msgid "The configuration instance isn't managed in the dependency injection container"
 msgstr "設定インスタンスが依存関係注入コンテナで管理されない"
 
 #: ../../config.rst:244
-#: 02544511c72d49e9864a8919c716a91d
+#: 3a6f537f0d144a74830db7f63a1068b6
 msgid "Local transactions is used"
 msgstr "ローカルトランザクションが使用される"
 
 #: ../../config.rst:286
-#: 185685df211943b298abd8668bafa26e
+#: a7082e18b3e141f2afc92737a04cb6ab
 msgid "You can use the above ``DbConfig`` class as follows:"
 msgstr "上記の ``DbConfig`` クラスは次のように使用できます。"
 
 #: ../../config.rst:292
-#: d9f6896789c048ac9a583cb820af073c
+#: 33d699e347914781bbf9fba7e36cde0b
 msgid "The above ``EmployeeDao`` interface must be annotated with the ``@Dao`` annotation as follows:"
 msgstr "上記の ``EmployeeDao`` インタフェースには、次のように ``@Dao`` アノテーションを付ける必要があります。"
 
 #: ../../config.rst:304
-#: 28c672da60b04f51b17da359ebc4ad64
+#: 26fcc8f88b8a4e2fb89a10f4bb6f1d3d
 msgid "Advanced definition"
 msgstr "高度な定義"
 
 #: ../../config.rst:306
-#: 1371979323b94806b799e0ad8ba274de
+#: ac5ef30c217b4457a486cbb82fd37538
 msgid "The advanced definition is appropriate in following cases:"
 msgstr "高度な定義は、次の場合に適しています。"
 
 #: ../../config.rst:308
-#: 8183067240f74cf498429e23401aaeaf
+#: abecdf4525b845dca1c90025d2ebb96e
 msgid "The configuration instance is managed as a singleton object in the dependency injection container"
 msgstr "設定インスタンスが依存性注入コンテナ内のシングルトンオブジェクトとして管理される"
 
 #: ../../config.rst:309
-#: a9df52f5246e400187ca9d377561494e
+#: 5bcab62d57ed400bab20e43e581a95d2
 msgid "The transaction manager is provided from the application server or framework you use"
 msgstr "トランザクションマネージャが使用するアプリケーションサーバーまたはフレームワークから提供される"
 
 #: ../../config.rst:311
-#: 4870218311434d168ba2459e2595113f
+#: 805056d1895a45fda298f84dbd00ebe8
 msgid "Suppose the ``dialect`` and the ``dataSource`` are injected by the dependency injection container:"
 msgstr "``dialect`` と ``dataSource`` が依存性注入コンテナによって注入されると仮定します。"
 
 #: ../../config.rst:340
-#: f8bd3920a123423ea846fe576a4610b8
+#: 40398fd75a48454a9515d7ae44b0c457
 msgid "To inject the instance of the above class to your DAO implementation instance, you have to annotate your DAO interfaces with ``@AnnotateWith``:"
 msgstr "上記のクラスのインスタンスを DAO のインスタンスに注入するには、DAO インタフェースに ``@AnnotateWith`` アノテーションを付ける必要があります。"
 
 #: ../../config.rst:367
-#: ad6a6d70de904590bf83fc289f0e0ec1
+#: bdd46ef533f94955ae9b724b1b6be259
 msgid "To avoid annotating your DAO interfaces with ``@AnnotateWith`` repeatedly, annotate the arbitrary annotation with it only once:"
 msgstr "DAO インタフェースに ``@AnnotateWith`` で繰り返しアノテーションを付けることを避けるには、任意のアノテーションに 1 回だけアノテーションを付けます。"
 
 #: ../../config.rst:378
-#: 903eb062941041bdb58286184a799698
+#: e6a54ebc95cb4255a38c773a12c18d71
 msgid "Then, you can annotate your DAO interfaces with the above ``@InjectConfig`` annotation:"
 msgstr "次に、DAO インタフェースに上記の ``@InjectConfig`` アノテーションを付けることができます。"
 

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-17 05:50+0000\n"
-"PO-Revision-Date: 2024-03-17 05:55\n"
+"POT-Creation-Date: 2024-03-17 06:37+0000\n"
+"PO-Revision-Date: 2024-03-17 13:47\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -18,97 +18,97 @@ msgstr ""
 "Language: ja_JP\n"
 
 #: ../../query/factory.rst:3
-#: 17e192ec5e4949528088e338ca6cace2
+#: eb5484fe650748989f2b0db0b1906d09
 msgid "Factories"
 msgstr "ファクトリ"
 
 #: ../../query/factory.rst:6
-#: 81a88e50de1c4c15a1112b395701fbdf
+#: 27efbe256d4f4d32a676edaf8668379b
 msgid "Contents"
 msgstr "コンテンツ"
 
 #: ../../query/factory.rst:8
-#: 518d2e175842479eb0fcc1d95570f24b
+#: f427b24477db418db30029ca2492996f
 msgid "To get instances from the factory methods of ``java.sql.Connection``, annotate DAO methods with one of following annotations;"
 msgstr "``java.sql.Connection`` のファクトリメソッドからインスタンスを取得するには、DAO メソッドに次のいずれかのアノテーションを付けます。"
 
 #: ../../query/factory.rst:11
-#: bbe1905ce45d4eaf85446edf2f658fb3
+#: 2ce9f991b98644d0af714c46606a45c1
 msgid "@ArrayFactory"
 msgstr ""
 
 #: ../../query/factory.rst:12
-#: 0087b4cc263e485f9f2be41c9c6df865
+#: 0745d724e82642a787dace04cf6e19c1
 msgid "@BlobFactory"
 msgstr ""
 
 #: ../../query/factory.rst:13
-#: 5e8bad3e01bc410780f2261069e8052c
+#: 32158d225c9b4cd299ae8dee42f4f8ab
 msgid "@ClobFactory"
 msgstr ""
 
 #: ../../query/factory.rst:14
-#: 0f22c15039314791b376ac151e2df2e4
+#: 689b0b70864a4412967db3f2e9fef195
 msgid "@NClobFactory"
 msgstr ""
 
 #: ../../query/factory.rst:15
-#: ef60cdb7434248f0b3a4d8b9213d237f
+#: c117a1378add4f5fb7a1a05b77781d14
 msgid "@SQLXMLFactory"
 msgstr ""
 
 #: ../../query/factory.rst:18
-#: fb2213b360134f7e82f19e1c08e96491
+#: 2583c9a98ed24a01b5c4ede96ce3549e
 msgid "Creating Array instances"
 msgstr "配列インスタンスの作成"
 
 #: ../../query/factory.rst:20
-#: 6c847c07452c4a72a55bd102a43a91ba
+#: 6feac0a1739743bb8fb1b2cf43e4a25a
 msgid "A return type must be ``java.sql.Array`` and the number of parameters must be one. The parameter type must be an array type and the parameter must not be null."
 msgstr "戻り値の型は ``java.sql.Array`` で、パラメータの数は 1 つでなければなりません。パラメータの型は配列型である必要があり、パラメータは null であってはなりません。"
 
 #: ../../query/factory.rst:23
-#: 807760b084cc4cccb30d28a7c6f3b547
+#: 658d3530c2534241a485aade44996a82
 msgid "Specify a database type name to the ``@ArrayFactory``'s ``typeName`` element:"
 msgstr "データベースタイプ名を ``@ArrayFactory`` の ``typeName`` 要素に指定します。"
 
 #: ../../query/factory.rst:31
-#: fcdea88abe8e40919181ca88d8cadd64
+#: d4df7b2fd6db43679e79ffcb018ddd73
 msgid "Creating Blob instances"
 msgstr "Blob インスタンスの作成"
 
 #: ../../query/factory.rst:33
-#: a1a0a359819a4034b2ceae96430bdd09
+#: 16b1495311c34855ad674f0defe21800
 msgid "A return type must be ``java.sql.Blob`` and the number of parameters must be zero:"
 msgstr "戻り値の型は ``java.sql.Blob`` でなければならず、パラメータの数は 0 でなければなりません。"
 
 #: ../../query/factory.rst:41
-#: 443d465de252460c9334188af9adf2b7
+#: aa45763d470047ae93bff40cca197059
 msgid "Creating Clob instances"
 msgstr "Clob インスタンスの作成"
 
 #: ../../query/factory.rst:43
-#: 5c1588fc5cc84c2ebd92517ce6ded082
+#: b772e94e1a89421baf299c29810618b6
 msgid "A return type must be ``java.sql.Clob`` and the number of parameters must be zero:"
 msgstr "戻り値の型は ``java.sql.Clob`` で、パラメータの数は 0 でなければなりません。"
 
 #: ../../query/factory.rst:51
-#: 8827b35bc88e4a569c8a43e01d7d8077
+#: 9e330d8ad7f74cf190a3c26e0b1d0614
 msgid "Creating NClob instances"
 msgstr "NClob インスタンスの作成"
 
 #: ../../query/factory.rst:53
-#: f3a317bd41df4f9aa4f6af33c2163ab9
+#: 5e8a0863fd624724a79f8ce16bf1a9df
 msgid "A return type must be ``java.sql.NClob`` and the number of parameters must be zero:"
 msgstr "戻り値の型は ``java.sql.NClob`` でなければならず、パラメータの数は 0 でなければなりません。"
 
 #: ../../query/factory.rst:61
-#: 994fe0ec3bb548a298a71f7e43bf933e
+#: 1ebd74ab6924476eb6dd63b41d05232d
 msgid "Creating SQLXML instances"
 msgstr "SQLXMLインスタンスの作成"
 
 #: ../../query/factory.rst:63
-#: ba607a960d5e43a0a1729892950110c2
+#: 97b7b29db7a54552bc0586005169a2a6
 msgid "A return type must be ``java.sql.SQLXML`` and the number of parameters must be zero:"
 msgstr "戻り値の型は ``java.sql.SQLXML`` でなければならず、パラメータの数は 0 でなければなりません。"
 

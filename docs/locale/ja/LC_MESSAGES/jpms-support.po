@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-17 05:50+0000\n"
-"PO-Revision-Date: 2024-03-17 05:55\n"
+"POT-Creation-Date: 2024-03-17 06:37+0000\n"
+"PO-Revision-Date: 2024-03-17 13:47\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -18,107 +18,107 @@ msgstr ""
 "Language: ja_JP\n"
 
 #: ../../jpms-support.rst:3
-#: 514ffd541e3a437397151125659bef86
+#: 14f0a5401e6a4d6f925fd2ff718074cb
 msgid "JPMS support"
 msgstr "JPMS サポート"
 
 #: ../../jpms-support.rst:6
-#: 0773b8c085be4a66a27e1e3ada50ed1f
+#: dd4204b11d944d50bb44d0ced9fbb283
 msgid "Contents"
 msgstr "コンテンツ"
 
 #: ../../jpms-support.rst:9
-#: b4a0ec58d9d04780ba6028af98e5d70b
+#: 098cc8a805f949708c339e894bb3b607
 msgid "Overview"
 msgstr "概要"
 
 #: ../../jpms-support.rst:11
-#: ff6de8613610494f89162b088d661e37
+#: 4f305093af4842fd9569049cfd34e68b
 msgid "Doma supports the Java Platform Module System (JPMS) introduced with Java 9."
 msgstr "Doma は、Java 9 で導入された Java Platform Module System (JPMS) をサポートしています。"
 
 #: ../../jpms-support.rst:14
-#: 533daa8ffd2e4c3cb879c7907aa29c47
+#: 8e33559d6ee94fa3aa26186289d1583d
 msgid "Modules"
 msgstr "モジュール"
 
 #: ../../jpms-support.rst:16
-#: 578f59606340404898efd2cbb8664c7a
+#: 3d7f43818d8c493fb45311973ea6da51
 msgid "Doma provides the following modules:"
 msgstr "Doma は次のモジュールを提供します。"
 
 #: ../../jpms-support.rst:19
-#: f42d85c52ee74ef8afaa1a52b7e2f3ca
+#: 79af381b8bb24d9b9535ad406747bc58
 msgid "Artifact ID"
 msgstr "アーティファクトID"
 
 #: ../../jpms-support.rst:19
-#: 55d36243e33c44bc95e668698b02b505
+#: 4dceed4244c84b1c898a6473c949efb5
 msgid "Module Name"
 msgstr "モジュール名"
 
 #: ../../jpms-support.rst:21
-#: 2bb589568c364fa282f8c6f042c89017
+#: 7384723db43840aca9828f3551e9b18a
 msgid "doma-core"
 msgstr ""
 
 #: ../../jpms-support.rst:21
-#: 8532e63a664045dbabb3c6e00a626f6c
+#: e6860f605baf4280b26d844cc11523af
 msgid "org.seasar.doma.core"
 msgstr ""
 
 #: ../../jpms-support.rst:23
-#: b5e39a384fc64292add4669d849f39fc
+#: 8394ef8ce22146bcb7d937ca03229411
 msgid "doma-kotlin"
 msgstr ""
 
 #: ../../jpms-support.rst:23
-#: e5be6a25787e4caa98b8d98684367426
+#: 99ca20ada99045979c5a698c6cf583d3
 msgid "org.seasar.doma.kotlin"
 msgstr ""
 
 #: ../../jpms-support.rst:25
-#: e6bfed609200406dae90849dc0097435
+#: 4c4d1281eed94584ace354cd63dfc8a0
 msgid "doma-processor"
 msgstr ""
 
 #: ../../jpms-support.rst:25
-#: 7f0d135636fc465f83c0f67300e4ab40
+#: 92c4a7b34cb54accb4671bccf710a174
 msgid "org.seasar.doma.processor"
 msgstr ""
 
 #: ../../jpms-support.rst:27
-#: 0b0fc04b33c140b88aeb51aeb9bb4e68
+#: 6dda2ac04a5e46c9877472ad9e304a04
 msgid "doma-slf4j"
 msgstr ""
 
 #: ../../jpms-support.rst:27
-#: fdfc851e40f445479358ee60081382bc
+#: c8ede58698704bc7872b54c0a340fba0
 msgid "org.seasar.doma.slf4j"
 msgstr ""
 
 #: ../../jpms-support.rst:29
-#: 5a499191e55b4dbcb9fa1c771304e239
+#: 65e38e38c9b94624864ab90dfbff426c
 msgid "doma-template"
 msgstr ""
 
 #: ../../jpms-support.rst:29
-#: 1078e242161548a88242ff677251a15b
+#: c98d8028603348789b1993b5d39a838c
 msgid "org.seasar.doma.template"
 msgstr ""
 
 #: ../../jpms-support.rst:33
-#: b888a41b7a044a8890d5bbdb0b10c28a
+#: fed6583b9c414e64819a1eb8c6e4f980
 msgid "Usage"
 msgstr "使用法"
 
 #: ../../jpms-support.rst:35
-#: 4c240025986e40539a527b1e3354592b
+#: c52d2a3211f84023a134062e4bf7fe2a
 msgid "Doma uses reflection to access Entity properties. For this to work, you have to open packages containing Entity classes:"
 msgstr "Doma はリフレクションを使用してエンティティのフィールドにアクセスします。これを機能させるには、Entity クラスを含むパッケージを開く必要があります。"
 
 #: ../../jpms-support.rst:47
-#: 2a18c99a5eb7426d8416e48e966cfb0d
+#: 3913acd9cea949dd8e0ef2a72795e261
 msgid "You can open your module instead of packages:"
 msgstr "パッケージの代わりにモジュールを開くこともできます。"
 

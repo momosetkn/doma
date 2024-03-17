@@ -1,11 +1,11 @@
 ===============
-Search
+Select
 ===============
 
 .. contents::
    :depth: 3
 
-Annotate with ``@Select`` to Dao method for execute search.
+To execute a search using the SELECT statement, annotate the DAO method with ``@Select``.
 
 .. code-block:: java
 
@@ -16,8 +16,8 @@ Annotate with ``@Select`` to Dao method for execute search.
       ...
   }
 
-**SQL file is required** in search.
-There is no feature that auto generating search SQL.
+The ``@Select`` annotation requires an SQL template. 
+Describe the SQL template in an SQL file or in the ``@Sql`` annotation.
 
 .. note::
 

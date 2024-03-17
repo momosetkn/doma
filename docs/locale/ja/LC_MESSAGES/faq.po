@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-17 05:50+0000\n"
-"PO-Revision-Date: 2024-03-17 05:55\n"
+"POT-Creation-Date: 2024-03-17 06:37+0000\n"
+"PO-Revision-Date: 2024-03-17 13:47\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -18,304 +18,304 @@ msgstr ""
 "Language: ja_JP\n"
 
 #: ../../faq.rst:3
-#: 229ca2c111cc41b994c3c7c84bddcdde
+#: c1db691c12e845c2bf9c10f1206bca12
 msgid "Frequently Asked Questions"
 msgstr "よくある質問"
 
 #: ../../faq.rst:6
-#: 7dbef0eaf622439080134a93b4c148a8
+#: cd73448cea5c4dc59373bcbbb5424fcf
 msgid "Contents"
 msgstr "コンテンツ"
 
 #: ../../faq.rst:9
-#: eb7a4a4b6d064411b4a1e613c23ae03c
+#: 9220e7829af74eb1ba92e952bfcbfc8d
 msgid "General"
 msgstr "一般"
 
 #: ../../faq.rst:12
-#: ad214bb8dcbe4bb78a85e0543f315b59
+#: 9b0f9491c7c64399b83656efb4721388
 msgid "What does \"Doma\" mean?"
 msgstr "「Doma」とはどういう意味ですか？"
 
 #: ../../faq.rst:14
-#: a0e1710e9e8040ed9bbaa71f5360f552
+#: ad0a83384e894c27b23f6d699cb19b62
 msgid "The name \"Doma\" comes from the \"Dao Oriented database MApping framework\"."
 msgstr "「Doma」という名前は、「Dao Oriented database MApping framework」に由来しています。"
 
 #: ../../faq.rst:17
-#: 8d1cc1f660db454a87f0f0e8611aaa08
+#: 545db3cf19374fca82a1a174a3a000c5
 msgid "What is annotation processing?"
 msgstr "アノテーション処理とは何ですか?"
 
 #: ../../faq.rst:19
-#: c337434a2d6c486a8522dd8a67b9f54e
+#: 8fad5550a2074306933d3c86499617f6
 msgid "Annotation processing is a mechanism for parsing annotations at compile time and using them to generate code or perform compile-time checks."
 msgstr "アノテーション処理は、コンパイル時にアノテーションを解析し、それらを使用してコードを生成したり、コンパイル時のチェックを実行したりするためのメカニズムです。"
 
 #: ../../faq.rst:22
-#: 5608098262f94502b8c1a79f2dfb8ad9
+#: 31eddf7cc42f44eba9b0204561aaf946
 msgid "We use annotation processing for the following purposes:"
 msgstr "Domaにおいて、アノテーション処理は次の目的で使用されます。"
 
 #: ../../faq.rst:24
-#: 78070e3a16b64a7cae31895a7dc0b4f9
+#: 5e20c4c93b604bbab2356e43411e2d16
 msgid "Generating meta-classes from classes annotated with ``@Entity`` and ``@Domain``."
 msgstr "``@Entity`` と ``@Domain`` のアノテーションが付けられたクラスからメタクラスを生成します。"
 
 #: ../../faq.rst:25
-#: b9d603c36aef4ab7a2facfd899ac26a9
+#: a8ddcd0a106742849f7dd8088090a8f2
 msgid "Generating implementation classes for interfaces annotated with ``@Dao``."
 msgstr "``@Dao`` アノテーションが付けられたインターフェースの実装クラスを生成します。"
 
 #: ../../faq.rst:26
-#: 2178e1ab1bda4bc78bb969fc8cebee81
+#: 406abbaf8f9448d99d9d2284f4c798ea
 msgid "Validating SQL templates."
 msgstr "SQL テンプレートを検証する"
 
 #: ../../faq.rst:29
-#: d9b19d7e22e846f9a177db052da9302c
+#: 3a39f1f1e5e646a19e8eae260be28839
 msgid "Runtime environment"
 msgstr "実行時環境"
 
 #: ../../faq.rst:32
-#: 93f93219cc074e0a828e5fb1e75a0555
+#: 32d5d68edff2401490388cf058219426
 msgid "Which version of JRE does Doma support?"
 msgstr "Doma はどのバージョンの JRE をサポートしていますか?"
 
 #: ../../faq.rst:34
-#: b422ff1b9d274466bdce48f6014c23be
+#: b8df525afa824cd48654811af1af13c5
 msgid "JRE 8 and above."
 msgstr "JRE 8以降です。"
 
 #: ../../faq.rst:37
-#: a3e0f2e6ac0943a1bd838a75f2ebc620
+#: 5102cf8c432542818c7fe3f588c05f48
 msgid "Which libraries are required for Doma to work?"
 msgstr "Doma を動作させるにはどのライブラリが必要ですか？"
 
 #: ../../faq.rst:39
-#: cde064a8d46a4f5596e00ccf10eb396b
+#: edbb3390275b47329d326d442407fd37
 msgid "None."
 msgstr "どのライブラリも必須ではありません。"
 
 #: ../../faq.rst:41
-#: b9146abccca94a69ad1fb177b526578a
+#: e9adc5526d144e67a6faa2fe668d9b03
 msgid "Doma has no dependencies on other libraries."
 msgstr "Doma は他のライブラリに依存していないからです。"
 
 #: ../../faq.rst:44
-#: 900385f00f55427d8dafe58d96b8d3e7
+#: ebbd3a224f2a4832841a8718b88e8a84
 msgid "Development environment"
 msgstr "開発環境"
 
 #: ../../faq.rst:49
-#: 5336bf8ddba84801a322106ae2ff3d35
+#: b4d188418ac145999a7e389d030870e2
 msgid "Which version of JDK does Doma support?"
 msgstr "Doma はどのバージョンの JDK をサポートしていますか?"
 
 #: ../../faq.rst:51
-#: fb6abefbb3d64c6f9f244a23eec90b0a
+#: e6e1096d77c846cd9304366e8aa2eb49
 msgid "JDK 8 and above."
 msgstr "JDK 8以降です。"
 
 #: ../../faq.rst:54
-#: adebe154a0384f40861bd7c472d06890
+#: cfded82e60b54662b16e14d4c089e0da
 msgid "Which IDE do you recommend?"
 msgstr "どのIDEがおすすめですか?"
 
 #: ../../faq.rst:56
-#: 268df63bdf16449780af5f38ec398ac3
+#: 7388a02689784df8b528d4037a40b4c9
 msgid "Doma works with both Eclipse and IntelliJ IDEA, but IntelliJ IDEA is recommended. This is because Eclipse's annotation processing may behave differently from the JRE used in the production environment."
 msgstr "Doma は Eclipse と IntelliJ IDEA の両方で動作しますが、IntelliJ IDEA の使用をお勧めします。これは、Eclipse のアノテーション処理が本番環境で使用される JRE とは異なる動作をする可能性があるためです。"
 
 #: ../../faq.rst:60
-#: 753a57b5af5e48c486d1760f06b92572
+#: b06885f23ca544c4ae04e606216e30e5
 msgid "Which build tool do you recommend?"
 msgstr "どのビルドツールがおすすめですか?"
 
 #: ../../faq.rst:62
-#: 67bd8ad68c4f47f288e77b069c6ce25f
+#: 73621cdca62643618a3a51433395ec43
 msgid "Gradle and Maven are both supported."
 msgstr "Gradle と Maven は両方ともサポートされています。"
 
 #: ../../faq.rst:65
-#: 4bf8e5ee1d0d4d03a8b02acd9dc9fbcd
+#: 8bea436695af4de5b97e4b65faca94e9
 msgid "Where are the files output by annotation processing?"
 msgstr "アノテーション処理で出力されたファイルはどこにあるのでしょうか？"
 
 #: ../../faq.rst:68
-#: 54229afb492f4136b281fc3ea88997b2
+#: 3f14b11a66aa43be855fbb5d6731753a
 msgid "Gradle"
 msgstr ""
 
 #: ../../faq.rst:70
-#: 89cb2cabf6f84f40938dbfeff2541718
+#: fb243fe08a4c4777be05e4786d70f4f2
 msgid "Check `build/generated/sources/annotationProcessor`."
 msgstr "`build/generated/sources/annotationProcessor` を確認してください。"
 
 #: ../../faq.rst:73
-#: 3960047229534d00b63d2f2abeee02c6
+#: bcc23aff7b3445c7a36e41e2885335e6
 msgid "Maven"
 msgstr ""
 
 #: ../../faq.rst:75
-#: d814611099844b68bf18af3f774ebab6
+#: 7c2d160116614cbea2abb415ec62cecf
 msgid "Check `target/generated-sources/annotations`."
 msgstr "`target/generated-sources/annotations` を確認してください。"
 
 #: ../../faq.rst:78
-#: 50a7ec18c98f4bdd9d064ba707c924ec
+#: fe9e4a38bc50419dadfe2426a45eaf78
 msgid "Eclipse"
 msgstr ""
 
 #: ../../faq.rst:80
-#: dad31d7edb364781aed76e70003326cd
+#: e471658a88404a39b45d42aecf495e27
 msgid "Check the output destination directory in the annotation processing settings."
 msgstr "アノテーション処理の設定の出力先ディレクトリを確認してください。"
 
 #: ../../faq.rst:83
-#: 3ad8d012f6ed47d4957a8d21e66cb21b
+#: 1661a0849ed142c1953b9ecd2b9886a3
 msgid "IntelliJ IDEA"
 msgstr ""
 
 #: ../../faq.rst:85
-#: cd13e669657440d2905e896a145746bf
+#: 7d191d65da404d9ab1aa4cd7c11a0862
 msgid "See the above Gradle and Maven sections."
 msgstr "上記の Gradle と Maven のセクションを参照してください。"
 
 #: ../../faq.rst:88
-#: 0a59b9999c93480bb7c66525d99fbbb3
+#: c33393cf88154060879cdd895f80e5a4
 msgid "I get the message that the sql file is not found, but it exists. Why?"
 msgstr "SQL ファイルが見つからないというメッセージが表示されますが、SQL ファイルは存在します。なぜですか？"
 
 #: ../../faq.rst:90
-#: 745a2bdc504b4d9f8ed24c5b696d943d
+#: ae7ad3f4b8a645dd80d4184cf7df1ddf
 msgid "You may get the following message, though the file exists:"
 msgstr "ファイルは存在しますが、次のメッセージが表示される場合があります。"
 
 #: ../../faq.rst:96
-#: 37275abfb91e4d0fa84a6ff765677b88
+#: 8468bc0e2f5c4c00944237760d930a0b
 msgid "You can avoid this error by configuring recommended settings for each build tool and IDE."
 msgstr "このエラーは、ビルド ツールや IDE ごとの推奨設定に則ることで回避できます。"
 
 #: ../../faq.rst:98
-#: 509a55b4b0684ed6ae3172957023e4d9
+#: d3b4120230944967aec588d54d379313
 msgid "See :doc:`build`."
 msgstr ":doc:`build` を参照してください。"
 
 #: ../../faq.rst:101
-#: e2d37056508948ccaee841f4aaff916c
+#: 01e341a739f94507abb637dcef0cc083
 msgid "Do you provide a tool to generate Java code from a database schema?"
 msgstr "データベース スキーマから Java コードを生成するツールは提供していますか?"
 
 #: ../../faq.rst:103
 #: ../../faq.rst:137
-#: b0dc775ee98248fdb8deed7133ae37ec
-#: e29d31137e804d6f8ef0dd76ef1c11c6
+#: 393c5c8d3b31462cacbe909b5f4c094e
+#: d8bb87bef59e493c92011f30d6a731f4
 msgid "Yes."
 msgstr "はい。"
 
 #: ../../faq.rst:105
-#: 4cdce2b382b0416d86ee94a57bbf401e
+#: 2e5b8d39e8cf4ebc82359ff89923a36b
 msgid "We have the `Doma CodeGen plugin <https://github.com/domaframework/doma-codegen-plugin>`_ that generates Java and SQL files from Database."
 msgstr "データベースからJavaファイルとSQLファイルを生成する `Doma CodeGen plugin <https://github.com/domaframework/doma-codegen-plugin>`_ を提供します。"
 
 #: ../../faq.rst:109
-#: d2ef54a8098c4e829994b43b34ddc2ce
+#: 8c624bebc1c14b64988516c559e1fe76
 msgid "Features as a database access library"
 msgstr "データベースアクセスライブラリとしての機能"
 
 #: ../../faq.rst:112
-#: f4bca9584d8343f78017e80098a41ddb
+#: 390bbc5e56c3436aa49d452a3aaf6969
 msgid "Does Doma generate SQL statements?"
 msgstr "Doma は SQL ステートメントを生成しますか?"
 
 #: ../../faq.rst:114
-#: 927baf64c6f44a45a1be44f5c9e06086
+#: 024fcaf33ac144199dec475af16f41df
 msgid "Yes, Doma generates the following statements:"
 msgstr "はい、Doma は次のステートメントを生成します。"
 
 #: ../../faq.rst:116
-#: c9ed11195db64e248ea9cc8e6dc5391c
+#: ea9d2e54a74540d7a18112b24f8e9f49
 msgid "SELECT"
 msgstr ""
 
 #: ../../faq.rst:117
-#: e65933c34b7440b29d1afaea57025fa7
+#: 7cf29c4351d04b8daa7955bebe4d5d1a
 msgid "INSERT"
 msgstr ""
 
 #: ../../faq.rst:118
-#: b61bab2081424876b9f9a7845fb7d0d2
+#: 3f4cbfd52f3d4959bd2a1c446134a95d
 msgid "DELETE"
 msgstr ""
 
 #: ../../faq.rst:119
-#: c38ffd29ad3446e0ac379e760208888b
+#: ef6a1df1b8b341dea58590da6de3b328
 msgid "UPDATE"
 msgstr ""
 
 #: ../../faq.rst:120
-#: de79e853a71d410587ce2fb7a3d7e74f
+#: 8859b3fb4d84436daddf1151965f1fd7
 msgid "Stored procedure call"
 msgstr "ストアドプロシージャ呼び出し"
 
 #: ../../faq.rst:121
-#: 9f019a5aab2b4120941e7cf3a26e3f7e
+#: 7a09739d070246ee85f0b7e8a72035bc
 msgid "Stored function call"
 msgstr "ストアドファンクション呼び出し"
 
 #: ../../faq.rst:125
-#: ad272d507ae34c6b8ffe8c6e60a83e68
+#: cdd37d7fbf974ab6a8558780e1e3d20d
 msgid "Is the generation of dynamic SQL statements supported?"
 msgstr "動的 SQL ステートメントの生成はサポートされていますか?"
 
 #: ../../faq.rst:127
-#: fa95966efe4b450ca84ae4c3fbdb2ec9
+#: 9309ed65addd4c4a8e6a34c4c0c975c7
 msgid "There are two ways:"
 msgstr "はい、次の 2 つの方法でサポートします。"
 
 #: ../../faq.rst:129
-#: 21b9180ae0f54d199f2fad9a21c6ada6
+#: e59d503f49304e73869ac98dba6ef126
 msgid "The SQL Templates."
 msgstr "SQL テンプレート"
 
 #: ../../faq.rst:130
-#: 9cecb95248a649c18af5f9e519b0a244
+#: cd2928818bae40f18c97327cbb17f6dc
 msgid "The Criteria API."
 msgstr "Criteria API"
 
 #: ../../faq.rst:132
-#: f091cf6155184cd6a70f53e5e4a04f28
+#: e99328b1d4ce486bad7406d0e1db7470
 msgid "See :doc:`sql` and :doc:`criteria-api` for detail information."
 msgstr "詳細については、:doc:`sql` および :doc:`criteria-api` を参照してください。"
 
 #: ../../faq.rst:135
-#: 3101431cb73f42408bd84a7e42fbee57
+#: 164a77eb5667438ab7733b8fe5715ceb
 msgid "Does Doma support fetching relationships like one-to-one or one-to-many?"
 msgstr "Doma は、1 対 1 または 1 対多のような関係の取得をサポートしていますか?"
 
 #: ../../faq.rst:139
-#: 2a7ace1b2a8641ca9d15c712ea308901
+#: aa375be4cb654e0b9b85e9c4769235f6
 msgid "Doma provides the Criteria API to map database relationships to Java entities."
 msgstr "Doma は、データベースの関係を Java エンティティにマップするための Criteria API を提供します。"
 
 #: ../../faq.rst:141
-#: 35d3191d366949cfab420687c7f05575
+#: acc3359ee4c84bb68b4e0c04f373ec28
 msgid "See :ref:`criteria_associate` for detail information."
 msgstr "詳細については、 :ref:`criteria_associate` を参照してください。"
 
 #: ../../faq.rst:144
-#: a52474fa91e44a20afaab31087b5f5d6
+#: cecb30ca8e254fb4aa4046655383dadb
 msgid "Does Doma provide a JDBC connection pooling feature?"
 msgstr "Doma は JDBC 接続プーリング機能を提供しますか?"
 
 #: ../../faq.rst:146
-#: 8a4244d1a864431d8564eef5f4b61d4d
+#: c3e334f6abec4d3c9c0f16919d7008a7
 msgid "No."
 msgstr "いいえ。"
 
 #: ../../faq.rst:148
-#: 1f8e667e800543ec92efbe809a279a1e
+#: 4164c07094e04b50aa5085596c120091
 msgid "Use Doma together with a JDBC connection pool library such as `HikariCP <https://github.com/brettwooldridge/HikariCP>`_."
 msgstr "Doma を `HikariCP <https://github.com/brettwooldridge/HikariCP>`_ などの JDBC 接続プール ライブラリと組み合わせて使用してください。"
 
