@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-10 10:39+0900\n"
-"PO-Revision-Date: 2024-03-16 23:31\n"
+"PO-Revision-Date: 2024-03-17 01:12\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -101,7 +101,7 @@ msgstr "楽観的排他制御が有効であれば、バージョン番号はID�
 #: ../../query/batch-update.rst:58
 #: ../../query/batch-update.rst:205
 msgid "ignoreVersion"
-msgstr ""
+msgstr "ignoreVersion"
 
 # 6cdbdb7a2c4d479caa059dbbeccac349
 #: ../../query/batch-update.rst:60
@@ -113,7 +113,7 @@ msgstr "``@BatchUpdate`` の ``ignoreVersion`` 要素が ``true`` の場合、 �
 #: ../../query/batch-update.rst:71
 #: ../../query/batch-update.rst:217
 msgid "suppressOptimisticLockException"
-msgstr ""
+msgstr "suppressOptimisticLockException"
 
 # 205d10bf7043467f8dd1c96aeb060785
 #: ../../query/batch-update.rst:73

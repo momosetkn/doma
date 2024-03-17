@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-10 10:39+0900\n"
-"PO-Revision-Date: 2024-03-16 23:31\n"
+"PO-Revision-Date: 2024-03-17 01:12\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -115,7 +115,7 @@ msgstr ""
 # 47973913817f41d4b510ef2f37ed4ae2
 #: ../../embeddable.rst:105
 msgid "Column"
-msgstr ""
+msgstr "カラム"
 
 # a645c44714bd459b9031c4663eed1136
 #: ../../embeddable.rst:107
@@ -125,7 +125,7 @@ msgstr "カラム名を ``@Column``  アノテーションで指定できます�
 # 90f729799b1f40a490f612e6e8582a6f
 #: ../../embeddable.rst:115
 msgid "Transient"
-msgstr ""
+msgstr "Transient"
 
 # 7929a4e39ffc4d66a85037984bd0f601
 #: ../../embeddable.rst:117

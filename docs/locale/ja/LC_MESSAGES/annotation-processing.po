@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-10 10:39+0900\n"
-"PO-Revision-Date: 2024-03-16 22:49\n"
+"PO-Revision-Date: 2024-03-17 01:12\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -45,7 +45,7 @@ msgstr "オプション"
 # 55e513793bae469babbc340291c741d6
 #: ../../annotation-processing.rst:19
 msgid "doma.dao.package"
-msgstr ""
+msgstr "doma.dao.package"
 
 # 50f3f609163d47c6b9431b5b936d53aa
 #: ../../annotation-processing.rst:17
@@ -55,7 +55,7 @@ msgstr "生成された ``@Dao`` アノテーションが付いたインタフ�
 # 345178c19ae147e7b704fc8498a4d917
 #: ../../annotation-processing.rst:25
 msgid "doma.dao.subpackage"
-msgstr ""
+msgstr "doma.dao.subpackage"
 
 # 09c719c04cfd4b4bbd362c87e06307a0
 #: ../../annotation-processing.rst:22
@@ -65,7 +65,7 @@ msgstr "``@Dao`` アノテーションが付けられたインタフェースの
 # a5ae19b0799a4914bc56c3c2e4dbe99e
 #: ../../annotation-processing.rst:31
 msgid "doma.dao.suffix"
-msgstr ""
+msgstr "doma.dao.suffix"
 
 # 86b0e5c95cd24131a71742b226f2702a
 #: ../../annotation-processing.rst:28
@@ -75,7 +75,7 @@ msgstr "``@Dao`` アノテーションが付けられたインタフェースの
 # 9f85ade90adb4fe58e14cb742f68e926
 #: ../../annotation-processing.rst:36
 msgid "doma.debug"
-msgstr ""
+msgstr "doma.debug"
 
 # 5aad57b4298f4e468bfc0365318340c0
 #: ../../annotation-processing.rst:34
@@ -95,7 +95,7 @@ msgstr "``@DomainConverters`` の注釈が付けられたクラスの完全修�
 # 88400d4a0ad4418a8746fb9c8998cecf
 #: ../../annotation-processing.rst:46
 msgid "doma.entity.field.prefix"
-msgstr ""
+msgstr "doma.entity.field.prefix"
 
 # 7d736312ea3b42129ca85107d297e914
 #: ../../annotation-processing.rst:44
@@ -125,7 +125,7 @@ msgstr "Criteria API のメタクラスを生成するかどうか。値が ``tr
 # 85e01b99fea84714bcd2ae730738c436
 #: ../../annotation-processing.rst:61
 msgid "doma.metamodel.prefix"
-msgstr ""
+msgstr "doma.metamodel.prefix"
 
 # 1f5101af1de448b4bafee002eda6fb51
 #: ../../annotation-processing.rst:60
@@ -145,7 +145,7 @@ msgstr "Criteria API のメタモデル クラスの名前接尾辞。デフォ�
 # fc38abe0ff3c41cebe93c9e89711fba8
 #: ../../annotation-processing.rst:70
 msgid "doma.resources.dir"
-msgstr ""
+msgstr "doma.resources.dir"
 
 # 997596367d414f40b2b215657841ee19
 #: ../../annotation-processing.rst:68
@@ -155,7 +155,7 @@ msgstr "doma.compile.config ファイルや SQL ファイルなどのリソー�
 # d5e48da0825048bd866c9a38bae539cd
 #: ../../annotation-processing.rst:76
 msgid "doma.sql.validation"
-msgstr ""
+msgstr "doma.sql.validation"
 
 # 5da18dd6f11f43b78ca966a3c9ed9188
 #: ../../annotation-processing.rst:73
@@ -165,7 +165,7 @@ msgstr "SQL ファイルの存在と SQL コメントの文法を検証するか
 # f20f302acdb74e1c9e96420095ae1702
 #: ../../annotation-processing.rst:82
 msgid "doma.version.validation"
-msgstr ""
+msgstr "doma.version.validation"
 
 # 4fb50080ef5d4d12aef2fab49e06d37f
 #: ../../annotation-processing.rst:79
@@ -175,7 +175,7 @@ msgstr "実行時とコンパイル時の間で Doma のアーティファクト
 # b85a3dd51d164ebba9e63cc24cd32269
 #: ../../annotation-processing.rst:86
 msgid "doma.config.path"
-msgstr ""
+msgstr "doma.config.path"
 
 # 8426d6857b1e45afa373f74a61ce79a6
 #: ../../annotation-processing.rst:85
@@ -235,5 +235,5 @@ msgstr "``doma.compile.config`` ファイルはプロパティファイル形式
 # 582fb6615c3143ecbb11cd3e9d41426d
 #: ../../annotation-processing.rst:141
 msgid "The options specified in the ``doma.compile.config`` file are overridden by the ones specific to the build tools."
-msgstr "``doma.compile.config`` ファイルで指定されたオプションは、ビルド ツールに固有のオプションによって上書きされます。"
+msgstr "``doma.compile.config`` ファイルで指定されたオプションは、ビルドツールに固有のオプションによって上書きされます。"
 

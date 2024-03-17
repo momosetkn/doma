@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-10 11:09+0900\n"
-"PO-Revision-Date: 2024-03-16 23:31\n"
+"PO-Revision-Date: 2024-03-17 01:12\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -342,22 +342,22 @@ msgstr "``@Sql`` アノテーションは次のアノテーションと組み合
 # 761a408dd1254e8ea3e05c12592b8c3f
 #: ../../sql.rst:156
 msgid "@Script"
-msgstr ""
+msgstr "@スクリプト"
 
 # b4f0ad9428f64a3791df46ffd61b583c
 #: ../../sql.rst:157
 msgid "@Insert"
-msgstr ""
+msgstr "@追加"
 
 # 8e4e33e4985a4a928f47602416f03171
 #: ../../sql.rst:158
 msgid "@Update"
-msgstr ""
+msgstr "@更新"
 
 # 4f8c71933fa6408ab941757dbe56c6e1
 #: ../../sql.rst:159
 msgid "@Delete"
-msgstr ""
+msgstr "@削除"
 
 # 04be8dc6ecff43b6aba92bce9990d323
 #: ../../sql.rst:160

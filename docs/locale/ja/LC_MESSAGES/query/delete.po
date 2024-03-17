@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-10 10:39+0900\n"
-"PO-Revision-Date: 2024-03-16 23:31\n"
+"PO-Revision-Date: 2024-03-17 00:49\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -99,7 +99,7 @@ msgstr "楽観的排他制御が有効な場合、削除条件にはバージョ
 #: ../../query/delete.rst:58
 #: ../../query/delete.rst:124
 msgid "ignoreVersion"
-msgstr ""
+msgstr "ignoreVersion"
 
 # 2ad5413e56d0490da08a538534863f02
 #: ../../query/delete.rst:60
@@ -111,7 +111,7 @@ msgstr "``@Delete`` アノテーション内の ``ignoreVersion`` プロパテ�
 #: ../../query/delete.rst:69
 #: ../../query/delete.rst:135
 msgid "suppressOptimisticLockException"
-msgstr ""
+msgstr "suppressOptimisticLockException"
 
 # 4c4ebbb16c5e4b0b928157985ff10ba8
 #: ../../query/delete.rst:71

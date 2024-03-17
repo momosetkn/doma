@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-10 10:39+0900\n"
-"PO-Revision-Date: 2024-03-16 23:31\n"
+"PO-Revision-Date: 2024-03-17 01:12\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -302,7 +302,7 @@ msgstr "要素の型が上記のいずれかであるjava.util.Optional"
 #: ../../entity.rst:227
 #: ../../entity.rst:312
 msgid "OptionalInt"
-msgstr ""
+msgstr "OptionalInt"
 
 # 50fe8844c989445c8403780c4bd1d8c7
 # d607a295590f4477ae3c90d96c5b5008
@@ -423,7 +423,7 @@ msgstr "フィールドの型が :doc:`embeddable` の場合、フィールド�
 # ae5da0e935b14ff6aca617a0b5ef5038
 #: ../../entity.rst:342
 msgid "Transient"
-msgstr ""
+msgstr "Transient"
 
 # 7a5311df421f433a9a91fbc21f38f9ee
 #: ../../entity.rst:344
@@ -433,7 +433,7 @@ msgstr "エンティティに永続化したくないフィールドがある場
 # 8c01ecef49aa44bf92a02898cc916db7
 #: ../../entity.rst:352
 msgid "OriginalStates"
-msgstr ""
+msgstr "OriginalStates"
 
 # 8e4e532d32f74076ad4c9d5b1e03ec86
 #: ../../entity.rst:354

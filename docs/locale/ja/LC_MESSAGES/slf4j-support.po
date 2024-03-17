@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-10 10:39+0900\n"
-"PO-Revision-Date: 2024-03-16 23:31\n"
+"PO-Revision-Date: 2024-03-17 01:12\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -40,7 +40,7 @@ msgstr "Doma は基礎となるロギングフレームワークとして java u
 # 5426884b56f746b88c37aa722881edb1
 #: ../../slf4j-support.rst:15
 msgid "Gradle"
-msgstr ""
+msgstr "Gradle"
 
 # add97a594281434caa288a6f9447f474
 #: ../../slf4j-support.rst:17

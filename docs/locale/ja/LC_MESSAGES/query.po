@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-10 00:27+0900\n"
-"PO-Revision-Date: 2024-03-16 23:31\n"
+"PO-Revision-Date: 2024-03-17 01:12\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -116,7 +116,7 @@ msgstr "楽観的排他制御が有効な場合、バージョン番号と識別
 #: ../../query/update.rst:64
 #: ../../query/update.rst:229
 msgid "ignoreVersion"
-msgstr ""
+msgstr "ignoreVersion"
 
 #: ../../query/batch-delete.rst:55
 msgid "If ``ignoreVersion`` property within ``@BatchDelete`` annotation is ``true``, version number is not include in delete condition. ``BatchOptimisticLockException`` is not thrown, even if delete count is 0."
@@ -131,7 +131,7 @@ msgstr "``@BatchDelete`` アノテーション内の ``ignoreVersion`` プロパ
 #: ../../query/update.rst:77
 #: ../../query/update.rst:241
 msgid "suppressOptimisticLockException"
-msgstr ""
+msgstr "suppressOptimisticLockException"
 
 #: ../../query/batch-delete.rst:66
 msgid "In case of ``suppressOptimisticLockException`` property within ``@BatchDelete`` is ``true``, version number is include in delete condition but ``BatchOptimisticLockException`` is not thrown even if delete count is 0."
