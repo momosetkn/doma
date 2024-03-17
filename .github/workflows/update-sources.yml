@@ -22,7 +22,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install sphinx
-        run: pip install -U sphinx sphinx-intl
+        run: pip install -U sphinx
 
       - name: Change directory
         run: cd docs
@@ -32,6 +32,6 @@ jobs:
 
       - name: Update pot files
         run: crowdin update sources --no-progress
-        with:
+        env:
           CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
