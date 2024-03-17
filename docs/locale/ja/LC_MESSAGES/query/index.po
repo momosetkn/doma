@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 10:39+0900\n"
-"PO-Revision-Date: 2024-03-17 02:03\n"
+"POT-Creation-Date: 2024-03-17 05:50+0000\n"
+"PO-Revision-Date: 2024-03-17 05:55\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -17,8 +17,8 @@ msgstr ""
 "X-Crowdin-File-ID: 212\n"
 "Language: ja_JP\n"
 
-# 524567e166e0431facff186fac79cee0
 #: ../../query/index.rst:3
+#: f31fedaf7d8d41558b6693ef1aa40cc7
 msgid "Queries"
 msgstr "クエリ"
 

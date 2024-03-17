@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 10:39+0900\n"
-"PO-Revision-Date: 2024-03-17 00:49\n"
+"POT-Creation-Date: 2024-03-17 05:50+0000\n"
+"PO-Revision-Date: 2024-03-17 05:55\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -17,204 +17,204 @@ msgstr ""
 "X-Crowdin-File-ID: 204\n"
 "Language: ja_JP\n"
 
-# c2ae03084f7e43ba89fb430e404d7978
 #: ../../query/delete.rst:3
+#: 0d79deb9949742ec88cf36a6713cfb7f
 msgid "Delete"
 msgstr "削除"
 
-# 08b31269dae44e6382e0a88dd541e50e
 #: ../../query/delete.rst:6
+#: 9c60e4379e564d8d944677ae9e4e86c3
 msgid "Contents"
 msgstr "コンテンツ"
 
-# d9afa595a58b413bae7b777ab4c92f69
 #: ../../query/delete.rst:8
+#: 5fd54d0046a54edea2d6c2309d54223a
 msgid "Annotate with ``@Delete`` to Dao method for execute delete."
 msgstr "削除を実行するにはDAOメソッドに ``@Delete`` アノテーションを指定します。"
 
-# 6bb42a96965745ac97eca46e7d0ff06c
 #: ../../query/delete.rst:18
+#: faf0e088de814e0b8a1fb1e6019e5b3e
 msgid "By default DELETE statement is auto generated. You can mapping arbitrary SQL file by specifying ``true`` to ``sqlFile`` property within the ``@Delete`` annotation."
 msgstr "デフォルトでは、DELETE ステートメントが自動生成されます。 ``@Delete`` アノテーション内の ``sqlFile`` プロパティに ``true`` を指定することで、任意の SQL ファイルをマッピングできます。"
 
-# a143a2894d424899a637c9741a8cc2e3
 #: ../../query/delete.rst:21
+#: 9941c966a6dc4034a994674752aafbaa
 msgid "The ``preDelete`` method of entity listener is called when before executing delete if the entity listener is specified at entity class parameter. Also the ``postDelete`` method of entity listener is called when after executing delete."
 msgstr "パラメータがエンティティクラスであり、エンティティクラスのにエンティティリスナーが指定されている場合、削除を実行する前にエンティティリスナーの ``preDelete`` メソッドが呼び出されます。また、削除実行後にはエンティティリスナーの ``postDelete`` メソッドが呼び出されます。"
 
-# fb1bef7a1d38416b8b8be0a2ec9a6845
 #: ../../query/delete.rst:25
+#: 5784f70936764ba394ff687abd361f4e
 msgid "Return value"
 msgstr "戻り値"
 
-# ce6d7350b4e2437d962009100d712bf3
 #: ../../query/delete.rst:27
+#: 7d13963eca7444ddb53254c9e8bbab38
 msgid "Return value must be ``org.seasar.doma.jdbc.Result`` that make the entity class an element if parameter is immutable entity class."
 msgstr "戻り値は、パラメータが不変のエンティティクラスの場合、エンティティクラスを要素とする``org.seasar.doma.jdbc.Result`` である必要があります。"
 
-# f573e3ad9f04433386223f842fbf2850
 #: ../../query/delete.rst:29
+#: b2b3fb4496d946a0bc3f23a6e9ab6fb0
 msgid "Return value must be ``int`` that is represented updated count if the above conditions are not satisfied."
 msgstr "上記の条件が満たされない場合、戻り値は更新された件数を表す ``int`` でなければなりません。"
 
-# 80d5c11ba5d6454b878f45234cd6f025
 #: ../../query/delete.rst:32
+#: 87fb9270abc84a37a097ebb272c448fc
 msgid "Delete by auto generated SQL"
 msgstr "自動生成されたSQLによる削除"
 
-# 7eac667aeb7f4ac4a8b4e050fbef01b6
 #: ../../query/delete.rst:34
+#: ae1dfdec80274ef5bcb4922b1c0c54e2
 msgid "Parameter type must be entity class. Specifiable parameter is only one. Parameter must not be ``null``."
 msgstr "パラメータのタイプはエンティティ クラスである必要があります。指定できるパラメータは 1 つだけです。パラメータは ``null`` であってはなりません。"
 
-# 0f01535ad2e947a49689b4753d261dc1
 #: ../../query/delete.rst:47
+#: 239e44c260e84ffaa5694066a551fe09
 msgid "Version number and optimistic concurrency control in auto generated SQL"
 msgstr "自動生成された SQL におけるバージョン番号と楽観的排他制御"
 
-# 2f798728824c4893b63ca33e19ed3851
-# 064550c053a14268bfccf39a46d14c8c
 #: ../../query/delete.rst:49
 #: ../../query/delete.rst:106
+#: 37d655854f21450aa1ad43c951a06998
+#: 27e4db1ba984449787bf66dac8f0fbed
 msgid "Optimistic concurrency control is executed if you satisfied below conditions."
 msgstr "以下の条件を満たした場合、楽観的排他制御が実行されます。"
 
-# aa591c7565f5478b807bbf1697437694
 #: ../../query/delete.rst:51
+#: 814bba954ad44439894c19158056e844
 msgid "Entity class within parameter has property that is annotated with @Version"
 msgstr "パラメータ内のエンティティクラスは @Version アノテーションが付けられたプロパティを持つ"
 
-# 561c0f3204b64683a28146a767d9ff52
 #: ../../query/delete.rst:52
+#: aa40c4210df945c49aa390608642887f
 msgid "The ignoreVersion element within @Delete annotation is false"
 msgstr "@Delete アノテーション内のignoreVersion要素がfalseである"
 
-# 5de0b5a701b844bb80539752439c4261
 #: ../../query/delete.rst:54
+#: cf7263001d714b95818d1a1d293c6644
 msgid "If optimistic concurrency control is enable, version number is included with identifier in delete condition. ``OptimisticLockException`` representing optimistic concurrency control failure is thrown, if at that time delete count is 0."
 msgstr "楽観的排他制御が有効な場合、削除条件にはバージョン番号が識別子に含まれます。削除件数が 0 の場合、楽観的排他制御の失敗を表す ``OptimisticLockException`` がスローされます。"
 
-# caee0e1dfc854ef6856f54f14f39bd5a
-# 24f17955b74e4d609700534e468c4b74
 #: ../../query/delete.rst:58
 #: ../../query/delete.rst:124
+#: 72dfc7dbb89041509d05bda95cde3730
+#: 8b094345125f4e9e80090198f71c15f9
 msgid "ignoreVersion"
 msgstr "ignoreVersion"
 
-# 2ad5413e56d0490da08a538534863f02
 #: ../../query/delete.rst:60
+#: 7aa5770cae87401f9478fb45652f9621
 msgid "If ``ignoreVersion`` property within ``@Delete`` annotation is true, version number is not include in delete condition. ``OptimisticLockException`` is not thrown in this case, even if delete count is 0."
 msgstr "``@Delete`` アノテーション内の ``ignoreVersion`` プロパティが ``true`` の場合、バージョン番号は削除条件に含まれません。この場合、削除件数が 0 であっても ``OptimisticLockException`` はスローされません。"
 
-# 8665d435765049aaa4909ffad50df663
-# 3c49146d7a4d447da4eed9e4f4822127
 #: ../../query/delete.rst:69
 #: ../../query/delete.rst:135
+#: a66b51cf633646fb9e6599ef76080b08
+#: d538734192474cde90e4c0842069d3d4
 msgid "suppressOptimisticLockException"
 msgstr "suppressOptimisticLockException"
 
-# 4c4ebbb16c5e4b0b928157985ff10ba8
 #: ../../query/delete.rst:71
+#: 0252ac0af3434d5385307a3da48a88f1
 msgid "If ``suppressOptimisticLockException`` property within ``@Delete`` is ``true``, version number is included in delete condition. But in this case ``OptimisticLockException`` is not thrown even if delete count is 0."
 msgstr "``@Delete`` アノテーション内の ``suppressOptimisticLockException`` プロパティが ``true`` の場合、削除条件にバージョン番号が含まれます。ただしこの場合、削除件数が 0 であっても ``OptimisticLockException`` はスローされません。"
 
-# 444ff9fcbd244f9e9f256b50087aa34d
 #: ../../query/delete.rst:80
+#: e14b56dd02cc429e926904488b3483c9
 msgid "Delete by SQL file"
 msgstr "SQLファイルによる削除"
 
-# a8241703ca90465c9345d113598fdc3d
 #: ../../query/delete.rst:82
+#: 36c0bfccd5564251b8fe962bd7f6dbbd
 msgid "To execute deleting by SQL file, you set ``true`` to ``sqlFile`` property within ``@Delete`` annotation and prepare SQL file that correspond method."
 msgstr "SQLファイルによる削除を実行するには、 ``@Delete`` アノテーション内の ``sqlFile`` プロパティに ``true`` を設定し、対応するSQLファイルを用意します。"
 
-# 4d368c57668242dba99a63193a6f3801
 #: ../../query/delete.rst:85
+#: 0c876728a2c14102995f840f9e50f79f
 msgid "You can use arbitrary type as parameter. Specifiable parameters count is no limit. You can set ``null`` to parameter if parameter type is basic type or domain class. Parameter must not be ``null`` if the type is other than that."
 msgstr "パラメータとして任意の型を使用できます。指定できるパラメータの数に制限はありません。パラメータの型が基本型またはドメインクラスの場合、パラメータに ``null`` を設定できます。型がそれ以外の場合、パラメータは ``null`` であってはなりません。"
 
-# ef71ca42cedc42a38231910e532d4cf0
 #: ../../query/delete.rst:90
+#: 9debddeed9da4937b4fd9389a7c686be
 msgid "Entity listener method is not called even if the entity listener is specified to entity."
 msgstr "エンティティにエンティティリスナを指定しても、エンティティリスナのメソッドは呼び出されません。"
 
-# 7ed1f40f13934844a890012e3665e50f
 #: ../../query/delete.rst:97
+#: 4e7bb5c48d474869a550b835895c31ad
 msgid "For example, you describe SQL file like below to correspond above method."
 msgstr "たとえば、上記のメソッドに対応するSQLは次のように記述します。"
 
-# 1cd184c2fc384832aaacb4f535be1b84
 #: ../../query/delete.rst:104
+#: e354f73c8693494cb9ac7bfc53567417
 msgid "Version number and optimistic concurrency control in  SQL File"
 msgstr "SQL ファイルにおけるバージョン番号と楽観的排他制御"
 
-# fdfc2dc6cf3640fa880c468ceec20163
 #: ../../query/delete.rst:108
+#: 8549ec47a15d407b81c6e81296c3236b
 msgid "Entity class is included in parameter"
 msgstr "エンティティクラスがパラメータに含まれる"
 
-# d947ba76c41d4347a682f3aa6319b440
 #: ../../query/delete.rst:109
+#: bbea1ae427664761b45f53d22ece82b7
 msgid "Entity class at first from the left within parameter has property that is annotated with @Version"
 msgstr "パラメータ内の左から最初のEntityクラスが @Version アノテーションが付与されたプロパティを持つ"
 
-# 70ebd9da657745089e2b49bbea133619
 #: ../../query/delete.rst:110
+#: abecf2972afd42c2a6214d9181bb7611
 msgid "The ignoreVersion property within @Delete annotation is false"
 msgstr "@Delete アノテーション内のignoreVersion プロパティが false である"
 
-# a3ef67541de748e19fd0e3c87c4309b4
 #: ../../query/delete.rst:111
+#: f48063e9b6dd4130a41300c1b1281483
 msgid "The suppressOptimisticLockException property within @Delete annotation is false"
 msgstr "@Delete アノテーション内のsuppressOptimisticLockException プロパティが false である"
 
-# 745cfcafa9a54040ae7c1ba912b5e0d8
 #: ../../query/delete.rst:113
+#: f716579756da44998e707af26f38e6dd
 msgid "However, describing to SQL file for Optimistic concurrency control SQL is application developer's responsibility. For example like below SQL, you must specify version number in WHERE clauses."
 msgstr "ただし、楽観的排他制御のためのSQLを記述するのはアプリケーション開発者の責任となります。たとえば、以下の SQL のように、WHERE 句にバージョン番号を指定する必要があります。"
 
-# cca62d6a1acc4034be2a6f2302c45f38
 #: ../../query/delete.rst:120
+#: cf9d42cfe1d74dc48accd21fa87fd044
 msgid "``OptimisticLockException`` representing optimistic concurrency control failure is thrown, if this SQL delete count is 0. ``OptimisticLockException`` is not thrown if delete count is not 0."
 msgstr "この SQL 削除数が 0 の場合、楽観的排他制御の失敗を表す ``OptimisticLockException`` がスローされます。削除件数が 0 でない場合は、 ``OptimisticLockException`` はスローされません。"
 
-# 2a89b37487184799a766262e75b93caa
 #: ../../query/delete.rst:126
+#: 3fa69963ff0e425ebc1848bfa1cc7ba2
 msgid "If ``ignoreVersion`` property within ``@Delete`` annotation is ``true``, ``OptimisticLockException`` is not thrown even if delete count is 0."
 msgstr "``@Delete`` アノテーション内の ``ignoreVersion`` プロパティが ``true`` の場合、削除件数が何であれ ``OptimisticLockException`` はスローされません。"
 
-# 74123d46986c404a99b34b2f7df193ad
 #: ../../query/delete.rst:137
+#: 8ac3922057c542d18b5c5a4833f0d104
 msgid "If ``suppressOptimisticLockException`` property within ``@Delete`` annotation is ``true``, ``OptimisticLockException`` is not thrown even if delete count is 0."
 msgstr "``@Delete`` アノテーション内の ``suppressOptimisticLockException`` プロパティが ``true`` の場合、削除件数が何であっても ``OptimisticLockException``  はスローされません。"
 
-# 26f57c08f17b42beba915ce4c56d9c91
 #: ../../query/delete.rst:146
+#: 27925373fe9240f49efde0d016f88ea8
 msgid "Query timeout"
 msgstr "クエリタイムアウト"
 
-# 88ea606c091a4c6eb2cfbbbea50251d5
 #: ../../query/delete.rst:149
+#: 41903ec5209c404982c1b3cdb9ec41b6
 msgid "You can specify seconds of query timeout to ``queryTimeout`` property within ``@Delete`` annotation."
 msgstr "``@Delete`` アノテーション内の `queryTimeout` プロパティにクエリタイムアウトの秒数を指定できます。"
 
-# 79581299ae294a4992ba8e526cdf4ba2
 #: ../../query/delete.rst:156
+#: dbd39a29870f4c5082b7fa9eebf66870
 msgid "This specifying is applied regardless of with or without using sql file. Query timeout that is specified in :doc:`../config` is used if ``queryTimeout`` property is not set value."
 msgstr "この指定はSQLファイルの使用の有無に関わらず適用されます。 ``queryTimeout`` プロパティの値が設定されていない場合は、 :doc:`../config` で指定されたクエリタイムアウトが使用されます。"
 
-# 77925cefad6b4dcbb183209976dccbe1
 #: ../../query/delete.rst:160
+#: 11d7c7ac37124eb4a869d2c7f295be38
 msgid "SQL log output format"
 msgstr "SQLログの出力形式"
 
-# a9e8b66cab30470db4efa3b4e53f21b9
 #: ../../query/delete.rst:162
+#: 28c08b6e913e4b7597084b25d2632201
 msgid "You can specify SQL log output format to ``sqlLog`` property within ``@Delete`` annotation."
 msgstr "SQLログの出力形式は ``@Delete`` アノテーション内の ``sqlLog`` プロパティに指定できます。"
 
-# d9d7a3aa08374682ae15ac823eb5fcbc
 #: ../../query/delete.rst:169
+#: 584df3a655b24192bdce9a320ca189f3
 msgid "``SqlLogType.RAW`` represent outputting log that is sql with a binding parameter."
 msgstr "``SqlLogType.RAW`` はバインドパラメータ付きの SQL をログ出力することを表します。"
 

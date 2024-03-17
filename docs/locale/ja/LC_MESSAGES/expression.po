@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 10:39+0900\n"
-"PO-Revision-Date: 2024-03-17 01:12\n"
+"POT-Creation-Date: 2024-03-17 05:50+0000\n"
+"PO-Revision-Date: 2024-03-17 05:55\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -17,666 +17,666 @@ msgstr ""
 "X-Crowdin-File-ID: 178\n"
 "Language: ja_JP\n"
 
-# 4de3581580c043c3912e4e9ee0350911
 #: ../../expression.rst:3
+#: 494c1256475d4efba5dd31f07bfd93f3
 msgid "Expression language"
 msgstr "式言語"
 
-# bc7f2625a50c4ed1823e56f6ba5d48c7
 #: ../../expression.rst:6
+#: 53b2af73360042939b7a0101fd59ea5a
 msgid "Contents"
 msgstr "コンテンツ"
 
-# 0ff8c6a118a04cadb4f7a7503bfd7d50
 #: ../../expression.rst:8
+#: e4cf19c2778941649640912f22733bdf
 msgid "You can write simple expressions in directives of :doc:`sql`. The grammar is almost the same as Java. However, not everything is possible that Java can do."
 msgstr ":doc:`sql` のディレクティブ内に簡単な式を記述できます。文法はJavaとほぼ同じです。ただし、Java でできることの全てができるわけではありません。"
 
-# f2c6bb26f74d496aac744d0919a02fbc
 #: ../../expression.rst:14
+#: 0fa977df8697419087815219e608e4a5
 msgid "Especially, the big difference is how to use optional types like ``java.util.Optional``. In the expression, a value of ``Optional`` type is always converted to a value of the element type automatically. For example a value of the ``Optional<String>`` type is treated as a value of ``String`` type. Therefore, we can't call methods of ``Optional`` type, nor do we call methods which have an ``Optional`` type in the parameters."
 msgstr "特に大きな違いは、``java.util.Optional`` のようなオプション型の使い方です。式の中では、``Optional`` 型の値は常に要素型の値に自動的に変換されます。たとえば、``Optional<String>`` 型の値は、``String`` 型の値として扱われます。したがって、 ``Optional`` 型のメソッドを呼び出すことはできません。また、パラメータに ``Optional`` 型を持つメソッドを呼び出すこともできません。"
 
-# 87f8aee501ee414f922c1c17433f04db
 #: ../../expression.rst:21
+#: 9d67b020f9654cbeb208ce65513b5466
 msgid "When you want to check existence of a value, use ``/*%if optional != null */`` instead of ``/*%if optional.isPresent() */``."
 msgstr "値の存在を確認したい場合は、``/*%if optional.isPresent() */`` ではなく ``/*%if optional != null */`` を使用します。"
 
-# 2aa2a3a5a01e44aa92f29f2b806fae90
 #: ../../expression.rst:24
+#: 7384c932c77c471eb5931d4adfaa61f6
 msgid "The same is true for ``java.util.OptionalInt``, ``java.util.OptionalDouble``, and ``java.util.OptionalLong``."
 msgstr "``java.util.OptionalInt``、``java.util.OptionalDouble``、および ``java.util.OptionalLong`` についても同様です。"
 
-# 497efa5bbecc40b5b7d07bb790d26519
 #: ../../expression.rst:28
+#: 1f410e2111884e0dbb3584ba15e5209e
 msgid "Literals"
 msgstr "リテラル"
 
-# eda93e6e48e54e15959d02664f8e9af8
 #: ../../expression.rst:30
+#: 59ea52e66b9b451ca49ebf2cf43e425c
 msgid "You can use the following literals:"
 msgstr "次のリテラルを使用できます。"
 
-# 74f5e5c8624440b5b1eea36c82183007
 #: ../../expression.rst:33
+#: f2366453a56442fa93a54bfc4995ffca
 msgid "Literal"
 msgstr "リテラル"
 
-# fcc991f332e64211a446e7480b0b2aff
 #: ../../expression.rst:33
+#: 39e68519828e4fb48edf555ea82e25f4
 msgid "Type"
 msgstr "型"
 
-# 99731c85f9ac4c53ace72bfb775ea27a
 #: ../../expression.rst:35
+#: 99e1f81f4009406db962dbaf92669306
 msgid "null"
 msgstr ""
 
-# ade31c68ba1b40c58822cb217493e82e
 #: ../../expression.rst:35
+#: 66e01692faf7458c98643108d4351f5d
 msgid "void"
 msgstr ""
 
-# f62697775a784ebd887251144fa0f386
 #: ../../expression.rst:37
+#: c573e992f96845ecb43f5d0dae340a7c
 msgid "true"
 msgstr ""
 
-# 67b2c8ea63ef413c9ca774f5507a7f49
-# 7928ddbebefc4f97b20741e0d0922b20
 #: ../../expression.rst:37
 #: ../../expression.rst:39
+#: 8f1e3dee39984ba89b4e510af8d0c8e2
+#: 3717f3b6bdc64a349f5aa5014440c3d4
 msgid "boolean"
 msgstr ""
 
-# 0c2ae1d9d8214bdc8a7bc25afc723e7c
 #: ../../expression.rst:39
+#: 8044db262704400fbaf55df3062fd1d8
 msgid "false"
 msgstr ""
 
-# dcc301f026394f198c137f15e66df2e7
 #: ../../expression.rst:41
+#: 54249b60f98a4e4cb1f41621e1fccc1e
 msgid "10"
 msgstr ""
 
-# 83357782dcbd4efbb44289ee4b0a6aee
 #: ../../expression.rst:41
+#: bd8af83a1e544c0587c932ad083106f5
 msgid "int"
 msgstr ""
 
-# 5fd51f9676c44bd59d4fca8c4e1b4d20
 #: ../../expression.rst:43
+#: ac711bc56e8940b4b4a20b1d8ae4c5df
 msgid "10L"
 msgstr ""
 
-# d1c5064d712b46c1b0c58870e79f90e4
 #: ../../expression.rst:43
+#: 846bde9354b544788b15c0c80e902ab4
 msgid "long"
 msgstr ""
 
-# 3fcd92fad7d342ecbcf1b5c68df98614
 #: ../../expression.rst:45
+#: a898f7fabfe2461996b6097d939e4222
 msgid "0.123F"
 msgstr ""
 
-# e151bdd1de9945dcb62ce644698c59e5
 #: ../../expression.rst:45
+#: 5f0838f431324e5895113ff4441bcc2f
 msgid "float"
 msgstr ""
 
-# f76df77b42b84a689b92040ed612a79f
 #: ../../expression.rst:47
+#: 920ac19d3f504d99b5bae5c11c682551
 msgid "0.123D"
 msgstr ""
 
-# e00ef544e5e541559d34a2c1657dc5da
 #: ../../expression.rst:47
+#: 05185dd975794b59a55da3312604d8bf
 msgid "double"
 msgstr ""
 
-# 67a87b8744e54f108b2dbb9a0a1ad9ff
 #: ../../expression.rst:49
+#: 61d03ab845654d4e9b3ae0803e95a763
 msgid "0.123B"
 msgstr ""
 
-# 0ed37d2131d64a5585d62e97836c6efe
 #: ../../expression.rst:49
+#: f9bf720a33f84bcaa5783075dcb9753e
 msgid "java.math.BigDecimal"
 msgstr ""
 
-# 127f7139c83d4b12a188ca5e06b34895
 #: ../../expression.rst:51
+#: 61588060915b42b095cb2c55b959f32c
 msgid "'a'"
 msgstr ""
 
-# 5c05363dd4a646d69ee82a03ac68eda0
-# e9144cca802145cd9c4bdea87458740f
 #: ../../expression.rst:51
 #: ../../expression.rst:155
+#: e3f3e9b5ce5b451592f1f6c0bd5e55d5
+#: 1cd943e5efbf4beb932f783f94efb0ed
 msgid "char"
 msgstr ""
 
-# 887e7f85e2964c46ad05cb599b35f289
 #: ../../expression.rst:53
+#: 05e0deea960d4093a9f00ae3e679d35e
 msgid "\"a\""
 msgstr ""
 
-# 989238687aad4606b3d171c9cdadfd9e
-# 9d77bf81cc27407ba498727eeab8ce49
 #: ../../expression.rst:53
 #: ../../expression.rst:153
+#: 5198906417204590a1e2927f58f835d4
+#: e3b6a93f808f450889fb38ee1a8e17c4
 msgid "java.lang.String"
 msgstr ""
 
-# a8e5a060495b4fa1bb47e4ac54f87aa0
 #: ../../expression.rst:56
+#: 31a9ba5a9b7549aab11308d9b4b7bb9a
 msgid "The numeral types are distinguished by suffix letters such as ``L`` or ``F`` at the end of the literals. The suffixes must be capital letters."
 msgstr "数値の種類は、リテラルの末尾にある ``L`` や ``F`` などの接尾辞によって区別されます。接尾辞は大文字である必要があります。"
 
-# eee5a66d8ac44cf0abe4ddeacb2041f3
 #: ../../expression.rst:67
+#: 80c4bbb69e1544709e1ec027cf45a9e2
 msgid "Comparison operators"
 msgstr "比較演算子"
 
-# 483c654caf8140d497752fd7660faab3
 #: ../../expression.rst:69
+#: 3343babcb16e4fe0aea11701ed51ca7a
 msgid "You can use the following comparison operators:"
 msgstr "次の比較演算子を使用できます。"
 
-# 90f6703c66d8418d8e1d19bb1aec5362
-# 4dced3546a55403dbedb06bb0631d4f6
-# 18e4b7680e69450d9df397cf5c823a94
 #: ../../expression.rst:72
 #: ../../expression.rst:104
 #: ../../expression.rst:126
+#: fefd36802b0347e09634367d4fa46e2b
+#: 62f70357ee0743d19c50dca25c3dccd2
+#: c1d673ee1e19430cb89917f50b1f5fd0
 msgid "Operator"
 msgstr "演算子"
 
-# 0e6122f801344f479b903294a38c2385
-# 419e406a9d6c4b6e821005592b2fcc38
-# 0f53087a704e4e8f8e927e3df529242b
 #: ../../expression.rst:72
 #: ../../expression.rst:104
 #: ../../expression.rst:126
+#: 7e535636bf034f55a5a7e20047da3690
+#: 6015d9d98a4c468fafcf50581680e30a
+#: e3e58a26bf5e4a29b05d5f490002bac0
 msgid "Description"
 msgstr "説明"
 
-# c63a37e619ff4e64bbfc79d70e05bc82
 #: ../../expression.rst:74
+#: 24ea33ab1d8c49d4a11d90ab7938b898
 msgid "=="
 msgstr ""
 
-# 6c4587240dcc403994915ac3ef6b90b8
 #: ../../expression.rst:74
+#: 9db91bfb39474f02a9a56a133bc00e0e
 msgid "Equal to operator"
 msgstr "等値演算子"
 
-# 8183f66747d14ffcaab30ab23a73a13f
 #: ../../expression.rst:76
+#: cdc85cd901d347d59e85340128118bdb
 msgid "!="
 msgstr ""
 
-# 20561d87adef411794ca5bcf01404430
 #: ../../expression.rst:76
+#: 39a257b975994220ad1bd6fcecf3d8ca
 msgid "Not equal to operator"
 msgstr "不等値演算子"
 
-# ac8efa9ff7414b8f8cbce66eeb333eda
 #: ../../expression.rst:78
+#: 85ab58dfdf554acdb0c9cd2323a14f06
 msgid "<"
 msgstr ""
 
-# 47ff8d852224457393444dc810e9afb8
 #: ../../expression.rst:78
+#: d811c88c64f848a0ad6d053e3c1a078c
 msgid "Less than operator"
 msgstr "小なり演算子"
 
-# c5eb4e5e757a4e8796c9d9a265f56686
 #: ../../expression.rst:80
+#: e1070afea4d541869a7778b3ad1828b4
 msgid "<="
 msgstr ""
 
-# 798037188aac413a8297d3ca8e1d5a35
 #: ../../expression.rst:80
+#: 8764831acb60460abceeff9286713b69
 msgid "Less than or equal to operator"
 msgstr "小なりイコール演算子"
 
-# 7c3c64c8709d4821b5f1f4ca0feb2e26
 #: ../../expression.rst:82
+#: 40061ae517164defb8842803ac45fed3
 msgid ">"
 msgstr ""
 
-# 9d58cbb42378496b99c35f9b7d967364
 #: ../../expression.rst:82
+#: f8a2b10bd3084372afc4b8ee7f5858d6
 msgid "Greater than operator"
 msgstr "大なり演算子"
 
-# 1e7547b7ae8249ebbe9937b9bf928924
 #: ../../expression.rst:84
+#: e025c1ad0bed43b48c047feabc17743c
 msgid ">="
 msgstr ""
 
-# 86e809ded7be4d6baf3468e3c586df2c
 #: ../../expression.rst:84
+#: ab2492a4f41b4895bf2f3aa7516d9797
 msgid "Greater than or equal to operator"
 msgstr "大なりイコール演算子"
 
-# 6236b855be0043f29d0c3f4e574ddfd7
 #: ../../expression.rst:87
+#: 1643267ebc8047a2a7f6e5d6857d3d9f
 msgid "To use comparison operators, operands must implement ``java.lang.Comparable``."
 msgstr "比較演算子を使用するには、被演算子で ``java.lang.Comparable`` を実装する必要があります。"
 
-# 60f0c38b8c394216b3c2e20fe18c63e0
 #: ../../expression.rst:89
+#: 12e4e5b9598b4b2cba8ff37ffb00304f
 msgid "The operands for ``<``, ``<=``, ``>`` and ``>=`` must not be ``null``."
 msgstr "``<``, ``<=``, ``>`` と ``>=`` の 被演算子 は ``null`` であってはなりません。"
 
-# 5ad2a0db66744fcbb5dcad8b706f1f84
 #: ../../expression.rst:99
+#: 2c5d51fe4ee64ee3abc29bfd46ee0484
 msgid "Logical operators"
 msgstr "論理演算子"
 
-# d9a852a35a6f4c16827e37bc207ba3a7
 #: ../../expression.rst:101
+#: be93e704cf8f4ba3a0b3c2ffda2dab85
 msgid "You can use the following logical operators:"
 msgstr "次の論理演算子を使用できます。"
 
-# 5422f055a6994cc2914ac2843a2efc89
 #: ../../expression.rst:106
+#: c8f7b532eca2495d8a10d673ca7a15aa
 msgid "!"
 msgstr ""
 
-# ffefaeb12009401785959e2138bc7e8e
 #: ../../expression.rst:106
+#: 7697069342eb4babad8316feb3522417
 msgid "Logical complement operator"
 msgstr "論理否定演算子"
 
-# f7317b111b9f4758ba6cf513e9be6138
 #: ../../expression.rst:107
+#: b9ff115d7f1645378cdb0409a37b7d30
 msgid "&&"
 msgstr ""
 
-# 2e624f129d4f4187aca96158910c354a
 #: ../../expression.rst:107
+#: dd81a03d1aa648b3ae6e64c22920785f
 msgid "Conditional-AND operator"
 msgstr "論理積演算子"
 
-# 2385b840544b49ddbc9f61b38d76f138
 #: ../../expression.rst:108
+#: e5c15a7b8d28423aacbe48719201d52e
 msgid "||"
 msgstr ""
 
-# 787a8d8d2422458c95f2f1c8f64fec03
 #: ../../expression.rst:108
+#: 57cbce48f41e4f849e0244a55a1bee9f
 msgid "Conditional-OR operator"
 msgstr "論理和演算子"
 
-# b439cdcda5f14355a2a158158f416e63
 #: ../../expression.rst:111
+#: 6abbae8a666e480f93ae29ea14fcdd99
 msgid "With parentheses, you can override the precedence of operators."
 msgstr "括弧を使用すると、演算子の優先順位をオーバーライドできます。"
 
-# 6f9a6a1e26d64946879c02d69fefd199
 #: ../../expression.rst:121
+#: 83bcc057e4ab4893ae49f66ebf7f66cd
 msgid "Arithmetic operators"
 msgstr "算術演算子"
 
-# 543f4c10140e42efb5b1d1c229a4565e
 #: ../../expression.rst:123
+#: ccdbe8689f6840e1ab32eee911fda698
 msgid "You can use the following arithmetic operators:"
 msgstr "次の算術演算子を使用できます。"
 
-# 7caad297a66a4782b82ccf961db60124
 #: ../../expression.rst:128
+#: 1a9795d7df394ae89169a78aea8b5e87
 msgid "\\+"
 msgstr ""
 
-# 6dffc87d072647f7939c3da22cce3c33
 #: ../../expression.rst:128
+#: 0b5b18c083374f3cafac122cc95d7fa3
 msgid "Additive operator"
 msgstr "加法演算子"
 
-# 5930c6e1042a4fa79404747c4c3a3394
 #: ../../expression.rst:130
+#: 09fbd428b3294e088ff930d7c930d8d2
 msgid "\\-"
 msgstr ""
 
-# 78ba0e905cab42eb942c19616e3aa264
 #: ../../expression.rst:130
+#: 4c410730e9784f6ba096b1a68e785ee5
 msgid "Subtraction operator"
 msgstr "減算演算子"
 
-# 4f90f5c0165949b9b1375a2cd99f18b3
 #: ../../expression.rst:132
+#: 4f45586c630741928e48c815d9b44402
 msgid "\\*"
 msgstr ""
 
-# e2e970f1ab864c59b153cbb2a51eb762
 #: ../../expression.rst:132
+#: 2e67afa31a734f6aad084bf13692c88b
 msgid "Multiplication operator"
 msgstr "乗算演算子"
 
-# 7fa91b5e69cb446181e105858818bce7
 #: ../../expression.rst:134
+#: 6edae61404aa46a0a78c4e15ca06fe7c
 msgid "/"
 msgstr ""
 
-# df50d3074238479f939fbb84a025ed09
 #: ../../expression.rst:134
+#: a860769510844c8abb0fdff8127ea194
 msgid "Division operator"
 msgstr "除算演算子"
 
-# 0010cc9a08154d6eb565d2346c7ff752
 #: ../../expression.rst:136
+#: bd3bdb68c8a24c10874d432755dd1d13
 msgid "%"
 msgstr ""
 
-# d2adaa515f34482a8089d328a7979335
 #: ../../expression.rst:136
+#: 1e4578c931084be783d02e4d20e5f88d
 msgid "Remainder operator"
 msgstr "剰余演算子"
 
-# 56cef2d137b4478c8be2b731bfe48a39
 #: ../../expression.rst:139
+#: 4abccc0d8a5d4849a00699092a56a0a6
 msgid "Operands must be numeric type."
 msgstr "被演算子は数値型である必要があります。"
 
-# 5c7108e5001c4362a810f4c246822001
 #: ../../expression.rst:147
+#: 8f14ae2a99c445db8f561925cd387ac1
 msgid "String concatenation operator"
 msgstr "文字列連結演算子"
 
-# 13a5c94223624ca78563d3a25080c4e9
 #: ../../expression.rst:149
+#: 4f6b455629dc4106aeac2872d980d0d9
 msgid "You can concatenate characters using a concatenation operator ``+``."
 msgstr "連結演算子 ``+`` を使用して文字を連結できます。"
 
-# 711ccc7c27684a5398060182556a6c5e
 #: ../../expression.rst:151
+#: 7933abbed17649afabc7290e8e2ec498
 msgid "The operand must be one of the following types:"
 msgstr "被演算子は次のいずれかのタイプである必要があります。"
 
-# d9a57977961b4dc9a4fbb34cd2108467
 #: ../../expression.rst:154
+#: 7af215aa8af644ddb484be20ac218f5a
 msgid "java.lang.Character"
 msgstr ""
 
-# afaf6c31fc134318aa72cd23c44c3384
 #: ../../expression.rst:163
+#: ef2c74abccfd4749bd641f961c735e16
 msgid "Calling instance methods"
 msgstr "インスタンスメソッドの呼び出し"
 
-# ecd86d5cb7a145e3929b45c6b4a36d03
 #: ../../expression.rst:165
+#: 59a298366267478d8b6f41bcc584003f
 msgid "You can call instance methods with the method names separated by dots ``.``. The method visibility must be public."
 msgstr "メソッド名をドット ``.`` で区切ってインスタンスメソッドを呼び出すことができます。メソッドの可視性はパブリックである必要があります。"
 
-# 4223a335e7f14964ba1df14ccccd228c
 #: ../../expression.rst:175
+#: 3e7142327e8d4372b3d228765cb24f86
 msgid "If the method has no argument, specify ``()`` after the method name."
 msgstr "メソッドに引数がない場合は、メソッド名の後に ``()`` を指定します。"
 
-# 13418dc8c5914f3dba36ba5716eccb15
 #: ../../expression.rst:185
+#: 20f85839de974e14b2e1845fb38da16d
 msgid "Accessing to instance fields"
 msgstr "インスタンスフィールドへのアクセス"
 
-# 2d753b4fa3df45f0a2ff357de2a89ebd
 #: ../../expression.rst:187
+#: bce840ecdf424ea4b90fbb759835b084
 msgid "You can access instance fields with the field names separated by dots ``.``. Even if the visibility is private, you can access it."
 msgstr "フィールド名をドット ``.`` で区切ってインスタンスフィールドにアクセスできます。可視性が非公開であっても、アクセスできます。"
 
-# 9f6f53290048485397152930c7506b3f
 #: ../../expression.rst:196
+#: fdc3ca9492894031a7ec9c634703f84a
 msgid "Calling static methods"
 msgstr "静的メソッドの呼び出し"
 
-# 2250faee5d994109aa9bfb8c30d4b577
 #: ../../expression.rst:198
+#: ff3623193e6941e7ac57387cdf6383ad
 msgid "You can call static methods by continuing the method names with the fully qualified class names enclosed in ``@``. The method visibility must be public."
 msgstr "静的メソッドを呼び出すには、 ``@`` で囲んだ完全修飾クラス名をメソッド名に続けます。メソッドの可視性はパブリックである必要があります。"
 
-# baea86aa1d5b49dd8a48208168997b6e
 #: ../../expression.rst:210
+#: 25f37b8d9f904d9bb0e1b27979336508
 msgid "Accessing to static fields"
 msgstr "静的フィールドへのアクセス"
 
-# e2de579110cf42be93b1cd1b5e7cf0e1
 #: ../../expression.rst:212
+#: 053bf663c2454b0d8319be275c432f1a
 msgid "You can access static fields by continuing the field name with the fully qualified class name enclosed in ``@``. Even if the visibility is private, you can access it."
 msgstr "静的フィールドにアクセスするには、フィールド名に ``@`` で囲まれた完全修飾クラス名を続けます。可視性が非公開であっても、アクセスできます。"
 
-# 06e136055d8e40979d87052561070cd0
 #: ../../expression.rst:224
+#: af9c5043006f447d86b915064f937791
 msgid "Using built-in functions"
 msgstr "組み込み関数の使用"
 
-# bd0157b9ffd549158b087f841b986bad
 #: ../../expression.rst:226
+#: 0bed16085a1049feba50414f4490bbf9
 msgid "Built-in functions are utilities mainly for changing values of binding variables before binding them to SQL."
 msgstr "組み込み関数は、主に SQL にバインドする前にバインド変数の値を変更するためのユーティリティです。"
 
-# 3fdc9175a29b4687ba04199272a932f9
 #: ../../expression.rst:229
+#: 12ec9e871a0a486fb52416e2e161afc7
 msgid "For example, when you run a prefix search with a LIKE clause, you can write like this:"
 msgstr "たとえば、LIKE 句を使用して前方検索を実行する場合は、次のように記述できます。"
 
-# fe4e2ea5371d4013842ee84e76aa1583
 #: ../../expression.rst:237
+#: fbe1ff989d1743b1b315ff7463c54285
 msgid "``@prefix(employee.employeeName)`` means that we pass ``employee.employeeName`` to the ``@prefix`` function. The ``@prefix`` function converts the character sequence which is received by the parameter to a string for forward match search. It also escapes special characters. For example, if the value of ``employee.employeeName`` is ``ABC``, it's converted to ``ABC%``. If the value of ``employee.employeeName`` contains ``%`` such as ``AB%C``, the ``%`` is escaped with a default escape sequence ``$``, therefore the value is converted to ``AB$%C%``."
 msgstr "``@prefix(employee.employeeName)`` は、``@prefix`` 関数に ``employee.employeeName`` を渡すことを意味します。 ``@prefix`` 関数はパラメータで受け取った文字列を前方一致検索用の文字列に変換します。特殊文字もエスケープされます。たとえば、 ``employee.employeeName`` の値が ``ABC`` の場合、 ``ABC%`` に変換されます。 ``employee.employeeName`` の値に ``AB%C`` などの ``%`` が含まれている場合、その ``%`` はデフォルトのエスケープシーケンス ``$`` でエスケープされるため、値は ``AB$%C%`` に変換されます。"
 
-# be8f0b58c67845ffb261c2823412db2f
 #: ../../expression.rst:247
+#: 1e535d4a51a84a6a903858001e85d43f
 msgid "You can use following function signatures:"
 msgstr "次の関数シグネチャを使用できます。"
 
-# a956a830a8f64668bf28edaa68980475
 #: ../../expression.rst:253
+#: 5bc4724d2d314649b3c6faed8acf111e
 msgid "String @escape(CharSequence text, char escapeChar = '$')"
 msgstr ""
 
-# 95518d9339714eabaef36cf6fadb4a4e
 #: ../../expression.rst:250
+#: 0c5fc13889d04c469b79abad6b3ae372
 msgid "Escapes the character sequence for LIKE operation. The return value is a string which is a result of escaping the character sequence. If ``escapeChar`` isn't specified, ``$`` is used as a default escape sequence. It returns ``null`` if you pass ``null`` as a parameter."
 msgstr "LIKE 操作の文字シーケンスをエスケープします。戻り値は文字列をエスケープした結果の文字列です。 ``escapeChar`` が指定されていない場合、デフォルトのエスケープシーケンスとして ``$`` が使用されます。パラメータとして ``null`` を渡すと ``null`` を返します。"
 
-# 8be91e08b7af430bb65ad553c7165f86
 #: ../../expression.rst:260
+#: 0075ece9430f41599a053f53ed3c3fa2
 msgid "String @prefix(CharSequence prefix, char escapeChar = '$')"
 msgstr ""
 
-# 2d17a2741c0f4331b2d3e6c4bf804dba
 #: ../../expression.rst:256
+#: 6afa10753e24406cb6e3e3e1513e74a6
 msgid "Converts the character sequence for prefix search. The return value is a string which is a result of escaping the character sequence and adding a wild card character at the end. If ``escapeChar`` isn't specified, ``$`` is used as a default escape sequence. It returns ``null`` if you pass ``null`` as a parameter."
 msgstr "前方一致検索用の文字列へ変換します。戻り値は、文字シーケンスをエスケープし、末尾にワイルドカード文字を追加した結果の文字列です。 ``escapeChar`` が指定されていない場合、デフォルトのエスケープシーケンスとして ``$`` が使用されます。パラメータとして ``null`` を渡すと ``null`` を返します。"
 
-# 255f5fd0525149a5bbf6f5008dd3471b
 #: ../../expression.rst:267
+#: ddd77c0267c3404d9b8d0f95083a6789
 msgid "String @infix(CharSequence infix, char escapeChar = '$')"
 msgstr ""
 
-# 57e253825c71435cb9c0a71128f46682
 #: ../../expression.rst:263
+#: 81a78dac29414485b7f52d5e110eefa9
 msgid "Converts the character sequence for infix search. The return value is a string which is a result of escaping the character sequence and adding wild card characters at the beginning and the end. If ``escapeChar`` isn't specified, ``$`` is used as a default escape sequence. It returns ``null`` if you pass ``null`` as a parameter."
 msgstr "中置検索用の文字列へ変換します。戻り値は、文字シーケンスをエスケープし、先頭と末尾にワイルドカード文字を追加した結果の文字列です。 ``escapeChar`` が指定されていない場合、デフォルトのエスケープシーケンスとして ``$`` が使用されます。パラメータとして ``null`` を渡すと ``null`` を返します。"
 
-# 2595c391387c4c648afbbaacad998e60
 #: ../../expression.rst:274
+#: 6c56f2e37fa047d3b2ff4fd99275378d
 msgid "String @suffix(CharSequence suffix, char escapeChar = '$')"
 msgstr ""
 
-# f8b3d453c3f24057a34b02e1f366726f
 #: ../../expression.rst:270
+#: 71d95f479579487192ceb238867029cc
 msgid "Converts the character sequence for suffix search. The return value is a string which is a result of escaping the character sequence and adding a wild card character at the beginning. If ``escapeChar`` isn't specified, ``$`` is used as a default escape sequence. It returns ``null`` if you pass ``null`` as a parameter."
 msgstr "接尾辞検索用の文字列へ変換します。戻り値は、文字シーケンスをエスケープし、先頭にワイルドカード文字を追加した結果の文字列です。 ``escapeChar`` が指定されていない場合、デフォルトのエスケープシーケンスとして ``$`` が使用されます。パラメータとして ``null`` を渡すと ``null`` を返します。"
 
-# adece1d304db48a39b08c7e68734c01c
 #: ../../expression.rst:279
+#: c8a91de5382f427287ef75117c1e3643
 msgid "java.util.Date @roundDownTimePart(java.util.Date date)"
 msgstr ""
 
-# 0d22f79de4974287b7a2dc146dce3702
-# 85464fab29f542cb9277b3f33455bde7
 #: ../../expression.rst:277
 #: ../../expression.rst:282
+#: 44d2a3c82745426cb2af73c48529629b
+#: 94e74c54584c41708212f1e10bdf1c88
 msgid "Rounds down the time part. The return value is a new Date which is rounded down the time part. It returns ``null`` if you pass ``null`` as a parameter."
 msgstr "時刻部分を切り捨てます。戻り値は、時刻部分を切り捨てた新しい日付です。パラメータとして ``null`` を渡すと ``null`` を返します。"
 
-# 88207eb3bd3e43fdb02d865fa8d0b6a7
 #: ../../expression.rst:284
+#: 41ec761c2f4640a694d590436e817ea7
 msgid "java.sql.Date @roundDownTimePart(java.sql.Date date)"
 msgstr ""
 
-# 602a053d9ed841e88f4442bbc200bede
 #: ../../expression.rst:289
+#: 523ca5db4ea64e62a69cd692436a6731
 msgid "java.sql.Timestamp @roundDownTimePart(java.sql.Timestamp timestamp)"
 msgstr ""
 
-# 9a3d5024508844db8d3dc4e15c545f52
 #: ../../expression.rst:287
+#: 561398f921a14b0e806c33b3ce6b4bd1
 msgid "Rounds down the time part. The return value is a new Timestamp which is rounded down the time part. It returns ``null`` if you pass ``null`` as a parameter."
 msgstr "時刻部分を切り捨てます。戻り値は、時刻部分を切り捨てた新しいタイムスタンプです。パラメータとして ``null`` を渡すと ``null`` を返します。"
 
-# 38b775d820854ac09719eee7a1bb57ac
 #: ../../expression.rst:294
+#: 127fa36d909f4e1bbed03d261eeeca9f
 msgid "java.time.LocalDateTime @roundDownTimePart(java.time.LocalDateTime localDateTime)"
 msgstr ""
 
-# 5b649b5e22214c5a894d7921fafa9244
 #: ../../expression.rst:292
+#: 25c7d13f26db47d5af58585c0108e7e3
 msgid "Rounds down the time part. The return value is a new LocalDateTime which is rounded down the time part. It returns ``null`` if you pass ``null`` as a parameter."
 msgstr "時刻部分を切り捨てます。戻り値は、時刻部分を切り捨てた新しい LocalDateTime です。パラメータとして ``null`` を渡すと ``null`` を返します。"
 
-# bb275acf299042838cacde96f34ad9b6
 #: ../../expression.rst:299
+#: d24d57eb5cfb4f0898a2282e1e9edf81
 msgid "java.util.Date @roundUpTimePart(java.util.Date date)"
 msgstr ""
 
-# df3f11ef2cf8448985e71503238869b8
-# da7c60cd9da84467881e7d4769474587
 #: ../../expression.rst:297
 #: ../../expression.rst:302
+#: 406db5d8724c4d5ebc1b785525cb9384
+#: db62a3df050b434bb5744d228e6e03ec
 msgid "Rounds up the time part. The return value is a new Date which is rounded up the time part. It returns ``null`` if you pass ``null`` as a parameter."
 msgstr "時刻部分を切り上げます。戻り値は、時刻部分を切り上げた新しい日付です。パラメータとして ``null`` を渡すと ``null`` を返します。"
 
-# 4089c6a6b1b74beda8ae4f261fda5619
 #: ../../expression.rst:304
+#: 15757cf75848486d84271bbcd3745137
 msgid "java.sql.Date @roundUpTimePart(java.sql.Date date)"
 msgstr ""
 
-# 6355d9bb88a44a7aa3f3c45ba572f574
 #: ../../expression.rst:309
+#: 92caa525d80245e59d9ba5670abe0b4d
 msgid "java.sql.Timestamp @roundUpTimePart(java.sql.Timestamp timestamp)"
 msgstr ""
 
-# 9b29b0e34ebf47d7804a7501f863c0c8
 #: ../../expression.rst:307
+#: 7281c9c5a3754daca6a4ed7cf5e86fc4
 msgid "Rounds up the time part. The return value is a new Timestamp which is rounded up the time part. It returns ``null`` if you pass ``null`` as a parameter."
 msgstr "時刻部分を切り上げます。戻り値は、時刻部分を切り上げた新しいタイムスタンプです。パラメータとして ``null`` を渡すと ``null`` を返します。"
 
-# e58acfff73b448b6967300f3569f56c0
 #: ../../expression.rst:314
+#: a80328cbabf245c49fa61b110e78265b
 msgid "java.time.LocalDateTime @roundUpTimePart(java.time.LocalDateTime localDateTime)"
 msgstr ""
 
-# 48f8ca54689743b88ee525d607cc4436
 #: ../../expression.rst:312
+#: bf460e2551994d74b9340d026c1fa1e4
 msgid "Rounds up the time part. The return value is a new LocalDateTime which is rounded up the time part. It returns ``null`` if you pass ``null`` as a parameter."
 msgstr "時間部分を切り上げます。戻り値は、時刻部分を切り上げた新しい LocalDateTime です。パラメータとして ``null`` を渡すと ``null`` を返します。"
 
-# 9bd01a639b134897a3b91f66fc7bae28
 #: ../../expression.rst:319
+#: 73bef6f0402743b88a1b40fdb4728f8a
 msgid "java.time.LocalDate @roundUpTimePart(java.time.LocalDate localDate)"
 msgstr ""
 
-# c899a2d6746840f8b511fe2a23671f3f
 #: ../../expression.rst:317
+#: 2c5e3ad30288457c834205b0fb062c60
 msgid "Returns the next day. The return value is a new LocalDate which is the next one after the argument. It returns ``null`` if you pass ``null`` as a parameter."
 msgstr "翌日返却。戻り値は、引数の次の新しい LocalDate です。パラメータとして ``null`` を渡すと ``null`` を返します。"
 
-# a2ade76dcc7440db80f0e1e257ff590f
 #: ../../expression.rst:322
+#: 9899a23253fb475e984b5472d8e97517
 msgid "boolean @isEmpty(CharSequence charSequence)"
 msgstr ""
 
-# 57ab4731eb624157bbbd6c428ebd11c6
 #: ../../expression.rst:322
+#: a03940a404e7455ab833d52eb0380b39
 msgid "Returns ``true`` if the character sequence is ``null`` or the length is ``0``."
 msgstr "文字シーケンスが ``null`` または長さが ``0`` の場合は ``true`` を返します。"
 
-# 521902ecd70f41af95dfccb980d0ce64
 #: ../../expression.rst:325
+#: bc9ef13c3c2747359e4c7e2c5a6ffad6
 msgid "boolean @isNotEmpty(CharSequence charSequence)"
 msgstr ""
 
-# ecc3f2a54d554abcba17e8fb40a10b68
 #: ../../expression.rst:325
+#: b2b8c84b133944a7b3c7af98658728e2
 msgid "Returns ``true`` if the character sequence isn't ``null`` and the length isn't ``0``."
 msgstr "文字シーケンスが ``null`` でなく、長さが ``0`` でない場合は ``true`` を返します。"
 
-# 0634b506e9ed495e99ab6dac924e1eab
 #: ../../expression.rst:329
+#: 33adc4a10efe44a08a3607d0c5b3d1c1
 msgid "boolean @isBlank(CharSequence charSequence)"
 msgstr ""
 
-# 23f205bc2e2248079c923d679255de15
 #: ../../expression.rst:328
+#: 1498ce2e1d93487aa1e008d2b5408efb
 msgid "Returns ``true`` only if the character sequence is ``null``, the length is ``0``, or the sequence is formed with whitespaces only."
 msgstr "文字シーケンスが ``null`` であるか、長さが ``0`` であるか、または文字シーケンスが空白のみで形成されている場合にのみ ``true`` を返します。"
 
-# c225b67f20904593ad2e6c3ad29e1fb6
 #: ../../expression.rst:333
+#: 8c9c5ea822934e9b8aeeee7f3abf2968
 msgid "boolean @isNotBlank(CharSequence charSequence)"
 msgstr ""
 
-# 12dddbe8faf64c378381bdaa17cdb4fa
 #: ../../expression.rst:332
+#: a46709ebc72a48ac89a73e698d65f7e0
 msgid "Returns ``true`` if the character sequence isn't ``null``, the length isn't ``0``, and the sequence isn't formed with whitespaces only."
 msgstr "文字列が ``null`` でなく、長さが ``0`` でなく、文字列が空白だけで形成されていない場合は ``true`` を返します。"
 
-# 13e332e7e29c4055a59ebf2fd4c43745
 #: ../../expression.rst:335
+#: 65a6596145de4591a014aa25180d8999
 msgid "These functions are correspond to the methods of ``org.seasar.doma.expr.ExpressionFunctions``."
 msgstr "これらの関数は ``org.seasar.doma.expr.ExpressionFunctions`` のメソッドに対応します。"
 
-# 2a3dfbb847d84ad9a1da8e5be61ae280
 #: ../../expression.rst:338
+#: afab685e28484652a7711c8611c90ec5
 msgid "Using custom functions"
 msgstr "カスタム関数の使用"
 
-# 7527f774c192476b8e019b97954d4f72
 #: ../../expression.rst:340
+#: a22e2428f7344230872dae5a90149e61
 msgid "You can define and use your own functions."
 msgstr "独自の関数を定義して使用できます。"
 
-# 67028b2d65e04d479d2556d0fb468efd
 #: ../../expression.rst:342
+#: c7021e578ec342ae80977af40254eff1
 msgid "You need to follow these settings when you use custom functions which you define by yourself:"
 msgstr "自分で定義したカスタム関数を使用する場合は、次の設定に従う必要があります。"
 
-# ed07c1340341486f8047795307882a0e
 #: ../../expression.rst:344
+#: 20e9d6d8d5154a95868e2c1ad32b9a13
 msgid "The function is defined as a method of a class which implements ``org.seasar.doma.expr.ExpressionFunctions``."
 msgstr "この関数は ``org.seasar.doma.expr.ExpressionFunctions`` を実装したクラスのメソッドとして定義される"
 
-# 5bc3f6f45c2f4f21929c34dc7050f08d
 #: ../../expression.rst:346
+#: bbac0f060bae4d49b3e988d92114995c
 msgid "The method is a public instance method."
 msgstr "このメソッドはパブリック インスタンス メソッドである"
 
-# 9915efe2570d415b97056f4a2adcc99d
 #: ../../expression.rst:347
+#: 1f38e283402b4a64af714b682d261cd2
 msgid "The class is registered as an option in :doc:`annotation-processing`. The key of the option is ``doma.expr.functions``."
 msgstr "このクラスは ``doma.expr.functions`` をキーとして :doc:`annotation-processing` のオプションに指定される"
 
-# 96ad441c41a64a4e8ddc7f3f0fce2636
 #: ../../expression.rst:349
+#: 9c6ed55b30104e6a96b6f17a09b8bcc6
 msgid "The instance of the class you create is used in an RDBMS dialect in your configuration class (The implementations of RDBMS dialect provided by Doma can receive ``ExpressionFunctions`` in the constructor)."
 msgstr "作成したクラスのインスタンスは SQLダイアレクト で使用される (Doma によって提供される ダイアレクト の実装は コンストラクタで ``ExpressionFunctions`` を受け取ることができる)"
 
-# 9d7cf6c5c8144618a406b5fd467c65a8
 #: ../../expression.rst:353
+#: aec6ba5813df41ceb2bb0ca47f4600be
 msgid "To call a custom function, add ``@`` at the beginning of the function name like built-in functions. For example, you can call ``myfunc`` function like this:"
 msgstr "カスタム関数を呼び出す場合は、組み込み関数と同様に関数名の先頭に ``@`` を付けます。たとえば、次のように ``myfunc`` 関数を呼び出すことができます。"
 

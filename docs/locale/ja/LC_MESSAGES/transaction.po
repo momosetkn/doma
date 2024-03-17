@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 10:39+0900\n"
-"PO-Revision-Date: 2024-03-17 01:12\n"
+"POT-Creation-Date: 2024-03-17 05:50+0000\n"
+"PO-Revision-Date: 2024-03-17 05:55\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -17,128 +17,128 @@ msgstr ""
 "X-Crowdin-File-ID: 172\n"
 "Language: ja_JP\n"
 
-# 55b69bbdf0a142f891d8affa8366d8db
 #: ../../transaction.rst:3
+#: f7475ce5ad5b4fb896d97f70a8b67785
 msgid "Transaction"
 msgstr "トランザクション"
 
-# b349dcffffb440a283c073bc46cbb502
 #: ../../transaction.rst:6
+#: 48a6038cb5ae4064a2c981ad15df5cde
 msgid "Contents"
 msgstr "コンテンツ"
 
-# 63fd8218a2f94db18d104c87e2ca5223
 #: ../../transaction.rst:8
+#: e5b93cd91359423c9b8d24ff99666f05
 msgid "Doma supports local transaction. This document explains how to configure and use the local transaction."
 msgstr "Doma はローカルトランザクションをサポートしています。このドキュメントでは、ローカルトランザクションの設定方法と使用方法について説明します。"
 
-# 49cbe2a6ba484f359da365a27c8d9ba9
 #: ../../transaction.rst:11
+#: cb69a090918d4a5b9495b35e158bd56c
 msgid "If you want to use global transaction, use frameworks or application servers which support JTA (Java Transaction API)."
 msgstr "グローバルトランザクションを使用する場合は、JTA (Java Transaction API) をサポートするフレームワークまたはアプリケーションサーバーを使用してください。"
 
-# e59f382d3a1e4d6f9c553df5d3c939dd
 #: ../../transaction.rst:14
+#: a4a3e3c1945746aea990ad7c9e0c6855
 msgid "See also :ref:`config-configuration-definition` ."
 msgstr ":ref:`config-configuration-definition` も参照してください。"
 
-# 029df1b033fd4192b83c9749261fe62c
 #: ../../transaction.rst:17
+#: 495090fe8196458090dfcc7b20f6c3ce
 msgid "Configuration"
 msgstr "設定"
 
-# c8dd5753aadc43c1877668613feb7817
 #: ../../transaction.rst:19
+#: c54bc099cf094bd2a2b1b4d8960ca858
 msgid "To use local transaction, these conditions are required:"
 msgstr "ローカル トランザクションを使用するには、次の条件が必要です。"
 
-# 2d24a409513645588e4f926926eec550
 #: ../../transaction.rst:21
+#: 07861ce32fe34607bed0c3b41d3ba644
 msgid "Return ``LocalTransactionDataSource`` from ``getDataSource`` in ``Config``"
 msgstr "``Config`` の ``getDataSource`` から ``LocalTransactionDataSource`` を返します。"
 
-# b4913ef032aa476cb8d85306d8f7c5c9
 #: ../../transaction.rst:22
+#: 0b19ec313b2e4cad8b0a1a8a1e1ffc39
 msgid "Generate ``LocalTransactionManager`` using the ``LocalTransactionDataSource`` above in the constructor"
 msgstr "コンストラクターで上記の ``LocalTransactionDataSource`` を使用して ``LocalTransactionManager`` を生成します"
 
-# 8a43f9ff480247cdb0fa58ffccbdddbf
 #: ../../transaction.rst:23
+#: e7886c98683844b8af6e3cca7f6f247b
 msgid "Use the ``LocalTransactionManager`` above to control database access"
 msgstr "上記の ``LocalTransactionManager`` を使用してデータベースアクセスを制御します"
 
-# ba136941adb549c4a8740737c327a9b0
 #: ../../transaction.rst:25
+#: b47479c067cd4540b2253fcdf176381c
 msgid "There are several ways to generate and get the ``LocalTransactionManager``, but the simplest way is to generate it in the constructor of ``Config`` implementation class and make the ``Config`` implementation class singleton."
 msgstr "``LocalTransactionManager`` を生成・取得する方法はいくつかありますが、最も簡単な方法は ``Config`` 実装クラスのコンストラクタ内で生成し、 ``Config`` 実装クラスをシングルトンにする方法です。"
 
-# ae91d196609a4466810ee0f6139e739b
 #: ../../transaction.rst:29
+#: 7a84685fad7544b39436211594a3dc4b
 msgid "Here is an example:"
 msgstr "以下に例を示します。"
 
-# b6d1d0116acf4d71964ef60bc9ce3b4a
 #: ../../transaction.rst:72
+#: 0e71ba495968445f834c4b1cc8e9ef12
 msgid "Usage"
 msgstr "使用法"
 
-# 1dcc1a664221473885689180f369c836
 #: ../../transaction.rst:74
+#: 128dc6cce96f43ae95f1feba630ec59f
 msgid "We use the following DAO interface in example code:"
 msgstr "コード例では次の DAO インターフェイスを使用します。"
 
-# 7871a604285642c694e3ae724343487c
 #: ../../transaction.rst:93
+#: 1b034f87d43f4c9ab38c2b4cf749801f
 msgid "Start and finish transactions"
 msgstr "トランザクションの開始と終了"
 
-# 313323ccfc884b579d597e1d643b0cf2
 #: ../../transaction.rst:95
+#: 8c08f32ebfc94f2d8fefbe1b6007ab18
 msgid "You can start a transaction with one of following methods of ``TransactionManager``:"
 msgstr "次の ``TransactionManager`` のメソッドのいずれかを使用してトランザクションを開始できます。"
 
-# 846b653ed4b044e9bbab19ba4ecf239a
 #: ../../transaction.rst:97
+#: 3bc57a5f326543f0ba24d3b7239da681
 msgid "required"
 msgstr ""
 
-# 32afb4f488e846b595a8e8e57e4206f1
 #: ../../transaction.rst:98
+#: 0892bb317b934264933ce50d787a7a6c
 msgid "requiresNew"
 msgstr ""
 
-# f358e8cd3d454105abe9bec21b04592f
 #: ../../transaction.rst:99
+#: 087c377ef89e4c09bf47e1977692264d
 msgid "notSupported"
 msgstr ""
 
-# 37f31bf0c5dc450685196cc0e07735e4
 #: ../../transaction.rst:101
+#: 9de174bafcdb45daa15f86c69db2f134
 msgid "Use a lambda expression to write a process which you want to run in a transaction."
 msgstr "ラムダ式を使用して、トランザクションで実行する処理を記述します。"
 
-# 2d76bdbe1a034223a61d420b276ea10c
 #: ../../transaction.rst:115
+#: cc06fd2d7fb947cc8c8ece72740551cf
 msgid "The transaction is committed if the lambda expression finishes successfully. The transaction is rolled back if the lambda expression throws an exception."
 msgstr "ラムダ式が正常に終了すると、トランザクションはコミットされます。ラムダ式が例外をスローした場合、トランザクションはロールバックされます。"
 
-# 73197274dbd1468db34031f144c1fb73
 #: ../../transaction.rst:119
+#: 2f1fe735e9264f8d95114edaaa644f0f
 msgid "Explicit rollback"
 msgstr "明示的なロールバック"
 
-# 91b0074aba2b4c9d87d9376ea2a2d66e
 #: ../../transaction.rst:121
+#: 3e03d06eb2704628b40cee201acddd55
 msgid "Besides throwing an exception, you can use ``setRollbackOnly`` method to rollback a transaction."
 msgstr "例外をスローする以外に、 ``setRollbackOnly`` メソッドを使用してトランザクションをロールバックすることもできます。"
 
-# 668f9c8bdea64b9e982945d6355783a9
 #: ../../transaction.rst:138
+#: 3944be539d2d4b3585031f7655b6bb42
 msgid "Savepoint"
 msgstr "セーブポイント"
 
-# 9ee9cd428c994bc1bed207c1c7607dd7
 #: ../../transaction.rst:140
+#: 3bbc70389c0e45ceb61115d448fa90ff
 msgid "With a savepoint, you can cancel specific changes in a transaction."
 msgstr "セーブポイントを使用すると、トランザクション内の特定の変更をキャンセルできます。"
 

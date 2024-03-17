@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 10:39+0900\n"
-"PO-Revision-Date: 2024-03-17 02:03\n"
+"POT-Creation-Date: 2024-03-17 05:50+0000\n"
+"PO-Revision-Date: 2024-03-17 05:55\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -17,58 +17,58 @@ msgstr ""
 "X-Crowdin-File-ID: 206\n"
 "Language: ja_JP\n"
 
-# 5f3278c3012c44b0a047620c7349214a
 #: ../../query/sql-processor.rst:3
+#: b2f027c9ad2f4bf59b7afd11d870a437
 msgid "SQL processor"
 msgstr "SQLプロセッサ"
 
-# b41dca2736b24246870fe594bf2c5a4b
 #: ../../query/sql-processor.rst:6
+#: 501ac996957e4a778a3644b3beefaec8
 msgid "Contents"
 msgstr "コンテンツ"
 
-# d57e474b251249d4a392cd561201702d
 #: ../../query/sql-processor.rst:8
+#: ebce7aa8d5ca41dfa81cbbb6a9c6d462
 msgid "SQL processors can handle the SQL statements generated from corresponding SQL templates. To mark a DAO method as an SQL processor, annotate the method with ``@SqlProcessor``:"
 msgstr "SQL プロセッサは、対応する SQL テンプレートから生成された SQL ステートメントを処理できます。 DAO メソッドを SQL プロセッサとしてマークするには、メソッドに ``@SqlProcessor`` アノテーションを付けます。"
 
-# 6e49f25526bc4ea992c2da9ff9373700
 #: ../../query/sql-processor.rst:22
+#: eedb09eacf6c42aca6022bfc7fed8187
 msgid "Being aware of SQL injection vulnerabilities is essential. If it's possible, consider alternative ways other than SQL processors."
 msgstr "SQL インジェクションの脆弱性を認識しておくことが重要です。可能であれば、SQL プロセッサ以外の代替方法を検討してください。"
 
-# 5af1164b5c524207b68f62c041d7a440
 #: ../../query/sql-processor.rst:26
+#: 9bb9a88b292d499c8512c2b6d20cbbec
 msgid "Return type"
 msgstr "戻り値"
 
-# 03c8513d7f9a4f99aa1a37fbe92fb001
 #: ../../query/sql-processor.rst:28
+#: aa6ccd50a8044bbaae7153849b9990e7
 msgid "The return type must be the same type as the third type parameter of ``BiFunction``:"
 msgstr "戻り値の型は、 ``BiFunction`` の 3 番目の型パラメータと同じ型でなければなりません。"
 
-# 6a42cc61c361461dab5a45afa5af2683
 #: ../../query/sql-processor.rst:35
+#: 02c1b755aa26424bbb4e629c62133de5
 msgid "If the return type is ``void``, the third type parameter of ``BiFunction`` must be ``Void``:"
 msgstr "戻り値の型が ``void`` の場合、 ``BiFunction`` の 3 番目の型パラメータは ``Void`` でなければなりません。"
 
-# 6679406b28cb4b4bb09c3a45c44bef58
 #: ../../query/sql-processor.rst:43
+#: 74332ecb56f04c5b9621334fc0d1e23d
 msgid "Parameter"
 msgstr "パラメータ"
 
-# 0fed96fb1ef34a2dbc4bf099669357c6
 #: ../../query/sql-processor.rst:45
+#: a1842ab1ef954ca59544d263cccfedf3
 msgid "Include a parameter whose type is ``BiFunction``. The ``BiFunction`` parameter accepts a configuration and an SQL statement then processes them. Parameters other than the ``BiFunction`` parameter are used in the SQL template."
 msgstr "タイプが ``BiFunction`` であるパラメータを含めます。 ``BiFunction`` パラメータは設定と SQL ステートメントを受け取り、それらを処理します。 SQL テンプレートでは ``BiFunction`` パラメータ以外のパラメータが使用されます。"
 
-# c89d8b941ddf48dda259cf669daa548d
 #: ../../query/sql-processor.rst:50
+#: afa4809d97e540b09c2f606da1cb6b63
 msgid "Example"
 msgstr "例"
 
-# a69a1b2056964ca5bc60baad385c782f
 #: ../../query/sql-processor.rst:52
+#: a14bdcb5198949b9966dd51051734cc1
 msgid "Suppose you want to change the SQL statement generated from an SQL template and execute it:"
 msgstr "SQL テンプレートから生成された SQL ステートメントを変更して実行するとします。"
 

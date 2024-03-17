@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 10:39+0900\n"
-"PO-Revision-Date: 2024-03-17 01:12\n"
+"POT-Creation-Date: 2024-03-17 05:50+0000\n"
+"PO-Revision-Date: 2024-03-17 05:55\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -17,188 +17,188 @@ msgstr ""
 "X-Crowdin-File-ID: 186\n"
 "Language: ja_JP\n"
 
-# 53e5bdf76f75426ba672930690b6e15c
 #: ../../basic.rst:3
+#: 1f0abfdc65f146f89f7c16440311e40d
 msgid "Basic classes"
 msgstr "基本クラス"
 
-# 4899b864c72945c592d82e68e3e63ebc
 #: ../../basic.rst:6
+#: ce95665f2d7041119e24d8932bf96c0b
 msgid "Contents"
 msgstr "コンテンツ"
 
-# 5c20005532cc40fea4ab7e7322bc78c4
 #: ../../basic.rst:9
+#: cfca39d370ce412f88ad45e926061e2d
 msgid "Overview"
 msgstr "概要"
 
-# 59a85f2e9a8c47b38749d4d00b36c5f8
 #: ../../basic.rst:11
+#: 846823749ea845cd83361b2096943913
 msgid "The Java types can be mapped to database column types are called \"Basic classes\" in Doma."
 msgstr "Doma では、データベースのカラム型にマッピング可能なJava型を **基本クラス** と呼びます。"
 
-# c8e78744aee24c32ab06b163407f52aa
 #: ../../basic.rst:14
+#: 4d4434a888644ab5afb75dd1ea23fe29
 msgid "List of basic classes"
 msgstr "基本クラス一覧"
 
-# 4e2d0c31dd9542aaa210c4ac740b5c76
 #: ../../basic.rst:16
+#: 9723a0bcc929429386dde2003ec9ec86
 msgid "primitive types except ``char``"
 msgstr "``char`` を除くプリミティブ型"
 
-# 301aaf65e0ee42dc826712e7cdf7fad6
 #: ../../basic.rst:17
+#: f5ab58502280421598f235aa663d7f86
 msgid "wrapper class for above primitive types"
 msgstr "上記のプリミティブ型のラッパー クラス"
 
-# 112e4c4a6fc54f0396443becc251250e
 #: ../../basic.rst:18
+#: 1c9f6c84801445b59a227dc4cd7f92cc
 msgid "enum types"
 msgstr "列挙型"
 
-# 8238eb7b25cf4f12a675cfe5b4ca2abd
 #: ../../basic.rst:19
+#: 5ce3d39089244d61b7ae0010c5740e37
 msgid "byte[]"
 msgstr ""
 
-# e5c04b20f18b4dc0959cdfc3dcd07a8d
 #: ../../basic.rst:20
+#: 37914b4f045a46ae96d7179c6593d99b
 msgid "java.lang.String"
 msgstr ""
 
-# 7077c0dbc6a3433aa844d4b708ea3725
 #: ../../basic.rst:21
+#: 92ced1c303024c6981bc53c0e0fcce63
 msgid "java.lang.Object"
 msgstr ""
 
-# 948382dbdb6a4bd9ba9003db6b040e23
 #: ../../basic.rst:22
+#: 66fe61b793c64d128a242e202a7cc8a8
 msgid "java.math.BigDecimal"
 msgstr ""
 
-# 1bc5cabdc4d24cb08b7bf99aa7dde6bf
 #: ../../basic.rst:23
+#: 380afff3f13e4e1391c0ff89b2a3a1a6
 msgid "java.math.BigInteger"
 msgstr ""
 
-# 54721f832ae14eb8b21c549f92b5a947
-# 446648309f494ce79ecf17a991a8775a
-#: ../../basic.rst:24
 #: ../../basic.rst:0
+#: ../../basic.rst:24
+#: 2782dff59c0e4aee9938e7041d809602
+#: 8106fc0d6b4b4235b8b444246bee3aec
 msgid "java.time.LocalDate"
 msgstr ""
 
-# 594aa04e135d4008a8143b73a1e1deff
-# a36a0fafb33641c398d0fd59794d2f5f
-#: ../../basic.rst:25
 #: ../../basic.rst:0
+#: ../../basic.rst:25
+#: 288728961bff4e74996685fe65642a5e
+#: a28cecf2dd1d484caf1dfa44a4e9d759
 msgid "java.time.LocalTime"
 msgstr ""
 
-# 4147829a6103462b8fb20c982778324f
-# 164ee56c4cb54ec7824c5ac1039fecce
-#: ../../basic.rst:26
 #: ../../basic.rst:0
+#: ../../basic.rst:26
+#: f5665a33a0fd40ffad8458cbe4ee13b3
+#: 5554d4ae6300430f9e346fff56dc746a
 msgid "java.time.LocalDateTime"
 msgstr ""
 
-# 7d84fe8964344f01b16cc4e11f0eba14
-# 6a9f76ad29cc445f9c7032b8f73bf647
-#: ../../basic.rst:27
 #: ../../basic.rst:0
+#: ../../basic.rst:27
+#: 9b9987b9a1374f45aed2df411e66de8d
+#: 984ad5c4df6b47bbb122595cfdbd1070
 msgid "java.sql.Date"
 msgstr ""
 
-# 2065ba9df9d846c39baede0c4e1be92b
-# fc3f1d8cc8f44221bcd53bed7f192108
-#: ../../basic.rst:28
 #: ../../basic.rst:0
+#: ../../basic.rst:28
+#: b0721e2e2db546978c33ab1cf4da96a9
+#: 73d1f6dda8e24a35b894837b214eee13
 msgid "java.sql.Time"
 msgstr ""
 
-# 5acd186b02564002ab8346c43b05f1d8
-# fda37819f4b144ee841ea798d832a951
-#: ../../basic.rst:29
 #: ../../basic.rst:0
+#: ../../basic.rst:29
+#: 6aac1eb80e594d1c87727320a98fc92f
+#: 0a895ad96d1a4d9b9185cb092ad455dc
 msgid "java.sql.Timestamp"
 msgstr ""
 
-# ab71af1488644197a3b120b126873cf1
 #: ../../basic.rst:30
+#: b5d6f83b941f4ee184468271d783e03e
 msgid "java.sql.Array"
 msgstr ""
 
-# d2356b2a550048bc8ab03232f47e65cf
 #: ../../basic.rst:31
+#: 303eaa8dd21941b984fc8326df5d6894
 msgid "java.sql.Blob"
 msgstr ""
 
-# bab768e4e1964abdb9200172b4035bb5
 #: ../../basic.rst:32
+#: 87667b2c93ff432aad2dff5fd555a28b
 msgid "java.sql.Clob"
 msgstr ""
 
-# e6cf0e326d2846e68552e4211a3729bd
 #: ../../basic.rst:33
+#: 290864b7ad6b43f499c8a48c62a46c73
 msgid "java.sql.SQLXML"
 msgstr ""
 
-# df5d3c6b95034420a584f919c1e62e2a
-# a1fa0b119ccb403ba99afb65f38e9b25
-#: ../../basic.rst:34
 #: ../../basic.rst:0
+#: ../../basic.rst:34
+#: 9a39410cdb4e4563852338faa2b7cb41
+#: 97977ea0484d4bb3ac8e57f7fc4749fb
 msgid "java.util.Date"
 msgstr ""
 
-# 0b90ae7325de4640a0e8f36d470b80b5
 #: ../../basic.rst:37
+#: 3025127408a548c998dcc06e710e8b76
 msgid "Differences between temporal classes"
 msgstr "時制クラスの違い"
 
-# b7edd079ec6349dd8f02154c096a2c85
-# b35ced5e0989400492271e1bd30453c8
 #: ../../basic.rst:40
 #: ../../basic.rst:49
+#: 0c41179ffe5f40369b67802724074b9b
+#: f82b3e3952a14473bec99e6eb4123578
 msgid "represents SQL DATE"
 msgstr "SQL日付を表します"
 
-# df5b02cdaa8b4d4e9ee5bb757e807c72
-# f3623e62b5f046fab6f41975f6d6d866
 #: ../../basic.rst:43
 #: ../../basic.rst:52
+#: 461fc2c81e984ccdbfa52a00fde2620d
+#: be58424afe23436bb6b7c48ec7e82148
 msgid "represents SQL TIME"
 msgstr "SQL時間を表します"
 
-# 25515c1543d24b718f657e8d936aac18
-# 9833c5cf0adb46988201448b19e606f2
 #: ../../basic.rst:46
 #: ../../basic.rst:55
+#: 5ce95a336f764ccea576a8f73d701691
+#: 2279d1a74aee4fb28eea8b99d96fcbdf
 msgid "represents SQL TIMESTAMP and may hold nanoseconds if RDBMS supports it"
 msgstr "SQL TIMESTAMP を表し、RDBMS がサポートしている場合はナノ秒を保持する可能性があります"
 
-# b6cd2a9c6e0d49b99d264159349682d6
 #: ../../basic.rst:58
+#: d23ca2b31b444000ac2e80c706183ca5
 msgid "represents SQL TIMESTAMP and doesn't hold nanoseconds"
 msgstr "SQL TIMESTAMP を表し、ナノ秒を保持しません"
 
-# 9b5c10ebf03c4e76b432e654f7f9b82f
 #: ../../basic.rst:61
+#: cdf301aecd0d487087b4e2bcceea3ef1
 msgid "Examples"
 msgstr "例"
 
-# 6c54f7dd00d34547a48cbabb08a6193a
 #: ../../basic.rst:64
+#: 1c990fa6dc5c4731bbaa9139fccd19f8
 msgid "Using in entity class"
 msgstr "エンティティクラスでの使用"
 
-# 00435499bdb44335965bd21bcef6aa12
 #: ../../basic.rst:84
+#: ebbc138364754fb08cbd980cbf04fbd3
 msgid "Using in domain class"
 msgstr "ドメインクラスでの使用"
 
-# d6bafd10e6e446bdb7cc4b88fa95d036
 #: ../../basic.rst:103
+#: ed7f885a7da84f7ca578a3f59124db6b
 msgid "Using in DAO interface"
 msgstr "DAO インタフェースでの使用"
 

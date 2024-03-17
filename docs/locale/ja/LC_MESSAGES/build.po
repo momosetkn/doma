@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-16 21:26+0900\n"
-"PO-Revision-Date: 2024-03-17 01:12\n"
+"POT-Creation-Date: 2024-03-17 05:50+0000\n"
+"PO-Revision-Date: 2024-03-17 05:55\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -17,145 +17,143 @@ msgstr ""
 "X-Crowdin-File-ID: 196\n"
 "Language: ja_JP\n"
 
-# 540915798a26406e9b5c9bef5631a507
 #: ../../build.rst:3
+#: 0cf2ce3cf9af4bf3a7bf41c0cce77ef2
 msgid "Building an application"
 msgstr "アプリケーションのビルド"
 
-# 5308349489e14490b237e994728ce02f
 #: ../../build.rst:6
+#: 6664e60153ae4081930befe062cd680b
 msgid "Contents"
 msgstr "コンテンツ"
 
-# f5c381bc21ac45408f0b06db46ada817
 #: ../../build.rst:9
+#: d7b75853c6c44757a5e7a1f94946751a
 msgid "Maven Central Repository"
 msgstr "Maven セントラル リポジトリ"
 
-# 826b9465095a4351900bf816e9709b85
 #: ../../build.rst:11
+#: 0f9af8425a2d4888b394a7281387bf60
 msgid "You can pull the artifacts of the Doma framework from the Maven central repository. We provide two artifacts, ``doma-core`` and ``doma-processor``."
 msgstr "Doma フレームワークのアーティファクトを Maven 中央リポジトリから取得できます。 ``doma-core`` と ``doma-processor`` という 2 つのアーティファクトが提供されています。"
 
-# 845ed995cac24000aa71d495c487714b
 #: ../../build.rst:14
+#: 3a51736e6df549d5ae434fbdea5b7fa5
 msgid "The ``doma-core`` artifact is required at runtime and compile-time. The ``doma-processor`` artifact provides annotation processors and is required at compile-time only."
 msgstr "``doma-core`` アーティファクトは、実行時およびコンパイル時に必要です。 ``doma-processor`` アーティファクトはアノテーション プロセッサを提供し、コンパイル時のみに必要です。"
 
-# 25675c55ed394ee6acd219b79120560a
 #: ../../build.rst:17
+#: 110d9d2d9ba7429aae705f31addb8a05
 msgid "The group id and artifact id of those artifacts are as follows:"
 msgstr "これらのアーティファクトのグループ ID とアーティファクト ID は次のとおりです。"
 
-# 536b2fa2f36c42fba507c05962ce3100
-# 536b2fa2f36c42fba507c05962ce3100
 #: ../../build.rst:0
-#: ../../build.rst:0
+#: cc271c4f2c754aa3afec2ef33dd83f90
+#: 34130df925604af9b457fc6d640da0f7
 msgid "GroupId"
 msgstr "グループID"
 
-# e90b025337ae447b98dbbd0d98b14c08
-# e90b025337ae447b98dbbd0d98b14c08
 #: ../../build.rst:19
 #: ../../build.rst:22
+#: 3d32fca5d5134d029e5c6ecd56bd8db7
+#: 2c2c5e60adf3497ca287394da77e47e5
 msgid "org.seasar.doma"
 msgstr ""
 
-# 34939b86c47b4c8e89537ac163ddf731
-# 34939b86c47b4c8e89537ac163ddf731
 #: ../../build.rst:0
-#: ../../build.rst:0
+#: b967f4bf563e4d90a45d768051466ed6
+#: e59c082517db407ea897dc45c840b40d
 msgid "ArtifactId"
 msgstr "アーティファクトID"
 
-# 2846571e030c402f8e56ab86478d304d
 #: ../../build.rst:20
+#: d1ef7f834f2c4319b9dc55dbc6ed1111
 msgid "doma-core"
 msgstr ""
 
-# 9c94a9bd2f1f4d9c8cad02e9dc964fc7
 #: ../../build.rst:23
+#: dcf9fad0bd56497797f120459cdae442
 msgid "doma-processor"
 msgstr ""
 
-# 1657d7924e3f4fc5a66e388d27af59f7
 #: ../../build.rst:28
+#: 2facd62d11c1489caedc3fb6c568f09f
 msgid "Build with Gradle"
 msgstr "Gradle でビルドする"
 
-# 95747bb5dbd5483b8fc068c6f7a420de
 #: ../../build.rst:30
+#: d7999f33db9b4cd48a8237cc6efcd18c
 msgid "Write your build.gradle.kts as follows:"
 msgstr "build.gradle.kts を次のように記述します。"
 
-# 1b2c45f9dcd9424abf9d5083de3c3a45
 #: ../../build.rst:43
+#: 0a7f559fc38f4e4fba1d240e1966f28c
 msgid "To simplify your build.script.kts, we recommend that you use the `org.seasar.doma.compile`_ plugin."
 msgstr ""
 
-# c247800b6279454bb57a4c7da344ec40
-# c247800b6279454bb57a4c7da344ec40
 #: ../../build.rst:45
 #: ../../build.rst:103
+#: 7fad00bc46c34e898aab370dde7e5c75
+#: 20252a965e864a0fa11a5809dcb14d81
 msgid "See build.gradle.kts in the `getting-started`_ repository as an example."
 msgstr "例として、`getting-started`_ リポジトリの build.gradle.kts を参照してください。"
 
-# 1657d7924e3f4fc5a66e388d27af59f7
 #: ../../build.rst:50
+#: b1bcf03a2e3d4f3bb613a71179060fb7
 msgid "Build with Maven"
 msgstr "Maven でビルドする"
 
-# 95747bb5dbd5483b8fc068c6f7a420de
 #: ../../build.rst:52
+#: d82314ce58fd4c4abcc24173e2b37fac
 msgid "Write your pom.xml as follows:"
 msgstr "pom.xml を次のように記述します。"
 
-# 7e4a2b8c1f834d358746bf3bfdc4099b
 #: ../../build.rst:93
+#: 659bad9b6ad24a6982aad0082129df2d
 msgid "Build with Eclipse"
 msgstr "Eclipse でビルドする"
 
-# 1657d7924e3f4fc5a66e388d27af59f7
-# 1657d7924e3f4fc5a66e388d27af59f7
 #: ../../build.rst:96
 #: ../../build.rst:119
+#: d1795b6272b443d485ec97c66a9c0996
+#: 1cfa573583af42829586b9a4db0046bb
 msgid "Gradle"
 msgstr ""
 
-# ad8614ebf2b643a1a8000ce890c6d8f5
 #: ../../build.rst:98
+#: c4adfe01a22149888910337406390d6a
 msgid "Generate eclipse setting files with Gradle, and then import your project into Eclipse. To generate the setting files, run ``gradle cleanEclipse eclipse``."
 msgstr "Gradle で Eclipse 設定ファイルを生成し、プロジェクトを Eclipse にインポートします。設定ファイルを生成するには、 ``gradle cleanEclipse eclipse`` を実行します。"
 
-# 1b2c45f9dcd9424abf9d5083de3c3a45
 #: ../../build.rst:101
+#: e999556440b747e6825e9b97173052e3
 msgid "To simplify your build.script.kts, we recommend that you use the `com.diffplug.eclipse.apt`_ plugin."
 msgstr ""
 
-# cad969d094a647fb9faf5e323c848928
-# 5bbcc199505341898bb3e94240bf7ceb
 #: ../../build.rst:106
 #: ../../build.rst:125
+#: 8940164ec5bc43649b2e8ed55a0fd832
+#: fd172c192ec7466ead8d4643110cee31
 msgid "Maven"
 msgstr ""
 
-# faa61a561b434c9a9f635613653e5f4c
 #: ../../build.rst:110
+#: 267676f2abf6468dbba4ed048e3b8a0c
 msgid "We've managed to get our Maven project up and running in Eclipse, but we're unsure if we're following the best practices. If you have any tips or recommended approaches, we'd really appreciate your input."
 msgstr "Maven プロジェクトを Eclipse で立ち上げて実行することに成功しましたが、ベスト プラクティスに従っているかどうかはわかりません。ヒントや推奨されるアプローチがありましたら、ご意見をいただければ幸いです。"
 
-# 3708ac5e5c6446d3a929df9804c91aac
 #: ../../build.rst:116
+#: 340e1c0489f04b0b8286e1cbc4003086
 msgid "Build with IntelliJ IDEA"
 msgstr "IntelliJ IDEA でビルドする"
 
-# 611f4e679a3b47bdbe4b423d960e703c
 #: ../../build.rst:121
+#: 87b086fc468e43e9bf08047424b20d70
 msgid "Import your project as a Gradle project. Build and run using Gradle."
 msgstr "プロジェクトを Gradle プロジェクトとしてインポートし、Gradle を使用してビルドします。"
 
-# 6c8e21182178458e8b6b3cfa3c916e5a
 #: ../../build.rst:127
+#: 1019397182164d4090948454a48e7acf
 msgid "Import your project as a Maven project. Build and run using Maven."
 msgstr "プロジェクトを Maven プロジェクトとしてインポートし、 Maven を使用してビルドします。"
 

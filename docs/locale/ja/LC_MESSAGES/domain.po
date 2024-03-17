@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 10:39+0900\n"
-"PO-Revision-Date: 2024-03-17 01:12\n"
+"POT-Creation-Date: 2024-03-17 05:50+0000\n"
+"PO-Revision-Date: 2024-03-17 05:55\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -17,168 +17,168 @@ msgstr ""
 "X-Crowdin-File-ID: 162\n"
 "Language: ja_JP\n"
 
-# e11017adf33b46388eda2d2985e22ad7
 #: ../../domain.rst:3
+#: 37072ad515074ae7b9aae3f770b65d77
 msgid "Domain classes"
 msgstr "ドメインクラス"
 
-# dd8bf4b2270341218341ba238950bc80
 #: ../../domain.rst:6
+#: d1ba08fd064a4e6e962c95f32936c53d
 msgid "Contents"
 msgstr "コンテンツ"
 
-# d285b044c9fe4eb69eef5167b49f6889
 #: ../../domain.rst:8
+#: 3c709a58213644978b4dbc96433b78c2
 msgid "A domain class represents a table column and it allows you to handle the column value as a Java object. In the Doma framework, a **domain** means all the values which a data type may contain. In short, a domain class is a user defined class that can be map to a column. The use of the domain classes is optional."
 msgstr "ドメインクラスはデータベースのカラムを表し、カラムの値を Java オブジェクトとして処理できるようにします。 Doma フレームワークでは、**ドメイン** はデータ型に含まれる可能性のあるすべての値を意味します。つまり、ドメインクラスは、カラムにマップできるユーザー定義のクラスです。ドメインクラスの使用はオプションです。"
 
-# 03cbb2610f9b4d47af284878fd3ca7d0
 #: ../../domain.rst:13
+#: 183ff9ffb9904bc8b4bc5e4af2612d9e
 msgid "Every domain class is either an internal domain class or an external domain class."
 msgstr "すべてのドメインクラスは、内部ドメインクラスまたは外部ドメインクラスのいずれかです。"
 
-# 730f3b297aff4ac0b8fd1bf166f01b9b
 #: ../../domain.rst:16
+#: b92c6c2e74b84ad7a106ead9689fd761
 msgid "Internal domain classes"
 msgstr "内部ドメインクラス"
 
-# b924cc76e8f7432f9dbd2e50a964aa04
 #: ../../domain.rst:18
+#: a0930ca120a944afa4ff52a704321128
 msgid "The internal domain class must be annotated with ``@Domain``. The ``@Domain``'s ``valueType`` element corresponds to a data type of a column. Specify any type of :doc:`basic` to the ``valueType`` element."
 msgstr "内部ドメインクラスには ``@Domain`` アノテーションを付ける必要があります。 ``@Domain`` の ``valueType`` 要素は、カラムのデータ型に対応します。 ``valueType`` 要素には任意のタイプの :doc:`basic` を指定します。"
 
-# 1ecd3fb7563b4b4bab60e483d7b0caa9
 #: ../../domain.rst:23
+#: 9526e4f6a9534a9ca5930bcc68e73ce1
 msgid "Instantiation with a constructor"
 msgstr "コンストラクタを使用したインスタンス化"
 
-# 07a83c6cc2fd4a74b9bfaf480178fa12
 #: ../../domain.rst:25
+#: 7026274b90804c74892ec9fbec3d5f11
 msgid "The default value of the ``@Domain``'s ``factoryMethod`` element is ``new``. The value ``new`` means that the object of annotated class is created with a constructor."
 msgstr "``@Domain`` の ``factoryMethod`` 要素のデフォルト値は ``new`` です。値 ``new`` は、アノテーションが付けられたクラスのオブジェクトがコンストラクタを使用して作成されることを意味します。"
 
-# 754c085129c142f4ac1a57d3173f9daf
 #: ../../domain.rst:49
+#: 60d113a6f91146a1a150c485dff54e94
 msgid "In Java 14 and later version, you can annotate `records`_ with ``@Domain``:"
 msgstr "Java 14 以降のバージョンでは、`records`_ に ``@Domain`` アノテーションを付けることができます。"
 
-# 79f03e70d459459ba6118f3965cbcc33
 #: ../../domain.rst:64
+#: e5d60070e3d649789861aaef9309af97
 msgid "To annotate records with ``@Domain`` is a little redundant, because you must specify some properties to ``@Domain`` such as ``valueType``. Instead of ``@Domain``, you can annotate records with ``@DataType``:"
 msgstr "レコードに ``@Domain`` アノテーションを付けるのは少し冗長です。 ``valueType`` などのいくつかのプロパティを明示的に ``@Domain`` に指定する必要があるためです。 ``@Domain`` の代わりに、レコードに ``@DataType`` アノテーションを付けることができます。"
 
-# 79f8a9dcf4414edaad3a9155b358e8f7
 #: ../../domain.rst:79
+#: 998b9e4a68794b23bf94bf856a2c2668
 msgid "Instantiation with a static factory method"
 msgstr "静的ファクトリメソッドによるインスタンス化"
 
-# 82735cb455a54c82866f05a02ff86992
 #: ../../domain.rst:81
+#: 6105a37dab944ac78aca3faa581494fc
 msgid "To create the object of annotated class with a static factory method, specify the method name to the ``@Domain``'s ``factoryMethod`` element."
 msgstr "アノテーションが付与されたクラスのオブジェクトを静的ファクトリメソッドで作成するには、 ``@Domain`` の ``factoryMethod`` 要素にメソッド名を指定します。"
 
-# ffe42948a1f6441d90c06cb783cd0e4a
 #: ../../domain.rst:84
+#: 0bdfcba3376d4776a8d6ca60a551615a
 msgid "The method must be static and non-private:"
 msgstr "メソッドは静的で非プライベートである必要があります。"
 
-# cab007d9664043eca289cec8bb9810b7
 #: ../../domain.rst:110
+#: 2d2bbec39f8742f8aa5a8fbf5f83d5c0
 msgid "With a static factory method, you can apply the ``@Domain`` annotation to enum types:"
 msgstr "静的ファクトリメソッドを使用すると、``@Domain`` アノテーションを列挙型に適用できます。"
 
-# cb88e7aab1fc45398e42266f5864eadf
 #: ../../domain.rst:143
+#: 19b1224b8b99468fa310cd39e23d3181
 msgid "Using type parameters in internal domain classes"
 msgstr "内部ドメインクラスにおける型パラメータの使用"
 
-# dd5c882f2037416ca4e4656cb703b846
 #: ../../domain.rst:145
+#: 375d9a273f9d4751a9078480e189a8f0
 msgid "All internal domain class declarations have type parameters:"
 msgstr "内部ドメインクラスには任意の数の型パラメータを宣言できます。"
 
-# 47b7c51380504875b0c643800d65395e
 #: ../../domain.rst:164
+#: 5c5db00613bf4495b2dae6fde7c359f2
 msgid "When you create the object of annotated class with a static factory method, the method declaration must have same type parameters that are declared in the class declaration:"
 msgstr "静的ファクトリメソッドを使用してアノテーション付きクラスのオブジェクトを作成する場合、メソッド宣言にはクラス宣言と同じ型パラメータが必要です。"
 
-# d0b3dec0f33742b9bfe056a08c9278f8
 #: ../../domain.rst:188
+#: 86289bf8aa434419be83d6a4f02a3fc2
 msgid "External domain classes"
 msgstr "外部ドメインクラス"
 
-# 4875106ef6624c0e96466fd03c842079
 #: ../../domain.rst:190
+#: 23bea7b357834c51a9012699cf7bcda1
 msgid "This feature allows you to define arbitrary classes as domain classes, even if the classes can be annotated with the ``@Domain`` annotation."
 msgstr "この機能を使用すると、クラスに ``@Domain`` アノテーションを付けられない場合でも、任意のクラスをドメインクラスとして定義できます。"
 
-# edb76ffa4a5c4ff3b6e6e10d0d4024bc
 #: ../../domain.rst:193
+#: d733e398169a4e2a92ff09bff0d51ac1
 msgid "To define external domain classes, you have to do as follows:"
 msgstr "外部ドメイン クラスを定義するには、次のようにします。"
 
-# f3a280e877e548a08c28692aef06da2b
 #: ../../domain.rst:195
+#: 1ade04a63b5c45769bd5d0d713522779
 msgid "Create a class that implements ``org.seasar.doma.jdbc.domain.DomainConverter`` and annotate ``@ExternalDomain`` to the class"
 msgstr "``org.seasar.Doma.jdbc.domain.DomainConverter`` を実装するクラスを作成し、クラスに ``@ExternalDomain`` アノテーションを付ける"
 
-# a08b60f15506463b8f15226a955c225d
 #: ../../domain.rst:197
+#: f172bb3291b945ebaab00b1f166478d4
 msgid "Create a class that is annotated with ``@DomainConverters``"
 msgstr "``@DomainConverters`` アノテーションを付けたクラスを作成する"
 
-# adb4e04486254f1cb03399219ac595b4
 #: ../../domain.rst:198
+#: eca25518bb0e4d7c93e95319eaec22b7
 msgid "Specify the class annotated with ``@ExternalDomain`` to the ``@DomainConverters``'s ``value`` element"
 msgstr "``@DomainConverters`` の ``value`` 要素に ``@ExternalDomain`` アノテーションを付けたクラスを指定する"
 
-# e5e5771013b845f0b6eebdf0dd6df70a
 #: ../../domain.rst:199
+#: 0872303c43f54367ae482100f73f2faf
 msgid "Specify the full qualified name of the class annotated with ``@DomainConverters`` to the option of :doc:`annotation-processing`"
 msgstr ":doc:`annotation-processing` のオプションに ``@DomainConverters`` アノテーションを付けたクラスの完全修飾名を指定する"
 
-# 8bebc500058b44258becf668edebd63c
 #: ../../domain.rst:202
+#: 58940e0841fc47d4baa3fd355ad0a2f6
 msgid "Suppose, for instance, there is the ``PhoneNumber`` class that you can change:"
 msgstr "たとえば、ソースコードを変更でない ``PhoneNumber`` クラスがあるとします。"
 
-# cb446a0b21ba4571a2155c7f6c092867
 #: ../../domain.rst:223
+#: d352d834456948cd8aa2c8d30ceb84c2
 msgid "First, to define the ``PhoneNumber`` class as an external domain class, create following class:"
 msgstr "まず、``PhoneNumber`` クラスを外部ドメインクラスとして定義するために、次のクラスを作成します。"
 
-# 37053fa2ad6d44269d5114d1cf15ef7e
 #: ../../domain.rst:242
+#: 6e767d11a5864369aaa5eb0100445538
 msgid "Then create following class and specify the above class to the ``@DomainConverters``'s ``value`` element:"
 msgstr "次に、次のクラスを作成し、上記のクラスを ``@DomainConverters`` の ``value`` 要素に指定します。"
 
-# b5a049e6bb5644218d5f06afbb50df2b
 #: ../../domain.rst:250
+#: 8b2a603694f74412b8faf0193d162ae8
 msgid "Finally, specify the full qualified name of the above class to the option of :doc:`annotation-processing`. If you use Gradle, specify the option in the build script as follows:"
 msgstr "最後に、:doc:`annotation-processing` のオプションに上記クラスの完全修飾名を指定します。 Gradle を使用する場合は、ビルド スクリプトで次のようにオプションを指定します。"
 
-# 835c2d35e5854501b1f8202acc79c6c5
 #: ../../domain.rst:262
+#: e11548e255de4c9f86c5b86f9170f9c0
 msgid "Using type parameters in external domain classes"
 msgstr "外部ドメインクラスにおける型パラメータの使用"
 
-# 5e0c9896ec0447c38305b000c544b34a
 #: ../../domain.rst:264
+#: a9125fde792c446594c2156e42b100e5
 msgid "All external domain class declarations have type parameters:"
 msgstr "外部ドメインクラスには任意の数の型パラメータを宣言できます。"
 
-# a5093b1ce826423bb8e215c69c9cfe96
 #: ../../domain.rst:281
+#: dfb91cfa26b542a8bb3a75bf7dd49276
 msgid "In the ``DomainConverter`` implementation class, specify a wildcard ``?`` as type arguments to the external domain class:"
 msgstr "``DomainConverter`` 実装クラスで、外部ドメインクラスへの型引数としてワイルドカード ``?`` を指定します。"
 
-# 68e335380e96487986f5797563a947c6
 #: ../../domain.rst:303
+#: 0b0cc260fc914489aa43a5f035118a96
 msgid "Example"
 msgstr "例"
 
-# 587507f32dde4153b6640be09856bd5a
 #: ../../domain.rst:305
+#: e0e30d0f77db450fa68c475cf5d08f78
 msgid "The Domain classes showed above are used as follows:"
 msgstr "上記のドメインクラスは次のように使用されます。"
 

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 10:39+0900\n"
-"PO-Revision-Date: 2024-03-17 01:12\n"
+"POT-Creation-Date: 2024-03-17 05:50+0000\n"
+"PO-Revision-Date: 2024-03-17 05:55\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -17,261 +17,261 @@ msgstr ""
 "X-Crowdin-File-ID: 224\n"
 "Language: ja_JP\n"
 
-# b57d070c4ed941198255dba146d3a174
 #: ../../query/function.rst:3
+#: b0d2bd9ee2df48a6a8a6aafedd7b5a9e
 msgid "Stored function"
 msgstr "ストアドファンクション"
 
-# f2d1743c865e4527b9ee5824245dda67
 #: ../../query/function.rst:6
+#: 377844c0b720450b9da1c3f395ef21ed
 msgid "Contents"
 msgstr "コンテンツ"
 
-# b4b89d2810954d1c8bb9a941caa2ef26
 #: ../../query/function.rst:8
+#: d74d428299294aa4aae693383d005a4d
 msgid "To call stored functions, you must annotate DAO methods with the ``@Function`` annotation:"
 msgstr "ストアドファンクションを呼び出すには、DAO メソッドに ``@Function`` アノテーションを付ける必要があります。"
 
-# f4f9aece5f0b429384182b0bb8b22161
 #: ../../query/function.rst:20
+#: e3960b4b43d4428a9903a8c4f07b466f
 msgid "Return type"
 msgstr "戻り値の型"
 
-# 27a46058df6a43f3ae85d0803c4d917d
 #: ../../query/function.rst:22
+#: 7e0bf9a0b05542aaae1a53400a56a31e
 msgid "If the stored function returns nothing, the return type must be ``void``."
 msgstr "ストアドファンクションが何も返さない場合、戻り値の型は ``void`` でなければなりません。"
 
-# d2c2e1ba781549c69782eb4e97fecd5f
 #: ../../query/function.rst:24
+#: 885c2231037843248b561e2601bde4fc
 msgid "If the stored function returns a single result, the return type must be one of the following:"
 msgstr "ストアドファンクションが単一の結果を返す場合、戻り値の型は次のいずれかである必要があります。"
 
-# ff98e5c441a24d25be0593e9e364c013
-# 6b461a3051404f83a13a5ad4585b9d09
-# 1d7d5b8131e148d6949df4a0665affca
-# f2c69d10ba2849d9911ef3bf91bcb870
-# dccbf362b4844cb891694b35d8f86cd8
-# 910e5755521d493aac369f984300f56f
 #: ../../query/function.rst:26
 #: ../../query/function.rst:39
 #: ../../query/function.rst:77
 #: ../../query/function.rst:106
 #: ../../query/function.rst:138
 #: ../../query/function.rst:170
+#: 5d136d80fcb948de835c0c524322862c
+#: 370e1e771883436e8fa04e5e204bea0e
+#: 3eaaf76c684c4943b2b78631bff44c5b
+#: 7e16dd444674437b9d76681ff9623eed
+#: 7c59b67c72994236b8600deedee4f51e
+#: 6b6c5dae38c14541ab4be1e07a782d74
 msgid ":doc:`../basic`"
 msgstr ""
 
-# 29b8146ba32749559c6ef1cebdcaf71e
-# 0aede41e4f454411bbbb531dd2c020a3
-# 74b2215aa350444f8a16a4ff5aa9c696
-# d2efd81cc7cb4fb6a1e184d4ee00ebac
-# c99c53663d2d418cbcc74728d3f8822a
-# bbb56b71066f4a25a76d610d64b3c3b3
 #: ../../query/function.rst:27
 #: ../../query/function.rst:40
 #: ../../query/function.rst:78
 #: ../../query/function.rst:107
 #: ../../query/function.rst:139
 #: ../../query/function.rst:171
+#: c034de5912034a7a8664d2518fa98e6d
+#: c57f7e389a504c5f929e94634cb241cd
+#: 411026770bdd49069b92b1202e76b631
+#: a31696ea71584f178a4400575f2c67cd
+#: 53487ce7c3b54e989a5c7f4b947ca045
+#: fef3a093527f47aa8e6335bf9bf77965
 msgid ":doc:`../domain`"
 msgstr ""
 
-# 9be4ad86cfca4cdba6458d6c1d199653
-# 04ebff944a044f269447e41ca5548b7d
-# b64e509c39784bf39618520f881757bc
 #: ../../query/function.rst:28
 #: ../../query/function.rst:41
 #: ../../query/function.rst:172
+#: 5110e01764b74015bb33537d928b574f
+#: 420add3d31264224aea3d835b2d64f7d
+#: 2ca3649a1cbe4563ae51cc3b1ee7fc07
 msgid ":doc:`../entity`"
 msgstr ""
 
-# d0cccf2da46c44cab88dfc15854a19f5
-# 6620dfd9c8e44438aff1291914671e37
-# e805b6578a3d4929975041ca606f66c5
 #: ../../query/function.rst:29
 #: ../../query/function.rst:42
 #: ../../query/function.rst:173
+#: 99b1a7e741224a63be47b135f1243852
+#: b9990435df2f464e995f80da65866a78
+#: f98a7b265df347dda17b24802d476d74
 msgid "java.util.Map<String, Object>"
 msgstr ""
 
-# 09fd1803554e4b7fa01366c2ea9b09c6
 #: ../../query/function.rst:30
+#: 92a11d94e9d940c2bf95d52819900162
 msgid "java.util.Optional, whose element type is one of :doc:`../basic`, :doc:`../domain`, :doc:`../entity`, and java.util.Map<String, Object>"
 msgstr "要素の型が :doc:`../basic`、:doc:`../domain`、:doc:`../entity`、java.util.Map<String, Object>のいずれかであるjava.util.Optional"
 
-# c825e1d92818445fb814b6906e4a346e
-# 5f4971b8aeca47acaf9f83bda1552bcd
-# 37277828f22349269dc3a4a5cae2ad5d
-# 2a9d98017c6b4274b0e7edf31a020e60
-# 25dc9533de4d466b89066881706a6b15
-# 67aba0743a584a69a356a4df43b88b42
 #: ../../query/function.rst:32
 #: ../../query/function.rst:44
 #: ../../query/function.rst:80
 #: ../../query/function.rst:109
 #: ../../query/function.rst:141
 #: ../../query/function.rst:175
+#: ff966cbe21134acab696c3e8b5e969f7
+#: 44aa53819a5b49d4af2d2bc52ea2df9e
+#: 0337801a2dde4af7accf53cd6fb798fe
+#: 34b62f0d850648b4a14a30e24a6fe59a
+#: f9c6716a610e4f26989da267ccfd500a
+#: 6437d1c35ba34f1b9b8b15c10fff3dfd
 msgid "java.util.OptionalInt"
 msgstr ""
 
-# f4e6c54ef0f34ac69bc270f0baa31c1b
-# b8d36c7632514988afbdd4e96ea29861
-# 577441fe43dc4b94a1d67473dc3e93e0
-# 953bcb5fa3e54ef79425bbdfc45aba32
-# 3c85cae71c4647399db57450e5209555
-# d3db75bb82504c6ea6f1bc117b9ed2f1
 #: ../../query/function.rst:33
 #: ../../query/function.rst:45
 #: ../../query/function.rst:81
 #: ../../query/function.rst:110
 #: ../../query/function.rst:142
 #: ../../query/function.rst:176
+#: bf8412c15d114df19770578ca7dd5408
+#: d0f69c4edf0649beaf22745e6a185a6a
+#: bcb4c4bac5cc42b0b8aea3629bf02464
+#: 9c5062dd1df34039ad79f398a1a49e07
+#: 852259aac8aa4639b945e2f83b120438
+#: 4cb3f3d103e042bc877aeadc33db72e6
 msgid "java.util.OptionalLong"
 msgstr ""
 
-# d82d4ac56bb14196a19b74cd72d7cfbc
-# b0210a88859a4f8c9f25f4f981e46073
-# 32702ee5aa434180b78ce12ed497985e
-# 675fc41f82c847059fddfce5fe1a4d9c
-# 5fb848004f8b402aa52a7a1e903013c7
-# 03558172408b43a481f6091073c9827f
 #: ../../query/function.rst:34
 #: ../../query/function.rst:46
 #: ../../query/function.rst:82
 #: ../../query/function.rst:111
 #: ../../query/function.rst:143
 #: ../../query/function.rst:177
+#: 0596e7c7d06a4d3c82dc934eadbc5a40
+#: 316594432448488d87dda92fc9647663
+#: 8c93f2c70e6e463dbb6c24692dd4e0c9
+#: 065986227d814601b9558e790b7f0f32
+#: 4d593ae9b26445cca85b6190d978436a
+#: c0b41a17fb1642b2b4595eb5caa6aa64
 msgid "java.util.OptionalDouble"
 msgstr ""
 
-# 77739ae73941470db02387de3a0a616f
 #: ../../query/function.rst:36
+#: 731cc1977269478ca9950fb8db0e69ca
 msgid "If the stored function returns a result list, the return type must be ``java.util.List`` and its element type must be one of the following:"
 msgstr "ストアドファンクションが結果リストを返す場合、戻り値の型は ``java.util.List`` であり、その要素の型は次のいずれかである必要があります。"
 
-# 7d2acd314a3a4ef881f492e27e6eb84a
-# b141cf637a83452293b31526baf4c50f
-# 6deeec271ad2448ab05d1558e73d586e
-# 43720bf71bfc4200a38ba8aacfcd57a6
-# 08aef692e386428abceeaa96c916688a
 #: ../../query/function.rst:43
 #: ../../query/function.rst:79
 #: ../../query/function.rst:108
 #: ../../query/function.rst:140
 #: ../../query/function.rst:174
+#: e941e7aeeb5344ef966f61493f17c484
+#: 17bad58912154fd8acab7173a99f979c
+#: 9113a94bae3b469da1c5c256a3d4ebf3
+#: 561428dbfe784917837dd62a3729f5b3
+#: 5de67480a674443c98fe8e314b34015f
 msgid "java.util.Optional whose element type is either :doc:`../basic` or :doc:`../domain`"
 msgstr "要素タイプが :doc:`../basic` または :doc:`../domain` のいずれかである java.util.Optional"
 
-# f6dabf62695140d0bbb997778c8b0919
 #: ../../query/function.rst:49
+#: d9f8477bddc64c6eb1a9537dab510635
 msgid "Function name"
 msgstr "ファクション名"
 
-# 9a8046826f24403a978cbeaf58e4c02c
 #: ../../query/function.rst:51
+#: 62eea450440a43a98f64936c37b2cff2
 msgid "The annotated method name is recognized as the function name by default. To override it, you can specify the value to the ``@Function``'s ``name`` element:"
 msgstr "アノテーションが付けられたメソッド名は、デフォルトで関数名として認識されます。これをオーバーライドするには、 ``@Function`` の ``name`` 要素に値を指定します。"
 
-# 165e4e306ee54d1cb1d29f84e7641bfa
 #: ../../query/function.rst:60
+#: 2efe9ba1c23140d8a4daf122109fa24c
 msgid "Parameters"
 msgstr "パラメータ"
 
-# 30f90c4422dc4100976650ed4a7f1b41
 #: ../../query/function.rst:62
+#: 91798a813a4f409d845736da0165d49a
 msgid "The order of stored function's parameters must correspond with the order of DAO method parameters."
 msgstr "ストアドファンクションのパラメータの順序は、DAO メソッドのパラメータの順序と一致する必要があります。"
 
-# 2748f9ffe8b642038ef3c12c1b1466ee
 #: ../../query/function.rst:64
+#: 8f502cf9038a49cba115fc523f472539
 msgid "All parameters must be annotated with one of following annotations:"
 msgstr "すべてのパラメータには、次のいずれかの注釈を付ける必要があります。"
 
-# afa1c0c968314ef3aa7350eac1f26099
 #: ../../query/function.rst:66
+#: 7c7bbcc58ba541498d070276d07d6572
 msgid "@In"
 msgstr ""
 
-# f05e1f780dd648daa1bdd3563afb5706
 #: ../../query/function.rst:67
+#: 18495bca2cc240e19df6327249824e60
 msgid "@InOut"
 msgstr ""
 
-# 7006278fcffb4b5ea45a6dcbbbe81e51
 #: ../../query/function.rst:68
+#: fcc290355fa4454bb26d4820186c5b7e
 msgid "@Out"
 msgstr ""
 
-# 09cfda5d33154f34ba8740c292400c39
 #: ../../query/function.rst:69
+#: 738b8263d0cc45928a80a51b6da390ea
 msgid "@ResultSet"
 msgstr ""
 
-# 6d56b9bafb9046408f0769ab699e0c07
 #: ../../query/function.rst:72
+#: cf2e1c5cf77b4fceb622656d59ddf36e
 msgid "IN parameter"
 msgstr "IN パラメータ"
 
-# 1265828022364b209cc796eadddf9125
 #: ../../query/function.rst:74
+#: a0a265232baf4d8e94ce1f4051e0ff39
 msgid "To indicate IN parameters, annotate corresponding DAO method parameters with the ``@In`` annotation. The type of the DAO method parameter must be one of the following:"
 msgstr "IN パラメータを示すには、対応する DAO メソッド パラメータに ``@In`` アノテーションを付けます。 DAO メソッド パラメータのタイプは、次のいずれかである必要があります。"
 
-# 897968b2e73a406ca98d328ed75dc9ec
-# b2c7135f61f045188597c401b6cbfd37
-# 873948ea7de8453bbcaec981168d5506
-# fe1ff3fc3a824c8792f55b75e7124bc8
 #: ../../query/function.rst:84
 #: ../../query/function.rst:113
 #: ../../query/function.rst:145
 #: ../../query/function.rst:179
+#: 160f2ec5494341db9ca6b3970e91b93d
+#: 7d766d95cfc04205b7b6ad4d2bf6043a
+#: 48d20df6015d4cd38108a63299dcc86d
+#: 891eeb0dfdae40c7ae5fff5ef52b6d91
 msgid "Suppose you have the following definition:"
 msgstr "次の定義があるとします。"
 
-# 602a23191b874fb29f43f0efdb84f453
-# 512e70fe8b794e7ca51110c4d9904b7e
-# 64564acc341e41419268542c12dbe8bf
-# 5a04bff48a114ebea6c198b346751c91
 #: ../../query/function.rst:91
 #: ../../query/function.rst:120
 #: ../../query/function.rst:152
 #: ../../query/function.rst:186
+#: 4ab5fa91d4e743edbaccb7859239cd58
+#: d025845008d34d359621687a84ee7382
+#: fc2ab1e1a7894c66b34c01140a52e96e
+#: 7841ec22d576472eabdd8561cac9adc4
 msgid "You can invoke the method as follows:"
 msgstr "このメソッドは次のように呼び出すことができます。"
 
-# eec3c4b284ca4876b75a2821cd72ecc7
 #: ../../query/function.rst:99
+#: 04dd30aa771c4d348d134650a64bd5e5
 msgid "INOUT parameter"
 msgstr "INOUT パラメータ"
 
-# 23e486b71c6448c394af69f40e29a3ae
 #: ../../query/function.rst:101
+#: 6b80b02b47d8401e8232df9804cd8560
 msgid "To indicate INOUT parameters, annotate corresponding DAO method parameters with the ``@InOut`` annotation. The type of the DAO method parameter must be ``org.seasar.doma.jdbc.Reference`` and its type parameter must be one of the following:"
 msgstr "INOUT パラメータを示すには、対応する DAO メソッド パラメータに ``@InOut`` アノテーションを付けます。 DAO メソッド パラメータの型は ``org.seasar.doma.jdbc.Reference`` である必要があり、その type パラメータは次のいずれかである必要があります。"
 
-# dc29422d2b1f45359562bb6d5a3533c0
 #: ../../query/function.rst:131
+#: 01e218bb36e142ab97067b92d2d1fda3
 msgid "OUT parameter"
 msgstr "OUT パラメータ"
 
-# 0c879a2bb0a944dbbfa30b92d68b616b
 #: ../../query/function.rst:133
+#: 286bc2eed26944fab2defe459a2beacd
 msgid "To indicate OUT parameters, annotate corresponding DAO method parameters with the ``@Out`` annotation. The type of the DAO method parameter must be ``org.seasar.doma.jdbc.Reference`` and its type parameter must be one of the following:"
 msgstr "OUT パラメータを示すには、対応する DAO メソッドパラメータに ``@Out`` アノテーションを付けます。 DAO メソッド パラメータの型は ``org.seasar.doma.jdbc.Reference`` である必要があり、その type パラメータは次のいずれかである必要があります。"
 
-# fcc26d67810c4f8aa595c1cf67642d9c
 #: ../../query/function.rst:162
+#: 477b629040d94bf6bc5d4b9bffbed939
 msgid "Cursor or result set"
 msgstr "カーソルのOUTパラメータもしくは結果セット"
 
-# 11fd3199497a45b4a4af11ac5eb4ca72
 #: ../../query/function.rst:164
+#: 52d97761dfc2421485367326f7e8c1f6
 msgid "To indicate cursors or result sets, annotate corresponding DAO method parameters with the ``@ResultSet`` annotation."
 msgstr "カーソルまたは結果セットを示すには、対応する DAO メソッドのパラメータに ``@ResultSet`` アノテーションを付けます。"
 
-# e582b030c27d448190419b2ca3d6027d
 #: ../../query/function.rst:167
+#: 645175ccb58a4515b71a35030dd03a96
 msgid "The DAO method parameter type must be ``java.util.List`` and its element type must be one of the following:"
 msgstr "DAO メソッドのパラメータの型は ``java.util.List`` であり、その要素の型は次のいずれかである必要があります。"
 

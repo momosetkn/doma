@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 10:39+0900\n"
-"PO-Revision-Date: 2024-03-17 01:12\n"
+"POT-Creation-Date: 2024-03-17 05:50+0000\n"
+"PO-Revision-Date: 2024-03-17 05:55\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -17,168 +17,168 @@ msgstr ""
 "X-Crowdin-File-ID: 168\n"
 "Language: ja_JP\n"
 
-# 179bd4c8fd4e46449397bd4070efed9b
 #: ../../slf4j-support.rst:3
+#: d7eae832da53488f86a91666a99deed1
 msgid "SLF4J support"
 msgstr "SLF4J サポート"
 
-# 81ddbe8013584e16acd9100f44743212
 #: ../../slf4j-support.rst:6
+#: 5434d48589c64cf2ba9ba2f5d4ba3fd2
 msgid "Contents"
 msgstr "コンテンツ"
 
-# 750272e37df74a5dba4b59de02b78758
 #: ../../slf4j-support.rst:9
+#: 0b30fb99349a4b79904ce5f5add1a247
 msgid "Overview"
 msgstr "概要"
 
-# e761a3498bb64ddc97acf15ab6e4f626
 #: ../../slf4j-support.rst:11
+#: ba71b6555f2b4e109fe5f8bf95f52356
 msgid "Doma uses java util logging as underling logging framework, but you can replace it with `SLF4J <http://www.slf4j.org/>`_ easily."
 msgstr "Doma は基礎となるロギングフレームワークとして java util ロギングを使用しますが、これを `SLF4J <http://www.slf4j.org/>`_ に簡単に置き換えることができます。"
 
-# 5426884b56f746b88c37aa722881edb1
 #: ../../slf4j-support.rst:15
+#: dc52c7b1e4964e41b99be4eb2d672d79
 msgid "Gradle"
 msgstr "Gradle"
 
-# add97a594281434caa288a6f9447f474
 #: ../../slf4j-support.rst:17
+#: 011d89a906f143cbae1b52d3a7dd88d0
 msgid "Doma provides the doma-slf4j artifact to adapt SLF4J."
 msgstr "Doma は、SLF4J を適応させるための doma-slf4j アーティファクトを提供します。"
 
-# 4d2b53eeb98d4bcda61178bf6be25cc2
 #: ../../slf4j-support.rst:28
+#: 22170fe50eda4871a1efa9256607c973
 msgid "Configuration"
 msgstr "設定"
 
-# 7ccd0346f1b3443a84d8884fee107088
 #: ../../slf4j-support.rst:30
+#: 409a672f44054b4d8418457b1c9409f6
 msgid "Return a ``org.seasar.doma.slf4j.Slf4jJdbcLogger`` instance from the ``getJdbcLogger`` method of the ``org.seasar.doma.jdbc.Config`` implementation class."
 msgstr "``org.seasar.doma.slf4j.Slf4jJdbcLogger`` インスタンスを ``org.seasar.doma.jdbc.Config`` の実装クラスの ``getJdbcLogger`` メソッドから返してください。"
 
-# 6fb98429c84b46678127c801edf262bc
 #: ../../slf4j-support.rst:33
+#: a49125bee957478da1aecba26a64c689
 msgid "See also :ref:`Logger<config-logger>`."
 msgstr ":ref:`Logger <config-logger>` も参照してください。"
 
-# 62ec08b2ca484514b8c79a6a5745e1a8
 #: ../../slf4j-support.rst:36
+#: a5a5343754344f0ab26abc85fccea267
 msgid "Loggers"
 msgstr "ロガー"
 
-# 6cb358f0cae74653827a74ef77f2438f
 #: ../../slf4j-support.rst:38
+#: e0868e75c5ab478d91ab5cb571fe798f
 msgid "doma-slf4j provides several loggers as follows:"
 msgstr "doma-slf4j は、次のようないくつかのロガーを提供します。"
 
-# 586ff03de2cd45e5af56b21bd06bd46b
 #: ../../slf4j-support.rst:40
+#: fe2ed5939ac74afebe158296498305c1
 msgid "org.seasar.doma.jdbc.LogKind.DAO"
 msgstr ""
 
-# 5f5c06655b22469dab406f9ffc6298d6
 #: ../../slf4j-support.rst:41
+#: 0bfdd08817be4a97a65d6a2be5a0004f
 msgid "org.seasar.doma.jdbc.LogKind.FAILURE"
 msgstr ""
 
-# 77d661e2f46d4ee983b0db1e742cb1f7
 #: ../../slf4j-support.rst:42
+#: d832984da1294c178b22d342235d7fe4
 msgid "org.seasar.doma.jdbc.LogKind.LOCAL_TRANSACTION"
 msgstr ""
 
-# d73a172dad934f79aea9be005e6adfa1
 #: ../../slf4j-support.rst:43
+#: 1769506b03604698921e9a204a387c89
 msgid "org.seasar.doma.jdbc.LogKind.SKIP.STATE_UNCHANGED"
 msgstr ""
 
-# 417ff263fba74382bd0f4e7fb7a7a6d4
 #: ../../slf4j-support.rst:44
+#: 387a098182aa42538def24c4020fd041
 msgid "org.seasar.doma.jdbc.LogKind.SKIP.BATCH_TARGET_NONEXISTENT"
 msgstr ""
 
-# 21417a8a9e914ef5b33939aaa6cfd9c6
 #: ../../slf4j-support.rst:45
+#: 9c07df213af14d4aa556ffef734cee57
 msgid "org.seasar.doma.jdbc.LogKind.SQL.BATCH_DELETE"
 msgstr ""
 
-# 30df7b7cf54046b8b53f14bf3de329cc
 #: ../../slf4j-support.rst:46
+#: 7b8183f60fc84e39986e4c74d9a46029
 msgid "org.seasar.doma.jdbc.LogKind.SQL.BATCH_INSERT"
 msgstr ""
 
-# e2a509b739b04fdd8cba808ea81d76ac
 #: ../../slf4j-support.rst:47
+#: 283da091d4374ae392e5c8b0fc5f9ec3
 msgid "org.seasar.doma.jdbc.LogKind.SQL.BATCH_UPDATE"
 msgstr ""
 
-# ec3b3557a2de4def9b9af91c48b8bd81
 #: ../../slf4j-support.rst:48
+#: f37ea7dc098f4995bbc4d56bdee31829
 msgid "org.seasar.doma.jdbc.LogKind.SQL.DELETE"
 msgstr ""
 
-# 4149aa3753a14248b9ce5572d6d8346f
 #: ../../slf4j-support.rst:49
+#: 32e1e65c17024873bd0464668cf2e804
 msgid "org.seasar.doma.jdbc.LogKind.SQL.FUNCTION"
 msgstr ""
 
-# e566df609d2b4824a5343285afcbcf7f
 #: ../../slf4j-support.rst:50
+#: d326398bc161468da20562f416e67b6d
 msgid "org.seasar.doma.jdbc.LogKind.SQL.INSERT"
 msgstr ""
 
-# afbf817d1ed643cd9fd107e3565f7806
 #: ../../slf4j-support.rst:51
+#: 3b5c233751ac4b209617612d27b89ba4
 msgid "org.seasar.doma.jdbc.LogKind.SQL.PROCEDURE"
 msgstr ""
 
-# 91f94e0994184e7fba0e3a48c9fafa7e
 #: ../../slf4j-support.rst:52
+#: a51fcd095d894711bf7cea99c58888ca
 msgid "org.seasar.doma.jdbc.LogKind.SQL.SCRIPT"
 msgstr ""
 
-# 0c37b410810245908a5dbcea90645d84
 #: ../../slf4j-support.rst:53
+#: d9c3ed8029554f9b9b07cf88740305cc
 msgid "org.seasar.doma.jdbc.LogKind.SQL.SELECT"
 msgstr ""
 
-# 7bf70dedc979480f8b4e01db5917ee88
 #: ../../slf4j-support.rst:54
+#: 6d92f6bfaf844bd6ba8811f1d7d75035
 msgid "org.seasar.doma.jdbc.LogKind.SQL.SQL_PROCESSOR"
 msgstr ""
 
-# afbbbfd49b554bf5abe370aae94a6176
 #: ../../slf4j-support.rst:55
+#: 28e1fb0e9f3d469b98f3a82e75541877
 msgid "org.seasar.doma.jdbc.LogKind.SQL.UPDATE"
 msgstr ""
 
-# f07e531945594db2baa06d3bad5f4bb0
 #: ../../slf4j-support.rst:57
+#: 0deb30743c5b400db9accc8e9a034f6f
 msgid "See `source code <https://github.com/domaframework/doma/blob/master/doma-slf4j/src/main/java/org/seasar/doma/slf4j/Slf4jJdbcLogger.java>`_ for more information. It's simple."
 msgstr "詳細については、 `ソース コード  <https://github.com/domaframework/doma/blob/master/doma-slf4j/src/main/java/org/seasar/doma/slf4j/Slf4jJdbcLogger.java>`_ を参照してください。"
 
-# 2236146179144d76887087a5ac4222ae
 #: ../../slf4j-support.rst:61
+#: 353517d3ddbd444586156d942f8b7277
 msgid "Examples"
 msgstr "例"
 
-# 9c7edd9083984b45a55233c24ea26a5d
 #: ../../slf4j-support.rst:63
+#: aeea84e60e3a4a1688fb1844faf952b3
 msgid "Below, we show you `logback <http://logback.qos.ch/>`_ configurations."
 msgstr "以下に、`logback <http://logback.qos.ch/>`_ の設定例を示します。"
 
-# 1a99e5a17f514246a75a78e2627f221a
 #: ../../slf4j-support.rst:66
+#: 1ab59893bd9d423fa71f170091dbeef1
 msgid "Log all"
 msgstr "すべてログに記録する"
 
-# ab821d0047484489a7455bd6ae0c7b14
 #: ../../slf4j-support.rst:85
+#: 245dfdceb5664599bd6888af1de44205
 msgid "Log all SQL statements"
 msgstr "すべての SQL ステートメントをログに記録する"
 
-# 6288352e75a0454795ecd0e42654794d
 #: ../../slf4j-support.rst:104
+#: ffe3cc6ffda44742b3d253116c071f30
 msgid "Log only SELECT statements"
 msgstr "SELECT ステートメントのみをログに記録する"
 
