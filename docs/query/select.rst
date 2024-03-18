@@ -34,8 +34,7 @@ The available types of parameters are as follows:
 * :doc:`../basic`
 * :doc:`../domain`
 * Arbitrary type
-* java.util.Optional containing either :doc:`../basic`, :doc:`../domain`, 
-or arbitrary type as its element.
+* java.util.Optional containing either :doc:`../basic`, :doc:`../domain`, or arbitrary type as its element.
 * java.util.Iterable containing either :doc:`../basic` or :doc:`../domain` as its element.
 * java.util.OptionalInt
 * java.util.OptionalLong
@@ -105,8 +104,7 @@ For single record searches, the return type of the method must be one of the fol
 * :doc:`../domain`
 * :doc:`../entity`
 * java.util.Map<String, Object>
-* java.util.Optional containing either :doc:`../basic`, :doc:`../domain`, :doc:`../entity`, 
-or java.util.Map<String, Object> as its element.
+* java.util.Optional containing either :doc:`../basic`, :doc:`../domain`, :doc:`../entity`, or java.util.Map<String, Object> as its element.
 * java.util.OptionalInt
 * java.util.OptionalLong
 * java.util.OptionalDouble
