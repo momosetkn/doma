@@ -25,46 +25,46 @@ Describe the SQL template in an SQL file or in the ``@Sql`` annotation.
   For example, result set including column in EMPLOYEE table is accepted Employee class if the Employee class that correspond EMPLOYEE table is declared.
   But, you need different class from the Employee entity class(For example EmployeeDepartment class) for result set that is get by joining EMPLOYEE table and DEPARTMENT table.
 
-Query condition
+Search condition
 =================
 
-You use method parameters for query condition.
-Available types is below.
+The search condition make use of method parameters.
+The available types of parameters are as follows:
 
 * :doc:`../basic`
 * :doc:`../domain`
 * Arbitrary type
-* :doc:`../basic` , :doc:`../domain` or arbitrary type are within java.util.Optional
-* :doc:`../basic` or :doc:`../domain` are within java.util.Iterable
+* java.util.Optional containing either :doc:`../basic`, :doc:`../domain`, 
+or arbitrary type as its element.
+* java.util.Iterable containing either :doc:`../basic` or :doc:`../domain` as its element.
 * java.util.OptionalInt
 * java.util.OptionalLong
 * java.util.OptionalDouble
 
-Parameters count is no limit.
-You can set ``null`` to parameter if parameter type is :doc:`../basic` or :doc:`../domain`.
-Parameter must not be ``null`` if the type is other than that.
+If the parameter type is one of either :doc:`../basic` or :doc:`../domain`, it is permissible to set the argument to ``null``. 
+If the parameter type is anything other than these, the argument must not be ``null``.
 
-Query that is used basic type or domain class
+Query using basic classes or domain classes
 ----------------------------------------------
 
-You declare :doc:`../basic` or :doc:`../domain` to method or parameter.
+Declare :doc:`../basic` or :doc:`../domain` as method parameters.
 
 .. code-block:: java
 
   @Select
   List<Employee> selectByNameAndSalary(String name, Salary salary);
 
-You map method parameter to SQL by using SQL comment in SQL file.
-In SQL comment, method parameter name is referenced.
+Use the bind variable directive to bind method parameters to SQL.
 
 .. code-block:: sql
 
   select * from employee where employee_name = /* name */'hoge' and salary > /* salary */100
 
-Query that is used arbitrary type
+Query using arbitrary type
 ----------------------------------
 
-You map to SQL by access field or call method there are using by dot ``.`` if using arbitrary parameter type in method parameter.
+When using arbitrary types as method parameters, use a dot ``.`` within the bind variable directive 
+to perform field access or method invocation, and bind the result to SQL.
 
 .. code-block:: java
 
@@ -75,17 +75,17 @@ You map to SQL by access field or call method there are using by dot ``.`` if us
 
   select * from employee where employee_name = /* employee.name */'hoge' and salary > /* employee.getSalary() */100
 
-You can specify multiple parameter.
+Multiple parameters can be specified.
 
 .. code-block:: java
 
   @Select
   List<Employee> selectByEmployeeAndDepartment(Employee employee, Department department);
 
-Mapping to IN clauses by using Iterable.
+Mapping to the IN clause
 -----------------------------------------
 
-You use subtype of ``java.lang.Iterable`` if execute searching by using IN clauses.
+To bind to the IN clause, use a subtype of ``java.lang.Iterable`` as the parameter.
 
 .. code-block:: java
 
@@ -99,14 +99,14 @@ You use subtype of ``java.lang.Iterable`` if execute searching by using IN claus
 Single record search
 =====================
 
-You specify method return value type either of below for search single record.
+For single record searches, the return type of the method must be one of the following:
 
 * :doc:`../basic`
 * :doc:`../domain`
 * :doc:`../entity`
 * java.util.Map<String, Object>
-* Either :doc:`../basic` , :doc:`../domain` , :doc:`../entity` or java.util.Map<String, Object>
-  is within java.util.Optional
+* java.util.Optional containing either :doc:`../basic`, :doc:`../domain`, :doc:`../entity`, 
+or java.util.Map<String, Object> as its element.
 * java.util.OptionalInt
 * java.util.OptionalLong
 * java.util.OptionalDouble
@@ -116,22 +116,21 @@ You specify method return value type either of below for search single record.
   @Select
   Employee selectByNameAndSalary(String name, BigDecimal salary);
 
-``null`` is return if return type is not ``Optional`` and result count is 0.
-If `Ensure of search result`_ is enabled, exception is thrown regardless return value type if search count is 0.
+If the return type is not ``Optional`` and the result count is 0, ``null`` is returned.
 
-``NonUniqueResultException`` is thrown if result exists 2 or more.
+If there are 2 or more search results, a ``NonUniqueResultException`` is thrown.
 
 Multiple record search
 ========================
 
-You specify ``java.util.List`` to method return value type to for search multiple record.
-You can use below property in ``List``.
+When searching for multiple records, specify ``java.util.List`` as the return type of the method. 
+The elements of the ``List`` can be of the following types:
 
 * :doc:`../basic`
 * :doc:`../domain`
 * :doc:`../entity`
 * java.util.Map<String, Object>
-* Either :doc:`../basic` or :doc:`../domain` is within java.util.Optional
+* java.util.Optional containing either :doc:`../basic` or :doc:`../domain` as its element.
 * java.util.OptionalInt
 * java.util.OptionalLong
 * java.util.OptionalDouble
@@ -141,28 +140,28 @@ You can use below property in ``List``.
   @Select
   List<Employee> selectByNameAndSalary(String name, Salary salary);
 
-Empty list instead of ``null`` is return if result count is 0.
-But if `Ensure of search result`_ is enabled, exception is thrown if search count is 0.
+If there are no search results, an empty list is returned.
 
 Stream search
 ==============
 
-You can use stream search if  handle all record at one try as ``java.util.stream.Stream`` rather than receiving as ``java.util.List``.
+For processing a large number of records incrementally, stream search using ``java.util.stream.Stream`` can be utilized.
 
-There are two kind in stream search such as return the return value and pass ``Stream`` to ``java.util.Function``.
+There are two types of stream searches: one method involves passing a Stream to ``java.util.Function``, 
+and the other method involves returning a ``Stream`` as the return value.
 
-Pass to the Function
----------------------------
+Passing a Stream to Function
+-----------------------------
 
-You set ``SelectType.STREAM`` to ``strategy`` property within ``@Select`` annotation and
-define subtype that is ``java.util.Function<Stream<TARGET>, RESULT>`` or ``java.util.Function<Stream<TARGET>, RESULT>`` to method parameter.
+Set the ``strategy`` property in the ``@Select`` annotation to ``SelectType.STREAM``, 
+and add a subtype of ``java.util.Function<Stream<TARGET, RESULT>>`` as a method parameter.
 
 .. code-block:: java
 
   @Select(strategy = SelectType.STREAM)
   BigDecimal selectByNameAndSalary(String name, BigDecimal salary, Function<Stream<Employee>, BigDecimal> mapper);
 
-Caller receive stream and pass lambda expression that return result.
+The caller of the DAO method passes a lambda expression that receives a stream and returns the result.
 
 .. code-block:: java
 
@@ -171,7 +170,7 @@ Caller receive stream and pass lambda expression that return result.
       return ...;
   });
 
-``Function<Stream<TARGET>, RESULT>`` corresponding type parameter ``TARGET`` must be either of below.
+The type parameter ``TARGET`` of ``Function<Stream<TARGET>, RESULT>`` must be one of the following:
 
 * :doc:`../basic`
 * :doc:`../domain`
@@ -184,9 +183,7 @@ Caller receive stream and pass lambda expression that return result.
 
 Type parameter ``RESULT`` must match to Dao method return value.
 
-If `Ensure of search result`_ is enabled, exception is thrown if search count is 0.
-
-Return the return value
+Returning a Stream
 ---------------------------
 
 You define ``java.util.stream.Stream`` to method return value.
@@ -196,7 +193,7 @@ You can use following type at property within ``Stream``.
 * :doc:`../domain`
 * :doc:`../entity`
 * java.util.Map<String, Object>
-* Either :doc:`../basic` or :doc:`../domain` within java.util.Optional
+* java.util.Optional containing either :doc:`../basic` or :doc:`../domain` as its element.
 * java.util.OptionalInt
 * java.util.OptionalLong
 * java.util.OptionalDouble
@@ -206,7 +203,7 @@ You can use following type at property within ``Stream``.
   @Select
   Stream<Employee> selectByNameAndSalary(String name, BigDecimal salary);
 
-Below is a caller.
+The caller of the DAO method will be as follows:
 
 .. code-block:: java
 
@@ -215,41 +212,38 @@ Below is a caller.
     ...
   }
 
-If `Ensure of search result`_ is enabled, exception is thrown if search count is 0.
-
 .. warning::
 
-  Make sure to close the stream for prevent forgetting of release the resource.
-  If you do not close the stream, ``java.sql.ResultSet``  or ``java.sql.PreparedStatement`` ,
-  ``java.sql.Connection`` those are not closing.
+  To ensure the proper closing of resources such as 
+  ``java.sql.ResultSet``, ``java.sql.PreparedStatement``, and ``java.sql.Connection``, 
+  always close the ``Stream``.
 
 .. note::
 
-  Consider adoption of pass to Function unless there is some particular reason,
-  because return the return value has the risk that is forgetting of release the resource.
-  Doma display warning message at Dao method for attention.
-  You specify ``@Suppress`` below for suppress warning.
+  Due to the risk of forgetting to release resources when returning values, Doma displays a warning message. 
+  To suppress the warning message, please specify ``@Suppress`` as follows:
 
-  .. code-block:: java
+.. code-block:: java
 
-    @Select
-    @Suppress(messages = { Message.DOMA4274 })
-    Stream<Employee> selectByNameAndSalary(String name, BigDecimal salary);
+  @Select
+  @Suppress(messages = { Message.DOMA4274 })
+  Stream<Employee> selectByNameAndSalary(String name, BigDecimal salary);
 
-Collect search
-===============
+Collector search
+================
 
-You can use collect search if handle result as ``java.util.Collector``.
+Search results can be processed using ``java.util.Collector``.
 
-You set ``SelectType.COLLECT`` to ``strategy`` property within ``@Select`` annotation and
-define subtype that is ``java.stream.Collector<TARGET, ACCUMULATION, RESULT>`` or ``java.stream.Collector<TARGET, ?, RESULT>`` to method parameter.
+To process search results using ``Collector``, set the ``strategy`` element of ``@Select`` to ``SelectType.COLLECT``, 
+and define a subtype of ``java.stream.Collector<TARGET, ACCUMULATION, RESULT>`` or 
+``java.stream.Collector<TARGET, ?, RESULT>`` as a method parameter.
 
 .. code-block:: java
 
   @Select(strategy = SelectType.COLLECT)
   <RESULT> RESULT selectBySalary(BigDecimal salary, Collector<Employee, ?, RESULT> collector);
 
-Caller pass ``Collector`` instance.
+The caller of the DAO method passes an instance of ``Collector``.
 
 .. code-block:: java
 
@@ -257,35 +251,30 @@ Caller pass ``Collector`` instance.
   Map<Integer, List<Employee>> result =
       dao.selectBySalary(salary, Collectors.groupingBy(Employee::getDepartmentId));
 
-``Collector<TARGET, ACCUMULATION, RESULT>`` corresponding type parameter ``TARGET`` must be either of below.
+The type parameter ``TARGET`` of ``Collector<TARGET, ACCUMULATION, RESULT>`` must be one of the following:
 
 * :doc:`../basic`
 * :doc:`../domain`
 * :doc:`../entity`
 * java.util.Map<String, Object>
-* Either :doc:`../basic` or :doc:`../domain` within java.util.Optional
+* java.util.Optional containing either :doc:`../basic` or :doc:`../domain` as its element.
 * java.util.OptionalInt
 * java.util.OptionalLong
 * java.util.OptionalDouble
 
-Type parameter ``RESULT`` must match Dao method return value.
-
-If `Ensure of search result`_ is enabled, exception is thrown if search count is 0.
+The type parameter ``RESULT`` of ``Collector<TARGET, ACCUMULATION, RESULT>`` must match the return type of the DAO method.
 
 .. note::
 
   Collect search is the shortcut that pass to Function within stream search.
   You can do equivalent by using `collect`` method in ``Stream`` object that is getting from stream search.
 
-Using search option search
+Search options
 ============================
 
-You can automatically generate SQL for paging and pessimistic concurrency control from SQL file that is wrote SELECT clauses
-by you use ``SelectOptions`` that is represent search option.
+By using ``SelectOptions``, you can convert the SELECT statement into SQL for paging or pessimistic locking purposes.
 
-You use ``SelectOptions`` in combination with `Single record search`_ ,  `Multiple record search`_ ,  `Stream search`_
-
-You define ``SelectOptions`` as Dao method parameter.
+``SelectOptions`` is defined as a parameter of the DAO method.
 
 .. code-block:: java
 
@@ -296,7 +285,7 @@ You define ``SelectOptions`` as Dao method parameter.
       ...
   }
 
-You can get ``SelectOptions`` instance by static ``get`` method.
+You can obtain an instance of ``SelectOptions`` through a static ``get`` method.
 
 .. code-block:: java
 
@@ -341,8 +330,7 @@ Additionally, specific conditions must be met according to the dialect.
 Pessimistic concurrency control
 ---------------------------------
 
-You indicate executing pessimistic concurrency control by ``forUpdate`` within ``SelectOptions``,
-and pass the SelectOptions instance to Dao method.
+You can indicate pessimistic concurrency control using the ``forUpdate`` method of ``SelectOptions``.
 
 .. code-block:: java
 
@@ -350,18 +338,18 @@ and pass the SelectOptions instance to Dao method.
   EmployeeDao dao = new EmployeeDaoImpl();
   List<Employee> list = dao.selectByDepartmentName("ACCOUNT", options);
 
-The method that name is started *forUpdate* for pessimistic concurrency control is prepared
-such as ``forUpdateNowait`` method that do not wait for getting lock
-and ``forUpdate`` method that can specify lock target table or column alias.
+``SelectOptions`` provides methods for pessimistic concurrency control with names starting with `forUpdate`, 
+such as ``forUpdate`` to specify aliases for tables or columns to be locked, 
+and ``forUpdateNowait`` to acquire locks without waiting.
 
-Pessimistic concurrency control is executed by rewriting original SQL writing in file.
-Original SQL must be satisfied condition below.
+Pessimistic concurrency control is achieved by rewriting the original SQL, which must meet the following conditions:
 
-* SQL is SELECT clauses
-* In top level, set operation is not executed like UNION, EXCEPT, INTERSECT.(But using at subquery is able)
-* Pessimistic concurrency control process is not included.
+* it is a SELECT statement.
+* it does not perform set operations like UNION, EXCEPT, or INTERSECT at the top level (though subqueries are allowed).
+* it does not include pessimistic concurrency control operations.
 
-Part or all of pessimistic concurrency control method can not used according to the database dialect.
+
+Depending on the dialect, some or all of the methods for pessimistic concurrency control may not be available for use.
 
 +------------------+-----------------------------------------------------------------------------+
 | Dialect          |    Description                                                              |
@@ -387,11 +375,12 @@ Part or all of pessimistic concurrency control method can not used according to 
 | StandardDialect  |    You can not use all of pessimistic concurrency control method.           |
 +------------------+-----------------------------------------------------------------------------+
 
-Aggregate
+Count
 ---------
 
-You can get aggregate count by calling ``count`` method within ``SelectOptions``.
-Usually, you use combination in paging option and use in case of getting all count if not narrowing by paging.
+By calling the ``count`` method of ``SelectOptions``, you can retrieve the total count of records. 
+Typically, this is used in combination with paging options to retrieve the total count of records 
+when not filtering through paging.
 
 .. code-block:: java
 
@@ -400,94 +389,97 @@ Usually, you use combination in paging option and use in case of getting all cou
   List<Employee> list = dao.selectByDepartmentName("ACCOUNT", options);
   long count = options.getCount();
 
-Aggregate count is get by using ``getCount`` method within ``SelectOptions`` after calling Dao method.
-The ``getCount`` method is return ``-1`` if you do not execute ``count`` method before calling method.
+The total count of records is obtained using the ``getCount`` method of ``SelectOptions`` after calling the DAO method. 
+If the ``count`` method hasn't been executed before the DAO method call, the ``getCount`` method will return -1.
 
-Ensure of search result
-========================
+Ensure the existence of search results
+=======================================
 
-You specify ``true`` to ``ensureResult`` property within ``@Select`` annotation if you want to ensure of search result count is over 1.
+If you want to ensure that there is at least one search result, specify ``true`` for the ``ensureResult`` element of ``@Select``.
 
 .. code-block:: java
 
   @Select(ensureResult = true)
   Employee selectById(Integer id);
 
-``NoResultException`` is thrown if search result count is 0.
+If there are no search results, a ``NoResultException`` will be thrown.
 
-Ensure of mapping search result
-================================
+Ensure the mapping of search results
+====================================
 
-You specify ``true`` to ``ensureResultMapping`` property within ``@Select`` annotation,
-if you want ensure that mapping result set column to all entity properties without exception.
+If you want to ensure that all columns of the result set are mapped to properties of the entity without missing any, 
+specify ``true`` for the ``ensureResultMapping`` element of ``@Select``.
 
 .. code-block:: java
 
   @Select(ensureResultMapping = true)
   Employee selectById(Integer id);
 
-``ResultMappingException`` is thrown if there are property that is not mapping to result set column.
+If there are properties in the entity that are not mapped to columns in the result set, 
+a ``ResultMappingException`` will be thrown.
 
 Query timeout
 ==================
 
-You can specify seconds of query timeout to ``queryTimeout`` property within ``@Update`` annotation.
+You can specify the query timeout in seconds for the ``queryTimeout`` property within the ``@Select`` annotation.
 
 .. code-block:: java
 
   @Select(queryTimeout = 10)
   List<Employee> selectAll();
 
-Query timeout that is specified in :doc:`../config` is used if ``queryTimeout`` property is not set value.
+
+If the value of the ``queryTimeout`` property is not set, the query timeout specified in the :doc:`../config` will be used.
 
 Fetch size
 ==============
 
-You can specify fetch size to ``fetchSize`` property within ``@Select`` annotation.
+You can specify the fetch size in the ``fetchSize`` property within the ``@Select`` annotation.
 
 .. code-block:: java
 
   @Select(fetchSize = 20)
   List<Employee> selectAll();
 
-Fetch size that is specified in :doc:`../config` is used if value is not set.
+If the value of the ``fetchSize`` property is not set, the fetch size specified in the :doc:`../config` will be used.
 
 Max row count
 ===============
 
-You can specify max row count to ``maxRows`` property within ``@Select`` annotation.
+You can specify the maximum number of rows in the ``maxRows`` property within the ``@Select`` annotation.
 
 .. code-block:: java
 
   @Select(maxRows = 100)
   List<Employee> selectAll();
 
-Max row count that is is specified in :doc:`../config` is used if value is not set.
+If the value of the ``maxRows`` property is not set, the maximum number of rows specified in the :doc:`../config` will be used.
 
-Naming rule of map's key
-============================
+The naming convention for the keys of the Map
+=============================================
 
-You can specify naming rule of map's key to ``mapKeyNaming`` property within ``@Select`` annotation,
-if you want mapping search result to ``java.util.Map<String, Object>``.
+If you are mapping search results to ``java.util.Map<String, Object>``, 
+you can specify the naming convention for the keys of the map in the ``mapKeyNaming`` element of ``@Select``.
 
 .. code-block:: java
 
   @Select(mapKeyNaming = MapKeyNamingType.CAMEL_CASE)
   List<Map<String, Object>> selectAll();
 
-``MapKeyNamingType.CAMEL_CASE`` present converting column name to camel case.
-In addition to there are rule that converting upper case or lower case.
+``MapKeyNamingType.CAMEL_CASE`` indicates that the column names will be converted to camel case. 
+There are also conventions to convert column names to uppercase or lowercase.
 
-The final conversion result is decide by value specified here and implementation of ``MapKeyNaming`` is specified at :doc:`../config`.
+The final conversion result is determined by the value specified here and the implementation of ``MapKeyNaming``
+specified in the :doc:`../config`.
 
-SQL log output format
-======================
+Output format of SQL logs
+=========================
 
-You can specify SQL log output format to ``sqlLog`` property within ``@Select`` annotation.
+You can specify the format of SQL log output in the ``sqlLog`` element of the ``@Select`` annotation.
 
 .. code-block:: java
 
   @Select(sqlLog = SqlLogType.RAW)
   List<Employee> selectById(Integer id);
 
-``SqlLogType.RAW`` represent outputting log that is sql with a binding parameter.
+``SqlLogType.RAW`` indicates logging SQL with bound parameters.
