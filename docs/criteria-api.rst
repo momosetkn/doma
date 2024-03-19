@@ -1370,6 +1370,7 @@ Upsert is also supported:
 By calling on `onDuplicateKeyUpdate`, you can update when a key is duplicated.
 
 .. code-block:: java
+
     int count = entityql
         .insert(d, departments)
         .onDuplicateKeyUpdate
@@ -1378,6 +1379,7 @@ By calling on `onDuplicateKeyUpdate`, you can update when a key is duplicated.
 By calling on `onDuplicateKeyIgnore`, you can ignore errors when a key is duplicated.
 
 .. code-block:: java
+
     int count = entityql
         .insert(d, departments)
         .onDuplicateKeyIgnore
@@ -1440,6 +1442,7 @@ Upsert is also supported:
 By calling on `onDuplicateKeyUpdate`, you can update when a key is duplicated.
 
 .. code-block:: java
+
     BatchResult<Department> result = entityql
         .insert(d, departments)
         .onDuplicateKeyUpdate
@@ -1448,6 +1451,7 @@ By calling on `onDuplicateKeyUpdate`, you can update when a key is duplicated.
 By calling on `onDuplicateKeyIgnore`, you can ignore errors when a key is duplicated.
 
 .. code-block:: java
+
     BatchResult<Department> result = entityql
         .insert(d, departments)
         .onDuplicateKeyIgnore
