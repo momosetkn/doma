@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-17 13:53+0000\n"
-"PO-Revision-Date: 2024-03-18 15:45\n"
+"POT-Creation-Date: 2024-03-19 22:53+0900\n"
+"PO-Revision-Date: 2024-03-19 14:05\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -229,7 +229,7 @@ msgid "!"
 msgstr ""
 
 #: ../../expression.rst:106
-msgid "Logical complement operator"
+msgid "Logical NOT operator"
 msgstr "論理否定演算子"
 
 #: ../../expression.rst:107
@@ -237,7 +237,7 @@ msgid "&&"
 msgstr ""
 
 #: ../../expression.rst:107
-msgid "Conditional-AND operator"
+msgid "Logical AND operator"
 msgstr "論理積演算子"
 
 #: ../../expression.rst:108
@@ -245,7 +245,7 @@ msgid "||"
 msgstr ""
 
 #: ../../expression.rst:108
-msgid "Conditional-OR operator"
+msgid "Logical OR operator"
 msgstr "論理和演算子"
 
 #: ../../expression.rst:111

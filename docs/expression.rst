@@ -103,9 +103,9 @@ You can use the following logical operators:
 ========= ===========================
 Operator  Description
 ========= ===========================
-!         Logical complement operator
-&&        Conditional-AND operator
-||        Conditional-OR operator
+!         Logical NOT operator
+&&        Logical AND operator
+||        Logical OR operator
 ========= ===========================
 
 With parentheses, you can override the precedence of operators.

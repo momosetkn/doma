@@ -16,7 +16,7 @@ To execute a search using the SELECT statement, annotate the DAO method with ``@
       ...
   }
 
-The ``@Select`` annotation requires an SQL template. 
+The ``@Select`` annotation requires an :doc:`SQL template <../sql>`. 
 Describe the SQL template in an SQL file or in the ``@Sql`` annotation.
 
 .. note::
@@ -53,7 +53,7 @@ Declare :doc:`../basic` or :doc:`../domain` as method parameters.
   @Select
   List<Employee> selectByNameAndSalary(String name, Salary salary);
 
-Use the bind variable directive to bind method parameters to SQL.
+Use the :ref:`bind-variable-directive` to bind method parameters to SQL.
 
 .. code-block:: sql
 

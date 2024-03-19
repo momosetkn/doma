@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-18 23:45+0900\n"
-"PO-Revision-Date: 2024-03-18 15:45\n"
+"POT-Creation-Date: 2024-03-19 22:53+0900\n"
+"PO-Revision-Date: 2024-03-19 14:05\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -30,8 +30,8 @@ msgid "To execute a search using the SELECT statement, annotate the DAO method w
 msgstr "SELECTステートメントを使用して検索を実行するには、DAOメソッドに ``@Select`` アノテーションを付けます。"
 
 #: ../../query/select.rst:19
-msgid "The ``@Select`` annotation requires an SQL template. Describe the SQL template in an SQL file or in the ``@Sql`` annotation."
-msgstr "``@Select`` アノテーションにはSQLテンプレートが必要です。SQLファイルまたは ``@Sql`` アノテーションでSQLテンプレートを記述してください。"
+msgid "The ``@Select`` annotation requires an :doc:`SQL template <../sql>`. Describe the SQL template in an SQL file or in the ``@Sql`` annotation."
+msgstr "``@Select`` アノテーションには :doc:`SQL template <../sql>` が必要です。SQLファイルまたは ``@Sql`` アノテーションでSQLテンプレートを記述してください。"
 
 #: ../../query/select.rst:24
 msgid "You need creating entity class **depending on search result**. For example, result set including column in EMPLOYEE table is accepted Employee class if the Employee class that correspond EMPLOYEE table is declared. But, you need different class from the Employee entity class(For example EmployeeDepartment class) for result set that is get by joining EMPLOYEE table and DEPARTMENT table."
@@ -115,8 +115,8 @@ msgid "Declare :doc:`../basic` or :doc:`../domain` as method parameters."
 msgstr "メソッドのパラメータとして :doc:`../basic` または :doc:`../domain` を宣言します。"
 
 #: ../../query/select.rst:56
-msgid "Use the bind variable directive to bind method parameters to SQL."
-msgstr "メソッドのパラメータを SQL にバインドするには、 バインド変数ディレクティブを使用します。"
+msgid "Use the :ref:`bind-variable-directive` to bind method parameters to SQL."
+msgstr "メソッドのパラメータをSQLにバインドするには、 :ref:`bind-variable-directive` を使用します。"
 
 #: ../../query/select.rst:63
 msgid "Query using arbitrary type"

@@ -180,6 +180,8 @@ Supported directives are as follows:
 
   See also :doc:`expression` for information of the expression language available in directives.
 
+.. _bind-variable-directive:
+
 Bind variable directive
 -----------------------
 
