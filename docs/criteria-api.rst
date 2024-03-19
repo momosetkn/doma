@@ -1371,18 +1371,18 @@ By calling on `onDuplicateKeyUpdate`, you can update when a key is duplicated.
 
 .. code-block:: java
 
-    int count = entityql
+    BatchResult<Department> = entityql
         .insert(d, departments)
-        .onDuplicateKeyUpdate
+        .onDuplicateKeyUpdate()
         .execute();
 
 By calling on `onDuplicateKeyIgnore`, you can ignore errors when a key is duplicated.
 
 .. code-block:: java
 
-    int count = entityql
+    BatchResult<Department> = entityql
         .insert(d, departments)
-        .onDuplicateKeyIgnore
+        .onDuplicateKeyIgnore()
         .execute();
 
 Insert statement (NativeSql)
@@ -1443,18 +1443,42 @@ By calling on `onDuplicateKeyUpdate`, you can update when a key is duplicated.
 
 .. code-block:: java
 
-    BatchResult<Department> result = entityql
-        .insert(d, departments)
-        .onDuplicateKeyUpdate
+    int count result = nativeSql
+        .insert(d)
+        .values(
+            c -> {
+              c.value(d.departmentId, 1);
+              c.value(d.departmentNo, 60);
+              c.value(d.departmentName, "DEVELOPMENT");
+              c.value(d.location, "KYOTO");
+              c.value(d.version, 2);
+            })
+        .onDuplicateKeyUpdate()
+        .keys(d.departmentId)
+        .set(
+            c -> {
+              c.value(d.departmentName, c.excluded(d.departmentName));
+              c.value(d.location, "KYOTO");
+              c.value(d.version, 3);
+            })
         .execute();
 
 By calling on `onDuplicateKeyIgnore`, you can ignore errors when a key is duplicated.
 
 .. code-block:: java
 
-    BatchResult<Department> result = entityql
+    int count result = nativeSql
         .insert(d, departments)
-        .onDuplicateKeyIgnore
+        .values(
+            c -> {
+              c.value(d.departmentId, 1);
+              c.value(d.departmentNo, 60);
+              c.value(d.departmentName, "DEVELOPMENT");
+              c.value(d.location, "KYOTO");
+              c.value(d.version, 2);
+            })
+        .onDuplicateKeyIgnore()
+        .keys(d.departmentId)
         .execute();
 
 Update statement
