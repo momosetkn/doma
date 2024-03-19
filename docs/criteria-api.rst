@@ -1365,6 +1365,24 @@ The execute method may throw following exceptions:
 
 * UniqueConstraintException: if an unique constraint is violated
 
+Upsert is also supported:
+
+By calling on `onDuplicateKeyUpdate`, you can update when a key is duplicated.
+
+.. code-block:: java
+    int count = entityql
+        .insert(d, departments)
+        .onDuplicateKeyUpdate
+        .execute();
+
+By calling on `onDuplicateKeyIgnore`, you can ignore errors when a key is duplicated.
+
+.. code-block:: java
+    int count = entityql
+        .insert(d, departments)
+        .onDuplicateKeyIgnore
+        .execute();
+
 Insert statement (NativeSql)
 ----------------------------
 
@@ -1416,6 +1434,24 @@ The above query issues the following SQL statement:
     insert into DEPARTMENT_ARCHIVE (DEPARTMENT_ID, DEPARTMENT_NO, DEPARTMENT_NAME,
     LOCATION, VERSION) select t0_.DEPARTMENT_ID, t0_.DEPARTMENT_NO, t0_.DEPARTMENT_NAME,
     t0_.LOCATION, t0_.VERSION from DEPARTMENT t0_ where t0_.DEPARTMENT_ID in (?, ?)
+
+Upsert is also supported:
+
+By calling on `onDuplicateKeyUpdate`, you can update when a key is duplicated.
+
+.. code-block:: java
+    BatchResult<Department> result = entityql
+        .insert(d, departments)
+        .onDuplicateKeyUpdate
+        .execute();
+
+By calling on `onDuplicateKeyIgnore`, you can ignore errors when a key is duplicated.
+
+.. code-block:: java
+    BatchResult<Department> result = entityql
+        .insert(d, departments)
+        .onDuplicateKeyIgnore
+        .execute();
 
 Update statement
 ============================
