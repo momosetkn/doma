@@ -1440,6 +1440,8 @@ The above query issues the following SQL statement:
 Upsert is also supported:
 
 By calling on `onDuplicateKeyUpdate`, you can update when a key is duplicated.
+You can specify keys for duplicate check targets in `keys`.
+You can specify the value of the update in case of duplicates in `set`.
 
 .. code-block:: java
 
@@ -1464,6 +1466,7 @@ By calling on `onDuplicateKeyUpdate`, you can update when a key is duplicated.
         .execute();
 
 By calling on `onDuplicateKeyIgnore`, you can ignore errors when a key is duplicated.
+You can specify keys for duplicate check targets in `keys`.
 
 .. code-block:: java
 
