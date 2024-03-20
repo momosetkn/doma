@@ -11,6 +11,14 @@ Overview
 `Doma CodeGen Plugin <https://plugins.gradle.org/plugin/org.domaframework.doma.codegen>`_ is a Gradle plugin. 
 It generates Java, Kotlin, and SQL files from Database.
 
+.. admonition:: Are you looking for the documentation for Ant-based Doma-Gen?
+    :class: important
+
+    The documentation for Ant-based Doma-Gen is available at 
+    `the Doma-Gen GitHub repository <https://github.com/domaframework/doma-gen/tree/master/docs>`_.
+
+    Ant-based Doma-Gen is not currently maintained. Please use the Doma CodeGen Plugin explained on this page instead.
+
 How to use
 ====================
 
