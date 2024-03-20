@@ -126,6 +126,21 @@ Parameter name indicate ``java.lang.Iterable`` subtype element in SQL file.
 Identifier auto setting and version number auto setting are not executed in batch insert by SQL file.
 Also, ``exclude`` property and ``include`` property within ``@BatchInsert`` are not referenced.
 
+Batch upsert
+===========================
+
+you can specify whether to update or ignore using a ``duplicateKeyType`` property In case of duplication.
+By default, it is ``DuplicateKeyType.EXCEPTION`` , and an error will occur in case of duplicated.
+There are 3 types to choose from: ``DuplicateKeyType.UPDATE`` , ``DuplicateKeyType.IGNORE`` , ``DuplicateKeyType.EXCEPTION`` .
+
+.. code-block:: java
+
+  @BatchInsert(duplicateKeyType = DuplicateKeyType.UPDATE)
+  int[] insertOnDuplicateKeyUpdate(List<Employee> employees);
+
+  @BatchInsert(duplicateKeyType = DuplicateKeyType.IGNORE)
+  int[] insertOnDuplicateKeyIgnore(List<Employee> employees);
+
 Unique constraint violation
 ============================
 
