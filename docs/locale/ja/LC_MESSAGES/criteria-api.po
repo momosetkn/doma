@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-20 11:03+0900\n"
-"PO-Revision-Date: 2024-03-20 09:58\n"
+"PO-Revision-Date: 2024-03-20 13:49\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -97,17 +97,17 @@ msgstr ""
 #: ../../criteria-api.rst:123
 #: ../../criteria-api.rst:175
 msgid "insert"
-msgstr "追加"
+msgstr "insert"
 
 #: ../../criteria-api.rst:124
 #: ../../criteria-api.rst:174
 msgid "delete"
-msgstr "削除"
+msgstr "delete"
 
 #: ../../criteria-api.rst:125
 #: ../../criteria-api.rst:176
 msgid "update"
-msgstr "更新"
+msgstr "update"
 
 #: ../../criteria-api.rst:127
 msgid "You can instantiate the ``Entityql`` class as follows:"
