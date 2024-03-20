@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-17 13:53+0000\n"
-"PO-Revision-Date: 2024-03-19 14:05\n"
+"POT-Creation-Date: 2024-03-20 12:38+0900\n"
+"PO-Revision-Date: 2024-03-20 03:41\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -157,39 +157,75 @@ msgstr "Gradle でのオプションの設定"
 msgid "Use `the compilerArgs property <https://docs.gradle.org/5.0/dsl/org.gradle.api.tasks.compile.CompileOptions.html#org.gradle.api.tasks.compile.CompileOptions:compilerArgs>`_:"
 msgstr "`compilerArgs プロパティ <https://docs.gradle.org/5.0/dsl/org.gradle.api.tasks.compile.CompileOptions.html#org.gradle.api.tasks.compile.CompileOptions:compilerArgs>`_ を使用します。"
 
-#: ../../annotation-processing.rst:103
-msgid "Setting options in IntelliJ IDEA"
-msgstr "IntelliJ IDEA でのオプションの設定"
+#: ../../annotation-processing.rst:96
+#: ../../annotation-processing.rst:161
+msgid "Kotlin"
+msgstr ""
 
-#: ../../annotation-processing.rst:105
-msgid "Import your project as a Gradle project. In the case, the options written in build.gradle are used."
-msgstr "プロジェクトを Gradle プロジェクトとしてインポートします。この場合、build.gradleに記述されたオプションが使用されます。"
+#: ../../annotation-processing.rst:106
+#: ../../annotation-processing.rst:179
+msgid "Groovy"
+msgstr ""
 
-#: ../../annotation-processing.rst:109
+#: ../../annotation-processing.rst:117
+msgid "Setting options in Maven"
+msgstr "Maven でのオプションの設定"
+
+#: ../../annotation-processing.rst:119
+msgid "Use `the compilerArgs parameter <https://maven.apache.org/plugins/maven-compiler-plugin/examples/pass-compiler-arguments.html>`_:"
+msgstr "`compilerArgs パラメータ <https://maven.apache.org/plugins/maven-compiler-plugin/examples/pass-compiler-arguments.html>`_: を使用します。"
+
+#: ../../annotation-processing.rst:150
 msgid "Setting options in Eclipse"
 msgstr "Eclipse でのオプションの設定"
 
-#: ../../annotation-processing.rst:111
-msgid "Use the Gradle plugin `com.diffplug.eclipse.apt <https://plugins.gradle.org/plugin/com.diffplug.eclipse.apt>`_ and the processorArgs property:"
-msgstr "Gradle プラグイン `com.diffplug.eclipse.apt <https://plugins.gradle.org/plugin/com.diffplug.eclipse.apt>`_ とprocessorArgs プロパティを使用します。"
+#: ../../annotation-processing.rst:153
+#: ../../annotation-processing.rst:206
+msgid "Gradle"
+msgstr ""
 
-#: ../../annotation-processing.rst:129
+#: ../../annotation-processing.rst:155
+msgid "Use the Gradle plugin `com.diffplug.eclipse.apt <https://plugins.gradle.org/plugin/com.diffplug.eclipse.apt>`_ and the ``processorArgs`` property:"
+msgstr "Gradle プラグイン `com.diffplug.eclipse.apt <https://plugins.gradle.org/plugin/com.diffplug.eclipse.apt>`_ と ``processorArgs`` プロパティを使用します。"
+
+#: ../../annotation-processing.rst:195
 msgid "When you run ``gradle eclipse``, eclipse setting files are generated."
 msgstr "``gradle eclipse`` を実行するとeclipseの設定ファイルが生成されます。"
 
-#: ../../annotation-processing.rst:132
+#: ../../annotation-processing.rst:198
+#: ../../annotation-processing.rst:212
+msgid "Maven"
+msgstr ""
+
+#: ../../annotation-processing.rst:200
+msgid "See :ref:`build-with-eclipse`."
+msgstr ":ref:`build-with-eclipse` を参照してください。"
+
+#: ../../annotation-processing.rst:203
+msgid "Setting options in IntelliJ IDEA"
+msgstr "IntelliJ IDEA でのオプションの設定"
+
+#: ../../annotation-processing.rst:208
+msgid "Import your project as a Gradle project. In the case, the options written in build.gradle(.kts) are used."
+msgstr "Gradle プロジェクトとしてプロジェクトをインポートします。この場合、build.gradle(.kts)に書かれたオプションが使用されます。"
+
+#: ../../annotation-processing.rst:214
+msgid "Import your project as a Maven project. In the case, the options written in pom.xml are used."
+msgstr "プロジェクトを Maven プロジェクトとしてインポートします。この場合、pom.xml に書かれたオプションが使用されます。"
+
+#: ../../annotation-processing.rst:218
 msgid "Setting options with configuration file"
 msgstr "設定ファイルによるオプションの設定"
 
-#: ../../annotation-processing.rst:134
+#: ../../annotation-processing.rst:220
 msgid "The options specified in the ``doma.compile.config`` file are available in all build tools such as Eclipse, IDEA, Gradle and so on."
 msgstr "``doma.compile.config`` ファイルで指定されたオプションは、Eclipse、IDEA、Gradle などのすべてのビルド ツールで使用できます。"
 
-#: ../../annotation-processing.rst:137
+#: ../../annotation-processing.rst:223
 msgid "The ``doma.compile.config`` file must follow the properties file format and be placed in the root directory such as ``src/main/resources``."
 msgstr "``doma.compile.config`` ファイルはプロパティファイル形式に従い、``src/main/resources`` などのルート ディレクトリに配置する必要があります。"
 
-#: ../../annotation-processing.rst:141
+#: ../../annotation-processing.rst:227
 msgid "The options specified in the ``doma.compile.config`` file are overridden by the ones specific to the build tools."
 msgstr "``doma.compile.config`` ファイルで指定されたオプションは、ビルドツールに固有のオプションによって上書きされます。"
 

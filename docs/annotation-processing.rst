@@ -91,42 +91,128 @@ Setting options in Gradle
 Use `the compilerArgs property
 <https://docs.gradle.org/5.0/dsl/org.gradle.api.tasks.compile.CompileOptions.html#org.gradle.api.tasks.compile.CompileOptions:compilerArgs>`_:
 
-.. code-block:: groovy
+.. tabs::
 
-  compileJava {
-      options {
-          compilerArgs = ['-Adoma.dao.subpackage=impl', '-Adoma.dao.suffix=Impl']
-      }
-  }
+    .. tab:: Kotlin
+    
+        .. code-block:: kotlin
 
-Setting options in IntelliJ IDEA
-================================
+            tasks {
+                compileJava {
+                    options.compilerArgs.addAll(listOf("-Adoma.dao.subpackage=impl", "-Adoma.dao.suffix=Impl"))
+                }
+            }
 
-Import your project as a Gradle project.
-In the case, the options written in build.gradle are used.
+    .. tab:: Groovy
+
+        .. code-block:: groovy
+
+            compileJava {
+                options {
+                    compilerArgs = ['-Adoma.dao.subpackage=impl', '-Adoma.dao.suffix=Impl']
+                }
+            }
+
+Setting options in Maven
+=========================
+
+Use `the compilerArgs parameter
+<https://maven.apache.org/plugins/maven-compiler-plugin/examples/pass-compiler-arguments.html>`_:
+
+.. code-block:: xml
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>1.8</source> <!-- depending on your project -->
+                    <target>1.8</target> <!-- depending on your project -->
+                    <annotationProcessorPaths>
+                        <path>
+                            <groupId>org.seasar.doma</groupId>
+                            <artifactId>doma-processor</artifactId>
+                            <version>${doma.version}</version>
+                        </path>
+                    </annotationProcessorPaths>
+                    <compilerArgs>
+                        <arg>-Adoma.dao.subpackage=impl</arg>
+                        <arg>-Adoma.dao.suffix=Impl</arg>
+                    </compilerArgs>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 Setting options in Eclipse
 ==========================
 
+Gradle
+~~~~~~
+
 Use the Gradle plugin `com.diffplug.eclipse.apt
 <https://plugins.gradle.org/plugin/com.diffplug.eclipse.apt>`_
-and the processorArgs property:
+and the ``processorArgs`` property:
 
-.. code-block:: groovy
+.. tabs::
 
-  plugins {
-      id 'com.diffplug.eclipse.apt' version '3.22.0'
-  }
+    .. tab:: Kotlin
+    
+        .. code-block:: kotlin
 
-  compileJava {
-    aptOptions {
-      processorArgs = [
-        'doma.dao.subpackage' : 'impl', 'doma.dao.suffix' : 'Impl'
-      ]
-    }
-  }
+            plugins {
+                id("com.diffplug.eclipse.apt") version "3.43.0"
+            }
+
+            tasks {
+                compileJava {
+                    val aptOptions = extensions.getByType<com.diffplug.gradle.eclipse.apt.AptPlugin.AptOptions>()
+                    aptOptions.processorArgs = mapOf(
+                            "doma.dao.subpackage" to "impl",
+                            "doma.dao.suffix" to "Impl"     
+                    )
+                }
+            }
+
+    .. tab:: Groovy
+
+        .. code-block:: groovy
+        
+            plugins {
+                id 'com.diffplug.eclipse.apt' version '3.43.0'
+            }
+            
+            compileJava {
+                aptOptions {
+                    processorArgs = [
+                        'doma.dao.subpackage' : 'impl', 'doma.dao.suffix' : 'Impl'
+                    ]
+                }
+            }
 
 When you run ``gradle eclipse``, eclipse setting files are generated.
+
+Maven
+~~~~~
+
+See :ref:`build-with-eclipse`.
+
+Setting options in IntelliJ IDEA
+================================
+
+Gradle
+~~~~~~
+
+Import your project as a Gradle project.
+In the case, the options written in build.gradle(.kts) are used.
+
+Maven
+~~~~~
+
+Import your project as a Maven project.
+In the case, the options written in pom.xml are used.
 
 Setting options with configuration file
 =======================================
