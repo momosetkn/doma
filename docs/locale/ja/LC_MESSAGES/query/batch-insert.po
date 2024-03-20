@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-17 13:53+0000\n"
-"PO-Revision-Date: 2024-03-19 14:05\n"
+"POT-Creation-Date: 2024-03-20 21:27+0900\n"
+"PO-Revision-Date: 2024-03-20 12:38\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -135,46 +135,54 @@ msgid "Identifier auto setting and version number auto setting are not executed 
 msgstr "SQLファイルによるバッチ追加では、ID の自動設定、バージョン番号の自動設定は実行されません。また、 ``@BatchInsert`` 内の ``exclude`` プロパティおよび ``include`` プロパティは参照されません。"
 
 #: ../../query/batch-insert.rst:130
+msgid "Batch upsert"
+msgstr ""
+
+#: ../../query/batch-insert.rst:132
+msgid "you can specify whether to update or ignore using a ``duplicateKeyType`` property In case of duplication. By default, it is ``DuplicateKeyType.EXCEPTION`` , and an error will occur in case of duplicated. There are 3 types to choose from: ``DuplicateKeyType.UPDATE`` , ``DuplicateKeyType.IGNORE`` , ``DuplicateKeyType.EXCEPTION`` ."
+msgstr "``duplicateKeyType`` プロパティを使用することで、レコードが重複した場合に更新するか無視するかを指定できます。デフォルトでは ``DuplicateKeyType.EXCEPTION`` が使用され、重複時にエラーが発生することを表します。 ``duplicateKeyType`` プロパティには ``DuplicateKeyType.UPDATE`` , ``DuplicateKeyType.IGNORE`` , ``DuplicateKeyType.EXCEPTION`` の3つの中からいずれかを選択して指定できます。"
+
+#: ../../query/batch-insert.rst:145
 msgid "Unique constraint violation"
 msgstr "一意制約違反"
 
-#: ../../query/batch-insert.rst:132
+#: ../../query/batch-insert.rst:147
 msgid "``UniqueConstraintException`` is thrown regardless of with or without using sql file if unique constraint violation is occurred."
 msgstr "SQLファイルの使用の有無に関わらず、一意性制約違反が発生した場合は ``UniqueConstraintException`` がスローされます。"
 
-#: ../../query/batch-insert.rst:135
+#: ../../query/batch-insert.rst:150
 msgid "Query timeout"
 msgstr "クエリタイムアウト"
 
-#: ../../query/batch-insert.rst:137
+#: ../../query/batch-insert.rst:152
 msgid "You can specify seconds of query timeout to ``queryTimeout`` property within ``@BatchInsert`` annotation."
 msgstr "``@BatchInsert`` アノテーション内の ``queryTimeout`` プロパティにクエリタイムアウトの秒数を指定できます。"
 
-#: ../../query/batch-insert.rst:144
+#: ../../query/batch-insert.rst:159
 msgid "This specifying is applied regardless of with or without using sql file. Query timeout that is specified in config class is used if ``queryTimeout`` property is not set value."
 msgstr "この指定はSQLファイルの使用の有無に関わらず適用されます。 ``queryTimeout`` プロパティに値が設定されていない場合は、:doc:`../config`  クラスで指定されたクエリタイムアウトが使用されます。"
 
-#: ../../query/batch-insert.rst:148
+#: ../../query/batch-insert.rst:163
 msgid "Batch size"
 msgstr "バッチサイズ"
 
-#: ../../query/batch-insert.rst:150
+#: ../../query/batch-insert.rst:165
 msgid "You can specify batch size to ``batchSize`` property within ``@BatchInsert`` annotation."
 msgstr "バッチサイズは ``@BatchInsert`` アノテーション内の ``batchSize`` プロパティに指定できます。"
 
-#: ../../query/batch-insert.rst:157
+#: ../../query/batch-insert.rst:172
 msgid "This specify is applied Regardless of using or not using SQL file. It you do not specify the value to ``batchSize`` property, batch size that is specified at :doc:`../config` class is applied."
 msgstr "この指定はSQLファイルの使用有無に関わらず適用されます。 ``batchSize`` プロパティに値を指定しない場合は、:doc:`../config` クラスで指定されたバッチサイズが適用されます。"
 
-#: ../../query/batch-insert.rst:161
+#: ../../query/batch-insert.rst:176
 msgid "SQL log output format"
 msgstr "SQLログの出力形式"
 
-#: ../../query/batch-insert.rst:163
+#: ../../query/batch-insert.rst:178
 msgid "You can specify SQL log output format to ``sqlLog`` property within ``@BatchInsert`` annotation."
 msgstr "``@BatchInsert`` アノテーション内の ``sqlLog`` プロパティに SQL ログの出力形式を指定できます。"
 
-#: ../../query/batch-insert.rst:170
+#: ../../query/batch-insert.rst:185
 msgid "``SqlLogType.RAW`` represent outputting log that is sql with a binding parameter."
 msgstr "``SqlLogType.RAW`` はバインドパラメータ付きの SQL をログ出力することを表します。"
 

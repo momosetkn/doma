@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-17 13:53+0000\n"
-"PO-Revision-Date: 2024-03-19 14:05\n"
+"POT-Creation-Date: 2024-03-20 21:27+0900\n"
+"PO-Revision-Date: 2024-03-20 12:38\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -155,37 +155,45 @@ msgstr "SQLファイルによる追加では、IDの自動設定やバージョ�
 "また、 ``@Insert`` の ``exclude`` 要素、 ``include`` 要素、 ``excludeNull`` 要素は参照されません。"
 
 #: ../../query/insert.rst:141
+msgid "Upsert"
+msgstr ""
+
+#: ../../query/insert.rst:143
+msgid "you can specify whether to update or ignore using a ``duplicateKeyType`` property In case of duplication. By default, it is ``DuplicateKeyType.EXCEPTION`` , and an error will occur in case of duplicated. There are 3 types to choose from: ``DuplicateKeyType.UPDATE`` , ``DuplicateKeyType.IGNORE`` , ``DuplicateKeyType.EXCEPTION`` ."
+msgstr "``duplicateKeyType`` プロパティを使用することで、レコードが重複した場合に更新するか無視するかを指定できます。デフォルトでは ``DuplicateKeyType.EXCEPTION`` が使用され、重複時にエラーが発生することを表します。 ``duplicateKeyType`` プロパティには ``DuplicateKeyType.UPDATE`` , ``DuplicateKeyType.IGNORE`` , ``DuplicateKeyType.EXCEPTION`` の3つの中からいずれかを選択して指定できます。"
+
+#: ../../query/insert.rst:156
 msgid "Unique constraint violation"
 msgstr "一意制約違反"
 
-#: ../../query/insert.rst:143
+#: ../../query/insert.rst:158
 msgid "``UniqueConstraintException`` is thrown regardless with or without using sql file if unique constraint violation is occurred."
 msgstr "一意制約違反が発生した場合は、SQLファイルの使用の有無に関係なく\n"
 "``UniqueConstraintException`` がスローされます。"
 
-#: ../../query/insert.rst:146
+#: ../../query/insert.rst:161
 msgid "Query timeout"
 msgstr "クエリタイムアウト"
 
-#: ../../query/insert.rst:148
+#: ../../query/insert.rst:163
 msgid "You can specify second of query timeout to ``queryTimeout`` element of ``@Insert``."
 msgstr "``@Insert`` の ``queryTimeout`` 要素にクエリタイムアウトの秒数を指定できます。"
 
-#: ../../query/insert.rst:155
+#: ../../query/insert.rst:170
 msgid "This specifying is applied regardless with or without using sql file. Query timeout that is specified in :doc:`../config` is used if ``queryTimeout`` element is not set value."
 msgstr "この指定は、SQLファイルの使用の有無に関係なく適用されます。\n"
 "``queryTimeout`` 要素に値を指定しない場合、\n"
 ":doc:`../config` に指定されたクエリタイムアウトが使用されます。"
 
-#: ../../query/insert.rst:159
+#: ../../query/insert.rst:174
 msgid "SQL log output format"
 msgstr "SQLログの出力形式"
 
-#: ../../query/insert.rst:161
+#: ../../query/insert.rst:176
 msgid "You can specify SQL log output format to ``sqlLog`` element of ``@Insert``."
 msgstr "``@Insert`` の ``sqlLog`` 要素に SQL のログ出力形式を指定できます。"
 
-#: ../../query/insert.rst:168
+#: ../../query/insert.rst:183
 msgid "``SqlLogType.RAW`` is represented that the log is outputted sql with a bind parameter."
 msgstr "``SqlLogType.RAW`` はバインドパラメータ付きの SQL をログ出力することを表します。"
 
