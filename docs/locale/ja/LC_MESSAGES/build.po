@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-17 13:53+0000\n"
-"PO-Revision-Date: 2024-03-19 14:05\n"
+"PO-Revision-Date: 2024-03-20 02:29\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -72,7 +72,7 @@ msgstr "build.gradle.kts を次のように記述します。"
 
 #: ../../build.rst:43
 msgid "To simplify your build.script.kts, we recommend that you use the `org.seasar.doma.compile`_ plugin."
-msgstr ""
+msgstr "build.script.kts を簡素化するには、`org.seasar.doma.compile`_ プラグインを使用することをお勧めします。"
 
 #: ../../build.rst:45
 #: ../../build.rst:103
@@ -102,7 +102,7 @@ msgstr "Gradle で Eclipse 設定ファイルを生成し、プロジェクト�
 
 #: ../../build.rst:101
 msgid "To simplify your build.script.kts, we recommend that you use the `com.diffplug.eclipse.apt`_ plugin."
-msgstr ""
+msgstr "build.script.kts を簡素化するには、`com.diffplug.eclipse.apt`_ プラグインを使用することをお勧めします。"
 
 #: ../../build.rst:106
 #: ../../build.rst:125
