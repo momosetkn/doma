@@ -137,6 +137,21 @@ For example, you describe SQL file like below to correspond above method.
 Identifier auto setting and version value auto setting is not done in insertion by SQL file.
 Also, ``exclude`` element and ``include`` element and ``excludeNull`` element of ``@Insert`` are not referenced.
 
+Upsert
+===========================
+
+you can specify whether to update or ignore using a ``duplicateKeyType`` property In case of duplication.
+By default, it is ``DuplicateKeyType.EXCEPTION`` , and an error will occur in case of duplicated.
+There are 3 types to choose from: ``DuplicateKeyType.UPDATE`` , ``DuplicateKeyType.IGNORE`` , ``DuplicateKeyType.EXCEPTION`` .
+
+.. code-block:: java
+
+  @Insert(duplicateKeyType = DuplicateKeyType.UPDATE)
+  int insertOnDuplicateKeyUpdate(Employee employee);
+
+  @Insert(duplicateKeyType = DuplicateKeyType.IGNORE)
+  int insertOnDuplicateKeyIgnore(Employee employee);
+
 Unique constraint violation
 ===========================
 
