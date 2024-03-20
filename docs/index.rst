@@ -61,6 +61,7 @@ User Documentation
    kotlin-support
    slf4j-support
    jpms-support
+   codegen
 
 About Doma
 ==========
