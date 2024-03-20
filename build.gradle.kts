@@ -1,10 +1,10 @@
-val domaVersion = "2.56.0"
+val domaVersion = "2.57.0"
 
 fun updateVersion() {
     // Gradle
     ant.withGroovyBuilder {
         "replaceregexp"(
-            "match" to """("org.seasar.doma:doma-(core|kotlin|processor|slf4j|template)?:)[^"]*(")""",
+            "match" to """(["']org.seasar.doma:doma-(core|kotlin|processor|slf4j|template)?:)[^"']*(["'])""",
             "replace" to "\\1${domaVersion}\\3",
             "encoding" to "UTF-8",
             "flags" to "g"
