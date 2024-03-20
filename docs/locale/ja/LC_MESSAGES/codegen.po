@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-20 11:25+0900\n"
-"PO-Revision-Date: 2024-03-20 02:28\n"
+"PO-Revision-Date: 2024-03-20 02:44\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -588,7 +588,7 @@ msgstr ""
 
 #: ../../codegen.rst:388
 msgid "suffix for entity classes"
-msgstr "エンティティクラスの接尾子"
+msgstr "エンティティクラスの接尾辞"
 
 #: ../../codegen.rst:393
 msgid "dao"
@@ -617,7 +617,7 @@ msgstr ""
 
 #: ../../codegen.rst:440
 msgid "suffix for Dao classes"
-msgstr "Dao クラスのサ接尾子"
+msgstr "Dao クラスの接尾辞"
 
 #: ../../codegen.rst:442
 msgid "\"Dao\""

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-19 22:53+0900\n"
-"PO-Revision-Date: 2024-03-19 14:05\n"
+"PO-Revision-Date: 2024-03-20 01:30\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -31,7 +31,7 @@ msgstr "SELECTステートメントを使用して検索を実行するには、
 
 #: ../../query/select.rst:19
 msgid "The ``@Select`` annotation requires an :doc:`SQL template <../sql>`. Describe the SQL template in an SQL file or in the ``@Sql`` annotation."
-msgstr "``@Select`` アノテーションには :doc:`SQL template <../sql>` が必要です。SQLファイルまたは ``@Sql`` アノテーションでSQLテンプレートを記述してください。"
+msgstr "``@Select`` アノテーションには :doc:`SQLテンプレート <../sql>` が必要です。SQLファイルまたは ``@Sql`` アノテーションでSQLテンプレートを記述してください。"
 
 #: ../../query/select.rst:24
 msgid "You need creating entity class **depending on search result**. For example, result set including column in EMPLOYEE table is accepted Employee class if the Employee class that correspond EMPLOYEE table is declared. But, you need different class from the Employee entity class(For example EmployeeDepartment class) for result set that is get by joining EMPLOYEE table and DEPARTMENT table."
