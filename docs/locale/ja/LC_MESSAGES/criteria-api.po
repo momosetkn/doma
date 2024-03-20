@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-20 11:03+0900\n"
-"PO-Revision-Date: 2024-03-20 02:28\n"
+"PO-Revision-Date: 2024-03-20 09:58\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -868,11 +868,11 @@ msgstr "次のような INSERT SELECT 構文もサポートされています。
 
 #: ../../criteria-api.rst:1442
 msgid "By calling on `onDuplicateKeyUpdate`, you can update when a key is duplicated. You can specify keys for duplicate check targets in `keys`. You can specify the value of the update in case of duplicates in `set`."
-msgstr ""
+msgstr "`onDuplicateKeyUpdate` を呼び出すことで、キーが重複したときに更新することができます。 `keys` で重複チェック対象のキーを指定できます。`set` で重複した場合の更新の値を指定できます。"
 
 #: ../../criteria-api.rst:1468
 msgid "By calling on `onDuplicateKeyIgnore`, you can ignore errors when a key is duplicated. You can specify keys for duplicate check targets in `keys`."
-msgstr ""
+msgstr "`onDuplicateKeyIgnore` を呼び出すことで、キーが重複したときのエラーを無視することができます。 `keys` で重複チェック対象のキーを指定できます。"
 
 #: ../../criteria-api.rst:1488
 msgid "Update statement"

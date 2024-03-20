@@ -170,8 +170,8 @@ and the ``processorArgs`` property:
                 compileJava {
                     val aptOptions = extensions.getByType<com.diffplug.gradle.eclipse.apt.AptPlugin.AptOptions>()
                     aptOptions.processorArgs = mapOf(
-                            "doma.dao.subpackage" to "impl",
-                            "doma.dao.suffix" to "Impl"     
+                        "doma.dao.subpackage" to "impl",
+                        "doma.dao.suffix" to "Impl"     
                     )
                 }
             }

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-17 13:53+0000\n"
-"PO-Revision-Date: 2024-03-20 02:29\n"
+"POT-Creation-Date: 2024-03-20 18:54+0900\n"
+"PO-Revision-Date: 2024-03-20 09:58\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -67,61 +67,69 @@ msgid "Build with Gradle"
 msgstr "Gradle でビルドする"
 
 #: ../../build.rst:30
-msgid "Write your build.gradle.kts as follows:"
-msgstr "build.gradle.kts を次のように記述します。"
+msgid "Write your build.gradle(.kts) as follows:"
+msgstr "build.gradle(.kts) を次のように記述します。"
 
-#: ../../build.rst:43
-msgid "To simplify your build.script.kts, we recommend that you use the `org.seasar.doma.compile`_ plugin."
-msgstr "build.script.kts を簡素化するには、`org.seasar.doma.compile`_ プラグインを使用することをお勧めします。"
+#: ../../build.rst:34
+msgid "Kotlin"
+msgstr ""
 
-#: ../../build.rst:45
-#: ../../build.rst:103
+#: ../../build.rst:47
+msgid "Groovy"
+msgstr ""
+
+#: ../../build.rst:60
+msgid "To simplify your build.script(.kts), we recommend that you use the `org.seasar.doma.compile`_ plugin."
+msgstr "build.script(.kts) を簡素化するには、`org.seasar.doma.compile`_ プラグインを使用することをお勧めします。"
+
+#: ../../build.rst:62
+#: ../../build.rst:120
 msgid "See build.gradle.kts in the `getting-started`_ repository as an example."
 msgstr "例として、`getting-started`_ リポジトリの build.gradle.kts を参照してください。"
 
-#: ../../build.rst:50
+#: ../../build.rst:67
 msgid "Build with Maven"
 msgstr "Maven でビルドする"
 
-#: ../../build.rst:52
+#: ../../build.rst:69
 msgid "Write your pom.xml as follows:"
 msgstr "pom.xml を次のように記述します。"
 
-#: ../../build.rst:93
+#: ../../build.rst:110
 msgid "Build with Eclipse"
 msgstr "Eclipse でビルドする"
 
-#: ../../build.rst:96
-#: ../../build.rst:119
+#: ../../build.rst:113
+#: ../../build.rst:136
 msgid "Gradle"
 msgstr ""
 
-#: ../../build.rst:98
+#: ../../build.rst:115
 msgid "Generate eclipse setting files with Gradle, and then import your project into Eclipse. To generate the setting files, run ``gradle cleanEclipse eclipse``."
 msgstr "Gradle で Eclipse 設定ファイルを生成し、プロジェクトを Eclipse にインポートします。設定ファイルを生成するには、 ``gradle cleanEclipse eclipse`` を実行します。"
 
-#: ../../build.rst:101
-msgid "To simplify your build.script.kts, we recommend that you use the `com.diffplug.eclipse.apt`_ plugin."
-msgstr "build.script.kts を簡素化するには、`com.diffplug.eclipse.apt`_ プラグインを使用することをお勧めします。"
+#: ../../build.rst:118
+msgid "To simplify your build.script(.kts), we recommend that you use the `com.diffplug.eclipse.apt`_ plugin."
+msgstr "build.script(.kts) を簡素化するには、`com.diffplug.eclipse.apt`_ プラグインを使用することをお勧めします。"
 
-#: ../../build.rst:106
-#: ../../build.rst:125
+#: ../../build.rst:123
+#: ../../build.rst:142
 msgid "Maven"
 msgstr ""
 
-#: ../../build.rst:110
+#: ../../build.rst:127
 msgid "We've managed to get our Maven project up and running in Eclipse, but we're unsure if we're following the best practices. If you have any tips or recommended approaches, we'd really appreciate your input."
 msgstr "Maven プロジェクトを Eclipse で立ち上げて実行することに成功しましたが、ベスト プラクティスに従っているかどうかはわかりません。ヒントや推奨されるアプローチがありましたら、ご意見をいただければ幸いです。"
 
-#: ../../build.rst:116
+#: ../../build.rst:133
 msgid "Build with IntelliJ IDEA"
 msgstr "IntelliJ IDEA でビルドする"
 
-#: ../../build.rst:121
+#: ../../build.rst:138
 msgid "Import your project as a Gradle project. Build and run using Gradle."
 msgstr "プロジェクトを Gradle プロジェクトとしてインポートし、Gradle を使用してビルドします。"
 
-#: ../../build.rst:127
+#: ../../build.rst:144
 msgid "Import your project as a Maven project. Build and run using Maven."
 msgstr "プロジェクトを Maven プロジェクトとしてインポートし、 Maven を使用してビルドします。"
 

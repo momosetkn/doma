@@ -27,20 +27,37 @@ The group id and artifact id of those artifacts are as follows:
 Build with Gradle
 =================
 
-Write your build.gradle.kts as follows:
+Write your build.gradle(.kts) as follows:
 
-.. code-block:: kotlin
+.. tabs::
 
-  plugins {
-      id("org.seasar.doma.compile") version "2.0.0"
-  }
+    .. tab:: Kotlin
+    
+        .. code-block:: kotlin
 
-  dependencies {
-      implementation("org.seasar.doma:doma-core:2.56.0")
-      annotationProcessor("org.seasar.doma:doma-processor:2.56.0")
-  }
+            plugins {
+                id("org.seasar.doma.compile") version "2.0.0"
+            }
+            
+            dependencies {
+                implementation("org.seasar.doma:doma-core:2.56.0")
+                annotationProcessor("org.seasar.doma:doma-processor:2.56.0")
+            }
 
-To simplify your build.script.kts, we recommend that you use the `org.seasar.doma.compile`_ plugin.
+    .. tab:: Groovy
+
+        .. code-block:: groovy
+
+            plugins {
+                id 'org.seasar.doma.compile' version '2.0.0'
+            }
+            
+            dependencies {
+                implementation 'org.seasar.doma:doma-core:2.56.0'
+                annotationProcessor 'org.seasar.doma:doma-processor:2.56.0'
+            }
+
+To simplify your build.script(.kts), we recommend that you use the `org.seasar.doma.compile`_ plugin.
 
 See build.gradle.kts in the `getting-started`_ repository as an example.
 
@@ -98,7 +115,7 @@ Gradle
 Generate eclipse setting files with Gradle, and then import your project into Eclipse.
 To generate the setting files, run ``gradle cleanEclipse eclipse``.
 
-To simplify your build.script.kts, we recommend that you use the `com.diffplug.eclipse.apt`_ plugin.
+To simplify your build.script(.kts), we recommend that you use the `com.diffplug.eclipse.apt`_ plugin.
 
 See build.gradle.kts in the `getting-started`_ repository as an example.
 
