@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-17 13:53+0000\n"
-"PO-Revision-Date: 2024-03-19 14:05\n"
+"POT-Creation-Date: 2024-03-20 09:11+0900\n"
+"PO-Revision-Date: 2024-03-20 12:38\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -77,43 +77,43 @@ msgstr "日本語にローカライズするには、`Crowdin プロジェクト
 msgid "User Documentation"
 msgstr "ユーザー向けドキュメンテーション"
 
-#: ../../index.rst:66
+#: ../../index.rst:67
 msgid "About Doma"
 msgstr "Domaについて"
 
-#: ../../index.rst:74
+#: ../../index.rst:75
 msgid "Links"
 msgstr "リンク集"
 
-#: ../../index.rst:76
+#: ../../index.rst:77
 msgid "`News and announcements <https://twitter.com/domaframework>`_"
 msgstr "`ニュースやアナウンス <https://twitter.com/domaframework>`_"
 
-#: ../../index.rst:77
+#: ../../index.rst:78
 msgid "`GitHub repository <https://github.com/domaframework/doma>`_"
 msgstr "`GitHub リポジトリ <https://github.com/domaframework/doma>`_"
 
-#: ../../index.rst:78
+#: ../../index.rst:79
 msgid "`Release Notes <https://github.com/domaframework/doma/releases>`_"
 msgstr "`リリースノート <https://github.com/domaframework/doma/releases>`_"
 
-#: ../../index.rst:79
+#: ../../index.rst:80
 msgid "`JavaDoc <https://www.javadoc.io/doc/org.seasar.doma/doma-core/latest/index.html>`_"
 msgstr ""
 
-#: ../../index.rst:80
+#: ../../index.rst:81
 msgid "`Examples <https://github.com/domaframework/simple-examples>`_"
 msgstr "`サンプルプロジェクト <https://github.com/domaframework/simple-examples>`_"
 
-#: ../../index.rst:81
+#: ../../index.rst:82
 msgid "`Doma Compile Plugin <https://github.com/domaframework/doma-compile-plugin>`_"
 msgstr ""
 
-#: ../../index.rst:82
+#: ../../index.rst:83
 msgid "`Doma CodeGen Plugin <https://github.com/domaframework/doma-codegen-plugin>`_"
 msgstr ""
 
-#: ../../index.rst:83
+#: ../../index.rst:84
 msgid "`Doma version 1 <http://doma.seasar.org/>`_"
 msgstr "`Doma v1.x のWebサイト <http://doma.seasar.org/>`_"
 
