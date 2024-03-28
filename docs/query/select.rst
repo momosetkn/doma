@@ -363,9 +363,12 @@ Depending on the dialect, some or all of the methods for pessimistic concurrency
 +------------------+-----------------------------------------------------------------------------+
 | MysqlDialect     |    You can use forUpdate()                                                  |
 +------------------+-----------------------------------------------------------------------------+
+| MysqlDialect (V8)|    You can use forUpdate(), forUpdate(String... aliases),                   |
+|                  |    forUpdateNowait(), and forUpdateNowait(String... aliases).               |
++------------------+-----------------------------------------------------------------------------+
 | OracleDialect    |    You can use forUpdate(), forUpdate(String... aliases),                   |
 |                  |    forUpdateNowait(), forUpdateNowait(String... aliases),                   |
-|                  |    forUpdateWait(int waitSeconds),                                          |
+|                  |    forUpdateWait(int waitSeconds), and                                      |
 |                  |    forUpdateWait(int waitSeconds, String... aliases).                       |
 +------------------+-----------------------------------------------------------------------------+
 | PostgresDialect  |    You can use forUpdate() and forUpdate(String... aliases).                |

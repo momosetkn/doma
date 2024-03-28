@@ -55,7 +55,7 @@ Doma provides following dialects:
 +----------------------------+------------------+--------------------------------------+
 | Microsoft SQL Server       | MssqlDialect     | Microsoft SQL Server 2012 and above  |
 +----------------------------+------------------+--------------------------------------+
-| MySQL                      | MySqlDialect     |                                      |
+| MySQL                      | MySqlDialect     | MySQL 5 and 8                        |
 +----------------------------+------------------+--------------------------------------+
 | Oracle Database 11g        | Oracle11Dialect  | Oracle Database 11g                  |
 +----------------------------+------------------+--------------------------------------+
@@ -67,6 +67,13 @@ Doma provides following dialects:
 +----------------------------+------------------+--------------------------------------+
 
 These dialect are located in the ``org.seasar.doma.jdbc.dialect`` package.
+
+MysqlDialect supports MySQL 5 by default. To use it as a dialect for MySQL 8, 
+instantiate MysqlDialect by specifying the version as follows:
+
+.. code-block:: java
+
+    MysqlDialect dialect = new MysqlDialect(MysqlDialect.MySqlVersion.V8);
 
 .. note::
 
