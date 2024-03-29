@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-17 13:53+0000\n"
+"POT-Creation-Date: 2024-03-29 22:59+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -89,75 +89,63 @@ msgstr "Dao インターフェース"
 msgid "Specify a SQL template to ``@org.seasar.doma.Sql``"
 msgstr "SQLテンプレートを ``@org.seasar.doma.Sql`` に指定する"
 
-#: ../../kotlin-support.rst:73
-msgid "Use ``org.seasar.doma.jdbc.Result`` as the return type of ``@Delete``, ``@Insert`` and ``@Update``"
-msgstr "``@Delete``、``@Insert``、および ``@Update`` の戻り値の型として ``org.seasar.doma.jdbc.Result`` を使用する"
-
-#: ../../kotlin-support.rst:74
-msgid "Use ``org.seasar.doma.jdbc.BatchResult`` as the return type of ``@BatchDelete``, ``@BatchInsert`` and ``@BatchUpdate``"
-msgstr "``@BatchDelete``、 ``@BatchInsert`` 、 ``@BatchUpdate`` の戻り値の型として ``org.seasar.doma.jdbc.BatchResult`` を使用する"
-
-#: ../../kotlin-support.rst:91
-msgid "Use `Destructuring Declarations <https://kotlinlang.org/docs/reference/multi-declarations.html>`_ for ``org.seasar.doma.jdbc.Result`` and ``org.seasar.doma.jdbc.BatchResult``"
-msgstr "``org.seasar.doma.jdbc.Result`` と ``org.seasar.doma.jdbc.BatchResult`` に対しては `Destructuring Declarations <https://kotlinlang.org/docs/reference/multi-declarations.html>`_ を使用する"
-
-#: ../../kotlin-support.rst:103
+#: ../../kotlin-support.rst:97
 msgid "Kotlin specific Criteria API"
 msgstr "Kotlin 固有の Criteria API"
 
-#: ../../kotlin-support.rst:107
+#: ../../kotlin-support.rst:101
 msgid "Prefer the Kotlin specific Criteria API to DAO interfaces."
 msgstr "DAO インターフェイスよりも Kotlin 固有の Criteria API を使ってください"
 
-#: ../../kotlin-support.rst:109
+#: ../../kotlin-support.rst:103
 msgid "Doma provides Kotlin specific Criteria API, ``KEntityql`` and ``KNativeSql`` DSLs. They are very similar with the ``Entityql`` and ``NativeSql`` DSLs, which are described in :doc:`criteria-api`. The biggest feature of the ``KEntityql`` and ``KNativeSql`` DSLs is simplicity."
 msgstr "Doma は、Kotlin 固有の Criteria API、``KEntityql`` および ``KNativeSql`` DSL を提供します。これらは、:doc:`criteria-api` で説明されている ``Entityql`` および ``NativeSql`` DSL と非常に似ています。  ``KEntityql`` と ``KNativeSql`` DSL の最大の特徴はそのシンプルさです。"
 
-#: ../../kotlin-support.rst:113
+#: ../../kotlin-support.rst:107
 msgid "For example, when you use ``KEntityql``, you have to accept a lambda parameter in a WHERE expression as follows:"
 msgstr "たとえば、 ``Entityql`` を使用する場合は、次のように WHERE 式でラムダパラメータを受け入れる必要があります。"
 
-#: ../../kotlin-support.rst:132
+#: ../../kotlin-support.rst:126
 msgid "The lambda parameter ``c`` is a bit annoying. On the other hand, when you use ``KEntityql``, the parameter is gone."
 msgstr "ラムダパラメータ「c」は少し面倒です。一方、 ``KEntityql`` を使用すると、パラメータはなくなります。"
 
-#: ../../kotlin-support.rst:152
+#: ../../kotlin-support.rst:146
 msgid "You can see a lot of sample code `here <https://github.com/domaframework/doma-it/tree/master/kotlin/src/test/kotlin/org/seasar/doma/it/criteria>`_."
 msgstr "ここ <https://github.com/domaframework/doma-it/tree/master/kotlin/src/test/kotlin/org/seasar/doma/it/criteria>`_ で多くのサンプル コードを参照できます。"
 
-#: ../../kotlin-support.rst:154
+#: ../../kotlin-support.rst:148
 msgid "The ``KEntityql`` and ``KNativeSql`` DSLs are included in doma-kotlin.jar. Note that you should depend on doma-kotlin instead of doma-core in your build script. You can write build.gradle.kts as follows:"
 msgstr "``KEntityql`` および ``KNativeSql`` DSL は doma-kotlin.jar に含まれています。ビルド スクリプトでは doma-core ではなく doma-kotlin に依存する必要があることに注意してください。 build.gradle.kts は次のように記述できます。"
 
-#: ../../kotlin-support.rst:165
+#: ../../kotlin-support.rst:159
 msgid "Code Generation"
 msgstr "コード生成"
 
-#: ../../kotlin-support.rst:167
-msgid "Use `Doma CodeGen Plugin <https://github.com/domaframework/doma-codegen-plugin>`_. This plugin support Kotlin code generation."
-msgstr "`Doma CodeGen プラグイン <https://github.com/domaframework/doma-codegen-plugin>`_ を使用してください。このプラグインは Kotlin コード生成をサポートします。"
+#: ../../kotlin-support.rst:161
+msgid "Use :doc:`codegen`. This plugin support Kotlin code generation."
+msgstr ":doc:`codegen` を使用してください。このプラグインはKotlinのコード生成をサポートしています。"
 
-#: ../../kotlin-support.rst:171
+#: ../../kotlin-support.rst:165
 msgid "Using kapt in Gradle"
 msgstr "Gradle での kapt の使用"
 
-#: ../../kotlin-support.rst:173
+#: ../../kotlin-support.rst:167
 msgid "Annotation processors are supported in Kotlin with the `kapt <https://kotlinlang.org/docs/reference/kapt.html>`_ compiler plugin."
 msgstr "アノテーション プロセッサは、Kotlin で `kapt <https://kotlinlang.org/docs/reference/kapt.html>`_ コンパイラ プラグインを使用してサポートされています。"
 
-#: ../../kotlin-support.rst:176
+#: ../../kotlin-support.rst:170
 msgid "Add the dependencies using the `kapt` and `implementation` configuration in your dependencies block. For example, you can write build.gradle.kts as follows:"
 msgstr "依存関係ブロックの `kapt` および `implementation` を使用して依存関係を追加します。たとえば、次のように build.gradle.kts を記述できます。"
 
-#: ../../kotlin-support.rst:186
+#: ../../kotlin-support.rst:180
 msgid "To simplify your build script, we recommend you use the `Doma Compile Plugin <https://github.com/domaframework/doma-compile-plugin>`_:"
 msgstr "ビルド スクリプトを簡略化するには、`Doma コンパイル プラグイン  <https://github.com/domaframework/doma-compile-plugin>`_ を使用することをお勧めします。"
 
-#: ../../kotlin-support.rst:190
+#: ../../kotlin-support.rst:184
 msgid "Sample project"
 msgstr "サンプルプロジェクト"
 
-#: ../../kotlin-support.rst:192
+#: ../../kotlin-support.rst:186
 msgid "`kotlin-sample <https://github.com/domaframework/kotlin-sample>`_"
 msgstr ""
 

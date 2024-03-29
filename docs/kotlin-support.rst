@@ -70,9 +70,6 @@ Dao interfaces
 --------------
 
 * Specify a SQL template to ``@org.seasar.doma.Sql``
-* Use ``org.seasar.doma.jdbc.Result`` as the return type of ``@Delete``, ``@Insert`` and ``@Update``
-* Use ``org.seasar.doma.jdbc.BatchResult`` as the return type of
-  ``@BatchDelete``, ``@BatchInsert`` and ``@BatchUpdate``
 
 .. code-block:: java
 
@@ -85,17 +82,14 @@ Dao interfaces
     fun selectById(id: Int): Person
 
     @Insert
-    fun insert(person: Person): Result<Person>
+    fun insert(person: Person): Int
   }
-
-* Use `Destructuring Declarations <https://kotlinlang.org/docs/reference/multi-declarations.html>`_
-  for ``org.seasar.doma.jdbc.Result`` and ``org.seasar.doma.jdbc.BatchResult``
 
 .. code-block:: java
 
   val dao: PersonDao = ...
   val person = Person(name = Name("John"), address = Address(city = "Tokyo", street = "Yaesu"))
-  val (newPerson, count) = dao.insert(person)
+  val count = dao.insert(person)
 
 .. _kotlin-specific-criteria-api:
 
@@ -164,7 +158,7 @@ You can write build.gradle.kts as follows:
 Code Generation
 ---------------
 
-Use `Doma CodeGen Plugin <https://github.com/domaframework/doma-codegen-plugin>`_.
+Use :doc:`codegen`.
 This plugin support Kotlin code generation.
 
 Using kapt in Gradle
