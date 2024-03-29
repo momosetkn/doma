@@ -29,7 +29,7 @@ msgstr "概要"
 
 #: ../../quarkus-support.rst:11
 msgid "Doma supports `Quarkus <https://quarkus.io/>`_ v3.7.0 and later. To combine Doma with Quarkus, the `quarkus-doma <https://github.com/quarkiverse/quarkus-doma>`_ module is necessary."
-msgstr "Domaは`Quarkus <https://quarkus.io/>`_ v3.7.0以降をサポートしています。DomaとQuarkusを組み合わせるには、`quarkus-doma <https://github.com/quarkiverse/quarkus-doma>`_ モジュールが必要です。"
+msgstr "Domaは `Quarkus <https://quarkus.io/>`_ v3.7.0以降をサポートしています。DomaとQuarkusを組み合わせるには、 `quarkus-doma <https://github.com/quarkiverse/quarkus-doma>`_ モジュールが必要です。"
 
 #: ../../quarkus-support.rst:16
 msgid "Quarkus and the quarkus-doma module require Java 17 and later."
