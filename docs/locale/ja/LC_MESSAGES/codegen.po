@@ -17,7 +17,7 @@ msgstr ""
 
 #: ../../codegen.rst:3
 msgid "Doma CodeGen Plugin"
-msgstr ""
+msgstr "Doma CodeGen プラグイン"
 
 #: ../../codegen.rst:6
 msgid "Contents"
@@ -647,7 +647,7 @@ msgstr ""
 
 #: ../../codegen.rst:494
 msgid "Customization"
-msgstr ""
+msgstr "カスタム設定"
 
 #: ../../codegen.rst:497
 msgid "Generating Kotlin code"
