@@ -114,6 +114,8 @@ You can write the following configurations in your application.properties file:
 
 The above properties are all optional.
 
+Please refer to the `Configuration References <https://docs.quarkiverse.io/quarkus-doma/dev/index.html#_configuration_references>`_ for details.
+
 Multiple Datasources
 --------------------
 
@@ -180,11 +182,6 @@ Support for native images
 -------------------------
 
 The quarkus-doma module recognizes reflective classes and resources, and includes them into your native image without additional configurations.
-
-Configuration References
-========================
-
-See https://docs.quarkiverse.io/quarkus-doma/dev/index.html#_configuration_references
 
 Sample project
 ==============

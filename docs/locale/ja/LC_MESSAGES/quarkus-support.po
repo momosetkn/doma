@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-29 21:31+0900\n"
+"POT-Creation-Date: 2024-03-29 21:45+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +17,7 @@ msgstr ""
 
 #: ../../quarkus-support.rst:3
 msgid "Quarkus support"
-msgstr "Quarkusサポート"
+msgstr "Quarkus サポート"
 
 #: ../../quarkus-support.rst:6
 msgid "Contents"
@@ -87,39 +87,35 @@ msgstr "application.propertiesファイルに次の構成を記述できます�
 msgid "The above properties are all optional."
 msgstr "上記のプロパティはすべてオプションです。"
 
-#: ../../quarkus-support.rst:118
+#: ../../quarkus-support.rst:117
+msgid "Please refer to the `Configuration References <https://docs.quarkiverse.io/quarkus-doma/dev/index.html#_configuration_references>`_ for details."
+msgstr "詳細は `Configuration Reference <https://docs.quarkiverse.io/quarkus-doma/dev/index.html#_configuration_references>`_ を参照してください。"
+
+#: ../../quarkus-support.rst:120
 msgid "Multiple Datasources"
 msgstr "複数のデータソース"
 
-#: ../../quarkus-support.rst:120
+#: ../../quarkus-support.rst:122
 msgid "You can bind Doma’s configurations to each datasource as follows:"
 msgstr "Domaの設定を各データソースに次のようにバインドできます。"
 
-#: ../../quarkus-support.rst:154
+#: ../../quarkus-support.rst:156
 msgid "You can inject the named Doma’s resource using the ``io.quarkus.agroal.DataSource`` qualifier as follows:"
 msgstr "``io.quarkus.agroal.DataSource`` 修飾子を使用して、名前付きのDomaのリソースを注入できます。"
 
-#: ../../quarkus-support.rst:180
+#: ../../quarkus-support.rst:182
 msgid "Support for native images"
 msgstr "ネイティブイメージのサポート"
 
-#: ../../quarkus-support.rst:182
+#: ../../quarkus-support.rst:184
 msgid "The quarkus-doma module recognizes reflective classes and resources, and includes them into your native image without additional configurations."
 msgstr "quarkus-domaモジュールは、リフレクションクラスとリソースを認識し、追加の設定なしでネイティブイメージに含めます。"
 
-#: ../../quarkus-support.rst:185
-msgid "Configuration References"
-msgstr "設定のリファレンス"
-
 #: ../../quarkus-support.rst:187
-msgid "See https://docs.quarkiverse.io/quarkus-doma/dev/index.html#_configuration_references"
-msgstr ""
-
-#: ../../quarkus-support.rst:190
 msgid "Sample project"
 msgstr "サンプルプロジェクト"
 
-#: ../../quarkus-support.rst:192
+#: ../../quarkus-support.rst:189
 msgid "`domaframework/quarkus-sample <https://github.com/domaframework/quarkus-sample>`_"
 msgstr ""
 
