@@ -21,7 +21,7 @@ See also: :doc:`transaction`
 
 .. note::
 
-   Required item
+   The DataSource is a required configuration item.
 
 DataSource's name
 -----------------
@@ -77,7 +77,7 @@ instantiate MysqlDialect by specifying the version as follows:
 
 .. note::
 
-   Required item
+    The SQL dialect is a required configuration item.
 
 .. _config-logger:
 
