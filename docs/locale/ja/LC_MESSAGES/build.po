@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-20 18:54+0900\n"
+"POT-Creation-Date: 2024-05-15 23:36+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -81,7 +81,7 @@ msgid "To simplify your build.script(.kts), we recommend that you use the `org.s
 msgstr "build.script(.kts) を簡素化するには、`org.seasar.doma.compile`_ プラグインを使用することをお勧めします。"
 
 #: ../../build.rst:62
-#: ../../build.rst:120
+#: ../../build.rst:124
 msgid "See build.gradle.kts in the `getting-started`_ repository as an example."
 msgstr "例として、`getting-started`_ リポジトリの build.gradle.kts を参照してください。"
 
@@ -93,41 +93,45 @@ msgstr "Maven でビルドする"
 msgid "Write your pom.xml as follows:"
 msgstr "pom.xml を次のように記述します。"
 
-#: ../../build.rst:110
+#: ../../build.rst:114
 msgid "Build with Eclipse"
 msgstr "Eclipse でビルドする"
 
-#: ../../build.rst:113
-#: ../../build.rst:136
+#: ../../build.rst:117
+#: ../../build.rst:147
 msgid "Gradle"
 msgstr ""
 
-#: ../../build.rst:115
+#: ../../build.rst:119
 msgid "Generate eclipse setting files with Gradle, and then import your project into Eclipse. To generate the setting files, run ``gradle cleanEclipse eclipse``."
 msgstr "Gradle で Eclipse 設定ファイルを生成し、プロジェクトを Eclipse にインポートします。設定ファイルを生成するには、 ``gradle cleanEclipse eclipse`` を実行します。"
 
-#: ../../build.rst:118
+#: ../../build.rst:122
 msgid "To simplify your build.script(.kts), we recommend that you use the `com.diffplug.eclipse.apt`_ plugin."
 msgstr "build.script(.kts) を簡素化するには、`com.diffplug.eclipse.apt`_ プラグインを使用することをお勧めします。"
 
-#: ../../build.rst:123
-#: ../../build.rst:142
+#: ../../build.rst:127
+#: ../../build.rst:153
 msgid "Maven"
 msgstr ""
 
-#: ../../build.rst:127
-msgid "We've managed to get our Maven project up and running in Eclipse, but we're unsure if we're following the best practices. If you have any tips or recommended approaches, we'd really appreciate your input."
-msgstr "Maven プロジェクトを Eclipse で立ち上げて実行することに成功しましたが、ベスト プラクティスに従っているかどうかはわかりません。ヒントや推奨されるアプローチがありましたら、ご意見をいただければ幸いです。"
+#: ../../build.rst:129
+msgid "Import your project as a Maven project."
+msgstr "プロジェクトを Maven プロジェクトとしてインポートします。"
 
 #: ../../build.rst:133
+msgid "You need to add the following argument to the Maven compiler plugin configuration in your pom.xml:"
+msgstr "pom.xml の Maven コンパイラプラグイン構成に次の引数を追加する必要があります。"
+
+#: ../../build.rst:144
 msgid "Build with IntelliJ IDEA"
 msgstr "IntelliJ IDEA でビルドする"
 
-#: ../../build.rst:138
+#: ../../build.rst:149
 msgid "Import your project as a Gradle project. Build and run using Gradle."
 msgstr "プロジェクトを Gradle プロジェクトとしてインポートし、Gradle を使用してビルドします。"
 
-#: ../../build.rst:144
+#: ../../build.rst:155
 msgid "Import your project as a Maven project. Build and run using Maven."
 msgstr "プロジェクトを Maven プロジェクトとしてインポートし、 Maven を使用してビルドします。"
 

@@ -41,7 +41,7 @@ msgstr "このガイドを実行するには JDK 17 が必要です。"
 
 #: ../../getting-started.rst:20
 msgid "It's important to note that Doma is compatible with JDK 8 onwards. For details on supported JDK versions, refer to the appropriate section. :ref:`Which version of JDK does Doma support?<which-version-of-jdk-does-doma-support>`."
-msgstr "DomaはJDK 8以降と互換性があります。サポートされているJDKのバージョンについては、該当するセクションを参照してください。:ref:`DomaはどのバージョンのJDKをサポートしていますか？<which-version-of-jdk-does-doma-support>`。"
+msgstr "DomaはJDK 8以降と互換性があります。サポートされているJDKのバージョンについては、該当するセクションを参照してください。:ref:`DomaはどのバージョンのJDKをサポートしていますか？<which-version-of-jdk-does-doma-support>`"
 
 #: ../../getting-started.rst:25
 msgid "Get sample project"
