@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-15 23:36+0900\n"
+"POT-Creation-Date: 2024-05-18 21:56+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -81,7 +81,7 @@ msgid "To simplify your build.script(.kts), we recommend that you use the `org.s
 msgstr "build.script(.kts) を簡素化するには、`org.seasar.doma.compile`_ プラグインを使用することをお勧めします。"
 
 #: ../../build.rst:62
-#: ../../build.rst:124
+#: ../../build.rst:122
 msgid "See build.gradle.kts in the `getting-started`_ repository as an example."
 msgstr "例として、`getting-started`_ リポジトリの build.gradle.kts を参照してください。"
 
@@ -98,40 +98,37 @@ msgid "Build with Eclipse"
 msgstr "Eclipse でビルドする"
 
 #: ../../build.rst:117
-#: ../../build.rst:147
+#: ../../build.rst:146
 msgid "Gradle"
 msgstr ""
 
 #: ../../build.rst:119
-msgid "Generate eclipse setting files with Gradle, and then import your project into Eclipse. To generate the setting files, run ``gradle cleanEclipse eclipse``."
-msgstr "Gradle で Eclipse 設定ファイルを生成し、プロジェクトを Eclipse にインポートします。設定ファイルを生成するには、 ``gradle cleanEclipse eclipse`` を実行します。"
+msgid "Import your project as a Gradle project. To reflect Gradle settings in Eclipse, right-click on your project and select Gradle > Refresh Gradle Project."
+msgstr "プロジェクトを Gradle プロジェクトとしてインポートしてください。 Eclipse 内で Gradle \n"
+" の設定を反映するには、プロジェクトを右クリックし、Gradle > Refresh Gradle Project を選択します。"
 
-#: ../../build.rst:122
-msgid "To simplify your build.script(.kts), we recommend that you use the `com.diffplug.eclipse.apt`_ plugin."
-msgstr "build.script(.kts) を簡素化するには、`com.diffplug.eclipse.apt`_ プラグインを使用することをお勧めします。"
-
-#: ../../build.rst:127
-#: ../../build.rst:153
+#: ../../build.rst:125
+#: ../../build.rst:152
 msgid "Maven"
 msgstr ""
 
-#: ../../build.rst:129
-msgid "Import your project as a Maven project."
-msgstr "プロジェクトを Maven プロジェクトとしてインポートします。"
+#: ../../build.rst:127
+msgid "Import your project as a Maven project. To reflect Maven settings in Eclipse, you can right-click on your project then select Maven > Update Project..."
+msgstr "プロジェクトを Maven プロジェクトとしてインポートしてください。 Eclipse で Maven の設定を反映するには、プロジェクトを右クリックし、Maven > Update Project...を選択します。"
 
-#: ../../build.rst:133
+#: ../../build.rst:132
 msgid "You need to add the following argument to the Maven compiler plugin configuration in your pom.xml:"
 msgstr "pom.xml の Maven コンパイラプラグイン構成に次の引数を追加する必要があります。"
 
-#: ../../build.rst:144
+#: ../../build.rst:143
 msgid "Build with IntelliJ IDEA"
 msgstr "IntelliJ IDEA でビルドする"
 
-#: ../../build.rst:149
+#: ../../build.rst:148
 msgid "Import your project as a Gradle project. Build and run using Gradle."
 msgstr "プロジェクトを Gradle プロジェクトとしてインポートし、Gradle を使用してビルドします。"
 
-#: ../../build.rst:155
+#: ../../build.rst:154
 msgid "Import your project as a Maven project. Build and run using Maven."
 msgstr "プロジェクトを Maven プロジェクトとしてインポートし、 Maven を使用してビルドします。"
 

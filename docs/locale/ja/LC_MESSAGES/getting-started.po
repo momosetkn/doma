@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-17 13:53+0000\n"
+"POT-Creation-Date: 2024-05-18 21:56+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -80,8 +80,8 @@ msgid "Eclipse"
 msgstr ""
 
 #: ../../getting-started.rst:59
-msgid "Tested on Eclipse 4.23.0. Generate Eclipse project files using ``./gradlew eclipse`` before importing the java-8 and java-17 projects into your workspace."
-msgstr "Eclipse 4.23.0でテストされています。``./gradlew eclipse`` を使用してEclipseプロジェクトファイルを生成し、java-8およびjava-17プロジェクトをワークスペースにインポートしてください。なお、その際、Gradleのプロジェクトとしてインポートするのではなく通常のプロジェクトとしてインポートしてください。"
+msgid "Tested on Eclipse 4.23.0. Import the getting-started project as a Gradle project."
+msgstr "Eclipse 4.23.0でテスト済みです。getting-started プロジェクトを Gradle プロジェクトとしてインポートしてください。"
 
 #: ../../getting-started.rst:64
 msgid "If you want to store SQL statements in files, `Doma Tools <https://github.com/domaframework/doma-tools>`_ can help you."
