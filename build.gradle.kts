@@ -1,4 +1,4 @@
-val domaVersion = "2.58.0"
+val domaVersion = "2.60.0"
 
 fun updateVersion() {
     // Gradle
