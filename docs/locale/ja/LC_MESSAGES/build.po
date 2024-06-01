@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-18 21:56+0900\n"
+"POT-Creation-Date: 2024-06-01 23:17+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -98,7 +98,7 @@ msgid "Build with Eclipse"
 msgstr "Eclipse でビルドする"
 
 #: ../../build.rst:117
-#: ../../build.rst:146
+#: ../../build.rst:154
 msgid "Gradle"
 msgstr ""
 
@@ -108,27 +108,39 @@ msgstr "プロジェクトを Gradle プロジェクトとしてインポート�
 " の設定を反映するには、プロジェクトを右クリックし、Gradle > Refresh Gradle Project を選択します。"
 
 #: ../../build.rst:125
-#: ../../build.rst:152
+#: ../../build.rst:160
 msgid "Maven"
 msgstr ""
 
 #: ../../build.rst:127
-msgid "Import your project as a Maven project. To reflect Maven settings in Eclipse, you can right-click on your project then select Maven > Update Project..."
-msgstr "プロジェクトを Maven プロジェクトとしてインポートしてください。 Eclipse で Maven の設定を反映するには、プロジェクトを右クリックし、Maven > Update Project...を選択します。"
+msgid "Import your project as a Maven project."
+msgstr "プロジェクトを Maven プロジェクトとしてインポートします。"
 
-#: ../../build.rst:132
+#: ../../build.rst:129
+msgid "Right-click on the project, then select Properties > Maven > Annotation Processing. Enable \"Enable Project specific settings\" and \"Automatically configure JDT APT\" as shown in the figure below."
+msgstr "プロジェクトを右クリックして Properties > Maven > Annotation Processing を選択し、下図のように「Enable Project specific settings」と「Automatically configure JDT APT」を有効にしてください。"
+
+#: ../../build.rst:-1
+msgid "Eclipse Maven Annotation Processing"
+msgstr ""
+
+#: ../../build.rst:136
+msgid "To reflect Maven settings in Eclipse, you can right-click on your project then select Maven > Update Project..."
+msgstr "Eclipse で Maven の設定を反映するには、プロジェクトを右クリックし、 Maven > Update Project... を選択します。"
+
+#: ../../build.rst:140
 msgid "You need to add the following argument to the Maven compiler plugin configuration in your pom.xml:"
 msgstr "pom.xml の Maven コンパイラプラグイン構成に次の引数を追加する必要があります。"
 
-#: ../../build.rst:143
+#: ../../build.rst:151
 msgid "Build with IntelliJ IDEA"
 msgstr "IntelliJ IDEA でビルドする"
 
-#: ../../build.rst:148
+#: ../../build.rst:156
 msgid "Import your project as a Gradle project. Build and run using Gradle."
 msgstr "プロジェクトを Gradle プロジェクトとしてインポートし、Gradle を使用してビルドします。"
 
-#: ../../build.rst:154
+#: ../../build.rst:162
 msgid "Import your project as a Maven project. Build and run using Maven."
 msgstr "プロジェクトを Maven プロジェクトとしてインポートし、 Maven を使用してビルドします。"
 
