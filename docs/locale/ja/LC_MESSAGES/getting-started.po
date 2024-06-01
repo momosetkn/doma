@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-18 21:56+0900\n"
+"POT-Creation-Date: 2024-06-01 11:13+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -136,7 +136,7 @@ msgid "To execute a SELECT query and retrieve Java object results, follow this e
 msgstr "SELECT ステートメントを実行して Java オブジェクトの結果を取得するには、次の例に従います。"
 
 #: ../../getting-started.rst:108
-msgid "You'll use a metamodel class, like ``Employee_`` for ``Employee```, which is auto-generated through annotation processing."
+msgid "You'll use a metamodel class, like ``Employee_`` for ``Employee``, which is auto-generated through annotation processing."
 msgstr "クエリを組み立てるために ``Employee`` エンティティクラスのメタモデルクラスである ``Employee_`` を使用します。メタモデルクラスは、アノテーション処理を通じて自動生成されるクラスです。"
 
 #: ../../getting-started.rst:110
