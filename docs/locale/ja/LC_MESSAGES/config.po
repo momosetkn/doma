@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-29 20:39+0900\n"
+"POT-Creation-Date: 2024-07-19 19:09+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -409,74 +409,86 @@ msgid "The default EntityListenerProvider get the entity listener from the accep
 msgstr "デフォルトの ``EntityListenerProvider`` は、受け入れられた ``Supplier`` からエンティティリスナーを取得します。"
 
 #: ../../config.rst:227
+msgid "SQL Builder Settings"
+msgstr "SQL ビルダーの設定"
+
+#: ../../config.rst:229
+msgid "Return a ``SqlBuilderSettings`` from the ``getSqlBuilderSettings`` method."
+msgstr "``getSqlBuilderSettings`` メソッドから ``SqlBuilderSettings`` を返します。"
+
+#: ../../config.rst:231
+msgid "``SqlBuilderSettings`` controls the building of SQL. Specifically, it can remove comments and blank lines from the SQL."
+msgstr "``SqlBuilderSettings`` は SQL の構築を制御します。具体的にはコメントや空白行を SQL から削除できます。"
+
+#: ../../config.rst:235
 msgid "Loading JDBC drivers"
 msgstr "JDBCドライバのロード"
 
-#: ../../config.rst:232
+#: ../../config.rst:240
 msgid "All JDBC drivers are loaded automatically by the `service provider <service provider_>`_ mechanism."
 msgstr "すべての JDBC ドライバは、 `サービスプロバイダ <service provider_>`_ メカニズムによって自動的にロードされます。"
 
-#: ../../config.rst:236
+#: ../../config.rst:244
 msgid "But in the specific environment, the mechanism doesn't work appropriately. For example, when you use Apache Tomcat, you will find the case. See also: `DriverManager, the service provider mechanism and memory leaks <tomcat driver_>`_"
 msgstr "ただし、特定の環境では、このメカニズムが適切に動作しません。たとえば、Apache Tomcat を使用すると、このケースが見つかります。参照: `DriverManager、サービス プロバイダのメカニズムとメモリリーク <tomcat driver_>`_"
 
-#: ../../config.rst:243
+#: ../../config.rst:251
 msgid "Configuration definition"
 msgstr "設定クラスの定義"
 
-#: ../../config.rst:246
+#: ../../config.rst:254
 msgid "Simple definition"
 msgstr "単純な定義"
 
-#: ../../config.rst:248
+#: ../../config.rst:256
 msgid "The simple definition is appropriate in following cases:"
 msgstr "単純な定義は、次の場合に適しています。"
 
-#: ../../config.rst:250
+#: ../../config.rst:258
 msgid "The configuration instance isn't managed in the dependency injection container"
 msgstr "設定インスタンスが依存関係注入コンテナで管理されない"
 
-#: ../../config.rst:251
+#: ../../config.rst:259
 msgid "Local transactions is used"
 msgstr "ローカルトランザクションが使用される"
 
-#: ../../config.rst:293
+#: ../../config.rst:301
 msgid "You can use the above ``DbConfig`` class as follows:"
 msgstr "上記の ``DbConfig`` クラスは次のように使用できます。"
 
-#: ../../config.rst:299
+#: ../../config.rst:307
 msgid "The above ``EmployeeDao`` interface must be annotated with the ``@Dao`` annotation as follows:"
 msgstr "上記の ``EmployeeDao`` インタフェースには、次のように ``@Dao`` アノテーションを付ける必要があります。"
 
-#: ../../config.rst:311
+#: ../../config.rst:319
 msgid "Advanced definition"
 msgstr "高度な定義"
 
-#: ../../config.rst:313
+#: ../../config.rst:321
 msgid "The advanced definition is appropriate in following cases:"
 msgstr "高度な定義は、次の場合に適しています。"
 
-#: ../../config.rst:315
+#: ../../config.rst:323
 msgid "The configuration instance is managed as a singleton object in the dependency injection container"
 msgstr "設定インスタンスが依存性注入コンテナ内のシングルトンオブジェクトとして管理される"
 
-#: ../../config.rst:316
+#: ../../config.rst:324
 msgid "The transaction manager is provided from the application server or framework you use"
 msgstr "トランザクションマネージャが使用するアプリケーションサーバーまたはフレームワークから提供される"
 
-#: ../../config.rst:318
+#: ../../config.rst:326
 msgid "Suppose the ``dialect`` and the ``dataSource`` are injected by the dependency injection container:"
 msgstr "``dialect`` と ``dataSource`` が依存性注入コンテナによって注入されると仮定します。"
 
-#: ../../config.rst:347
+#: ../../config.rst:355
 msgid "To inject the instance of the above class to your DAO implementation instance, you have to annotate your DAO interfaces with ``@AnnotateWith``:"
 msgstr "上記のクラスのインスタンスを DAO のインスタンスに注入するには、DAO インタフェースに ``@AnnotateWith`` アノテーションを付ける必要があります。"
 
-#: ../../config.rst:374
+#: ../../config.rst:382
 msgid "To avoid annotating your DAO interfaces with ``@AnnotateWith`` repeatedly, annotate the arbitrary annotation with it only once:"
 msgstr "DAO インタフェースに ``@AnnotateWith`` で繰り返しアノテーションを付けることを避けるには、任意のアノテーションに 1 回だけアノテーションを付けます。"
 
-#: ../../config.rst:385
+#: ../../config.rst:393
 msgid "Then, you can annotate your DAO interfaces with the above ``@InjectConfig`` annotation:"
 msgstr "次に、DAO インタフェースに上記の ``@InjectConfig`` アノテーションを付けることができます。"
 

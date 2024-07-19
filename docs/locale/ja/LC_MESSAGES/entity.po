@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-17 13:53+0000\n"
+"POT-Creation-Date: 2024-07-19 20:27+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -141,7 +141,7 @@ msgstr "デフォルトでは、フィールドは永続的で、データベー
 
 #: ../../entity.rst:145
 #: ../../entity.rst:222
-#: ../../entity.rst:307
+#: ../../entity.rst:309
 msgid "The field type must be one of the following:"
 msgstr "フィールドの型は次のいずれかである必要があります。"
 
@@ -222,37 +222,37 @@ msgid "You can instruct Doma to generate id values automatically using the ``@Ge
 msgstr "``@GeneratedValue`` アノテーション を使用して、ID 値を自動的に生成するように Doma に指示できます。"
 
 #: ../../entity.rst:224
-#: ../../entity.rst:309
+#: ../../entity.rst:311
 msgid "the subclass of java.lang.Number"
 msgstr "java.lang.Number のサブクラス"
 
 #: ../../entity.rst:225
-#: ../../entity.rst:310
+#: ../../entity.rst:312
 msgid ":doc:`domain`, whose value type is the subclass of java.lang.Number"
 msgstr "その値の型が java.lang.Number のサブクラスである :doc:`domain`"
 
 #: ../../entity.rst:226
-#: ../../entity.rst:311
+#: ../../entity.rst:313
 msgid "java.util.Optional, whose element is either above types"
 msgstr "要素の型が上記のいずれかであるjava.util.Optional"
 
 #: ../../entity.rst:227
-#: ../../entity.rst:312
+#: ../../entity.rst:314
 msgid "OptionalInt"
 msgstr "OptionalInt"
 
 #: ../../entity.rst:228
-#: ../../entity.rst:313
+#: ../../entity.rst:315
 msgid "OptionalLong"
 msgstr ""
 
 #: ../../entity.rst:229
-#: ../../entity.rst:314
+#: ../../entity.rst:316
 msgid "OptionalDouble"
 msgstr ""
 
 #: ../../entity.rst:230
-#: ../../entity.rst:315
+#: ../../entity.rst:317
 msgid "the primitive types for number"
 msgstr "数値のプリミティブ型"
 
@@ -308,71 +308,71 @@ msgstr "あらかじめデータベースにTABLEを定義しておきます。 
 msgid "You can change the table name and the column names using the properties within the ``@TableGenerator`` annotation."
 msgstr "テーブル と カラム の名前は、``@TableGenerator`` アノテーション 内のプロパティを使用して変更できます。"
 
-#: ../../entity.rst:303
+#: ../../entity.rst:305
 msgid "Version"
 msgstr "バージョン"
 
-#: ../../entity.rst:305
+#: ../../entity.rst:307
 msgid "The version fields for optimistic locking are represented with the ``@Version`` annotation."
 msgstr "楽観的排他制御のバージョンフィールドは、``@Version`` アノテーションで表されます。"
 
-#: ../../entity.rst:324
+#: ../../entity.rst:326
 msgid "When the filed type is :doc:`embeddable`, you cannot specify the ``@Version`` annotation to the field."
 msgstr "フィールドの型が :doc:`embeddable` の場合、フィールドに ``@Version`` アノテーションを指定することはできません。"
 
-#: ../../entity.rst:327
+#: ../../entity.rst:329
 msgid "Tenant Id"
 msgstr "テナント ID"
 
-#: ../../entity.rst:329
+#: ../../entity.rst:331
 msgid "The tenant id fields are represented with the ``@TenantId`` annotation. The column corresponding to the annotated field is included in the WHERE clause of UPDATE and DELETE statements."
 msgstr "テナント IDのフィールドは、``@TenantId`` アノテーション で表されます。このフィールドに対応するカラム は、UPDATEステートメント および DELETEステートメント の WHERE 句に含まれます。"
 
-#: ../../entity.rst:339
+#: ../../entity.rst:341
 msgid "When the filed type is :doc:`embeddable`, you cannot specify the ``@TenantId`` annotation to the field."
 msgstr "フィールドの型が :doc:`embeddable` の場合、フィールドに ``@TenantId`` アノテーションを指定することはできません。"
 
-#: ../../entity.rst:342
+#: ../../entity.rst:344
 msgid "Transient"
 msgstr "Transient"
 
-#: ../../entity.rst:344
+#: ../../entity.rst:346
 msgid "If an entity has fields that you don't want to persist, you can annotate them using ``@Transient``:"
 msgstr "エンティティに永続化したくないフィールドがある場合は、 ``@Transient`` アノテーションを付けることができます。"
 
-#: ../../entity.rst:352
+#: ../../entity.rst:354
 msgid "OriginalStates"
 msgstr "OriginalStates"
 
-#: ../../entity.rst:354
+#: ../../entity.rst:356
 msgid "If you want to include only changed values in UPDATE statements, you can define fields annotated with ``@OriginalStates``. The fields can hold the original values that were fetched from the database."
 msgstr "変更された値のみを UPDATE ステートメントに含めたい場合は、``@OriginalStates`` の注釈を付けたフィールドを定義できます。フィールドには、データベースから取得した元の値を保持できます。"
 
-#: ../../entity.rst:358
+#: ../../entity.rst:360
 msgid "Doma uses the values to know which values are changed in the application and includes the only changed values in UPDATE statements."
 msgstr "Doma は、アプリケーション内でどの値が変更されたかを知るために ``@OriginalStates`` が注釈されたフィールドを使用し、変更された値のみを UPDATE ステートメントに含めます。"
 
-#: ../../entity.rst:361
+#: ../../entity.rst:363
 msgid "The following code snippet shows how to define original states:"
 msgstr "次のコードスニペットは、``OriginalStates`` を定義する方法を示しています。"
 
-#: ../../entity.rst:368
+#: ../../entity.rst:370
 msgid "The field type must be the same as the entity type."
 msgstr "フィールドの型はエンティティのタイプと同じである必要があります。"
 
-#: ../../entity.rst:371
+#: ../../entity.rst:373
 msgid "Method definition"
 msgstr "メソッドの定義"
 
-#: ../../entity.rst:373
+#: ../../entity.rst:375
 msgid "There are no limitations in the use of methods."
 msgstr "メソッドの使用に制限はありません。"
 
-#: ../../entity.rst:376
+#: ../../entity.rst:378
 msgid "Example"
 msgstr "例"
 
-#: ../../entity.rst:378
+#: ../../entity.rst:380
 msgid "Instantiate the ``Employee`` entity class and use its instance:"
 msgstr "``Employee`` エンティティクラスをインスタンス化し、そのインスタンスを使用します。"
 

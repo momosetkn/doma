@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-01 11:13+0900\n"
+"POT-Creation-Date: 2024-07-19 20:27+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -141,17 +141,18 @@ msgstr "たとえば、 ``Employee`` エンティティと ``Department`` エン
 #: ../../criteria-api.rst:1249
 #: ../../criteria-api.rst:1279
 #: ../../criteria-api.rst:1354
-#: ../../criteria-api.rst:1417
-#: ../../criteria-api.rst:1441
-#: ../../criteria-api.rst:1567
-#: ../../criteria-api.rst:1609
-#: ../../criteria-api.rst:1652
-#: ../../criteria-api.rst:1685
-#: ../../criteria-api.rst:1706
-#: ../../criteria-api.rst:1744
-#: ../../criteria-api.rst:1787
-#: ../../criteria-api.rst:1831
-#: ../../criteria-api.rst:1871
+#: ../../criteria-api.rst:1385
+#: ../../criteria-api.rst:1436
+#: ../../criteria-api.rst:1460
+#: ../../criteria-api.rst:1586
+#: ../../criteria-api.rst:1628
+#: ../../criteria-api.rst:1671
+#: ../../criteria-api.rst:1704
+#: ../../criteria-api.rst:1725
+#: ../../criteria-api.rst:1763
+#: ../../criteria-api.rst:1806
+#: ../../criteria-api.rst:1850
+#: ../../criteria-api.rst:1890
 msgid "The above query issues the following SQL statement:"
 msgstr "上記のクエリは次の SQL ステートメントを発行します。"
 
@@ -210,20 +211,20 @@ msgstr "Select 設定 (Entityql, NativeSql)"
 #: ../../criteria-api.rst:256
 #: ../../criteria-api.rst:1205
 #: ../../criteria-api.rst:1291
-#: ../../criteria-api.rst:1505
+#: ../../criteria-api.rst:1524
 msgid "We support the following settings:"
 msgstr "次の設定をサポートしています。"
 
 #: ../../criteria-api.rst:258
 #: ../../criteria-api.rst:1207
-#: ../../criteria-api.rst:1507
+#: ../../criteria-api.rst:1526
 msgid "allowEmptyWhere"
 msgstr ""
 
 #: ../../criteria-api.rst:259
 #: ../../criteria-api.rst:1209
 #: ../../criteria-api.rst:1293
-#: ../../criteria-api.rst:1509
+#: ../../criteria-api.rst:1528
 msgid "comment"
 msgstr ""
 
@@ -238,14 +239,14 @@ msgstr ""
 #: ../../criteria-api.rst:262
 #: ../../criteria-api.rst:1211
 #: ../../criteria-api.rst:1294
-#: ../../criteria-api.rst:1511
+#: ../../criteria-api.rst:1530
 msgid "queryTimeout"
 msgstr ""
 
 #: ../../criteria-api.rst:263
 #: ../../criteria-api.rst:1212
 #: ../../criteria-api.rst:1295
-#: ../../criteria-api.rst:1512
+#: ../../criteria-api.rst:1531
 msgid "sqlLogType"
 msgstr ""
 
@@ -751,29 +752,29 @@ msgstr "Delete 設定（Entityql、NativeSql）"
 
 #: ../../criteria-api.rst:1208
 #: ../../criteria-api.rst:1296
-#: ../../criteria-api.rst:1508
+#: ../../criteria-api.rst:1527
 msgid "batchSize"
 msgstr ""
 
 #: ../../criteria-api.rst:1210
-#: ../../criteria-api.rst:1510
+#: ../../criteria-api.rst:1529
 msgid "ignoreVersion"
 msgstr "ignoreVersion"
 
 #: ../../criteria-api.rst:1213
-#: ../../criteria-api.rst:1513
+#: ../../criteria-api.rst:1532
 msgid "suppressOptimisticLockException"
 msgstr "suppressOptimisticLockException"
 
 #: ../../criteria-api.rst:1215
 #: ../../criteria-api.rst:1302
-#: ../../criteria-api.rst:1518
+#: ../../criteria-api.rst:1537
 msgid "They are all optional."
 msgstr "これらはすべてオプションです。"
 
 #: ../../criteria-api.rst:1217
 #: ../../criteria-api.rst:1304
-#: ../../criteria-api.rst:1520
+#: ../../criteria-api.rst:1539
 msgid "You can apply them as follows:"
 msgstr "それらは次のように適用できます。"
 
@@ -790,15 +791,15 @@ msgid "Batch Delete is also supported:"
 msgstr "バッチ削除もサポートされています。"
 
 #: ../../criteria-api.rst:1266
-#: ../../criteria-api.rst:1373
-#: ../../criteria-api.rst:1424
-#: ../../criteria-api.rst:1586
-#: ../../criteria-api.rst:1616
+#: ../../criteria-api.rst:1412
+#: ../../criteria-api.rst:1443
+#: ../../criteria-api.rst:1605
+#: ../../criteria-api.rst:1635
 msgid "The execute method may throw following exceptions:"
 msgstr "実行メソッドは次の例外をスローする場合があります。"
 
 #: ../../criteria-api.rst:1268
-#: ../../criteria-api.rst:1588
+#: ../../criteria-api.rst:1607
 msgid "OptimisticLockException: if the entity has a version property and an update count is 0"
 msgstr "OptimisticLockException: エンティティにバージョン プロパティがあり、更新件数が 0 の場合"
 
@@ -815,17 +816,17 @@ msgid "Insert settings (Entityql, NativeSql)"
 msgstr "Insert 設定 (Entityql、NativeSql)"
 
 #: ../../criteria-api.rst:1297
-#: ../../criteria-api.rst:1514
+#: ../../criteria-api.rst:1533
 msgid "excludeNull"
 msgstr ""
 
 #: ../../criteria-api.rst:1298
-#: ../../criteria-api.rst:1515
+#: ../../criteria-api.rst:1534
 msgid "include"
 msgstr ""
 
 #: ../../criteria-api.rst:1299
-#: ../../criteria-api.rst:1516
+#: ../../criteria-api.rst:1535
 msgid "exclude"
 msgstr ""
 
@@ -841,294 +842,298 @@ msgstr "Insert ステートメント (Entityql)"
 msgid "Batch Insert is also supported:"
 msgstr "バッチ追加もサポートされています。"
 
-#: ../../criteria-api.rst:1375
-#: ../../criteria-api.rst:1426
-#: ../../criteria-api.rst:1589
-#: ../../criteria-api.rst:1618
-msgid "UniqueConstraintException: if an unique constraint is violated"
-msgstr "UniqueConstraintException: 一意制約に違反した場合"
+#: ../../criteria-api.rst:1373
+msgid "Multi-row Insert is also supported:"
+msgstr "複数行追加もサポートされています。"
 
-#: ../../criteria-api.rst:1377
-#: ../../criteria-api.rst:1449
+#: ../../criteria-api.rst:1392
+#: ../../criteria-api.rst:1468
 msgid "Upsert is also supported:"
 msgstr "Upsertもサポートされています"
 
-#: ../../criteria-api.rst:1379
+#: ../../criteria-api.rst:1394
 msgid "By calling on `onDuplicateKeyUpdate`, you can update when a key is duplicated."
 msgstr "`onDuplicateKeyUpdate` を呼び出すことで、キーが重複した場合に更新することができます。"
 
-#: ../../criteria-api.rst:1388
+#: ../../criteria-api.rst:1403
 msgid "By calling on `onDuplicateKeyIgnore`, you can ignore errors when a key is duplicated."
 msgstr "`onDuplicateKeyIgnore` を呼び出すことで、キーが重複した場合のエラーを無視することができます。"
 
-#: ../../criteria-api.rst:1398
+#: ../../criteria-api.rst:1414
+#: ../../criteria-api.rst:1445
+#: ../../criteria-api.rst:1608
+#: ../../criteria-api.rst:1637
+msgid "UniqueConstraintException: if an unique constraint is violated"
+msgstr "UniqueConstraintException: 一意制約に違反した場合"
+
+#: ../../criteria-api.rst:1417
 msgid "Insert statement (NativeSql)"
 msgstr "Insert ステートメント (NativeSql)"
 
-#: ../../criteria-api.rst:1428
+#: ../../criteria-api.rst:1447
 msgid "We also support the INSERT SELECT syntax as follows:"
 msgstr "次のような INSERT SELECT 構文もサポートされています。"
 
-#: ../../criteria-api.rst:1451
+#: ../../criteria-api.rst:1470
 msgid "By calling on `onDuplicateKeyUpdate`, you can update when a key is duplicated. You can specify keys for duplicate check targets in `keys`. You can specify the value of the update in case of duplicates in `set`."
 msgstr "`onDuplicateKeyUpdate` を呼び出すことで、キーが重複したときに更新することができます。 `keys` で重複チェック対象のキーを指定できます。`set` で重複した場合の更新の値を指定できます。"
 
-#: ../../criteria-api.rst:1477
+#: ../../criteria-api.rst:1496
 msgid "By calling on `onDuplicateKeyIgnore`, you can ignore errors when a key is duplicated. You can specify keys for duplicate check targets in `keys`."
 msgstr "`onDuplicateKeyIgnore` を呼び出すことで、キーが重複したときのエラーを無視することができます。 `keys` で重複チェック対象のキーを指定できます。"
 
-#: ../../criteria-api.rst:1497
+#: ../../criteria-api.rst:1516
 msgid "Update statement"
 msgstr "Update ステートメント"
 
-#: ../../criteria-api.rst:1499
+#: ../../criteria-api.rst:1518
 msgid "For the specification of the where expression, see :ref:`criteria_where`. The same rule is applied to update statements."
 msgstr "where 式の仕様については、:ref:`criteria_where` を参照してください。同じルールが更新ステートメントにも適用されます。"
 
-#: ../../criteria-api.rst:1503
+#: ../../criteria-api.rst:1522
 msgid "Update settings (Entityql, NativeSql)"
 msgstr "Update 設定 (Entityql、NativeSql)"
 
-#: ../../criteria-api.rst:1551
+#: ../../criteria-api.rst:1570
 msgid "If you want to build a update statement without a WHERE clause, you have to enable the `allowEmptyWhere` setting."
 msgstr "WHERE 句のない update ステートメントを構築したい場合は、`allowEmptyWhere` 設定を有効にする必要があります。"
 
-#: ../../criteria-api.rst:1555
+#: ../../criteria-api.rst:1574
 msgid "Update statement (Entityql)"
 msgstr "Update ステートメント (Entityql)"
 
-#: ../../criteria-api.rst:1574
+#: ../../criteria-api.rst:1593
 msgid "Batch Update is also supported:"
 msgstr "バッチ更新もサポートされています。"
 
-#: ../../criteria-api.rst:1592
+#: ../../criteria-api.rst:1611
 msgid "Update statement (NativeSql)"
 msgstr "Update ステートメント (NativeSql)"
 
-#: ../../criteria-api.rst:1621
+#: ../../criteria-api.rst:1640
 msgid "Property expressions (Entityql, NativeSql)"
 msgstr "プロパティ式 (Entityql、NativeSql)"
 
-#: ../../criteria-api.rst:1623
+#: ../../criteria-api.rst:1642
 msgid "All expression methods are defined in the ``org.seasar.doma.jdbc.criteria.expression.Expressions`` class."
 msgstr "すべての式メソッドは ``org.seasar.doma.jdbc.criteria.expression.Expressions`` クラスで定義されています。"
 
-#: ../../criteria-api.rst:1626
+#: ../../criteria-api.rst:1645
 msgid "Use them with static import."
 msgstr "静的インポートで使用します。"
 
-#: ../../criteria-api.rst:1629
+#: ../../criteria-api.rst:1648
 msgid "Arithmetic expressions"
 msgstr "算術式"
 
-#: ../../criteria-api.rst:1631
+#: ../../criteria-api.rst:1650
 msgid "We provide the following methods:"
 msgstr "次の方法を提供します。"
 
-#: ../../criteria-api.rst:1633
+#: ../../criteria-api.rst:1652
 msgid "add - (+)"
 msgstr ""
 
-#: ../../criteria-api.rst:1634
+#: ../../criteria-api.rst:1653
 msgid "sub - (-)"
 msgstr ""
 
-#: ../../criteria-api.rst:1635
+#: ../../criteria-api.rst:1654
 msgid "mul - (*)"
 msgstr ""
 
-#: ../../criteria-api.rst:1636
+#: ../../criteria-api.rst:1655
 msgid "div - (/)"
 msgstr ""
 
-#: ../../criteria-api.rst:1637
+#: ../../criteria-api.rst:1656
 msgid "mod - (%)"
 msgstr ""
 
-#: ../../criteria-api.rst:1639
+#: ../../criteria-api.rst:1658
 msgid "You can use the ``add`` method as follows:"
 msgstr "次のように ``add`` メソッドを使用できます。"
 
-#: ../../criteria-api.rst:1661
+#: ../../criteria-api.rst:1680
 msgid "String functions"
 msgstr "文字列関数"
 
-#: ../../criteria-api.rst:1663
-#: ../../criteria-api.rst:1696
+#: ../../criteria-api.rst:1682
+#: ../../criteria-api.rst:1715
 msgid "We provide the following method:"
 msgstr "以下の方法を提供します。"
 
-#: ../../criteria-api.rst:1665
+#: ../../criteria-api.rst:1684
 msgid "concat"
 msgstr ""
 
-#: ../../criteria-api.rst:1666
+#: ../../criteria-api.rst:1685
 msgid "lower"
 msgstr ""
 
-#: ../../criteria-api.rst:1667
+#: ../../criteria-api.rst:1686
 msgid "upper"
 msgstr ""
 
-#: ../../criteria-api.rst:1668
+#: ../../criteria-api.rst:1687
 msgid "trim"
 msgstr ""
 
-#: ../../criteria-api.rst:1669
+#: ../../criteria-api.rst:1688
 msgid "ltrim"
 msgstr ""
 
-#: ../../criteria-api.rst:1670
+#: ../../criteria-api.rst:1689
 msgid "rtrim"
 msgstr ""
 
-#: ../../criteria-api.rst:1672
+#: ../../criteria-api.rst:1691
 msgid "You can use the ``concat`` method as follows:"
 msgstr "次のように ``concat`` メソッドを使用できます。"
 
-#: ../../criteria-api.rst:1694
+#: ../../criteria-api.rst:1713
 msgid "Literal expression"
 msgstr "リテラル表現"
 
-#: ../../criteria-api.rst:1698
+#: ../../criteria-api.rst:1717
 msgid "literal (for all basic data types)"
 msgstr ""
 
-#: ../../criteria-api.rst:1700
+#: ../../criteria-api.rst:1719
 msgid "You can use the ``literal`` method as follows:"
 msgstr "次のように ``literal`` メソッドを使用できます。"
 
-#: ../../criteria-api.rst:1717
+#: ../../criteria-api.rst:1736
 msgid "Note that the literal expressions are not recognized as bind variables."
 msgstr "リテラル式はバインド変数として認識されないことに注意してください。"
 
-#: ../../criteria-api.rst:1720
+#: ../../criteria-api.rst:1739
 msgid "Case expression"
 msgstr "Case 式"
 
-#: ../../criteria-api.rst:1722
-#: ../../criteria-api.rst:1757
+#: ../../criteria-api.rst:1741
+#: ../../criteria-api.rst:1776
 msgid "We support the following method:"
 msgstr "次の方法をサポートしています。"
 
-#: ../../criteria-api.rst:1724
+#: ../../criteria-api.rst:1743
 msgid "when"
 msgstr ""
 
-#: ../../criteria-api.rst:1726
+#: ../../criteria-api.rst:1745
 msgid "You can use the ``when`` method as follows:"
 msgstr "次のように ``when`` メソッドを使用できます。"
 
-#: ../../criteria-api.rst:1755
+#: ../../criteria-api.rst:1774
 msgid "Subquery select expression"
 msgstr "サブクエリ select 式"
 
-#: ../../criteria-api.rst:1759
+#: ../../criteria-api.rst:1778
 msgid "select"
 msgstr ""
 
-#: ../../criteria-api.rst:1761
+#: ../../criteria-api.rst:1780
 msgid "You can use the ``select`` method as follows:"
 msgstr "次のように ``select`` メソッドを使用できます。"
 
-#: ../../criteria-api.rst:1801
+#: ../../criteria-api.rst:1820
 msgid "User-defined expressions"
 msgstr "ユーザー定義式"
 
-#: ../../criteria-api.rst:1803
+#: ../../criteria-api.rst:1822
 msgid "You can define user-defined expressions by calling ``Expressions.userDefined``."
 msgstr "``Expressions.userDefined`` を呼び出すことで、ユーザー定義の式を定義できます。"
 
-#: ../../criteria-api.rst:1805
+#: ../../criteria-api.rst:1824
 msgid "In the example below, the replace function is defined:"
 msgstr "以下の例では、replace 関数が定義されています。"
 
-#: ../../criteria-api.rst:1821
+#: ../../criteria-api.rst:1840
 msgid "You can use the replace function in your query as follows:"
 msgstr "クエリで replace 関数を使用するには、次のようにします。"
 
-#: ../../criteria-api.rst:1838
+#: ../../criteria-api.rst:1857
 msgid "Scopes (Entityql, NativeSql)"
 msgstr "スコープ (Entityql、NativeSQL)"
 
-#: ../../criteria-api.rst:1840
+#: ../../criteria-api.rst:1859
 msgid "Scoping allow you to specify commonly-used query conditions."
 msgstr "スコープを使用すると、一般的に使用されるクエリ条件を指定できます。"
 
-#: ../../criteria-api.rst:1842
+#: ../../criteria-api.rst:1861
 msgid "To define a simple scope, create the class which has a method annotated with ``@Scope``:"
 msgstr "単純なスコープを定義するには、 ``@Scope`` アノテーションが付けられたメソッドを持つクラスを作成します。"
 
-#: ../../criteria-api.rst:1854
+#: ../../criteria-api.rst:1873
 msgid "To enable the scope, specify the above class in the scopes element of ``@Metamodel``:"
 msgstr "スコープを有効にするには、 ``@Metamodel`` のscopes 要素に上記のクラスを指定します。"
 
-#: ../../criteria-api.rst:1862
+#: ../../criteria-api.rst:1881
 msgid "Now the metamodel ``Department_`` has a ``onlyTokyo`` method. You can use it as follows:"
 msgstr "上述の設定によりメタモデル ``Department_`` には ``onlyTokyo`` メソッドが生成されます。次のように使用できます。"
 
-#: ../../criteria-api.rst:1878
+#: ../../criteria-api.rst:1897
 msgid "When you want to combine other query conditions with scopes, compose them using the `andThen` method:"
 msgstr "他のクエリ条件をスコープと組み合わせたい場合は、 `andThen` メソッドを使用して条件を作成します。"
 
-#: ../../criteria-api.rst:1887
+#: ../../criteria-api.rst:1906
 msgid "You can define several scopes in a class as follows:"
 msgstr "次のように、クラス内に複数のスコープを定義できます。"
 
-#: ../../criteria-api.rst:1909
+#: ../../criteria-api.rst:1928
 msgid "Tips"
 msgstr "ちょっとした便利機能"
 
-#: ../../criteria-api.rst:1912
+#: ../../criteria-api.rst:1931
 msgid "Execution in Dao (Entityql, NativeSql)"
 msgstr "DAOでの実行（Entityql、NativeSql）"
 
-#: ../../criteria-api.rst:1914
+#: ../../criteria-api.rst:1933
 msgid "It is useful to execute DSLs in the default method of the Dao interface. To get a ``config`` object, call ``Config.get(this)`` in the default method as follows:"
 msgstr "DAO インターフェースのデフォルトのメソッドで DSL を実行すると便利です。 ``config`` オブジェクトを取得するには、次のようにデフォルトのメソッドで ``Config.get(this)`` を呼び出します。"
 
-#: ../../criteria-api.rst:1931
+#: ../../criteria-api.rst:1950
 msgid "Overwriting the table name (Entityql, NativeSql)"
 msgstr "テーブル名の上書き（Entityql、NativeSql）"
 
-#: ../../criteria-api.rst:1933
+#: ../../criteria-api.rst:1952
 msgid "A metamodel constructor accepts the qualified table name and the metamodel overwrites its table name."
 msgstr "メタモデル コンストラクターは修飾されたテーブル名を受け入れ、メタモデルはそのテーブル名を上書きします。"
 
-#: ../../criteria-api.rst:1936
+#: ../../criteria-api.rst:1955
 msgid "It is useful to handle two tables that have the same data structure:"
 msgstr "同じデータ構造を持つ 2 つのテーブルを処理すると便利です。"
 
-#: ../../criteria-api.rst:1956
+#: ../../criteria-api.rst:1975
 msgid "Debugging (Entityql, NativeSql)"
 msgstr "デバッグ (Entityql、NativeSql)"
 
-#: ../../criteria-api.rst:1958
+#: ../../criteria-api.rst:1977
 msgid "To know the SQL statement built by the DSLs, use the ``asSql`` method:"
 msgstr "DSL によって構築された SQL ステートメントを知るには、 ``asSql`` メソッドを使用します。"
 
-#: ../../criteria-api.rst:1970
-#: ../../criteria-api.rst:1997
+#: ../../criteria-api.rst:1989
+#: ../../criteria-api.rst:2016
 msgid "The above code prints as follows:"
 msgstr "上記のコードは次のように出力されます。"
 
-#: ../../criteria-api.rst:1977
+#: ../../criteria-api.rst:1996
 msgid "The ``asSql`` method doesn't issue the SQL statement to your Database. It only builds the SQL statement and return it as an ``Sql`` object."
 msgstr "``asSql`` メソッドはデータベースに SQL ステートメントを発行しません。 SQL ステートメントを構築し、それを ``Sql`` オブジェクトとして返すだけです。"
 
-#: ../../criteria-api.rst:1980
+#: ../../criteria-api.rst:1999
 msgid "You can also get the ``Sql`` object by calling the ``peek`` method."
 msgstr "``peek`` メソッドを呼び出して ``Sql`` オブジェクトを取得することもできます。"
 
-#: ../../criteria-api.rst:2007
+#: ../../criteria-api.rst:2026
 msgid "Sample projects"
 msgstr "サンプルプロジェクト"
 
-#: ../../criteria-api.rst:2009
+#: ../../criteria-api.rst:2028
 msgid "`simple-examples <https://github.com/domaframework/simple-examples>`_"
 msgstr ""
 
-#: ../../criteria-api.rst:2010
+#: ../../criteria-api.rst:2029
 msgid "`kotlin-sample <https://github.com/domaframework/kotlin-sample>`_"
 msgstr ""
 
