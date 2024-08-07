@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-19 20:27+0900\n"
+"POT-Creation-Date: 2024-08-07 22:49+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -52,7 +52,7 @@ msgid "Batch insert by auto generated SQL"
 msgstr "自動生成されたSQLによるバッチ追加"
 
 #: ../../query/batch-insert.rst:37
-#: ../../query/batch-insert.rst:109
+#: ../../query/batch-insert.rst:143
 msgid "Parameter type must be ``java.lang.Iterable`` subtype that has :doc:`../entity` as an element. Specifiable parameter is only one. Parameter must not be ``null``. Return value array element count become equal ``Iterable`` element count. Insert count is returned to array each element."
 msgstr "パラメータの型は要素として :doc:`../entity` を持つ ``java.lang.Iterable`` のサブタイプでなければなりません。指定できるパラメータは 1 つだけです。パラメータは ``null`` であってはなりません。戻り値の配列要素数は、 ``Iterable`` の要素数と等しくなります。配列のそれぞれの要素が追加された件数を表します。"
 
@@ -70,7 +70,7 @@ msgstr "注意点については :ref:`identity-auto-generation` を参照して
 
 #: ../../query/batch-insert.rst:50
 msgid "If you don't use auto-generated keys in your application, you can enable the `ignoreGeneratedKeys` flag. This flag may improve performance."
-msgstr ""
+msgstr "アプリケーションで自動生成された ID を使用しない場合は、``ingoreGeneratedKeys`` フラグを有効にすることができます。このフラグによりパフォーマンスが向上する可能性があります。"
 
 #: ../../query/batch-insert.rst:59
 msgid "Version number"
@@ -81,8 +81,8 @@ msgid "If value that explicitly set is over ``0`` then use the value if :doc:`..
 msgstr " :doc:`../entity` に ``@Version`` が注釈されたプロパティがある場合、 そのプロパティに明示的に 0 以上の値が設定されていればその値を使用します。 もし設定されていないか、 0 未満の値が設定されていれば 1 を自動で設定します。"
 
 #: ../../query/batch-insert.rst:65
-msgid "Insert target property"
-msgstr "追加対象プロパティ"
+msgid "Properties of @BatchInsert"
+msgstr "@BatchInsert のプロパティ"
 
 #: ../../query/batch-insert.rst:68
 msgid "insertable"
@@ -93,6 +93,7 @@ msgid "The ``insertable`` property within ``@Column`` annotation that is specifi
 msgstr ":doc:`../entity` に `@Column` アノテーションが付けられたプロパティがある場合、 ``@Column`` アノテーション内の ``false`` が指定された ``insertable`` プロパティは追加対象から除外されます。 "
 
 #: ../../query/batch-insert.rst:73
+#: ../../query/batch-insert.rst:164
 msgid "exclude"
 msgstr ""
 
@@ -101,6 +102,7 @@ msgid "Property that is specified with ``exclude`` property within the ``@BatchI
 msgstr "``@BatchInsert`` アノテーション内の ``exclude`` プロパティで指定されたプロパティは追加対象から除外されます。 ``@Column`` アノテーション内の ``insertable`` プロパティに ``true`` が指定されていても、この要素でプロパティが指定されている場合、そのプロパティは追加対象から除外されます。"
 
 #: ../../query/batch-insert.rst:84
+#: ../../query/batch-insert.rst:165
 msgid "include"
 msgstr ""
 
@@ -109,78 +111,116 @@ msgid "Only property that is specified with ``include`` property within ``@Batch
 msgstr "``@BatchInsert`` アノテーション内の ``include`` プロパティで指定されたプロパティのみが追加対象となります。 ``@BatchInsert`` 内の ``include`` プロパティと ``exclude`` プロパティの両方で同じプロパティを指定した場合、そのプロパティは追加対象から除外されます。この要素でプロパティを指定しても、 ``@Column`` アノテーション内の ``inserttable`` プロパティが ``false`` の場合、そのプロパティは挿入対象から除外されます。"
 
 #: ../../query/batch-insert.rst:96
+#: ../../query/batch-insert.rst:166
+msgid "duplicateKeyType"
+msgstr "duplicateKeyType"
+
+#: ../../query/batch-insert.rst:98
+msgid "This property defines the strategy for handling duplicate keys during an insert operation."
+msgstr "このプロパティは、追加操作時に重複したキーを処理するための戦略を定義します。"
+
+#: ../../query/batch-insert.rst:100
+msgid "It can take one of three values:"
+msgstr "次の3つの値のいずれかを取ることができます:"
+
+#: ../../query/batch-insert.rst:102
+msgid "``DuplicateKeyType.UPDATE``: If a duplicate key is encountered, the existing row in the table will be updated."
+msgstr "``DuplicateKeyType.UPDATE``: 重複したキーが見つかった場合、テーブル内の既存の行が更新されます。"
+
+#: ../../query/batch-insert.rst:103
+msgid "``DuplicateKeyType.IGNORE``: If a duplicate key is encountered, the insert operation will be ignored, and no changes will be made to the table."
+msgstr "``DuplicateKeyType.IGNORE``: 重複したキーが見つかった場合、挿入操作は無視され、テーブルに変更は加えられません。"
+
+#: ../../query/batch-insert.rst:104
+msgid "``DuplicateKeyType.EXCEPTION``: If a duplicate key is encountered, an exception will be thrown."
+msgstr "``DuplicateKeyType.EXCEPTION``: 重複したキーが発生した場合、例外が投げられます。"
+
+#: ../../query/batch-insert.rst:112
+#: ../../query/batch-insert.rst:167
+msgid "duplicateKeys"
+msgstr ""
+
+#: ../../query/batch-insert.rst:114
+msgid "This property represents the keys that should be used to determine if a duplicate key exists. If the duplicate key exists, the operation will use the ``duplicateKeyType`` strategy to handle the duplicate key."
+msgstr "このプロパティは、重複キーが存在するかどうかを判断するために使用するキーを表します。 重複キーが存在する場合、重複キーを処理するために ``duplicateKeyType`` ストラテジーを使用します。"
+
+#: ../../query/batch-insert.rst:123
+msgid "This property is only utilized when the ``duplicateKeyType`` strategy is either ``DuplicateKeyType.UPDATE`` or ``DuplicateKeyType.IGNORE``."
+msgstr "このプロパティは、``duplicateKeyType`` ストラテジーが ``DuplicateKeyType.UPDATE`` または ``DuplicateKeyType.IGNORE`` のいずれかである場合にのみ使用されます。"
+
+#: ../../query/batch-insert.rst:127
+msgid "The MySQL dialect does not utilize this property."
+msgstr "MySQLの方言はこのプロパティを利用しません。"
+
+#: ../../query/batch-insert.rst:130
 msgid "Batch insert by SQL file"
 msgstr "SQLファイルによるバッチ追加"
 
-#: ../../query/batch-insert.rst:98
+#: ../../query/batch-insert.rst:132
 msgid "To execute batch inserting by SQL file, you set ``true`` to ``sqlFile`` property within ``@BatchInsert`` annotation and prepare SQL file that correspond method."
 msgstr "SQLファイルによるバッチ追加を実行するには、 ``@BatchInsert`` アノテーション内の ``sqlFile`` プロパティに ``true`` を設定し、メソッドに対応したSQLファイルを用意します。"
 
-#: ../../query/batch-insert.rst:115
+#: ../../query/batch-insert.rst:149
 msgid "If entity listener is specified at :doc:`../entity` then entity listener method is not called."
 msgstr "エンティティリスナーが :doc:`../entity` で指定されている場合、エンティティリスナーのメソッドは呼び出されません。"
 
-#: ../../query/batch-insert.rst:117
+#: ../../query/batch-insert.rst:151
 msgid "For example, you describe SQL like below to correspond above method."
 msgstr "例えば、上記のメソッドに対応するには以下のようなSQLを記述します。"
 
-#: ../../query/batch-insert.rst:124
+#: ../../query/batch-insert.rst:158
 msgid "Parameter name indicate ``java.lang.Iterable`` subtype element in SQL file."
 msgstr "SQL ファイル内では、メソッドのパラメータ名は ``java.lang.Iterable`` の要素を示します。"
 
-#: ../../query/batch-insert.rst:126
-msgid "Identifier auto setting and version number auto setting are not executed in batch insert by SQL file. Also, ``exclude`` property and ``include`` property within ``@BatchInsert`` are not referenced."
-msgstr "SQLファイルによるバッチ追加では、ID の自動設定、バージョン番号の自動設定は実行されません。また、 ``@BatchInsert`` 内の ``exclude`` プロパティおよび ``include`` プロパティは参照されません。"
+#: ../../query/batch-insert.rst:160
+msgid "Identifier auto setting and version number auto setting are not executed in batch insert by SQL file."
+msgstr "識別子の自動設定およびバージョン番号の自動設定は、SQLファイルによるバッチ挿入では実行されません。"
 
-#: ../../query/batch-insert.rst:130
-msgid "Batch upsert"
-msgstr ""
+#: ../../query/batch-insert.rst:162
+msgid "Additionally, the following properties of ``@BatchInsert`` are not used:"
+msgstr "また、以下の ``@BatchInsert`` のプロパティは使用されません。"
 
-#: ../../query/batch-insert.rst:132
-msgid "you can specify whether to update or ignore using a ``duplicateKeyType`` property In case of duplication. By default, it is ``DuplicateKeyType.EXCEPTION`` , and an error will occur in case of duplicated. There are 3 types to choose from: ``DuplicateKeyType.UPDATE`` , ``DuplicateKeyType.IGNORE`` , ``DuplicateKeyType.EXCEPTION`` ."
-msgstr "``duplicateKeyType`` プロパティを使用することで、レコードが重複した場合に更新するか無視するかを指定できます。デフォルトでは ``DuplicateKeyType.EXCEPTION`` が使用され、重複時にエラーが発生することを表します。 ``duplicateKeyType`` プロパティには ``DuplicateKeyType.UPDATE`` , ``DuplicateKeyType.IGNORE`` , ``DuplicateKeyType.EXCEPTION`` の3つの中からいずれかを選択して指定できます。"
-
-#: ../../query/batch-insert.rst:145
+#: ../../query/batch-insert.rst:170
 msgid "Unique constraint violation"
 msgstr "一意制約違反"
 
-#: ../../query/batch-insert.rst:147
+#: ../../query/batch-insert.rst:172
 msgid "``UniqueConstraintException`` is thrown regardless of with or without using sql file if unique constraint violation is occurred."
 msgstr "SQLファイルの使用の有無に関わらず、一意性制約違反が発生した場合は ``UniqueConstraintException`` がスローされます。"
 
-#: ../../query/batch-insert.rst:150
+#: ../../query/batch-insert.rst:175
 msgid "Query timeout"
 msgstr "クエリタイムアウト"
 
-#: ../../query/batch-insert.rst:152
+#: ../../query/batch-insert.rst:177
 msgid "You can specify seconds of query timeout to ``queryTimeout`` property within ``@BatchInsert`` annotation."
 msgstr "``@BatchInsert`` アノテーション内の ``queryTimeout`` プロパティにクエリタイムアウトの秒数を指定できます。"
 
-#: ../../query/batch-insert.rst:159
+#: ../../query/batch-insert.rst:184
 msgid "This specifying is applied regardless of with or without using sql file. Query timeout that is specified in config class is used if ``queryTimeout`` property is not set value."
 msgstr "この指定はSQLファイルの使用の有無に関わらず適用されます。 ``queryTimeout`` プロパティに値が設定されていない場合は、:doc:`../config`  クラスで指定されたクエリタイムアウトが使用されます。"
 
-#: ../../query/batch-insert.rst:163
+#: ../../query/batch-insert.rst:188
 msgid "Batch size"
 msgstr "バッチサイズ"
 
-#: ../../query/batch-insert.rst:165
+#: ../../query/batch-insert.rst:190
 msgid "You can specify batch size to ``batchSize`` property within ``@BatchInsert`` annotation."
 msgstr "バッチサイズは ``@BatchInsert`` アノテーション内の ``batchSize`` プロパティに指定できます。"
 
-#: ../../query/batch-insert.rst:172
+#: ../../query/batch-insert.rst:197
 msgid "This specify is applied Regardless of using or not using SQL file. It you do not specify the value to ``batchSize`` property, batch size that is specified at :doc:`../config` class is applied."
 msgstr "この指定はSQLファイルの使用有無に関わらず適用されます。 ``batchSize`` プロパティに値を指定しない場合は、:doc:`../config` クラスで指定されたバッチサイズが適用されます。"
 
-#: ../../query/batch-insert.rst:176
+#: ../../query/batch-insert.rst:201
 msgid "SQL log output format"
 msgstr "SQLログの出力形式"
 
-#: ../../query/batch-insert.rst:178
+#: ../../query/batch-insert.rst:203
 msgid "You can specify SQL log output format to ``sqlLog`` property within ``@BatchInsert`` annotation."
 msgstr "``@BatchInsert`` アノテーション内の ``sqlLog`` プロパティに SQL ログの出力形式を指定できます。"
 
-#: ../../query/batch-insert.rst:185
+#: ../../query/batch-insert.rst:210
 msgid "``SqlLogType.RAW`` represent outputting log that is sql with a binding parameter."
 msgstr "``SqlLogType.RAW`` はバインドパラメータ付きの SQL をログ出力することを表します。"
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-20 21:27+0900\n"
+"POT-Creation-Date: 2024-08-07 22:49+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -80,8 +80,8 @@ msgid "If the value is not set or is less than 0 the value is set 1 automaticall
 msgstr "もし設定されていないか、 0 未満の値が設定されていれば 1 を自動で設定します。"
 
 #: ../../query/insert.rst:65
-msgid "Control insertion target property"
-msgstr "追加対象プロパティの制御"
+msgid "Properties of @Insert"
+msgstr "@Insert のプロパティ"
 
 #: ../../query/insert.rst:68
 msgid "insertable"
@@ -93,6 +93,7 @@ msgstr "エンティティクラスに ``@Column`` が注釈されたプロパ�
 "``@Column`` の ``insertable`` 要素が ``false`` のものは追加対象外です。"
 
 #: ../../query/insert.rst:73
+#: ../../query/insert.rst:176
 msgid "exclude"
 msgstr ""
 
@@ -103,6 +104,7 @@ msgstr "``@Insert`` の ``exclude`` 要素に指定されたプロパティを�
 "``true`` であっても追加対象外です。"
 
 #: ../../query/insert.rst:84
+#: ../../query/insert.rst:177
 msgid "include"
 msgstr ""
 
@@ -118,6 +120,7 @@ msgstr "プロパティがこの要素に指定されていても、 ``@Column``
 "``false`` であれば追加対象外です。"
 
 #: ../../query/insert.rst:97
+#: ../../query/insert.rst:178
 msgid "excludeNull"
 msgstr ""
 
@@ -129,69 +132,106 @@ msgstr "``@Insert`` の ``excludeNull`` 要素が ``true`` の場合、\n"
 "``@Insert`` の ``include`` 要素にプロパティが指定されていても、値が ``null`` であれば追加対象外です。"
 
 #: ../../query/insert.rst:109
+#: ../../query/insert.rst:179
+msgid "duplicateKeyType"
+msgstr "duplicateKeyType"
+
+#: ../../query/insert.rst:111
+msgid "This property defines the strategy for handling duplicate keys during an insert operation."
+msgstr "このプロパティは、追加操作時に重複したキーを処理するための戦略を定義します。"
+
+#: ../../query/insert.rst:113
+msgid "It can take one of three values:"
+msgstr "次の3つの値のいずれかを取ることができます:"
+
+#: ../../query/insert.rst:115
+msgid "``DuplicateKeyType.UPDATE``: If a duplicate key is encountered, the existing row in the table will be updated."
+msgstr "``DuplicateKeyType.UPDATE``: 重複したキーが見つかった場合、テーブル内の既存の行が更新されます。"
+
+#: ../../query/insert.rst:116
+msgid "``DuplicateKeyType.IGNORE``: If a duplicate key is encountered, the insert operation will be ignored, and no changes will be made to the table."
+msgstr "``DuplicateKeyType.IGNORE``: 重複したキーが見つかった場合、挿入操作は無視され、テーブルに変更は加えられません。"
+
+#: ../../query/insert.rst:117
+msgid "``DuplicateKeyType.EXCEPTION``: If a duplicate key is encountered, an exception will be thrown."
+msgstr "``DuplicateKeyType.EXCEPTION``: 重複したキーが発生した場合、例外が投げられます。"
+
+#: ../../query/insert.rst:125
+#: ../../query/insert.rst:180
+msgid "duplicateKeys"
+msgstr ""
+
+#: ../../query/insert.rst:127
+msgid "This property represents the keys that should be used to determine if a duplicate key exists. If the duplicate key exists, the operation will use the ``duplicateKeyType`` strategy to handle the duplicate key."
+msgstr "このプロパティは、重複キーが存在するかどうかを判断するために使用するキーを表します。 重複キーが存在する場合、重複キーを処理するために ``duplicateKeyType`` ストラテジーを使用します。"
+
+#: ../../query/insert.rst:136
+msgid "This property is only utilized when the ``duplicateKeyType`` strategy is either ``DuplicateKeyType.UPDATE`` or ``DuplicateKeyType.IGNORE``."
+msgstr "このプロパティは、``duplicateKeyType`` ストラテジーが ``DuplicateKeyType.UPDATE`` または ``DuplicateKeyType.IGNORE`` のいずれかである場合にのみ使用されます。"
+
+#: ../../query/insert.rst:140
+msgid "The MySQL dialect does not utilize this property."
+msgstr "MySQLの方言はこのプロパティを利用しません。"
+
+#: ../../query/insert.rst:144
 msgid "Insert by SQL file"
 msgstr "SQLファイルによる追加"
 
-#: ../../query/insert.rst:111
+#: ../../query/insert.rst:146
 msgid "To execute insertion by SQL file, you set ``true`` to ``sqlFile`` element of ``@Insert`` and prepare SQL file that correspond method."
 msgstr "SQLファイルによる追加を行うには、 ``@Insert`` の ``sqlFile`` 要素に ``true`` を設定し、メソッドに対応するSQLファイルを用意します。"
 
-#: ../../query/insert.rst:114
+#: ../../query/insert.rst:149
 msgid "You can use arbitrary type as parameter. Specifiable parameters count is no limit. You can set ``null`` to parameter if parameter type is basic type or domain class. For other type than that, parameter must not be ``null``."
 msgstr "パラメータには任意の型が使用できます。\n"
 "指定できるパラメータの数に制限はありません。\n"
 "パラメータの型が基本クラスもしくはドメインクラスの場合、引数を ``null`` にできます。\n"
 "それ以外の型の場合、引数は ``null`` であってはいけません。"
 
-#: ../../query/insert.rst:127
+#: ../../query/insert.rst:162
 msgid "For example, you describe SQL file like below to correspond above method."
 msgstr "たとえば、上記のメソッドに対応するSQLは次のように記述します。"
 
-#: ../../query/insert.rst:137
-msgid "Identifier auto setting and version value auto setting is not done in insertion by SQL file. Also, ``exclude`` element and ``include`` element and ``excludeNull`` element of ``@Insert`` are not referenced."
-msgstr "SQLファイルによる追加では、IDの自動設定やバージョン番号の自動設定は行われません。\n"
-"また、 ``@Insert`` の ``exclude`` 要素、 ``include`` 要素、 ``excludeNull`` 要素は参照されません。"
+#: ../../query/insert.rst:172
+msgid "Identifier auto setting and version value auto setting is not done in insertion by SQL file."
+msgstr "識別子の自動設定およびバージョン番号の自動設定は、SQLファイルによる追加では実行されません。"
 
-#: ../../query/insert.rst:141
-msgid "Upsert"
-msgstr ""
+#: ../../query/insert.rst:174
+msgid "Additionally, the following properties of ``@Insert`` are not used:"
+msgstr "また、以下の ``@Insert`` のプロパティは使用されません。"
 
-#: ../../query/insert.rst:143
-msgid "you can specify whether to update or ignore using a ``duplicateKeyType`` property In case of duplication. By default, it is ``DuplicateKeyType.EXCEPTION`` , and an error will occur in case of duplicated. There are 3 types to choose from: ``DuplicateKeyType.UPDATE`` , ``DuplicateKeyType.IGNORE`` , ``DuplicateKeyType.EXCEPTION`` ."
-msgstr "``duplicateKeyType`` プロパティを使用することで、レコードが重複した場合に更新するか無視するかを指定できます。デフォルトでは ``DuplicateKeyType.EXCEPTION`` が使用され、重複時にエラーが発生することを表します。 ``duplicateKeyType`` プロパティには ``DuplicateKeyType.UPDATE`` , ``DuplicateKeyType.IGNORE`` , ``DuplicateKeyType.EXCEPTION`` の3つの中からいずれかを選択して指定できます。"
-
-#: ../../query/insert.rst:156
+#: ../../query/insert.rst:183
 msgid "Unique constraint violation"
 msgstr "一意制約違反"
 
-#: ../../query/insert.rst:158
+#: ../../query/insert.rst:185
 msgid "``UniqueConstraintException`` is thrown regardless with or without using sql file if unique constraint violation is occurred."
 msgstr "一意制約違反が発生した場合は、SQLファイルの使用の有無に関係なく\n"
 "``UniqueConstraintException`` がスローされます。"
 
-#: ../../query/insert.rst:161
+#: ../../query/insert.rst:188
 msgid "Query timeout"
 msgstr "クエリタイムアウト"
 
-#: ../../query/insert.rst:163
+#: ../../query/insert.rst:190
 msgid "You can specify second of query timeout to ``queryTimeout`` element of ``@Insert``."
 msgstr "``@Insert`` の ``queryTimeout`` 要素にクエリタイムアウトの秒数を指定できます。"
 
-#: ../../query/insert.rst:170
+#: ../../query/insert.rst:197
 msgid "This specifying is applied regardless with or without using sql file. Query timeout that is specified in :doc:`../config` is used if ``queryTimeout`` element is not set value."
 msgstr "この指定は、SQLファイルの使用の有無に関係なく適用されます。\n"
 "``queryTimeout`` 要素に値を指定しない場合、\n"
 ":doc:`../config` に指定されたクエリタイムアウトが使用されます。"
 
-#: ../../query/insert.rst:174
+#: ../../query/insert.rst:201
 msgid "SQL log output format"
 msgstr "SQLログの出力形式"
 
-#: ../../query/insert.rst:176
+#: ../../query/insert.rst:203
 msgid "You can specify SQL log output format to ``sqlLog`` element of ``@Insert``."
 msgstr "``@Insert`` の ``sqlLog`` 要素に SQL のログ出力形式を指定できます。"
 
-#: ../../query/insert.rst:183
+#: ../../query/insert.rst:210
 msgid "``SqlLogType.RAW`` is represented that the log is outputted sql with a bind parameter."
 msgstr "``SqlLogType.RAW`` はバインドパラメータ付きの SQL をログ出力することを表します。"
 
