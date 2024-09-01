@@ -40,8 +40,8 @@ Write your build.gradle(.kts) as follows:
             }
             
             dependencies {
-                implementation("org.seasar.doma:doma-core:2.60.0")
-                annotationProcessor("org.seasar.doma:doma-processor:2.60.0")
+                implementation("org.seasar.doma:doma-core:3.0.0")
+                annotationProcessor("org.seasar.doma:doma-processor:3.0.0")
             }
 
     .. tab:: Groovy
@@ -53,8 +53,8 @@ Write your build.gradle(.kts) as follows:
             }
             
             dependencies {
-                implementation 'org.seasar.doma:doma-core:2.60.0'
-                annotationProcessor 'org.seasar.doma:doma-processor:2.60.0'
+                implementation 'org.seasar.doma:doma-core:3.0.0'
+                annotationProcessor 'org.seasar.doma:doma-processor:3.0.0'
             }
 
 To simplify your build.script(.kts), we recommend that you use the `org.seasar.doma.compile`_ plugin.
@@ -72,7 +72,7 @@ Write your pom.xml as follows:
 
     ...
     <properties>
-        <doma.version>2.60.0</doma.version>
+        <doma.version>3.0.0</doma.version>
     </properties>
     ...
     <dependencies>
@@ -90,8 +90,8 @@ Write your pom.xml as follows:
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>1.8</source> <!-- depending on your project -->
-                    <target>1.8</target> <!-- depending on your project -->
+                    <source>17</source> <!-- depending on your project -->
+                    <target>17</target> <!-- depending on your project -->
                     <annotationProcessorPaths>
                         <path>
                             <groupId>org.seasar.doma</groupId>

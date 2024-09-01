@@ -15,12 +15,6 @@ Install JDK
 
 To begin, JDK 17 is required. 
 
-.. note::
-
-  It's important to note that Doma is compatible with JDK 8 onwards. 
-  For details on supported JDK versions, refer to the appropriate section.
-  :ref:`Which version of JDK does Doma support?<which-version-of-jdk-does-doma-support>`.
-
 Get sample project
 ==================
 
@@ -45,10 +39,8 @@ Ensure successful project setup with:
 Sample project structure
 ========================
 
-The getting-started sample is a Gradle multi-project consisting of java-8 and java-17 sub-projects. 
-Both are similar, with the primary difference being how SQL statements are stored: in files for java-8 and as Text Blocks in java-17.
-
-This guide will focus on the java-17 project.
+The getting-started sample is a Gradle multi-project that includes a java-17 subproject.
+This guide will focus on the java-17 subproject.
 
 Import project to your IDE
 ==========================
