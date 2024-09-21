@@ -6,4 +6,5 @@ module org.seasar.doma.kotlin {
 
   requires kotlin.stdlib;
   requires org.seasar.doma.core;
+    requires komapper.core;
 }

@@ -1,5 +1,7 @@
 package org.seasar.doma.kotlin.jdbc.criteria.statement
 
+import org.komapper.core.dsl.operator.asc
+import org.komapper.core.dsl.operator.desc
 import org.seasar.doma.jdbc.Sql
 import org.seasar.doma.jdbc.criteria.metamodel.EntityMetamodel
 import org.seasar.doma.jdbc.criteria.metamodel.PropertyMetamodel
@@ -7,6 +9,7 @@ import org.seasar.doma.jdbc.criteria.option.AssociationOption
 import org.seasar.doma.jdbc.criteria.option.DistinctOption
 import org.seasar.doma.jdbc.criteria.option.ForUpdateOption
 import org.seasar.doma.jdbc.criteria.statement.EntityqlSelectStarting
+import org.seasar.doma.kotlin.jdbc.criteria.DeprecatedMessages.CANNOT_AUTO_REPLACE
 import org.seasar.doma.kotlin.jdbc.criteria.declaration.KJoinDeclaration
 import org.seasar.doma.kotlin.jdbc.criteria.declaration.KOrderByNameDeclaration
 import org.seasar.doma.kotlin.jdbc.criteria.declaration.KWhereDeclaration
@@ -34,6 +37,7 @@ class KEntityqlSelectStarting<ENTITY>(private val statement: EntityqlSelectStart
         return this
     }
 
+    @Deprecated(CANNOT_AUTO_REPLACE + "https://www.komapper.org/docs/reference/association/")
     fun <ENTITY1, ENTITY2> associate(
         first: EntityMetamodel<ENTITY1>,
         second: EntityMetamodel<ENTITY2>,
@@ -43,6 +47,7 @@ class KEntityqlSelectStarting<ENTITY>(private val statement: EntityqlSelectStart
         return this
     }
 
+    @Deprecated(CANNOT_AUTO_REPLACE + "https://www.komapper.org/docs/reference/association/")
     fun <ENTITY1, ENTITY2> associate(
         first: EntityMetamodel<ENTITY1>,
         second: EntityMetamodel<ENTITY2>,
@@ -53,6 +58,7 @@ class KEntityqlSelectStarting<ENTITY>(private val statement: EntityqlSelectStart
         return this
     }
 
+    @Deprecated(CANNOT_AUTO_REPLACE + "https://www.komapper.org/docs/reference/association/")
     fun <ENTITY1, ENTITY2> associateWith(
         first: EntityMetamodel<ENTITY1>,
         second: EntityMetamodel<ENTITY2>,
@@ -62,6 +68,7 @@ class KEntityqlSelectStarting<ENTITY>(private val statement: EntityqlSelectStart
         return this
     }
 
+    @Deprecated(CANNOT_AUTO_REPLACE + "https://www.komapper.org/docs/reference/association/")
     fun <ENTITY1, ENTITY2> associateWith(
         first: EntityMetamodel<ENTITY1>,
         second: EntityMetamodel<ENTITY2>,
@@ -77,6 +84,7 @@ class KEntityqlSelectStarting<ENTITY>(private val statement: EntityqlSelectStart
         return this
     }
 
+    @Deprecated(CANNOT_AUTO_REPLACE + "https://www.komapper.org/docs/reference/query/querydsl/select/#orderby")
     fun orderBy(block: KOrderByNameDeclaration.() -> Unit): KEntityqlSelectStarting<ENTITY> {
         statement.orderBy { block(KOrderByNameDeclaration(it)) }
         return this
@@ -121,5 +129,24 @@ class KEntityqlSelectStarting<ENTITY>(private val statement: EntityqlSelectStart
 
     override fun asSql(): Sql<*> {
         return statement.asSql()
+    }
+}
+
+// Extending Komapper to be compatible with doma
+// orderBy
+@Deprecated(CANNOT_AUTO_REPLACE + "https://www.komapper.org/docs/reference/query/querydsl/select/#orderby")
+fun <ENTITY, QUERY: org.komapper.core.dsl.query.SelectQuery<ENTITY, QUERY>> org.komapper.core.dsl.query.SelectQuery<ENTITY, QUERY>.orderBy(block: KomapperSortExpressionDsl.() -> Unit){
+    val dsl = KomapperSortExpressionDsl()
+    block(dsl)
+    this.orderBy(dsl.expressions)
+}
+
+class KomapperSortExpressionDsl {
+    internal var expressions: MutableList<org.komapper.core.dsl.expression.SortExpression> = mutableListOf()
+    fun asc(propertyMeta: org.komapper.core.dsl.metamodel.PropertyMetamodel<*,*,*>) {
+        expressions += propertyMeta.asc()
+    }
+    fun desc(propertyMeta: org.komapper.core.dsl.metamodel.PropertyMetamodel<*,*,*>) {
+        expressions += propertyMeta.desc()
     }
 }

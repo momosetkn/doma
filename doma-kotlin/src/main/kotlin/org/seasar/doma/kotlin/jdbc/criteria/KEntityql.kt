@@ -19,6 +19,11 @@ import org.seasar.doma.kotlin.jdbc.criteria.statement.KEntityqlUpdateStatement
 import org.seasar.doma.kotlin.jdbc.criteria.statement.KSetOperand
 import org.seasar.doma.kotlin.jdbc.criteria.statement.KStatement
 
+@Deprecated(
+    "Replace to komapper",
+    ReplaceWith("QueryDsl()", "org.komapper.core.dsl.QueryDsl"),
+    level = DeprecationLevel.ERROR
+)
 class KEntityql(config: Config) {
 
     private val entityql = org.seasar.doma.jdbc.criteria.Entityql(config)
