@@ -36,13 +36,13 @@ The basic build.gradle(.kts) example is as follows:
                 }
                 dependencies {
                     // specify your JDBC driver
-                    classpath("com.h2database:h2:1.3.175")
+                    classpath("com.h2database:h2:2.3.232")
                 }
             }
             
             plugins {
                 id("java")
-                id("org.domaframework.doma.codegen") version "2.0.0"
+                id("org.domaframework.doma.codegen") version "3.0.0"
             }
             
             domaCodeGen {
@@ -75,13 +75,13 @@ The basic build.gradle(.kts) example is as follows:
                 }
                 dependencies {
                     // specify your JDBC driver
-                    classpath 'com.h2database:h2:1.3.175'
+                    classpath 'com.h2database:h2:2.3.232'
                 }
             }
             
             plugins {
                 id 'java'
-                id 'org.domaframework.doma.codegen' version '2.0.0'
+                id 'org.domaframework.doma.codegen' version '3.0.0'
             }
             
             domaCodeGen {
