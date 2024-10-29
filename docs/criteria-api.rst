@@ -8,6 +8,11 @@ Criteria API
 Introduction
 ============
 
+.. warning::
+
+    Please use the :doc:`query-dsl` instead of the Entityql DSL or NativeSql DSL described on this page. 
+    The Query DSL integrates both the Entityql DSL and NativeSql DSL.
+
 .. note::
 
     In Kotlin environment, use Kotlin specific DSLs instead of the following DSLs.

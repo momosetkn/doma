@@ -52,6 +52,7 @@ User Documentation
    query/index
    query-builder/index
    criteria-api
+   query-dsl
    sql
    expression
    transaction
