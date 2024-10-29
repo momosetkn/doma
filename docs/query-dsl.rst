@@ -420,6 +420,9 @@ The following operators and predicates are supported:
 
     If the right-hand operand is ``null``, the WHERE or HAVING clause will exclude the operator. See `WhereDeclaration`_ and `HavingDeclaration`_ javadoc for details.
 
+.. _WhereDeclaration: https://www.javadoc.io/doc/org.seasar.doma/doma-core/latest/org/seasar/doma/jdbc/criteria/declaration/WhereDeclaration.html
+.. _HavingDeclaration: https://www.javadoc.io/doc/org.seasar.doma/doma-core/latest/org/seasar/doma/jdbc/criteria/declaration/HavingDeclaration.html
+
 We also support utility operators:
 
 * eqOrIsNull - ("=" or "is null")
