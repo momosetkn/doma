@@ -1,6 +1,6 @@
-============
-Criteria API
-============
+====================
+Classic Criteria API
+====================
 
 .. contents::
    :depth: 4
@@ -10,8 +10,9 @@ Introduction
 
 .. warning::
 
-    Please use the :doc:`query-dsl` instead of the Entityql DSL or NativeSql DSL described on this page. 
-    The Query DSL integrates both the Entityql DSL and NativeSql DSL.
+    Please use the Query DSL introduced on the :doc:`query-dsl` page instead of the Entityql and NativeSql
+    DSLs explained here. 
+    The Query DSL is a new, unified interface that combines both Entityql and NativeSql DSLs.
 
 .. note::
 

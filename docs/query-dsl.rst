@@ -1,12 +1,15 @@
-=========   
-Query DSL
-=========
+====================
+Unified Criteria API
+====================
 
 .. contents::
    :depth: 4
 
 Introduction
 ============
+
+The Unified Criteria API unifies the :doc:`criteria-api`, Entityql and NativeSql DSLs, 
+providing a clear and intuitive interface.
 
 The following entity classes are used in the examples below:
 
@@ -102,6 +105,8 @@ See :doc:`annotation-processing` and refer to the following options:
 
 Query DSL
 ---------
+
+The Unified Criteria API is, in essence, the Query DSL.
 
 The Query DSL can perform entity queries and associations.
 The entry point is the ``org.seasar.doma.jdbc.criteria.QueryDsl`` class.
@@ -419,6 +424,9 @@ The following operators and predicates are supported:
 .. note::
 
     If the right-hand operand is ``null``, the WHERE or HAVING clause will exclude the operator. See `WhereDeclaration`_ and `HavingDeclaration`_ javadoc for details.
+
+.. _WhereDeclaration: https://www.javadoc.io/doc/org.seasar.doma/doma-core/latest/org/seasar/doma/jdbc/criteria/declaration/WhereDeclaration.html
+.. _HavingDeclaration: https://www.javadoc.io/doc/org.seasar.doma/doma-core/latest/org/seasar/doma/jdbc/criteria/declaration/HavingDeclaration.html
 
 We also support utility operators:
 
