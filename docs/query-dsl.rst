@@ -1,12 +1,15 @@
-=========   
-Query DSL
-=========
+====================
+Unified Criteria API
+====================
 
 .. contents::
    :depth: 4
 
 Introduction
 ============
+
+The Unified Criteria API unifies the :doc:`criteria-api`, Entityql and NativeSql DSLs, 
+providing a clear and intuitive interface.
 
 The following entity classes are used in the examples below:
 
@@ -102,6 +105,8 @@ See :doc:`annotation-processing` and refer to the following options:
 
 Query DSL
 ---------
+
+The Unified Criteria API is, in essence, the Query DSL.
 
 The Query DSL can perform entity queries and associations.
 The entry point is the ``org.seasar.doma.jdbc.criteria.QueryDsl`` class.
