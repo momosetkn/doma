@@ -566,6 +566,8 @@ This generates:
     from EMPLOYEE t0_
     left outer join DEPARTMENT t1_ on (t0_.DEPARTMENT_ID = t1_.DEPARTMENT_ID)
 
+.. _query_dsl_associate:
+
 Association
 -----------
 

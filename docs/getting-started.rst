@@ -94,12 +94,12 @@ To execute a SELECT query and retrieve Java object results, follow this example:
 
   public Employee selectById(Integer id) {
     var e = new Employee_();
-    return entityql.from(e).where(c -> c.eq(e.id, id)).fetchOne();
+    return queryDsl.from(e).where(c -> c.eq(e.id, id)).fetchOne();
   }
 
 You'll use a metamodel class, like ``Employee_`` for ``Employee``, which is auto-generated through annotation processing. 
 
-The ``entityql`` instance from the ``Entityql`` class serves as the Criteria API's starting point. 
+The ``queryDsl`` instance from the ``QueryDsl`` class serves as the Criteria API's starting point. 
 
 The above code generates the following SQL statement:
 
@@ -116,7 +116,7 @@ To issue a DELETE statement, write as follows:
 
   public void delete(Employee employee) {
     var e = new Employee_();
-    entityql.delete(e, employee).execute();
+    queryDsl.delete(e).single(employee).execute();
   }
 
 INSERT
@@ -128,7 +128,7 @@ To issue an INSERT statement, write as follows:
 
   public void insert(Employee employee) {
     var e = new Employee_();
-    entityql.insert(e, employee).execute();
+    queryDsl.insert(e).single(employee).execute();
   }
 
 UPDATE
@@ -140,7 +140,7 @@ To issue an UPDATE statement, write as follows:
 
   public void update(Employee employee) {
     var e = new Employee_();
-    entityql.update(e, employee).execute();
+    queryDsl.update(e).single(employee).execute();
   }
 
 DAO style
