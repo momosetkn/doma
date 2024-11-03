@@ -722,7 +722,7 @@ msgstr ""
 
 #: ../../query-dsl.rst:1075
 msgid "The delete statement follows the same rules as the :ref:`query_dsl_where`."
-msgstr "DELETEステートメントは、 :ref:`query_dsl_where`と同じルールに従います。"
+msgstr "DELETEステートメントは、 :ref:`query_dsl_where` と同じルールに従います。"
 
 #: ../../query-dsl.rst:1078
 msgid "Delete Settings"
@@ -883,7 +883,7 @@ msgstr ""
 
 #: ../../query-dsl.rst:1371
 msgid "The update statement follows the same specifications as the :ref:`query_dsl_where`."
-msgstr "UPDATEステートメントは、 :ref:`query_dsl_where`と同じルールに従います。"
+msgstr "UPDATEステートメントは、 :ref:`query_dsl_where` と同じルールに従います。"
 
 #: ../../query-dsl.rst:1374
 msgid "Update Settings"
@@ -940,7 +940,7 @@ msgstr ""
 
 #: ../../query-dsl.rst:1486
 msgid "All property expression methods are in the ``org.seasar.doma.jdbc.criteria.expression.Expressions`` class and can be used with static imports."
-msgstr "すべてのプロパティ式メソッドは ``org.seasar.doma.jdbc.criteria.expressions. Expressions`` クラスにあり、静的なインポートで使用できます。"
+msgstr "すべてのプロパティ式メソッドは ``org.seasar.doma.jdbc.criteria.expressions.Expressions`` クラスにあり、静的なインポートで使用できます。"
 
 #: ../../query-dsl.rst:1489
 msgid "Arithmetic Expressions"
