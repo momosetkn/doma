@@ -29,7 +29,7 @@ msgstr ""
 
 #: ../../query-dsl.rst:11
 msgid "The Unified Criteria API unifies the :doc:`criteria-api`, Entityql and NativeSql DSLs, providing a clear and intuitive interface."
-msgstr "Unified Criteria APIは:doc:`critera-api`であるEntityqlとNativeSqlのDSLを統一し、分かりやすいインタフェースを提供します。"
+msgstr "Unified Criteria APIは :doc:`criteria-api` であるEntityqlとNativeSqlのDSLを統一し、分かりやすいインタフェースを提供します。"
 
 #: ../../query-dsl.rst:14
 msgid "The following entity classes are used in the examples below:"
@@ -109,7 +109,7 @@ msgstr "Kotlin では、``QueryDsl`` の代わりに ``org.seasar.doma.kotlin.jd
 
 #: ../../query-dsl.rst:163
 msgid "Select Statement"
-msgstr "Select ステートメント"
+msgstr "Select Statement"
 
 #: ../../query-dsl.rst:166
 msgid "Select Settings"
@@ -159,7 +159,7 @@ msgstr ""
 #: ../../query-dsl.rst:1179
 #: ../../query-dsl.rst:1389
 msgid "All are optional and can be applied as follows:"
-msgstr "すべてオプションで、以下のように適用できます:"
+msgstr "すべてオプションで、以下のように適用できます。"
 
 #: ../../query-dsl.rst:193
 msgid "Fetching"
@@ -227,7 +227,7 @@ msgstr "上記のクエリは、次の SQL ステートメントを生成しま�
 
 #: ../../query-dsl.rst:275
 msgid "To choose a joined entity type as the result entity type, use ``project`` or ``select``:"
-msgstr "結果のエンティティタイプとして結合されたエンティティタイプを選択するには、``project`` または ``select`` を使用します:"
+msgstr "結果のエンティティタイプとして結合されたエンティティタイプを選択するには、``project`` または ``select`` を使用します。"
 
 #: ../../query-dsl.rst:288
 msgid "This query generates the following SQL:"
@@ -243,7 +243,7 @@ msgstr ""
 
 #: ../../query-dsl.rst:304
 msgid "Specify multiple entity types and fetch them as tuples:"
-msgstr "複数のエンティティタイプを指定し、タプルとしてフェッチします:"
+msgstr "複数のエンティティタイプを指定し、タプルとしてフェッチします。"
 
 #: ../../query-dsl.rst:318
 #: ../../query-dsl.rst:389
@@ -255,7 +255,7 @@ msgstr "このクエリは次のように生成されます。"
 
 #: ../../query-dsl.rst:328
 msgid "In the tuple, an entity is null if all its properties are null."
-msgstr " "
+msgstr "タプル内では、すべてのプロパティが null の場合、エンティティは null になります。"
 
 #: ../../query-dsl.rst:332
 msgid "The ``select`` method does not remove duplicates."
@@ -267,7 +267,7 @@ msgstr ""
 
 #: ../../query-dsl.rst:337
 msgid "To project columns, use ``select``. For one column:"
-msgstr "カラムを選択するには、``select`` を使用します。1つのカラムの選択は次のようにします:"
+msgstr "カラムを選択するには、``select`` を使用します。1つのカラムの選択は次のようにします。"
 
 #: ../../query-dsl.rst:345
 #: ../../query-dsl.rst:362
@@ -299,7 +299,7 @@ msgstr "このクエリは次のように生成されます。"
 
 #: ../../query-dsl.rst:351
 msgid "For multiple columns:"
-msgstr ""
+msgstr "複数のカラムを選択する場合は次のようにします。"
 
 #: ../../query-dsl.rst:368
 msgid "Columns up to 9 are held in ``Tuple2`` to ``Tuple9``. Beyond that, they are held in ``Row``."
@@ -489,11 +489,11 @@ msgstr ""
 
 #: ../../query-dsl.rst:572
 msgid "You can associate entities using the ``associate`` operation in conjunction with a join expression:"
-msgstr "joinと一緒に``associate`` を使用し、エンティティを関連付けることができます"
+msgstr "joinと一緒に ``associate`` を使用し、エンティティを関連付けることができます"
 
 #: ../../query-dsl.rst:602
 msgid "Associating Multiple Entities:"
-msgstr ""
+msgstr "複数のエンティティを関連づける場合は次のようにします。"
 
 #: ../../query-dsl.rst:626
 msgid "Associating Immutable Entities"
@@ -501,7 +501,7 @@ msgstr ""
 
 #: ../../query-dsl.rst:628
 msgid "To associate immutable entities, use the ``associateWith`` operation with a join expression:"
-msgstr "イミュータブルなエンティティを関連付けるには、joinと一緒に``associateWith`` を使用します。"
+msgstr "イミュータブルなエンティティを関連付けるには、joinと一緒に ``associateWith`` を使用します。"
 
 #: ../../query-dsl.rst:660
 msgid "Dynamic Join Expression"
@@ -513,7 +513,7 @@ msgstr "join式は、評価された演算子のみを使用してJOIN句を構�
 
 #: ../../query-dsl.rst:664
 msgid "For example, with a conditional join:"
-msgstr "例えば、条件付きjoinを使用する場合:"
+msgstr "例えば、条件付きjoinを使用する場合は次のようにします。"
 
 #: ../../query-dsl.rst:680
 msgid "If ``join`` is ``false``, the ``on`` expression is ignored, generating:"
@@ -533,7 +533,7 @@ msgstr ""
 
 #: ../../query-dsl.rst:718
 msgid "The following aggregate functions are supported:"
-msgstr "次の集約関数がサポートされています:"
+msgstr "次の集約関数がサポートされています。"
 
 #: ../../query-dsl.rst:720
 msgid "avg(property)"
@@ -581,7 +581,7 @@ msgstr ""
 
 #: ../../query-dsl.rst:748
 msgid "Group by expressions allow for grouping results based on specified columns:"
-msgstr "Group by式を使うと、指定された列に基づいて結果をグループ化できます:"
+msgstr "Group by式を使うと、指定された列に基づいて結果をグループ化できます。"
 
 #: ../../query-dsl.rst:760
 msgid "The above code generates:"
@@ -814,7 +814,7 @@ msgstr ""
 
 #: ../../query-dsl.rst:1201
 msgid "You can specify excluded columns:"
-msgstr "除外するカラムを指定できます:"
+msgstr "除外するカラムを指定できます。"
 
 #: ../../query-dsl.rst:1212
 msgid "Insert Record with Entity"
@@ -838,15 +838,15 @@ msgstr "Upsert もサポートされており、重複キーを処理するオ�
 
 #: ../../query-dsl.rst:1258
 msgid "To update on duplicate key:"
-msgstr "重複キーがあった場合に更新するには:"
+msgstr "重複キーがあった場合に更新するには次のようにします。"
 
 #: ../../query-dsl.rst:1268
 msgid "To ignore duplicates:"
-msgstr "重複を無視するには:"
+msgstr "重複を無視するには次のようにします。"
 
 #: ../../query-dsl.rst:1278
 msgid "Exceptions include:"
-msgstr "例外は次のとおりです："
+msgstr "スローされる可能性のある例外は次のとおりです。"
 
 #: ../../query-dsl.rst:1280
 #: ../../query-dsl.rst:1308
@@ -859,7 +859,7 @@ msgstr ""
 
 #: ../../query-dsl.rst:1285
 msgid "Inserting records by specifying values:"
-msgstr "値を指定してレコードを追加する:"
+msgstr "値を指定してレコードを追加するには次のようにします。"
 
 #: ../../query-dsl.rst:1306
 msgid "Unique constraints may throw:"
@@ -940,7 +940,7 @@ msgstr ""
 
 #: ../../query-dsl.rst:1486
 msgid "All property expression methods are in the ``org.seasar.doma.jdbc.criteria.expression.Expressions`` class and can be used with static imports."
-msgstr "すべてのプロパティ式メソッドは ``org.seasar.doma.jdbc.criteria.expressions. Expressions `` クラスにあり、静的なインポートで使用できます。"
+msgstr "すべてのプロパティ式メソッドは ``org.seasar.doma.jdbc.criteria.expressions. Expressions`` クラスにあり、静的なインポートで使用できます。"
 
 #: ../../query-dsl.rst:1489
 msgid "Arithmetic Expressions"
@@ -1080,7 +1080,7 @@ msgstr "スコープを使用すると、よく使用されるクエリ条件を
 
 #: ../../query-dsl.rst:1682
 msgid "To define a scope, create a class with a method annotated with ``@Scope``:"
-msgstr "スコープを定義するには、``@Scope``で注釈されたメソッドを持つクラスを作成します。"
+msgstr "スコープを定義するには、 ``@Scope`` で注釈されたメソッドを持つクラスを作成します。"
 
 #: ../../query-dsl.rst:1693
 msgid "To enable the scope, specify the scope class in the ``scopes`` element of ``@Metamodel``:"
@@ -1132,7 +1132,7 @@ msgstr "DSL によって生成された SQL ステートメントを調べるに
 
 #: ../../query-dsl.rst:1805
 msgid "The code above outputs the following:"
-msgstr "上記のコードは以下を出力します:"
+msgstr "上記のコードは以下を出力します。"
 
 #: ../../query-dsl.rst:1812
 msgid "The ``asSql`` method does not execute the SQL statement against the database; it only builds the SQL statement and returns it as an ``Sql`` object."
