@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 09:20+0900\n"
+"POT-Creation-Date: 2024-11-04 12:21+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -132,8 +132,8 @@ msgid "You'll use a metamodel class, like ``Employee_`` for ``Employee``, which 
 msgstr "クエリを組み立てるために ``Employee`` エンティティクラスのメタモデルクラスである ``Employee_`` を使用します。メタモデルクラスは、アノテーション処理を通じて自動生成されるクラスです。"
 
 #: ../../getting-started.rst:102
-msgid "The ``entityql`` instance from the ``Entityql`` class serves as the Criteria API's starting point."
-msgstr "``Entityql`` クラスの ``entityql`` インスタンスは、Criteria API の開始点として機能します。"
+msgid "The ``queryDsl`` instance from the ``QueryDsl`` class serves as the Criteria API's starting point."
+msgstr "``QueryDsl`` クラスの ``queryDsl`` インスタンスは、Criteria API の開始点として機能します。"
 
 #: ../../getting-started.rst:104
 #: ../../getting-started.rst:176

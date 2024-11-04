@@ -158,6 +158,7 @@ The query above generates the following SQL statement:
 
     In Kotlin, use ``org.seasar.doma.kotlin.jdbc.criteria.KQueryDsl`` instead of ``QueryDsl``.
     ``KQueryDsl`` is included in the doma-kotlin module.
+    See :ref:`kotlin-specific-criteria-api`.
 
 Select Statement
 ================

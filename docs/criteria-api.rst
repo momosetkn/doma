@@ -14,11 +14,6 @@ Introduction
     DSLs explained here. 
     The Query DSL is a new, unified interface that combines both Entityql and NativeSql DSLs.
 
-.. note::
-
-    In Kotlin environment, use Kotlin specific DSLs instead of the following DSLs.
-    See :ref:`kotlin-specific-criteria-api`.
-
 There are two kinds of DSLs in the Criteria API:
 
 * The Entityql DSL

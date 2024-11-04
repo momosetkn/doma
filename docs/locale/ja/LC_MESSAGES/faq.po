@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-01 09:20+0900\n"
+"POT-Creation-Date: 2024-11-04 12:21+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -229,8 +229,8 @@ msgid "The Criteria API."
 msgstr "Criteria API"
 
 #: ../../faq.rst:132
-msgid "See :doc:`sql` and :doc:`criteria-api` for detail information."
-msgstr "詳細については、:doc:`sql` および :doc:`criteria-api` を参照してください。"
+msgid "See :doc:`sql` and :doc:`query-dsl` for detail information."
+msgstr "詳細については :doc:`sql` と :doc:`query-dsl` を参照してください。"
 
 #: ../../faq.rst:135
 msgid "Does Doma support fetching relationships like one-to-one or one-to-many?"
@@ -241,8 +241,8 @@ msgid "Doma provides the Criteria API to map database relationships to Java enti
 msgstr "Doma は、データベースの関係を Java エンティティにマップするための Criteria API を提供します。"
 
 #: ../../faq.rst:141
-msgid "See :ref:`criteria_associate` for detail information."
-msgstr "詳細については、 :ref:`criteria_associate` を参照してください。"
+msgid "See :ref:`query_dsl_associate` for detail information."
+msgstr "詳細については :ref:`query_dsl_associate` を参照してください。"
 
 #: ../../faq.rst:144
 msgid "Does Doma provide a JDBC connection pooling feature?"
