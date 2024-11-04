@@ -83,7 +83,7 @@ DSL style
 =========
 
 In the DSL style, you work with examples in the ``boilerplate.java17.repository.EmployeeRepository`` 
-and the :doc:`criteria-api` for operations. 
+and the :doc:`query-dsl` for operations. 
 
 SELECT
 ------
