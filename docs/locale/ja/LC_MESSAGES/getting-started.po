@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: doma-docs\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-04 12:21+0900\n"
+"POT-Creation-Date: 2024-11-04 12:36+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "MIME-Version: 1.0\n"
@@ -116,8 +116,8 @@ msgid "DSL style"
 msgstr "DSL スタイル"
 
 #: ../../getting-started.rst:85
-msgid "In the DSL style, you work with examples in the ``boilerplate.java17.repository.EmployeeRepository`` and the :doc:`criteria-api` for operations."
-msgstr "DSL スタイルでは、 ``boilerplate.java17.repository.EmployeeRepository`` と :doc:`criteria-api` の例を使用します。"
+msgid "In the DSL style, you work with examples in the ``boilerplate.java17.repository.EmployeeRepository`` and the :doc:`query-dsl` for operations."
+msgstr "DSL スタイルでは、``boilerplate.java17.repository.EmployeeRepository`` と :doc:`query-dsl` を使った例を使用します。"
 
 #: ../../getting-started.rst:89
 msgid "SELECT"
