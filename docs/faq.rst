@@ -129,7 +129,7 @@ There are two ways:
 * The SQL Templates.
 * The Criteria API.
 
-See :doc:`sql` and :doc:`criteria-api` for detail information.
+See :doc:`sql` and :doc:`query-dsl` for detail information.
 
 Does Doma support fetching relationships like one-to-one or one-to-many?
 ----------------------------------------------------------------------------------------
@@ -138,7 +138,7 @@ Yes.
 
 Doma provides the Criteria API to map database relationships to Java entities.
 
-See :ref:`criteria_associate` for detail information.
+See :ref:`query_dsl_associate` for detail information.
 
 Does Doma provide a JDBC connection pooling feature?
 ----------------------------------------------------

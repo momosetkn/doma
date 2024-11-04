@@ -100,38 +100,16 @@ Kotlin specific Criteria API
 
     Prefer the Kotlin specific Criteria API to DAO interfaces.
 
-Doma provides Kotlin specific Criteria API, ``KEntityql`` and ``KNativeSql`` DSLs.
-They are very similar with the ``Entityql`` and ``NativeSql`` DSLs, which are described in :doc:`criteria-api`.
-The biggest feature of the ``KEntityql`` and ``KNativeSql`` DSLs is simplicity.
-
-For example, when you use ``KEntityql``, you have to accept a lambda parameter in a WHERE expression as follows:
+Doma provides ``KQueryDsl``, a Criteria API specifically for Kotlin.
+It is very similar with the ``QueryDsl``, which is described in :doc:`query-dsl`.
+The biggest feature of the ``KQueryDsl`` is simplicity.
 
 .. code-block:: kotlin
 
-    val entityql = Entityql(config)
+    val queryDsl = KQueryDsl(config)
     val e = Employee_()
 
-    val list = entityql
-        .from(e)
-        .where { c ->
-            c.eq(e.departmentId, 2)
-            c.isNotNull(e.managerId)
-            c.or {
-                c.gt(e.salary, Salary("1000"))
-                c.lt(e.salary, Salary("2000"))
-            }
-        }
-        .fetch()
-
-The lambda parameter ``c`` is a bit annoying.
-On the other hand, when you use ``KEntityql``, the parameter is gone.
-
-.. code-block:: kotlin
-
-    val entityql = KEntityql(config)
-    val e = Employee_()
-
-    val list = entityql
+    val list = queryDsl
         .from(e)
         .where {
             eq(e.departmentId, 2)
@@ -143,9 +121,9 @@ On the other hand, when you use ``KEntityql``, the parameter is gone.
         }
         .fetch()
 
-You can see a lot of sample code `here <https://github.com/domaframework/doma-it/tree/master/kotlin/src/test/kotlin/org/seasar/doma/it/criteria>`_.
+You can see mode sample code `here <https://github.com/domaframework/kotlin-sample>`_.
 
-The ``KEntityql`` and ``KNativeSql`` DSLs are included in doma-kotlin.jar.
+The ``KQueryDsl`` is included in the doma-kotlin module.
 Note that you should depend on doma-kotlin instead of doma-core in your build script.
 You can write build.gradle.kts as follows:
 

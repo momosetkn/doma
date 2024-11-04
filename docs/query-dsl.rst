@@ -158,6 +158,7 @@ The query above generates the following SQL statement:
 
     In Kotlin, use ``org.seasar.doma.kotlin.jdbc.criteria.KQueryDsl`` instead of ``QueryDsl``.
     ``KQueryDsl`` is included in the doma-kotlin module.
+    See :ref:`kotlin-specific-criteria-api`.
 
 Select Statement
 ================
@@ -565,6 +566,8 @@ This generates:
     t0_.SALARY, t0_.DEPARTMENT_ID, t0_.ADDRESS_ID, t0_.VERSION
     from EMPLOYEE t0_
     left outer join DEPARTMENT t1_ on (t0_.DEPARTMENT_ID = t1_.DEPARTMENT_ID)
+
+.. _query_dsl_associate:
 
 Association
 -----------
