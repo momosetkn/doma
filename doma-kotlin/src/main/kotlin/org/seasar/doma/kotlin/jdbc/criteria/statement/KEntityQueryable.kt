@@ -32,7 +32,7 @@ import org.seasar.doma.kotlin.jdbc.criteria.declaration.KWhereDeclaration
  *
  * @param <ENTITY> the type of the entity
  */
-interface KEntityQueryable<ENTITY> : KListable<ENTITY> {
+interface KEntityQueryable<ENTITY : Any> : KListable<ENTITY> {
 
     fun distinct(distinctOption: DistinctOption = DistinctOption.basic()): KEntityQueryable<ENTITY>
 
@@ -82,9 +82,9 @@ interface KEntityQueryable<ENTITY> : KListable<ENTITY> {
 
     fun forUpdate(option: ForUpdateOption = ForUpdateOption.basic()): KEntityQueryable<ENTITY>
 
-    fun <RESULT> project(entityMetamodel: EntityMetamodel<RESULT>): KListable<RESULT>
+    fun <RESULT : Any> project(entityMetamodel: EntityMetamodel<RESULT>): KListable<RESULT>
 
-    fun <RESULT> projectTo(
+    fun <RESULT : Any> projectTo(
         entityMetamodel: EntityMetamodel<RESULT>,
         vararg propertyMetamodels: PropertyMetamodel<*>,
     ): KListable<RESULT>

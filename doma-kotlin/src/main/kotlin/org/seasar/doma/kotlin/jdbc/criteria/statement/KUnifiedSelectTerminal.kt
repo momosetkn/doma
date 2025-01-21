@@ -112,7 +112,7 @@ class KUnifiedSelectTerminal<ENTITY : Any>(private val statement: EntityQueryabl
         return this
     }
 
-    override fun <RESULT> project(entityMetamodel: EntityMetamodel<RESULT>): KListable<RESULT> {
+    override fun <RESULT : Any> project(entityMetamodel: EntityMetamodel<RESULT>): KListable<RESULT> {
         val listable = statement.project(entityMetamodel)
         return object : KListable<RESULT> {
             override fun peek(block: (Sql<*>) -> Unit): KListable<RESULT> {
@@ -130,7 +130,7 @@ class KUnifiedSelectTerminal<ENTITY : Any>(private val statement: EntityQueryabl
         }
     }
 
-    override fun <RESULT> projectTo(
+    override fun <RESULT : Any> projectTo(
         entityMetamodel: EntityMetamodel<RESULT>,
         vararg propertyMetamodels: PropertyMetamodel<*>,
     ): KListable<RESULT> {

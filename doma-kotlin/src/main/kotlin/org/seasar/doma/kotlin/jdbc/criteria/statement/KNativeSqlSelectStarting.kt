@@ -44,7 +44,7 @@ import java.util.function.Function
 import java.util.stream.Stream
 import kotlin.streams.asSequence
 
-class KNativeSqlSelectStarting<ENTITY>(private val statement: NativeSqlSelectStarting<ENTITY>) :
+class KNativeSqlSelectStarting<ENTITY : Any>(private val statement: NativeSqlSelectStarting<ENTITY>) :
     KStatement<List<ENTITY>>, KSetOperand<ENTITY> {
 
     fun distinct(distinctOption: DistinctOption = DistinctOption.basic()): KNativeSqlSelectStarting<ENTITY> {
@@ -110,7 +110,7 @@ class KNativeSqlSelectStarting<ENTITY>(private val statement: NativeSqlSelectSta
         return KNativeSqlSelectIntermediate(setOperand)
     }
 
-    fun <T> select(entityMetamodel: EntityMetamodel<T>): KSetOperand<T> {
+    fun <T : Any> select(entityMetamodel: EntityMetamodel<T>): KSetOperand<T> {
         val setOperand = statement.select(entityMetamodel)
         return KNativeSqlSelectIntermediate(setOperand)
     }
@@ -242,7 +242,7 @@ class KNativeSqlSelectStarting<ENTITY>(private val statement: NativeSqlSelectSta
         return KNativeSqlSelectIntermediate(setOperand)
     }
 
-    fun <T> select(propertyMetamodel: PropertyMetamodel<T>): KSetOperand<T> {
+    fun <T : Any> select(propertyMetamodel: PropertyMetamodel<T>): KSetOperand<T> {
         val setOperand = statement.select(propertyMetamodel)
         return KNativeSqlSelectIntermediate(setOperand)
     }
@@ -396,7 +396,7 @@ class KNativeSqlSelectStarting<ENTITY>(private val statement: NativeSqlSelectSta
         return KNativeSqlSelectIntermediate(setOperand)
     }
 
-    fun <RESULT> selectTo(
+    fun <RESULT : Any> selectTo(
         entityMetamodel: EntityMetamodel<RESULT>?,
         vararg propertyMetamodels: PropertyMetamodel<*>?,
     ): KSetOperand<RESULT> {
@@ -404,7 +404,7 @@ class KNativeSqlSelectStarting<ENTITY>(private val statement: NativeSqlSelectSta
         return KNativeSqlSelectIntermediate(setOperand)
     }
 
-    private fun <RESULT> createMappedResultProviderFactory(
+    private fun <RESULT : Any> createMappedResultProviderFactory(
         rowMapper: Function<DataRow, RESULT>,
     ): Function<SelectQuery, ObjectProvider<RESULT>> {
         return Function { query: SelectQuery? -> MappedResultProvider(query, rowMapper) }
@@ -421,7 +421,7 @@ class KNativeSqlSelectStarting<ENTITY>(private val statement: NativeSqlSelectSta
         return statement.openStream()
     }
 
-    override fun <RESULT> mapSequence(sequenceMapper: (Sequence<ENTITY>) -> RESULT): RESULT {
+    override fun <RESULT : Any> mapSequence(sequenceMapper: (Sequence<ENTITY>) -> RESULT): RESULT {
         return statement.mapStream {
             sequenceMapper(it.asSequence())
         }

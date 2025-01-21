@@ -17,9 +17,9 @@ package org.seasar.doma.kotlin.jdbc.criteria.statement
 
 import java.util.stream.Stream
 
-interface KSequenceMappable<ELEMENT> : KListable<ELEMENT> {
+interface KSequenceMappable<ELEMENT : Any> : KListable<ELEMENT> {
 
     fun openStream(): Stream<ELEMENT>
 
-    fun <RESULT> mapSequence(sequenceMapper: (Sequence<ELEMENT>) -> RESULT): RESULT
+    fun <RESULT : Any> mapSequence(sequenceMapper: (Sequence<ELEMENT>) -> RESULT): RESULT
 }

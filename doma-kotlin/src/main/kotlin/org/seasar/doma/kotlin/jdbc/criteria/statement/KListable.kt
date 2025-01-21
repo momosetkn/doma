@@ -17,7 +17,7 @@ package org.seasar.doma.kotlin.jdbc.criteria.statement
 
 import org.seasar.doma.jdbc.Sql
 
-interface KListable<ELEMENT> : KStatement<List<ELEMENT>> {
+interface KListable<ELEMENT : Any> : KStatement<List<ELEMENT>> {
 
     fun fetch(): List<ELEMENT> {
         return execute()

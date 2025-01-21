@@ -18,7 +18,7 @@ package org.seasar.doma.kotlin.jdbc.criteria.statement
 import org.seasar.doma.jdbc.Sql
 import org.seasar.doma.jdbc.criteria.statement.EntityqlSelectTerminal
 
-class KEntityqlSelectTerminal<ENTITY>(val statement: EntityqlSelectTerminal<ENTITY>) : KListable<ENTITY> {
+class KEntityqlSelectTerminal<ENTITY : Any>(val statement: EntityqlSelectTerminal<ENTITY>) : KListable<ENTITY> {
 
     override fun peek(block: (Sql<*>) -> Unit): KEntityqlSelectTerminal<ENTITY> {
         statement.peek(block)

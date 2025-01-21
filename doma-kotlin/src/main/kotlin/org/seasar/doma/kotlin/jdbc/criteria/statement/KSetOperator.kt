@@ -18,7 +18,7 @@ package org.seasar.doma.kotlin.jdbc.criteria.statement
 import org.seasar.doma.jdbc.Sql
 import org.seasar.doma.kotlin.jdbc.criteria.declaration.KOrderByIndexDeclaration
 
-interface KSetOperator<ELEMENT> : KSetOperand<ELEMENT> {
+interface KSetOperator<ELEMENT : Any> : KSetOperand<ELEMENT> {
 
     fun orderBy(block: KOrderByIndexDeclaration.() -> Unit): KSetOperand<ELEMENT>
 

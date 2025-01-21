@@ -19,7 +19,7 @@ import org.seasar.doma.jdbc.Sql
 import org.seasar.doma.jdbc.criteria.context.SetOperationContext
 import org.seasar.doma.jdbc.criteria.statement.SetOperand
 
-interface KSetOperand<ELEMENT> : KSequenceMappable<ELEMENT> {
+interface KSetOperand<ELEMENT : Any> : KSequenceMappable<ELEMENT> {
 
     val context: SetOperationContext<ELEMENT>
 

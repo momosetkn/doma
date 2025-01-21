@@ -135,7 +135,7 @@ class KUnifiedSelectStarting<ENTITY : Any>(private val statement: UnifiedSelectS
         return this
     }
 
-    override fun <RESULT> project(entityMetamodel: EntityMetamodel<RESULT>): KListable<RESULT> {
+    override fun <RESULT : Any> project(entityMetamodel: EntityMetamodel<RESULT>): KListable<RESULT> {
         val listable = statement.project(entityMetamodel)
         return object : KListable<RESULT> {
             override fun peek(block: (Sql<*>) -> Unit): KListable<RESULT> {
@@ -153,7 +153,7 @@ class KUnifiedSelectStarting<ENTITY : Any>(private val statement: UnifiedSelectS
         }
     }
 
-    override fun <RESULT> projectTo(
+    override fun <RESULT : Any> projectTo(
         entityMetamodel: EntityMetamodel<RESULT>,
         vararg propertyMetamodels: PropertyMetamodel<*>,
     ): KListable<RESULT> {
@@ -191,7 +191,7 @@ class KUnifiedSelectStarting<ENTITY : Any>(private val statement: UnifiedSelectS
         return KNativeSqlSelectIntermediate(setOperand)
     }
 
-    fun <T> select(entityMetamodel: EntityMetamodel<T>): KSetOperand<T> {
+    fun <T : Any> select(entityMetamodel: EntityMetamodel<T>): KSetOperand<T> {
         val setOperand = statement.select(entityMetamodel)
         return KNativeSqlSelectIntermediate(setOperand)
     }
@@ -323,7 +323,7 @@ class KUnifiedSelectStarting<ENTITY : Any>(private val statement: UnifiedSelectS
         return KNativeSqlSelectIntermediate(setOperand)
     }
 
-    fun <T> select(propertyMetamodel: PropertyMetamodel<T>): KSetOperand<T> {
+    fun <T : Any> select(propertyMetamodel: PropertyMetamodel<T>): KSetOperand<T> {
         val setOperand = statement.select(propertyMetamodel)
         return KNativeSqlSelectIntermediate(setOperand)
     }
@@ -477,7 +477,7 @@ class KUnifiedSelectStarting<ENTITY : Any>(private val statement: UnifiedSelectS
         return KNativeSqlSelectIntermediate(setOperand)
     }
 
-    fun <RESULT> selectTo(
+    fun <RESULT : Any> selectTo(
         entityMetamodel: EntityMetamodel<RESULT>?,
         vararg propertyMetamodels: PropertyMetamodel<*>?,
     ): KSetOperand<RESULT> {
@@ -485,7 +485,7 @@ class KUnifiedSelectStarting<ENTITY : Any>(private val statement: UnifiedSelectS
         return KNativeSqlSelectIntermediate(setOperand)
     }
 
-    private fun <RESULT> createMappedResultProviderFactory(
+    private fun <RESULT : Any> createMappedResultProviderFactory(
         rowMapper: Function<DataRow, RESULT>,
     ): Function<SelectQuery, ObjectProvider<RESULT>> {
         return Function { query: SelectQuery? -> MappedResultProvider(query, rowMapper) }
@@ -502,7 +502,7 @@ class KUnifiedSelectStarting<ENTITY : Any>(private val statement: UnifiedSelectS
         return statement.openStream()
     }
 
-    override fun <RESULT> mapSequence(sequenceMapper: (Sequence<ENTITY>) -> RESULT): RESULT {
+    override fun <RESULT : Any> mapSequence(sequenceMapper: (Sequence<ENTITY>) -> RESULT): RESULT {
         return statement.mapStream {
             sequenceMapper(it.asSequence())
         }

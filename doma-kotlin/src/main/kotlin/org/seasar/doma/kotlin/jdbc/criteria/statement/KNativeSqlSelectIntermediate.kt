@@ -21,7 +21,7 @@ import org.seasar.doma.jdbc.criteria.statement.SetOperand
 import java.util.stream.Stream
 import kotlin.streams.asSequence
 
-class KNativeSqlSelectIntermediate<ELEMENT>(private val statement: SetOperand<ELEMENT>) : KStatement<List<ELEMENT>>, KSetOperand<ELEMENT> {
+class KNativeSqlSelectIntermediate<ELEMENT : Any>(private val statement: SetOperand<ELEMENT>) : KStatement<List<ELEMENT>>, KSetOperand<ELEMENT> {
 
     override val context: SetOperationContext<ELEMENT>
         get() = statement.context
@@ -30,7 +30,7 @@ class KNativeSqlSelectIntermediate<ELEMENT>(private val statement: SetOperand<EL
         return statement.openStream()
     }
 
-    override fun <RESULT> mapSequence(sequenceMapper: (Sequence<ELEMENT>) -> RESULT): RESULT {
+    override fun <RESULT : Any> mapSequence(sequenceMapper: (Sequence<ELEMENT>) -> RESULT): RESULT {
         return statement.mapStream {
             sequenceMapper(it.asSequence())
         }

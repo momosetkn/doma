@@ -26,7 +26,7 @@ import org.seasar.doma.kotlin.jdbc.criteria.declaration.KJoinDeclaration
 import org.seasar.doma.kotlin.jdbc.criteria.declaration.KOrderByNameDeclaration
 import org.seasar.doma.kotlin.jdbc.criteria.declaration.KWhereDeclaration
 
-class KEntityqlSelectStarting<ENTITY>(private val statement: EntityqlSelectStarting<ENTITY>) : KListable<ENTITY> {
+class KEntityqlSelectStarting<ENTITY : Any>(private val statement: EntityqlSelectStarting<ENTITY>) : KListable<ENTITY> {
 
     fun distinct(distinctOption: DistinctOption = DistinctOption.basic()): KEntityqlSelectStarting<ENTITY> {
         statement.distinct(distinctOption)
@@ -112,12 +112,12 @@ class KEntityqlSelectStarting<ENTITY>(private val statement: EntityqlSelectStart
         return this
     }
 
-    fun <RESULT> select(entityMetamodel: EntityMetamodel<RESULT>): KEntityqlSelectTerminal<RESULT> {
+    fun <RESULT : Any> select(entityMetamodel: EntityMetamodel<RESULT>): KEntityqlSelectTerminal<RESULT> {
         val terminal = statement.select(entityMetamodel)
         return KEntityqlSelectTerminal(terminal)
     }
 
-    fun <RESULT> selectTo(
+    fun <RESULT : Any> selectTo(
         entityMetamodel: EntityMetamodel<RESULT>,
         vararg propertyMetamodels: PropertyMetamodel<*>,
     ): KEntityqlSelectTerminal<RESULT> {

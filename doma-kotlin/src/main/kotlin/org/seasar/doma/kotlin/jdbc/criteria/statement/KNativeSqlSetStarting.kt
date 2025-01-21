@@ -23,7 +23,7 @@ import org.seasar.doma.kotlin.jdbc.criteria.declaration.KOrderByIndexDeclaration
 import java.util.stream.Stream
 import kotlin.streams.asSequence
 
-class KNativeSqlSetStarting<ELEMENT>(val statement: SetOperator<ELEMENT>) : KSetOperator<ELEMENT> {
+class KNativeSqlSetStarting<ELEMENT : Any>(val statement: SetOperator<ELEMENT>) : KSetOperator<ELEMENT> {
 
     override fun orderBy(block: KOrderByIndexDeclaration.() -> Unit): KSetOperand<ELEMENT> {
         statement.orderBy { block(KOrderByIndexDeclaration(it)) }
@@ -54,7 +54,7 @@ class KNativeSqlSetStarting<ELEMENT>(val statement: SetOperator<ELEMENT>) : KSet
         return statement.openStream()
     }
 
-    override fun <RESULT> mapSequence(sequenceMapper: (Sequence<ELEMENT>) -> RESULT): RESULT {
+    override fun <RESULT : Any> mapSequence(sequenceMapper: (Sequence<ELEMENT>) -> RESULT): RESULT {
         return statement.mapStream {
             sequenceMapper(it.asSequence())
         }
