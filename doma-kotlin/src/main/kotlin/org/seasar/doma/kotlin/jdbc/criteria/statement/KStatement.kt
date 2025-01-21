@@ -17,7 +17,7 @@ package org.seasar.doma.kotlin.jdbc.criteria.statement
 
 import org.seasar.doma.jdbc.Sql
 
-interface KStatement<RESULT> : KBuildable<KStatement<RESULT>> {
+interface KStatement<RESULT: Any> : KBuildable<KStatement<RESULT>> {
 
     fun execute(): RESULT
 
